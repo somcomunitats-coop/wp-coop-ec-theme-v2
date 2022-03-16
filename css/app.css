@@ -1,0 +1,70 @@
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+.wp-block {
+  max-width: 1280px
+}
+
+.wp-block[data-align=wide] {
+  max-width: 1280px
+}
+
+.wp-block[data-align=full] {
+  max-width: 100%
+}
+
+article > *:not(.entry-content), .entry-content > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px
+}
+
+.entry-content h1, .block-editor-block-list__layout h1 {
+    font-size: 1.5rem;
+    line-height: 2rem
+  }
+
+.entry-content h2, .block-editor-block-list__layout h2 {
+    font-size: 1.25rem
+  }
+
+.entry-content h3, .block-editor-block-list__layout h3 {
+    font-size: 1.125rem;
+    line-height: 1.75rem
+  }
+
+.entry-content p a, .entry-content ul a, .entry-content ol a, .block-editor-block-list__layout p a, .block-editor-block-list__layout ul a, .block-editor-block-list__layout ol a {
+      --tw-text-opacity: 1;
+      color: rgb(59 130 246 / var(--tw-text-opacity))
+    }
+
+.entry-content p a, .entry-content ul a, .entry-content ol a, .block-editor-block-list__layout p a, .block-editor-block-list__layout ul a, .block-editor-block-list__layout ol a {
+      -webkit-text-decoration-line: underline;
+              text-decoration-line: underline
+    }
+
+.entry-content p a:hover, .entry-content ul a:hover, .entry-content ol a:hover, .block-editor-block-list__layout p a:hover, .block-editor-block-list__layout ul a:hover, .block-editor-block-list__layout ol a:hover {
+        -webkit-text-decoration-line: none;
+                text-decoration-line: none
+      }
+
+.entry-content p, .entry-content ul, .entry-content ol, .block-editor-block-list__layout p, .block-editor-block-list__layout ul, .block-editor-block-list__layout ol {
+    margin-bottom: 2rem
+  }
+
+.entry-content ul:not(.block-editor-block-variation-picker__variations) li, .block-editor-block-list__layout ul:not(.block-editor-block-variation-picker__variations) li {
+      list-style-position: inside
+    }
+
+.entry-content ul:not(.block-editor-block-variation-picker__variations) li, .block-editor-block-list__layout ul:not(.block-editor-block-variation-picker__variations) li {
+      list-style-type: disc
+    }
+
+.entry-content ol li, .block-editor-block-list__layout ol li {
+      list-style-position: inside
+    }
+
+.entry-content ol li, .block-editor-block-list__layout ol li {
+      list-style-type: decimal
+    }
