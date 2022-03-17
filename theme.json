@@ -1,9 +1,8 @@
 {
   "version": 1,
   "settings": {
-    "some_child_var": "foo",
     "layout": {
-      "contentSize": "1100px",
+      "contentSize": "960px",
       "wideSize": "1280px"
     },
     "color": {
