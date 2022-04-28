@@ -23,8 +23,8 @@ module.exports = {
     '../wp-coop-theme/**/*.html',
     './*/*.html',
     './**/*.html',
-    './resources/css/*.css',
-    './resources/js/*.js',
+    './assets/css/*.css',
+    './assets/js/*.js',
     './safelist.txt'
   ],
   theme: {
