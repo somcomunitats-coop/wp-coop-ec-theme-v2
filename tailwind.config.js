@@ -19,34 +19,16 @@ function get_variable_value(variable){
 
 module.exports = {
   content: [
-    '../wp-coop-theme/*/*.php',
-    '../wp-coop-theme/**/*.php',
-    './*/*.php',
-    './**/*.php',
+    '../wp-coop-theme/*/*.html',
+    '../wp-coop-theme/**/*.html',
+    './*/*.html',
+    './**/*.html',
     './resources/css/*.css',
     './resources/js/*.js',
     './safelist.txt'
   ],
   theme: {
-    container: {
-      padding: {
-        DEFAULT: '1rem',
-        sm: '2rem',
-        lg: '0rem'
-      },
-    },
-    extend: {
-      colors: tailpress.colorMapper(get_variable_value('settings.color.palette')),
-      fontSize: tailpress.fontSizeMapper(get_variable_value('settings.typography.fontSizes'))
-    },
-    screens: {
-      'xs': '480px',
-      'sm': '600px',
-      'md': '782px',
-      'lg': get_variable_value('settings.layout.contentSize'),
-      'xl': get_variable_value('settings.layout.wideSize'),
-      '2xl': '1440px'
-    }
+    extend: {},
   },
   plugins: [
     tailpress.tailwind
