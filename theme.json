@@ -1,6 +1,41 @@
 {
     "version": 2,
-    "settings": {},
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                  "name": "Base",
+                  "slug": "base",
+                  "color": "#fff"
+                },
+                {
+                  "name": "Typography",
+                  "slug": "typography",
+                  "color": "#767676"
+                },
+                {
+                  "name": "Main",
+                  "slug": "main",
+                  "color": "#b1cc34"
+                },
+                {
+                  "name": "Primary",
+                  "slug": "primary",
+                  "color": "#464647"
+                },
+                {
+                  "name": "Secondary",
+                  "slug": "secondary",
+                  "color": "#f4d42c"
+                },
+                {
+                  "name": "Tertiary",
+                  "slug": "tertiary",
+                  "color": "#000000"
+                }
+            ]
+        }
+    },
     "styles": {},
     "customTemplates": {},
     "templateParts": []
