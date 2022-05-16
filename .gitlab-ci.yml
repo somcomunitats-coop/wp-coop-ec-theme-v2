@@ -18,6 +18,8 @@ variables:
 build:
   stage: build
   image: node:latest
+  rules:
+    - if: $CI_COMMIT_TAG
   script: 
        - 'xargs -a git-repos git clone'
        - 'npm install && npm run production'
@@ -28,7 +30,9 @@ build:
       - css/
 package: 
   image: javieraviles/zip:latest
-  stage: package
+  stage: package  
+  rules:
+    - if: $CI_COMMIT_TAG
   script:      
     - 'zip -r $ZIP *'
     - 'ls -lah'
@@ -53,7 +57,7 @@ release:
   script:
     - |
       release-cli create --name "Release $CI_COMMIT_TAG" --tag-name $CI_COMMIT_TAG \
-        --assets-link "{\"name\":\"${ZIP}\",\"url\":\"${PACKAGE_REGISTRY_URL}\/${ZIP}\",\"type\":\"package\",\"filepath\":\"\/themes\/${ZIP}\"}"
+        --assets-link "{\"name\":\"${ZIP}\",\"url\":\"${PACKAGE_REGISTRY_URL}\/${ZIP}\",\"link_type\":\"package\",\"filepath\":\"\/themes\/${ZIP}\"}"
 
         
 workflow:
