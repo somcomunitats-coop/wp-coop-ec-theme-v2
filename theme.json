@@ -3,36 +3,46 @@
     "settings": {
         "color": {
             "palette": [
-                {
-                  "name": "Base",
-                  "slug": "base",
-                  "color": "#fff"
-                },
-                {
-                  "name": "Typography",
-                  "slug": "typography",
-                  "color": "#767676"
-                },
-                {
-                  "name": "Main",
-                  "slug": "main",
-                  "color": "#b1cc34"
-                },
-                {
-                  "name": "Primary",
-                  "slug": "primary",
-                  "color": "#464647"
-                },
-                {
-                  "name": "Secondary",
-                  "slug": "secondary",
-                  "color": "#f4d42c"
-                },
-                {
-                  "name": "Tertiary",
-                  "slug": "tertiary",
-                  "color": "#000000"
-                }
+              {
+                "name": "Base",
+                "slug": "base",
+                "color": "#FFFFFF"
+              },
+              {
+                "name": "Typography",
+                "slug": "typography",
+                "color": "#464647"
+              },
+              {
+                "name": "Brand",
+                "slug": "brand",
+                "color": "#E6EF00"
+              },
+              {
+                "name": "Main",
+                "slug": "main",
+                "color": "#E6EFDF"
+              },
+              {
+                "name": "MainContrast",
+                "slug": "main-contrast",
+                "color": "#464647"
+              },
+              {
+                "name": "Primary",
+                "slug": "primary",
+                "color": "#F4D42C"
+              },
+              {
+                "name": "Secondary",
+                "slug": "secondary",
+                "color": "#FBFBFB"
+              },
+              {
+                "name": "Tertiary",
+                "slug": "tertiary",
+                "color": "#000000"
+              }
             ]
         }
     },
