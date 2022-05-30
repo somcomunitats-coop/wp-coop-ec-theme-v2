@@ -1,6 +1,11 @@
-# WP Coop Theme
+# WP Coop CE Theme
 
-Child theme boilerplate to be used with WP Coop Theme
+CE's child theme to be used with WP Coop Theme
+
+## Downloads
+Visit [releases](../../releases) page or get the [latest](../../releases/permalink/latest/downloads/themes/wp-coop-ce-theme.zip) zip.
+
+> Releases are generated automatically by CI/CD pipeline every semver compatible git tag. In order to trigger the pipeline, tag the commit you want with the [proper next version](https://semver.org/).
 
 ## General
 
