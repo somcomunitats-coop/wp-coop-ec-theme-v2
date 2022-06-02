@@ -92,15 +92,10 @@
     },
     "custom": {
       "fontWeight": {
-        "thin": 100,
-        "extra-light": 200,
         "light": 300,
-        "regular": 400,
-        "medium": 500,
-        "semi-bold": 600,
-        "bold": 700,
-        "extra-bold": 800,
-        "black": 900
+        "regular": 500,
+        "medium": 700,
+        "bold": 800
       },
       "lineHeight": {
         "one": 1,
@@ -131,9 +126,14 @@
       "dropCap": false,
       "fontFamilies": [
         {
-          "fontFamily": "\"Outfit\", sans-serif",
-          "name": "Outfit",
+          "fontFamily": "\"Open Sans\", sans-serif",
+          "name": "Open Sans",
           "slug": "primary"
+        },
+        {
+          "fontFamily": "\"Montserrat\", serif",
+          "name": "Montserrat",
+          "slug": "montserrat"
         },
         {
           "fontFamily": "monospace",
@@ -195,24 +195,24 @@
       "core/button": {
         "border": {
           "color": "var(--wp--preset--color--main)",
-          "radius": "0",
+          "radius": "5px",
           "style": "solid",
           "width": "1px"
         },
         "color": {
-          "background": "var(--wp--preset--color--main)",
-          "text": "var(--wp--preset--color--main-contrast)"
+          "background": "var(--wp--preset--color--brand)",
+          "text": "var(--wp--preset--color--base)"
         },
         "spacing": {
           "padding": {
             "top": "var(--wp--custom--spacing--sxxs)",
-            "right": "var(--wp--custom--spacing--sm)",
+            "right": "var(--wp--custom--spacing--sxl)",
             "bottom": "var(--wp--custom--spacing--sxxs)",
-            "left": "var(--wp--custom--spacing--sm)"
+            "left": "var(--wp--custom--spacing--sxl)"
           }
         },
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--small)",
+          "fontSize": "var(--wp--preset--font-size--x-small)",
           "fontWeight": "var(--wp--custom--font-weight--medium)"
         }
       },
@@ -458,7 +458,6 @@
       }
     },
     "typography": {
-      "fontFamily": "var(--wp--preset--font-family--primary)",
       "fontSize": "var(--wp--preset--font-size--x-small)",
       "fontWeight": "var(--wp--custom--font-weight--regular)",
       "lineHeight": "var(--wp--custom--line-height--body)"
