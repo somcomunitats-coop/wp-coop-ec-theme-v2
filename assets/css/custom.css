@@ -1,5 +1,8 @@
 
-.ff-montserrat{
+.is-style-ff-primary{
+  font-family: var(--wp--preset--font-family--primary);
+}
+.is-style-ff-montserrat{
   font-family: var(--wp--preset--font-family--montserrat);
 }
 
@@ -78,4 +81,52 @@ input[type="submit"]:visited,
 .wp-block-button.is-style-outline-on-main-bg .wp-block-button__link:focus,
 .wp-block-button.is-style-outline-on-main-bg .wp-block-button__link:hover {
     color: var(--wp--preset--color--typography);
+}
+
+
+/* Navigation Responsive
+--------------------------------------------- */
+
+body .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: block !important;
+}
+body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    display: none !important;
+}
+@media (min-width: 880px) {
+    body .wp-block-navigation__responsive-container-open:not(.always-shown) {
+        display: none !important;;
+    }
+    body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+        display: block !important;
+    }
+}
+
+/* Media Queries
+---------------------------------------------------------------------------- */
+@media only screen and (min-width: 1200px) {
+    body > .is-root-container,
+    .edit-post-visual-editor__post-title-wrapper,
+    .wp-block-cover.alignfull,
+    .wp-block-group.alignfull,
+    .wp-block-group.has-background,
+    .wp-site-blocks {
+        padding-left: var(--wp--custom--spacing--sspacer);
+        padding-right: var(--wp--custom--spacing--sspacer);
+    }
+
+    .block-editor-block-list__layout.is-root-container > .alignfull,
+    .is-root-container > .wp-block-cover,
+    .is-root-container > .wp-block-group.has-background,
+    .is-root-container > .wp-block-template-part > .wp-block-cover,
+    .is-root-container > .wp-block-template-part > .wp-block-group.has-background,
+    .wp-site-blocks .alignfull,
+    .wp-site-blocks > .wp-block-cover,
+    .wp-site-blocks > .wp-block-group.has-background,
+    .wp-site-blocks > .wp-block-template-part > .wp-block-cover,
+    .wp-site-blocks > .wp-block-template-part > .wp-block-group.has-background {
+        margin-left: calc(-1 * var(--wp--custom--spacing--sspacer)) !important;
+        margin-right: calc(-1 * var(--wp--custom--spacing--sspacer)) !important;
+        width: unset;
+    }
 }
