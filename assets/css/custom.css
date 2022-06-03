@@ -1,3 +1,81 @@
+
 .ff-montserrat{
   font-family: var(--wp--preset--font-family--montserrat);
+}
+
+/* Button
+--------------------------------------------- */
+
+input[type="button"],
+input[type="submit"],
+.wp-block-post-comments input[type=submit],
+.wp-block-search__button {
+    padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sxl);
+    color: var(--wp--preset--color--base);
+}
+.wp-block-button__link,
+.wp-block-button__link{
+    color: var(--wp--preset--color--base);
+}
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="button"]:visited,
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:visited,
+.wp-block-button__link:focus,
+.wp-block-button__link:hover,
+.wp-block-button__link:visited,
+.wp-block-search__button:focus,
+.wp-block-search__button:hover,
+.wp-block-search__button:visited {
+    background-color: var(--wp--preset--color--primary);
+    border: 1px solid var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--typography);
+}
+
+/* Button - Fill
+--------------------------------------------- */
+
+.wp-block-button.is-style-fill .wp-block-button__link {
+    color: var(--wp--preset--color--base);
+}
+
+.wp-block-button.is-style-fill .wp-block-button__link:focus,
+.wp-block-button.is-style-fill .wp-block-button__link:hover {
+    color: var(--wp--preset--color--typography);
+}
+
+/* Button - Rounded
+--------------------------------------------- */
+
+.wp-block-button.is-style-rounded .wp-block-button__link {
+    color: var(--wp--preset--color--base);
+}
+
+.wp-block-button.is-style-rounded .wp-block-button__link:focus,
+.wp-block-button.is-style-rounded .wp-block-button__link:hover {
+    color: var(--wp--preset--color--typography);
+}
+
+
+/* Button - Outline
+--------------------------------------------- */
+
+.wp-block-button.is-style-outline .wp-block-button__link {
+    border-color: var(--wp--preset--color--brand);
+    color: var(--wp--preset--color--brand);
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:focus,
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+    color: var(--wp--preset--color--typography);
+}
+
+/* Button - Outline On Main Bg
+--------------------------------------------- */
+
+.wp-block-button.is-style-outline-on-main-bg .wp-block-button__link:focus,
+.wp-block-button.is-style-outline-on-main-bg .wp-block-button__link:hover {
+    color: var(--wp--preset--color--typography);
 }

@@ -3,50 +3,7 @@
   "templateParts": [],
   "customTemplates": [],
   "settings": {
-    "spacing": {
-      "padding": true
-    },
-    "appearanceTools": true,
     "color": {
-      "custom": true,
-      "customDuotone": true,
-      "customGradient": true,
-      "defaultGradients": false,
-      "defaultPalette": false,
-      "duotone": [
-        {
-          "name": "Black and Primary",
-          "slug": "black-and-primary",
-          "colors": [ "#000", "#990099" ]
-        },
-        {
-          "name": "Black and Secondary",
-          "slug": "black-and-secondary",
-          "colors": [ "#000", "#0099ff" ]
-        },
-        {
-          "name": "Black and Tertiary",
-          "slug": "black-and-tertiary",
-          "colors": [ "#000", "#00cccc" ]
-        }
-      ],
-      "gradients": [
-        {
-          "name": "Black to Primary",
-          "slug": "black-primary",
-          "gradient": "linear-gradient(135deg,rgba(0,0,0,1) 50%,var(--wp--preset--color--primary) 100%)"
-        },
-        {
-          "name": "Black to Secondary",
-          "slug": "black-secondary",
-          "gradient": "linear-gradient(135deg,rgba(0,0,0,1) 50%,var(--wp--preset--color--secondary) 100%)"
-        },
-        {
-          "name": "Black to Tertiary",
-          "slug": "black-tertiary",
-          "gradient": "linear-gradient(135deg,rgba(0,0,0,1) 50%,var(--wp--preset--color--tertiary) 100%)"
-        }
-      ],
       "palette": [
         {
           "name": "Base",
@@ -64,6 +21,11 @@
           "color": "#E6EF00"
         },
         {
+          "name": "Brand",
+          "slug": "brand",
+          "color": "#B1CC34"
+        },
+        {
           "name": "Main",
           "slug": "main",
           "color": "#E6EFDF"
@@ -76,17 +38,17 @@
         {
           "name": "Primary",
           "slug": "primary",
-          "color": "#FFFFFF"
+          "color": "#F4D42C"
         },
         {
           "name": "Secondary",
           "slug": "secondary",
-          "color": "#FBFBFB"
+          "color": "#FFFFFF"
         },
         {
           "name": "Tertiary",
           "slug": "tertiary",
-          "color": "#000000"
+          "color": "#FBFBFB"
         }
       ]
     },
@@ -194,7 +156,7 @@
     "blocks": {
       "core/button": {
         "border": {
-          "color": "var(--wp--preset--color--main)",
+          "color": "var(--wp--preset--color--brand)",
           "radius": "5px",
           "style": "solid",
           "width": "1px"
