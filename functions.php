@@ -11,3 +11,29 @@ function wp_coop_theme_child_enqueue_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'wp_coop_theme_child_enqueue_scripts',11 );
+
+
+/**
+ * Enqueue fonts.
+ */
+function wpct_child_enqueue_fonts() {
+  wp_enqueue_style( 'wpct-fonts', wpct_child_fonts_url(), array(), null );
+}
+add_action( 'wp_enqueue_scripts', 'wpct_child_enqueue_fonts' );
+
+// Define fonts.
+function wpct_child_fonts_url() {
+  // Allow child themes to disable to the default Coop Theme fonts.
+  $dequeue_fonts = apply_filters( 'wpct_dequeue_fonts', false );
+  if ( $dequeue_fonts ) {
+    return '';
+  }
+  $fonts = array(
+    'family=Open+Sans:wght@100;200;300;400;500;600;700;800;900',
+    'family=Montserrat:wght@100;200;300;400;500;600;700;800;900'
+  );
+
+  // Make a single request for all Google Fonts.
+  return esc_url_raw( 'https://fonts.googleapis.com/css2?' . implode( '&', array_unique( $fonts ) ) . '&display=swap' );
+
+}
