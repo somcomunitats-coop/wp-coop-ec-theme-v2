@@ -1,5 +1,12 @@
 <?php
 /**
+ * Theme setup.
+ */
+function wpct_child_setup() {
+  add_editor_style( 'css/app.css' );
+}
+add_action( 'after_setup_theme', 'wpct_child_setup' );
+/**
  * Enqueue Child theme assets.
  */
 function wp_coop_theme_child_enqueue_scripts() {
