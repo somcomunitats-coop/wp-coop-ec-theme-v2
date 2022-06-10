@@ -1,5 +1,12 @@
 <?php
 /**
+ * Theme setup.
+ */
+function wpct_child_setup() {
+  add_editor_style( 'css/app.css' );
+}
+add_action( 'after_setup_theme', 'wpct_child_setup' );
+/**
  * Enqueue Child theme assets.
  */
 function wp_coop_theme_child_enqueue_scripts() {
@@ -20,6 +27,7 @@ function wpct_child_enqueue_fonts() {
   wp_enqueue_style( 'wpct-fonts', wpct_child_fonts_url(), array(), null );
 }
 add_action( 'wp_enqueue_scripts', 'wpct_child_enqueue_fonts' );
+add_action( 'enqueue_block_editor_assets', 'wpct_child_enqueue_fonts' );
 
 // Define fonts.
 function wpct_child_fonts_url() {
