@@ -3,6 +3,7 @@
  * Theme setup.
  */
 function wpct_child_setup() {
+  // remove_theme_support( 'align-wide' );
   add_editor_style( 'css/app.css' );
 }
 add_action( 'after_setup_theme', 'wpct_child_setup' );
@@ -45,3 +46,29 @@ function wpct_child_fonts_url() {
   return esc_url_raw( 'https://fonts.googleapis.com/css2?' . implode( '&', array_unique( $fonts ) ) . '&display=swap' );
 
 }
+
+/**
+ * Register block styles.
+ *
+ */
+function wpct_child_register_block_styles() {
+
+  $block_styles = array(
+    'core/columns'           => array(
+      'in-container' => __( 'In Container', 'wpct' ),
+    )
+  );
+
+  foreach ( $block_styles as $block => $styles ) {
+    foreach ( $styles as $style_name => $style_label ) {
+      register_block_style(
+        $block,
+        array(
+          'name'  => $style_name,
+          'label' => $style_label,
+        )
+      );
+    }
+  }
+}
+add_action( 'init', 'wpct_child_register_block_styles' );
