@@ -44,7 +44,13 @@
           "name": "Tertiary",
           "slug": "tertiary",
           "color": "#FBFBFB"
+        },
+        {
+          "name": "SecondBase",
+          "slug": "second-base",
+          "color": "#4EE25b1"
         }
+
       ]
     },
     "custom": {
