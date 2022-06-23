@@ -125,9 +125,9 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
 .is-style-ff-montserrat{
   font-family: var(--wp--preset--font-family--montserrat);
 }
+
+
 /* (cover) */
-
-
 /* mobile */
 @media(max-width: 782px) {
     .wp-block-cover {
@@ -178,4 +178,38 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
         max-width: 500px;
         margin: 0 auto;
     }
+}
+
+/* Utils
+--------------------------------------------- */
+/* (shapes) */
+.wpct-shape[data-negative="false"].wpct-shape-bottom, .wpct-shape[data-negative="true"].wpct-shape-top {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.wpct-shape-bottom {
+  margin-bottom: -1px;
+}
+.wpct-shape {
+  overflow: hidden;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+}
+.wpct-shape-bottom:not([data-negative="true"]) svg {
+  z-index: -1;
+}
+.wpct-shape svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.wpct-shape-fill-main {
+  fill: var(--wp--preset--color--main);
 }
