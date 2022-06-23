@@ -1,6 +1,28 @@
+/* Variables
+--------------------------------------------- */
+:root {
+    --wp--preset--layout--size-content: 1500px;
+}
+
+/* Site Title
+--------------------------------------------- */
+.wp-block-site-title{
+    max-width: 200px;
+}
+
+.wp-block-site-title a{
+    color: var(--wp--preset--color--typography) !important;
+}
+@media only screen and (min-width: 782px) {
+    .wp-block-site-title{
+        max-width: none;
+        font-size: var(--wp--preset--font-size--x-large);
+    }
+}
+
+
 /* Button
 --------------------------------------------- */
-
 input[type="button"],
 input[type="submit"],
 .wp-block-post-comments input[type=submit],
@@ -85,7 +107,7 @@ body .wp-block-navigation__responsive-container-open:not(.always-shown) {
 body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
     display: none !important;
 }
-@media (min-width: 880px) {
+@media (min-width: 958px) {
     body .wp-block-navigation__responsive-container-open:not(.always-shown) {
         display: none !important;;
     }
@@ -103,10 +125,57 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
 .is-style-ff-montserrat{
   font-family: var(--wp--preset--font-family--montserrat);
 }
+/* (cover) */
 
+
+/* mobile */
+@media(max-width: 782px) {
+    .wp-block-cover {
+        min-height: 380px !important;
+    }
+    .is-style-image-right .wp-block-cover__inner-container{
+        margin-top: 350px;
+    }
+    .is-style-image-right .wp-block-cover__image-background{
+        max-height: 380px;
+    }
+}
+/* desktop */
+@media(min-width: 782px) {
+    .is-style-image-right .wp-block-cover__image-background{
+        max-height: 500px;
+    }
+    .is-style-image-right .wp-block-cover__inner-container{
+        margin-top: 380px;
+    }
+}
+@media(min-width: 1200px) {
+    .is-style-image-right .wp-block-cover__image-background{
+        max-height: none;
+    }
+    .is-style-image-right .wp-block-cover__inner-container{
+        margin-top: 0;
+    }
+}
+
+/* Columns
+--------------------------------------------- */
 /* (column) */
 .is-style-in-container{
     max-width: 1500px;
+    max-width: none;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+@media (min-width: 1500px) {
+    .is-style-in-container{
+        max-width: var(--wp--preset--layout--size-content) !important;
+    }
+}
+/* mobile */
+@media(max-width: 782px) {
+    .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column{
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
