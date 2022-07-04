@@ -1,4 +1,6 @@
 <?php
+require_once "includes/model-ce-community.php";
+
 /**
  * Theme setup.
  */
