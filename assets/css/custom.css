@@ -162,46 +162,6 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
 .is-style-ff-montserrat{
   font-family: var(--wp--preset--font-family--montserrat);
 }
-
-
-/* (cover) */
-/* mobile */
-/*.is-style-image-right .wp-block-cover__image-background,
-.is-style-image-left .wp-block-cover__image-background{
-    height: auto !important;
-}*/
-@media(max-width: 782px) {
-    .wp-block-cover {
-        min-height: 380px !important;
-    }
-    .is-style-image-right .wp-block-cover__inner-container{
-        margin-top: 350px;
-    }
-    .is-style-image-left .wp-block-cover__image-background,
-    .is-style-image-right .wp-block-cover__image-background{
-        max-height: 380px;
-    }
-}
-/* desktop */
-@media(min-width: 782px) {
-    .is-style-image-right .wp-block-cover__inner-container{
-        margin-top: 380px;
-    }
-    .is-style-image-left .wp-block-cover__image-background,
-    .is-style-image-right .wp-block-cover__image-background{
-        max-height: 500px;
-    }
-}
-@media(min-width: 1200px) {
-    .is-style-image-right .wp-block-cover__inner-container{
-        margin-top: 0;
-    }
-    .is-style-image-left .wp-block-cover__image-background,
-    .is-style-image-right .wp-block-cover__image-background{
-        max-height: none;
-    }
-}
-
 /* Columns
 --------------------------------------------- */
 /* (column) */
