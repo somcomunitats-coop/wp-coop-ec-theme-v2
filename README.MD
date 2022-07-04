@@ -7,6 +7,11 @@ Visit [releases](../../releases) page or get the [latest](../../releases/permali
 
 > Releases are generated automatically by CI/CD pipeline every semver compatible git tag. In order to trigger the pipeline, tag the commit you want with the [proper next version](https://semver.org/).
 
+## Downloads
+Visit [releases](../../releases) page or get the [latest](../../releases/permalink/latest/downloads/themes/wp-coop-theme-child.zip) zip.
+
+> Releases are generated automatically by CI/CD pipeline every semver compatible git tag. In order to trigger the pipeline, [tag](../../tags/new) the commit you want to release from with the [proper next version](https://semver.org/).
+
 ## General
 
 Please visit [WP Coop Theme](https://gitlab.com/coopdevs/wp-coop-theme) for more detailed documentation
