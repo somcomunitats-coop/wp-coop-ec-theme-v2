@@ -176,10 +176,14 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
     }
 }
 /* mobile */
-@media(max-width: 782px) {
+.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column{
+    max-width: 500px;
+    margin: 0 auto;
+}
+@media(min-width: 782px) {
     .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column{
-        max-width: 500px;
-        margin: 0 auto;
+        max-width: none;
+        margin: 0;
     }
 }
 
