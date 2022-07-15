@@ -74,10 +74,10 @@
 <div class="wp-block-group">
 
 <?php if($current_lang == 'ca'): ?>
-<!-- wp:navigation { "ref":632, "layout":{"type":"flex","orientation":"horizontal"},"style":{"spacing":{"blockGap":"var(--wp--custom--spacing--sxs)"}}} /-->
+<!-- wp:navigation { "ref":521, "layout":{"type":"flex","orientation":"horizontal"},"style":{"spacing":{"blockGap":"var(--wp--custom--spacing--sxs)"}}} /-->
 <?php endif; ?>
 <?php if($current_lang == 'es'): ?>
-<!-- wp:navigation { "ref":634, "layout":{"type":"flex","orientation":"horizontal"},"style":{"spacing":{"blockGap":"var(--wp--custom--spacing--sxs)"}}} /-->
+<!-- wp:navigation { "ref":524, "layout":{"type":"flex","orientation":"horizontal"},"style":{"spacing":{"blockGap":"var(--wp--custom--spacing--sxs)"}}} /-->
 <?php endif; ?>
 
 <!-- wp:buttons -->

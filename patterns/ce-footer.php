@@ -32,7 +32,7 @@
 <h6 class="has-text-align-left has-base-color has-text-color has-small-font-size">Enllaços d'interés</h6>
 <!-- /wp:heading -->
 
-<!-- wp:navigation {"ref":646,"textColor":"base","overlayMenu":"never","layout":{"type":"flex","justifyContent":"left"},"style":{"typography":{"textTransform":"capitalize","fontStyle":"normal","fontWeight":"500","lineHeight":"1.7"}},"fontSize":"x-small"} /--></div>
+<!-- wp:navigation {"ref":529,"textColor":"base","overlayMenu":"never","layout":{"type":"flex","justifyContent":"left"},"style":{"typography":{"textTransform":"capitalize","fontStyle":"normal","fontWeight":"500","lineHeight":"1.7"}},"fontSize":"x-small"} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-default"} -->
@@ -40,7 +40,7 @@
 <h6 class="has-base-color has-text-color has-small-font-size">Idiomes</h6>
 <!-- /wp:heading -->
 
-<!-- wp:navigation {"ref":658,"textColor":"base","overlayMenu":"never","layout":{"type":"flex","justifyContent":"left"},"style":{"typography":{"textTransform":"capitalize","fontStyle":"normal","fontWeight":"500","lineHeight":"1.7"}},"fontSize":"x-small"} /--></div>
+<!-- wp:navigation {"ref":532,"textColor":"base","overlayMenu":"never","layout":{"type":"flex","justifyContent":"left"},"style":{"typography":{"textTransform":"capitalize","fontStyle":"normal","fontWeight":"500","lineHeight":"1.7"}},"fontSize":"x-small"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
@@ -139,6 +139,6 @@
 <p class="has-xx-small-font-size">© <?php echo gmdate( 'Y' ); ?> somcomunitats.coop</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:navigation {"ref":700,"textColor":"base","overlayMenu":"never","style":{"typography":{"fontStyle":"normal","fontWeight":"500","textTransform":"capitalize"}},"fontSize":"xx-small"} /--></div>
+<!-- wp:navigation {"ref":535,"textColor":"base","overlayMenu":"never","style":{"typography":{"fontStyle":"normal","fontWeight":"500","textTransform":"capitalize"}},"fontSize":"xx-small"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
