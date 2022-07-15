@@ -18,7 +18,7 @@
 <h5 class="has-base-color has-text-color">Vols rebre tota la informació de somcomunitats.coop?</h5>
 <!-- /wp:heading -->
 
-<!-- wp:gravityforms/form {"formId":"3","title":false,"description":false,"ajax":true} /--></div>
+<!-- wp:gravityforms/form {"formId":"2","title":false,"description":false,"ajax":true} /--></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-default"} -->
@@ -110,8 +110,8 @@
 <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:image {"id":683,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="http://localhost/wp-coop-theme/wp-content/uploads/2022/07/logos-fot-1.png" alt="" class="wp-image-683"/></figure>
+<!-- wp:image {"id":554,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://web-test.somcomunitats.coop/wp-content/uploads/2022/07/logos-fot-1.png" alt="" class="wp-image-554"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 

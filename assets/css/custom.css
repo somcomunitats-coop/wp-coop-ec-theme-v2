@@ -234,6 +234,9 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
 figure{
     margin: 0;
 }
+footer a{
+    color: var(--wp--preset--color--base) !important;
+}
 footer .is-style-in-container{
     max-width: 500px !important;
     margin: 0 auto;
