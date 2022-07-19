@@ -3,7 +3,7 @@
 :root {
     --wp--preset--layout--size-content: 1500px;
 }
-/* Site Title
+/* Header
 --------------------------------------------- */
 .ce-header{
     -webkit-box-shadow: 0 5px 10px rgb(0 0 0 / 0.1);
@@ -119,7 +119,7 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
     padding: var(--wp--custom--spacing--sminimal) var(--wp--custom--spacing--sm);
 }
 
-@media (min-width: 1068px) {
+@media (min-width: 782px) {
     body .wp-block-navigation__responsive-container-open:not(.always-shown) {
         display: none !important;;
     }
@@ -150,7 +150,7 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
     align-items: center;
     height: 100%;
 }
-@media only screen and (max-width: 1067px) {
+@media only screen and (max-width: 781px) {
     header .wp-block-navigation .wp-block-navigation-item{
         padding: var(--wp--custom--spacing--sm) 0;
         color: var(--e-global-color-secondary);
