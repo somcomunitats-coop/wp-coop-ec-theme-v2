@@ -16,39 +16,39 @@
           "color": "#464647"
         },
         {
+          "name": "TypographyLight",
+          "slug": "typography-light",
+          "color": "#757575"
+        },
+        {
           "name": "Brand",
           "slug": "brand",
-          "color": "#8EAE29"
+          "color": "#B1CC34"
         },
         {
           "name": "Main",
           "slug": "main",
-          "color": "#E6EFDF"
-        },
-        {
-          "name": "MainContrast",
-          "slug": "main-contrast",
-          "color": "#757575"
+          "color": "#8EAE29"
         },
         {
           "name": "Primary",
           "slug": "primary",
-          "color": "#F4D42C"
+          "color": "#E6EFDF"
         },
         {
           "name": "Secondary",
           "slug": "secondary",
-          "color": "#757575"
+          "color": "#F4D42C"
         },
         {
           "name": "Tertiary",
           "slug": "tertiary",
-          "color": "#FBFBFB"
+          "color": "#F5F5F5"
         },
         {
           "name": "SecondBase",
           "slug": "second-base",
-          "color": "#4EE25b1"
+          "color": "#FBFBFB"
         }
 
       ]
@@ -167,10 +167,7 @@
     "blocks": {
       "core/button": {
         "border": {
-          "color": "var(--wp--preset--color--brand)",
-          "radius": "5px",
-          "style": "solid",
-          "width": "1px"
+          "radius": "5px"
         },
         "color": {
           "background": "var(--wp--preset--color--brand)",
@@ -200,7 +197,7 @@
         },
         "color": {
           "background": "var(--wp--preset--color--main)",
-          "text": "var(--wp--preset--color--main-contrast)"
+          "text": "var(--wp--preset--color--typography-light)"
         },
         "spacing": {
           "padding": {
@@ -262,8 +259,11 @@
         "spacing": {
           "margin": {
             "top": "0px",
-            "bottom": "var(--wp--custom--spacing--sxxs)"
+            "bottom": "var(--wp--custom--spacing--sm)"
           }
+        },
+        "color": {
+          "text": "var(--wp--preset--color--typography-light)"
         }
       },
       "core/post-title": {
@@ -278,7 +278,7 @@
         },
         "color": {
           "background": "var(--wp--preset--color--main)",
-          "text": "var(--wp--preset--color--main-contrast)"
+          "text": "var(--wp--preset--color--typography-light)"
         },
         "spacing": {
           "padding": {
