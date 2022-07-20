@@ -25,7 +25,7 @@
     <?php if($current_lang == 'es'): ?>
         <a style="color:#FFF;" href="#accedeix-es"><?php echo esc_html__( 'Accede', 'wpct-ce' ); ?></a>
     <?php endif; ?>
-        </p>
+</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:spacer {"height":"20px"} -->
@@ -76,24 +76,11 @@
 <?php if($current_lang == 'es'): ?>
 <!-- wp:navigation { "ref":524, "layout":{"type":"flex","orientation":"horizontal"},"style":{"spacing":{"blockGap":"var(--wp--custom--spacing--sxs)"}}} /-->
 <?php endif; ?>
-
-<!-- wp:group {"className":"is-style-show-desktop"} -->
-<div class="wp-block-group is-style-show-desktop"><!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded"} -->
-<div class="wp-block-button is-style-rounded"><a class="wp-block-button__link wp-element-button" href="<?php if($current_lang == 'ca'): echo '#cercar-ca'; endif;if($current_lang == 'es'): echo '#cercar-es'; endif; ?>"><i class="fa-solid fa-magnifying-glass"></i><?php 
-        if($current_lang == 'ca'):
-            echo esc_html__( 'Cerca Comunitats', 'wpct-ce' );
-        endif;
-        if($current_lang == 'es'):
-            echo esc_html__( 'Busca Comunidades', 'wpct-ce' );
-        endif;
-    ?>
-    </a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
 <!-- /wp:group -->
 
 <!-- wp:spacer {"height":"5px"} -->

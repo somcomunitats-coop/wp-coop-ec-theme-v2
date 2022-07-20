@@ -59,6 +59,8 @@ function wpct_child_register_block_styles() {
   $block_styles = array(
     'core/columns'           => array(
       'in-container' => __( 'In Container', 'wpct' ),
+      'no-padding' => __( 'No Padding', 'wpct' ),
+      'no-gap' => __( 'No Gap', 'wpct' ),
     )
   );
 
