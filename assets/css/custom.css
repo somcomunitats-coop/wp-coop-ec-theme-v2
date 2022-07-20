@@ -114,6 +114,9 @@ input[type="submit"]:visited,
 
 /* Navigation Responsive
 --------------------------------------------- */
+.wp-block-navigation__responsive-container-close, .wp-block-navigation__responsive-container-open{
+    border-color: var(--wp--preset--color--typography-light);
+}
 
 body .wp-block-navigation__responsive-container-open:not(.always-shown) {
     display: block !important;
