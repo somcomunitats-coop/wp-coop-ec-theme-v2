@@ -56,7 +56,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:list {"style":{"typography":{"lineHeight":"1.2","fontStyle":"normal","fontWeight":"600","textTransform":"uppercase"}},"textColor":"base","className":"is-style-no-disc","fontSize":"xx-small"} -->
-<ul class="is-style-no-disc has-base-color has-text-color has-xx-small-font-size" style="font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase"><li class="lang-item lang-item-9 lang-item-es no-translation lang-item-first"><a hreflang="es-ES" href="https://web-test.somcomunitats.coop/es/home-es/" lang="es-ES">Cas</a></li></ul>
+<ul class="is-style-no-disc has-base-color has-text-color has-xx-small-font-size" style="font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase"><?php pll_the_languages(array("hide_current" => 1)); ?></ul>
 <!-- /wp:list --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

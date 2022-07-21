@@ -26,8 +26,8 @@
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:columns {"className":"is-style-no-gap"} -->
-<div class="wp-block-columns is-style-no-gap"><!-- wp:column {"verticalAlignment":"top","width":"50%","className":"is-style-padded-left"} -->
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"verticalAlignment":"top","width":"50%","className":"is-style-padded-left"} -->
 <div class="wp-block-column is-vertically-aligned-top is-style-padded-left" style="flex-basis:50%"><!-- wp:heading {"textAlign":"left","level":5,"textColor":"base"} -->
 <h5 class="has-text-align-left has-base-color has-text-color">Enllaços d'interés</h5>
 <!-- /wp:heading -->

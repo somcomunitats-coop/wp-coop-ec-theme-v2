@@ -247,9 +247,6 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
 
 /* Footer
 --------------------------------------------- */
-figure{
-    margin: 0;
-}
 footer a{
     color: var(--wp--preset--color--base) !important;
 }
@@ -296,6 +293,9 @@ footer .gform_button{
 
 /* Utils
 --------------------------------------------- */
+figure{
+    margin: 0 !important;
+}
 /* (shapes) */
 .wpct-shape[data-negative="false"].wpct-shape-bottom, .wpct-shape[data-negative="true"].wpct-shape-top {
   -webkit-transform: rotate(180deg);
@@ -326,6 +326,9 @@ footer .gform_button{
 
 .wpct-shape-fill-main {
   fill: var(--wp--preset--color--main);
+}
+.wpct-shape-fill-primary {
+  fill: var(--wp--preset--color--primary);
 }
 .wpct-shape-fill-tertiary {
   fill: var(--wp--preset--color--tertiary);
