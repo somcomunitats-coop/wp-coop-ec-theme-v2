@@ -7,10 +7,10 @@
  */
 
 ?>
-<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"spacing":{"padding":{"top":"var(--wp--custom--spacing--sxxs)","bottom":"var(--wp--custom--spacing--sxxs)"},"margin":{"top":"0px"}}},"backgroundColor":"brand"} -->
-<div class="wp-block-group alignfull has-brand-background-color has-background" style="margin-top:0px;padding-top:var(--wp--custom--spacing--sxxs);padding-bottom:var(--wp--custom--spacing--sxxs)"><!-- wp:group {"layout":{"type":"flex","justifyContent":"right"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600","lineHeight":"1.2"}},"fontSize":"xx-small"} -->
-<p class="has-xx-small-font-size" style="font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase">
+<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"spacing":{"padding":{"top":"var(--wp--custom--spacing--sxxs)","bottom":"var(--wp--custom--spacing--sxxs)"},"margin":{"top":"0px"}}},"backgroundColor":"brand","className":"upper-main-nav"} -->
+<div class="wp-block-group alignfull upper-main-nav has-brand-background-color has-background" style="margin-top:0px;padding-top:var(--wp--custom--spacing--sxxs);padding-bottom:var(--wp--custom--spacing--sxxs)"><!-- wp:group {"layout":{"type":"flex","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600","lineHeight":"1.2"}}} -->
+<p style="font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase">
     <i style="padding-right:4px; color: #FFF;" class="fa-solid fa-circle-user"></i>
     <a style="color:#FFF;" href="#accedeix-ca">Accedeix</a>
 </p>
@@ -20,8 +20,8 @@
 <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600","lineHeight":"1.2"}},"fontSize":"xx-small"} -->
-<p class="has-xx-small-font-size" style="font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase">
+<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600","lineHeight":"1.2"}}} -->
+<p style="font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase">
     <i style="padding-right:4px; color: #FFF;" class="fa-solid fa-bolt"></i>
     <a style="color:#FFF;" href="#alta-ca">Alta CE</a>
 </p>
@@ -31,8 +31,8 @@
 <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600","lineHeight":"1.2"}},"textColor":"base","fontSize":"xx-small"} -->
-<p class="has-base-color has-text-color has-xx-small-font-size" style="font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase">
+<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600","lineHeight":"1.2"}},"textColor":"base"} -->
+<p class="has-base-color has-text-color" style="font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase">
     <i style="padding-right: 0; color: #FFF;" class="fa-solid fa-globe"></i>
     
 </p>
