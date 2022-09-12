@@ -3,6 +3,14 @@
 :root {
     --wp--preset--layout--size-content: 1500px;
 }
+/* General
+--------------------------------------------- */
+.is-style-horizontal-padded {
+  padding-left: var(--wp--custom--spacing--sm);
+  padding-right: var(--wp--custom--spacing--sm);
+}
+
+
 /* Header
 --------------------------------------------- */
 .ce-header{
@@ -125,9 +133,9 @@ body .wp-block-navigation__responsive-container-open:not(.always-shown) {
 body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
     display: none !important;
 }
-.wp-block-navigation .wp-block-navigation-item:last-child{
+/*.wp-block-navigation .wp-block-navigation-item:last-child{
     padding: var(--wp--custom--spacing--sminimal) 0 var(--wp--custom--spacing--sminimal) var(--wp--custom--spacing--sm);
-}
+}*/
 
 @media (min-width: 951px) {
     body .wp-block-navigation__responsive-container-open:not(.always-shown) {
@@ -161,12 +169,13 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
     height: 100%;
 }
 @media only screen and (max-width: 950px) {
-    header .wp-block-navigation .wp-block-navigation-item{
+    header .wp-block-navigation .wp-block-navigation-item,
+    header .wp-block-navigation .wp-block-navigation-item:last-child{
         padding: var(--wp--custom--spacing--sm) 0;
         color: var(--e-global-color-secondary);
         font-family: "Montserrat",Sans-serif;
         font-size: var(--wp--preset--font-size--x-large-sxs);
-        font-weight: 800;
+        font-weight: var(--wp--custom--font-weight--bold);
         text-transform: uppercase;
         letter-spacing: .5px;
     }
@@ -176,20 +185,21 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
 .upper-menu-p a{color: var(--wp--preset--color--base);}
 /* Language
 --------------------------------------------- */
-.lang-item{
-    display: inline-block;
-    padding-left: 5px;
-    padding-bottom: 0;
-}
-.lang-item-first{
+.wpml-ls{
     padding-left: 0;
 }
-
-.lang-item a{
-    color: var(--wp--preset--color--base) !important;
+.wpml-ls-link{
+    color: var(--wp--preset--color--base);
 }
-.lang-item.current-lang a{
-    color:  var(--wp--preset--color--typography) !important;
+.wpml-ls-first-item a{
+    padding: 0 10px 0 0;
+    border-right:  1px solid var(--wp--preset--color--base);
+}
+.wpml-ls-last-item a{
+    padding: 0 0 0 10px;
+}
+.wpml-ls-current-language a{
+    font-weight: var(--wp--custom--font-weight--bold);
 }
 
 /* Styles
@@ -224,6 +234,9 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
 .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column{
     max-width: 500px;
     margin: 0 auto;
+    /*TODO: this for specific blocks*/
+    padding: 0 5px 10px;
+    /*padding: 0 10px 35px;*/
 }
 @media(min-width: 782px) {
     .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column{
@@ -259,29 +272,24 @@ footer .is-style-in-container{
         max-width: 1500px !important;
     }
 }
-/* (navigation) */
-.is-style-footer-nav-group{
-    max-width: 475px !important;
+/* (navigation) (upper) */
+.is-style-footer-nav-group .wpml-ls{
+    padding: 0;
 }
-footer .wp-block-navigation .wp-block-navigation-item{
-    padding: var(--wp--custom--spacing--sminimal) 0;
-    width: 100%;
+.is-style-footer-nav-group .wp-block-navigation-item{
+    width:  100%;
+    padding: 0 0 20px;
+    text-transform: none;
 }
-footer .wp-block-navigation .wp-block-navigation-item:last-child{
-    padding: var(--wp--custom--spacing--sminimal) 0;
+.is-style-footer-nav-group .wp-block-navigation-item a{
+    font-weight: var(--wp--custom--font-weight--regular);
 }
-
-/*footer .wp-block-navigation .wp-block-navigation-item a{
-    margin:  0 auto;
-}*/
-
-.ce-footer-lower .wp-block-navigation .wp-block-navigation-item{
-    display: inline-block;
-    width: auto;
-    padding-left: var(--wp--custom--spacing--sm);
+/* (navigation) (lower) */
+.ce-footer-lower .wp-block-navigation-item{
+    text-transform: none;
 }
-.ce-footer-lower .wp-block-navigation .wp-block-navigation-item:last-child{
-    padding-left: var(--wp--custom--spacing--sm);
+.ce-footer-lower .wp-block-navigation-item a{
+    font-weight: var(--wp--custom--font-weight--regular);
 }
 /* (form) */
 footer .gform_button{
@@ -295,6 +303,9 @@ footer .gform_button{
 --------------------------------------------- */
 figure{
     margin: 0 !important;
+}
+.svg-inline--fa{
+    padding-right: 8px;
 }
 /* (shapes) */
 .wpct-shape[data-negative="false"].wpct-shape-bottom, .wpct-shape[data-negative="true"].wpct-shape-top {

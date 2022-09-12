@@ -6,6 +6,7 @@ require_once "includes/model-ce-community.php";
  */
 function wpct_child_setup() {
   add_editor_style( 'css/app.css' );
+  add_theme_support( 'menus' );
 }
 add_action( 'after_setup_theme', 'wpct_child_setup' );
 /**
