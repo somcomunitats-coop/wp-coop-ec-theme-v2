@@ -61,9 +61,13 @@ function wpct_child_register_block_styles() {
     'core/columns'           => array(
       'in-container' => __( 'In Container', 'wpct' ),
       'no-padding' => __( 'No Padding', 'wpct' ),
-      'no-gap' => __( 'No Gap', 'wpct' ),
+      'no-gap' => __( 'No Gap', 'wpct' )
+    ),
+    'core/button' => array(
+      'button-minimal' => __( 'Minimal', 'wpct' )
     )
   );
+
 
   foreach ( $block_styles as $block => $styles ) {
     foreach ( $styles as $style_name => $style_label ) {
