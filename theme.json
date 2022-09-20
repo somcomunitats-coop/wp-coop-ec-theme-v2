@@ -143,22 +143,22 @@
         {
           "name": "xLarge-sxs",
           "slug": "x-large-sxs",
-          "size": "clamp(32px, 3vw, 55px)"
+          "size": "clamp(28px, 3vw, 55px)"
         },
         {
           "name": "xLarge-sm",
           "slug": "x-large-sm",
-          "size": "clamp(32px, 4vw, 65px)"
+          "size": "clamp(30px, 4vw, 65px)"
         },
         {
           "name": "xLarge-sl",
           "slug": "x-large-sl",
-          "size": "clamp(36px, 5vw, 70px)"
+          "size": "clamp(35px, 5vw, 70px)"
         },
         {
           "name": "xLarge-sxl",
           "slug": "x-large-sxl",
-          "size": "clamp(48px, 6vw, 72px)"
+          "size": "clamp(40px, 6vw, 72px)"
         }
       ]
     }
@@ -215,6 +215,8 @@
       "core/columns": {
         "spacing": {
           "margin": {
+            "right": "20px",
+            "left": "10px",
             "bottom": "0px"
           }
         }
