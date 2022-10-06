@@ -6,7 +6,7 @@ require_once "includes/model-ce-community.php";
  */
 function wpct_child_setup() {
   add_editor_style( 'css/app.css' );
-  add_theme_support( 'menus' );
+  // add_theme_support( 'menus' );
 }
 add_action( 'after_setup_theme', 'wpct_child_setup' );
 /**
@@ -64,7 +64,8 @@ function wpct_child_register_block_styles() {
       'no-gap' => __( 'No Gap', 'wpct' )
     ),
     'core/button' => array(
-      'button-minimal' => __( 'Minimal', 'wpct' )
+      'button-minimal' => __( 'Minimal', 'wpct' ),
+      'button-minimal-back' => __( 'Back Minimal', 'wpct' ),
     )
   );
 
@@ -75,7 +76,7 @@ function wpct_child_register_block_styles() {
         $block,
         array(
           'name'  => $style_name,
-          'label' => $style_label,
+          'label' => $style_label
         )
       );
     }

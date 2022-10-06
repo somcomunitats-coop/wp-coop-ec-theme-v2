@@ -7,36 +7,25 @@
  */
 
 ?>
-<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"spacing":{"padding":{"top":"var(--wp--custom--spacing--sxxs)","bottom":"var(--wp--custom--spacing--sxxs)"},"margin":{"top":"0px"}}},"backgroundColor":"brand","className":"upper-main-nav"} -->
-<div class="wp-block-group alignfull upper-main-nav has-brand-background-color has-background" style="margin-top:0px;padding-top:var(--wp--custom--spacing--sxxs);padding-bottom:var(--wp--custom--spacing--sxxs)"><!-- wp:group {"layout":{"type":"flex","justifyContent":"right"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600","lineHeight":"1.2"}}} -->
-<p style="font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase">
-    <i style="padding-right:4px; color: #FFF;" class="fa-solid fa-circle-user"></i>
-    <a style="color:#FFF;" href="#accedeix-ca">Accedeix</a>
-</p>
-<!-- /wp:paragraph -->
+<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"spacing":{"padding":{"top":"var(--wp--custom--spacing--sxxs)","bottom":"var(--wp--custom--spacing--sxxs)"},"margin":{"top":"0px"}}},"backgroundColor":"brand","className":"upper-main-nav is-style-show-mobile"} -->
+<div class="wp-block-group alignfull upper-main-nav is-style-show-mobile has-brand-background-color has-background" style="margin-top:0px;padding-top:var(--wp--custom--spacing--sxxs);padding-bottom:var(--wp--custom--spacing--sxxs)"><!-- wp:group {"layout":{"type":"flex","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"},"className":"lang-menu-header-mobile"} -->
+<div class="wp-block-group lang-menu-header-mobile"><!-- wp:shortcode -->
+[wpml_language_switcher type="custom" flags=0 link_current=1 native=0 translated=1][/wpml_language_switcher]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group -->
 
-<!-- wp:spacer {"height":"20px"} -->
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+<!-- wp:navigation {"ref":501,"overlayMenu":"never","className":"header-upper-alta","layout":{"type":"flex","justifyContent":"right"}} /-->
 
-<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600","lineHeight":"1.2"}}} -->
-<p style="font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase">
-    <i style="padding-right:4px; color: #FFF;" class="fa-solid fa-bolt"></i>
-    <a style="color:#FFF;" href="#alta-ca">Alta CE</a>
-</p>
-<!-- /wp:paragraph -->
+<!-- wp:navigation {"ref":495,"overlayMenu":"never","className":"header-upper-ov","layout":{"type":"flex","justifyContent":"right"}} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
 
-<!-- wp:spacer {"height":"20px"} -->
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"spacing":{"padding":{"top":"var(--wp--custom--spacing--sxxs)","bottom":"var(--wp--custom--spacing--sxxs)"},"margin":{"top":"0px"}}},"backgroundColor":"brand","className":"upper-main-nav is-style-show-tablet-desktop"} -->
+<div class="wp-block-group alignfull upper-main-nav is-style-show-tablet-desktop has-brand-background-color has-background" style="margin-top:0px;padding-top:var(--wp--custom--spacing--sxxs);padding-bottom:var(--wp--custom--spacing--sxxs)"><!-- wp:group {"layout":{"type":"flex","justifyContent":"right"}} -->
+<div class="wp-block-group"><!-- wp:navigation {"ref":501,"overlayMenu":"never","className":"header-upper-alta","layout":{"type":"flex","justifyContent":"right"}} /-->
 
-<!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"600","lineHeight":"1.2"}},"textColor":"base"} -->
-<p class="has-base-color has-text-color" style="font-style:normal;font-weight:600;line-height:1.2;text-transform:uppercase">
-    <i style="padding-right: 0; color: #FFF;" class="fa-solid fa-globe"></i>
-    
-</p>
-<!-- /wp:paragraph -->
+<!-- wp:navigation {"ref":495,"overlayMenu":"never","className":"header-upper-ov","layout":{"type":"flex","justifyContent":"right"}} /-->
 
 <!-- wp:shortcode -->
 [wpml_language_switcher type="custom" flags=0 link_current=1 native=0 translated=1][/wpml_language_switcher]
@@ -51,9 +40,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
-<div class="wp-block-group"><!-- wp:navigation -->
-<!-- wp:page-list /-->
-<!-- /wp:navigation --></div>
+<div class="wp-block-group"><!-- wp:navigation {"ref":386} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
