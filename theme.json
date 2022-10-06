@@ -123,22 +123,22 @@
         {
           "name": "Small",
           "slug": "small",
-          "size": "18px"
+          "size": "clamp(15px, 2vw, 18px)"
         },
         {
           "name": "Medium",
           "slug": "medium",
-          "size": "20px"
+          "size": "clamp(16px, 2vw, 20px)"
         },
         {
           "name": "Large",
           "slug": "large",
-          "size": "23px"
+          "size": "clamp(18px, 2vw, 23px)"
         },
         {
           "name": "xLarge",
           "slug": "x-large",
-          "size": "28px"
+          "size": "clamp(23px, 3vw, 28px)"
         },
         {
           "name": "xLarge-sxs",
@@ -293,6 +293,11 @@
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--monospace)",
           "fontSize": "var(--wp--preset--font-size--x-small)"
+        }
+      },
+      "core/list": {
+        "color": {
+          "text": "var(--wp--preset--color--typography-light)"
         }
       },
       "core/pullquote": {
