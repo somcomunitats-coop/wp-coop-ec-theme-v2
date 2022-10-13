@@ -179,6 +179,10 @@
             "right": "var(--wp--custom--spacing--sm)",
             "bottom": "var(--wp--custom--spacing--sxxs)",
             "left": "var(--wp--custom--spacing--sm)"
+          },
+          "margin": {
+            "right": "var(--wp--custom--spacing--sxxs)",
+            "bottom": "var(--wp--custom--spacing--sxxs)"
           }
         },
         "typography": {

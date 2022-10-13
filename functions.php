@@ -1,6 +1,5 @@
 <?php
 require_once "includes/model-ce-community.php";
-
 /**
  * Theme setup.
  */
@@ -83,3 +82,29 @@ function wpct_child_register_block_styles() {
   }
 }
 add_action( 'init', 'wpct_child_register_block_styles' );
+
+
+/**
+ * Analytics
+ *
+ */
+add_action('wp_footer', 'wpct_add_analytics');
+function wpct_add_analytics() {
+  echo "
+  <!-- Matomo -->
+  <script>
+  var _paq = window._paq = window._paq || [];
+  / tracker methods like 'setCustomDimension' should be called before 'trackPageView' /
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+  var u='//matomo-staging.somcomunitats.coop/';
+  _paq.push(['setTrackerUrl', u+'matomo.php']);
+  _paq.push(['setSiteId', '1']);
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+  <!-- End Matomo Code -->
+  ";
+}
