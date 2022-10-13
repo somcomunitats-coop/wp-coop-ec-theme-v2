@@ -220,6 +220,7 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
 }
 .ce-header .wp-block-navigation__submenu-container{
     min-width:  230px !important;
+    background-color: var(--wp--preset--color--tertiary) !important;
 }
 .ce-header .wp-block-navigation__submenu-container .wp-block-navigation-item{
     padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sm);
@@ -258,19 +259,19 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
         color: var(--wp--preset--color--typography);
     }
     .ce-header .wp-block-navigation .wp-block-navigation-item{
-        padding: 0 0 var(--wp--custom--spacing--sxs);
+        padding: 0 0 var(--wp--custom--spacing--sm);
         color: var(--wp--preset--color--secondary);
         font-family: "Montserrat",Sans-serif;
-        font-size: var(--wp--preset--font-size--large);
+        font-size: var(--wp--preset--font-size--x-large);
         font-weight: var(--wp--custom--font-weight--bold);
         text-transform: uppercase;
         letter-spacing: .5px;
     }
     .ce-header .wp-block-navigation .wp-block-navigation-item:last-child{
-        padding: 0 0 var(--wp--custom--spacing--sxs);
+        padding: 0 0 var(--wp--custom--spacing--sm);
         color: var(--wp--preset--color--secondary);
         font-family: "Montserrat",Sans-serif;
-        font-size: var(--wp--preset--font-size--large);
+        font-size: var(--wp--preset--font-size--x-large);
         font-weight: var(--wp--custom--font-weight--bold);
         text-transform: uppercase;
         letter-spacing: .5px;
