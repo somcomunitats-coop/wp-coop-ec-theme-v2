@@ -68,6 +68,9 @@ body > .is-root-container,
 
 
 /*Breakpoints visibility*/
+.is-style-hidden{
+    display: none !important;
+}
 .is-style-show-mobile{
     display: inherit;
 }
