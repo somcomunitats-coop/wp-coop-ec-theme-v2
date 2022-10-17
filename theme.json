@@ -232,7 +232,7 @@
             "top": "0",
             "right": "var(--wp--custom--spacing--sxxs)",
             "left": "var(--wp--custom--spacing--sxxs)",
-            "bottom": "var(--wp--custom--spacing--sxs)"
+            "bottom": "0"
           }
         }
       },
