@@ -71,7 +71,7 @@ input[type="submit"],
     background-color: transparent;
     color: var(--wp--preset--color--typography);
     border-radius: 50%;
-    padding: 0 0 var(--wp--custom--spacing--sm);
+    padding: 0 0 var(--wp--custom--spacing--sxxs);
 
 }
 .wp-block-button.is-style-button-minimal .wp-block-button__link::before {
@@ -398,6 +398,14 @@ footer .gform_button{
     .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column{
         max-width: none;
         margin: 0;
+    }
+}
+.wp-block-column{
+    padding: 0 0 var(--wp--custom--spacing--sxs) !important;
+}
+@media(min-width: 782px) {
+    .wp-block-column{
+        padding: 0 var(--wp--custom--spacing--sxxs) !important;
     }
 }
 
