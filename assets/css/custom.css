@@ -211,7 +211,10 @@ body .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-
     box-shadow: 0 5px 10px rgb(0 0 0 / 0.1);
 }
 .ce-header .current-menu-item a{
-    color: var(--wp--preset--color--brand);
+    color: var(--wp--preset--color--brand) !important;
+}
+.ce-header .current-menu-item .wp-block-navigation__submenu-container li a{
+    color: var(--wp--preset--color--typography) !important;
 }
 
 .ce-header .wp-block-navigation-item.has-child{
