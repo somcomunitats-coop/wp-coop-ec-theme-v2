@@ -405,7 +405,7 @@ footer .gform_button{
 }
 @media(min-width: 782px) {
     .wp-block-column{
-        padding: 0 var(--wp--custom--spacing--sxxs) !important;
+        padding: 0 var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sxxs) !important;
     }
 }
 
