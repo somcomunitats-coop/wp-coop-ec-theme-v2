@@ -23,7 +23,7 @@ build:
   script: 
     - 'test -d ../wp-coop-theme && rm -rf ../wp-coop-theme'
     - 'xargs -a git-repos git clone'
-    - 'cd ../wp-cooop-theme && npm install && cd -' 
+    - 'cd ../wp-coop-theme && npm install && cd -' 
     - 'npm install && npm run production'
     - 'rm -rf node_modules/ ../wp-coop-theme/'
   artifacts:
