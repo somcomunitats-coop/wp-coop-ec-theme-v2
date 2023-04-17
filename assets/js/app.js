@@ -1,1 +1,1 @@
-import "../../../wp-coop-theme/js/app.js";
+import "../../../wp-coop-theme/assets/js/app.js";
