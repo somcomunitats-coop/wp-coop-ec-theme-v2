@@ -103,6 +103,10 @@ body > .is-root-container,
     .is-style-show-desktop{
         display: none;
     }
+    /* multiple buttons in column*/
+    .ce-buttons-column{
+        align-items: center;
+    }
 }
 /* desktop */
 @media(min-width: 1200px) {
@@ -120,5 +124,9 @@ body > .is-root-container,
     }
     .is-style-show-desktop{
         display: inherit;
+    }
+    /* multiple buttons in column*/
+    .ce-buttons-column{
+        align-items: flex-start;
     }
 }
