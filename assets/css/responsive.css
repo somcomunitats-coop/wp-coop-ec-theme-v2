@@ -105,7 +105,7 @@ body > .is-root-container,
     }
     /* multiple buttons in column*/
     .ce-buttons-column{
-        align-items: center;
+        align-items: center !important;
     }
 }
 /* desktop */
@@ -127,6 +127,6 @@ body > .is-root-container,
     }
     /* multiple buttons in column*/
     .ce-buttons-column{
-        align-items: flex-start;
+        align-items: flex-start !important;
     }
 }
