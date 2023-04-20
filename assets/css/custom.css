@@ -101,8 +101,11 @@ input[type="submit"],
 .ce-button-lowercase{
   text-transform: none;
 }
+.ce-buttons-lowercase:not(:first-child){
+  margin-top: .5rem;
+}
 .ce-button-lowercase a{
-  width: 245px;
+  width: 300px;
 }
 
 
