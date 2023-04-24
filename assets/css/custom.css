@@ -96,13 +96,13 @@ input[type="submit"],
   align-items: flex-start;
 }
 .ce-buttons-column:not(:first-child){
-  margin-top: .5rem;
+  margin-top: .5rem !important;
 }
 .ce-button-lowercase{
   text-transform: none;
 }
-.ce-buttons-lowercase:not(:first-child){
-  margin-top: .5rem;
+.ce-button-lowercase:not(:first-child){
+  margin-top: .5rem !important;
 }
 .ce-button-lowercase a{
   width: 300px;
