@@ -1,0 +1,108 @@
+.ce-header {
+    -webkit-box-shadow: 0 5px 10px rgb(0 0 0 / 0.1);
+    -moz-box-shadow: 0 5px 10px rgb(0 0 0 / 0.1);
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.1);
+    background: blue !important;
+  }
+  .ce-header .current-menu-item a {
+    color: var(--wp--preset--color--brand) !important;
+  }
+  .ce-header .current-menu-item .wp-block-navigation__submenu-container li a {
+    color: var(--wp--preset--color--typography) !important;
+  }
+  
+  .ce-header .wp-block-navigation-item.has-child {
+    margin-top: 15px;
+    padding-bottom: 15px !important;
+  }
+  .ce-header .wp-block-navigation__submenu-container {
+    min-width: 230px !important;
+    background-color: var(--wp--preset--color--tertiary) !important;
+  }
+  .ce-header .wp-block-navigation__submenu-container .wp-block-navigation-item {
+    padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sm);
+    font-size: var(--wp--preset--font-size--xx-small);
+  }
+  .ce-header .wp-block-navigation__submenu-container .wp-block-navigation-item a {
+    color: var(--wp--preset--color--typography);
+  }
+  
+  /* (main nav) (mobile open) */
+  .wp-block-navigation__responsive-container.is-menu-open
+    .wp-block-navigation__responsive-container-content
+    .wp-block-navigation-item,
+  .wp-block-navigation__responsive-container.is-menu-open
+    .wp-block-navigation__responsive-container-content
+    .wp-block-navigation__container,
+  .wp-block-navigation__responsive-container.is-menu-open
+    .wp-block-navigation__responsive-container-content
+    .wp-block-page-list {
+    margin: 0 auto;
+  }
+  .is-menu-open .wp-block-navigation__responsive-close,
+  .is-menu-open .wp-block-navigation__responsive-container-content,
+  .is-menu-open .wp-block-navigation__responsive-dialog {
+    height: 100%;
+    background-color: var(--wp--preset--color--base);
+    background-image: url("../img/fonsmobil.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .wp-block-navigation__responsive-container.is-menu-open
+    .wp-block-navigation__responsive-container-content,
+  .wp-block-navigation__responsive-container.is-menu-open
+    .wp-block-navigation__responsive-container-content
+    .wp-block-navigation__container,
+  .wp-block-navigation__responsive-container.is-menu-open
+    .wp-block-navigation__responsive-container-content
+    .wp-block-page-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  @media only screen and (max-width: 975px) {
+    .ce-header .wp-block-navigation .wp-block-navigation-item a {
+      color: var(--wp--preset--color--typography);
+    }
+    .ce-header .wp-block-navigation .wp-block-navigation-item {
+      padding: 0 0 var(--wp--custom--spacing--sm);
+      color: var(--wp--preset--color--secondary);
+      font-family: "Montserrat", Sans-serif;
+      font-size: var(--wp--preset--font-size--x-large);
+      font-weight: var(--wp--custom--font-weight--bold);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .ce-header .wp-block-navigation .wp-block-navigation-item:last-child {
+      padding: 0 0 var(--wp--custom--spacing--sm);
+      color: var(--wp--preset--color--secondary);
+      font-family: "Montserrat", Sans-serif;
+      font-size: var(--wp--preset--font-size--x-large);
+      font-weight: var(--wp--custom--font-weight--bold);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .ce-header .wp-block-navigation-item {
+      margin: 0 auto;
+      align-items: inherit !important;
+    }
+    .ce-header .wp-block-navigation__submenu-container {
+      display: none !important;
+      padding-top: var(--wp--custom--spacing--sm) !important;
+    }
+    .ce-header .wp-block-navigation__submenu-container .wp-block-navigation-item {
+      padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sm) !important;
+      font-size: var(--wp--preset--font-size--x-small) !important;
+    }
+    .ce-header
+      .wp-block-navigation__submenu-container
+      .wp-block-navigation-item:last-child {
+      padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sm) !important;
+      padding-bottom: 0 !important;
+    }
+    .ce-header .wp-block-navigation__submenu-container .wp-block-navigation-item a {
+      color: var(--wp--preset--color--typography-light) !important;
+    }
+  }
