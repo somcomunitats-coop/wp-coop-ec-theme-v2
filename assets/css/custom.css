@@ -116,7 +116,7 @@ body
   border-color: var(--wp--preset--color--typography-light);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   body .wp-block-navigation__responsive-container-open:not(.always-shown) {
     display: none !important;
   }
