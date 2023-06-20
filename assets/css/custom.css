@@ -290,10 +290,6 @@ input {
 .gform_button {
   border-radius: 5px;
 }
-.footer-newsletter-form {
-  width: 425px;
-  padding-right: var(--wp--custom--spacing--sl);
-}
 .gform_confirmation_message {
   background-color: var(--wp--preset--color--typography);
   border-radius: 5px;
