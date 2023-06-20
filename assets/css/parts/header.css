@@ -2,7 +2,6 @@
     -webkit-box-shadow: 0 5px 10px rgb(0 0 0 / 0.1);
     -moz-box-shadow: 0 5px 10px rgb(0 0 0 / 0.1);
     box-shadow: 0 5px 10px rgb(0 0 0 / 0.1);
-    background: blue !important;
   }
   .ce-header .current-menu-item a {
     color: var(--wp--preset--color--brand) !important;
@@ -21,12 +20,55 @@
   }
   .ce-header .wp-block-navigation__submenu-container .wp-block-navigation-item {
     padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sm);
-    font-size: var(--wp--preset--font-size--xx-small);
+    font-size: var(--wp--preset--font-size--x-small);
   }
   .ce-header .wp-block-navigation__submenu-container .wp-block-navigation-item a {
     color: var(--wp--preset--color--typography);
   }
+
+  /*NOU CODI CÒDEC*/
+  /*Desktop version*/
+
+
+  @media only screen and (min-width: 975px){
+    .ce-header .wp-block-navigation__container .wp-block-navigation-item:first-child,
+    .ce-header .wp-block-navigation__container .wp-block-navigation-item:nth-child(6),
+    .ce-header .wp-block-navigation__container .wp-block-navigation-item:nth-child(7), 
+    .ce-header .wp-block-navigation__container .wp-block-navigation-item:last-child,
+    .ce-header .wpml-language-switcher-navigation-block.wpml-ls-list,
+    .ce-header .wp-block-social-links
+    {
+      display: none;
+    
+    }
+    .ce-header .wp-block-navigation {
+      width: 100%;
+    }
+    .ce-header .wp-block-navigation .wp-block-navigation__container{
+      /* justify-content: center; */
+    }
+    .ce-header .wp-block-navigation .wp-block-navigation__container li:nth-child(3),
+    .ce-header .wp-block-navigation .wp-block-navigation__container li:nth-child(4){
+      
+      border-right: 1px solid var(--wp--preset--color--base);
+    }
+    .ce-header .wp-block-buttons{
+      width: 140px;
+    }
+    .ce-header .wp-block-buttons .wp-block-buttom__link{
+      padding: 0;
+    }
+  }
   
+  
+
+
+
+
+
+
+
+
   /* (main nav) (mobile open) */
   .wp-block-navigation__responsive-container.is-menu-open
     .wp-block-navigation__responsive-container-content
