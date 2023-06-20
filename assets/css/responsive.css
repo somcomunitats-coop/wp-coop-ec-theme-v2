@@ -84,7 +84,7 @@ body .is-style-hidden {
 }
 
 /* tablet */
-@media (min-width: 782px) and (max-width: 1200px) {
+@media (min-width: 782px) and (max-width: 1023px) {
   body .is-style-show-mobile {
     display: none;
   }
@@ -98,7 +98,7 @@ body .is-style-hidden {
 }
 
 /* desktop */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   body .is-style-show-mobile {
     display: none;
   }
