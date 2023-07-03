@@ -1,0 +1,14 @@
+.is-style-horizontal-padded {
+  padding-left: var(--wp--custom--spacing--sm);
+  padding-right: var(--wp--custom--spacing--sm);
+}
+
+.is-style-horizontal-padded-xl {
+  padding-left: var(--wp--custom--spacing--sxl);
+  padding-right: var(--wp--custom--spacing--sxl);
+}
+
+.is-style-horizontal-padded-xxl {
+  padding-left: var(--wp--custom--spacing--sxxl);
+  padding-right: var(--wp--custom--spacing--sxxl);
+}

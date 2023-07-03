@@ -1,3 +1,12 @@
 @import "../../../wp-coop-theme/assets/css/index.css";
 @import "custom.css";
 @import "responsive.css";
+
+/* Base */
+@import "base/typography.css";
+@import "base/layout.css";
+
+/* Template parts */
+@import "parts/header.css";
+@import "parts/footer.css";
+@import "parts/upper-main-nav.css";

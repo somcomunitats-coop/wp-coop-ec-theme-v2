@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Title: CE Footer.
  * Slug: wpct/ce-footer
@@ -7,138 +8,241 @@
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|typography"}}},"typography":{"fontSize":"var(--wp--preset--font-size--small)"},"spacing":{"margin":{"top":"0px"}}},"backgroundColor":"main","textColor":"base","className":"ce-footer-upper"} -->
-<div class="wp-block-group alignfull ce-footer-upper has-base-color has-main-background-color has-text-color has-background has-link-color" style="margin-top:0px;font-size:var(--wp--preset--font-size--small)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","verticalAlignment":"top"},"className":"is-style-in-container"} -->
-<div class="wp-block-group is-style-in-container"><!-- wp:group {"className":"footer-newsletter-form is-style-default","fontSize":"xx-small"} -->
-<div class="wp-block-group footer-newsletter-form is-style-default has-xx-small-font-size"><!-- wp:spacer {"height":"50px"} -->
-<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
 
-<!-- wp:heading {"level":5,"textColor":"base"} -->
-<h5 class="has-base-color has-text-color">Vols rebre tota la informació de somcomunitats.coop?</h5>
-<!-- /wp:heading -->
+<!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|typography"}}},"typography":{"fontSize":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dfont-size\u002d\u002dsmall)"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"main","textColor":"base","className":"is-style-no-padding","layout":{"type":"constrained","contentSize":"100vw"}} -->
+<div class="wp-block-group alignfull is-style-no-padding has-base-color has-main-background-color has-text-color has-background has-link-color" style="margin-top:0;margin-bottom:0;font-size:var(--wp--preset--font-size--small)"><!-- wp:group {"tagName":"section","className":"is-style-horizontal-padded-xxl is-style-show-desktop","layout":{"type":"constrained","contentSize":"100%"}} -->
+  <section class="wp-block-group is-style-horizontal-padded-xxl is-style-show-desktop"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
+    <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"250em"}},"className":"footer-newsletter-form","fontSize":"xx-small"} -->
+      <div class="wp-block-group footer-newsletter-form has-xx-small-font-size"><!-- wp:spacer {"height":"50px"} -->
+        <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
 
-<!-- wp:gravityforms/form {"formId":"2","title":false,"description":false,"ajax":true} /--></div>
-<!-- /wp:group -->
+        <!-- wp:heading {"level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"base"} -->
+        <h5 class="wp-block-heading has-base-color has-text-color" style="font-style:normal;font-weight:700">Vols rebre tota la informació de somcomunitats.coop?</h5>
+        <!-- /wp:heading -->
 
-<!-- wp:group {"className":"is-style-footer-nav-group is-style-default"} -->
-<div class="wp-block-group is-style-footer-nav-group is-style-default"><!-- wp:spacer {"height":"50px"} -->
-<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+        <!-- wp:gravityforms/form {"formId":"2","title":false,"description":false,"ajax":true,"theme":"orbital","inputSize":"lg","inputBorderRadius":"0","inputBorderColor":"#fff","buttonPrimaryBackgroundColor":"#FFCE33","buttonPrimaryColor":"#191919"} /-->
+      </div>
+      <!-- /wp:group -->
 
-<!-- wp:heading {"textAlign":"left","level":5,"textColor":"base"} -->
-<h5 class="has-text-align-left has-base-color has-text-color">Enllaços d'interés</h5>
-<!-- /wp:heading -->
+      <!-- wp:spacer {"width":"0px","className":"is-style-show-desktop","style":{"layout":{"flexSize":"50em","selfStretch":"fixed"}}} -->
+      <div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-desktop"></div>
+      <!-- /wp:spacer -->
 
-<!-- wp:navigation {"ref":521,"overlayMenu":"never"} /-->
+      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"100em"}},"className":"is-style-show-desktop","layout":{"type":"flex","orientation":"vertical"}} -->
+      <div class="wp-block-group is-style-show-desktop"><!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"50px","selfStretch":"fixed"}}} -->
+        <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
 
-<!-- wp:spacer {"height":"50px"} -->
-<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+        <!-- wp:heading {"textAlign":"left","level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"layout":{"selfStretch":"fill","flexSize":null}},"textColor":"base"} -->
+        <h5 class="wp-block-heading has-text-align-left has-base-color has-text-color" style="font-style:normal;font-weight:700">Comunitats</h5>
+        <!-- /wp:heading -->
 
-<!-- wp:heading {"textAlign":"left","level":5,"textColor":"base"} -->
-<h5 class="has-text-align-left has-base-color has-text-color">Idiomes</h5>
-<!-- /wp:heading -->
+        <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"}}} -->
+        <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
 
-<!-- wp:shortcode -->
-[wpml_language_switcher type="custom" flags=0 link_current=1 native=0 translated=1][/wpml_language_switcher]
-<!-- /wp:shortcode --></div>
-<!-- /wp:group -->
+        <!-- wp:navigation {"ref":1571,"textColor":"base","overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400","textTransform":"none"}},"fontSize":"small"} /-->
+      </div>
+      <!-- /wp:group -->
 
-<!-- wp:group {"className":"is-style-default"} -->
-<div class="wp-block-group is-style-default"><!-- wp:spacer {"height":"50px"} -->
-<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+      <!-- wp:spacer {"width":"0px","className":"is-style-show-desktop","style":{"layout":{"flexSize":"50em","selfStretch":"fixed"}}} -->
+      <div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-desktop"></div>
+      <!-- /wp:spacer -->
 
-<!-- wp:group -->
-<div class="wp-block-group"><!-- wp:heading {"level":5,"textColor":"base"} -->
-<h5 class="has-base-color has-text-color">Contacte</h5>
-<!-- /wp:heading -->
+      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"100em"}},"className":"is-style-show-desktop","layout":{"type":"flex","orientation":"vertical"}} -->
+      <div class="wp-block-group is-style-show-desktop"><!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"50px","selfStretch":"fixed"}}} -->
+        <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
 
-<!-- wp:list {"className":"is-style-no-disc"} -->
-<ul class="is-style-no-disc"><!-- wp:list-item -->
-<li>Premsa: <a href="mailto:premsa@somcomunitats.coop">premsa@somcomunitats.coop</a></li>
-<!-- /wp:list-item -->
+        <!-- wp:heading {"textAlign":"left","level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"layout":{"selfStretch":"fill","flexSize":null}},"textColor":"base"} -->
+        <h5 class="wp-block-heading has-text-align-left has-base-color has-text-color" style="font-style:normal;font-weight:700">Enllaços d'interés</h5>
+        <!-- /wp:heading -->
 
-<!-- wp:list-item -->
-<li>Correu: <a href="mailto:info@somcomunitats.coop">info@somcomunitats.coop</a></li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></div>
-<!-- /wp:group -->
+        <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"}}} -->
+        <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
 
-<!-- wp:spacer {"height":"50px"} -->
-<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+        <!-- wp:navigation {"ref":521,"textColor":"base","overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400","textTransform":"none"}},"fontSize":"small"} /-->
+      </div>
+      <!-- /wp:group -->
 
-<!-- wp:group -->
-<div class="wp-block-group"><!-- wp:heading {"level":5,"textColor":"base"} -->
-<h5 class="has-base-color has-text-color">Xarxes socials</h5>
-<!-- /wp:heading -->
+      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"100em"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"right"}} -->
+      <div class="wp-block-group"><!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"50px","selfStretch":"fixed"}}} -->
+        <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
 
-<!-- wp:list {"className":"is-style-no-disc"} -->
-<ul class="is-style-no-disc"><!-- wp:list-item -->
-<li>Facebook #ImpulsemComunitatsEnergètiques</li>
-<!-- /wp:list-item -->
+        <!-- wp:heading {"textAlign":"right","level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"layout":{"selfStretch":"fill","flexSize":null}},"textColor":"base","className":"is-style-show-desktop"} -->
+        <h5 class="wp-block-heading has-text-align-right is-style-show-desktop has-base-color has-text-color" style="font-style:normal;font-weight:700">Altres enllaços</h5>
+        <!-- /wp:heading -->
 
-<!-- wp:list-item -->
-<li>Twitter #ImpulsemComunitatsEnergètiques</li>
-<!-- /wp:list-item -->
+        <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"}}} -->
+        <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
 
-<!-- wp:list-item -->
-<li>Instagram #ImpulsemComunitatsEnergètiques</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
+        <!-- wp:navigation {"ref":1568,"textColor":"base","overlayMenu":"never","layout":{"type":"flex","orientation":"vertical","justifyContent":"right"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400","textTransform":"none"}},"fontSize":"small"} /-->
 
-<!-- wp:spacer {"height":"30px"} -->
-<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+        <!-- wp:group {"className":"text-right"} -->
+        <div class="wp-block-group text-right"><!-- wp:shortcode -->
+          [wpml_language_switcher type="custom" flags=0 link_current=1 native=0 translated=1][/wpml_language_switcher]
+          <!-- /wp:shortcode -->
+        </div>
+        <!-- /wp:group -->
 
-<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"},"className":"is-style-in-container"} -->
-<div class="wp-block-group is-style-in-container"><!-- wp:group {"className":"is-style-default"} -->
-<div class="wp-block-group is-style-default"><!-- wp:spacer {"height":"30px"} -->
-<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+        <!-- wp:social-links {"iconColor":"base","iconColorValue":"#fff","align":"right","style":{"spacing":{"blockGap":{"top":"0","left":"0"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"space-between"}} -->
+        <ul class="wp-block-social-links alignright has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"@","service":"mastodon"} /-->
 
-<!-- wp:paragraph {"textColor":"base","className":"header-sponsor-p"} -->
-<p class="header-sponsor-p has-base-color has-text-color">Promou i finança: la Generalitat de Catalunya - Departament d’Empresa i Treball:</p>
-<!-- /wp:paragraph -->
+          <!-- wp:social-link {"url":"#","service":"twitter"} /-->
 
-<!-- wp:image {"id":529,"sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image size-full"><img src="https://web-test.somcomunitats.coop/wp-content/uploads/2022/09/logos-fot.png.png" alt="" class="wp-image-529"/></figure>
-<!-- /wp:image --></div>
-<!-- /wp:group -->
+          <!-- wp:social-link {"url":"#","service":"instagram"} /-->
 
-<!-- wp:group {"className":"is-style-default"} -->
-<div class="wp-block-group is-style-default"><!-- wp:spacer {"height":"30px"} -->
-<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
+          <!-- wp:social-link {"url":"#","service":"linkedin"} /-->
 
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"secondary","textColor":"typography","className":"is-style-rounded"} -->
-<div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-typography-color has-secondary-background-color has-text-color has-background wp-element-button" href="https://web-test.somcomunitats.coop/alta-comunitat/">Alta d'una comunitat</a></div>
-<!-- /wp:button -->
+          <!-- wp:social-link {"url":"#","service":"youtube"} /-->
 
-<!-- wp:button {"backgroundColor":"typography","textColor":"base","className":"is-style-rounded"} -->
-<div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-color has-typography-background-color has-text-color has-background wp-element-button" href="https://web-test.somcomunitats.coop/oficina-virtual/">Oficina virtual</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
+          <!-- wp:social-link {"url":"#","service":"telegram"} /-->
+        </ul>
+        <!-- /wp:social-links -->
+      </div>
+      <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+  </section>
+  <!-- /wp:group -->
 
-<!-- wp:spacer {"height":"30px"} -->
-<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer --></div>
-<!-- /wp:group -->
+  <!-- wp:group {"className":"is-style-horizontal-padded is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group is-style-horizontal-padded is-style-show-mobile-tablet"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"250em"}},"className":"footer-newsletter-form","fontSize":"xx-small"} -->
+    <div class="wp-block-group footer-newsletter-form has-xx-small-font-size"><!-- wp:spacer {"height":"50px"} -->
+      <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- /wp:spacer -->
 
-<!-- wp:group {"layout":{"inherit":true,"type":"constrained"},"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|typography"}}},"typography":{"fontSize":"var(--wp--preset--font-size--small)"},"spacing":{"margin":{"top":"0px"}},"color":{"background":"#799b34"}},"textColor":"tertiary","className":"ce-footer-lower is-style-default"} -->
-<div class="wp-block-group alignfull ce-footer-lower is-style-default has-tertiary-color has-text-color has-background has-link-color" style="background-color:#799b34;margin-top:0px;font-size:var(--wp--preset--font-size--small)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"},"className":"is-style-default"} -->
-<div class="wp-block-group is-style-default"><!-- wp:paragraph {"textColor":"base"} -->
-<p class="has-base-color has-text-color">© 2022 somcomunitats.coop</p>
-<!-- /wp:paragraph -->
+      <!-- wp:heading {"level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"base"} -->
+      <h5 class="wp-block-heading has-base-color has-text-color" style="font-style:normal;font-weight:700">Vols rebre tota la informació de somcomunitats.coop?</h5>
+      <!-- /wp:heading -->
 
-<!-- wp:navigation {"ref":526,"overlayMenu":"never"} /--></div>
-<!-- /wp:group --></div>
+      <!-- wp:gravityforms/form {"formId":"2","title":false,"description":false,"ajax":true,"theme":"orbital","inputSize":"lg","inputBorderRadius":"0","inputBorderColor":"#fff","buttonPrimaryBackgroundColor":"#FFCE33","buttonPrimaryColor":"#191919"} /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"100em"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
+    <div class="wp-block-group"><!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"50px","selfStretch":"fixed"}}} -->
+      <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- /wp:spacer -->
+
+      <!-- wp:heading {"textAlign":"right","level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"layout":{"selfStretch":"fill","flexSize":null}},"textColor":"base","className":"is-style-show-desktop"} -->
+      <h5 class="wp-block-heading has-text-align-right is-style-show-desktop has-base-color has-text-color" style="font-style:normal;font-weight:700">Altres enllaços</h5>
+      <!-- /wp:heading -->
+
+      <!-- wp:navigation {"ref":1568,"textColor":"base","overlayMenu":"never","layout":{"type":"flex","orientation":"vertical","justifyContent":"left"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400","textTransform":"none"}},"fontSize":"small"} /-->
+
+      <!-- wp:group {"className":"text-right"} -->
+      <div class="wp-block-group text-right"><!-- wp:shortcode -->
+        [wpml_language_switcher type="custom" flags=0 link_current=1 native=0 translated=1][/wpml_language_switcher]
+        <!-- /wp:shortcode -->
+
+        <!-- wp:spacer {"height":"1em","style":{"layout":{}}} -->
+        <div style="height:1em" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
+      </div>
+      <!-- /wp:group -->
+
+      <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"}}} -->
+      <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- /wp:spacer -->
+
+      <!-- wp:block {"ref":1884} /-->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:spacer {"height":"30px","style":{"layout":{}}} -->
+  <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- /wp:spacer -->
+
+  <!-- wp:separator {"style":{"color":{"background":"#c5e3d140"},"spacing":{"margin":{"top":"0px","bottom":"0px"}}},"className":"is-style-wide"} -->
+  <hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-top:0px;margin-bottom:0px;background-color:#c5e3d140;color:#c5e3d140" />
+  <!-- /wp:separator -->
+
+  <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+  <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"className":"is-style-horizontal-padded-xxl is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
+    <div class="wp-block-group is-style-horizontal-padded-xxl is-style-show-desktop"><!-- wp:paragraph {"textColor":"second-base-light","className":"header-sponsor-p"} -->
+      <p class="header-sponsor-p has-second-base-light-color has-text-color">Promou i finança</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:image {"id":529,"sizeSlug":"full","linkDestination":"none"} -->
+      <figure class="wp-block-image size-full"><img src="https://web-test.somcomunitats.coop/wp-content/uploads/2022/09/logos-fot.png.png" alt="" class="wp-image-529" /></figure>
+      <!-- /wp:image -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"className":"is-style-show-desktop"} -->
+    <div class="wp-block-group is-style-show-desktop"><!-- wp:buttons {"className":"is-style-default","layout":{"type":"flex","verticalAlignment":"center","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"fontSize":"large"} -->
+      <div class="wp-block-buttons has-custom-font-size is-style-default has-large-font-size" style="margin-top:0;margin-bottom:0"><!-- wp:button {"textAlign":"center","backgroundColor":"primary","textColor":"typography","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","right":"var:preset|spacing|60","top":"1rem","bottom":"1rem"}},"border":{"radius":"0px"}},"className":"is-style-fill is-style-no-margin"} -->
+        <div class="wp-block-button is-style-fill is-style-no-margin"><a class="wp-block-button__link has-typography-color has-primary-background-color has-text-color has-background has-text-align-center wp-element-button" href="https://web-test.somcomunitats.coop/alta-comunitat/" style="border-radius:0px;padding-top:1rem;padding-right:var(--wp--preset--spacing--60);padding-bottom:1rem;padding-left:var(--wp--preset--spacing--60)"><strong>Suma't-hi</strong></a></div>
+        <!-- /wp:button -->
+      </div>
+      <!-- /wp:buttons -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"className":"is-style-no-padding is-style-show-mobile-tablet","layout":{"type":"constrained","justifyContent":"left"}} -->
+  <div class="wp-block-group is-style-no-padding is-style-show-mobile-tablet"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group"><!-- wp:buttons {"className":"is-style-default","layout":{"type":"flex","justifyContent":"stretch","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"large"} -->
+      <div class="wp-block-buttons has-custom-font-size is-style-default has-large-font-size" style="margin-top:0;margin-bottom:0"><!-- wp:button {"textAlign":"center","backgroundColor":"primary","textColor":"typography","width":100,"style":{"spacing":{"padding":{"left":"0","right":"0","top":"1rem","bottom":"1rem"}},"border":{"radius":"0px"}},"className":"is-style-fill is-style-no-margin"} -->
+        <div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill is-style-no-margin"><a class="wp-block-button__link has-typography-color has-primary-background-color has-text-color has-background has-text-align-center wp-element-button" href="https://web-test.somcomunitats.coop/alta-comunitat/" style="border-radius:0px;padding-top:1rem;padding-right:0;padding-bottom:1rem;padding-left:0"><strong>Suma't-hi</strong></a></div>
+        <!-- /wp:button -->
+      </div>
+      <!-- /wp:buttons -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"className":"is-style-horizontal-padded-xxl","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+    <div class="wp-block-group is-style-horizontal-padded-xxl"><!-- wp:paragraph {"textColor":"second-base-light","className":"header-sponsor-p"} -->
+      <p class="header-sponsor-p has-second-base-light-color has-text-color">Promou i finança</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:image {"id":529,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"100%"}}} -->
+      <figure class="wp-block-image size-full"><img src="https://web-test.somcomunitats.coop/wp-content/uploads/2022/09/logos-fot.png.png" alt="" class="wp-image-529" /></figure>
+      <!-- /wp:image -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:separator {"style":{"color":{"background":"#c5e3d140"},"spacing":{"margin":{"top":"0px","bottom":"0px"}}},"className":"is-style-wide"} -->
+  <hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-top:0px;margin-bottom:0px;background-color:#c5e3d140;color:#c5e3d140" />
+  <!-- /wp:separator -->
+
+  <!-- wp:group {"className":"is-style-horizontal-padded-xl is-style-show-desktop","layout":{"type":"constrained","contentSize":"100%"}} -->
+  <div class="wp-block-group is-style-horizontal-padded-xl is-style-show-desktop"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+    <div class="wp-block-group is-style-default"><!-- wp:paragraph {"textColor":"second-base-light"} -->
+      <p class="has-second-base-light-color has-text-color">© 2022 somcomunitats.coop</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:navigation {"ref":526,"textColor":"second-base-light","overlayMenu":"never","layout":{"type":"flex","flexWrap":"wrap"},"style":{"typography":{"textTransform":"none","fontStyle":"normal","fontWeight":"400"}},"fontSize":"small"} /-->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:group {"className":"is-style-show-mobile-tablet is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+  <div class="wp-block-group is-style-show-mobile-tablet is-style-horizontal-padded"><!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"},"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}}} -->
+    <div style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+
+    <!-- wp:paragraph {"align":"center","textColor":"second-base-light"} -->
+    <p class="has-text-align-center has-second-base-light-color has-text-color">© 2022 somcomunitats.coop</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:spacer {"style":{"layout":{"flexSize":null,"selfStretch":"fit"},"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}}} -->
+    <div style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+
+    <!-- wp:navigation {"ref":526,"textColor":"second-base-light","overlayMenu":"never","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"},"style":{"typography":{"textTransform":"none","fontStyle":"normal","fontWeight":"400","lineHeight":"1.5"},"layout":{"selfStretch":"fit","flexSize":null}},"fontSize":"xxx-small"} /-->
+  </div>
+  <!-- /wp:group -->
+</div>
 <!-- /wp:group -->

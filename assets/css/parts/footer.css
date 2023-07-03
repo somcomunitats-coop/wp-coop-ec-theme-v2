@@ -1,0 +1,57 @@
+footer.wp-block-template-part a {
+  color: var(--wp--preset--color--base);
+}
+
+/* footer.wp-block-template-part .is-style-in-container { */
+/*   max-width: 500px !important; */
+/*   margin: 0 auto; */
+/* } */
+
+/* (navigation) (upper) */
+footer.wp-block-template-part .wp-block-navigation.is-vertical .wp-block-navigation-item {
+  padding: 0 0 20px;
+}
+
+/* (form) */
+footer.wp-block-template-part .gform_wrapper form {
+  position: relative;
+}
+
+footer.wp-block-template-part .gform_wrapper form .gform_button[type="submit"] {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
+}
+
+footer.wp-block-template-part .gform_wrapper form .gfield_consent_description {
+  color: var(--wp--preset--color--base);
+}
+
+footer.wp-block-template-part .gform_button {
+  background-color: var(--wp--preset--color--secondary);
+  color: var(--wp--preset--color--typography);
+  margin: 0 !important;
+}
+
+/* (lang nav) */
+footer .is-style-footer-nav-group .wpml-ls {
+  padding: 0;
+}
+
+footer.wp-block-template-part .wpml-ls > ul {
+  margin-left: 0;
+  font-size: var(--wp--preset--font-size--small);
+}
+
+footer.wp-block-template-part .wpml-ls > ul::before {
+  display: none;
+}
+
+footer.wp-block-template-part .wpml-ls > ul > li > a {
+  color: var(--wp--preset--color--base);
+}
+
+footer.wp-block-template-part .wpml-ls > ul > li > a > br {
+  display: none;
+}
