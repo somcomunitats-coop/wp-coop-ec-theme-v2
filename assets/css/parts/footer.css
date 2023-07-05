@@ -91,15 +91,15 @@ footer.wp-block-template-part .wp-block-social-links li:last-child {
   padding-right: 0px;
 }
 
-#footer-nav-legal li {
+footer.wp-block-template-part .wp-block-navigation .footer-nav-legal li {
   padding: var(--wp--custom--spacing--sminimal) var(--wp--custom--spacing--sxxs);
 }
 
-#footer-nav-legal li:first-child {
+footer.wp-block-template-part .wp-block-navigation .footer-nav-legal li:first-child {
   padding-left: 0;
 }
 
-#footer-nav-legal li:last-child {
+footer.wp-block-template-part .wp-block-navigation .footer-nav-legal li:last-child {
   padding-right: 0;
 }
 

@@ -128,8 +128,8 @@
 
       <!-- wp:navigation {"ref":1568,"textColor":"base","overlayMenu":"never","layout":{"type":"flex","orientation":"vertical","justifyContent":"left"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400","textTransform":"none"}},"fontSize":"small"} /-->
 
-      <!-- wp:group {"className":"text-right"} -->
-      <div class="wp-block-group text-right"><!-- wp:shortcode -->
+      <!-- wp:group {"className":"is-style-footer-nav-group"} -->
+      <div class="wp-block-group is-style-footer-nav-group"><!-- wp:shortcode -->
         [wpml_language_switcher type="custom" flags=0 link_current=1 native=0 translated=1][/wpml_language_switcher]
         <!-- /wp:shortcode -->
 
@@ -176,6 +176,10 @@
       <p class="header-sponsor-p has-second-base-light-color has-text-color">Promou i finança</p>
       <!-- /wp:paragraph -->
 
+      <!-- wp:spacer {"width":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"}}} -->
+      <div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- /wp:spacer -->
+
       <!-- wp:image {"id":529,"sizeSlug":"full","linkDestination":"none"} -->
       <figure class="wp-block-image size-full"><img src="https://web-test.somcomunitats.coop/wp-content/uploads/2022/09/logos-fot.png.png" alt="" class="wp-image-529" /></figure>
       <!-- /wp:image -->
@@ -206,13 +210,21 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"className":"is-style-horizontal-padded-xxl","layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-    <div class="wp-block-group is-style-horizontal-padded-xxl"><!-- wp:paragraph {"textColor":"second-base-light","className":"header-sponsor-p"} -->
+    <div class="wp-block-group is-style-horizontal-padded-xxl"><!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"}}} -->
+      <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- /wp:spacer -->
+
+      <!-- wp:paragraph {"textColor":"second-base-light","className":"header-sponsor-p"} -->
       <p class="header-sponsor-p has-second-base-light-color has-text-color">Promou i finança</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:image {"id":529,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"100%"}}} -->
       <figure class="wp-block-image size-full"><img src="https://web-test.somcomunitats.coop/wp-content/uploads/2022/09/logos-fot.png.png" alt="" class="wp-image-529" /></figure>
       <!-- /wp:image -->
+
+      <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"}}} -->
+      <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- /wp:spacer -->
     </div>
     <!-- /wp:group -->
   </div>
@@ -243,11 +255,11 @@
     <p class="has-text-align-center has-second-base-light-color has-text-color">© 2022 somcomunitats.coop</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:spacer {"style":{"layout":{"flexSize":null,"selfStretch":"fit"},"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}}} -->
-    <div style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->
-
     <!-- wp:navigation {"ref":526,"textColor":"second-base-light","overlayMenu":"never","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"},"style":{"typography":{"textTransform":"none","fontStyle":"normal","fontWeight":"400","lineHeight":"1.5"},"layout":{"selfStretch":"fit","flexSize":null}},"fontSize":"xxx-small"} /-->
+
+    <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"},"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}}} -->
+    <div style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
   </div>
   <!-- /wp:group -->
 </div>
