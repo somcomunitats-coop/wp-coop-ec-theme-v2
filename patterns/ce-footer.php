@@ -26,7 +26,7 @@
       <!-- /wp:group -->
 
       <!-- wp:spacer {"width":"0px","className":"is-style-show-desktop","style":{"layout":{"flexSize":"50em","selfStretch":"fixed"}}} -->
-      <div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-desktop"></div>
+      <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-desktop"></div>
       <!-- /wp:spacer -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"100em"}},"className":"is-style-show-desktop","layout":{"type":"flex","orientation":"vertical"}} -->
@@ -47,7 +47,7 @@
       <!-- /wp:group -->
 
       <!-- wp:spacer {"width":"0px","className":"is-style-show-desktop","style":{"layout":{"flexSize":"50em","selfStretch":"fixed"}}} -->
-      <div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-desktop"></div>
+      <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-desktop"></div>
       <!-- /wp:spacer -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"100em"}},"className":"is-style-show-desktop","layout":{"type":"flex","orientation":"vertical"}} -->
@@ -176,8 +176,8 @@
       <p class="header-sponsor-p has-second-base-light-color has-text-color">Promou i finança</p>
       <!-- /wp:paragraph -->
 
-      <!-- wp:spacer {"width":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"}}} -->
-      <div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- wp:spacer {"width":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"},"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+      <div style="margin-top:0;margin-bottom:0;height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
       <!-- wp:image {"id":529,"sizeSlug":"full","linkDestination":"none"} -->
@@ -255,7 +255,7 @@
     <p class="has-text-align-center has-second-base-light-color has-text-color">© 2022 somcomunitats.coop</p>
     <!-- /wp:paragraph -->
 
-    <!-- wp:navigation {"ref":526,"textColor":"second-base-light","overlayMenu":"never","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"},"style":{"typography":{"textTransform":"none","fontStyle":"normal","fontWeight":"400","lineHeight":"1.5"},"layout":{"selfStretch":"fit","flexSize":null}},"fontSize":"xxx-small"} /-->
+    <!-- wp:navigation {"ref":526,"textColor":"second-base-light","overlayMenu":"never","className":"footer-nav-legal","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"},"style":{"typography":{"textTransform":"none","fontStyle":"normal","fontWeight":"400","lineHeight":"1.5"},"layout":{"selfStretch":"fit","flexSize":null}},"fontSize":"xxx-small"} /-->
 
     <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"},"spacing":{"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}}} -->
     <div style="margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);height:0px" aria-hidden="true" class="wp-block-spacer"></div>

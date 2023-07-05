@@ -195,23 +195,28 @@ figure {
 .svg-inline--fa {
   padding-right: 8px;
 }
+
 /* (spacer) */
 .wp-block-spacer[style*="height:100px"] {
   height: 50px !important;
 }
+
 @media (min-width: 782px) {
   .wp-block-spacer[style*="height:100px"] {
     height: 100px !important;
   }
 }
+
 .wp-block-spacer[style*="height:50px"] {
   height: 35px !important;
 }
+
 @media (min-width: 782px) {
   .wp-block-spacer[style*="height:50px"] {
     height: 50px !important;
   }
 }
+
 /* (shapes) */
 .wpct-shape[data-negative="false"].wpct-shape-bottom,
 .wpct-shape[data-negative="true"].wpct-shape-top {
