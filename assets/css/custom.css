@@ -102,29 +102,7 @@ input[type="submit"],
 }
 
 
-/* (burger menu) */
-body .wp-block-navigation__responsive-container-open:not(.always-shown) {
-  display: block !important;
-  margin-right: var(--wp--custom--spacing--sxs);
-}
-body
-  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
-  display: none !important;
-}
-.wp-block-navigation__responsive-container-close,
-.wp-block-navigation__responsive-container-open {
-  border-color: var(--wp--preset--color--typography-light);
-}
 
-@media (min-width: 1024px) {
-  body .wp-block-navigation__responsive-container-open:not(.always-shown) {
-    display: none !important;
-  }
-  body
-    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
-    display: block !important;
-  }
-}
 
 /* Footer
 --------------------------------------------- */
