@@ -42,7 +42,7 @@
         <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
-        <!-- wp:navigation {"ref":1571,"textColor":"base","overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400","textTransform":"none"}},"fontSize":"small"} /-->
+        <!-- wp:block {"ref":2024} /-->
       </div>
       <!-- /wp:group -->
 
@@ -82,14 +82,7 @@
 
         <!-- wp:navigation {"ref":1568,"textColor":"base","overlayMenu":"never","layout":{"type":"flex","orientation":"vertical","justifyContent":"right"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400","textTransform":"none"}},"fontSize":"small"} /-->
 
-        <!-- wp:group {"className":"text-right"} -->
-        <div class="wp-block-group text-right"><!-- wp:shortcode -->
-          [wpml_language_switcher type="custom" flags=0 link_current=1 native=0 translated=1][/wpml_language_switcher]
-          <!-- /wp:shortcode -->
-        </div>
-        <!-- /wp:group -->
-
-        <!-- wp:social-links {"iconColor":"base","iconColorValue":"#fff","align":"right","style":{"spacing":{"blockGap":{"top":"0","left":"0"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"space-between"}} -->
+        <!-- wp:social-links {"iconColor":"base","iconColorValue":"#fff","align":"right","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"space-between"}} -->
         <ul class="wp-block-social-links alignright has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"@","service":"mastodon"} /-->
 
           <!-- wp:social-link {"url":"#","service":"twitter"} /-->
@@ -111,8 +104,8 @@
   <!-- /wp:group -->
 
   <!-- wp:group {"className":"is-style-horizontal-padded is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group is-style-horizontal-padded is-style-show-mobile-tablet"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"250em"}},"className":"footer-newsletter-form","fontSize":"xx-small"} -->
-    <div class="wp-block-group footer-newsletter-form has-xx-small-font-size"><!-- wp:spacer {"height":"50px"} -->
+  <div class="wp-block-group is-style-horizontal-padded is-style-show-mobile-tablet"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"250em"}},"className":"footer-newsletter-form is-style-show-mobile-tablet","fontSize":"xx-small"} -->
+    <div class="wp-block-group footer-newsletter-form is-style-show-mobile-tablet has-xx-small-font-size"><!-- wp:spacer {"height":"50px"} -->
       <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
@@ -124,8 +117,8 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"100em"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
-    <div class="wp-block-group"><!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"50px","selfStretch":"fixed"}}} -->
+    <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"100em"}},"className":"is-style-show-mobile-tablet","layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
+    <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"50px","selfStretch":"fixed"}}} -->
       <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
@@ -150,7 +143,20 @@
       <div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
-      <!-- wp:block {"ref":1884} /-->
+      <!-- wp:social-links {"iconColor":"base","iconColorValue":"#fff","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|30","left":"var:preset|spacing|30"}}},"className":"is-style-logos-only"} -->
+      <ul class="wp-block-social-links has-icon-color is-style-logos-only"><!-- wp:social-link {"url":"#","service":"instagram"} /-->
+
+        <!-- wp:social-link {"url":"#","service":"twitter"} /-->
+
+        <!-- wp:social-link {"url":"#","service":"linkedin"} /-->
+
+        <!-- wp:social-link {"url":"#","service":"mastodon"} /-->
+
+        <!-- wp:social-link {"url":"#","service":"telegram"} /-->
+
+        <!-- wp:social-link {"url":"#","service":"youtube"} /-->
+      </ul>
+      <!-- /wp:social-links -->
     </div>
     <!-- /wp:group -->
   </div>

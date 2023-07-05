@@ -55,3 +55,19 @@ footer.wp-block-template-part .wpml-ls > ul > li > a {
 footer.wp-block-template-part .wpml-ls > ul > li > a > br {
   display: none;
 }
+
+footer .wpml-ls, 
+footer .wpml-ls ul{
+  padding: 0 !important;
+  margin: 0 !important;
+
+}
+footer .wpml-ls ul li:first-child a {
+  padding: 0px 2px 2px 0px;
+}
+footer .wpml-ls ul li:last-child a::before{
+content: " | "
+}
+footer .wpml-ls ul li:last-child span{
+  padding-left: 10px;
+  }

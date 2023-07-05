@@ -31,6 +31,10 @@
 
 
   @media only screen and (min-width: 1024px){
+    .ce-header .wp-block-group .wp-block-image{
+      width: 165px !important;
+    }
+
     .ce-header .wp-block-navigation__container .wp-block-navigation-item:first-child,
     .ce-header .wp-block-navigation__container .wp-block-navigation-item:nth-child(6),
     .ce-header .wp-block-navigation__container .wp-block-navigation-item:nth-child(7), 
@@ -41,12 +45,7 @@
       display: none;
     
     }
-    .ce-header .wp-block-navigation {
-      width: 100%;
-    }
-    .ce-header .wp-block-navigation .wp-block-navigation__container{
-      /* justify-content: center; */
-    }
+    
     .ce-header .wp-block-navigation .wp-block-navigation__container li:nth-child(3),
     .ce-header .wp-block-navigation .wp-block-navigation__container li:nth-child(4){
       
@@ -66,7 +65,7 @@
     margin-top: 0 !important;
   }
   .wp-block-navigation__responsive-container.is-menu-open{
-    padding: var(--wp--custom--spacing--sm);
+    padding: 30px !important;
     
   }
   .wp-block-navigation__responsive-container-content .wp-block-navigation__container, 
@@ -79,6 +78,7 @@
     align-items: center !important;
     justify-content: space-between !important;
     height: 100vh !important;
+    padding-top: 0 !important;
   }
   .wp-block-navigation__responsive-container-content .wp-block-navigation__container{
     display: inline-block !important;
@@ -92,6 +92,10 @@
     padding: 0;
     position: absolute;
     top: 0;
+    
+  }
+  .wp-block-navigation__responsive-container-content > .wp-block-navigation__container:first-child .wp-block-navigation-item:nth-child(2) {
+   margin-top: 70px;
     
   }
   .wp-block-navigation__responsive-container-content > .wp-block-navigation__container:first-child .wp-block-navigation-item:first-child div a{
@@ -145,7 +149,7 @@
     justify-content: center !important;
     height: 75px;
     width: 117%;
-    background-color: var(--wp--preset--color--primary);
+    background-color: var(--wp--preset--color--primary) !important;
     padding: 13px 8px;
     margin-bottom: -25px;
     margin-top: var(--wp--custom--spacing--sxs);
