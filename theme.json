@@ -90,13 +90,13 @@
         "sxs": "20px",
         "sm": "25px",
         "sl": "40px",
-        "sxl": "40px",
+        "sxl": "60px",
         "sxxl": "70px",
         "sspacer": "100px"
       }
     },
     "layout": {
-      "contentSize": "1500px",
+      "contentSize": "1350px",
       "wideSize": "100%"
     },
     "spacing": {
@@ -189,7 +189,7 @@
         },
         "color": {
           "background": "var(--wp--preset--color--primary)",
-          "text": "var(--wp--preset--color--main)"
+          "text": "var(--wp--preset--color--typography)"
         },
         "spacing": {
           "padding": {

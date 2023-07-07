@@ -6,6 +6,9 @@
 @import "base/typography.css";
 @import "base/layout.css";
 
+/* Elements */
+@import "elements/button.css";
+
 /* Template parts */
 @import "parts/header.css";
 @import "parts/footer.css";
