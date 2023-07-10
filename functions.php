@@ -1,5 +1,7 @@
 <?php
 require_once "includes/model-ce-community.php";
+require_once "custom-blocks/slider/slider.php";
+
 /**
  * Theme setup.
  */
@@ -9,6 +11,7 @@ function wpct_child_setup()
   // add_theme_support( 'menus' );
 }
 add_action('after_setup_theme', 'wpct_child_setup');
+
 /**
  * Enqueue Child theme assets.
  */
@@ -20,7 +23,6 @@ function wp_coop_theme_child_enqueue_scripts()
   wp_enqueue_style('wp-coop-theme-child', get_stylesheet_directory_uri() . '/css/style.css', array(), $theme->get('Version'));
   wp_enqueue_script('wp-coop-theme-child', get_stylesheet_directory_uri() . '/js/app.js', array('wp-coop-theme'), $theme->get('Version'));
 }
-
 add_action('wp_enqueue_scripts', 'wp_coop_theme_child_enqueue_scripts', 11);
 
 

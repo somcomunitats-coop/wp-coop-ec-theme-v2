@@ -1,0 +1,48 @@
+.ce-block-slider-arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  margin: auto;
+  margin-top: 1rem;
+
+  &.loading {
+    visibility: hidden;
+  }
+
+  .slick-arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 0px;
+
+    &::after {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &.slick-next::after {
+      content: ">";
+    }
+
+    &.slick-prev::after {
+      content: "<";
+    }
+
+    &.slick-disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
+  }
+}
