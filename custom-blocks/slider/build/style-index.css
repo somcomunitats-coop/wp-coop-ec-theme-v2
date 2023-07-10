@@ -1,17 +1,25 @@
 /*!***************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
   \***************************************************************************************************************************************************************************************************************************************/
-.ce-block-slider-arrows {
-  display: flex;
-  justify-content: space-between;
-  width: 80px;
+.wp-block-ce-block-slider {
   margin: auto;
   margin-top: 1rem;
 }
-.ce-block-slider-arrows.loading {
+.wp-block-ce-block-slider .spinner {
+  display: block;
+}
+.wp-block-ce-block-slider .spinner + * {
   visibility: hidden;
 }
-.ce-block-slider-arrows .slick-arrow {
+.wp-block-ce-block-slider .ce-block-slider-wrapper {
+  display: block !important;
+}
+.wp-block-ce-block-slider .ce-block-slider-arrows {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem auto;
+}
+.wp-block-ce-block-slider .ce-block-slider-arrows .slick-arrow {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -19,10 +27,12 @@
   position: relative;
   border: none;
   outline: none;
-  background-color: white;
+  color: var(--wp--preset--color--typography);
+  background-color: var(--wp--preset--color--primary);
   font-size: 0px;
+  margin: 0 1rem;
 }
-.ce-block-slider-arrows .slick-arrow::after {
+.wp-block-ce-block-slider .ce-block-slider-arrows .slick-arrow::after {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -33,13 +43,13 @@
   font-weight: bold;
   text-align: center;
 }
-.ce-block-slider-arrows .slick-arrow.slick-next::after {
+.wp-block-ce-block-slider .ce-block-slider-arrows .slick-arrow.slick-next::after {
   content: ">";
 }
-.ce-block-slider-arrows .slick-arrow.slick-prev::after {
+.wp-block-ce-block-slider .ce-block-slider-arrows .slick-arrow.slick-prev::after {
   content: "<";
 }
-.ce-block-slider-arrows .slick-arrow.slick-disabled {
+.wp-block-ce-block-slider .ce-block-slider-arrows .slick-arrow.slick-disabled {
   opacity: 0.4;
   cursor: default;
 }

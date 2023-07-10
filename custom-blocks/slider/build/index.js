@@ -16,23 +16,86 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
+
+
 
 
 function Edit({
   attributes,
   setAttributes
 }) {
+  const {
+    __
+  } = wp.i18n;
+  const {
+    infinite,
+    slidesToShow,
+    slidesToScroll,
+    initialSlide,
+    centerMode
+  } = attributes;
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)();
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    ...blockProps
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
+    title: __("Slider settings", "wp-coop-ce-theme")
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
+    label: __("Number of slides", "wp-coop-ce-theme"),
+    value: slidesToShow,
+    onChange: value => setAttributes({
+      slidesToShow: value
+    }),
+    min: 1,
+    max: 5,
+    required: true
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
+    label: __("Slides to scroll", "wp-coop-ce-theme"),
+    value: slidesToScroll,
+    onChange: value => setAttributes({
+      slidesToScroll: value
+    }),
+    min: 1,
+    max: 5,
+    required: true
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.RangeControl, {
+    label: __("Initial slide", "wp-coop-ce-theme"),
+    value: initialSlide,
+    onChange: value => setAttributes({
+      initialSlide: value
+    }),
+    required: true
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
+    label: __("Infinite slide", "wp-coop-ce-theme"),
+    checked: infinite,
+    onChange: () => setAttributes({
+      infinite: !infinite
+    })
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
+    label: __("Center mode", "wp-coop-ce-theme"),
+    checked: centerMode,
+    onChange: () => setAttributes({
+      centerMode: !centerMode
+    })
+  })))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    ...blockProps,
+    slidesToShow: slidesToShow,
+    centerMode: String(centerMode)
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks, {
     template: TEMPLATE
-  }));
+  })));
 }
 const TEMPLATE = [["core/group", {
+  className: "ce-block-slider-wrapper",
   layout: {
     type: "flex",
-    flexWrap: "nowrap"
+    orientation: "horizontal"
+    // flexWrap: "wrap",
+  },
+
+  lock: {
+    remove: true,
+    move: true
   }
 }, []]];
 
@@ -122,11 +185,24 @@ __webpack_require__.r(__webpack_exports__);
 function save({
   attributes
 }) {
+  const {
+    infinite,
+    slidesToShow,
+    slidesToScroll,
+    initialSlide,
+    centerMode
+  } = attributes;
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save();
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps,
-    class: "loading"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks.Content, null));
+    infinite: String(infinite),
+    centerMode: String(centerMode),
+    slidesToShow: slidesToShow,
+    slidesToScroll: slidesToScroll,
+    initialSlide: initialSlide
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "spinner"
+  }, "Loading"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks.Content, null));
 }
 
 /***/ }),
@@ -175,6 +251,16 @@ module.exports = window["wp"]["blocks"];
 
 /***/ }),
 
+/***/ "@wordpress/components":
+/*!************************************!*\
+  !*** external ["wp","components"] ***!
+  \************************************/
+/***/ ((module) => {
+
+module.exports = window["wp"]["components"];
+
+/***/ }),
+
 /***/ "@wordpress/element":
 /*!*********************************!*\
   !*** external ["wp","element"] ***!
@@ -191,7 +277,7 @@ module.exports = window["wp"]["element"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"ce-block/slider","version":"0.1.0","title":"CE Slider","category":"widgets","icon":"archive","description":"A slider custom block","attributes":{"message":{"type":"string","source":"text","selector":"div"}},"supports":{"html":false},"textdomain":"wp-coop-ce-theme","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"ce-block/slider","version":"0.1.0","title":"CE Slider","category":"widgets","icon":"slides","description":"A slider custom block","attributes":{"slidesToScroll":{"type":"number","default":1},"slidesToShow":{"type":"number","default":1},"initialSlide":{"type":"number","default":0},"infinite":{"type":"boolean","default":true},"centerMode":{"type":"boolean","default":false}},"supports":{"html":false},"textdomain":"wp-coop-ce-theme","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","keywords":["slides","CE","widgets","carousel"]}');
 
 /***/ })
 

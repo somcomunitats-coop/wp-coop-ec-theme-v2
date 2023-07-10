@@ -1,48 +1,60 @@
-.ce-block-slider-arrows {
-  display: flex;
-  justify-content: space-between;
-  width: 80px;
+.wp-block-ce-block-slider {
   margin: auto;
   margin-top: 1rem;
 
-  &.loading {
+  .spinner {
+    display: block;
+  }
+
+  .spinner + * {
     visibility: hidden;
   }
 
-  .slick-arrow {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    border: none;
-    outline: none;
-    background-color: white;
-    font-size: 0px;
+  .ce-block-slider-wrapper {
+    display: block !important;
+  }
 
-    &::after {
-      position: absolute;
-      top: 0px;
-      left: 0px;
+  .ce-block-slider-arrows {
+    width: fit-content;
+    margin: 1rem auto;
+
+    .slick-arrow {
       width: 30px;
       height: 30px;
-      line-height: 30px;
-      font-size: 1rem;
-      font-weight: bold;
-      text-align: center;
-    }
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      border: none;
+      outline: none;
+      color: var(--wp--preset--color--typography);
+      background-color: var(--wp--preset--color--primary);
+      font-size: 0px;
+      margin: 0 1rem;
 
-    &.slick-next::after {
-      content: ">";
-    }
+      &::after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+      }
 
-    &.slick-prev::after {
-      content: "<";
-    }
+      &.slick-next::after {
+        content: ">";
+      }
 
-    &.slick-disabled {
-      opacity: 0.4;
-      cursor: default;
+      &.slick-prev::after {
+        content: "<";
+      }
+
+      &.slick-disabled {
+        opacity: 0.4;
+        cursor: default;
+      }
     }
   }
 }
