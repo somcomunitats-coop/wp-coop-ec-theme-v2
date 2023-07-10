@@ -3,6 +3,11 @@
   padding-right: var(--wp--custom--spacing--sm);
 }
 
+.is-style-horizontal-padded-l {
+  padding-left: var(--wp--custom--spacing--sl);
+  padding-right: var(--wp--custom--spacing--sl);
+}
+
 .is-style-horizontal-padded-xl {
   padding-left: var(--wp--custom--spacing--sxl);
   padding-right: var(--wp--custom--spacing--sxl);
