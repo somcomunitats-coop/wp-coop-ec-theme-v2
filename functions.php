@@ -116,3 +116,16 @@ function wpct_add_analytics()
   <!-- End Matomo Code -->
   ";
 }
+/**
+ * Register block categories.
+ *
+ */
+
+function ce_register_block_pattern_categories()
+{
+  register_block_pattern_category(
+    'ce-pages',
+    array('label' => __('CE Pages', 'wp-coop-ce-theme-v-2'))
+  );
+}
+add_action('init', 'ce_register_block_pattern_categories');
