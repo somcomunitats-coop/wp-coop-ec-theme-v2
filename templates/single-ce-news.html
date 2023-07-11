@@ -1,0 +1,99 @@
+<!-- wp:template-part {"slug":"header","theme":"wp-coop-ce-theme-v-2","tagName":"header","className":"site-header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"0"}}}} -->
+<main class="wp-block-group single single-ce-news" style="margin-top:0;padding-top:0">
+    <header class="wp-block-header ce-news-header alignfull">
+    <!-- wp:post-featured-image /-->
+    <!-- wp:group {"className":"is-style-padded","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-style-padded">
+        <!-- wp:spacer {"height":"2em"} -->
+        <div style="height:2em" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
+        <!-- wp:tag-cloud /-->
+        <!-- wp:post-title /-->
+        <!-- wp:post-excerpt /-->
+        <!-- wp:spacer {"height":"2em"} -->
+        <div style="height:2em" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
+    </div>
+    <!-- /wp:group -->
+    </header>
+
+    <!-- wp:group {"tagName":"article","layout":{"type":"constrained","margin":{"top":"3rem","bottom":"3rem"}}} -->
+    <div class="wp-block-group" style="margin-top:3rem;margin-bottom:3rem">
+    <!-- wp:post-content /-->
+    <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group">
+        <!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
+        <hr class="wp-block-separator has-alpha-channel-opacity"/>
+        <!-- /wp:separator -->
+
+        <!-- wp:spacer {"width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
+        <div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
+
+        <!-- wp:post-date /-->
+    </div>
+    <!-- /wp:group -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"tagName":"aside","align":"full","className":"is-style-no-padding","style":{"color":{"background":"#c5e2d040"}}} -->
+    <aside class="wp-block-group is-style-no-padding alignfull" style="background-color:#c5e2d040">
+        <!-- wp:spacer {"height":"4rem"} -->
+        <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
+        <!-- wp:heading {"level":2,"textAlign":"center","className":"has-text-align-center"} -->
+        <h2 class="wp-block-heading has-text-align-center">Últimes notícies</h2>
+        <!-- /wp:heading -->
+        <!-- wp:spacer {"height":"1rem"} -->
+        <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
+
+        <!-- wp:group {"layout":"constrained"} -->
+        <div class="wp-block-group">
+        <!-- wp:query {"className":"single-ce-news-query","queryId":49,"query":{"perPage":3,"pages":0,"offset":0,"postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-query single-ce-news-query">
+        <!-- wp:post-template -->
+            <!-- wp:group {"backgroundColor":"base","className":"is-style-no-padding","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group is-style-no-padding has-base-background-color has-background">
+                <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
+
+                <!-- wp:group {"className":"is-style-padded","layout":{"type":"default"}} -->
+                <div class="wp-block-group is-style-padded">
+                    <!-- wp:tag-cloud /-->
+                    <!-- wp:buttons -->
+                    <div class="wp-block-buttons">
+                        <!-- wp:button {"backgroundColor":"brand","textColor":"base","style":{"spacing":{"padding":{"left":"0.67rem","right":"0.67rem","top":"0","bottom":"0"}}},"className":"is-style-rounded","fontSize":"xx-small"} -->
+                        <div class="wp-block-button has-custom-font-size is-style-rounded has-xx-small-font-size"><a class="wp-block-button__link has-base-color has-brand-background-color has-text-color has-background wp-element-button" style="padding-top:0;padding-right:0.67rem;padding-bottom:0;padding-left:0.67rem">Ciutadania</a></div>
+                        <!-- /wp:button -->
+
+                        <!-- wp:button {"backgroundColor":"main","textColor":"base","style":{"spacing":{"padding":{"left":"0.67rem","right":"0.67rem","top":"0","bottom":"0"}}},"className":"is-style-rounded","fontSize":"xx-small"} -->
+                        <div class="wp-block-button has-custom-font-size is-style-rounded has-xx-small-font-size"><a class="wp-block-button__link has-base-color has-main-background-color has-text-color has-background wp-element-button" style="padding-top:0;padding-right:0.67rem;padding-bottom:0;padding-left:0.67rem">DESTAQUEM</a></div>
+                        <!-- /wp:button --></div>
+                    <!-- /wp:buttons -->
+
+                    <!-- wp:spacer {"height":"1em","width":"0px","style":{"layout":{}}} -->
+                    <div style="height:1em;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+                    <!-- /wp:spacer -->
+                    <!-- wp:post-title {"isLink":true,"level":3,"className":"wp-block-heading"} /-->
+                    <!-- wp:post-date /-->
+                    <!-- wp:post-excerpt /-->
+                </div>
+                <!-- /wp:group -->
+            </div>
+            <!-- /wp:group -->
+        <!-- /wp:post-template -->
+        </div>
+        <!-- /wp:query -->
+        </div>
+        <!-- /wp:group -->
+        <!-- wp:spacer {"height":"5rem"} -->
+        <div style="height:5rem" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- /wp:spacer -->
+    </aside>
+    <!-- /wp:group -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"wp-coop-ce-theme-v-2","tagName":"footer","className":"site-footer"} /-->
