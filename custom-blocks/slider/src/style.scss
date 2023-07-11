@@ -1,6 +1,5 @@
 .wp-block-ce-block-slider {
   margin: auto;
-  margin-top: 1rem;
 
   .spinner {
     display: block;
@@ -12,6 +11,36 @@
 
   .ce-block-slider-wrapper {
     display: block !important;
+  }
+
+  ul.slick-dots {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+    > li {
+      margin: 0;
+    }
+
+    > li:nth-child(n + 2) {
+      margin-left: 20px;
+    }
+
+    .slick-active button {
+      opacity: 1;
+    }
+
+    button {
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      border-radius: 50%;
+      font-size: 0px;
+      background-color: var(--wp--preset--color--brand);
+      border: none;
+      cursor: pointer;
+      opacity: 0.3;
+    }
   }
 
   .ce-block-slider-arrows {

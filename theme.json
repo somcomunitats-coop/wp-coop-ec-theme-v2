@@ -85,7 +85,7 @@
         "body": 1.6
       },
       "spacing": {
-        "sminimal": "2px",
+        "sminimal": "5px",
         "sxxs": "10px",
         "sxs": "20px",
         "sm": "30px",
@@ -175,7 +175,7 @@
     "blocks": {
       "core/button": {
         "border": {
-          "radius": "50%"
+          "radius": "40px"
         },
         "color": {
           "background": "var(--wp--preset--color--primary)",
@@ -291,9 +291,7 @@
         }
       },
       "core/post-title": {
-        "typography": {
-          "fontSize": "var(--wp--preset--font-size--xx-large)"
-        }
+        "typography": {}
       },
       "core/preformatted": {
         "border": {

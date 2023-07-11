@@ -1,8 +1,15 @@
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".wp-block-ce-block-slider").forEach((el) => {
-      const { infinite, slidesToShow, slidesToScroll, initialSlide, centerMode } =
-        getAttributes(el);
+      const {
+        infinite,
+        slidesToShow,
+        slidesToScroll,
+        initialSlide,
+        centerMode,
+        dots,
+        arrows,
+      } = getAttributes(el);
 
       const arrowsWrapper = document.createElement("div");
       arrowsWrapper.classList.add("ce-block-slider-arrows");
@@ -13,9 +20,8 @@
       const slidesWrapper = getSlidesWrapper(el);
       const slideCount = slidesWrapper.children.length;
       jQuery(slidesWrapper).slick({
-        centerMode: true,
-        dots: false,
-        arrows: true,
+        dots,
+        arrows,
         slidesToScroll,
         slidesToShow,
         infinite,
@@ -34,6 +40,8 @@
       slidesToShow: Number(el.getAttribute("slidestoshow")),
       slidesToScroll: Number(el.getAttribute("slidestoscroll")),
       initialSlide: Number(el.getAttribute("initialslide")),
+      dots: el.getAttribute("showdots") === "true",
+      arrows: el.getAttribute("showarrows") === "true",
     };
   }
 

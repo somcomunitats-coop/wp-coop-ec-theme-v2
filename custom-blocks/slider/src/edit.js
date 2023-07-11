@@ -4,7 +4,15 @@ import "./editor.scss";
 
 export default function Edit({ attributes, setAttributes }) {
   const { __ } = wp.i18n;
-  const { infinite, slidesToShow, slidesToScroll, initialSlide, centerMode } = attributes;
+  const {
+    infinite,
+    slidesToShow,
+    slidesToScroll,
+    initialSlide,
+    centerMode,
+    showArrows,
+    showDots,
+  } = attributes;
   const blockProps = useBlockProps();
 
   return (
@@ -53,6 +61,24 @@ export default function Edit({ attributes, setAttributes }) {
               label={__("Center mode", "wp-coop-ce-theme")}
               checked={centerMode}
               onChange={() => setAttributes({ centerMode: !centerMode })}
+            />
+          </PanelRow>
+        </PanelBody>
+        <PanelBody>
+          <PanelRow>
+            <ToggleControl
+              label={__("Show arrows", "wp-coop-ce-theme")}
+              checked={showArrows}
+              onChange={() => setAttributes({ showArrows: !showArrows })}
+            />
+          </PanelRow>
+        </PanelBody>
+        <PanelBody>
+          <PanelRow>
+            <ToggleControl
+              label={__("Show dots", "wp-coop-ce-theme")}
+              checked={showDots}
+              onChange={() => setAttributes({ showDots: !showDots })}
             />
           </PanelRow>
         </PanelBody>

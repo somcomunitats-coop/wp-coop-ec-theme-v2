@@ -44,8 +44,7 @@ function wpct_create_model_news()
         ]
     );
 
-    register_taxonomy('tag', 'ce-news', [
-        'hierarchical' => false,
+    register_taxonomy('post_tag', 'ce-news', [
         'labels' => [
             'name' => __('Tags'),
             'singular_name' => __('Tag'),
@@ -63,9 +62,12 @@ function wpct_create_model_news()
             'choose_from_most_used' => __('Choose from the most used tags'),
             'menu_name' => __('Tags'),
         ],
+        'hierarchical' => false,
         'show_ui' => true,
-        'update_count_callback' => '_update_post_term_count',
+        'show_admin_column' => true,
+        // 'update_count_callback' => '_update_post_term_count',
         'query_var' => true,
-        'rewrite' => array('slug' => 'tag'),
+        'rewrite' => ['slug' => 'post_tag'],
+        'has_archive' => true,
     ]);
 }

@@ -127,5 +127,10 @@ function ce_register_block_pattern_categories()
     'ce-pages',
     array('label' => __('CE Pages', 'wp-coop-ce-theme-v-2'))
   );
+
+  register_block_pattern_category(
+    'ce-pattern',
+    ['label' => __('CE Pattern', 'wp-coop-ce-theme')]
+  );
 }
 add_action('init', 'ce_register_block_pattern_categories');

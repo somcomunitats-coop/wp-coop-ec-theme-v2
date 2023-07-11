@@ -35,7 +35,9 @@ function Edit({
     slidesToShow,
     slidesToScroll,
     initialSlide,
-    centerMode
+    centerMode,
+    showArrows,
+    showDots
   } = attributes;
   const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)();
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
@@ -76,6 +78,18 @@ function Edit({
     checked: centerMode,
     onChange: () => setAttributes({
       centerMode: !centerMode
+    })
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
+    label: __("Show arrows", "wp-coop-ce-theme"),
+    checked: showArrows,
+    onChange: () => setAttributes({
+      showArrows: !showArrows
+    })
+  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
+    label: __("Show dots", "wp-coop-ce-theme"),
+    checked: showDots,
+    onChange: () => setAttributes({
+      showDots: !showDots
     })
   })))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     ...blockProps,
@@ -190,7 +204,9 @@ function save({
     slidesToShow,
     slidesToScroll,
     initialSlide,
-    centerMode
+    centerMode,
+    showDots,
+    showArrows
   } = attributes;
   const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps.save();
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -199,7 +215,9 @@ function save({
     centerMode: String(centerMode),
     slidesToShow: slidesToShow,
     slidesToScroll: slidesToScroll,
-    initialSlide: initialSlide
+    initialSlide: initialSlide,
+    showDots: String(showDots),
+    showArrows: String(showArrows)
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "spinner"
   }, "Loading"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InnerBlocks.Content, null));
@@ -277,7 +295,7 @@ module.exports = window["wp"]["element"];
   \************************/
 /***/ ((module) => {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"ce-block/slider","version":"0.1.0","title":"CE Slider","category":"widgets","icon":"slides","description":"A slider custom block","attributes":{"slidesToScroll":{"type":"number","default":1},"slidesToShow":{"type":"number","default":1},"initialSlide":{"type":"number","default":0},"infinite":{"type":"boolean","default":true},"centerMode":{"type":"boolean","default":false}},"supports":{"html":false},"textdomain":"wp-coop-ce-theme","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","keywords":["slides","CE","widgets","carousel"]}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"ce-block/slider","version":"0.1.0","title":"CE Slider","category":"widgets","icon":"slides","description":"A slider custom block","attributes":{"slidesToScroll":{"type":"number","default":1},"slidesToShow":{"type":"number","default":1},"initialSlide":{"type":"number","default":0},"infinite":{"type":"boolean","default":true},"centerMode":{"type":"boolean","default":false},"showDots":{"type":"boolean","default":false},"showArrows":{"type":"boolean","default":true}},"supports":{"html":false},"textdomain":"wp-coop-ce-theme","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","keywords":["slides","CE","widgets","carousel"]}');
 
 /***/ })
 

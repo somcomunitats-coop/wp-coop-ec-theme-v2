@@ -27,6 +27,14 @@
     "centerMode": {
       "type": "boolean",
       "default": false
+    },
+    "showDots": {
+      "type": "boolean",
+      "default": false
+    },
+    "showArrows": {
+      "type": "boolean",
+      "default": true
     }
   },
   "supports": {

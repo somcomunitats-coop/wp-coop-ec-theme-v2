@@ -3,7 +3,6 @@
   \***************************************************************************************************************************************************************************************************************************************/
 .wp-block-ce-block-slider {
   margin: auto;
-  margin-top: 1rem;
 }
 .wp-block-ce-block-slider .spinner {
   display: block;
@@ -13,6 +12,31 @@
 }
 .wp-block-ce-block-slider .ce-block-slider-wrapper {
   display: block !important;
+}
+.wp-block-ce-block-slider ul.slick-dots {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.wp-block-ce-block-slider ul.slick-dots > li {
+  margin: 0;
+}
+.wp-block-ce-block-slider ul.slick-dots > li:nth-child(n+2) {
+  margin-left: 20px;
+}
+.wp-block-ce-block-slider ul.slick-dots .slick-active button {
+  opacity: 1;
+}
+.wp-block-ce-block-slider ul.slick-dots button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 0px;
+  background-color: var(--wp--preset--color--brand);
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
 }
 .wp-block-ce-block-slider .ce-block-slider-arrows {
   width: -moz-fit-content;

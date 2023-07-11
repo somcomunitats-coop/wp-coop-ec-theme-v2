@@ -9,6 +9,10 @@
 /* Elements */
 @import "elements/button.css";
 
+/* Blocks */
+@import "blocks/terms.css";
+@import "blocks/post-title.css";
+
 /* Template parts */
 @import "parts/header.css";
 @import "parts/footer.css";

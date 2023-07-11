@@ -1,7 +1,15 @@
 import { useBlockProps, InnerBlocks } from "@wordpress/block-editor";
 
 export default function save({ attributes }) {
-  const { infinite, slidesToShow, slidesToScroll, initialSlide, centerMode } = attributes;
+  const {
+    infinite,
+    slidesToShow,
+    slidesToScroll,
+    initialSlide,
+    centerMode,
+    showDots,
+    showArrows,
+  } = attributes;
 
   const blockProps = useBlockProps.save();
 
@@ -13,6 +21,8 @@ export default function save({ attributes }) {
       slidesToShow={slidesToShow}
       slidesToScroll={slidesToScroll}
       initialSlide={initialSlide}
+      showDots={String(showDots)}
+      showArrows={String(showArrows)}
     >
       <div class="spinner">Loading</div>
       <InnerBlocks.Content />
