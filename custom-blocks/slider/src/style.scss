@@ -56,28 +56,13 @@
       border: none;
       outline: none;
       color: var(--wp--preset--color--typography);
-      background-color: var(--wp--preset--color--primary);
+      // background-color: var(--wp--preset--color--primary);
       font-size: 0px;
       margin: 0 1rem;
+      background-image: url("../assets/images/slider-arrow--light.svg");
 
-      &::after {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 1rem;
-        font-weight: bold;
-        text-align: center;
-      }
-
-      &.slick-next::after {
-        content: ">";
-      }
-
-      &.slick-prev::after {
-        content: "<";
+      &.slick-prev {
+        transform: rotate(180deg);
       }
 
       &.slick-disabled {

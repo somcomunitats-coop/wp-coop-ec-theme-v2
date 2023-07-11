@@ -12,6 +12,7 @@ export default function Edit({ attributes, setAttributes }) {
     centerMode,
     showArrows,
     showDots,
+    autoPlay,
   } = attributes;
   const blockProps = useBlockProps();
 
@@ -79,6 +80,15 @@ export default function Edit({ attributes, setAttributes }) {
               label={__("Show dots", "wp-coop-ce-theme")}
               checked={showDots}
               onChange={() => setAttributes({ showDots: !showDots })}
+            />
+          </PanelRow>
+        </PanelBody>
+        <PanelBody>
+          <PanelRow>
+            <ToggleControl
+              label={__("Autoplay", "wp-coop-ce-theme")}
+              checked={autoPlay}
+              onChange={() => setAttributes({ autoPlay: !autoPlay })}
             />
           </PanelRow>
         </PanelBody>

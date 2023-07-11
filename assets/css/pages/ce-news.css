@@ -87,7 +87,7 @@ body.single-ce-news .ce-news-query .wp-block-post-template .wp-block-post:nth-ch
 body.post-type-archive-ce-news
   .ce-news-query
   .wp-block-post-template
-  .wp-block-post:nth-child(3n),
+  .wp-block-post:nth-child(3n + 3),
 body.single-ce-news
   .ce-news-query
   .wp-block-post-template

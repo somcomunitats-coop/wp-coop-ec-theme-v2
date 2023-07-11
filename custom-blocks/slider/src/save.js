@@ -9,6 +9,7 @@ export default function save({ attributes }) {
     centerMode,
     showDots,
     showArrows,
+    autoPlay,
   } = attributes;
 
   const blockProps = useBlockProps.save();
@@ -23,6 +24,7 @@ export default function save({ attributes }) {
       initialSlide={initialSlide}
       showDots={String(showDots)}
       showArrows={String(showArrows)}
+      autoPlay={String(autoPlay)}
     >
       <div class="spinner">Loading</div>
       <InnerBlocks.Content />

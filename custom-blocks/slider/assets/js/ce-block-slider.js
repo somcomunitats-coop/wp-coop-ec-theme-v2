@@ -9,6 +9,7 @@
         centerMode,
         dots,
         arrows,
+        autoplay,
       } = getAttributes(el);
 
       const arrowsWrapper = document.createElement("div");
@@ -26,6 +27,8 @@
         slidesToShow,
         infinite,
         centerMode,
+        autoplay,
+        autoplaySpeed: 5e3,
         initialSlide: Math.max(0, Math.min(slideCount, initialSlide)),
         appendArrows: jQuery(arrowsWrapper),
         lazyLoad: "ondemand",
@@ -42,6 +45,7 @@
       initialSlide: Number(el.getAttribute("initialslide")),
       dots: el.getAttribute("showdots") === "true",
       arrows: el.getAttribute("showarrows") === "true",
+      autoplay: el.getAttribute("autoplay") === "true",
     };
   }
 

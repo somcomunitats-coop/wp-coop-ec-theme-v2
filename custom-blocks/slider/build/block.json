@@ -35,6 +35,10 @@
     "showArrows": {
       "type": "boolean",
       "default": true
+    },
+    "autoPlay": {
+      "type": "boolean",
+      "default": false
     }
   },
   "supports": {

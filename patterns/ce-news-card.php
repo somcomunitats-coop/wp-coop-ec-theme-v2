@@ -15,7 +15,23 @@
 
   <!-- wp:group {"className":"is-style-padded","layout":{"type":"default"}} -->
   <div class="wp-block-group is-style-padded">
-    <!-- wp:post-terms {"term":"post_tag"} /-->
+    <!-- wp:group {"className":"is-style-show-desktop","layout"{"type":"default"}} -->
+    <div class="wp-block-group is-style-show-desktop">
+      <!-- wp:post-terms {"term":"post_tag"} /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"className":"is-style-show-tablet","layout"{"type":"default"}} -->
+    <div class="wp-block-group is-style-show-tablet">
+      <!-- wp:post-terms {"term":"post_tag"} /-->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"className":"is-style-show-mobile","layout"{"type":"default"}} -->
+    <div class="wp-block-group is-style-show-mobile">
+      <!-- wp:post-terms {"term":"post_tag"} /-->
+    </div>
+    <!-- /wp:group -->
 
     <!-- wp:spacer {"height":"1em","width":"0px","style":{"layout":{}}} -->
     <div style="height:1em;width:0px" aria-hidden="true" class="wp-block-spacer"></div>

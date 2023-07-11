@@ -73,23 +73,23 @@ body .is-style-hidden {
 /* mobile */
 @media (max-width: 782px) {
   body .is-style-show-tablet {
-    display: none;
+    display: none !important;
   }
   body .is-style-show-tablet-desktop {
-    display: none;
+    display: none !important;
   }
   body .is-style-show-desktop {
-    display: none;
+    display: none !important;
   }
 }
 
 /* tablet */
 @media (min-width: 783px) and (max-width: 1024px) {
   body .is-style-show-mobile {
-    display: none;
+    display: none !important;
   }
   body .is-style-show-desktop {
-    display: none;
+    display: none !important;
   }
   /* multiple buttons in column*/
   body .ce-buttons-column {
@@ -100,13 +100,13 @@ body .is-style-hidden {
 /* desktop */
 @media (min-width: 1024px) {
   body .is-style-show-mobile {
-    display: none;
+    display: none !important;
   }
   body .is-style-show-mobile-tablet {
-    display: none;
+    display: none !important;
   }
   body .is-style-show-tablet {
-    display: none;
+    display: none !important;
   }
   /* multiple buttons in column*/
   body .ce-buttons-column {

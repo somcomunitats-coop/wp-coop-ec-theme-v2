@@ -19,4 +19,5 @@
 @import "parts/upper-main-nav.css";
 
 /* Pages */
+@import "pages/home.css";
 @import "pages/ce-news.css";

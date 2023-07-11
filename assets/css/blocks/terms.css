@@ -18,3 +18,13 @@
 .taxonomy-post_tag.wp-block-post-terms .wp-block-post-terms__separator {
   display: none;
 }
+
+.is-style-show-tablet .taxonomy-post_tag.wp-block-post-terms a {
+  display: block;
+  width: fit-content;
+  margin: 0;
+}
+
+.is-style-show-tablet .taxonomy-post_tag.wp-block-post-terms a:nth-child(n + 2) {
+  margin-top: 0.25em;
+}
