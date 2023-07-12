@@ -1,10 +1,10 @@
 @import "../../../wp-coop-theme/assets/css/index.css";
 @import "custom.css";
-@import "responsive.css";
 
 /* Base */
 @import "base/typography.css";
 @import "base/layout.css";
+@import "base/responsive.css";
 
 /* Elements */
 @import "elements/button.css";
