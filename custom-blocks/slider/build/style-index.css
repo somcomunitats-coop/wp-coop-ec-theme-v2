@@ -4,10 +4,7 @@
 .wp-block-ce-block-slider {
   margin: auto;
 }
-.wp-block-ce-block-slider .spinner {
-  display: block;
-}
-.wp-block-ce-block-slider .spinner + * {
+.wp-block-ce-block-slider:not(.ready) + * {
   visibility: hidden;
 }
 .wp-block-ce-block-slider .ce-block-slider-wrapper {

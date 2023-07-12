@@ -26,7 +26,6 @@ export default function save({ attributes }) {
       showArrows={String(showArrows)}
       autoPlay={String(autoPlay)}
     >
-      <div class="spinner">Loading</div>
       <InnerBlocks.Content />
     </div>
   );

@@ -1,11 +1,7 @@
 .wp-block-ce-block-slider {
   margin: auto;
 
-  .spinner {
-    display: block;
-  }
-
-  .spinner + * {
+  &:not(.ready) + * {
     visibility: hidden;
   }
 

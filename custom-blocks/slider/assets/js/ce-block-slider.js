@@ -1,6 +1,7 @@
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".wp-block-ce-block-slider").forEach((el) => {
+      el.classList.add("ready");
       const {
         infinite,
         slidesToShow,
@@ -15,8 +16,6 @@
       const arrowsWrapper = document.createElement("div");
       arrowsWrapper.classList.add("ce-block-slider-arrows");
       el.appendChild(arrowsWrapper);
-      el.classList.remove("loading");
-      el.removeChild(el.children[0]);
 
       const slidesWrapper = getSlidesWrapper(el);
       const slideCount = slidesWrapper.children.length;
