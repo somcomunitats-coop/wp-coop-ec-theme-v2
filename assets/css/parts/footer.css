@@ -24,6 +24,7 @@ footer.wp-block-template-part .gform_wrapper form .gform_button[type="submit"] {
   z-index: 10;
 }
 
+footer.wp-block-template-part .gform_wrapper form .gfield_consent_label,
 footer.wp-block-template-part .gform_wrapper form .gfield_consent_description {
   color: var(--wp--preset--color--base);
 }
@@ -35,12 +36,13 @@ footer.wp-block-template-part .gform_button {
 }
 
 /* (lang nav) */
-footer .is-style-footer-nav-group .wpml-ls {
+footer.wp-block-template-part .is-style-footer-nav-group .wpml-ls {
   padding: 0;
 }
 
 footer.wp-block-template-part .wpml-ls > ul {
   margin-left: 0;
+  padding: 0;
   font-size: var(--wp--preset--font-size--small);
 }
 
@@ -56,18 +58,48 @@ footer.wp-block-template-part .wpml-ls > ul > li > a > br {
   display: none;
 }
 
-footer .wpml-ls, 
-footer .wpml-ls ul{
-  padding: 0 !important;
-  margin: 0 !important;
+footer.wp-block-template-part .wpml-ls-item:nth-child(n + 2) {
+  border-left: 1px solid;
+}
 
+footer.wp-block-template-part .wpml-ls-item a {
+  padding: 0 10px;
 }
-footer .wpml-ls ul li:first-child a {
-  padding: 0px 2px 2px 0px;
+
+footer.wp-block-template-part .wpml-ls-item:first-child a {
+  padding-left: 0;
 }
-footer .wpml-ls ul li:last-child a::before{
-content: " | "
+
+footer.wp-block-template-part .wpml-ls-item:last-child a {
+  padding-right: 0;
 }
-footer .wpml-ls ul li:last-child span{
-  padding-left: 10px;
-  }
+
+footer.wp-block-template-part .wp-block-social-links li {
+  padding: 0 10px;
+}
+
+footer.wp-block-template-part .wp-block-social-links.is-style-logos-only svg {
+  height: 1.1em;
+  width: 1.1em;
+}
+
+footer.wp-block-template-part .wp-block-social-links li:first-child {
+  padding-left: 0px;
+}
+
+footer.wp-block-template-part .wp-block-social-links li:last-child {
+  padding-right: 0px;
+}
+
+footer.wp-block-template-part .wp-block-navigation .footer-nav-legal li {
+  padding: var(--wp--custom--spacing--sminimal) var(--wp--custom--spacing--sxxs);
+}
+
+footer.wp-block-template-part .wp-block-navigation .footer-nav-legal li:first-child {
+  padding-left: 0;
+}
+
+footer.wp-block-template-part .wp-block-navigation .footer-nav-legal li:last-child {
+  padding-right: 0;
+}
+

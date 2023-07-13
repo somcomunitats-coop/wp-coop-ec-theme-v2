@@ -1,0 +1,30 @@
+.taxonomy-post_tag.wp-block-post-terms a {
+  padding: var(--wp--custom--spacing--sminimal) var(--wp--custom--spacing--sxs);
+  border-radius: 40px;
+  background-color: var(--wp--preset--color--brand);
+  color: var(--wp--preset--color--white);
+  font-weight: 700;
+  font-size: var(--wp--preset--font-size--x-small);
+}
+
+.taxonomy-post_tag.wp-block-post-terms a:nth-child(3n) {
+  background-color: var(--wp--preset--color--main);
+}
+
+.taxonomy-post_tag.wp-block-post-terms a:nth-child(n + 2) {
+  margin-left: 0.5em;
+}
+
+.taxonomy-post_tag.wp-block-post-terms .wp-block-post-terms__separator {
+  display: none;
+}
+
+.is-style-show-tablet .taxonomy-post_tag.wp-block-post-terms a {
+  display: block;
+  width: fit-content;
+  margin: 0;
+}
+
+.is-style-show-tablet .taxonomy-post_tag.wp-block-post-terms a:nth-child(n + 2) {
+  margin-top: 0.25em;
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ce-block/slider",
+  "version": "0.1.0",
+  "title": "CE Slider",
+  "category": "widgets",
+  "icon": "slides",
+  "description": "A slider custom block",
+  "attributes": {
+    "slidesToScroll": {
+      "type": "number",
+      "default": 1
+    },
+    "slidesToShow": {
+      "type": "number",
+      "default": 1
+    },
+    "initialSlide": {
+      "type": "number",
+      "default": 0
+    },
+    "infinite": {
+      "type": "boolean",
+      "default": true
+    },
+    "centerMode": {
+      "type": "boolean",
+      "default": false
+    },
+    "showDots": {
+      "type": "boolean",
+      "default": false
+    },
+    "showArrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoPlay": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "wp-coop-ce-theme",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "keywords": ["slides", "CE", "widgets", "carousel"]
+}
