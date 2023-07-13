@@ -36,7 +36,7 @@ function wpct_create_model_news()
                 'tags'
             ],
             'rewrite' => [
-                'slug' => 'ce-news'
+                'slug' => 'noticies'
             ],
             // 'map_meta_cap' => true,
             // 'capabilities' => array(),
