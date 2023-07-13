@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Title: CE Ciutadania
- * Slug: ce-page/ciutadania
+ * Title: CE Formulari Alta
+ * Slug: ce-page/atla-form
  * Categories: ce-pages
  * Viewport Width: 1350
  */
 
 ?>
 
-<!-- wp:group {"align":"full","className":"is-style-no-padding","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-<div class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"35%"}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
+<section class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"35%"}},"layout":{"type":"constrained"}} -->
   <div class="wp-block-group"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/alta-ce-vertical-cover.png","id":2674,"dimRatio":0,"minHeight":2850,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
     <div class="wp-block-cover is-light" style="min-height:2850px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2674" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/alta-ce-vertical-cover.png" data-object-fit="cover" />
       <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
@@ -22,8 +22,8 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:group {"tagName":"section","style":{"layout":{"selfStretch":"fixed","flexSize":"65%"}},"backgroundColor":"second-base-light","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-  <section class="wp-block-group has-second-base-light-background-color has-background"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
+  <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"65%"}},"backgroundColor":"second-base-light","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+  <div class="wp-block-group has-second-base-light-background-color has-background"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
     <div class="wp-block-group is-style-no-padding"><!-- wp:group {"className":"is-style-horizontal-padded-xxl","layout":{"type":"constrained","contentSize":"90%","justifyContent":"left"}} -->
       <div class="wp-block-group is-style-horizontal-padded-xxl"><!-- wp:spacer {"height":"5rem","style":{"layout":{}}} -->
         <div style="height:5rem" aria-hidden="true" class="wp-block-spacer"></div>
@@ -46,13 +46,13 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
-  </section>
+  </div>
   <!-- /wp:group -->
-</div>
+</section>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull"><!-- wp:spacer {"height":"6rem"} -->
+<!-- wp:group {"tagName":"section","align":"full","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull"><!-- wp:spacer {"height":"6rem"} -->
   <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
@@ -60,8 +60,8 @@
   <h2 class="wp-block-heading has-text-align-center">Preguntes freqüents</h2>
   <!-- /wp:heading -->
 
-  <!-- wp:paragraph {"align":"center"} -->
-  <p class="has-text-align-center">Si els vostre dubte no apareix en aquest llistat i no trobeu respostes en les guies disponibles, si us plau, escriviu-nos a <a href="mailto:info@somcomunitats.coop">info@somcomunitats.coop</a> i us atendrem tan aviat com sigui possible.</p>
+  <!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
+  <p class="has-text-align-center has-medium-font-size">Si els vostre dubte no apareix en aquest llistat i no trobeu respostes en les guies disponibles, si us plau, escriviu-nos a <a href="mailto:info@somcomunitats.coop">info@somcomunitats.coop</a> i us atendrem tan aviat com sigui possible.</p>
   <!-- /wp:paragraph -->
 
   <!-- wp:spacer {"height":"2rem"} -->
@@ -141,7 +141,7 @@
   <!-- wp:spacer {"height":"7rem"} -->
   <div style="height:7rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
-</div>
+</section>
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding"} -->

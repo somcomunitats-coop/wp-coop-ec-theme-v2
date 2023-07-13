@@ -568,15 +568,15 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","className":"is-style-no-padding","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull is-style-no-padding"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=5qEFFR8gX6k","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding","layout":{"type":"default"}} -->
+<section class="wp-block-group alignfull is-style-no-padding"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=SuHV-q80n8I","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
   <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio">
     <div class="wp-block-embed__wrapper">
-      https://www.youtube.com/watch?v=5qEFFR8gX6k
+      https://www.youtube.com/watch?v=SuHV-q80n8I
     </div>
   </figure>
   <!-- /wp:embed -->
-</div>
+</section>
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","style":{"color":{"background":"#c5e2d040"}},"className":"is-style-no-padding"} -->
@@ -857,8 +857,8 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","backgroundColor":"primary","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-primary-background-color has-background"><!-- wp:spacer {"height":"6rem"} -->
+<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"primary","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull has-primary-background-color has-background"><!-- wp:spacer {"height":"6rem"} -->
   <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
@@ -884,7 +884,7 @@
   <!-- wp:spacer {"height":"7rem"} -->
   <div style="height:7rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
-</div>
+</section>
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding"} -->

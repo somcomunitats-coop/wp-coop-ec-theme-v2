@@ -483,8 +483,8 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","backgroundColor":"primary","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-primary-background-color has-background"><!-- wp:spacer {"height":"6rem"} -->
+<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"primary","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull has-primary-background-color has-background"><!-- wp:spacer {"height":"6rem"} -->
   <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
@@ -540,11 +540,11 @@
   <!-- wp:spacer {"height":"7rem"} -->
   <div style="height:7rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
-</div>
+</section>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","backgroundColor":"second-base-light","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-second-base-light-background-color has-background"><!-- wp:spacer {"height":"6rem"} -->
+<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull has-second-base-light-background-color has-background"><!-- wp:spacer {"height":"6rem"} -->
   <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
@@ -629,7 +629,7 @@
   <!-- wp:spacer {"height":"7rem"} -->
   <div style="height:7rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
-</div>
+</section>
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding"} -->
