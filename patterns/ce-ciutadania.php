@@ -6,6 +6,7 @@
  * Categories: ce-pages
  * Viewport Width: 1350
  */
+
 ?>
 
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding"} -->
@@ -634,9 +635,9 @@
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding"} -->
 <section class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"default"}} -->
   <div class="wp-block-group alignfull is-style-default"><!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-    <div class="wp-block-group alignfull"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"layout":{"type":"constrained"}} -->
-      <div class="wp-block-group"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/faqs.png","id":2585,"dimRatio":0,"minHeight":640,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
-        <div class="wp-block-cover is-light" style="min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2585" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/faqs.png" data-object-fit="cover" />
+    <div class="wp-block-group alignfull"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"layout":{"type":"constrained"}} -->
+      <div class="wp-block-group"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/faqs.png","id":2585,"dimRatio":0,"minHeight":100,"minHeightUnit":"vh","isDark":false,"layout":{"type":"constrained"}} -->
+        <div class="wp-block-cover is-light" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2585" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/faqs.png" data-object-fit="cover" />
           <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
             <p class="has-text-align-center has-large-font-size"></p>
             <!-- /wp:paragraph -->
@@ -646,7 +647,7 @@
       </div>
       <!-- /wp:group -->
 
-      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded-xxl","layout":{"type":"constrained"}} -->
+      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"70%"}},"className":"is-style-horizontal-padded-xxl","layout":{"type":"constrained"}} -->
       <div class="wp-block-group is-style-horizontal-padded-xxl"><!-- wp:spacer {"height":"6rem"} -->
         <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
@@ -659,8 +660,105 @@
         <p class="has-medium-font-size">Hem recollit les preguntes més habituals que ens arriben de les persones particulars que volen formar part de Comunitats Energètiques</p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:spacer {"height":"6rem"} -->
-        <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- wp:group {"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group"><!-- wp:pb/accordion-item {"titleTag":"h6","uuid":25888} -->
+          <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
+            <h6 id="at-25888" class="c-accordion__title js-accordion-controller" role="button">Quina forma jurídica tenen les Comunitats Energètiques?</h6>
+            <div id="ac-25888" class="c-accordion__content"><!-- wp:paragraph -->
+              <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
+              <!-- /wp:paragraph -->
+            </div>
+          </div>
+          <!-- /wp:pb/accordion-item -->
+
+          <!-- wp:spacer {"height":"2rem"} -->
+          <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+          <!-- /wp:spacer -->
+
+          <!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+          <div class="wp-block-group alignwide"><!-- wp:separator {"align":"wide","style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"second-base"} -->
+            <hr class="wp-block-separator alignwide has-text-color has-second-base-color has-alpha-channel-opacity has-second-base-background-color has-background" />
+            <!-- /wp:separator -->
+          </div>
+          <!-- /wp:group -->
+
+          <!-- wp:pb/accordion-item {"titleTag":"h6","uuid":25884} -->
+          <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
+            <h6 id="at-25884" class="c-accordion__title js-accordion-controller" role="button">Tinc una empresa, puc formar part d’una Comunitat Energètica?</h6>
+            <div id="ac-25884" class="c-accordion__content"><!-- wp:paragraph -->
+              <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
+              <!-- /wp:paragraph -->
+            </div>
+          </div>
+          <!-- /wp:pb/accordion-item -->
+
+          <!-- wp:spacer {"height":"2rem"} -->
+          <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+          <!-- /wp:spacer -->
+
+          <!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+          <div class="wp-block-group alignwide"><!-- wp:separator {"align":"wide","style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"second-base"} -->
+            <hr class="wp-block-separator alignwide has-text-color has-second-base-color has-alpha-channel-opacity has-second-base-background-color has-background" />
+            <!-- /wp:separator -->
+          </div>
+          <!-- /wp:group -->
+
+          <!-- wp:pb/accordion-item {"titleTag":"h6","uuid":25885} -->
+          <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
+            <h6 id="at-25885" class="c-accordion__title js-accordion-controller" role="button">Com em puc apuntar a una Comunitat Energètica?</h6>
+            <div id="ac-25885" class="c-accordion__content"><!-- wp:paragraph -->
+              <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
+              <!-- /wp:paragraph -->
+            </div>
+          </div>
+          <!-- /wp:pb/accordion-item -->
+
+          <!-- wp:spacer {"height":"2rem"} -->
+          <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+          <!-- /wp:spacer -->
+
+          <!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+          <div class="wp-block-group alignwide"><!-- wp:separator {"align":"wide","style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"second-base"} -->
+            <hr class="wp-block-separator alignwide has-text-color has-second-base-color has-alpha-channel-opacity has-second-base-background-color has-background" />
+            <!-- /wp:separator -->
+          </div>
+          <!-- /wp:group -->
+
+          <!-- wp:pb/accordion-item {"titleTag":"h6","uuid":25886} -->
+          <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
+            <h6 id="at-25886" class="c-accordion__title js-accordion-controller" role="button">A nivell fiscal, em pot perjudicar formar part d’una Comunitat Energètica?</h6>
+            <div id="ac-25886" class="c-accordion__content"><!-- wp:paragraph -->
+              <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
+              <!-- /wp:paragraph -->
+            </div>
+          </div>
+          <!-- /wp:pb/accordion-item -->
+
+          <!-- wp:spacer {"height":"2rem"} -->
+          <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+          <!-- /wp:spacer -->
+
+          <!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+          <div class="wp-block-group alignwide"><!-- wp:separator {"align":"wide","style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"second-base"} -->
+            <hr class="wp-block-separator alignwide has-text-color has-second-base-color has-alpha-channel-opacity has-second-base-background-color has-background" />
+            <!-- /wp:separator -->
+          </div>
+          <!-- /wp:group -->
+
+          <!-- wp:pb/accordion-item {"titleTag":"h6","uuid":25887} -->
+          <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
+            <h6 id="at-25887" class="c-accordion__title js-accordion-controller" role="button">Si ja sóc de Som Energia, té sentit apuntar-me també a una Comunitat Energètica?</h6>
+            <div id="ac-25887" class="c-accordion__content"><!-- wp:paragraph -->
+              <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
+              <!-- /wp:paragraph -->
+            </div>
+          </div>
+          <!-- /wp:pb/accordion-item -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:spacer {"height":"5rem"} -->
+        <div style="height:5rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
       </div>
       <!-- /wp:group -->

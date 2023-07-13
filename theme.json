@@ -490,8 +490,8 @@
       },
       "h6": {
         "typography": {
-          "fontSize": "var(--wp--preset--font-size--small)",
-          "lineHeight": "var(--wp--custom--line-height--small)",
+          "fontSize": "var(--wp--preset--font-size--medium)",
+          "lineHeight": "var(--wp--custom--line-height--medium)",
           "fontWeight": "var(--wp--custom--font-weight--bold)"
         },
         "color": {
