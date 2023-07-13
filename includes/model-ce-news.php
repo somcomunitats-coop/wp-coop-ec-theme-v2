@@ -67,7 +67,7 @@ function wpct_create_model_news()
         'show_admin_column' => true,
         // 'update_count_callback' => '_update_post_term_count',
         'query_var' => true,
-        'rewrite' => ['slug' => 'post_tag'],
+        'rewrite' => ['slug' => 'tag'],
         'has_archive' => true,
     ]);
 }
