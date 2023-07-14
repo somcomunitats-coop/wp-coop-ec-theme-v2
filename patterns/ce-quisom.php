@@ -22,7 +22,7 @@
 
                 <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|70"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
                 <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--70)"><!-- wp:image {"id":2099,"sizeSlug":"full","linkDestination":"none"} -->
-                    <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/Capa_1logos.png" alt="" class="wp-image-2099" /></figure>
+                    <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/Capa_1logos.png" alt="" class="wp-image-2099" /></figure>
                     <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
@@ -43,7 +43,7 @@
 
                 <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|70"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
                 <div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--70)"><!-- wp:image {"id":2099,"sizeSlug":"full","linkDestination":"none"} -->
-                    <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/Capa_1logos.png" alt="" class="wp-image-2099" /></figure>
+                    <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/Capa_1logos.png" alt="" class="wp-image-2099" /></figure>
                     <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
@@ -118,7 +118,7 @@
         <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","orientation":"vertical"}} -->
             <div class="wp-block-group is-style-default"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"},"anchor":"ce-banner-container"} -->
                 <div id="ce-banner-container" class="wp-block-group is-style-no-padding"><!-- wp:image {"id":2150,"sizeSlug":"full","linkDestination":"none"} -->
-                    <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/Frame-148imatge_verd.png" alt="" class="wp-image-2150" /></figure>
+                    <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/Frame-148imatge_verd.png" alt="" class="wp-image-2150" /></figure>
                     <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
@@ -156,8 +156,8 @@
                 <!-- /wp:group -->
 
                 <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-default","layout":{"type":"constrained"}} -->
-                <div class="wp-block-group is-style-default"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/Frame-148imatge_verd.png","id":2150,"dimRatio":0,"minHeight":640,"isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-image-center","layout":{"type":"constrained","wideSize":""}} -->
-                    <div class="wp-block-cover is-light is-style-image-center" style="margin-top:0;margin-bottom:0;min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2150" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/Frame-148imatge_verd.png" data-object-fit="cover" />
+                <div class="wp-block-group is-style-default"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/Frame-148imatge_verd.png","id":2150,"dimRatio":0,"minHeight":640,"isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-image-center","layout":{"type":"constrained","wideSize":""}} -->
+                    <div class="wp-block-cover is-light is-style-image-center" style="margin-top:0;margin-bottom:0;min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2150" alt="" src="/wp-content/uploads/2023/07/Frame-148imatge_verd.png" data-object-fit="cover" />
                         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
                             <p class="has-text-align-center has-large-font-size"></p>
                             <!-- /wp:paragraph -->
@@ -187,7 +187,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"130px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2188,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/somenergia-1.png" alt="" class="wp-image-2188" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/somenergia-1.png" alt="" class="wp-image-2188" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -235,7 +235,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"130px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2195,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/somenergia-4.png" alt="" class="wp-image-2195" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/somenergia-4.png" alt="" class="wp-image-2195" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -286,7 +286,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"130px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2199,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/somenergia-6.png" alt="" class="wp-image-2199" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/somenergia-6.png" alt="" class="wp-image-2199" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -337,7 +337,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"150px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":1736,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/02/EP_marca_color.png" alt="" class="wp-image-1736" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/02/EP_marca_color.png" alt="" class="wp-image-1736" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -391,7 +391,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"150px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2219,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/somenergia-2-1.png" alt="" class="wp-image-2219" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/somenergia-2-1.png" alt="" class="wp-image-2219" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -442,7 +442,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"150px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2193,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/somenergia-3.png" alt="" class="wp-image-2193" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/somenergia-3.png" alt="" class="wp-image-2193" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -499,7 +499,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"130px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2197,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/somenergia-5.png" alt="" class="wp-image-2197" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/somenergia-5.png" alt="" class="wp-image-2197" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -547,7 +547,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"130px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2201,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/coopdevs_-1.png" alt="" class="wp-image-2201" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/coopdevs_-1.png" alt="" class="wp-image-2201" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -632,7 +632,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"130px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2188,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/somenergia-1.png" alt="" class="wp-image-2188" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/somenergia-1.png" alt="" class="wp-image-2188" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -680,7 +680,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"130px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2195,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/somenergia-4.png" alt="" class="wp-image-2195" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/somenergia-4.png" alt="" class="wp-image-2195" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -731,7 +731,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"130px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2199,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/somenergia-6.png" alt="" class="wp-image-2199" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/somenergia-6.png" alt="" class="wp-image-2199" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -782,7 +782,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"150px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":1736,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/02/EP_marca_color.png" alt="" class="wp-image-1736" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/02/EP_marca_color.png" alt="" class="wp-image-1736" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -836,7 +836,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"150px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2219,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/somenergia-2-1.png" alt="" class="wp-image-2219" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/somenergia-2-1.png" alt="" class="wp-image-2219" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -887,7 +887,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"150px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2193,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/somenergia-3.png" alt="" class="wp-image-2193" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/somenergia-3.png" alt="" class="wp-image-2193" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -944,7 +944,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"130px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2197,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/somenergia-5.png" alt="" class="wp-image-2197" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/somenergia-5.png" alt="" class="wp-image-2197" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -992,7 +992,7 @@
                     <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"130px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:image {"id":2201,"sizeSlug":"full","linkDestination":"none"} -->
-                            <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/coopdevs_-1.png" alt="" class="wp-image-2201" /></figure>
+                            <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/coopdevs_-1.png" alt="" class="wp-image-2201" /></figure>
                             <!-- /wp:image -->
                         </div>
                         <!-- /wp:group -->
@@ -1052,7 +1052,7 @@
 
                 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
                 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"main","textColor":"primary","width":50,"className":"is-style-rounded"} -->
-                    <div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-rounded"><a class="wp-block-button__link has-primary-color has-main-background-color has-text-color has-background wp-element-button">Troba la teva Comunitat Energètica</a></div>
+                    <div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-rounded"><a href="/comunitats-energetiques/" class="wp-block-button__link has-primary-color has-main-background-color has-text-color has-background wp-element-button">Troba la teva Comunitat Energètica</a></div>
                     <!-- /wp:button -->
                 </div>
                 <!-- /wp:buttons -->
@@ -1077,7 +1077,7 @@
 
                 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
                 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"main","textColor":"primary","width":100,"className":"is-style-rounded"} -->
-                    <div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-rounded"><a class="wp-block-button__link has-primary-color has-main-background-color has-text-color has-background wp-element-button">Troba la teva Comunitat Energètica</a></div>
+                    <div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-rounded"><a href="/comunitats-energetiques/" class="wp-block-button__link has-primary-color has-main-background-color has-text-color has-background wp-element-button">Troba la teva Comunitat Energètica</a></div>
                     <!-- /wp:button -->
                 </div>
                 <!-- /wp:buttons -->
