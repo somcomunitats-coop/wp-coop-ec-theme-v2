@@ -1,0 +1,50 @@
+
+
+#ce-video-container, 
+#ce-video-container iframe, 
+#ce-banner-container, 
+#ce-banner-container img {
+    height: 350px;
+    width: 100%;
+}
+#ce-banner-container img{
+    object-fit: cover;
+}
+
+#qui-som #ce-grid{
+    padding: var(--wp--custom--spacing--sm) ;
+}
+#qui-som #ce-grid #ce-grid-stack:first-child>.wp-block-group:first-child{
+    margin-top: 0;
+}
+#qui-som #ce-grid #ce-grid-stack>.wp-block-group {
+    margin-top: 25px;
+}
+
+/*Desktop*/
+
+@media only screen and (min-width: 1024px){
+
+    #ce-video-container, #ce-video-container iframe{
+        height: 590px;
+    }
+    #ce-video-container iframe {
+        width: 100%;
+    }
+
+    #qui-som #ce-grid{
+        padding: var(--wp--custom--spacing--sm);
+    }
+    #qui-som #ce-grid #ce-grid-row:not(:first-child) {
+        margin-top: 25px;
+    }
+    
+    #qui-som #ce-grid #ce-grid-row>.wp-block-group:not(:first-child){
+        margin-left: 25px;
+    }
+
+}
+
+
+
+

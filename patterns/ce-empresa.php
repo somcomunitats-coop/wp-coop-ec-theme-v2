@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Title: CE Ciutadania
- * Slug: ce-page/ciutadania
+ * Title: CE Empresa
+ * Slug: ce-page/empresa
  * Categories: ce-pages
  * Viewport Width: 1350
  */
@@ -26,11 +26,11 @@
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded-xxl","layout":{"type":"constrained"}} -->
       <div class="wp-block-group is-style-horizontal-padded-xxl"><!-- wp:heading -->
-        <h2 class="wp-block-heading">Suma’t a la Comunitat Energètica del teu barri o municipi</h2>
+        <h2 class="wp-block-heading">Comunitats Energètiques per empreses i/o indústries</h2>
         <!-- /wp:heading -->
 
         <!-- wp:paragraph {"fontSize":"medium"} -->
-        <p class="has-medium-font-size">Comunitats Energètiques per a veïns i veïnes</p>
+        <p class="has-medium-font-size">Les Comunitats Energètiques per empreses produeixen, comparteixen i utilitzen serveis energètics renovables</p>
         <!-- /wp:paragraph -->
 
         <!-- wp:buttons -->
@@ -59,7 +59,7 @@
     <!-- /wp:heading -->
 
     <!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
-    <p class="has-text-align-center has-medium-font-size">Ja et pots sumar a la Comunitat Energètica del lloc on vius</p>
+    <p class="has-text-align-center has-medium-font-size">Ja pots apuntar-te a la Comunitat Energètica com administració pública</p>
     <!-- /wp:paragraph -->
 
     <!-- wp:spacer {"height":"5rem","width":"0px","style":{"layout":{}}} -->
@@ -92,7 +92,7 @@
         <!-- /wp:spacer -->
 
         <!-- wp:heading -->
-        <h2 class="wp-block-heading">Per què és important una Comunitat Energètica per mi</h2>
+        <h2 class="wp-block-heading">Què pot aportar l’administració pública <br>a una Comunitat Energètica</h2>
         <!-- /wp:heading -->
 
         <!-- wp:paragraph {"fontSize":"medium"} -->
@@ -661,10 +661,10 @@
         <!-- /wp:paragraph -->
 
         <!-- wp:group {"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:pb/accordion-item {"titleTag":"h6","uuid":25888} -->
+        <div class="wp-block-group"><!-- wp:pb/accordion-item {"titleTag":"h6","uuid":261910} -->
           <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
-            <h6 id="at-25888" class="c-accordion__title js-accordion-controller" role="button">Quina forma jurídica tenen les Comunitats Energètiques?</h6>
-            <div id="ac-25888" class="c-accordion__content"><!-- wp:paragraph -->
+            <h6 id="at-261910" class="c-accordion__title js-accordion-controller" role="button">He de pagar per formar part d’una Comunitat Energètica?</h6>
+            <div id="ac-261910" class="c-accordion__content"><!-- wp:paragraph -->
               <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
               <!-- /wp:paragraph -->
             </div>
@@ -682,10 +682,10 @@
           </div>
           <!-- /wp:group -->
 
-          <!-- wp:pb/accordion-item {"titleTag":"h6","uuid":25884} -->
+          <!-- wp:pb/accordion-item {"titleTag":"h6","uuid":261911} -->
           <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
-            <h6 id="at-25884" class="c-accordion__title js-accordion-controller" role="button">Tinc una empresa, puc formar part d’una Comunitat Energètica?</h6>
-            <div id="ac-25884" class="c-accordion__content"><!-- wp:paragraph -->
+            <h6 id="at-261911" class="c-accordion__title js-accordion-controller" role="button">Què passa si al meu poble no hi ha cap Comunitat Energètica?</h6>
+            <div id="ac-261911" class="c-accordion__content"><!-- wp:paragraph -->
               <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
               <!-- /wp:paragraph -->
             </div>
@@ -703,10 +703,10 @@
           </div>
           <!-- /wp:group -->
 
-          <!-- wp:pb/accordion-item {"titleTag":"h6","uuid":25885} -->
+          <!-- wp:pb/accordion-item {"titleTag":"h6","uuid":261912} -->
           <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
-            <h6 id="at-25885" class="c-accordion__title js-accordion-controller" role="button">Com em puc apuntar a una Comunitat Energètica?</h6>
-            <div id="ac-25885" class="c-accordion__content"><!-- wp:paragraph -->
+            <h6 id="at-261912" class="c-accordion__title js-accordion-controller" role="button">Què passa si la Comunitat Energètica del meu poble ja està completa?</h6>
+            <div id="ac-261912" class="c-accordion__content"><!-- wp:paragraph -->
               <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
               <!-- /wp:paragraph -->
             </div>
@@ -724,10 +724,10 @@
           </div>
           <!-- /wp:group -->
 
-          <!-- wp:pb/accordion-item {"titleTag":"h6","uuid":25886} -->
+          <!-- wp:pb/accordion-item {"titleTag":"h6","uuid":261913} -->
           <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
-            <h6 id="at-25886" class="c-accordion__title js-accordion-controller" role="button">A nivell fiscal, em pot perjudicar formar part d’una Comunitat Energètica?</h6>
-            <div id="ac-25886" class="c-accordion__content"><!-- wp:paragraph -->
+            <h6 id="at-261913" class="c-accordion__title js-accordion-controller" role="button">Si ja tinc plaques solars, puc apuntar-me a la Comunitat Energètica?</h6>
+            <div id="ac-261913" class="c-accordion__content"><!-- wp:paragraph -->
               <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
               <!-- /wp:paragraph -->
             </div>
@@ -745,10 +745,10 @@
           </div>
           <!-- /wp:group -->
 
-          <!-- wp:pb/accordion-item {"titleTag":"h6","uuid":25887} -->
+          <!-- wp:pb/accordion-item {"titleTag":"h6","uuid":261914} -->
           <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
-            <h6 id="at-25887" class="c-accordion__title js-accordion-controller" role="button">Si ja sóc de Som Energia, té sentit apuntar-me també a una Comunitat Energètica?</h6>
-            <div id="ac-25887" class="c-accordion__content"><!-- wp:paragraph -->
+            <h6 id="at-261914" class="c-accordion__title js-accordion-controller" role="button">Si ja sóc de Som Energia, té sentit apuntar-me també a una Comunitat Energètica?</h6>
+            <div id="ac-261914" class="c-accordion__content"><!-- wp:paragraph -->
               <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
               <!-- /wp:paragraph -->
             </div>
