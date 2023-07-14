@@ -19,27 +19,27 @@
 
             <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
             <div class="wp-block-group is-style-show-desktop"><!-- wp:image {"id":1948,"sizeSlug":"full","linkDestination":"none"} -->
-                <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/06/Vector-1.png" alt="" class="wp-image-1948" /></figure>
+                <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/06/Vector-1.png" alt="" class="wp-image-1948" /></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:image {"id":1864,"width":19,"height":16,"sizeSlug":"full","linkDestination":"none"} -->
-                <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.local/wp-content/uploads/2023/06/Vectortwitter.png" alt="" class="wp-image-1864" width="19" height="16" /></figure>
+                <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/06/Vectortwitter.png" alt="" class="wp-image-1864" width="19" height="16" /></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:image {"id":1866,"sizeSlug":"full","linkDestination":"none"} -->
-                <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/06/Vectorinsta.png" alt="" class="wp-image-1866" /></figure>
+                <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/06/Vectorinsta.png" alt="" class="wp-image-1866" /></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:image {"id":1868,"sizeSlug":"full","linkDestination":"none"} -->
-                <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/06/Vectorlinkedin.png" alt="" class="wp-image-1868" /></figure>
+                <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/06/Vectorlinkedin.png" alt="" class="wp-image-1868" /></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:image {"id":1870,"sizeSlug":"full","linkDestination":"none"} -->
-                <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/06/Vectoryoutube.png" alt="" class="wp-image-1870" /></figure>
+                <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/06/Vectoryoutube.png" alt="" class="wp-image-1870" /></figure>
                 <!-- /wp:image -->
 
                 <!-- wp:image {"id":1872,"sizeSlug":"full","linkDestination":"none"} -->
-                <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/06/Vectortelegram.png" alt="" class="wp-image-1872" /></figure>
+                <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/06/Vectortelegram.png" alt="" class="wp-image-1872" /></figure>
                 <!-- /wp:image -->
             </div>
             <!-- /wp:group -->
@@ -51,7 +51,7 @@
     <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var(\u002d\u002dwp\u002d\u002dcustom\u002d\u002dspacing\u002d\u002dsm)","bottom":"var(\u002d\u002dwp\u002d\u002dcustom\u002d\u002dspacing\u002d\u002dsm)"},"margin":{"top":"0px","bottom":"0"}}},"backgroundColor":"main","className":"ce-header is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
     <div class="wp-block-group alignfull ce-header is-style-show-desktop has-main-background-color has-background" style="margin-top:0px;margin-bottom:0;padding-top:var(--wp--custom--spacing--sm);padding-bottom:var(--wp--custom--spacing--sm)"><!-- wp:group {"textColor":"base","className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
         <div class="wp-block-group is-style-show-desktop has-base-color has-text-color"><!-- wp:image {"id":1877,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-            <figure class="wp-block-image size-full is-style-default"><img src="https://wordpress.local/wp-content/uploads/2023/06/Capa_1logo.png" alt="" class="wp-image-1877" /></figure>
+            <figure class="wp-block-image size-full is-style-default"><img src="/wp-content/uploads/2023/06/Capa_1logo.png" alt="" class="wp-image-1877" /></figure>
             <!-- /wp:image -->
 
             <!-- wp:spacer {"width":"24px","style":{"layout":{"flexSize":"24px","selfStretch":"fixed"}}} -->
@@ -80,7 +80,7 @@
 <!-- wp:group {"align":"full","className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-show-mobile-tablet"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var(\u002d\u002dwp\u002d\u002dcustom\u002d\u002dspacing\u002d\u002dsm)","bottom":"var(\u002d\u002dwp\u002d\u002dcustom\u002d\u002dspacing\u002d\u002dsm)"},"margin":{"top":"0px","bottom":"0"}}},"backgroundColor":"main","className":"ce-header is-style-show-mobile-tablet","layout":{"type":"flex","flexWrap":"nowrap","orientation":"horizontal","justifyContent":"space-between"}} -->
     <div class="wp-block-group alignfull ce-header is-style-show-mobile-tablet has-main-background-color has-background" style="margin-top:0px;margin-bottom:0;padding-top:var(--wp--custom--spacing--sm);padding-bottom:var(--wp--custom--spacing--sm)"><!-- wp:image {"id":1877,"width":155,"height":36,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-        <figure class="wp-block-image size-full is-resized is-style-default"><img src="https://wordpress.local/wp-content/uploads/2023/06/Capa_1logo.png" alt="" class="wp-image-1877" width="155" height="36" /></figure>
+        <figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/uploads/2023/06/Capa_1logo.png" alt="" class="wp-image-1877" width="155" height="36" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"flex","flexWrap":"nowrap"}} -->

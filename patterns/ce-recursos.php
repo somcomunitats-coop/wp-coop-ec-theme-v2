@@ -13,8 +13,8 @@
 <section class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"default"}} -->
   <div class="wp-block-group alignfull is-style-default"><!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
     <div class="wp-block-group alignfull"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"35%"}},"layout":{"type":"constrained"}} -->
-      <div class="wp-block-group"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/ciutadania-cover.png","id":2543,"dimRatio":0,"minHeight":640,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
-        <div class="wp-block-cover is-light" style="min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2543" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/ciutadania-cover.png" data-object-fit="cover" />
+      <div class="wp-block-group"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/ciutadania-cover.png","id":2543,"dimRatio":0,"minHeight":640,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
+        <div class="wp-block-cover is-light" style="min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2543" alt="" src="/wp-content/uploads/2023/07/ciutadania-cover.png" data-object-fit="cover" />
           <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
             <p class="has-text-align-center has-large-font-size"></p>
             <!-- /wp:paragraph -->
@@ -67,8 +67,8 @@
 
   <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"stretch"}} -->
   <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-que-son-les-comunitats.png","id":2740,"dimRatio":0,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2740" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-que-son-les-comunitats.png" data-object-fit="cover" />
+    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-que-son-les-comunitats.png","id":2740,"dimRatio":0,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2740" alt="" src="/wp-content/uploads/2023/07/doc-que-son-les-comunitats.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
@@ -123,8 +123,8 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png","id":2748,"dimRatio":0,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2748" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png" data-object-fit="cover" />
+    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png","id":2748,"dimRatio":0,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2748" alt="" src="/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
@@ -179,8 +179,8 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-mobilitat-electrica.png","id":2750,"dimRatio":0,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2750" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-mobilitat-electrica.png" data-object-fit="cover" />
+    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-mobilitat-electrica.png","id":2750,"dimRatio":0,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2750" alt="" src="/wp-content/uploads/2023/07/doc-mobilitat-electrica.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
@@ -238,8 +238,8 @@
 
   <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"flex","orientation":"vertical"}} -->
   <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-que-son-les-comunitats.png","id":2740,"dimRatio":0,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2740" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-que-son-les-comunitats.png" data-object-fit="cover" />
+    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-que-son-les-comunitats.png","id":2740,"dimRatio":0,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2740" alt="" src="/wp-content/uploads/2023/07/doc-que-son-les-comunitats.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
@@ -298,8 +298,8 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png","id":2748,"dimRatio":0,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2748" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png" data-object-fit="cover" />
+    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png","id":2748,"dimRatio":0,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2748" alt="" src="/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
@@ -358,8 +358,8 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-mobilitat-electrica.png","id":2750,"dimRatio":0,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2750" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-mobilitat-electrica.png" data-object-fit="cover" />
+    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-mobilitat-electrica.png","id":2750,"dimRatio":0,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2750" alt="" src="/wp-content/uploads/2023/07/doc-mobilitat-electrica.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
@@ -421,8 +421,8 @@
 
   <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"stretch"}} -->
   <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-generacio-electrica.png","id":2758,"dimRatio":0,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2758" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-generacio-electrica.png" data-object-fit="cover" />
+    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-generacio-electrica.png","id":2758,"dimRatio":0,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2758" alt="" src="/wp-content/uploads/2023/07/doc-generacio-electrica.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
@@ -473,8 +473,8 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-tres-casos-practivs.png","id":2761,"dimRatio":0,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2761" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-tres-casos-practivs.png" data-object-fit="cover" />
+    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-tres-casos-practivs.png","id":2761,"dimRatio":0,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2761" alt="" src="/wp-content/uploads/2023/07/doc-tres-casos-practivs.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
@@ -525,8 +525,8 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-formes-juridiques.png","id":2763,"dimRatio":0,"isDark":false,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2763" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-formes-juridiques.png" data-object-fit="cover" />
+    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-formes-juridiques.png","id":2763,"dimRatio":0,"isDark":false,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2763" alt="" src="/wp-content/uploads/2023/07/doc-formes-juridiques.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
@@ -584,8 +584,8 @@
 
   <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"flex","orientation":"vertical"}} -->
   <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-generacio-electrica.png","id":2758,"dimRatio":0,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2758" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-generacio-electrica.png" data-object-fit="cover" />
+    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-generacio-electrica.png","id":2758,"dimRatio":0,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2758" alt="" src="/wp-content/uploads/2023/07/doc-generacio-electrica.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
@@ -640,8 +640,8 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-tres-casos-practivs.png","id":2761,"dimRatio":0,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2761" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-tres-casos-practivs.png" data-object-fit="cover" />
+    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-tres-casos-practivs.png","id":2761,"dimRatio":0,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2761" alt="" src="/wp-content/uploads/2023/07/doc-tres-casos-practivs.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
@@ -696,8 +696,8 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-formes-juridiques.png","id":2763,"dimRatio":0,"isDark":false,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2763" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-formes-juridiques.png" data-object-fit="cover" />
+    <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-formes-juridiques.png","id":2763,"dimRatio":0,"isDark":false,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2763" alt="" src="/wp-content/uploads/2023/07/doc-formes-juridiques.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->

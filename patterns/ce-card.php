@@ -10,10 +10,10 @@
 ?>
 
 <!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-<article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png","id":2748,"dimRatio":0,"layout":{"type":"constrained"}} -->
+<article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png","id":2748,"dimRatio":0,"layout":{"type":"constrained"}} -->
   <div class="wp-block-cover">
     <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
-    <img class="wp-block-cover__image-background wp-image-2748" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png" data-object-fit="cover" />
+    <img class="wp-block-cover__image-background wp-image-2748" alt="" src="/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png" data-object-fit="cover" />
     <div class="wp-block-cover__inner-container">
       <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
       <p class="has-text-align-center has-large-font-size"></p>

@@ -11,8 +11,8 @@
 
 <!-- wp:group {"align":"full","className":"is-style-no-padding","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
 <div class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"35%"}},"layout":{"type":"constrained"}} -->
-  <div class="wp-block-group"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/alta-ce-vertical-cover.png","id":2674,"dimRatio":0,"minHeight":2850,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
-    <div class="wp-block-cover is-light" style="min-height:2850px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2674" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/alta-ce-vertical-cover.png" data-object-fit="cover" />
+  <div class="wp-block-group"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/alta-ce-vertical-cover.png","id":2674,"dimRatio":0,"minHeight":2850,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
+    <div class="wp-block-cover is-light" style="min-height:2850px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2674" alt="" src="/wp-content/uploads/2023/07/alta-ce-vertical-cover.png" data-object-fit="cover" />
       <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
         <p class="has-text-align-center has-large-font-size"></p>
         <!-- /wp:paragraph -->
@@ -167,7 +167,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button">Coneix la xarxa</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/comunitats-energetiques/" class="wp-block-button__link wp-element-button">Coneix la xarxa</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -207,7 +207,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button">Coneix la xarxa</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/comunitats-energetiques/" class="wp-block-button__link wp-element-button">Coneix la xarxa</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->

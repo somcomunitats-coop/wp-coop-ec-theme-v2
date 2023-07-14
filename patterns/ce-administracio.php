@@ -13,8 +13,8 @@
 <section class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"default"}} -->
   <div class="wp-block-group alignfull is-style-default"><!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
     <div class="wp-block-group alignfull"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"layout":{"type":"constrained"}} -->
-      <div class="wp-block-group"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/ciutadania-cover.png","id":2543,"dimRatio":0,"minHeight":640,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
-        <div class="wp-block-cover is-light" style="min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2543" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/ciutadania-cover.png" data-object-fit="cover" />
+      <div class="wp-block-group"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/ciutadania-cover.png","id":2543,"dimRatio":0,"minHeight":640,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
+        <div class="wp-block-cover is-light" style="min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2543" alt="" src="/wp-content/uploads/2023/07/ciutadania-cover.png" data-object-fit="cover" />
           <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
             <p class="has-text-align-center has-large-font-size"></p>
             <!-- /wp:paragraph -->
@@ -35,7 +35,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button">Sumar-me a la meva Comunitat Energètica</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/alta-nova-comunitat/" class="wp-block-button__link wp-element-button">Sumar-me a la meva Comunitat Energètica</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -245,7 +245,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button">Què són les Comunitats Energètiques</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/comunitats-energetiques/" class="wp-block-button__link wp-element-button">Què són les Comunitats Energètiques</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -257,8 +257,8 @@
       <!-- /wp:group -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-default","layout":{"type":"constrained"}} -->
-      <div class="wp-block-group is-style-default"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png","id":2545,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-default","layout":{"type":"default"}} -->
-        <div class="wp-block-cover is-light is-style-default" style="margin-top:0;margin-bottom:0;min-height:100%"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2545" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png" data-object-fit="cover" />
+      <div class="wp-block-group is-style-default"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png","id":2545,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-default","layout":{"type":"default"}} -->
+        <div class="wp-block-cover is-light is-style-default" style="margin-top:0;margin-bottom:0;min-height:100%"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2545" alt="" src="/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png" data-object-fit="cover" />
           <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
             <p class="has-text-align-center has-large-font-size"></p>
             <!-- /wp:paragraph -->
@@ -295,7 +295,7 @@
   <div class="wp-block-columns"><!-- wp:column -->
     <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
       <div class="wp-block-group"><!-- wp:image {"align":"center","id":2555,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/generacio-comunitaria.png" alt="" class="wp-image-2555" /></figure>
+        <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/generacio-comunitaria.png" alt="" class="wp-image-2555" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:spacer {"height":"2rem"} -->
@@ -317,7 +317,7 @@
     <!-- wp:column -->
     <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
       <div class="wp-block-group"><!-- wp:image {"align":"center","id":2557,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/mobilitat-sostenible.png" alt="" class="wp-image-2557" /></figure>
+        <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/mobilitat-sostenible.png" alt="" class="wp-image-2557" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:spacer {"height":"2rem"} -->
@@ -339,7 +339,7 @@
     <!-- wp:column -->
     <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
       <div class="wp-block-group"><!-- wp:image {"align":"center","id":2559,"width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.local/wp-content/uploads/2023/07/eficiencia-energetica.png" alt="" class="wp-image-2559" width="150" height="126" /></figure>
+        <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/eficiencia-energetica.png" alt="" class="wp-image-2559" width="150" height="126" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:spacer {"height":"2rem"} -->
@@ -361,7 +361,7 @@
     <!-- wp:column -->
     <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
       <div class="wp-block-group"><!-- wp:image {"align":"center","id":2561,"width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.local/wp-content/uploads/2023/07/formacio-ciutadana.png" alt="" class="wp-image-2561" width="150" height="126" /></figure>
+        <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/formacio-ciutadana.png" alt="" class="wp-image-2561" width="150" height="126" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:spacer {"height":"2rem"} -->
@@ -390,7 +390,7 @@
   <div class="wp-block-columns"><!-- wp:column -->
     <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
       <div class="wp-block-group"><!-- wp:image {"align":"center","id":2571,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/energia-termica.png" alt="" class="wp-image-2571" /></figure>
+        <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/energia-termica.png" alt="" class="wp-image-2571" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:spacer {"height":"2rem"} -->
@@ -412,7 +412,7 @@
     <!-- wp:column -->
     <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
       <div class="wp-block-group"><!-- wp:image {"align":"center","id":2573,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/compres-collectives.png" alt="" class="wp-image-2573" /></figure>
+        <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/compres-collectives.png" alt="" class="wp-image-2573" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:spacer {"height":"2rem"} -->
@@ -434,7 +434,7 @@
     <!-- wp:column -->
     <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
       <div class="wp-block-group"><!-- wp:image {"align":"center","id":2577,"width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.local/wp-content/uploads/2023/07/subministrament-denergia.png" alt="" class="wp-image-2577" width="150" height="126" /></figure>
+        <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/subministrament-denergia.png" alt="" class="wp-image-2577" width="150" height="126" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:spacer {"height":"2rem"} -->
@@ -456,7 +456,7 @@
     <!-- wp:column -->
     <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
       <div class="wp-block-group"><!-- wp:image {"align":"center","id":2575,"width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image aligncenter size-full is-resized"><img src="https://wordpress.local/wp-content/uploads/2023/07/emancipacio-transformacio.png" alt="" class="wp-image-2575" width="150" height="126" /></figure>
+        <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/emancipacio-transformacio.png" alt="" class="wp-image-2575" width="150" height="126" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:spacer {"height":"2rem"} -->
@@ -532,7 +532,7 @@
 
   <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
   <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"typography","textColor":"primary"} -->
-    <div class="wp-block-button"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button">Coneix les Comunitats Energètiques</a></div>
+    <div class="wp-block-button"><a href="/comunitats-energetiques/" class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button">Coneix les Comunitats Energètiques</a></div>
     <!-- /wp:button -->
   </div>
   <!-- /wp:buttons -->
@@ -571,7 +571,7 @@
         <!-- /wp:quote -->
 
         <!-- wp:image {"align":"center","id":2581,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/lluc-casanou.png" alt="" class="wp-image-2581" /></figure>
+        <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/lluc-casanou.png" alt="" class="wp-image-2581" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:heading {"textAlign":"center","level":4} -->
@@ -592,7 +592,7 @@
         <!-- /wp:quote -->
 
         <!-- wp:image {"align":"center","id":2581,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/lluc-casanou.png" alt="" class="wp-image-2581" /></figure>
+        <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/lluc-casanou.png" alt="" class="wp-image-2581" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:heading {"textAlign":"center","level":4} -->
@@ -613,7 +613,7 @@
         <!-- /wp:quote -->
 
         <!-- wp:image {"align":"center","id":2581,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image aligncenter size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/lluc-casanou.png" alt="" class="wp-image-2581" /></figure>
+        <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/lluc-casanou.png" alt="" class="wp-image-2581" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:heading {"textAlign":"center","level":4} -->
@@ -636,8 +636,8 @@
 <section class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"default"}} -->
   <div class="wp-block-group alignfull is-style-default"><!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
     <div class="wp-block-group alignfull"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"layout":{"type":"constrained"}} -->
-      <div class="wp-block-group"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/faqs.png","id":2585,"dimRatio":0,"minHeight":100,"minHeightUnit":"vh","isDark":false,"layout":{"type":"constrained"}} -->
-        <div class="wp-block-cover is-light" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2585" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/faqs.png" data-object-fit="cover" />
+      <div class="wp-block-group"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/faqs.png","id":2585,"dimRatio":0,"minHeight":100,"minHeightUnit":"vh","isDark":false,"layout":{"type":"constrained"}} -->
+        <div class="wp-block-cover is-light" style="min-height:100vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2585" alt="" src="/wp-content/uploads/2023/07/faqs.png" data-object-fit="cover" />
           <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
             <p class="has-text-align-center has-large-font-size"></p>
             <!-- /wp:paragraph -->

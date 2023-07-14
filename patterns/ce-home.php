@@ -30,7 +30,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="#troba-la-teva-comunitat" class="wp-block-button__link wp-element-button">Troba la teva Comunitat Energètica</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="#troba-la-teva-comunitat-desktop" class="wp-block-button__link wp-element-button">Troba la teva Comunitat Energètica</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -69,7 +69,7 @@
 
             <!-- wp:buttons -->
             <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-              <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="#troba-la-teva-comunitat" class="wp-block-button__link wp-element-button">Troba la teva Comunitat Energètica</a></div>
+              <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="#troba-la-teva-comunitat-mobile" class="wp-block-button__link wp-element-button">Troba la teva Comunitat Energètica</a></div>
               <!-- /wp:button -->
             </div>
             <!-- /wp:buttons -->
@@ -86,7 +86,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","style":{"color":{"background":"#c5e2d040"}},"className":"is-style-show-tablet-desktop is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-<section id="troba-la-teva-comunitat" class="wp-block-group alignfull is-style-show-tablet-desktop is-style-horizontal-padded has-background" style="background-color:#c5e2d040"><!-- wp:spacer {"height":"6rem"} -->
+<section id="troba-la-teva-comunitat-desktop" class="wp-block-group alignfull is-style-show-tablet-desktop is-style-horizontal-padded has-background" style="background-color:#c5e2d040"><!-- wp:spacer {"height":"6rem"} -->
   <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
@@ -237,7 +237,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","style":{"color":{"background":"#c5e2d040"}},"className":"is-style-no-padding is-style-show-mobile","layout":{"type":"default"}} -->
-<section id="troba-la-teva-comunitat" class="wp-block-group alignfull is-style-no-padding is-style-show-mobile has-background" style="background-color:#c5e2d040"><!-- wp:spacer {"height":"3rem"} -->
+<section id="troba-la-teva-comunitat-mobile" class="wp-block-group alignfull is-style-no-padding is-style-show-mobile has-background" style="background-color:#c5e2d040"><!-- wp:spacer {"height":"3rem"} -->
   <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
@@ -475,7 +475,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button">Què són les Comunitats Energètiques</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/comunitats-energetiques/" class="wp-block-button__link wp-element-button">Què són les Comunitats Energètiques</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -597,7 +597,7 @@
 
     <!-- wp:buttons -->
     <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-      <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button">Què són les Comunitats Energètiques</a></div>
+      <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/comunitats-energetiques/" class="wp-block-button__link wp-element-button">Què són les Comunitats Energètiques</a></div>
       <!-- /wp:button -->
     </div>
     <!-- /wp:buttons -->
@@ -661,7 +661,7 @@
 
         <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
         <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
-          <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-background-color has-background wp-element-button">Més informació</a></div>
+          <div class="wp-block-button is-style-rounded"><a href="/ciutadania/" class="wp-block-button__link has-base-background-color has-background wp-element-button">Més informació</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -700,7 +700,7 @@
 
         <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
         <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
-          <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-background-color has-background wp-element-button">Més informació</a></div>
+          <div class="wp-block-button is-style-rounded"><a href="/empreses/" class="wp-block-button__link has-base-background-color has-background wp-element-button">Més informació</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -739,7 +739,7 @@
 
         <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
         <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
-          <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-background-color has-background wp-element-button">Més informació</a></div>
+          <div class="wp-block-button is-style-rounded"><a href="/administracio/" class="wp-block-button__link has-base-background-color has-background wp-element-button">Més informació</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -798,7 +798,7 @@
           <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
           <div class="wp-block-buttons">
             <!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
-            <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-background-color has-background wp-element-button">Més informació</a></div>
+            <div class="wp-block-button is-style-rounded"><a href="/ciutadania/" class="wp-block-button__link has-base-background-color has-background wp-element-button">Més informació</a></div>
             <!-- /wp:button -->
           </div>
           <!-- /wp:buttons -->
@@ -830,7 +830,7 @@
           <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
           <div class="wp-block-buttons">
             <!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
-            <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-background-color has-background wp-element-button">Més informació</a></div>
+            <div class="wp-block-button is-style-rounded"><a href="/empreses/" class="wp-block-button__link has-base-background-color has-background wp-element-button">Més informació</a></div>
             <!-- /wp:button -->
           </div>
           <!-- /wp:buttons -->
@@ -862,7 +862,7 @@
           <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
           <div class="wp-block-buttons">
             <!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
-            <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-background-color has-background wp-element-button">Més informació</a></div>
+            <div class="wp-block-button is-style-rounded"><a href="/administracio/" class="wp-block-button__link has-base-background-color has-background wp-element-button">Més informació</a></div>
             <!-- /wp:button -->
           </div>
           <!-- /wp:buttons -->
@@ -906,7 +906,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button">Coneix les Comunitats Energètiques</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/comunitats-energetiques/" class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button">Coneix les Comunitats Energètiques</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -942,7 +942,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button">Coneix les Comunitats Energètiques</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/comunitats-energetiques/" class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button">Coneix les Comunitats Energètiques</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -987,7 +987,7 @@
 
     <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
     <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-      <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button">Qui sóm</a></div>
+      <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/qui-som/" class="wp-block-button__link wp-element-button">Qui sóm</a></div>
       <!-- /wp:button -->
     </div>
     <!-- /wp:buttons -->
@@ -1016,7 +1016,7 @@
 
     <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
     <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-      <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button">Qui sóm</a></div>
+      <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/qui-som/" class="wp-block-button__link wp-element-button">Qui sóm</a></div>
       <!-- /wp:button -->
     </div>
     <!-- /wp:buttons -->
@@ -1143,7 +1143,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button">Coneix la xarxa</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/comunitats-energetiques/" class="wp-block-button__link wp-element-button">Coneix la xarxa</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -1183,7 +1183,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button">Coneix la xarxa</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/comunitats-energetiques/" class="wp-block-button__link wp-element-button">Coneix la xarxa</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -1214,7 +1214,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button">Consulta les guies</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/recursos/" class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button">Consulta les guies</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -1266,7 +1266,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button">Consulta les guies</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/recursos/" class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button">Consulta les guies</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
