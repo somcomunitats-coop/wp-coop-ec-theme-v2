@@ -25,20 +25,15 @@
       <!-- /wp:group -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"65%"}},"className":"is-style-horizontal-padded-xxl","layout":{"type":"constrained"}} -->
-      <div class="wp-block-group is-style-horizontal-padded-xxl"><!-- wp:heading -->
-        <h2 class="wp-block-heading">Què són les Comunitats Energètiques?</h2>
+      <div class="wp-block-group is-style-horizontal-padded-xxl">
+        <!-- wp:heading -->
+        <h2 class="wp-block-heading">Guies i recursos  sobre Comunitats Energètiques</h2>
         <!-- /wp:heading -->
 
         <!-- wp:paragraph {"fontSize":"medium"} -->
-        <p class="has-medium-font-size">Les Comunitats Energètiques permeten que  les persones s’organitzin per compartir i gestionar serveis energètics de forma eficient</p>
+        <p class="has-medium-font-size">Consulta les nostres guies temàtiques per ajudar a conèixer millor què són les Comunitats Energètiques, elsseus objectius i funcionament, els principals serveis i casos reals inspiradors.</p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:buttons -->
-        <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button">Sumar-me a la meva Comunitat Energètica</a></div>
-          <!-- /wp:button -->
-        </div>
-        <!-- /wp:buttons -->
       </div>
       <!-- /wp:group -->
     </div>

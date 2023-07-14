@@ -35,7 +35,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/atla-nova-comunitat/" class="wp-block-button__link wp-element-button">Sumar-me a la meva Comunitat Energètica</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/alta-nova-comunitat/" class="wp-block-button__link wp-element-button">Sumar-me a la meva Comunitat Energètica</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
