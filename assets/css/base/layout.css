@@ -1,3 +1,11 @@
+.is-style-no-margin {
+  margin: 0 !important;
+}
+
+.is-style-no-margin > a {
+  margin: 0 !important;
+}
+
 .is-style-horizontal-padded {
   padding-left: var(--wp--custom--spacing--sm);
   padding-right: var(--wp--custom--spacing--sm);
