@@ -1,0 +1,67 @@
+.wp-block-getwid-accordion.ce-faqs .ui-accordion-header {
+  padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sm);
+}
+
+.wp-block-getwid-accordion.ce-faqs .ui-accordion-header,
+.wp-block-getwid-accordion.ce-faqs .ui-accordion-content > div {
+  border: none;
+}
+
+.wp-block-getwid-accordion.ce-faqs.has-background
+  .ui-accordion-header.ui-accordion-header-collapsed {
+  background-color: var(--wp--preset--color--second-base-ultra-light);
+  margin-bottom: 1rem;
+}
+
+.wp-block-getwid-accordion.ce-faqs.has-background
+  .ui-accordion-content
+  .ui-accordion-header.ui-accordion-header-collapsed {
+  background-color: unset;
+  border-bottom: 1px solid var(--wp--preset--color--second-base);
+}
+
+.wp-block-getwid-accordion.ce-faqs.has-background
+  .ui-accordion-content
+  .ui-accordion-header:nth-last-child(-n + 2).ui-accordion-header-collapsed {
+  border-bottom: none;
+}
+
+.wp-block-getwid-accordion.ce-faqs .ui-accordion-header.ui-accordion-header-collapsed a {
+  color: var(--wp--preset--color--typography);
+}
+
+.wp-block-getwid-accordion.ce-faqs.has-background
+  .ui-accordion-header.ui-accordion-header-active {
+  background-color: var(--wp--preset--color--brand);
+}
+
+.wp-block-getwid-accordion.ce-faqs.has-background
+  .ui-accordion-content
+  .ui-accordion-header.ui-accordion-header-active {
+  background-color: unset;
+}
+
+.wp-block-getwid-accordion.ce-faqs.has-background
+  .ui-accordion-content
+  .ui-accordion-content.ui-accordion-content-active {
+  border-bottom: 1px solid var(--wp--preset--color--second-base);
+}
+
+.wp-block-getwid-accordion.ce-faqs.has-background
+  .ui-accordion-content
+  .ui-accordion-content:last-child.ui-accordion-content-active {
+  border-bottom: none;
+}
+
+.wp-block-getwid-accordion.ce-faqs.has-background
+  .ui-accordion-header.ui-accordion-header-active
+  a {
+  color: var(--wp--preset--color--white);
+}
+
+.wp-block-getwid-accordion.ce-faqs.has-background
+  .ui-accordion-content
+  .ui-accordion-header.ui-accordion-header-active
+  a {
+  color: var(--wp--preset--color--brand);
+}

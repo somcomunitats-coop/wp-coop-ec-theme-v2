@@ -2,7 +2,7 @@
 
 /**
  * Title: CE Formulari Alta
- * Slug: ce-page/atla-form
+ * Slug: ce-page/alta-nova
  * Categories: ce-pages
  * Viewport Width: 1350
  */
@@ -10,9 +10,9 @@
 ?>
 
 <!-- wp:group {"align":"full","className":"is-style-no-padding","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-<div class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"35%"}},"layout":{"type":"constrained"}} -->
-  <div class="wp-block-group"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/alta-ce-vertical-cover.png","id":2674,"dimRatio":0,"minHeight":2850,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
-    <div class="wp-block-cover is-light" style="min-height:2850px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2674" alt="" src="/wp-content/uploads/2023/07/alta-ce-vertical-cover.png" data-object-fit="cover" />
+<div class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"90%"}},"className":"is-style-show-desktop","layout":{"type":"default"}} -->
+  <div class="wp-block-group is-style-show-desktop"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/alta-ce-vertical-cover.png","id":2674,"dimRatio":0,"minHeight":2850,"minHeightUnit":"px","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+    <div class="wp-block-cover is-light" style="margin-top:0;margin-bottom:0;min-height:2850px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2674" alt="" src="/wp-content/uploads/2023/07/alta-ce-vertical-cover.png" data-object-fit="cover" />
       <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
         <p class="has-text-align-center has-large-font-size"></p>
         <!-- /wp:paragraph -->
@@ -22,10 +22,14 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:group {"tagName":"section","style":{"layout":{"selfStretch":"fixed","flexSize":"65%"}},"backgroundColor":"second-base-light","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-  <section class="wp-block-group has-second-base-light-background-color has-background"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
-    <div class="wp-block-group is-style-no-padding"><!-- wp:group {"className":"is-style-horizontal-padded-xxl","layout":{"type":"constrained","contentSize":"90%","justifyContent":"left"}} -->
-      <div class="wp-block-group is-style-horizontal-padded-xxl"><!-- wp:spacer {"height":"5rem","style":{"layout":{}}} -->
+  <!-- wp:group {"tagName":"section","style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"second-base-light","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+  <section class="wp-block-group has-second-base-light-background-color has-background"><!-- wp:spacer {"width":"0px","className":"is-style-show-desktop","style":{"layout":{"flexSize":"70px","selfStretch":"fixed"}}} -->
+    <div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-desktop"></div>
+    <!-- /wp:spacer -->
+
+    <!-- wp:group {"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
+    <div class="wp-block-group is-style-no-padding"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
+      <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"5rem","style":{"layout":{}}} -->
         <div style="height:5rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
@@ -46,6 +50,10 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
+
+    <!-- wp:spacer {"width":"0px","className":"is-style-show-desktop","style":{"layout":{"flexSize":"210px","selfStretch":"fixed"}}} -->
+    <div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-desktop"></div>
+    <!-- /wp:spacer -->
   </section>
   <!-- /wp:group -->
 </div>
@@ -68,72 +76,7 @@
   <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
-  <!-- wp:group {"layout":{"type":"constrained"}} -->
-  <div class="wp-block-group"><!-- wp:group {"backgroundColor":"second-base-light","className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-horizontal-padded has-second-base-light-background-color has-background"><!-- wp:pb/accordion-item {"initiallyOpen":true,"titleTag":"h6","uuid":26768} -->
-      <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js is-open" data-initially-open="true" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
-        <h6 id="at-26768" class="c-accordion__title js-accordion-controller" role="button">Quina tipologia de serveis ofereix la plataforma?</h6>
-        <div id="ac-26768" class="c-accordion__content"><!-- wp:paragraph -->
-          <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
-          <!-- /wp:paragraph -->
-        </div>
-      </div>
-      <!-- /wp:pb/accordion-item -->
-    </div>
-    <!-- /wp:group -->
-
-    <!-- wp:spacer {"height":"2rem"} -->
-    <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->
-
-    <!-- wp:group {"backgroundColor":"second-base-light","className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-horizontal-padded has-second-base-light-background-color has-background"><!-- wp:pb/accordion-item {"titleTag":"h6","uuid":26769} -->
-      <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
-        <h6 id="at-26769" class="c-accordion__title js-accordion-controller" role="button">Quins perfils de gestió permet la plataforma?</h6>
-        <div id="ac-26769" class="c-accordion__content"><!-- wp:paragraph -->
-          <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
-          <!-- /wp:paragraph -->
-        </div>
-      </div>
-      <!-- /wp:pb/accordion-item -->
-    </div>
-    <!-- /wp:group -->
-
-    <!-- wp:spacer {"height":"2rem"} -->
-    <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->
-
-    <!-- wp:group {"backgroundColor":"second-base-light","className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-horizontal-padded has-second-base-light-background-color has-background"><!-- wp:pb/accordion-item {"titleTag":"h6","uuid":267610} -->
-      <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
-        <h6 id="at-267610" class="c-accordion__title js-accordion-controller" role="button">Hi ha algun límit de Comunitats Energètiques?</h6>
-        <div id="ac-267610" class="c-accordion__content"><!-- wp:paragraph -->
-          <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
-          <!-- /wp:paragraph -->
-        </div>
-      </div>
-      <!-- /wp:pb/accordion-item -->
-    </div>
-    <!-- /wp:group -->
-
-    <!-- wp:spacer {"height":"2rem"} -->
-    <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->
-
-    <!-- wp:group {"backgroundColor":"second-base-light","className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-horizontal-padded has-second-base-light-background-color has-background"><!-- wp:pb/accordion-item {"titleTag":"h6","uuid":267611} -->
-      <div class="wp-block-pb-accordion-item c-accordion__item js-accordion-item no-js" data-initially-open="false" data-click-to-close="true" data-auto-close="true" data-scroll="false" data-scroll-offset="0">
-        <h6 id="at-267611" class="c-accordion__title js-accordion-controller" role="button">Té algun cost econòmic utilitzar la plataforma?</h6>
-        <div id="ac-267611" class="c-accordion__content"><!-- wp:paragraph -->
-          <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
-          <!-- /wp:paragraph -->
-        </div>
-      </div>
-      <!-- /wp:pb/accordion-item -->
-    </div>
-    <!-- /wp:group -->
-  </div>
-  <!-- /wp:group -->
+  <!-- wp:pattern {"slug":"ce-pattern/faqs"} /-->
 
   <!-- wp:spacer {"height":"7rem"} -->
   <div style="height:7rem" aria-hidden="true" class="wp-block-spacer"></div>
@@ -167,7 +110,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/comunitats-energetiques/" class="wp-block-button__link wp-element-button">Coneix la xarxa</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="/comunitats-energetiques/">Coneix la xarxa</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
@@ -207,7 +150,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/comunitats-energetiques/" class="wp-block-button__link wp-element-button">Coneix la xarxa</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="/comunitats-energetiques/">Coneix la xarxa</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->

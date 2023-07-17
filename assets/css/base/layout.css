@@ -6,6 +6,11 @@
   margin: 0 !important;
 }
 
+.is-style-horizontal-padded-xs {
+  padding-left: var(--wp--custom--spacing--sxs);
+  padding-right: var(--wp--custom--spacing--sxs);
+}
+
 .is-style-horizontal-padded {
   padding-left: var(--wp--custom--spacing--sm);
   padding-right: var(--wp--custom--spacing--sm);
