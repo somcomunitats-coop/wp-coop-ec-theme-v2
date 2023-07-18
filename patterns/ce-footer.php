@@ -10,8 +10,8 @@
 ?>
 
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|typography"}}},"typography":{"fontSize":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dfont-size\u002d\u002dsmall)"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"main","textColor":"base","className":"is-style-no-padding","layout":{"type":"constrained","contentSize":"100vw"}} -->
-<div class="wp-block-group alignfull is-style-no-padding has-base-color has-main-background-color has-text-color has-background has-link-color" style="margin-top:0;margin-bottom:0;font-size:var(--wp--preset--font-size--small)"><!-- wp:group {"tagName":"section","className":"is-style-horizontal-padded-xxl is-style-show-desktop","layout":{"type":"constrained","contentSize":"100%"}} -->
-  <section class="wp-block-group is-style-horizontal-padded-xxl is-style-show-desktop"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
+<div class="wp-block-group alignfull is-style-no-padding has-base-color has-main-background-color has-text-color has-background has-link-color" style="margin-top:0;margin-bottom:0;font-size:var(--wp--preset--font-size--small)"><!-- wp:group {"tagName":"section","className":"is-style-horizontal-padded is-style-show-desktop","layout":{"type":"constrained","contentSize":"100%"}} -->
+  <section class="wp-block-group is-style-horizontal-padded is-style-show-desktop"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"250em"}},"className":"footer-newsletter-form","fontSize":"xx-small"} -->
       <div class="wp-block-group footer-newsletter-form has-xx-small-font-size"><!-- wp:spacer {"height":"50px"} -->
         <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -223,8 +223,8 @@
   <!-- /wp:separator -->
 
   <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-  <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"className":"is-style-horizontal-padded-xxl is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-    <div class="wp-block-group is-style-horizontal-padded-xxl is-style-show-desktop">
+  <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"className":"is-style-horizontal-padded is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
+    <div class="wp-block-group is-style-horizontal-padded is-style-show-desktop">
       <!-- wp:paragraph {"textColor":"second-base-light","className":"header-sponsor-p","fontSize":"x-small"} -->
       <p class="header-sponsor-p has-second-base-light-color has-text-color has-x-small-font-size">Promou i finança</p>
       <!-- /wp:paragraph -->
@@ -291,8 +291,8 @@
   <hr class="wp-block-separator has-text-color has-alpha-channel-opacity has-background is-style-wide" style="margin-top:0px;margin-bottom:0px;background-color:#c5e3d140;color:#c5e3d140" />
   <!-- /wp:separator -->
 
-  <!-- wp:group {"className":"is-style-horizontal-padded-xl is-style-show-desktop","layout":{"type":"constrained","contentSize":"100%"}} -->
-  <div class="wp-block-group is-style-horizontal-padded-xl is-style-show-desktop">
+  <!-- wp:group {"className":"is-style-horizontal-padded is-style-show-desktop","layout":{"type":"constrained","contentSize":"100%"}} -->
+  <div class="wp-block-group is-style-horizontal-padded is-style-show-desktop">
     <!-- wp:group {"className":"is-style-no-padding","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
     <div class="wp-block-group is-style-no-padding">
       <!-- wp:paragraph {"textColor":"second-base-light","fontSize":"x-small"} -->
