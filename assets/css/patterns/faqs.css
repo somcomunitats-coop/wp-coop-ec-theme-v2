@@ -1,5 +1,5 @@
 .wp-block-getwid-accordion.ce-faqs .ui-accordion-header {
-  padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sm);
+  /* padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sm); */
 }
 
 .wp-block-getwid-accordion.ce-faqs .ui-accordion-header,
@@ -64,4 +64,8 @@
   .ui-accordion-header.ui-accordion-header-active
   a {
   color: var(--wp--preset--color--brand);
+}
+
+.wp-block-getwid-accordion.ce-faqs.has-background .ui-accordion-content p {
+  padding: var(--wp--custom--spacing--xl);
 }
