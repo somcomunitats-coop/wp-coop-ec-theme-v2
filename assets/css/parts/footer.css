@@ -60,6 +60,10 @@ footer.wp-block-template-part .wpml-ls-item:last-child a {
   padding-right: 0;
 }
 
+footer.wp-block-template-part .wp-block-social-links {
+  flex-wrap: nowrap;
+}
+
 footer.wp-block-template-part .wp-block-social-links li {
   padding: 0 0.5rem;
 }
