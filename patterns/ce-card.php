@@ -26,8 +26,8 @@
   <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
-  <!-- wp:group {"className":"is-style-horizontal-padded ce-card-body","layout":{"type":"default"}} -->
-  <div class="wp-block-group is-style-horizontal-padded ce-card-body">
+  <!-- wp:group {"className":"ce-card-body","layout":{"type":"default"}} -->
+  <div class="wp-block-group ce-card-body">
     <!-- wp:buttons -->
     <div class="wp-block-buttons">
       <!-- wp:button {"backgroundColor":"brand","textColor":"base","style":{"spacing":{"padding":{"left":"var:preset|spacing|40","right":"var:preset|spacing|40","top":"0","bottom":"0"}}}} -->
@@ -50,8 +50,8 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:group {"className":"ce-card-footer is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group ce-card-footer is-style-horizontal-padded">
+  <!-- wp:group {"className":"ce-card-footer","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group ce-card-footer">
     <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
     <div class="wp-block-buttons" style="margin-top:0;margin-bottom:0">
       <!-- wp:button {"backgroundColor":"brand","textColor":"base"} -->
