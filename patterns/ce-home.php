@@ -230,7 +230,7 @@
 
     <!-- wp:group {"className":"is-style-default","layout":{"type":"constrained"}} -->
     <div class="wp-block-group is-style-default"><!-- wp:html -->
-      <p><iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-frontend.coopdevs.org/ca/cetest/maps/comunitats" width="100%" height="850px" frameborder="0"></iframe><br />
+      <p><iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/ca/somcomunitatstesting/maps/campanya" width="100%" height="850px" frameborder="0"></iframe><br />
         <script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-frontend.coopdevs.org/iframe-integration.js"></script>
       </p>
       <!-- /wp:html -->
@@ -358,7 +358,7 @@
 
       <!-- wp:group {"className":"is-style-no-padding","layout":{"type":"constrained"}} -->
       <div class="wp-block-group is-style-no-padding"><!-- wp:html -->
-        <p><iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-frontend.coopdevs.org/ca/cetest/maps/comunitats" width="100%" height="650px" frameborder="0"></iframe><br />
+        <p><iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/ca/somcomunitatstesting/maps/campanya" width="100%" height="650px" frameborder="0"></iframe><br />
           <script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-frontend.coopdevs.org/iframe-integration.js"></script>
         </p>
         <!-- /wp:html -->
@@ -374,8 +374,8 @@
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding"} -->
 <section class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
   <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-default","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-default"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png","id":2545,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-default","layout":{"type":"default"}} -->
-      <div class="wp-block-cover is-light is-style-default" style="margin-top:0;margin-bottom:0;min-height:100%"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2545" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png" data-object-fit="cover" />
+    <div class="wp-block-group is-style-default"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png","id":2545,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-default","layout":{"type":"default"}} -->
+      <div class="wp-block-cover is-light is-style-default" style="margin-top:0;margin-bottom:0;min-height:100%"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2545" alt="" src="/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
