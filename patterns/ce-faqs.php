@@ -17,8 +17,8 @@
   </div>
   <div class="wp-block-getwid-accordion__content-wrapper">
     <div class="wp-block-getwid-accordion__content">
-      <!-- wp:paragraph {"placeholder":"Write text…","className":"is-style-horizontal-padded-xs"} -->
-      <p class="is-style-horizontal-padded-xs">Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
+      <!-- wp:paragraph {"placeholder":"Write text…"} -->
+      <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
       <!-- /wp:paragraph -->
     </div>
   </div>
@@ -30,8 +30,8 @@
   </div>
   <div class="wp-block-getwid-accordion__content-wrapper">
     <div class="wp-block-getwid-accordion__content">
-      <!-- wp:paragraph {"placeholder":"Write text…","className":"is-style-horizontal-padded-xs"} -->
-      <p class="is-style-horizontal-padded-xs">Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
+      <!-- wp:paragraph {"placeholder":"Write text…"} -->
+      <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
       <!-- /wp:paragraph -->
     </div>
   </div>
@@ -43,8 +43,8 @@
   </div>
   <div class="wp-block-getwid-accordion__content-wrapper">
     <div class="wp-block-getwid-accordion__content">
-      <!-- wp:paragraph {"placeholder":"Write text…","className":"is-style-horizontal-padded-xs"} -->
-      <p class="is-style-horizontal-padded-xs">Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
+      <!-- wp:paragraph {"placeholder":"Write text…"} -->
+      <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
       <!-- /wp:paragraph -->
     </div>
   </div>
@@ -56,8 +56,8 @@
   </div>
   <div class="wp-block-getwid-accordion__content-wrapper">
     <div class="wp-block-getwid-accordion__content">
-      <!-- wp:paragraph {"placeholder":"Write text…","className":"is-style-horizontal-padded-xs"} -->
-      <p class="is-style-horizontal-padded-xs">Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
+      <!-- wp:paragraph {"placeholder":"Write text…"} -->
+      <p>Labore ex consequat magna magna cupidatat excepteur sint velit excepteur culpa. Pariatur ullamco officia enim proident.</p>
       <!-- /wp:paragraph -->
     </div>
   </div>

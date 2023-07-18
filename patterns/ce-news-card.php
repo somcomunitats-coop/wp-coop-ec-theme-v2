@@ -46,8 +46,8 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:spacer {"height":"40px"} -->
-  <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- wp:spacer {"height":"3rem"} -->
+  <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 </article>
 <!-- /wp:group -->

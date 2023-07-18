@@ -42,7 +42,7 @@
 
     <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var(\u002d\u002dwp\u002d\u002dcustom\u002d\u002dspacing\u002d\u002dsm)","bottom":"var(\u002d\u002dwp\u002d\u002dcustom\u002d\u002dspacing\u002d\u002dsm)"},"margin":{"top":"0px","bottom":"0"}}},"backgroundColor":"main","className":"ce-header is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"},"anchor":"ce-header"} -->
     <div class="wp-block-group alignfull ce-header is-style-show-desktop has-main-background-color has-background" id="ce-header" style="margin-top:0px;margin-bottom:0;padding-top:var(--wp--custom--spacing--sm);padding-bottom:var(--wp--custom--spacing--sm)"><!-- wp:image {"id":1877,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-        <figure class="wp-block-image size-full is-style-default"><img src="https://wordpress.local/wp-content/uploads/2023/06/Capa_1logo.png" alt="" class="wp-image-1877" /></figure>
+        <figure class="wp-block-image size-full is-style-default"><img src="/wp-content/uploads/2023/06/Capa_1logo.png" alt="" class="wp-image-1877" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:navigation {"ref":2026,"textColor":"base","overlayMenu":"never","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"},"style":{"layout":{"selfStretch":"fit","flexSize":null},"typography":{"textTransform":"capitalize"}},"anchor":"ce-header-navigation"} /-->
@@ -61,7 +61,7 @@
 <!-- wp:group {"align":"full","className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull is-style-show-mobile-tablet"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var(\u002d\u002dwp\u002d\u002dcustom\u002d\u002dspacing\u002d\u002dsm)","bottom":"var(\u002d\u002dwp\u002d\u002dcustom\u002d\u002dspacing\u002d\u002dsm)"},"margin":{"top":"0px","bottom":"0"}}},"backgroundColor":"main","className":"ce-header is-style-show-mobile-tablet","layout":{"type":"flex","flexWrap":"nowrap","orientation":"horizontal","justifyContent":"space-between"}} -->
     <div class="wp-block-group alignfull ce-header is-style-show-mobile-tablet has-main-background-color has-background" style="margin-top:0px;margin-bottom:0;padding-top:var(--wp--custom--spacing--sm);padding-bottom:var(--wp--custom--spacing--sm)"><!-- wp:image {"id":1877,"width":155,"height":36,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-        <figure class="wp-block-image size-full is-resized is-style-default"><img src="https://wordpress.local/wp-content/uploads/2023/06/Capa_1logo.png" alt="" class="wp-image-1877" width="155" height="36" /></figure>
+        <figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/uploads/2023/06/Capa_1logo.png" alt="" class="wp-image-1877" width="155" height="36" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"flex","flexWrap":"nowrap"}} -->
