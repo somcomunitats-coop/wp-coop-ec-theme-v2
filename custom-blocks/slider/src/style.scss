@@ -12,7 +12,7 @@
   ul.slick-dots {
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: flex-end;
 
     > li {
       margin: 0;
@@ -36,12 +36,17 @@
       border: none;
       cursor: pointer;
       opacity: 0.3;
+
+      &:before {
+        display: none;
+      }
     }
   }
 
   .ce-block-slider-arrows {
     width: fit-content;
     margin: 1rem auto;
+    display: flex;
 
     .slick-arrow {
       width: 30px;
@@ -52,10 +57,14 @@
       border: none;
       outline: none;
       color: var(--wp--preset--color--typography);
-      // background-color: var(--wp--preset--color--primary);
       font-size: 0px;
       margin: 0 1rem;
       background-image: url("../assets/images/slider-arrow--light.svg");
+      transform: unset;
+
+      &:before {
+        display: none;
+      }
 
       &.slick-prev {
         transform: rotate(180deg);
