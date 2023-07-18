@@ -214,8 +214,8 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:spacer {"height":"30px","style":{"layout":{}}} -->
-  <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- wp:spacer {"height":"3rem","style":{"layout":{}},"className":"is-style-show-mobile-tablet"} -->
+  <div style="height:3rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile-tablet"></div>
   <!-- /wp:spacer -->
 
   <!-- wp:separator {"style":{"color":{"background":"#c5e3d140"},"spacing":{"margin":{"top":"0px","bottom":"0px"}}},"className":"is-style-wide"} -->
