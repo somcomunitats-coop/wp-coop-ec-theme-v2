@@ -4,7 +4,7 @@
  * Title: CE Recursos
  * Slug: ce-page/recursos
  * Categories: ce-pages
- * Viewport Width: 1350
+ * Viewport Width: 1500
  */
 
 ?>

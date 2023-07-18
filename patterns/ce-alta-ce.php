@@ -4,7 +4,7 @@
  * Title: CE Formulari Alta
  * Slug: ce-page/alta-nova
  * Categories: ce-pages
- * Viewport Width: 1350
+ * Viewport Width: 1500
  */
 
 ?>

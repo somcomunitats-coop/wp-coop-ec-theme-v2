@@ -4,7 +4,7 @@
  * Title: CE Administració
  * Slug: ce-page/administracio
  * Categories: ce-pages
- * Viewport Width: 1350
+ * Viewport Width: 1500
  */
 
 ?>

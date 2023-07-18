@@ -4,7 +4,7 @@
  * Title: CE Ciutadania
  * Slug: ce-page/ciutadania
  * Categories: ce-pages
- * Viewport Width: 1350
+ * Viewport Width: 1500
  */
 
 ?>

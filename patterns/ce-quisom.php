@@ -4,7 +4,7 @@
  * Title: CE QuiSom.
  * Slug: wpct/ce-quisom
  * Categories: ce-pages
- * Viewport Width: 1280
+ * Viewport Width: 1500
  */
 
 ?>

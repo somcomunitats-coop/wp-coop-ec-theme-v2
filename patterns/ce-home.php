@@ -4,15 +4,15 @@
  * Title: CE Home
  * Slug: ce-page/home
  * Categories: ce-pages
- * Viewport Width: 1350
+ * Viewport Width: 1500
  */
 ?>
 
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding"} -->
 <section class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"align":"full","className":"is-style-show-tablet-desktop","layout":{"type":"constrained"}} -->
   <div class="wp-block-group alignfull is-style-show-tablet-desktop"><!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-    <div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"55%"}},"className":"is-style-horizontal-padded-xxl","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
-      <div class="wp-block-group is-style-horizontal-padded-xxl"><!-- wp:heading {"level":1,"textColor":"typography"} -->
+    <div class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"55%"}},"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+      <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"level":1,"textColor":"typography"} -->
         <h1 class="wp-block-heading has-typography-color has-text-color">Suma’t a la Comunitat Energètica del teu municipi</h1>
         <!-- /wp:heading -->
 
@@ -58,8 +58,8 @@
     <div class="wp-block-cover is-light has-parallax" style="min-height:90vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
       <div role="img" class="wp-block-cover__image-background wp-image-2100 has-parallax" style="background-position:50% 50%;background-image:url(/wp-content/uploads/2023/07/cover-hero-column.png)"></div>
       <div class="wp-block-cover__inner-container"><!-- wp:group {"backgroundColor":"base","className":"is-style-vertical-padded","layout":{"type":"constrained"}} -->
-        <div class="wp-block-group is-style-vertical-padded has-base-background-color has-background"><!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"base","className":"is-style-padded-xl is-style-horizontal-padded","layout":{"type":"default"}} -->
-          <div class="wp-block-group is-style-padded-xl is-style-horizontal-padded has-base-background-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:heading {"level":1} -->
+        <div class="wp-block-group is-style-vertical-padded has-base-background-color has-background"><!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"base","className":"is-style-padded is-style-horizontal-padded","layout":{"type":"default"}} -->
+          <div class="wp-block-group is-style-padded is-style-horizontal-padded has-base-background-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:heading {"level":1} -->
             <h1 class="wp-block-heading">Suma’t a <br>la Comunitat Energètica <br>del teu municipi</h1>
             <!-- /wp:heading -->
 
@@ -258,8 +258,8 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"className":"is-style-show-mobile is-style-no-padding","layout":{"type":"constrained","contentSize":"100vw"}} -->
-    <div class="wp-block-group is-style-show-mobile is-style-no-padding"><!-- wp:group {"className":"is-style-horizontal-padded-xl","layout":{"type":"constrained"}} -->
-      <div class="wp-block-group is-style-horizontal-padded-xl"><!-- wp:ce-block/slider {"infinite":false} -->
+    <div class="wp-block-group is-style-show-mobile is-style-no-padding"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group is-style-horizontal-padded"><!-- wp:ce-block/slider {"infinite":false} -->
         <div class="wp-block-ce-block-slider" showarrows="true" showdots="false" infinite="false" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0">
           <!-- wp:group {"lock":{"remove":true,"move":true},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
           <div class="wp-block-group ce-block-slider-wrapper">
@@ -368,8 +368,8 @@
       </div>
       <!-- /wp:group -->
 
-      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded-xxl","layout":{"type":"constrained","justifyContent":"center"}} -->
-      <div class="wp-block-group is-style-horizontal-padded-xxl"><!-- wp:spacer {"height":"6rem"} -->
+      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded","layout":{"type":"constrained","justifyContent":"center"}} -->
+      <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem"} -->
         <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
@@ -891,8 +891,8 @@
 <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"primary","className":"is-style-no-padding"} -->
 <section class="wp-block-group alignfull is-style-no-padding has-primary-background-color has-background"><!-- wp:group {"className":"is-style-show-tablet-desktop is-style-no-padding","layout":{"type":"default"}} -->
   <div class="wp-block-group is-style-show-tablet-desktop is-style-no-padding"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-    <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-horizontal-padded-xxl","layout":{"type":"constrained"}} -->
-      <div class="wp-block-group is-style-horizontal-padded-xxl"><!-- wp:spacer {"height":"6rem"} -->
+    <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem"} -->
         <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
@@ -960,76 +960,80 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull is-style-no-padding has-main-background-color has-background"><!-- wp:spacer {"height":"6rem","className":"is-style-show-tablet-desktop"} -->
-  <div style="height:6rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
-  <!-- /wp:spacer -->
-
-  <!-- wp:spacer {"height":"3rem","className":"is-style-show-mobile"} -->
-  <div style="height:3rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile"></div>
-  <!-- /wp:spacer -->
-
-  <!-- wp:group {"className":"is-style-show-tablet-desktop","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group is-style-show-tablet-desktop"><!-- wp:image {"align":"center","id":2128,"sizeSlug":"full","linkDestination":"none"} -->
-    <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/partners-cover.png" alt="" class="wp-image-2128" /></figure>
-    <!-- /wp:image -->
-
-    <!-- wp:spacer {"height":"4rem"} -->
-    <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
+<section class="wp-block-group alignfull is-style-no-padding has-main-background-color has-background"> <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
+  <div class="wp-block-group is-style-horizontal-padded">
+    <!-- wp:spacer {"height":"6rem","className":"is-style-show-tablet-desktop"} -->
+    <div style="height:6rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
     <!-- /wp:spacer -->
 
-    <!-- wp:heading {"textAlign":"center","textColor":"base"} -->
-    <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color">Intercooperem per sumar coneixements i multiplicar les Comunitats Energètiques</h2>
-    <!-- /wp:heading -->
+    <!-- wp:spacer {"height":"3rem","className":"is-style-show-mobile"} -->
+    <div style="height:3rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile"></div>
+    <!-- /wp:spacer -->
 
-    <!-- wp:paragraph {"align":"center","textColor":"base","fontSize":"medium"} -->
-    <p class="has-text-align-center has-base-color has-text-color has-medium-font-size">Des de Som Comunitats sumem el nostre coneixement i experiència per multiplicar les Comunitats Energètiques des de l’economia social i solidària</p>
-    <!-- /wp:paragraph -->
-
-    <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-    <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-      <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/qui-som/" class="wp-block-button__link wp-element-button">Qui sóm</a></div>
-      <!-- /wp:button -->
-    </div>
-    <!-- /wp:buttons -->
-  </div>
-  <!-- /wp:group -->
-
-  <!-- wp:group {"className":"is-style-show-mobile is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group is-style-show-mobile is-style-horizontal-padded"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-horizontal-padded"><!-- wp:image {"align":"center","id":2128,"sizeSlug":"full","linkDestination":"none"} -->
+    <!-- wp:group {"className":"is-style-show-tablet-desktop","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-style-show-tablet-desktop"><!-- wp:image {"align":"center","id":2128,"sizeSlug":"full","linkDestination":"none"} -->
       <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/partners-cover.png" alt="" class="wp-image-2128" /></figure>
       <!-- /wp:image -->
+
+      <!-- wp:spacer {"height":"4rem"} -->
+      <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- /wp:spacer -->
+
+      <!-- wp:heading {"textAlign":"center","textColor":"base"} -->
+      <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color">Intercooperem per sumar coneixements i multiplicar les Comunitats Energètiques</h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph {"align":"center","textColor":"base","fontSize":"medium"} -->
+      <p class="has-text-align-center has-base-color has-text-color has-medium-font-size">Des de Som Comunitats sumem el nostre coneixement i experiència per multiplicar les Comunitats Energètiques des de l’economia social i solidària</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+      <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
+        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/qui-som/" class="wp-block-button__link wp-element-button">Qui sóm</a></div>
+        <!-- /wp:button -->
+      </div>
+      <!-- /wp:buttons -->
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:spacer {"height":"2rem"} -->
-    <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- wp:group {"className":"is-style-show-mobile is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-style-show-mobile is-style-horizontal-padded"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group is-style-horizontal-padded"><!-- wp:image {"align":"center","id":2128,"sizeSlug":"full","linkDestination":"none"} -->
+        <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/partners-cover.png" alt="" class="wp-image-2128" /></figure>
+        <!-- /wp:image -->
+      </div>
+      <!-- /wp:group -->
+
+      <!-- wp:spacer {"height":"2rem"} -->
+      <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- /wp:spacer -->
+
+      <!-- wp:heading {"textAlign":"center","textColor":"base"} -->
+      <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color">Intercooperem per sumar coneixements i multiplicar les Comunitats Energètiques</h2>
+      <!-- /wp:heading -->
+
+      <!-- wp:paragraph {"align":"center","textColor":"base","fontSize":"medium"} -->
+      <p class="has-text-align-center has-base-color has-text-color has-medium-font-size">Des de Som Comunitats sumem el nostre coneixement i experiència per multiplicar les Comunitats Energètiques des de l’economia social i solidària</p>
+      <!-- /wp:paragraph -->
+
+      <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+      <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
+        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/qui-som/" class="wp-block-button__link wp-element-button">Qui sóm</a></div>
+        <!-- /wp:button -->
+      </div>
+      <!-- /wp:buttons -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:spacer {"height":"7rem","className":"is-style-show-tablet-desktop"} -->
+    <div style="height:7rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
     <!-- /wp:spacer -->
 
-    <!-- wp:heading {"textAlign":"center","textColor":"base"} -->
-    <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color">Intercooperem per sumar coneixements i multiplicar les Comunitats Energètiques</h2>
-    <!-- /wp:heading -->
-
-    <!-- wp:paragraph {"align":"center","textColor":"base","fontSize":"medium"} -->
-    <p class="has-text-align-center has-base-color has-text-color has-medium-font-size">Des de Som Comunitats sumem el nostre coneixement i experiència per multiplicar les Comunitats Energètiques des de l’economia social i solidària</p>
-    <!-- /wp:paragraph -->
-
-    <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-    <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-      <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a href="/qui-som/" class="wp-block-button__link wp-element-button">Qui sóm</a></div>
-      <!-- /wp:button -->
-    </div>
-    <!-- /wp:buttons -->
+    <!-- wp:spacer {"height":"4rem","className":"is-style-show-mobile"} -->
+    <div style="height:4rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile"></div>
+    <!-- /wp:spacer -->
   </div>
   <!-- /wp:group -->
-
-  <!-- wp:spacer {"height":"7rem","className":"is-style-show-tablet-desktop"} -->
-  <div style="height:7rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
-  <!-- /wp:spacer -->
-
-  <!-- wp:spacer {"height":"4rem","className":"is-style-show-mobile"} -->
-  <div style="height:4rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile"></div>
-  <!-- /wp:spacer -->
 </section>
 <!-- /wp:group -->
 
@@ -1132,8 +1136,8 @@
       </div>
       <!-- /wp:group -->
 
-      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded-xxl","layout":{"type":"constrained"}} -->
-      <div class="wp-block-group is-style-horizontal-padded-xxl"><!-- wp:heading -->
+      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading -->
         <h2 class="wp-block-heading">Acompanyem la primera xarxa de Comunitats Energètiques de l’economia social</h2>
         <!-- /wp:heading -->
 
@@ -1203,8 +1207,8 @@
 <!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"primary","className":"is-style-no-padding","layout":{"type":"constrained","contentSize":"100vh"}} -->
 <section class="wp-block-group alignfull is-style-no-padding has-primary-background-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:group {"align":"full","className":"is-style-show-tablet-desktop","layout":{"type":"constrained"}} -->
   <div class="wp-block-group alignfull is-style-show-tablet-desktop"><!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
-    <div class="wp-block-group alignfull"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-horizontal-padded-xxl","layout":{"type":"constrained"}} -->
-      <div class="wp-block-group is-style-horizontal-padded-xxl" style="margin-top:0;margin-bottom:0"><!-- wp:heading -->
+    <div class="wp-block-group alignfull"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group is-style-horizontal-padded" style="margin-top:0;margin-bottom:0"><!-- wp:heading -->
         <h2 class="wp-block-heading">Guies i recursos sobre les Comunitats Energètiques</h2>
         <!-- /wp:heading -->
 

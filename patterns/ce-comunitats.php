@@ -4,7 +4,7 @@
  * Title: CE Comunitats
  * Slug: ce-page/comunitats
  * Categories: ce-pages
- * Viewport Width: 1350
+ * Viewport Width: 1500
  */
 
 ?>

@@ -4,7 +4,7 @@
  * Title: CE Card
  * Slug: ce-pattern/card
  * Categories: ce-pattern
- * Viewport Width: 1350
+ * Viewport Width: 1500
  */
 
 ?>

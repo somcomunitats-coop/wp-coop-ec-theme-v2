@@ -4,7 +4,7 @@
  * Title: CE Header.
  * Slug: wpct/ce-header
  * Categories: wpct-header
- * Viewport Width: 1280
+ * Viewport Width: 1500
  */
 
 ?>

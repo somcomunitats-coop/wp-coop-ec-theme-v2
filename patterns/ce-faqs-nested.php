@@ -4,7 +4,7 @@
  * Title: CE Faqs Nested
  * Slug: ce-pattern/faqs-nested
  * Category: ce-pattern
- * Viewport Width: 1350px
+ * Viewport Width: 1500px
  */
 
 ?>
