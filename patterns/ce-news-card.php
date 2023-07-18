@@ -4,7 +4,7 @@
  * Title: CE News Card.
  * Slug: ce-pattern/news-card
  * Categories: ce-pattern
- * Viewport Width: 1350
+ * Viewport Width: 1500
  */
 
 ?>
@@ -17,8 +17,8 @@
   <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
-  <!-- wp:group {"className":"is-style-horizontal-padded ce-card-body","layout":{"type":"default"}} -->
-  <div class="wp-block-group is-style-horizontal-padded ce-card-body">
+  <!-- wp:group {"className":"ce-card-body","layout":{"type":"default"}} -->
+  <div class="wp-block-group ce-card-body">
     <!-- wp:group {"className":"is-style-show-desktop","layout"{"type":"default"}} -->
     <div class="wp-block-group is-style-show-desktop">
       <!-- wp:post-terms {"term":"post_tag"} /-->
@@ -46,8 +46,8 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:spacer {"height":"40px"} -->
-  <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- wp:spacer {"height":"3rem"} -->
+  <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 </article>
 <!-- /wp:group -->

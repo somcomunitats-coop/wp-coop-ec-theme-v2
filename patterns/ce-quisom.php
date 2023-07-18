@@ -4,15 +4,15 @@
  * Title: CE QuiSom.
  * Slug: wpct/ce-quisom
  * Categories: ce-pages
- * Viewport Width: 1280
+ * Viewport Width: 1500
  */
 
 ?>
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-default","layout":{"type":"constrained"},"anchor":"qui-som"} -->
-<div id="qui-som" class="wp-block-group is-style-default" style="margin-top:0;margin-bottom:0"><!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"main","textColor":"base","className":"is-style-default","layout":{"type":"constrained","justifyContent":"center"}} -->
-    <div class="wp-block-group is-style-default has-base-color has-main-background-color has-text-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"constrained"}} -->
-        <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"constrained"}} -->
-            <div class="wp-block-group is-style-show-desktop"><!-- wp:heading {"textAlign":"center","level":1,"style":{"layout":{"selfStretch":"fit","flexSize":null}},"textColor":"base"} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull is-style-no-padding" id="qui-som" style="margin-top:0;margin-bottom:0"><!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"main","textColor":"base","className":"is-style-default","layout":{"type":"default"}} -->
+    <div class="wp-block-group is-style-default has-base-color has-main-background-color has-text-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
+        <div class="wp-block-group is-style-no-padding"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
+            <div class="wp-block-group is-style-no-padding"><!-- wp:heading {"textAlign":"center","level":1,"style":{"layout":{"selfStretch":"fit","flexSize":null}},"textColor":"base"} -->
                 <h1 class="wp-block-heading has-text-align-center has-base-color has-text-color">Treballem per multiplicar les comunitats Energètiques</h1>
                 <!-- /wp:heading -->
 
@@ -31,7 +31,7 @@
         </div>
         <!-- /wp:group -->
 
-        <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained","contentSize":"330px","wideSize":""}} -->
+        <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"default"}} -->
         <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
             <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:heading {"textAlign":"center","level":1,"style":{"layout":{"selfStretch":"fit","flexSize":null}},"textColor":"base"} -->
                 <h1 class="wp-block-heading has-text-align-center has-base-color has-text-color">Treballem per multiplicar les comunitats Energètiques</h1>
@@ -54,10 +54,10 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"layout":{"type":"constrained"}} -->
+    <!-- wp:group {"layout":{"type":"default"}} -->
     <div class="wp-block-group"><!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
         <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","orientation":"vertical"}} -->
-            <div class="wp-block-group is-style-default"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"constrained"},"anchor":"ce-video-container"} -->
+            <div class="wp-block-group is-style-default"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"constrained"}} -->
                 <div id="ce-video-container" class="wp-block-group is-style-no-padding"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=uQy-TK7dtQ0","type":"video","providerNameSlug":"youtube","allowResponsive":false,"responsive":true,"className":""} -->
                     <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube">
                         <div class="wp-block-embed__wrapper">
@@ -83,9 +83,9 @@
         </div>
         <!-- /wp:group -->
 
-        <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"constrained"}} -->
+        <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"default"}} -->
         <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-            <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"layout":{"type":"default"},"anchor":"ce-video-container"} -->
+            <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"layout":{"type":"default"}} -->
                 <div id="ce-video-container" class="wp-block-group"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=uQy-TK7dtQ0","type":"video","providerNameSlug":"youtube","allowResponsive":false,"responsive":true,"className":""} -->
                     <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube">
                         <div class="wp-block-embed__wrapper">
@@ -113,10 +113,10 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"layout":{"type":"constrained"}} -->
+    <!-- wp:group {"layout":{"type":"default"}} -->
     <div class="wp-block-group"><!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
         <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","orientation":"vertical"}} -->
-            <div class="wp-block-group is-style-default"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"},"anchor":"ce-banner-container"} -->
+            <div class="wp-block-group is-style-default"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
                 <div id="ce-banner-container" class="wp-block-group is-style-no-padding"><!-- wp:image {"id":2150,"sizeSlug":"full","linkDestination":"none"} -->
                     <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/Frame-148imatge_verd.png" alt="" class="wp-image-2150" /></figure>
                     <!-- /wp:image -->
@@ -138,7 +138,7 @@
         </div>
         <!-- /wp:group -->
 
-        <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"constrained"}} -->
+        <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"default"}} -->
         <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
             <div class="wp-block-group is-style-default"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-padded","layout":{"type":"constrained"}} -->
                 <div class="wp-block-group is-style-padded"><!-- wp:heading -->
@@ -173,9 +173,9 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"backgroundColor":"second-base-light","className":"is-style-default","layout":{"type":"constrained"},"anchor":"ce-grid"} -->
+    <!-- wp:group {"backgroundColor":"second-base-light","className":"is-style-default","layout":{"type":"constrained"}} -->
     <div id="ce-grid" class="wp-block-group is-style-default has-second-base-light-background-color has-background"><!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"constrained"}} -->
-        <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch","justifyContent":"center"},"anchor":"ce-grid-row"} -->
+        <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch","justifyContent":"center"}} -->
             <div id="ce-grid-row" class="wp-block-group is-style-default"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","className":"is-style-default","layout":{"type":"constrained","wideSize":""}} -->
                 <div class="wp-block-group is-style-default has-base-background-color has-background"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}},"layout":{"type":"constrained"}} -->
@@ -325,7 +325,7 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch","justifyContent":"center"},"anchor":"ce-grid-row"} -->
+            <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch","justifyContent":"center"}} -->
             <div id="ce-grid-row" class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","layout":{"type":"constrained","wideSize":""}} -->
                 <div class="wp-block-group has-base-background-color has-background"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}},"layout":{"type":"constrained"}} -->
@@ -481,7 +481,7 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch","justifyContent":"center"},"anchor":"ce-grid-row"} -->
+            <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch","justifyContent":"center"}} -->
             <div id="ce-grid-row" class="wp-block-group"><!-- wp:group {"style":{"spacing":{"margin":{"top":"0"}},"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","layout":{"type":"constrained","wideSize":""}} -->
                 <div class="wp-block-group has-base-background-color has-background" style="margin-top:0"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"right"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}},"layout":{"type":"constrained"}} -->
@@ -620,7 +620,7 @@
         <!-- /wp:group -->
 
         <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
-        <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","orientation":"vertical"},"anchor":"ce-grid-stack"} -->
+        <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","orientation":"vertical"}} -->
             <div id="ce-grid-stack" class="wp-block-group is-style-default"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","layout":{"type":"constrained","wideSize":""}} -->
                 <div class="wp-block-group has-base-background-color has-background"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}},"layout":{"type":"constrained"}} -->
@@ -770,7 +770,7 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"},"anchor":"ce-grid-stack"} -->
+            <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
             <div id="ce-grid-stack" class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","layout":{"type":"constrained","wideSize":""}} -->
                 <div class="wp-block-group has-base-background-color has-background"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}},"layout":{"type":"constrained"}} -->
@@ -926,7 +926,7 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"},"anchor":"ce-grid-stack"} -->
+            <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
             <div id="ce-grid-stack" class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","layout":{"type":"constrained","wideSize":""}} -->
                 <div class="wp-block-group has-base-background-color has-background"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"right"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}},"layout":{"type":"constrained"}} -->
@@ -1035,7 +1035,7 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"primary","textColor":"main","className":"is-style-default","layout":{"type":"constrained","justifyContent":"center"}} -->
+    <!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"primary","textColor":"main","className":"is-style-default","layout":{"type":"default"}} -->
     <div class="wp-block-group is-style-default has-main-color has-primary-background-color has-text-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"constrained"}} -->
         <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"style":{"spacing":{"margin":{"top":"100px","bottom":"100px"}}},"className":"is-style-show-desktop","layout":{"type":"constrained","contentSize":"730px","wideSize":""}} -->
             <div class="wp-block-group is-style-show-desktop" style="margin-top:100px;margin-bottom:100px"><!-- wp:heading {"textAlign":"center","style":{"layout":{"selfStretch":"fit","flexSize":null}},"textColor":"main"} -->
@@ -1052,7 +1052,7 @@
 
                 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
                 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"main","textColor":"primary","width":50,"className":"is-style-rounded"} -->
-                    <div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-rounded"><a href="/comunitats-energetiques/" class="wp-block-button__link has-primary-color has-main-background-color has-text-color has-background wp-element-button">Troba la teva Comunitat Energètica</a></div>
+                    <div class="wp-block-button has-custom-width wp-block-button__width-50 is-style-rounded"><a class="wp-block-button__link has-primary-color has-main-background-color has-text-color has-background wp-element-button">Troba la teva Comunitat Energètica</a></div>
                     <!-- /wp:button -->
                 </div>
                 <!-- /wp:buttons -->
@@ -1077,7 +1077,7 @@
 
                 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
                 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"main","textColor":"primary","width":100,"className":"is-style-rounded"} -->
-                    <div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-rounded"><a href="/comunitats-energetiques/" class="wp-block-button__link has-primary-color has-main-background-color has-text-color has-background wp-element-button">Troba la teva Comunitat Energètica</a></div>
+                    <div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-rounded"><a class="wp-block-button__link has-primary-color has-main-background-color has-text-color has-background wp-element-button">Troba la teva Comunitat Energètica</a></div>
                     <!-- /wp:button -->
                 </div>
                 <!-- /wp:buttons -->

@@ -4,7 +4,7 @@
  * Title: CE News Wide Card.
  * Slug: ce-pattern/news-wide-card
  * Categories: ce-pattern
- * Viewport Width: 1280
+ * Viewport Width: 1500
  */
 
 ?>

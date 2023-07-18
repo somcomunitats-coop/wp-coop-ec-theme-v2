@@ -93,15 +93,15 @@
         "sxl": "60px",
         "sxxl": "70px",
         "sspacer": "100px",
-        "em-one": "1em",
-        "em-s": ".65em",
-        "em": "1.7em",
-        "em-l": "2em",
-        "em-xl": "2.5em"
+        "rem-one": "1rem",
+        "rem-s": ".65rem",
+        "rem": "1.7rem",
+        "rem-l": "2rem",
+        "rem-xl": "2.5rem"
       }
     },
     "layout": {
-      "contentSize": "1350px",
+      "contentSize": "1500px",
       "wideSize": "100%"
     },
     "spacing": {
