@@ -9,8 +9,8 @@
 
 ?>
 
-<!-- wp:group {"align":"full","backgroundColor":"primary","className":"is-style-no-padding","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull is-style-no-padding has-primary-background-color has-background"><!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"primary","className":"is-style-no-padding","layout":{"type":"default"}} -->
+<section class="wp-block-group alignfull is-style-no-padding has-primary-background-color has-background"><!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
   <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
     <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem","style":{"layout":{}}} -->
       <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
@@ -95,5 +95,5 @@
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
-</div>
+</section>
 <!-- /wp:group -->
