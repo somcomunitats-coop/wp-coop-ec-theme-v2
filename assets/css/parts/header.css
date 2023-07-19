@@ -21,26 +21,26 @@
     #ce-header .wp-block-group .wp-block-image{
       width: 165px;
     }
-    #ce-header-navigation .wp-block-navigation__container .wp-block-navigation-item:not(:nth-child(2)){
+    #ce-header nav .wp-block-navigation__container .wp-block-navigation-item:not(:nth-child(2)){
       padding: 0 var(--wp--custom--spacing--sxs);
       flex-wrap: nowrap;
     }
-    #ce-header-navigation .wp-block-navigation__container .wp-block-navigation-item:nth-child(2){
+    #ce-header nav .wp-block-navigation__container .wp-block-navigation-item:nth-child(2){
       padding-right: var(--wp--custom--spacing--sm);
     }
-    #ce-header-navigation .wp-block-navigation__container .wp-block-navigation-item:first-child,
-    #ce-header-navigation .wp-block-navigation__container .wp-block-navigation-item:nth-child(6),
-    #ce-header-navigation .wp-block-navigation__container .wp-block-navigation-item:nth-child(7), 
-    #ce-header-navigation .wp-block-navigation__container .wp-block-navigation-item:last-child,
-    #ce-header-navigation .wpml-language-switcher-navigation-block.wpml-ls-list,
-    #ce-header-navigation .wp-block-social-links
+    #ce-header nav .wp-block-navigation__container .wp-block-navigation-item:first-child,
+    #ce-header nav .wp-block-navigation__container .wp-block-navigation-item:nth-child(6),
+    #ce-header nav .wp-block-navigation__container .wp-block-navigation-item:nth-child(7), 
+    #ce-header nav .wp-block-navigation__container .wp-block-navigation-item:last-child,
+    #ce-header nav .wpml-language-switcher-navigation-block.wpml-ls-list,
+    #ce-header nav .wp-block-social-links
     {
       display: none;
     
     }
     
-    #ce-header-navigation .wp-block-navigation__container li:nth-child(3),
-    #ce-header-navigation .wp-block-navigation__container li:nth-child(4){
+    #ce-header nav .wp-block-navigation__container li:nth-child(3),
+    #ce-header nav .wp-block-navigation__container li:nth-child(4){
       
       border-right: 1px solid var(--wp--preset--color--base);
     }
@@ -54,6 +54,10 @@
 
    /*NOU CODI CÒDEC*/
   /*mobile version*/
+
+  #ce-header-mobile-nav nav button{
+    border: none;
+  }
   button.wp-block-navigation__responsive-container-open{
     border: none;
   }
