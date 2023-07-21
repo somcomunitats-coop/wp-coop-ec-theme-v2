@@ -15,12 +15,12 @@
       <div style="height:6rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
-      <!-- wp:heading {"level":1,"textColor":"typography"} -->
-      <h1 class="wp-block-heading has-typography-color has-text-color">Suma’t a la Comunitat Energètica del teu municipi</h1>
+      <!-- wp:heading {"level":1} -->
+      <h1 class="wp-block-heading">Suma’t a la Comunitat Energètica del teu municipi</h1>
       <!-- /wp:heading -->
 
-      <!-- wp:paragraph {"textColor":"typography","fontSize":"medium"} -->
-      <p class="has-typography-color has-text-color has-medium-font-size">Estem preparant una plataforma oberta per a la creació, gestió i participació en Comunitats Energètiques des de l'economia social</p>
+      <!-- wp:paragraph {"fontSize":"medium"} -->
+      <p class="has-medium-font-size">Estem preparant una plataforma oberta per a la creació, gestió i participació en Comunitats Energètiques des de l'economia social</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:spacer {"height":"1rem","width":"0px","style":{"layout":{}}} -->
@@ -100,8 +100,8 @@
   <!-- /wp:spacer -->
 
   <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
-  <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"textAlign":"center","textColor":"typography"} -->
-    <h2 class="wp-block-heading has-text-align-center has-typography-color has-text-color">Fem créixer les Comunitats Energètiques</h2>
+  <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"textAlign":"center"} -->
+    <h2 class="wp-block-heading has-text-align-center">Fem créixer les Comunitats Energètiques</h2>
     <!-- /wp:heading -->
 
     <!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
@@ -224,23 +224,46 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:spacer {"height":"5rem","width":"0px","style":{"layout":{}}} -->
-    <div style="height:5rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->
+    <!-- wp:group {"layout":{"type":"default"}} -->
+    <div class="wp-block-group">
+      <!-- wp:spacer {"height":"4rem","width":"0px","style":{"layout":{}}} -->
+      <div style="height:4rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- /wp:spacer -->
 
-    <!-- wp:group {"className":"is-style-default","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-default"><!-- wp:html -->
+      <!-- wp:html -->
       <p><iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/ca/somcomunitatstesting/maps/campanya" width="100%" height="850px" frameborder="0"></iframe><br />
         <script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-frontend.coopdevs.org/iframe-integration.js"></script>
       </p>
       <!-- /wp:html -->
+
+      <!-- wp:spacer {"height":"3rem","width":"0px","style":{"layout":{}}} -->
+      <div style="height:3rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- /wp:spacer -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+    <div class="wp-block-group">
+      <!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"second-base-light"} -->
+      <hr class="wp-block-separator has-text-color has-second-base-light-color has-alpha-channel-opacity has-second-base-light-background-color has-background" />
+      <!-- /wp:separator -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"layout":{"type":"default"}} -->
+    <div class="wp-block-group">
+      <!-- wp:spacer {"height":"3rem"} -->
+      <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- /wp:spacer -->
+
+      <!-- wp:pattern {"slug":"ce-pattern/faqs"} /-->
     </div>
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:spacer {"height":"7rem","className":"is-style-show-tablet-desktop"} -->
-  <div style="height:7rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
+  <!-- wp:spacer {"height":"7rem"} -->
+  <div style="height:7rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 </section>
 <!-- /wp:group -->
@@ -252,8 +275,8 @@
 
   <!-- wp:group {"className":"is-style-show-mobile is-style-no-padding","layout":{"type":"constrained"}} -->
   <div class="wp-block-group is-style-show-mobile is-style-no-padding"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"textAlign":"center","textColor":"typography"} -->
-      <h2 class="wp-block-heading has-text-align-center has-typography-color has-text-color">Fem créixer les Comunitats Energètiques</h2>
+    <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"textAlign":"center"} -->
+      <h2 class="wp-block-heading has-text-align-center">Fem créixer les Comunitats Energètiques</h2>
       <!-- /wp:heading -->
 
       <!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
@@ -631,8 +654,8 @@
     <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
 
-    <!-- wp:heading {"textAlign":"center","textColor":"typography"} -->
-    <h2 class="wp-block-heading has-text-align-center has-typography-color has-text-color">Com vols participar a la Comunitat Energètica?</h2>
+    <!-- wp:heading {"textAlign":"center"} -->
+    <h2 class="wp-block-heading has-text-align-center">Com vols participar a la Comunitat Energètica?</h2>
     <!-- /wp:heading -->
 
     <!-- wp:spacer {"height":"4rem"} -->
@@ -782,8 +805,8 @@
     <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
 
-    <!-- wp:heading {"textAlign":"center","textColor":"typography"} -->
-    <h2 class="wp-block-heading has-text-align-center has-typography-color has-text-color">Com vols participar a la Comunitat Energètica?</h2>
+    <!-- wp:heading {"textAlign":"center"} -->
+    <h2 class="wp-block-heading has-text-align-center">Com vols participar a la Comunitat Energètica?</h2>
     <!-- /wp:heading -->
 
     <!-- wp:spacer {"height":"2rem"} -->
@@ -1282,7 +1305,7 @@
 
       <!-- wp:buttons -->
       <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button" href="/?page_id=2733">Consulta les guies</a></div>
+        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button" href="/recursos/">Consulta les guies</a></div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
@@ -1335,7 +1358,7 @@
 
       <!-- wp:buttons -->
       <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button" href="/?page_id=2733">Consulta les guies</a></div>
+        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button" href="/recursos/">Consulta les guies</a></div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
