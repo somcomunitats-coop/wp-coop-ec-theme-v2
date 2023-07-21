@@ -2,17 +2,21 @@
 
 /**
  * Title: CE QuiSom.
- * Slug: ce-page/ce-quisom
+ * Slug: wpct/ce-quisom
  * Categories: ce-pages
  * Viewport Width: 1500
  */
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull is-style-no-padding" id="qui-som" style="margin-top:0;margin-bottom:0"><!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"main","textColor":"base","className":"is-style-default","layout":{"type":"default"}} -->
-    <div class="wp-block-group is-style-default has-base-color has-main-background-color has-text-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
-        <div class="wp-block-group is-style-no-padding"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
-            <div class="wp-block-group is-style-no-padding"><!-- wp:heading {"textAlign":"center","level":1,"style":{"layout":{"selfStretch":"fit","flexSize":null}},"textColor":"base"} -->
+<!-- wp:group {"align":"full","className":"is-style-no-padding","anchor":"qui-som"} -->
+<div class="wp-block-group alignfull is-style-no-padding" id="qui-som"><!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"main","textColor":"base","className":"is-style-no-padding","layout":{"type":"default"}} -->
+    <div class="wp-block-group is-style-no-padding has-base-color has-main-background-color has-text-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:group {"className":"is-style-show-desktop is-style-horizontal-padded","layout":{"type":"default"}} -->
+        <div class="wp-block-group is-style-show-desktop is-style-horizontal-padded"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group is-style-no-padding"><!-- wp:spacer {"height":"6rem"} -->
+                <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:heading {"textAlign":"center","level":1,"style":{"layout":{"selfStretch":"fit","flexSize":null}},"textColor":"base"} -->
                 <h1 class="wp-block-heading has-text-align-center has-base-color has-text-color">Treballem per multiplicar les comunitats Energètiques</h1>
                 <!-- /wp:heading -->
 
@@ -26,14 +30,22 @@
                     <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
+
+                <!-- wp:spacer {"height":"7rem"} -->
+                <div style="height:7rem" aria-hidden="true" class="wp-block-spacer"></div>
+                <!-- /wp:spacer -->
             </div>
             <!-- /wp:group -->
         </div>
         <!-- /wp:group -->
 
-        <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"default"}} -->
-        <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
-            <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:heading {"textAlign":"center","level":1,"style":{"layout":{"selfStretch":"fit","flexSize":null}},"textColor":"base"} -->
+        <!-- wp:group {"className":"is-style-show-mobile-tablet is-style-horizontal-padded","layout":{"type":"default"}} -->
+        <div class="wp-block-group is-style-show-mobile-tablet is-style-horizontal-padded"><!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:spacer {"height":"3rem"} -->
+                <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:heading {"textAlign":"center","level":1,"style":{"layout":{"selfStretch":"fit","flexSize":null}},"textColor":"base"} -->
                 <h1 class="wp-block-heading has-text-align-center has-base-color has-text-color">Treballem per multiplicar les comunitats Energètiques</h1>
                 <!-- /wp:heading -->
 
@@ -47,6 +59,10 @@
                     <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
+
+                <!-- wp:spacer {"height":"4rem"} -->
+                <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
+                <!-- /wp:spacer -->
             </div>
             <!-- /wp:group -->
         </div>
@@ -54,11 +70,11 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"layout":{"type":"default"}} -->
-    <div class="wp-block-group"><!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
+    <!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
+    <div class="wp-block-group is-style-no-padding"><!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
         <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","orientation":"vertical"}} -->
-            <div class="wp-block-group is-style-default"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"constrained"}} -->
-                <div id="ce-video-container" class="wp-block-group is-style-no-padding"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=uQy-TK7dtQ0","type":"video","providerNameSlug":"youtube","allowResponsive":false,"responsive":true,"className":""} -->
+            <div class="wp-block-group is-style-default"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
+                <div class="wp-block-group is-style-no-padding"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=uQy-TK7dtQ0","type":"video","providerNameSlug":"youtube","allowResponsive":false,"responsive":true,"className":""} -->
                     <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube">
                         <div class="wp-block-embed__wrapper">
                             https://www.youtube.com/watch?v=uQy-TK7dtQ0
@@ -69,13 +85,21 @@
                 <!-- /wp:group -->
 
                 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-                <div class="wp-block-group is-style-horizontal-padded" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading -->
+                <div class="wp-block-group is-style-horizontal-padded" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:spacer {"height":"3rem"} -->
+                    <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
+                    <!-- /wp:spacer -->
+
+                    <!-- wp:heading -->
                     <h2 class="wp-block-heading">Som una aliança que suma</h2>
                     <!-- /wp:heading -->
 
                     <!-- wp:paragraph -->
                     <p>Som 7 entitats de l’economia social que ens hem unit per impulsar Comunitats Energètiques i continuar avançant en la transició energètica transformadora.</p>
                     <!-- /wp:paragraph -->
+
+                    <!-- wp:spacer {"height":"4rem"} -->
+                    <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
+                    <!-- /wp:spacer -->
                 </div>
                 <!-- /wp:group -->
             </div>
@@ -85,8 +109,8 @@
 
         <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"default"}} -->
         <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-            <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"layout":{"type":"default"}} -->
-                <div id="ce-video-container" class="wp-block-group"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=uQy-TK7dtQ0","type":"video","providerNameSlug":"youtube","allowResponsive":false,"responsive":true,"className":""} -->
+            <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-no-padding","layout":{"type":"default"},"anchor":"ce-video-container"} -->
+                <div id="ce-video-container" class="wp-block-group is-style-no-padding"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=uQy-TK7dtQ0","type":"video","providerNameSlug":"youtube","allowResponsive":false,"responsive":true,"className":""} -->
                     <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube">
                         <div class="wp-block-embed__wrapper">
                             https://www.youtube.com/watch?v=uQy-TK7dtQ0
@@ -96,7 +120,7 @@
                 </div>
                 <!-- /wp:group -->
 
-                <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-horizontal-padded","layout":{"type":"constrained","contentSize":"470px"}} -->
+                <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-horizontal-padded","layout":{"type":"constrained","contentSize":""}} -->
                 <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading -->
                     <h2 class="wp-block-heading">Som una aliança que suma</h2>
                     <!-- /wp:heading -->
@@ -115,22 +139,30 @@
 
     <!-- wp:group {"layout":{"type":"default"}} -->
     <div class="wp-block-group"><!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
-        <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","orientation":"vertical"}} -->
-            <div class="wp-block-group is-style-default"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
-                <div id="ce-banner-container" class="wp-block-group is-style-no-padding"><!-- wp:image {"id":2150,"sizeSlug":"full","linkDestination":"none"} -->
-                    <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/Frame-148imatge_verd.png" alt="" class="wp-image-2150" /></figure>
+        <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"flex","orientation":"vertical"}} -->
+            <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-no-padding","layout":{"type":"constrained"}} -->
+                <div class="wp-block-group is-style-no-padding"><!-- wp:image {"id":2150,"sizeSlug":"full","linkDestination":"none"} -->
+                    <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/Frame-148imatge_verd.png" alt="" class="wp-image-2150" /></figure>
                     <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
 
                 <!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-                <div class="wp-block-group is-style-horizontal-padded" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading -->
+                <div class="wp-block-group is-style-horizontal-padded" style="margin-top:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:spacer {"height":"3rem"} -->
+                    <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
+                    <!-- /wp:spacer -->
+
+                    <!-- wp:heading -->
                     <h2 class="wp-block-heading">Qui forma part <br>de Som Comunitats</h2>
                     <!-- /wp:heading -->
 
                     <!-- wp:paragraph {"fontSize":"small"} -->
                     <p class="has-small-font-size">Les 7 entitats que en formem part som: Som Energia, Som Mobilitat, ePlural, que agrupa EPI, Arkenova, Suno i Tandem Social i Coopdevs<br><br>Amb aquesta aliança ajuntem coneixement i experiència per analitzar, avaluar i desenvolupar diferents models de Comunitats Energètiques en funció de les característiques del territori i els agents participants. A més, desenvolupem eines de gestió tecnològica i governança que permeten replicar i accelerar la creació de Comunitats Energètiques, la seva escalabilitat i una àgil gestió.<br><br>Estem convençudes que la transició energètica no és només la descarbonització del sistema actual, sinó que hem de descentralitzar el sistema de generació energètica, democratitzar l’accés i el consum energètic, apostar per una propietat col·lectiva i no deixar fora a ningú. Un dels propòsits és també que aquestes comunitats puguin compartir l’organització i la producció de més recursos a part de l’energia (com l’alimentació, l’habitatge i les cures), generant impactes positius a escala local arreu del territori.</p>
                     <!-- /wp:paragraph -->
+
+                    <!-- wp:spacer {"height":"4rem"} -->
+                    <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
+                    <!-- /wp:spacer -->
                 </div>
                 <!-- /wp:group -->
             </div>
@@ -140,8 +172,8 @@
 
         <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"default"}} -->
         <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-            <div class="wp-block-group is-style-default"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-padded","layout":{"type":"constrained"}} -->
-                <div class="wp-block-group is-style-padded"><!-- wp:heading -->
+            <div class="wp-block-group is-style-default"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+                <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading -->
                     <h2 class="wp-block-heading">Qui forma part <br>de Som Comunitats</h2>
                     <!-- /wp:heading -->
 
@@ -155,8 +187,8 @@
                 </div>
                 <!-- /wp:group -->
 
-                <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-default","layout":{"type":"constrained"}} -->
-                <div class="wp-block-group is-style-default"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/Frame-148imatge_verd.png","id":2150,"dimRatio":0,"minHeight":640,"isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-image-center","layout":{"type":"constrained","wideSize":""}} -->
+                <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-no-padding","layout":{"type":"constrained"}} -->
+                <div class="wp-block-group is-style-no-padding"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/Frame-148imatge_verd.png","id":2150,"dimRatio":0,"minHeight":640,"isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-image-center","layout":{"type":"constrained","wideSize":""}} -->
                     <div class="wp-block-cover is-light is-style-image-center" style="margin-top:0;margin-bottom:0;min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2150" alt="" src="/wp-content/uploads/2023/07/Frame-148imatge_verd.png" data-object-fit="cover" />
                         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
                             <p class="has-text-align-center has-large-font-size"></p>
@@ -173,10 +205,14 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"backgroundColor":"second-base-light","className":"is-style-default","layout":{"type":"constrained"}} -->
-    <div id="ce-grid" class="wp-block-group is-style-default has-second-base-light-background-color has-background"><!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"constrained"}} -->
-        <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch","justifyContent":"center"}} -->
-            <div id="ce-grid-row" class="wp-block-group is-style-default"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","className":"is-style-default","layout":{"type":"constrained","wideSize":""}} -->
+    <!-- wp:group {"backgroundColor":"second-base-light","className":"is-style-no-padding","layout":{"type":"constrained"},"anchor":"ce-grid"} -->
+    <div id="ce-grid" class="wp-block-group is-style-no-padding has-second-base-light-background-color has-background"><!-- wp:group {"className":"is-style-show-desktop is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group is-style-show-desktop is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem"} -->
+            <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
+
+            <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch","justifyContent":"center"},"anchor":"ce-grid-row"} -->
+            <div id="ce-grid-row" class="wp-block-group is-style-show-desktop"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","className":"is-style-default","layout":{"type":"constrained","wideSize":""},"anchor":""} -->
                 <div class="wp-block-group is-style-default has-base-background-color has-background"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"></div>
@@ -325,8 +361,8 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch","justifyContent":"center"}} -->
-            <div id="ce-grid-row" class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","layout":{"type":"constrained","wideSize":""}} -->
+            <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch","justifyContent":"center"},"anchor":"ce-grid-row"} -->
+            <div id="ce-grid-row" class="wp-block-group is-style-show-desktop"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","layout":{"type":"constrained","wideSize":""}} -->
                 <div class="wp-block-group has-base-background-color has-background"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"></div>
@@ -481,8 +517,8 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch","justifyContent":"center"}} -->
-            <div id="ce-grid-row" class="wp-block-group"><!-- wp:group {"style":{"spacing":{"margin":{"top":"0"}},"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","layout":{"type":"constrained","wideSize":""}} -->
+            <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch","justifyContent":"center"},"anchor":"ce-grid-row"} -->
+            <div id="ce-grid-row" class="wp-block-group is-style-show-desktop"><!-- wp:group {"style":{"spacing":{"margin":{"top":"0"}},"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","layout":{"type":"constrained","wideSize":""}} -->
                 <div class="wp-block-group has-base-background-color has-background" style="margin-top:0"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"right"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}},"layout":{"type":"constrained"}} -->
                         <div class="wp-block-group"><!-- wp:buttons -->
@@ -616,11 +652,15 @@
                 <!-- /wp:group -->
             </div>
             <!-- /wp:group -->
+
+            <!-- wp:spacer {"height":"6rem"} -->
+            <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
         </div>
         <!-- /wp:group -->
 
-        <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
-        <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","orientation":"vertical"}} -->
+        <!-- wp:group {"className":"is-style-show-mobile-tablet is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group is-style-show-mobile-tablet is-style-horizontal-padded"><!-- wp:group {"className":"is-style-default","layout":{"type":"flex","orientation":"vertical"},"anchor":"ce-grid-stack"} -->
             <div id="ce-grid-stack" class="wp-block-group is-style-default"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","layout":{"type":"constrained","wideSize":""}} -->
                 <div class="wp-block-group has-base-background-color has-background"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}},"layout":{"type":"constrained"}} -->
@@ -770,7 +810,7 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+            <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"},"anchor":"ce-grid-stack"} -->
             <div id="ce-grid-stack" class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","layout":{"type":"constrained","wideSize":""}} -->
                 <div class="wp-block-group has-base-background-color has-background"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}},"layout":{"type":"constrained"}} -->
@@ -926,7 +966,7 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+            <!-- wp:group {"layout":{"type":"flex","orientation":"vertical"},"anchor":"ce-grid-stack"} -->
             <div id="ce-grid-stack" class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"33%"}},"backgroundColor":"base","layout":{"type":"constrained","wideSize":""}} -->
                 <div class="wp-block-group has-base-background-color has-background"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"right"}} -->
                     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50px"}},"layout":{"type":"constrained"}} -->
@@ -1030,6 +1070,10 @@
                 <!-- /wp:group -->
             </div>
             <!-- /wp:group -->
+
+            <!-- wp:spacer {"height":"30px"} -->
+            <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
         </div>
         <!-- /wp:group -->
     </div>
