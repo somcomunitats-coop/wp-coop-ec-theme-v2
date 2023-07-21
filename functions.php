@@ -1,5 +1,6 @@
 <?php
 require_once "includes/model-ce-news.php";
+require_once "includes/model-ce-landing.php";
 require_once "custom-blocks/slider/slider.php";
 
 /**

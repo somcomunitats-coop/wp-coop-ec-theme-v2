@@ -1,0 +1,25 @@
+.ce-landing-template.single .ce-landing-breadcrumb,
+.rest-ce-landing-template.single .ce-landing-breadcrumb {
+  position: relative;
+}
+
+.ce-landing-template.single .ce-landing-breadcrumb::before,
+.rest-ce-landing-template.single .ce-landing-breadcrumb::before {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translate(-150%, -50%);
+  content: "<";
+  color: var(--wp--preset--color--brand);
+}
+
+.ce-landing-template.single
+  .ce-landing-share-pannel
+  .wp-block-button
+  .wp-block-button__link,
+.rest-ce-landing-template.single
+  .ce-landing-share-pannel
+  .wp-block-button
+  .wp-block-button__link {
+  margin-top: 1em;
+}

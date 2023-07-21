@@ -24,5 +24,6 @@
 
 /* Pages */
 @import "pages/home.css";
+@import "pages/landings.css";
 @import "pages/ce-news.css";
 @import "pages/ce-quisom.css";
