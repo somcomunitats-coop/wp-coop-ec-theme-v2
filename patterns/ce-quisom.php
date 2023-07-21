@@ -2,7 +2,7 @@
 
 /**
  * Title: CE QuiSom.
- * Slug: wpct/ce-quisom
+ * Slug: ce-page/ce-quisom
  * Categories: ce-pages
  * Viewport Width: 1500
  */

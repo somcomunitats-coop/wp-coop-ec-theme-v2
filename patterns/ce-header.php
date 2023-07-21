@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Title: CE Header.
- * Slug: wpct/ce-header
- * Categories: wpct-header
+ * Title: CE Header
+ * Slug: ce-pattern/header
+ * Categories: ce-pattern
  * Viewport Width: 1500
  */
 
