@@ -11,8 +11,8 @@
 
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
 <section class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"90%"}},"className":"is-style-show-desktop","layout":{"type":"default"}} -->
-  <div class="wp-block-group is-style-show-desktop"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/Vectorcoverform.png","id":2480,"dimRatio":0,"minHeight":2850,"minHeightUnit":"px","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
-    <div class="wp-block-cover is-light" style="margin-top:0;margin-bottom:0;min-height:2850px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2480" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/Vectorcoverform.png" data-object-fit="cover" />
+  <div class="wp-block-group is-style-show-desktop"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/Vectorcoverform.png","id":2480,"dimRatio":0,"minHeight":2850,"minHeightUnit":"px","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+    <div class="wp-block-cover is-light" style="margin-top:0;margin-bottom:0;min-height:2850px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2480" alt="" src="/wp-content/uploads/2023/07/Vectorcoverform.png" data-object-fit="cover" />
       <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
         <p class="has-text-align-center has-large-font-size"></p>
         <!-- /wp:paragraph -->
@@ -45,7 +45,7 @@
         <p class="has-medium-font-size">A través d’aquest formulari podeu sol·licitar l’adhesió de la vostra comunitat energètica a la plataforma de Som Comunitats<br></p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:gravityforms/form {"formId":"11","title":false,"description":false,"ajax":true} /-->
+        <!-- wp:gravityforms/form {"formId":"6","title":false,"description":false,"ajax":true} /-->
 
         <!-- wp:spacer {"height":"2rem","className":"is-style-show-mobile","style":{"layout":{}}} -->
         <div style="height:2rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile"></div>
@@ -103,8 +103,8 @@
   <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
-  <!-- wp:getwid/accordion {"align":"wide","iconPosition":"right","iconOpen":"fas fa-chevron-up","iconClose":"fas fa-chevron-down","headerTag":"h6","className":"ce-faqs has-background"} -->
-  <div class="wp-block-getwid-accordion alignwide ce-faqs has-background alignwide" data-active-element="0"><!-- wp:getwid/accordion-item {"outerParent":{"attributes":{"iconPosition":"right","iconOpen":"fas fa-chevron-up","iconClose":"fas fa-chevron-down","active":"0","headerTag":"h6"}}} -->
+  <!-- wp:getwid/accordion {"iconPosition":"right","iconOpen":"fas fa-chevron-up","iconClose":"fas fa-chevron-down","headerTag":"h6","className":"ce-faqs has-background"} -->
+  <div class="wp-block-getwid-accordion ce-faqs has-background" data-active-element="0"><!-- wp:getwid/accordion-item {"outerParent":{"attributes":{"iconPosition":"right","iconOpen":"fas fa-chevron-up","iconClose":"fas fa-chevron-down","active":"0","headerTag":"h6"}}} -->
     <div class="wp-block-getwid-accordion__header-wrapper">
       <h6 class="wp-block-getwid-accordion__header"><a href="#"><span class="wp-block-getwid-accordion__header-title">Quina tipologia de serveis ofereix la plataforma?</span><span class="wp-block-getwid-accordion__icon is-active"><i class="fas fa-chevron-down"></i></span><span class="wp-block-getwid-accordion__icon is-passive"><i class="fas fa-chevron-up"></i></span></a></h6>
     </div>
@@ -167,8 +167,8 @@
 <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-no-padding","layout":{"type":"default"}} -->
 <section class="wp-block-group alignfull is-style-no-padding has-second-base-light-background-color has-background"><!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
   <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
-    <div class="wp-block-group is-style-no-padding"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/amparos_Mesa-de-trabajo-1-11.png","id":2483,"dimRatio":0,"minHeight":720,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover is-light" style="min-height:720px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2483" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/amparos_Mesa-de-trabajo-1-11.png" data-object-fit="cover" />
+    <div class="wp-block-group is-style-no-padding"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/amparos_Mesa-de-trabajo-1-11.png","id":2483,"dimRatio":0,"minHeight":720,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover is-light" style="min-height:720px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2483" alt="" src="/wp-content/uploads/2023/07/amparos_Mesa-de-trabajo-1-11.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
