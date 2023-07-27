@@ -35,3 +35,8 @@ body.home
   .wp-block-post:last-child {
   margin-right: 0;
 }
+
+body.home .ce-home-landings-section .slick-arrow {
+  background-color: var(--wp--preset--color--primary);
+  background-blend-mode: color-dodge;
+}
