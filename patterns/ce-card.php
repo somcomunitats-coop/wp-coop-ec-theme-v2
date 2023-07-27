@@ -9,7 +9,7 @@
 
 ?>
 
-<!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
+<!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"default","justifyContent":"left"}} -->
 <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-com-iniciar-comunitat.png","id":2748,"dimRatio":0,"layout":{"type":"constrained"}} -->
   <div class="wp-block-cover">
     <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
