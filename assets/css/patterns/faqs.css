@@ -27,7 +27,7 @@
 }
 
 .wp-block-getwid-accordion.ce-faqs .ui-accordion-header.ui-accordion-header-collapsed a {
-  color: var(--wp--preset--color--typography);
+  color: var(--wp--preset--color--main);
 }
 
 .wp-block-getwid-accordion.ce-faqs.has-background

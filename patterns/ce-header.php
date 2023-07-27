@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Title: CE Header.
- * Slug: wpct/ce-header
- * Categories: wpct-header
+ * Title: CE Header
+ * Slug: ce-pattern/header
+ * Categories: ce-pattern
  * Viewport Width: 1500
  */
 
@@ -64,8 +64,8 @@
         <figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/uploads/2023/06/Capa_1logo.png" alt="" class="wp-image-1877" width="155" height="36" /></figure>
         <!-- /wp:image -->
 
-        <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-        <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:navigation {"ref":2026,"textColor":"white","backgroundColor":"main","overlayMenu":"always","overlayBackgroundColor":"main","overlayTextColor":"main","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","orientation":"vertical"},"style":{"layout":{"selfStretch":"fit","flexSize":null},"typography":{"textTransform":"capitalize"}},"fontSize":"x-small"} /--></div>
+        <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"flex","flexWrap":"nowrap"},"anchor":"ce-header-mobile-nav"} -->
+        <div id="ce-header-mobile-nav" class="wp-block-group is-style-show-mobile-tablet"><!-- wp:navigation {"ref":2026,"textColor":"white","backgroundColor":"main","overlayMenu":"always","icon":"menu","overlayBackgroundColor":"main","overlayTextColor":"main","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left","orientation":"vertical"},"style":{"layout":{"selfStretch":"fit","flexSize":null},"typography":{"textTransform":"capitalize"}}} /--></div>
         <!-- /wp:group -->
     </div>
     <!-- /wp:group -->

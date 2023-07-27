@@ -81,9 +81,9 @@
 input {
   border: none;
 }
-.gform_wrapper {
+/* .gform_wrapper {
   color: var(--wp--preset--color--typography);
-}
+} */
 .gform_required_legend {
   display: none;
 }

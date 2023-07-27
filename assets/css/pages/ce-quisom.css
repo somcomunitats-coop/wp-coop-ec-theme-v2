@@ -11,14 +11,9 @@
     object-fit: cover;
 }
 
-#qui-som #ce-grid{
-    padding: var(--wp--custom--spacing--sm) ;
-}
-#qui-som #ce-grid #ce-grid-stack:first-child>.wp-block-group:first-child{
-    margin-top: 0;
-}
-#qui-som #ce-grid #ce-grid-stack>.wp-block-group {
-    margin-top: 25px;
+
+#qui-som #ce-grid #ce-grid-stack>.wp-block-group{
+    margin-top: 30px;
 }
 
 /*Desktop*/
@@ -31,11 +26,7 @@
     #ce-video-container iframe {
         width: 100%;
     }
-
-    #qui-som #ce-grid{
-        padding: var(--wp--custom--spacing--sm);
-    }
-    #qui-som #ce-grid #ce-grid-row:not(:first-child) {
+    #qui-som #ce-grid #ce-grid-row {
         margin-top: 25px;
     }
     

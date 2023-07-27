@@ -15,6 +15,9 @@
 
 /* Language
 --------------------------------------------- */
+#upper-main-nav .wpml-ls-legacy-list-horizontal{
+  padding: 0;
+}
 #upper-main-nav .wpml-ls ul {
   padding: 0 15px;
   height: 20px;
@@ -25,14 +28,13 @@
   height: 20px;
   vertical-align: middle;
 }
-
 #upper-main-nav .wpml-ls-link {
   color: var(--wp--preset--color--main);
   font-weight: var(--wp--custom--font-weight--bold);
-  /* font-size: var(--wp--preset--font-size--xx-small); */
+  font-size: var(--wp--preset--font-size--small);
 }
 #upper-main-nav .wpml-ls-item:first-child a {
-  padding: 0 15px 4px 0;
+  padding: 0 15px 0px 0;
 }
 #upper-main-nav .wpml-ls-item a {
   /* padding: 0 10px 5px; */

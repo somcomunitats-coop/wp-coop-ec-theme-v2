@@ -31,6 +31,7 @@
         initialSlide: Math.max(0, Math.min(slideCount, initialSlide)),
         appendArrows: jQuery(arrowsWrapper),
         lazyLoad: "ondemand",
+        adaptiveHeight: true,
       });
     });
   });

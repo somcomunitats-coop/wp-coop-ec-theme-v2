@@ -1,0 +1,82 @@
+#ce-nova-alta .gform_wrapper {
+  color: var(--wp--preset--color--main-light);
+  font-family: var(--wp--preset--font-family--primary);
+}
+
+#ce-nova-alta .gfield.gfield--type-section {
+  border-bottom: none;
+  position: relative;
+  padding: 0 0 8px 0;
+}
+
+#ce-nova-alta .gfield.gfield--type-section h3 {
+  font-size: var(--wp--preset--font-size--medium);
+  color: var(--wp--preset--color--main-light);
+  font-weight: var(--wp--custom--font-weight--medium);
+  display: flex;
+}
+
+#ce-nova-alta .gfield.gfield--type-section h3:after {
+  overflow: hidden;
+  height: 1px;
+  content: "\a0";
+  background-color: var(--wp--preset--color--main-light);
+  flex: 1;
+  margin: 0.6em 0 0 25px;
+}
+
+#ce-nova-alta .ginput_container textarea,
+#ce-nova-alta .ginput_container input,
+#ce-nova-alta .ginput_container select {
+  border-radius: 10px;
+  border: 1px solid var(--wp--preset--color--second-base);
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: var(--wp--custom--font-weight--regular);
+  font-family: var(--wp--preset--font-family--alternative);
+  color: var(--wp--preset--color--main-light);
+}
+
+#ce-nova-alta .ginput_container textarea,
+#ce-nova-alta .ginput_container input {
+  font-size: var(--wp--preset--font-size--small);
+}
+
+#ce-nova-alta .ginput_container select {
+  font-size: var(--wp--preset--font-size--x-small);
+  height: 42px;
+}
+#ce-nova-alta .ginput_container textarea {
+  resize: none;
+}
+
+#ce-nova-alta .gfield.gfield--type-checkbox legend {
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: var(--wp--custom--font-weight--medium);
+}
+
+#ce-nova-alta .ginput_container.ginput_container_checkbox .gchoice input {
+  border-radius: 5px;
+  border: 1px solid var(--wp--preset--color--second-base);
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+}
+
+#ce-nova-alta .ginput_container.ginput_container_checkbox .gchoice input:checked {
+  background-color: var(--wp--preset--color--brand);
+  border: none;
+}
+
+#ce-nova-alta .gfield.gfield--type-checkbox .gfield_choice_all_toggle {
+  display: none;
+}
+
+#ce-nova-alta .gform_footer.top_label input.gform_button {
+  width: 100%;
+  border-radius: 100px;
+  background-color: var(--wp--preset--color--primary);
+  font-size: var(--wp--preset--font-size--small);
+  font-weight: var(--wp--custom--font-weight--medium);
+}
+
