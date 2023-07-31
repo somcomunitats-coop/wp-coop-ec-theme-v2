@@ -1,14 +1,14 @@
 
 
 #ce-video-container, 
-#ce-video-container iframe, 
-#ce-banner-container, 
-#ce-banner-container img {
+#ce-video-container iframe{
     height: 350px;
     width: 100%;
 }
-#ce-banner-container img{
+#ce-banner-container span, #ce-banner-container img{
     object-fit: cover;
+    width: 100%;
+    height: 650px;
 }
 
 

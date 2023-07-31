@@ -142,7 +142,7 @@
         <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"flex","orientation":"vertical"}} -->
             <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-no-padding","layout":{"type":"constrained"}} -->
                 <div class="wp-block-group is-style-no-padding"><!-- wp:image {"id":2150,"sizeSlug":"full","linkDestination":"none"} -->
-                    <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/07/Frame-148imatge_verd.png" alt="" class="wp-image-2150" /></figure>
+                    <figure class="wp-block-image size-full"><img src="/wp-content/uploads/2023/07/Frame-148imatge_verd.png" alt="" class="wp-image-2150" /></figure>
                     <!-- /wp:image -->
                 </div>
                 <!-- /wp:group -->
@@ -187,8 +187,8 @@
                 </div>
                 <!-- /wp:group -->
 
-                <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-no-padding","layout":{"type":"constrained"}} -->
-                <div class="wp-block-group is-style-no-padding"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/Frame-148imatge_verd.png","id":2150,"dimRatio":0,"minHeight":640,"isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-image-center","layout":{"type":"constrained","wideSize":""}} -->
+                <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-no-padding","layout":{"type":"constrained"},"anchor":"ce-banner-container"} -->
+                <div id="ce-banner-container" class="wp-block-group is-style-no-padding"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/Frame-148imatge_verd.png","id":2150,"dimRatio":0,"minHeight":640,"isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-image-center","layout":{"type":"constrained","wideSize":""}} -->
                     <div class="wp-block-cover is-light is-style-image-center" style="margin-top:0;margin-bottom:0;min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2150" alt="" src="/wp-content/uploads/2023/07/Frame-148imatge_verd.png" data-object-fit="cover" />
                         <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
                             <p class="has-text-align-center has-large-font-size"></p>
