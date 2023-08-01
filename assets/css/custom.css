@@ -76,39 +76,7 @@
 /*   } */
 /* } */
 
-/* Forms
---------------------------------------------- */
-input {
-  border: none;
-}
-/* .gform_wrapper {
-  color: var(--wp--preset--color--typography);
-} */
-.gform_required_legend {
-  display: none;
-}
-.ginput_container input,
-.ginput_container textarea {
-  border: none;
-  border-radius: 5px;
-}
-.gfield_consent_description {
-  color: var(--wp--preset--color--typography-light);
-  font-size: var(--wp--preset--font-size--xxx-small) !important;
-  border: none !important;
-}
-.gform_button {
-  border-radius: 5px;
-}
-.gform_confirmation_message {
-  background-color: var(--wp--preset--color--typography);
-  border-radius: 5px;
-  padding: var(--wp--custom--spacing--sxs);
-  color: var(--wp--preset--color--main);
-}
-.gfield_label {
-  margin-bottom: 0 !important;
-}
+
 
 /* Utils
 --------------------------------------------- */
@@ -210,7 +178,7 @@ figure {
 }
 
 /* (tabs) */
-.ubc-accordion-tabs__tab-list {
+/* .ubc-accordion-tabs__tab-list {
   text-transform: uppercase;
   background-color: var(--wp--preset--color--primary);
   padding: 30px 0;
@@ -257,4 +225,4 @@ figure {
   font-size: var(--wp--preset--font-size--x-small);
   font-weight: var(--wp--custom--font-weight--medium);
   text-transform: uppercase;
-}
+} */

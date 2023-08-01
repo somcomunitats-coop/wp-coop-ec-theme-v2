@@ -17,7 +17,7 @@
 @import "parts/header.css";
 @import "parts/footer.css";
 @import "parts/upper-main-nav.css";
-
+@import "parts/ce-forms.css";
 /* Template patterns */
 @import "patterns/card.css";
 @import "patterns/faqs.css";
@@ -28,3 +28,4 @@
 @import "pages/ce-news.css";
 @import "pages/ce-quisom.css";
 @import "pages/ce-nova-alta-comunitat.css";
+@import "pages/ce-contact.css";
