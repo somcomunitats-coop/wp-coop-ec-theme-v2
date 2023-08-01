@@ -8,10 +8,9 @@
  */
 
 ?>
-
-<!-- wp:group {"align":"full","className":"is-style-no-padding","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"brand","textColor":"base","className":"is-style-horizontal-padded is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-horizontal-padded is-style-show-mobile-tablet has-base-color has-brand-background-color has-text-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:spacer {"height":"0px","width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
+<!-- wp:group {"align":"full","className":"is-style-no-padding","layout":{"type":"default"},"anchor":"ce-contact"} -->
+<div class="wp-block-group alignfull is-style-no-padding" id="ce-contact"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"backgroundColor":"brand","textColor":"base","className":"is-style-show-mobile-tablet","layout":{"type":"constrained"},"anchor":"ce-contact-text"} -->
+    <div id="ce-contact-text" class="wp-block-group is-style-show-mobile-tablet has-base-color has-brand-background-color has-text-color has-background"><!-- wp:spacer {"height":"0px","width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
         <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
         <!-- /wp:spacer -->
 
@@ -24,13 +23,13 @@
         <!-- /wp:paragraph -->
 
         <!-- wp:paragraph {"fontSize":"small"} -->
-        <p class="has-small-font-size">Revisa les respostes a les Preguntes més freqüents i les guies disponibles abans de fer una consulta, així ens ajudes a ser més àgils i eficients.<br></p>
+        <p class="has-small-font-size">Revisa les respostes a les <a href="#">Preguntes més freqüents</a> i les <a href="#">guies disponibles</a> abans de fer una consulta, així ens ajudes a ser més àgils i eficients.<br></p>
         <!-- /wp:paragraph -->
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"backgroundColor":"brand","className":"is-style-horizontal-padded is-style-show-mobile-tablet","layout":{"type":"default"},"anchor":"ce-nova-alta"} -->
-    <div id="ce-nova-alta" class="wp-block-group is-style-horizontal-padded is-style-show-mobile-tablet has-brand-background-color has-background"><!-- wp:spacer {"height":"5rem","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
+    <!-- wp:group {"backgroundColor":"brand","className":"is-style-horizontal-padded is-style-show-mobile-tablet","layout":{"type":"default"},"anchor":"ce-form"} -->
+    <div id="ce-form" class="wp-block-group is-style-horizontal-padded is-style-show-mobile-tablet has-brand-background-color has-background"><!-- wp:spacer {"height":"5rem","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
         <div style="height:5rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
         <!-- /wp:spacer -->
 
@@ -50,9 +49,9 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"brand","className":"is-style-show-desktop is-style-horizontal-padded","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","orientation":"horizontal"}} -->
-    <section class="wp-block-group alignfull is-style-show-desktop is-style-horizontal-padded has-brand-background-color has-background"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"brand","textColor":"base","className":"is-style-show-desktop","layout":{"type":"constrained"}} -->
-        <div class="wp-block-group is-style-show-desktop has-base-color has-brand-background-color has-text-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:spacer {"height":"0px","width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
+    <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"brand","className":"is-style-show-desktop is-style-horizontal-padded","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","orientation":"horizontal"},"anchor":"ce-form-container"} -->
+    <section class="wp-block-group alignfull is-style-show-desktop is-style-horizontal-padded has-brand-background-color has-background" id="ce-form-container"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"backgroundColor":"brand","textColor":"base","className":"is-style-show-desktop","layout":{"type":"constrained"},"anchor":"ce-contact-text"} -->
+        <div id="ce-contact-text" class="wp-block-group is-style-show-desktop has-base-color has-brand-background-color has-text-color has-background"><!-- wp:spacer {"height":"0px","width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
             <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
             <!-- /wp:spacer -->
 
@@ -65,7 +64,7 @@
             <!-- /wp:paragraph -->
 
             <!-- wp:paragraph {"fontSize":"small"} -->
-            <p class="has-small-font-size">Revisa les respostes a les Preguntes més freqüents i les guies disponibles abans de fer una consulta, així ens ajudes a ser més àgils i eficients.<br></p>
+            <p class="has-small-font-size">Revisa les respostes a les <a href="#">Preguntes més freqüents</a> i les <a href="#">guies disponibles </a>abans de fer una consulta, així ens ajudes a ser més àgils i eficients.<br></p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -76,8 +75,8 @@
             <!-- /wp:spacer -->
 
             <!-- wp:group {"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
-            <div class="wp-block-group is-style-no-padding"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"},"anchor":"ce-nova-alta"} -->
-                <div id="ce-nova-alta" class="wp-block-group is-style-no-padding"><!-- wp:spacer {"height":"5rem","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
+            <div class="wp-block-group is-style-no-padding"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"},"anchor":"ce-form"} -->
+                <div id="ce-form" class="wp-block-group is-style-no-padding"><!-- wp:spacer {"height":"5rem","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
                     <div style="height:5rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
                     <!-- /wp:spacer -->
 
@@ -107,8 +106,8 @@
     </section>
     <!-- /wp:group -->
 
-    <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-no-padding","layout":{"type":"default"}} -->
-    <section class="wp-block-group alignfull is-style-no-padding has-second-base-light-background-color has-background"><!-- wp:group {"backgroundColor":"main","className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-no-padding","layout":{"type":"default"},"anchor":"ce-contact-material"} -->
+    <section class="wp-block-group alignfull is-style-no-padding has-second-base-light-background-color has-background" id="ce-contact-material"><!-- wp:group {"backgroundColor":"main","className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
         <div class="wp-block-group is-style-show-desktop has-main-background-color has-background"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
             <div class="wp-block-group is-style-no-padding"><!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/08/Frame-141cropped-1.png","id":3247,"isRepeated":true,"dimRatio":0,"focalPoint":{"x":0.48,"y":0.49},"minHeight":700,"minHeightUnit":"px","className":"is-style-default","layout":{"type":"constrained"}} -->
                 <div class="wp-block-cover is-repeated is-style-default" style="min-height:700px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
@@ -122,8 +121,8 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"backgroundColor":"main","textColor":"base","className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
-            <div class="wp-block-group is-style-horizontal-padded has-base-color has-main-background-color has-text-color has-background"><!-- wp:spacer {"height":"3rem","style":{"layout":{}}} -->
+            <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"backgroundColor":"main","textColor":"base","className":"is-style-horizontal-padded","layout":{"type":"default"},"anchor":"ce-material-text"} -->
+            <div id="ce-material-text" class="wp-block-group is-style-horizontal-padded has-base-color has-main-background-color has-text-color has-background"><!-- wp:spacer {"height":"3rem","style":{"layout":{}}} -->
                 <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
                 <!-- /wp:spacer -->
 
@@ -187,8 +186,8 @@
     </section>
     <!-- /wp:group -->
 
-    <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-show-mobile-tablet is-style-no-padding","layout":{"type":"default"}} -->
-    <section class="wp-block-group alignfull is-style-show-mobile-tablet is-style-no-padding has-second-base-light-background-color has-background"><!-- wp:group {"backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical"}} -->
+    <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-show-mobile-tablet is-style-no-padding","layout":{"type":"default"},"anchor":"ce-contact-material"} -->
+    <section class="wp-block-group alignfull is-style-show-mobile-tablet is-style-no-padding has-second-base-light-background-color has-background" id="ce-contact-material"><!-- wp:group {"backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical"}} -->
         <div class="wp-block-group is-style-no-padding has-main-background-color has-background"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
             <div class="wp-block-group is-style-no-padding"><!-- wp:image {"id":3247,"sizeSlug":"full","linkDestination":"none"} -->
                 <figure class="wp-block-image size-full"><img src="https://wordpress.local/wp-content/uploads/2023/08/Frame-141cropped-1.png" alt="" class="wp-image-3247" /></figure>
@@ -196,8 +195,8 @@
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"backgroundColor":"main","textColor":"base","className":"is-style-no-padding","layout":{"type":"default"}} -->
-            <div class="wp-block-group is-style-no-padding has-base-color has-main-background-color has-text-color has-background"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+            <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"backgroundColor":"main","textColor":"base","className":"is-style-no-padding","layout":{"type":"default"},"anchor":"ce-material-text"} -->
+            <div id="ce-material-text" class="wp-block-group is-style-no-padding has-base-color has-main-background-color has-text-color has-background"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
                 <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"3rem","style":{"layout":{}}} -->
                     <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
                     <!-- /wp:spacer -->
