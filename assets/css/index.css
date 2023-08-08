@@ -23,6 +23,7 @@
 @import "patterns/faqs.css";
 
 /* Pages */
+@import "pages/ce-ciut-adm-emp.css";
 @import "pages/home.css";
 @import "pages/landings.css";
 @import "pages/ce-news.css";

@@ -1,0 +1,28 @@
+
+
+#ce-reasons #ce-reasons-icons article figure img{
+    height: 86px;
+    max-width: 86px;
+}
+#ce-experiences #ce-experience{
+    position: relative;
+}
+#ce-experiences #ce-experience .wp-block-quote{
+    display: flex;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+    border-width: 0px !important;
+    height: 200px;
+    width: auto;
+    margin-bottom: -40px;
+} 
+#ce-experiences #ce-experience #ce-comas-background{
+    position: absolute;
+    top: 0;
+    padding: 20px;
+}
+#ce-experiences #ce-experience h4{
+    margin-top: 30px;
+    margin-bottom: 0;
+}
