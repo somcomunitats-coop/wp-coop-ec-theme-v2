@@ -56,7 +56,7 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","className":"is-style-show-mobile-tablet is-style-no-padding","layout":{"type":"constrained"},"anchor":""} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"is-style-show-mobile-tablet is-style-no-padding","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull is-style-show-mobile-tablet is-style-no-padding"><!-- wp:group {"align":"full","className":"is-style-default","layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"center"}} -->
   <div class="wp-block-group alignfull is-style-default"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"layout":{"type":"default"}} -->
     <div class="wp-block-group"><!-- wp:image {"id":3386,"sizeSlug":"full","linkDestination":"none"} -->
@@ -99,8 +99,8 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-show-desktop is-style-no-padding","layout":{"type":"constrained","justifyContent":"left"}} -->
-<section class="wp-block-group alignfull is-style-show-desktop is-style-no-padding has-second-base-light-background-color has-background"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-no-padding is-style-default","layout":{"type":"constrained","justifyContent":"left"}} -->
+<section class="wp-block-group alignfull is-style-no-padding is-style-default has-second-base-light-background-color has-background"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
   <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem"} -->
     <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
@@ -137,47 +137,9 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-show-mobile-tablet is-style-no-padding","layout":{"type":"constrained","justifyContent":"left"}} -->
-<section class="wp-block-group alignfull is-style-show-mobile-tablet is-style-no-padding has-second-base-light-background-color has-background"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
-  <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem"} -->
-    <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->
-
-    <!-- wp:heading {"textAlign":"left","textColor":"main"} -->
-    <h2 class="wp-block-heading has-text-align-left has-main-color has-text-color">Troba la Comunitat Energètica <br>del teu municipi i suma-t’hi</h2>
-    <!-- /wp:heading -->
-
-    <!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
-    <div class="wp-block-group is-style-no-padding"><!-- wp:paragraph {"align":"left","textColor":"typography","fontSize":"medium"} -->
-      <p class="has-text-align-left has-typography-color has-text-color has-medium-font-size">Ja et pots sumar a la Comunitat Energètica del lloc on vius</p>
-      <!-- /wp:paragraph -->
-
-      <!-- wp:spacer {"height":"5rem","width":"0px","style":{"layout":{}}} -->
-      <div style="height:5rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-      <!-- /wp:spacer -->
-
-      <!-- wp:group {"className":"is-style-default","layout":{"type":"constrained"}} -->
-      <div class="wp-block-group is-style-default"><!-- wp:html -->
-        <p><iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/ca/somcomunitatstesting/maps/campanya" width="100%" height="850px" frameborder="0"></iframe><br />
-          <script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-frontend.coopdevs.org/iframe-integration.js"></script>
-        </p>
-        <!-- /wp:html -->
-      </div>
-      <!-- /wp:group -->
-    </div>
-    <!-- /wp:group -->
-
-    <!-- wp:spacer {"height":"7rem"} -->
-    <div style="height:7rem" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->
-  </div>
-  <!-- /wp:group -->
-</section>
-<!-- /wp:group -->
-
-<!-- wp:group {"tagName":"section","align":"full","className":"is-style-show-desktop is-style-no-padding","anchor":"ce-reasons"} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"is-style-show-desktop is-style-no-padding"} -->
 <section class="wp-block-group alignfull is-style-show-desktop is-style-no-padding" id="ce-reasons"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-  <div class="wp-block-group is-style-no-padding"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"},"anchor":"ce-reasons-icons"} -->
+  <div class="wp-block-group is-style-no-padding"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
     <div id="ce-reasons-icons" class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem"} -->
       <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
@@ -196,7 +158,7 @@
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
       <article class="wp-block-group"><!-- wp:image {"id":3406,"width":86,"height":86,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
-        <figure class="wp-block-image size-full is-resized is-style-default"><img src="https://wordpress.local/wp-content/uploads/2023/08/impuls-cover-thumbnail.png" alt="" class="wp-image-3406" width="86" height="86" /></figure>
+        <figure class="wp-block-image size-full is-resized is-style-default"><img src="https://wordpress.local/wp-content/uploads/2023/08/impuls-cover-thumbnail.png" alt="" class="wp-image-3406" style="width:86px;height:86px" width="86" height="86" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical"}} -->
@@ -218,7 +180,7 @@
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap"}} -->
       <article class="wp-block-group"><!-- wp:image {"id":2116,"width":87,"height":86,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"87px"}}} -->
-        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/moviment-cover-thumbnail.png" alt="" class="wp-image-2116" width="87" height="86" /></figure>
+        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/moviment-cover-thumbnail.png" alt="" class="wp-image-2116" style="width:87px;height:86px" width="87" height="86" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical"}} -->
@@ -240,7 +202,7 @@
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
       <article class="wp-block-group"><!-- wp:image {"id":2118,"width":87,"height":86,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
-        <figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/uploads/2023/07/servei-cover-thumbnail.png" alt="" class="wp-image-2118" width="87" height="86" /></figure>
+        <figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/uploads/2023/07/servei-cover-thumbnail.png" alt="" class="wp-image-2118" style="width:87px;height:86px" width="87" height="86" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical"}} -->
@@ -262,7 +224,7 @@
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
       <article class="wp-block-group"><!-- wp:image {"id":2120,"width":90,"height":90,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" width="90" height="90" /></figure>
+        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" style="width:90px;height:90px" width="90" height="90" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"wrap"}} -->
@@ -283,8 +245,8 @@
       <!-- /wp:spacer -->
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-      <article class="wp-block-group"><!-- wp:image {"id":2120,"width":90,"height":90,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" width="90" height="90" /></figure>
+      <article class="wp-block-group"><!-- wp:image {"id":3519,"width":90,"height":90,"sizeSlug":"full","linkDestination":"none"} -->
+        <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.local/wp-content/uploads/2023/08/reforca-cover-thumbnail.png" alt="" class="wp-image-3519" style="width:90px;height:90px" width="90" height="90" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"wrap"}} -->
@@ -309,8 +271,8 @@
       <!-- /wp:spacer -->
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-      <article class="wp-block-group"><!-- wp:image {"id":2120,"width":90,"height":90,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" width="90" height="90" /></figure>
+      <article class="wp-block-group"><!-- wp:image {"id":3521,"width":90,"height":90,"sizeSlug":"full","linkDestination":"none"} -->
+        <figure class="wp-block-image size-full is-resized"><img src="https://wordpress.local/wp-content/uploads/2023/08/eines-cover-thumbnail.png" alt="" class="wp-image-3521" style="width:90px;height:90px" width="90" height="90" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"wrap"}} -->
@@ -363,7 +325,7 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","className":"is-style-show-mobile-tablet is-style-no-padding","anchor":"ce-reasons"} -->
+<!-- wp:group {"tagName":"section","align":"full","className":"is-style-show-mobile-tablet is-style-no-padding"} -->
 <section class="wp-block-group alignfull is-style-show-mobile-tablet is-style-no-padding" id="ce-reasons"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical"}} -->
   <div class="wp-block-group is-style-no-padding"><!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default","layout":{"type":"default"}} -->
     <div class="wp-block-group is-style-default"><!-- wp:image {"id":3389,"sizeSlug":"large","linkDestination":"none"} -->
@@ -372,7 +334,7 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"},"anchor":"ce-reasons-icons"} -->
+    <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
     <div id="ce-reasons-icons" class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem"} -->
       <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
@@ -391,7 +353,7 @@
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
       <article class="wp-block-group"><!-- wp:image {"id":3406,"width":86,"height":86,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
-        <figure class="wp-block-image size-full is-resized is-style-default"><img src="https://wordpress.local/wp-content/uploads/2023/08/impuls-cover-thumbnail.png" alt="" class="wp-image-3406" width="86" height="86" /></figure>
+        <figure class="wp-block-image size-full is-resized is-style-default"><img src="https://wordpress.local/wp-content/uploads/2023/08/impuls-cover-thumbnail.png" alt="" class="wp-image-3406" style="width:86px;height:86px" width="86" height="86" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical"}} -->
@@ -413,7 +375,7 @@
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap"}} -->
       <article class="wp-block-group"><!-- wp:image {"id":2116,"width":87,"height":86,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fixed","flexSize":"87px"}}} -->
-        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/moviment-cover-thumbnail.png" alt="" class="wp-image-2116" width="87" height="86" /></figure>
+        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/moviment-cover-thumbnail.png" alt="" class="wp-image-2116" style="width:87px;height:86px" width="87" height="86" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical"}} -->
@@ -435,7 +397,7 @@
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
       <article class="wp-block-group"><!-- wp:image {"id":2118,"width":87,"height":86,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
-        <figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/uploads/2023/07/servei-cover-thumbnail.png" alt="" class="wp-image-2118" width="87" height="86" /></figure>
+        <figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/uploads/2023/07/servei-cover-thumbnail.png" alt="" class="wp-image-2118" style="width:87px;height:86px" width="87" height="86" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical"}} -->
@@ -457,7 +419,7 @@
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
       <article class="wp-block-group"><!-- wp:image {"id":2120,"width":90,"height":90,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" width="90" height="90" /></figure>
+        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" style="width:90px;height:90px" width="90" height="90" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"wrap"}} -->
@@ -479,7 +441,7 @@
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
       <article class="wp-block-group"><!-- wp:image {"id":2120,"width":90,"height":90,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" width="90" height="90" /></figure>
+        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" style="width:90px;height:90px" width="90" height="90" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"wrap"}} -->
@@ -505,7 +467,7 @@
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
       <article class="wp-block-group"><!-- wp:image {"id":2120,"width":90,"height":90,"sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" width="90" height="90" /></figure>
+        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" style="width:90px;height:90px" width="90" height="90" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"wrap"}} -->
@@ -612,7 +574,7 @@
       <!-- wp:column -->
       <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
         <div class="wp-block-group"><!-- wp:image {"align":"center","id":2559,"width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/eficiencia-energetica.png" alt="" class="wp-image-2559" width="150" height="126" /></figure>
+          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/eficiencia-energetica.png" alt="" class="wp-image-2559" style="width:150px;height:126px" width="150" height="126" /></figure>
           <!-- /wp:image -->
 
           <!-- wp:spacer {"height":"2rem"} -->
@@ -634,7 +596,7 @@
       <!-- wp:column -->
       <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
         <div class="wp-block-group"><!-- wp:image {"align":"center","id":2561,"width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/formacio-ciutadana.png" alt="" class="wp-image-2561" width="150" height="126" /></figure>
+          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/formacio-ciutadana.png" alt="" class="wp-image-2561" style="width:150px;height:126px" width="150" height="126" /></figure>
           <!-- /wp:image -->
 
           <!-- wp:spacer {"height":"2rem"} -->
@@ -707,7 +669,7 @@
       <!-- wp:column -->
       <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
         <div class="wp-block-group"><!-- wp:image {"align":"center","id":2577,"width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/subministrament-denergia.png" alt="" class="wp-image-2577" width="150" height="126" /></figure>
+          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/subministrament-denergia.png" alt="" class="wp-image-2577" style="width:150px;height:126px" width="150" height="126" /></figure>
           <!-- /wp:image -->
 
           <!-- wp:spacer {"height":"2rem"} -->
@@ -729,7 +691,7 @@
       <!-- wp:column -->
       <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
         <div class="wp-block-group"><!-- wp:image {"align":"center","id":2575,"width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/emancipacio-transformacio.png" alt="" class="wp-image-2575" width="150" height="126" /></figure>
+          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/emancipacio-transformacio.png" alt="" class="wp-image-2575" style="width:150px;height:126px" width="150" height="126" /></figure>
           <!-- /wp:image -->
 
           <!-- wp:spacer {"height":"2rem"} -->
@@ -779,8 +741,8 @@
     <!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
     <div class="wp-block-group is-style-no-padding"><!-- wp:ce-block/slider {"slidesToScroll":3,"slidesToShow":3} -->
       <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="3" slidestoscroll="3" initialslide="0" showdots="false" showarrows="true" autoplay><!-- wp:group {"lock":{"move":false,"remove":false},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
-        <div class="wp-block-group ce-block-slider-wrapper"><!-- wp:query {"queryId":18,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"list"}} -->
-          <div class="wp-block-query"><!-- wp:post-template -->
+        <div class="wp-block-group ce-block-slider-wrapper"><!-- wp:query {"queryId":18,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+          <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"default"}} -->
             <!-- wp:post-title {"isLink":true} /-->
 
             <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
@@ -821,7 +783,7 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-no-padding","layout":{"type":"constrained"},"anchor":"ce-experiences"} -->
+<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-no-padding","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull is-style-no-padding has-second-base-light-background-color has-background" id="ce-experiences"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
   <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem"} -->
     <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
@@ -840,7 +802,7 @@
     <!-- /wp:spacer -->
 
     <!-- wp:columns -->
-    <div class="wp-block-columns"><!-- wp:column {"anchor":"ce-experience"} -->
+    <div class="wp-block-columns"><!-- wp:column -->
       <div class="wp-block-column" id="ce-experience"><!-- wp:group {"layout":{"type":"constrained"}} -->
         <div class="wp-block-group"><!-- wp:quote {"backgroundColor":"base","className":"is-style-default"} -->
           <blockquote class="wp-block-quote is-style-default has-base-background-color has-background"><!-- wp:paragraph -->
@@ -849,7 +811,7 @@
           </blockquote>
           <!-- /wp:quote -->
 
-          <!-- wp:image {"id":3475,"sizeSlug":"full","linkDestination":"none","anchor":"ce-comas-background"} -->
+          <!-- wp:image {"id":3475,"sizeSlug":"full","linkDestination":"none"} -->
           <figure class="wp-block-image size-full" id="ce-comas-background"><img src="https://wordpress.local/wp-content/uploads/2023/08/comas-background-experience.png" alt="" class="wp-image-3475" /></figure>
           <!-- /wp:image -->
 
@@ -869,7 +831,7 @@
       </div>
       <!-- /wp:column -->
 
-      <!-- wp:column {"anchor":"ce-experience"} -->
+      <!-- wp:column -->
       <div class="wp-block-column" id="ce-experience"><!-- wp:group {"layout":{"type":"constrained"}} -->
         <div class="wp-block-group"><!-- wp:quote {"backgroundColor":"base","className":"is-style-default"} -->
           <blockquote class="wp-block-quote is-style-default has-base-background-color has-background"><!-- wp:paragraph -->
@@ -878,7 +840,7 @@
           </blockquote>
           <!-- /wp:quote -->
 
-          <!-- wp:image {"id":3475,"sizeSlug":"full","linkDestination":"none","anchor":"ce-comas-background"} -->
+          <!-- wp:image {"id":3475,"sizeSlug":"full","linkDestination":"none"} -->
           <figure class="wp-block-image size-full" id="ce-comas-background"><img src="https://wordpress.local/wp-content/uploads/2023/08/comas-background-experience.png" alt="" class="wp-image-3475" /></figure>
           <!-- /wp:image -->
 
@@ -898,7 +860,7 @@
       </div>
       <!-- /wp:column -->
 
-      <!-- wp:column {"anchor":"ce-experience"} -->
+      <!-- wp:column -->
       <div class="wp-block-column" id="ce-experience"><!-- wp:group {"layout":{"type":"constrained"}} -->
         <div class="wp-block-group"><!-- wp:quote {"backgroundColor":"base","className":"is-style-default"} -->
           <blockquote class="wp-block-quote is-style-default has-base-background-color has-background"><!-- wp:paragraph -->
@@ -907,7 +869,7 @@
           </blockquote>
           <!-- /wp:quote -->
 
-          <!-- wp:image {"id":3475,"sizeSlug":"full","linkDestination":"none","anchor":"ce-comas-background"} -->
+          <!-- wp:image {"id":3475,"sizeSlug":"full","linkDestination":"none"} -->
           <figure class="wp-block-image size-full" id="ce-comas-background"><img src="https://wordpress.local/wp-content/uploads/2023/08/comas-background-experience.png" alt="" class="wp-image-3475" /></figure>
           <!-- /wp:image -->
 
