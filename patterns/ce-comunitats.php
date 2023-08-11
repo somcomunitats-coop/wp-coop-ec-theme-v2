@@ -636,14 +636,17 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding","layout":{"type":"default"}} -->
-<section class="wp-block-group alignfull is-style-no-padding"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=SuHV-q80n8I","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
-  <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio">
-    <div class="wp-block-embed__wrapper">
-      https://www.youtube.com/watch?v=SuHV-q80n8I
-    </div>
-  </figure>
-  <!-- /wp:embed -->
+<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"default"}} -->
+<section class="wp-block-group alignfull is-style-no-padding has-main-background-color has-background"><!-- wp:group {"className":"is-style-padded","layout":{"type":"constrained"}} -->
+  <div class="wp-block-group is-style-padded"><!-- wp:embed {"url":"https://www.youtube.com/watch?v=SuHV-q80n8I","type":"video","providerNameSlug":"youtube","responsive":true,"align":"center","className":"wp-embed-aspect-4-3 wp-has-aspect-ratio"} -->
+    <figure class="wp-block-embed aligncenter is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio">
+      <div class="wp-block-embed__wrapper">
+        https://www.youtube.com/watch?v=SuHV-q80n8I
+      </div>
+    </figure>
+    <!-- /wp:embed -->
+  </div>
+  <!-- /wp:group -->
 </section>
 <!-- /wp:group -->
 
