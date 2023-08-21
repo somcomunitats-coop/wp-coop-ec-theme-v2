@@ -98,3 +98,8 @@ figure {
   float: left;
   padding-top: 3px;
 }
+
+/* Complianze */
+#cmplz-document.cookie-statement {
+  max-width: var(--wp--style--global--content-size);
+}
