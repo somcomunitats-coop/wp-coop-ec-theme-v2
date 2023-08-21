@@ -1,0 +1,33 @@
+#ce-video-container,
+#ce-video-container iframe {
+  height: 350px;
+  width: 100%;
+}
+
+#ce-banner-container span,
+#ce-banner-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 650px;
+}
+
+#qui-som #ce-grid #ce-grid-stack > .wp-block-group {
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 1024px) {
+  #ce-video-container,
+  #ce-video-container iframe {
+    height: 590px;
+  }
+  #ce-video-container iframe {
+    width: 100%;
+  }
+  #qui-som #ce-grid #ce-grid-row {
+    margin-top: 25px;
+  }
+
+  #qui-som #ce-grid #ce-grid-row > .wp-block-group:not(:first-child) {
+    margin-left: 25px;
+  }
+}

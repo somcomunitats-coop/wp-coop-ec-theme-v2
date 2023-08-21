@@ -23,9 +23,10 @@
 @import "patterns/faqs.css";
 
 /* Pages */
-@import "pages/ce-ciut-adm-emp.css";
 @import "pages/home.css";
 @import "pages/landings.css";
-@import "pages/ce-news.css";
-@import "pages/ce-quisom.css";
-@import "pages/ce-contact.css";
+@import "pages/noticies.css";
+@import "pages/quisom.css";
+@import "pages/contacte.css";
+@import "pages/serveis.css";
+
