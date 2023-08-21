@@ -33,7 +33,7 @@
       <!-- wp:buttons -->
       <div class="wp-block-buttons">
         <!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#troba-la-teva-comunitat-desktop">Troba la teva Comunitat Energètica</a></div>
+        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#troba-la-teva-comunitat">Troba la teva Comunitat Energètica</a></div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
@@ -88,7 +88,7 @@
             <!-- wp:buttons -->
             <div class="wp-block-buttons">
               <!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-              <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#troba-la-teva-comunitat-mobile">Troba la teva Comunitat Energètica</a></div>
+              <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#troba-la-teva-comunitat">Troba la teva Comunitat Energètica</a></div>
               <!-- /wp:button -->
             </div>
             <!-- /wp:buttons -->
@@ -108,14 +108,18 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","style":{"color":{"background":"#c5e2d040"}},"className":"is-style-show-tablet-desktop is-style-no-padding","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull is-style-show-tablet-desktop is-style-no-padding has-background" id="troba-la-teva-comunitat-desktop" style="background-color:#c5e2d040">
-  <!-- wp:spacer {"height":"6rem"} -->
-  <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- wp:group {"tagName":"section","align":"full","style":{"color":{"background":"#c5e2d040"}},"className":"is-style-no-padding","layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull is-style-no-padding has-background" id="troba-la-teva-comunitat" style="background-color:#c5e2d040">
+  <!-- wp:spacer {"height":"6rem","className":"is-style-show-tablet-desktop"} -->
+  <div style="height:6rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
   <!-- /wp:spacer -->
 
-  <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
-  <div class="wp-block-group is-style-horizontal-padded">
+  <!-- wp:spacer {"height":"3rem","className":"is-style-show-mobile"} -->
+  <div style="height:3rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile"></div>
+  <!-- /wp:spacer -->
+
+  <!-- wp:group {"className":"is-style-horizontal-padded is-style-show-tablet-desktop","layout":{"type":"default"}} -->
+  <div class="wp-block-group is-style-horizontal-padded is-style-show-tablet-desktop">
     <!-- wp:heading {"textAlign":"center"} -->
     <h2 class="wp-block-heading has-text-align-center">Fem créixer les Comunitats Energètiques</h2>
     <!-- /wp:heading -->
@@ -155,9 +159,7 @@
         <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
         <div class="wp-block-group is-style-no-padding">
           <!-- wp:image {"id":2102,"scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
-          <figure class="wp-block-image size-full is-style-default">
-            <img src="/wp-content/uploads/2023/07/right-arrow-gray.png" alt="" class="wp-image-2102" style="object-fit:cover" />
-          </figure>
+          <figure class="wp-block-image size-full is-style-default"><img src="/wp-content/uploads/2023/07/right-arrow-gray.png" alt="" class="wp-image-2102" style="object-fit:cover" /></figure>
           <!-- /wp:image -->
         </div>
         <!-- /wp:group -->
@@ -253,43 +255,13 @@
       <!-- /wp:group -->
     </div>
     <!-- /wp:group -->
-
-    <!-- wp:group {"layout":{"type":"default"}} -->
-    <div class="wp-block-group">
-      <!-- wp:spacer {"height":"4rem","width":"0px","style":{"layout":{}}} -->
-      <div style="height:4rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-      <!-- /wp:spacer -->
-
-      <!-- wp:html -->
-      <p><iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/ca/somcomunitatstesting/maps/campanya" width="100%" height="850px" frameborder="0"></iframe><br />
-        <script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-frontend.coopdevs.org/iframe-integration.js"></script>
-      </p>
-      <!-- /wp:html -->
-
-      <!-- wp:spacer {"height":"3rem","width":"0px","style":{"layout":{}}} -->
-      <div style="height:3rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-      <!-- /wp:spacer -->
-    </div>
-    <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:spacer {"height":"7rem"} -->
-  <div style="height:7rem" aria-hidden="true" class="wp-block-spacer"></div>
-  <!-- /wp:spacer -->
-</section>
-<!-- /wp:group -->
-
-<!-- wp:group {"tagName":"section","align":"full","style":{"color":{"background":"#c5e2d040"}},"className":"is-style-no-padding is-style-show-mobile","layout":{"type":"default"}} -->
-<section class="wp-block-group alignfull is-style-no-padding is-style-show-mobile has-background" id="troba-la-teva-comunitat-mobile" style="background-color:#c5e2d040">
-  <!-- wp:spacer {"height":"3rem"} -->
-  <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
-  <!-- /wp:spacer -->
-
-  <!-- wp:group {"className":"is-style-show-mobile is-style-no-padding","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group is-style-show-mobile is-style-no-padding">
-    <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-horizontal-padded">
+  <!-- wp:group {"className":"is-style-show-mobile is-style-horizontal-padded","layout":{"type":"default"}} -->
+  <div class="wp-block-group is-style-show-mobile is-style-horizontal-padded">
+    <!-- wp:group {"layout":{"type":"default"}} -->
+    <div class="wp-block-group">
       <!-- wp:heading {"textAlign":"center"} -->
       <h2 class="wp-block-heading has-text-align-center">Fem créixer les Comunitats Energètiques</h2>
       <!-- /wp:heading -->
@@ -304,123 +276,147 @@
     <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
 
-    <!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
-    <div class="wp-block-group is-style-no-padding">
-      <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-      <div class="wp-block-group is-style-horizontal-padded">
-        <!-- wp:ce-block/slider {"infinite":false} -->
-        <div class="wp-block-ce-block-slider" infinite="false" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay>
-          <!-- wp:group {"lock":{"remove":true,"move":true},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
-          <div class="wp-block-group ce-block-slider-wrapper">
-            <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
-            <div class="wp-block-group">
-              <!-- wp:image {"align":"wide","id":2104,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-no-margin"} -->
-              <figure class="wp-block-image alignwide size-full is-style-no-margin"><img src="/wp-content/uploads/2023/07/busca-la-teva-zona.png" alt="" class="wp-image-2104" style="aspect-ratio:1;object-fit:cover" /></figure>
-              <!-- /wp:image -->
+    <!-- wp:group {"layout":{"type":"default"}} -->
+    <div class="wp-block-group">
+      <!-- wp:ce-block/slider {"infinite":false} -->
+      <div class="wp-block-ce-block-slider" infinite="false" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay>
+        <!-- wp:group {"lock":{"remove":true,"move":true},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
+        <div class="wp-block-group ce-block-slider-wrapper">
+          <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
+          <div class="wp-block-group">
+            <!-- wp:image {"align":"wide","id":2104,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-no-margin"} -->
+            <figure class="wp-block-image alignwide size-full is-style-no-margin"><img src="/wp-content/uploads/2023/07/busca-la-teva-zona.png" alt="" class="wp-image-2104" style="aspect-ratio:1;object-fit:cover" /></figure>
+            <!-- /wp:image -->
 
-              <!-- wp:spacer {"height":"20px","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-              <div style="margin-top:0;margin-bottom:0;height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-              <!-- /wp:spacer -->
+            <!-- wp:spacer {"height":"20px","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+            <div style="margin-top:0;margin-bottom:0;height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
 
-              <!-- wp:heading {"textAlign":"center","level":4} -->
-              <h4 class="wp-block-heading has-text-align-center">Busca la teva zona</h4>
-              <!-- /wp:heading -->
+            <!-- wp:heading {"textAlign":"center","level":4} -->
+            <h4 class="wp-block-heading has-text-align-center">Busca la teva zona</h4>
+            <!-- /wp:heading -->
 
-              <!-- wp:paragraph {"align":"center"} -->
-              <p class="has-text-align-center">Fes servir el cercador per trobar el teu municipi o lloc d’interès</p>
-              <!-- /wp:paragraph -->
-            </div>
-            <!-- /wp:group -->
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">Fes servir el cercador per trobar el teu municipi o lloc d’interès</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
 
-            <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
-            <div class="wp-block-group">
-              <!-- wp:image {"align":"wide","id":2106,"sizeSlug":"full","linkDestination":"none"} -->
-              <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/comprova-lestat.png" alt="" class="wp-image-2106" /></figure>
-              <!-- /wp:image -->
+          <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
+          <div class="wp-block-group">
+            <!-- wp:image {"align":"wide","id":2106,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/comprova-lestat.png" alt="" class="wp-image-2106" /></figure>
+            <!-- /wp:image -->
 
-              <!-- wp:spacer {"height":"1em","style":{"layout":{}}} -->
-              <div style="height:1em" aria-hidden="true" class="wp-block-spacer"></div>
-              <!-- /wp:spacer -->
+            <!-- wp:spacer {"height":"1em","style":{"layout":{}}} -->
+            <div style="height:1em" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
 
-              <!-- wp:heading {"textAlign":"center","level":4} -->
-              <h4 class="wp-block-heading has-text-align-center">Comprova l’estat</h4>
-              <!-- /wp:heading -->
+            <!-- wp:heading {"textAlign":"center","level":4} -->
+            <h4 class="wp-block-heading has-text-align-center">Comprova l’estat</h4>
+            <!-- /wp:heading -->
 
-              <!-- wp:paragraph {"align":"center"} -->
-              <p class="has-text-align-center">Mira quin és l’estat de la Comunitat Energètica. Pots fer servir els filtres</p>
-              <!-- /wp:paragraph -->
-            </div>
-            <!-- /wp:group -->
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">Mira quin és l’estat de la Comunitat Energètica. Pots fer servir els filtres</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
 
-            <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
-            <div class="wp-block-group"><!-- wp:image {"align":"wide","id":2108,"sizeSlug":"full","linkDestination":"none"} -->
-              <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/omple-les-dades.png" alt="" class="wp-image-2108" /></figure>
-              <!-- /wp:image -->
+          <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
+          <div class="wp-block-group">
+            <!-- wp:image {"align":"wide","id":2108,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/omple-les-dades.png" alt="" class="wp-image-2108" /></figure>
+            <!-- /wp:image -->
 
-              <!-- wp:spacer {"height":"1em","style":{"layout":{}}} -->
-              <div style="height:1em" aria-hidden="true" class="wp-block-spacer"></div>
-              <!-- /wp:spacer -->
+            <!-- wp:spacer {"height":"1em","style":{"layout":{}}} -->
+            <div style="height:1em" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
 
-              <!-- wp:heading {"textAlign":"center","level":4} -->
-              <h4 class="wp-block-heading has-text-align-center">Omple les dades</h4>
-              <!-- /wp:heading -->
+            <!-- wp:heading {"textAlign":"center","level":4} -->
+            <h4 class="wp-block-heading has-text-align-center">Omple les dades</h4>
+            <!-- /wp:heading -->
 
-              <!-- wp:paragraph {"align":"center"} -->
-              <p class="has-text-align-center">Suma't a Comunitats Energètiques que ja funcionen o ajuda a fer-les possible</p>
-              <!-- /wp:paragraph -->
-            </div>
-            <!-- /wp:group -->
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">Suma't a Comunitats Energètiques que ja funcionen o ajuda a fer-les possible</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
 
-            <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
-            <div class="wp-block-group"><!-- wp:image {"align":"wide","id":2110,"sizeSlug":"full","linkDestination":"none"} -->
-              <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/ja-hi-ets.png" alt="" class="wp-image-2110" /></figure>
-              <!-- /wp:image -->
+          <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
+          <div class="wp-block-group">
+            <!-- wp:image {"align":"wide","id":2110,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/ja-hi-ets.png" alt="" class="wp-image-2110" /></figure>
+            <!-- /wp:image -->
 
-              <!-- wp:spacer {"height":"1em","style":{"layout":{}}} -->
-              <div style="height:1em" aria-hidden="true" class="wp-block-spacer"></div>
-              <!-- /wp:spacer -->
+            <!-- wp:spacer {"height":"1em","style":{"layout":{}}} -->
+            <div style="height:1em" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
 
-              <!-- wp:heading {"textAlign":"center","level":4} -->
-              <h4 class="wp-block-heading has-text-align-center">Ja hi ets!</h4>
-              <!-- /wp:heading -->
+            <!-- wp:heading {"textAlign":"center","level":4} -->
+            <h4 class="wp-block-heading has-text-align-center">Ja hi ets!</h4>
+            <!-- /wp:heading -->
 
-              <!-- wp:paragraph {"align":"center"} -->
-              <p class="has-text-align-center">Junts fem possible les Comunitats Energètiques</p>
-              <!-- /wp:paragraph -->
-            </div>
-            <!-- /wp:group -->
+            <!-- wp:paragraph {"align":"center"} -->
+            <p class="has-text-align-center">Junts fem possible les Comunitats Energètiques</p>
+            <!-- /wp:paragraph -->
           </div>
           <!-- /wp:group -->
         </div>
-        <!-- /wp:ce-block/slider -->
+        <!-- /wp:group -->
       </div>
-      <!-- /wp:group -->
-
-      <!-- wp:spacer {"height":"2rem"} -->
-      <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
-      <!-- /wp:spacer -->
-
-      <!-- wp:group {"className":"is-style-no-padding","layout":{"type":"constrained"}} -->
-      <div class="wp-block-group is-style-no-padding"><!-- wp:html -->
-        <p><iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/ca/somcomunitatstesting/maps/campanya" width="100%" height="650px" frameborder="0"></iframe><br />
-          <script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-frontend.coopdevs.org/iframe-integration.js"></script>
-        </p>
-        <!-- /wp:html -->
-      </div>
-      <!-- /wp:group -->
+      <!-- /wp:ce-block/slider -->
     </div>
     <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
+
+  <!-- wp:group {"className":"is-style-no-padding","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+  <div class="wp-block-group is-style-no-padding">
+    <!-- wp:spacer {"width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{"flexSize":"70px","selfStretch":"fixed"}}} -->
+    <div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
+    <!-- /wp:spacer -->
+
+    <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group">
+      <!-- wp:spacer {"height":"4rem","width":"0px","style":{"layout":{}}} -->
+      <div style="height:4rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+      <!-- /wp:spacer -->
+
+      <!-- wp:html -->
+      <iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/ca/somcomunitatstesting/maps/campanya" width="100%" height="850px" frameborder="0"></iframe><br />
+      <script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-testing.coopdevs.org/iframe-integration.js"></script>
+      <!-- /wp:html -->
+
+      <!-- wp:spacer {"height":"3rem","width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
+      <div style="height:3rem;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
+      <!-- /wp:spacer -->
+    </div>
+    <!-- /wp:group -->
+
+    <!-- wp:spacer {"width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{"flexSize":"70px","selfStretch":"fixed"}}} -->
+    <div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
+    <!-- /wp:spacer -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:spacer {"height":"7rem","className":"is-style-show-tablet-desktop"} -->
+  <div style="height:7rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
+  <!-- /wp:spacer -->
 </section>
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding"} -->
-<section class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-  <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-default","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-default"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png","id":2545,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-default","layout":{"type":"default"}} -->
-      <div class="wp-block-cover is-light is-style-default" style="margin-top:0;margin-bottom:0;min-height:100%"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2545" alt="" src="/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png" data-object-fit="cover" />
-        <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
+<section class="wp-block-group alignfull is-style-no-padding">
+  <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
+  <div class="wp-block-group is-style-show-desktop">
+    <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-default","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-style-default">
+      <!-- wp:cover {"url":"/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png","id":2545,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-default","layout":{"type":"default"}} -->
+      <div class="wp-block-cover is-light is-style-default" style="margin-top:0;margin-bottom:0;min-height:100%">
+        <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+        <img class="wp-block-cover__image-background wp-image-2545" alt="" src="/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png" data-object-fit="cover" />
+        <div class="wp-block-cover__inner-container">
+          <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
         </div>
@@ -430,7 +426,8 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded","layout":{"type":"constrained","justifyContent":"center"}} -->
-    <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem"} -->
+    <div class="wp-block-group is-style-horizontal-padded">
+      <!-- wp:spacer {"height":"6rem"} -->
       <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
@@ -447,12 +444,14 @@
       <!-- /wp:spacer -->
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-      <article class="wp-block-group"><!-- wp:image {"id":2114,"width":86,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-image-center"} -->
-        <figure class="wp-block-image size-full is-resized is-style-image-center"><img src="/wp-content/uploads/2023/07/impuls-cover-thumbnail.png" alt="" class="wp-image-2114" style="object-fit:contain;width:86px;height:86px" width="86" height="86" /></figure>
+      <article class="wp-block-group">
+        <!-- wp:image {"id":2114,"width":86,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-image-center"} -->
+        <figure class="wp-block-image size-full is-resized is-style-image-center"><img src="/wp-content/uploads/2023/07/impuls-cover-thumbnail.png" alt="" class="wp-image-2114" style="object-fit:contain;" width="86" height="86" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical"}} -->
-        <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"level":4} -->
+        <div class="wp-block-group is-style-horizontal-padded">
+          <!-- wp:heading {"level":4} -->
           <h4 class="wp-block-heading">Impulsar la transició energètica</h4>
           <!-- /wp:heading -->
 
@@ -469,12 +468,14 @@
       <!-- /wp:spacer -->
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-      <article class="wp-block-group"><!-- wp:image {"id":2116,"width":86,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
-        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/moviment-cover-thumbnail.png" alt="" class="wp-image-2116" style="object-fit:contain;width:86px;height:86px" width="86" height="86" /></figure>
+      <article class="wp-block-group">
+        <!-- wp:image {"id":2116,"width":86,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/moviment-cover-thumbnail.png" alt="" class="wp-image-2116" style="object-fit:contain;" width="86" height="86" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical"}} -->
-        <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"level":4} -->
+        <div class="wp-block-group is-style-horizontal-padded">
+          <!-- wp:heading {"level":4} -->
           <h4 class="wp-block-heading">Formar part d’un moviment social</h4>
           <!-- /wp:heading -->
 
@@ -491,12 +492,14 @@
       <!-- /wp:spacer -->
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-      <article class="wp-block-group"><!-- wp:image {"id":2118,"width":86,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
-        <figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/uploads/2023/07/servei-cover-thumbnail.png" alt="" class="wp-image-2118" style="object-fit:contain;width:86px;height:86px" width="86" height="86" /></figure>
+      <article class="wp-block-group">
+        <!-- wp:image {"id":2118,"width":86,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
+        <figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/uploads/2023/07/servei-cover-thumbnail.png" alt="" class="wp-image-2118" style="object-fit:contain;" width="86" height="86" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical"}} -->
-        <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"level":4} -->
+        <div class="wp-block-group is-style-horizontal-padded">
+          <!-- wp:heading {"level":4} -->
           <h4 class="wp-block-heading">Múltiples serveis energètics</h4>
           <!-- /wp:heading -->
 
@@ -513,12 +516,14 @@
       <!-- /wp:spacer -->
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-      <article class="wp-block-group"><!-- wp:image {"id":2120,"width":86,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
-        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" style="object-fit:contain;width:86px;height:86px" width="86" height="86" /></figure>
+      <article class="wp-block-group">
+        <!-- wp:image {"id":2120,"width":86,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
+        <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" style="object-fit:contain;" width="86" height="86" /></figure>
         <!-- /wp:image -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"wrap"}} -->
-        <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"level":4} -->
+        <div class="wp-block-group is-style-horizontal-padded">
+          <!-- wp:heading {"level":4} -->
           <h4 class="wp-block-heading">Democratitzar l’accés a l’energia&nbsp;</h4>
           <!-- /wp:heading -->
 
@@ -535,7 +540,8 @@
       <!-- /wp:spacer -->
 
       <!-- wp:buttons -->
-      <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
+      <div class="wp-block-buttons">
+        <!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
         <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="/comunitats-energetiques/">Què són les Comunitats Energètiques</a></div>
         <!-- /wp:button -->
       </div>
@@ -549,8 +555,9 @@
   </div>
   <!-- /wp:group -->
 
-  <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded is-style-show-mobile","layout":{"type":"constrained","justifyContent":"center"}} -->
-  <div class="wp-block-group is-style-horizontal-padded is-style-show-mobile"><!-- wp:spacer {"height":"3rem"} -->
+  <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded is-style-show-mobile-tablet","layout":{"type":"constrained","justifyContent":"center"}} -->
+  <div class="wp-block-group is-style-horizontal-padded is-style-show-mobile-tablet">
+    <!-- wp:spacer {"height":"3rem"} -->
     <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
 
@@ -567,12 +574,14 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-    <article class="wp-block-group"><!-- wp:image {"id":2114,"width":200,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-image-center"} -->
+    <article class="wp-block-group">
+      <!-- wp:image {"id":2114,"width":200,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-image-center"} -->
       <figure class="wp-block-image size-full is-resized is-style-image-center"><img src="/wp-content/uploads/2023/07/impuls-cover-thumbnail.png" alt="" class="wp-image-2114" style="object-fit:contain;width:200px;height:86px" width="200" height="86" /></figure>
       <!-- /wp:image -->
 
       <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical"}} -->
-      <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"level":4} -->
+      <div class="wp-block-group is-style-horizontal-padded">
+        <!-- wp:heading {"level":4} -->
         <h4 class="wp-block-heading">Impulsar la transició energètica</h4>
         <!-- /wp:heading -->
 
@@ -589,12 +598,14 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-    <article class="wp-block-group"><!-- wp:image {"id":2116,"width":200,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+    <article class="wp-block-group">
+      <!-- wp:image {"id":2116,"width":200,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
       <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/moviment-cover-thumbnail.png" alt="" class="wp-image-2116" style="object-fit:contain;width:200px;height:86px" width="200" height="86" /></figure>
       <!-- /wp:image -->
 
       <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical"}} -->
-      <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"level":4} -->
+      <div class="wp-block-group is-style-horizontal-padded">
+        <!-- wp:heading {"level":4} -->
         <h4 class="wp-block-heading">Formar part d’un moviment social</h4>
         <!-- /wp:heading -->
 
@@ -611,12 +622,14 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-    <article class="wp-block-group"><!-- wp:image {"id":2118,"width":200,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
+    <article class="wp-block-group">
+      <!-- wp:image {"id":2118,"width":200,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
       <figure class="wp-block-image size-full is-resized is-style-default"><img src="/wp-content/uploads/2023/07/servei-cover-thumbnail.png" alt="" class="wp-image-2118" style="object-fit:contain;width:200px;height:86px" width="200" height="86" /></figure>
       <!-- /wp:image -->
 
       <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical"}} -->
-      <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"level":4} -->
+      <div class="wp-block-group is-style-horizontal-padded">
+        <!-- wp:heading {"level":4} -->
         <h4 class="wp-block-heading">Múltiples serveis energètics</h4>
         <!-- /wp:heading -->
 
@@ -633,12 +646,14 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-    <article class="wp-block-group"><!-- wp:image {"id":2120,"width":200,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
+    <article class="wp-block-group">
+      <!-- wp:image {"id":2120,"width":200,"height":86,"scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
       <figure class="wp-block-image size-full is-resized"><img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail.png" alt="" class="wp-image-2120" style="object-fit:contain;width:200px;height:86px" width="200" height="86" /></figure>
       <!-- /wp:image -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-horizontal-padded","layout":{"type":"flex","orientation":"vertical","justifyContent":"left","flexWrap":"wrap"}} -->
-      <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"level":4} -->
+      <div class="wp-block-group is-style-horizontal-padded">
+        <!-- wp:heading {"level":4} -->
         <h4 class="wp-block-heading">Democratitzar l’accés a l’energia&nbsp;</h4>
         <!-- /wp:heading -->
 
@@ -655,7 +670,8 @@
     <!-- /wp:spacer -->
 
     <!-- wp:buttons -->
-    <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
+    <div class="wp-block-buttons">
+      <!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
       <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="/comunitats-energetiques/">Què són les Comunitats Energètiques</a></div>
       <!-- /wp:button -->
     </div>
@@ -1034,7 +1050,7 @@
           <!-- wp:query {"queryId":2,"query":{"perPage":"9","pages":"1","offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
           <div class="wp-block-query">
             <!-- wp:post-template -->
-            <!-- wp:pattern {"slug":"ce-pattern/post-card"} -->
+            <!-- wp:pattern {"slug":"ce-pattern/post-card"} /-->
             <!-- /wp:post-template -->
           </div>
           <!-- /wp:query -->
@@ -1092,7 +1108,7 @@
         <!-- wp:query {"queryId":2,"query":{"perPage":"9","pages":"1","offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
         <div class="wp-block-query">
           <!-- wp:post-template -->
-          <!-- wp:pattern {"slug":"ce-pattern/post-card"} -->
+          <!-- wp:pattern {"slug":"ce-pattern/post-card"} /-->
           <!-- /wp:post-template -->
         </div>
         <!-- /wp:query -->
@@ -1170,7 +1186,8 @@
   <!-- /wp:spacer -->
 
   <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"textAlign":"center"} -->
+  <div class="wp-block-group is-style-horizontal-padded">
+    <!-- wp:heading {"textAlign":"center"} -->
     <h2 class="wp-block-heading has-text-align-center">Notícies destacades</h2>
     <!-- /wp:heading -->
 
@@ -1189,7 +1206,7 @@
         <!-- wp:query {"queryId":3,"query":{"perPage":3,"pages":"1","offset":0,"postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"className":"ce-cover-query","layout":{"type":"default"}} -->
         <div class="wp-block-query ce-cover-query">
           <!-- wp:post-template -->
-          <!-- wp:pattern {"slug":"ce-pattern/post-card"} -->
+          <!-- wp:pattern {"slug":"ce-pattern/post-card"} /-->
           <!-- /wp:post-template -->
         </div>
         <!-- /wp:query -->
@@ -1211,7 +1228,7 @@
           <!-- wp:query {"queryId":4,"query":{"perPage":3,"pages":"1","offset":0,"postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"className":"ce-cover-slider-query","layout":{"type":"default"}} -->
           <div class="wp-block-query ce-cover-slider-query">
             <!-- wp:post-template -->
-            <!-- wp:pattern {"slug":"ce-pattern/post-card"} -->
+            <!-- wp:pattern {"slug":"ce-pattern/post-card"} /-->
             <!-- /wp:post-template -->
           </div>
           <!-- /wp:query -->
