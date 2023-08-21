@@ -125,8 +125,8 @@
     <!-- wp:columns -->
     <div class="wp-block-columns"><!-- wp:column -->
       <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:image {"align":"center","id":2555,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/generacio-comunitaria.png" alt="" class="wp-image-2555" /></figure>
+        <div class="wp-block-group"><!-- wp:image {"align":"center","id":2555} -->
+          <figure class="wp-block-image aligncenter"><img src="/wp-content/uploads/2023/07/generacio-comunitaria.png" alt="" class="wp-image-2555" /></figure>
           <!-- /wp:image -->
 
           <!-- wp:spacer {"height":"2rem"} -->
@@ -147,8 +147,8 @@
 
       <!-- wp:column -->
       <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:image {"align":"center","id":2557,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/mobilitat-sostenible.png" alt="" class="wp-image-2557" /></figure>
+        <div class="wp-block-group"><!-- wp:image {"align":"center","sizeSlug":"full","linkDestination":"none"} -->
+          <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/mobilitat-sostenible.png" alt="" /></figure>
           <!-- /wp:image -->
 
           <!-- wp:spacer {"height":"2rem"} -->
@@ -169,8 +169,8 @@
 
       <!-- wp:column -->
       <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:image {"align":"center","id":2559,"width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/eficiencia-energetica.png" alt="" class="wp-image-2559" style="width:150px;height:126px" width="150" height="126" /></figure>
+        <div class="wp-block-group"><!-- wp:image {"align":"center","width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
+          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/eficiencia-energetica.png" alt="" width="150" height="126" /></figure>
           <!-- /wp:image -->
 
           <!-- wp:spacer {"height":"2rem"} -->
@@ -191,8 +191,8 @@
 
       <!-- wp:column -->
       <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:image {"align":"center","id":2561,"width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/formacio-ciutadana.png" alt="" class="wp-image-2561" style="width:150px;height:126px" width="150" height="126" /></figure>
+        <div class="wp-block-group"><!-- wp:image {"align":"center","width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
+          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/formacio-ciutadana.png" alt="" width="150" height="126" /></figure>
           <!-- /wp:image -->
 
           <!-- wp:spacer {"height":"2rem"} -->
@@ -220,8 +220,8 @@
     <!-- wp:columns -->
     <div class="wp-block-columns"><!-- wp:column -->
       <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:image {"align":"center","id":2571,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/energia-termica.png" alt="" class="wp-image-2571" /></figure>
+        <div class="wp-block-group"><!-- wp:image {"align":"center","sizeSlug":"full","linkDestination":"none"} -->
+          <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/energia-termica.png" alt="" /></figure>
           <!-- /wp:image -->
 
           <!-- wp:spacer {"height":"2rem"} -->
@@ -242,8 +242,8 @@
 
       <!-- wp:column -->
       <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:image {"align":"center","id":2573,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/compres-collectives.png" alt="" class="wp-image-2573" /></figure>
+        <div class="wp-block-group"><!-- wp:image {"align":"center","sizeSlug":"full","linkDestination":"none"} -->
+          <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/compres-collectives.png" alt="" /></figure>
           <!-- /wp:image -->
 
           <!-- wp:spacer {"height":"2rem"} -->
@@ -264,8 +264,8 @@
 
       <!-- wp:column -->
       <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:image {"align":"center","id":2577,"width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/subministrament-denergia.png" alt="" class="wp-image-2577" style="width:150px;height:126px" width="150" height="126" /></figure>
+        <div class="wp-block-group"><!-- wp:image {"align":"center","width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
+          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/subministrament-denergia.png" alt="" width="150" height="126" /></figure>
           <!-- /wp:image -->
 
           <!-- wp:spacer {"height":"2rem"} -->
@@ -286,8 +286,8 @@
 
       <!-- wp:column -->
       <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:image {"align":"center","id":2575,"width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/emancipacio-transformacio.png" alt="" class="wp-image-2575" style="width:150px;height:126px" width="150" height="126" /></figure>
+        <div class="wp-block-group"><!-- wp:image {"align":"center","width":150,"height":126,"sizeSlug":"full","linkDestination":"none"} -->
+          <figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2023/07/emancipacio-transformacio.png" alt="" width="150" height="126" /></figure>
           <!-- /wp:image -->
 
           <!-- wp:spacer {"height":"2rem"} -->
@@ -337,7 +337,7 @@
 
       <!-- wp:buttons -->
       <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"main","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-main-background-color has-text-color has-background wp-element-button" href="/?page_id=1466">Consulta les guies</a></div>
+        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-main-background-color has-text-color has-background wp-element-button" href="/recursos/">Consulta les guies</a></div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
@@ -391,7 +391,7 @@
 
         <!-- wp:buttons -->
         <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button" href="/?page_id=1466">Consulta les guies</a></div>
+          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button" href="/recursos/">Consulta les guies</a></div>
           <!-- /wp:button -->
         </div>
         <!-- /wp:buttons -->
