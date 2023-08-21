@@ -5,6 +5,7 @@
   color: var(--wp--preset--color--white);
   font-weight: 700;
   font-size: var(--wp--preset--font-size--x-small);
+  pointer-events: none;
 }
 
 .taxonomy-post_tag.wp-block-post-terms a:nth-child(3n) {
