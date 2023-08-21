@@ -15,7 +15,7 @@
   padding-right: var(--wp--custom--spacing--sm);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 782px) {
   .is-style-padded {
     padding: var(--wp--custom--spacing--sl) var(--wp--custom--spacing--sxxl);
   }
