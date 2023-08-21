@@ -7,10 +7,14 @@
  * Viewport Width: 1500
  */
 ?>
+
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding"} -->
-<section class="wp-block-group alignfull is-style-no-padding"><!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-show-tablet-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-  <div class="wp-block-group alignfull is-style-show-tablet-desktop" style="margin-top:0;margin-bottom:0"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"55%"}},"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem","width":"0px","style":{"layout":{}}} -->
+<section class="wp-block-group alignfull is-style-no-padding">
+  <!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-show-tablet-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+  <div class="wp-block-group alignfull is-style-show-tablet-desktop" style="margin-top:0;margin-bottom:0">
+    <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"55%"}},"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-style-horizontal-padded">
+      <!-- wp:spacer {"height":"6rem","width":"0px","style":{"layout":{}}} -->
       <div style="height:6rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
@@ -27,7 +31,8 @@
       <!-- /wp:spacer -->
 
       <!-- wp:buttons -->
-      <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
+      <div class="wp-block-buttons">
+        <!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
         <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#troba-la-teva-comunitat-desktop">Troba la teva Comunitat Energètica</a></div>
         <!-- /wp:button -->
       </div>
@@ -40,9 +45,13 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"45%"}},"layout":{"type":"constrained"}} -->
-    <div class="wp-block-group"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/cover-hero-column.png","id":2100,"dimRatio":0,"minHeight":650,"minHeightUnit":"px","isDark":false,"style":{"color":[]},"className":"is-style-default","layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover is-light is-style-default" style="min-height:650px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2100" alt="" src="/wp-content/uploads/2023/07/cover-hero-column.png" data-object-fit="cover" />
-        <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+    <div class="wp-block-group">
+      <!-- wp:cover {"url":"/wp-content/uploads/2023/07/cover-hero-column.png","id":2100,"dimRatio":0,"minHeight":650,"minHeightUnit":"px","isDark":false,"style":{"color":[]},"className":"is-style-default","layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover is-light is-style-default" style="min-height:650px">
+        <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+        <img class="wp-block-cover__image-background wp-image-2100" alt="" src="/wp-content/uploads/2023/07/cover-hero-column.png" data-object-fit="cover" />
+        <div class="wp-block-cover__inner-container">
+          <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
         </div>
@@ -54,12 +63,17 @@
   <!-- /wp:group -->
 
   <!-- wp:group {"className":"is-style-no-padding is-style-show-mobile","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group is-style-no-padding is-style-show-mobile"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/cover-hero-column.png","id":2100,"hasParallax":true,"dimRatio":0,"minHeight":90,"minHeightUnit":"vh","isDark":false,"layout":{"type":"constrained"}} -->
-    <div class="wp-block-cover is-light has-parallax" style="min-height:90vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+  <div class="wp-block-group is-style-no-padding is-style-show-mobile">
+    <!-- wp:cover {"url":"/wp-content/uploads/2023/07/cover-hero-column.png","id":2100,"hasParallax":true,"dimRatio":0,"minHeight":90,"minHeightUnit":"vh","isDark":false,"layout":{"type":"constrained"}} -->
+    <div class="wp-block-cover is-light has-parallax" style="min-height:90vh">
+      <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
       <div role="img" class="wp-block-cover__image-background wp-image-2100 has-parallax" style="background-position:50% 50%;background-image:url(/wp-content/uploads/2023/07/cover-hero-column.png)"></div>
-      <div class="wp-block-cover__inner-container"><!-- wp:group {"backgroundColor":"base","layout":{"type":"constrained"}} -->
-        <div class="wp-block-group has-base-background-color has-background"><!-- wp:group {"className":"is-style-padded","layout":{"type":"constrained"}} -->
-          <div class="wp-block-group is-style-padded"><!-- wp:spacer {"height":"1rem"} -->
+      <div class="wp-block-cover__inner-container">
+        <!-- wp:group {"backgroundColor":"base","layout":{"type":"constrained"}} -->
+        <div class="wp-block-group has-base-background-color has-background">
+          <!-- wp:group {"className":"is-style-padded","layout":{"type":"constrained"}} -->
+          <div class="wp-block-group is-style-padded">
+            <!-- wp:spacer {"height":"1rem"} -->
             <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
             <!-- /wp:spacer -->
 
@@ -72,7 +86,8 @@
             <!-- /wp:paragraph -->
 
             <!-- wp:buttons -->
-            <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
+            <div class="wp-block-buttons">
+              <!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
               <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#troba-la-teva-comunitat-mobile">Troba la teva Comunitat Energètica</a></div>
               <!-- /wp:button -->
             </div>
@@ -94,12 +109,14 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","style":{"color":{"background":"#c5e2d040"}},"className":"is-style-show-tablet-desktop is-style-no-padding","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull is-style-show-tablet-desktop is-style-no-padding has-background" id="troba-la-teva-comunitat-desktop" style="background-color:#c5e2d040"><!-- wp:spacer {"height":"6rem"} -->
+<section class="wp-block-group alignfull is-style-show-tablet-desktop is-style-no-padding has-background" id="troba-la-teva-comunitat-desktop" style="background-color:#c5e2d040">
+  <!-- wp:spacer {"height":"6rem"} -->
   <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
   <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
-  <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"textAlign":"center"} -->
+  <div class="wp-block-group is-style-horizontal-padded">
+    <!-- wp:heading {"textAlign":"center"} -->
     <h2 class="wp-block-heading has-text-align-center">Fem créixer les Comunitats Energètiques</h2>
     <!-- /wp:heading -->
 
@@ -112,9 +129,12 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-    <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"28.5%"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-      <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:image {"align":"wide","id":2104,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-no-margin"} -->
+    <div class="wp-block-group">
+      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"28.5%"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
+      <div class="wp-block-group">
+        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group">
+          <!-- wp:image {"align":"wide","id":2104,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-no-margin"} -->
           <figure class="wp-block-image alignwide size-full is-style-no-margin"><img src="/wp-content/uploads/2023/07/busca-la-teva-zona.png" alt="" class="wp-image-2104" style="aspect-ratio:1;object-fit:cover" /></figure>
           <!-- /wp:image -->
 
@@ -133,8 +153,11 @@
         <!-- /wp:group -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-        <div class="wp-block-group is-style-no-padding"><!-- wp:image {"id":2102,"scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
-          <figure class="wp-block-image size-full is-style-default"><img src="/wp-content/uploads/2023/07/right-arrow-gray.png" alt="" class="wp-image-2102" style="object-fit:cover" /></figure>
+        <div class="wp-block-group is-style-no-padding">
+          <!-- wp:image {"id":2102,"scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
+          <figure class="wp-block-image size-full is-style-default">
+            <img src="/wp-content/uploads/2023/07/right-arrow-gray.png" alt="" class="wp-image-2102" style="object-fit:cover" />
+          </figure>
           <!-- /wp:image -->
         </div>
         <!-- /wp:group -->
@@ -142,8 +165,10 @@
       <!-- /wp:group -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"28.5%"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-      <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:image {"align":"wide","id":2106,"sizeSlug":"full","linkDestination":"none"} -->
+      <div class="wp-block-group">
+        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group">
+          <!-- wp:image {"align":"wide","id":2106,"sizeSlug":"full","linkDestination":"none"} -->
           <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/comprova-lestat.png" alt="" class="wp-image-2106" /></figure>
           <!-- /wp:image -->
 
@@ -162,7 +187,8 @@
         <!-- /wp:group -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-        <div class="wp-block-group is-style-no-padding"><!-- wp:image {"id":2102,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
+        <div class="wp-block-group is-style-no-padding">
+          <!-- wp:image {"id":2102,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
           <figure class="wp-block-image size-full is-style-default"><img src="/wp-content/uploads/2023/07/right-arrow-gray.png" alt="" class="wp-image-2102" /></figure>
           <!-- /wp:image -->
         </div>
@@ -171,8 +197,10 @@
       <!-- /wp:group -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"28.5%"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-      <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:image {"align":"wide","id":2108,"sizeSlug":"full","linkDestination":"none"} -->
+      <div class="wp-block-group">
+        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group">
+          <!-- wp:image {"align":"wide","id":2108,"sizeSlug":"full","linkDestination":"none"} -->
           <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/omple-les-dades.png" alt="" class="wp-image-2108" /></figure>
           <!-- /wp:image -->
 
@@ -191,7 +219,8 @@
         <!-- /wp:group -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-        <div class="wp-block-group is-style-no-padding"><!-- wp:image {"id":2102,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
+        <div class="wp-block-group is-style-no-padding">
+          <!-- wp:image {"id":2102,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
           <figure class="wp-block-image size-full is-style-default"><img src="/wp-content/uploads/2023/07/right-arrow-gray.png" alt="" class="wp-image-2102" /></figure>
           <!-- /wp:image -->
         </div>
@@ -200,8 +229,10 @@
       <!-- /wp:group -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"14.3%"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-      <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained"}} -->
-        <div class="wp-block-group"><!-- wp:image {"align":"wide","id":2110,"sizeSlug":"full","linkDestination":"none"} -->
+      <div class="wp-block-group">
+        <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group">
+          <!-- wp:image {"align":"wide","id":2110,"sizeSlug":"full","linkDestination":"none"} -->
           <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/ja-hi-ets.png" alt="" class="wp-image-2110" /></figure>
           <!-- /wp:image -->
 
@@ -224,7 +255,8 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"layout":{"type":"default"}} -->
-    <div class="wp-block-group"><!-- wp:spacer {"height":"4rem","width":"0px","style":{"layout":{}}} -->
+    <div class="wp-block-group">
+      <!-- wp:spacer {"height":"4rem","width":"0px","style":{"layout":{}}} -->
       <div style="height:4rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
@@ -249,13 +281,16 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","style":{"color":{"background":"#c5e2d040"}},"className":"is-style-no-padding is-style-show-mobile","layout":{"type":"default"}} -->
-<section class="wp-block-group alignfull is-style-no-padding is-style-show-mobile has-background" id="troba-la-teva-comunitat-mobile" style="background-color:#c5e2d040"><!-- wp:spacer {"height":"3rem"} -->
+<section class="wp-block-group alignfull is-style-no-padding is-style-show-mobile has-background" id="troba-la-teva-comunitat-mobile" style="background-color:#c5e2d040">
+  <!-- wp:spacer {"height":"3rem"} -->
   <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
   <!-- wp:group {"className":"is-style-show-mobile is-style-no-padding","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group is-style-show-mobile is-style-no-padding"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-horizontal-padded"><!-- wp:heading {"textAlign":"center"} -->
+  <div class="wp-block-group is-style-show-mobile is-style-no-padding">
+    <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-style-horizontal-padded">
+      <!-- wp:heading {"textAlign":"center"} -->
       <h2 class="wp-block-heading has-text-align-center">Fem créixer les Comunitats Energètiques</h2>
       <!-- /wp:heading -->
 
@@ -270,11 +305,16 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
-    <div class="wp-block-group is-style-no-padding"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-      <div class="wp-block-group is-style-horizontal-padded"><!-- wp:ce-block/slider {"infinite":false} -->
-        <div class="wp-block-ce-block-slider" infinite="false" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay><!-- wp:group {"lock":{"remove":true,"move":true},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
-          <div class="wp-block-group ce-block-slider-wrapper"><!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
-            <div class="wp-block-group"><!-- wp:image {"align":"wide","id":2104,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-no-margin"} -->
+    <div class="wp-block-group is-style-no-padding">
+      <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group is-style-horizontal-padded">
+        <!-- wp:ce-block/slider {"infinite":false} -->
+        <div class="wp-block-ce-block-slider" infinite="false" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay>
+          <!-- wp:group {"lock":{"remove":true,"move":true},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
+          <div class="wp-block-group ce-block-slider-wrapper">
+            <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
+            <div class="wp-block-group">
+              <!-- wp:image {"align":"wide","id":2104,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-no-margin"} -->
               <figure class="wp-block-image alignwide size-full is-style-no-margin"><img src="/wp-content/uploads/2023/07/busca-la-teva-zona.png" alt="" class="wp-image-2104" style="aspect-ratio:1;object-fit:cover" /></figure>
               <!-- /wp:image -->
 
@@ -293,7 +333,8 @@
             <!-- /wp:group -->
 
             <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
-            <div class="wp-block-group"><!-- wp:image {"align":"wide","id":2106,"sizeSlug":"full","linkDestination":"none"} -->
+            <div class="wp-block-group">
+              <!-- wp:image {"align":"wide","id":2106,"sizeSlug":"full","linkDestination":"none"} -->
               <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/comprova-lestat.png" alt="" class="wp-image-2106" /></figure>
               <!-- /wp:image -->
 
@@ -629,8 +670,10 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","style":{"color":{"background":"#c5e2d040"}},"className":"is-style-no-padding"} -->
-<section class="wp-block-group alignfull is-style-no-padding has-background" style="background-color:#c5e2d040"><!-- wp:group {"className":"is-style-show-tablet-desktop is-style-no-padding","layout":{"type":"default"}} -->
-  <div class="wp-block-group is-style-show-tablet-desktop is-style-no-padding"><!-- wp:spacer {"height":"6rem"} -->
+<section class="wp-block-group alignfull is-style-no-padding has-background" style="background-color:#c5e2d040">
+  <!-- wp:group {"className":"is-style-show-tablet-desktop is-style-no-padding","layout":{"type":"default"}} -->
+  <div class="wp-block-group is-style-show-tablet-desktop is-style-no-padding">
+    <!-- wp:spacer {"height":"6rem"} -->
     <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
 
@@ -643,7 +686,8 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"align":"full","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-    <div class="wp-block-group alignfull"><!-- wp:group {"style":{"color":{"background":"#c5e2d0"},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group alignfull">
+      <!-- wp:group {"style":{"color":{"background":"#c5e2d0"},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"default"}} -->
       <div class="wp-block-group has-background" style="background-color:#c5e2d0"></div>
       <!-- /wp:group -->
 
@@ -652,9 +696,13 @@
       <!-- /wp:spacer -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"300px"}},"backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"default"}} -->
-      <div class="wp-block-group is-style-no-padding has-main-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/ciutadania-thumbnail.png","id":2122,"dimRatio":0,"minHeight":230,"isDark":false,"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-        <div class="wp-block-cover aligncenter is-light" style="margin-top:0;margin-bottom:0;min-height:230px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2122" alt="" src="/wp-content/uploads/2023/07/ciutadania-thumbnail.png" data-object-fit="cover" />
-          <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+      <div class="wp-block-group is-style-no-padding has-main-background-color has-background">
+        <!-- wp:cover {"url":"/wp-content/uploads/2023/07/ciutadania-thumbnail.png","id":2122,"dimRatio":0,"minHeight":230,"isDark":false,"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+        <div class="wp-block-cover aligncenter is-light" style="margin-top:0;margin-bottom:0;min-height:230px">
+          <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+          <img class="wp-block-cover__image-background wp-image-2122" alt="" src="/wp-content/uploads/2023/07/ciutadania-thumbnail.png" data-object-fit="cover" />
+          <div class="wp-block-cover__inner-container">
+            <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
             <p class="has-text-align-center has-large-font-size"></p>
             <!-- /wp:paragraph -->
           </div>
@@ -674,7 +722,8 @@
         <!-- /wp:spacer -->
 
         <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-        <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
+        <div class="wp-block-buttons">
+          <!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
           <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-background-color has-background wp-element-button" href="/ciutadania/">Més informació</a></div>
           <!-- /wp:button -->
         </div>
@@ -691,9 +740,13 @@
       <!-- /wp:spacer -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"300px"}},"backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"default"}} -->
-      <div class="wp-block-group is-style-no-padding has-main-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/empresa-thumbnail.png","id":2124,"dimRatio":0,"minHeight":230,"isDark":false,"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-        <div class="wp-block-cover aligncenter is-light" style="margin-top:0;margin-bottom:0;min-height:230px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2124" alt="" src="/wp-content/uploads/2023/07/empresa-thumbnail.png" data-object-fit="cover" />
-          <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+      <div class="wp-block-group is-style-no-padding has-main-background-color has-background">
+        <!-- wp:cover {"url":"/wp-content/uploads/2023/07/empresa-thumbnail.png","id":2124,"dimRatio":0,"minHeight":230,"isDark":false,"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+        <div class="wp-block-cover aligncenter is-light" style="margin-top:0;margin-bottom:0;min-height:230px">
+          <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+          <img class="wp-block-cover__image-background wp-image-2124" alt="" src="/wp-content/uploads/2023/07/empresa-thumbnail.png" data-object-fit="cover" />
+          <div class="wp-block-cover__inner-container">
+            <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
             <p class="has-text-align-center has-large-font-size"></p>
             <!-- /wp:paragraph -->
           </div>
@@ -713,7 +766,8 @@
         <!-- /wp:spacer -->
 
         <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-        <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
+        <div class="wp-block-buttons">
+          <!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
           <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-background-color has-background wp-element-button" href="/empreses/">Més informació</a></div>
           <!-- /wp:button -->
         </div>
@@ -730,9 +784,13 @@
       <!-- /wp:spacer -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"300px"}},"backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"default"}} -->
-      <div class="wp-block-group is-style-no-padding has-main-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/administracio-thumbnail.png","id":2126,"dimRatio":0,"minHeight":230,"isDark":false,"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-        <div class="wp-block-cover aligncenter is-light" style="margin-top:0;margin-bottom:0;min-height:230px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2126" alt="" src="/wp-content/uploads/2023/07/administracio-thumbnail.png" data-object-fit="cover" />
-          <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+      <div class="wp-block-group is-style-no-padding has-main-background-color has-background">
+        <!-- wp:cover {"url":"/wp-content/uploads/2023/07/administracio-thumbnail.png","id":2126,"dimRatio":0,"minHeight":230,"isDark":false,"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+        <div class="wp-block-cover aligncenter is-light" style="margin-top:0;margin-bottom:0;min-height:230px">
+          <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+          <img class="wp-block-cover__image-background wp-image-2126" alt="" src="/wp-content/uploads/2023/07/administracio-thumbnail.png" data-object-fit="cover" />
+          <div class="wp-block-cover__inner-container">
+            <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
             <p class="has-text-align-center has-large-font-size"></p>
             <!-- /wp:paragraph -->
           </div>
@@ -752,7 +810,8 @@
         <!-- /wp:spacer -->
 
         <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-        <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
+        <div class="wp-block-buttons">
+          <!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
           <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-background-color has-background wp-element-button" href="/administracio/">Més informació</a></div>
           <!-- /wp:button -->
         </div>
@@ -781,7 +840,8 @@
   <!-- /wp:group -->
 
   <!-- wp:group {"className":"is-style-show-mobile is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group is-style-show-mobile is-style-horizontal-padded"><!-- wp:spacer {"height":"3rem"} -->
+  <div class="wp-block-group is-style-show-mobile is-style-horizontal-padded">
+    <!-- wp:spacer {"height":"3rem"} -->
     <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
 
@@ -794,11 +854,17 @@
     <!-- /wp:spacer -->
 
     <!-- wp:ce-block/slider -->
-    <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay><!-- wp:group {"lock":{"remove":true,"move":true},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
-      <div class="wp-block-group ce-block-slider-wrapper"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"300px"}},"backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"default"}} -->
-        <div class="wp-block-group is-style-no-padding has-main-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/ciutadania-thumbnail.png","id":2122,"dimRatio":0,"minHeight":230,"isDark":false,"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-          <div class="wp-block-cover aligncenter is-light" style="margin-top:0;margin-bottom:0;min-height:230px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2122" alt="" src="/wp-content/uploads/2023/07/ciutadania-thumbnail.png" data-object-fit="cover" />
-            <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+    <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay>
+      <!-- wp:group {"lock":{"remove":true,"move":true},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
+      <div class="wp-block-group ce-block-slider-wrapper">
+        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"300px"}},"backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"default"}} -->
+        <div class="wp-block-group is-style-no-padding has-main-background-color has-background">
+          <!-- wp:cover {"url":"/wp-content/uploads/2023/07/ciutadania-thumbnail.png","id":2122,"dimRatio":0,"minHeight":230,"isDark":false,"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+          <div class="wp-block-cover aligncenter is-light" style="margin-top:0;margin-bottom:0;min-height:230px">
+            <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+            <img class="wp-block-cover__image-background wp-image-2122" alt="" src="/wp-content/uploads/2023/07/ciutadania-thumbnail.png" data-object-fit="cover" />
+            <div class="wp-block-cover__inner-container">
+              <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
               <p class="has-text-align-center has-large-font-size"></p>
               <!-- /wp:paragraph -->
             </div>
@@ -818,7 +884,8 @@
           <!-- /wp:spacer -->
 
           <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-          <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
+          <div class="wp-block-buttons">
+            <!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
             <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-background-color has-background wp-element-button" href="/ciutadania/">Més informació</a></div>
             <!-- /wp:button -->
           </div>
@@ -831,9 +898,13 @@
         <!-- /wp:group -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"300px"}},"backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"default"}} -->
-        <div class="wp-block-group is-style-no-padding has-main-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/empresa-thumbnail.png","id":2124,"dimRatio":0,"minHeight":230,"isDark":false,"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-          <div class="wp-block-cover aligncenter is-light" style="margin-top:0;margin-bottom:0;min-height:230px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2124" alt="" src="/wp-content/uploads/2023/07/empresa-thumbnail.png" data-object-fit="cover" />
-            <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+        <div class="wp-block-group is-style-no-padding has-main-background-color has-background">
+          <!-- wp:cover {"url":"/wp-content/uploads/2023/07/empresa-thumbnail.png","id":2124,"dimRatio":0,"minHeight":230,"isDark":false,"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+          <div class="wp-block-cover aligncenter is-light" style="margin-top:0;margin-bottom:0;min-height:230px">
+            <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+            <img class="wp-block-cover__image-background wp-image-2124" alt="" src="/wp-content/uploads/2023/07/empresa-thumbnail.png" data-object-fit="cover" />
+            <div class="wp-block-cover__inner-container">
+              <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
               <p class="has-text-align-center has-large-font-size"></p>
               <!-- /wp:paragraph -->
             </div>
@@ -853,7 +924,8 @@
           <!-- /wp:spacer -->
 
           <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-          <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
+          <div class="wp-block-buttons">
+            <!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
             <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-background-color has-background wp-element-button" href="/empreses/">Més informació</a></div>
             <!-- /wp:button -->
           </div>
@@ -866,9 +938,13 @@
         <!-- /wp:group -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"300px"}},"backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"default"}} -->
-        <div class="wp-block-group is-style-no-padding has-main-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/administracio-thumbnail.png","id":2126,"dimRatio":0,"minHeight":230,"isDark":false,"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-          <div class="wp-block-cover aligncenter is-light" style="margin-top:0;margin-bottom:0;min-height:230px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2126" alt="" src="/wp-content/uploads/2023/07/administracio-thumbnail.png" data-object-fit="cover" />
-            <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+        <div class="wp-block-group is-style-no-padding has-main-background-color has-background">
+          <!-- wp:cover {"url":"/wp-content/uploads/2023/07/administracio-thumbnail.png","id":2126,"dimRatio":0,"minHeight":230,"isDark":false,"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+          <div class="wp-block-cover aligncenter is-light" style="margin-top:0;margin-bottom:0;min-height:230px">
+            <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+            <img class="wp-block-cover__image-background wp-image-2126" alt="" src="/wp-content/uploads/2023/07/administracio-thumbnail.png" data-object-fit="cover" />
+            <div class="wp-block-cover__inner-container">
+              <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
               <p class="has-text-align-center has-large-font-size"></p>
               <!-- /wp:paragraph -->
             </div>
@@ -888,7 +964,8 @@
           <!-- /wp:spacer -->
 
           <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-          <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
+          <div class="wp-block-buttons">
+            <!-- wp:button {"backgroundColor":"base","className":"is-style-rounded"} -->
             <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link has-base-background-color has-background wp-element-button" href="/administracio/">Més informació</a></div>
             <!-- /wp:button -->
           </div>
@@ -913,14 +990,18 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"primary","className":"ce-home-landings-section is-style-show-desktop"} -->
-<section class="wp-block-group alignfull ce-home-landings-section is-style-show-desktop has-primary-background-color has-background"><!-- wp:spacer {"height":"5rem","width":"0px","style":{"layout":{}}} -->
+<section class="wp-block-group alignfull ce-home-landings-section is-style-show-desktop has-primary-background-color has-background">
+  <!-- wp:spacer {"height":"5rem","width":"0px","style":{"layout":{}}} -->
   <div style="height:5rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
   <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
-  <div class="wp-block-group is-style-horizontal-padded"><!-- wp:columns {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"0"}}},"className":"is-style-in-container"} -->
-    <div class="wp-block-columns is-style-in-container" style="margin-top:0;margin-bottom:0"><!-- wp:column {"verticalAlignment":"center","width":""} -->
-      <div class="wp-block-column is-vertically-aligned-center"><!-- wp:spacer {"height":"2rem"} -->
+  <div class="wp-block-group is-style-horizontal-padded">
+    <!-- wp:columns {"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"0"}}},"className":"is-style-in-container"} -->
+    <div class="wp-block-columns is-style-in-container" style="margin-top:0;margin-bottom:0">
+      <!-- wp:column {"verticalAlignment":"center","width":""} -->
+      <div class="wp-block-column is-vertically-aligned-center">
+        <!-- wp:spacer {"height":"2rem"} -->
         <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
@@ -933,7 +1014,8 @@
         <!-- /wp:paragraph -->
 
         <!-- wp:buttons -->
-        <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
+        <div class="wp-block-buttons">
+          <!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
           <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button" href="/?page_id=2592">Coneix les Comunitats Energètiques</a></div>
           <!-- /wp:button -->
         </div>
@@ -946,46 +1028,13 @@
       <!-- /wp:column -->
 
       <!-- wp:column {"verticalAlignment":"center","width":"","className":"is-style-default"} -->
-      <div class="wp-block-column is-vertically-aligned-center is-style-default"><!-- wp:ce-block/slider -->
-        <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay><!-- wp:query {"queryId":2,"query":{"perPage":"9","pages":"1","offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
-          <div class="wp-block-query"><!-- wp:post-template -->
-            <!-- wp:group {"tagName":"article","backgroundColor":"base","className":"is-style-no-padding ce-card ce-news-card","layout":{"type":"constrained"}} -->
-            <article class="wp-block-group is-style-no-padding ce-card ce-news-card has-base-background-color has-background"><!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
-
-              <!-- wp:spacer {"height":"40px"} -->
-              <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-              <!-- /wp:spacer -->
-
-              <!-- wp:group {"className":"ce-card-body","layout":{"type":"default"}} -->
-              <div class="wp-block-group ce-card-body"><!-- wp:group {"className":"is-style-show-desktop"} -->
-                <div class="wp-block-group is-style-show-desktop"><!-- wp:post-terms {"term":"post_tag"} /--></div>
-                <!-- /wp:group -->
-
-                <!-- wp:group {"className":"is-style-show-tablet"} -->
-                <div class="wp-block-group is-style-show-tablet"><!-- wp:post-terms {"term":"post_tag"} /--></div>
-                <!-- /wp:group -->
-
-                <!-- wp:group {"className":"is-style-show-mobile"} -->
-                <div class="wp-block-group is-style-show-mobile"><!-- wp:post-terms {"term":"post_tag"} /--></div>
-                <!-- /wp:group -->
-
-                <!-- wp:spacer {"height":"1em","width":"0px","style":{"layout":{}}} -->
-                <div style="height:1em;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-                <!-- /wp:spacer -->
-
-                <!-- wp:post-date /-->
-
-                <!-- wp:post-title {"level":4,"isLink":true,"className":"wp-block-heading"} /-->
-
-                <!-- wp:post-excerpt {"moreText":"Més informació"} /-->
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:spacer {"height":"3rem"} -->
-              <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
-              <!-- /wp:spacer -->
-            </article>
-            <!-- /wp:group -->
+      <div class="wp-block-column is-vertically-aligned-center is-style-default">
+        <!-- wp:ce-block/slider -->
+        <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay>
+          <!-- wp:query {"queryId":2,"query":{"perPage":"9","pages":"1","offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
+          <div class="wp-block-query">
+            <!-- wp:post-template -->
+            <!-- wp:pattern {"slug":"ce-pattern/post-card"} -->
             <!-- /wp:post-template -->
           </div>
           <!-- /wp:query -->
@@ -1005,12 +1054,14 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"primary","className":"ce-home-landings-section is-style-show-mobile-tablet is-style-no-padding"} -->
-<section class="wp-block-group alignfull ce-home-landings-section is-style-show-mobile-tablet is-style-no-padding has-primary-background-color has-background"><!-- wp:spacer {"height":"5rem","width":"0px","style":{"layout":{}}} -->
+<section class="wp-block-group alignfull ce-home-landings-section is-style-show-mobile-tablet is-style-no-padding has-primary-background-color has-background">
+  <!-- wp:spacer {"height":"5rem","width":"0px","style":{"layout":{}}} -->
   <div style="height:5rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->
 
   <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"2rem"} -->
+  <div class="wp-block-group is-style-horizontal-padded">
+    <!-- wp:spacer {"height":"2rem"} -->
     <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
 
@@ -1023,7 +1074,8 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:buttons -->
-    <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
+    <div class="wp-block-buttons">
+      <!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
       <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button" href="/?page_id=2592">Coneix les Comunitats Energètiques</a></div>
       <!-- /wp:button -->
     </div>
@@ -1034,46 +1086,13 @@
     <!-- /wp:spacer -->
 
     <!-- wp:ce-block/slider -->
-    <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay><!-- wp:group {"className":"ce-block-slider-wrapper","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-      <div class="wp-block-group ce-block-slider-wrapper"><!-- wp:query {"queryId":2,"query":{"perPage":"9","pages":"1","offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
-        <div class="wp-block-query"><!-- wp:post-template -->
-          <!-- wp:group {"tagName":"article","backgroundColor":"base","className":"ce-card ce-news-card is-style-default","layout":{"type":"constrained"}} -->
-          <article class="wp-block-group ce-card ce-news-card is-style-default has-base-background-color has-background"><!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
-
-            <!-- wp:spacer {"height":"40px"} -->
-            <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-            <!-- /wp:spacer -->
-
-            <!-- wp:group {"className":"ce-card-body","layout":{"type":"default"}} -->
-            <div class="wp-block-group ce-card-body"><!-- wp:group {"className":"is-style-show-desktop"} -->
-              <div class="wp-block-group is-style-show-desktop"><!-- wp:post-terms {"term":"post_tag"} /--></div>
-              <!-- /wp:group -->
-
-              <!-- wp:group {"className":"is-style-show-tablet"} -->
-              <div class="wp-block-group is-style-show-tablet"><!-- wp:post-terms {"term":"post_tag"} /--></div>
-              <!-- /wp:group -->
-
-              <!-- wp:group {"className":"is-style-show-mobile"} -->
-              <div class="wp-block-group is-style-show-mobile"><!-- wp:post-terms {"term":"post_tag"} /--></div>
-              <!-- /wp:group -->
-
-              <!-- wp:spacer {"height":"1em","width":"0px","style":{"layout":{}}} -->
-              <div style="height:1em;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-              <!-- /wp:spacer -->
-
-              <!-- wp:post-date /-->
-
-              <!-- wp:post-title {"level":4,"isLink":true,"className":"wp-block-heading"} /-->
-
-              <!-- wp:post-excerpt {"moreText":"Més informació"} /-->
-            </div>
-            <!-- /wp:group -->
-
-            <!-- wp:spacer {"height":"3rem"} -->
-            <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
-            <!-- /wp:spacer -->
-          </article>
-          <!-- /wp:group -->
+    <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay>
+      <!-- wp:group {"className":"ce-block-slider-wrapper","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+      <div class="wp-block-group ce-block-slider-wrapper">
+        <!-- wp:query {"queryId":2,"query":{"perPage":"9","pages":"1","offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
+        <div class="wp-block-query">
+          <!-- wp:post-template -->
+          <!-- wp:pattern {"slug":"ce-pattern/post-card"} -->
           <!-- /wp:post-template -->
         </div>
         <!-- /wp:query -->
@@ -1091,8 +1110,10 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull is-style-no-padding has-main-background-color has-background"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
-  <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"4rem","className":"is-style-show-tablet-desktop"} -->
+<section class="wp-block-group alignfull is-style-no-padding has-main-background-color has-background">
+  <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
+  <div class="wp-block-group is-style-horizontal-padded">
+    <!-- wp:spacer {"height":"4rem","className":"is-style-show-tablet-desktop"} -->
     <div style="height:4rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
     <!-- /wp:spacer -->
 
@@ -1101,7 +1122,8 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"className":"is-style-padded","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-padded"><!-- wp:image {"align":"center","id":2128,"sizeSlug":"full","linkDestination":"none"} -->
+    <div class="wp-block-group is-style-padded">
+      <!-- wp:image {"align":"center","id":2128,"sizeSlug":"full","linkDestination":"none"} -->
       <figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2023/07/partners-cover.png" alt="" class="wp-image-2128" /></figure>
       <!-- /wp:image -->
     </div>
@@ -1161,46 +1183,13 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"className":"is-style-horizontal-padded is-style-show-tablet-desktop"} -->
-    <div class="wp-block-group is-style-horizontal-padded is-style-show-tablet-desktop"><!-- wp:group {"layout":{"type":"constrained"}} -->
-      <div class="wp-block-group"><!-- wp:query {"queryId":3,"query":{"perPage":3,"pages":"1","offset":0,"postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"className":"ce-cover-query","layout":{"type":"default"}} -->
-        <div class="wp-block-query ce-cover-query"><!-- wp:post-template -->
-          <!-- wp:group {"tagName":"article","backgroundColor":"base","className":"is-style-no-padding ce-card ce-news-card","layout":{"type":"constrained"}} -->
-          <article class="wp-block-group is-style-no-padding ce-card ce-news-card has-base-background-color has-background"><!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
-
-            <!-- wp:spacer {"height":"40px"} -->
-            <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-            <!-- /wp:spacer -->
-
-            <!-- wp:group {"className":"ce-card-body","layout":{"type":"default"}} -->
-            <div class="wp-block-group ce-card-body"><!-- wp:group {"className":"is-style-show-desktop"} -->
-              <div class="wp-block-group is-style-show-desktop"><!-- wp:post-terms {"term":"post_tag"} /--></div>
-              <!-- /wp:group -->
-
-              <!-- wp:group {"className":"is-style-show-tablet"} -->
-              <div class="wp-block-group is-style-show-tablet"><!-- wp:post-terms {"term":"post_tag"} /--></div>
-              <!-- /wp:group -->
-
-              <!-- wp:group {"className":"is-style-show-mobile"} -->
-              <div class="wp-block-group is-style-show-mobile"><!-- wp:post-terms {"term":"post_tag"} /--></div>
-              <!-- /wp:group -->
-
-              <!-- wp:spacer {"height":"1em","width":"0px","style":{"layout":{}}} -->
-              <div style="height:1em;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-              <!-- /wp:spacer -->
-
-              <!-- wp:post-date /-->
-
-              <!-- wp:post-title {"level":4,"isLink":true,"className":"wp-block-heading"} /-->
-
-              <!-- wp:post-excerpt {"moreText":"Més informació"} /-->
-            </div>
-            <!-- /wp:group -->
-
-            <!-- wp:spacer {"height":"3rem"} -->
-            <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
-            <!-- /wp:spacer -->
-          </article>
-          <!-- /wp:group -->
+    <div class="wp-block-group is-style-horizontal-padded is-style-show-tablet-desktop">
+      <!-- wp:group {"layout":{"type":"constrained"}} -->
+      <div class="wp-block-group">
+        <!-- wp:query {"queryId":3,"query":{"perPage":3,"pages":"1","offset":0,"postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"className":"ce-cover-query","layout":{"type":"default"}} -->
+        <div class="wp-block-query ce-cover-query">
+          <!-- wp:post-template -->
+          <!-- wp:pattern {"slug":"ce-pattern/post-card"} -->
           <!-- /wp:post-template -->
         </div>
         <!-- /wp:query -->
@@ -1214,47 +1203,15 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"className":"is-style-show-mobile","layout":{"type":"default"}} -->
-    <div class="wp-block-group is-style-show-mobile"><!-- wp:ce-block/slider {"autoPlay":true} -->
-      <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay><!-- wp:group {"lock":{"remove":true,"move":true},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
-        <div class="wp-block-group ce-block-slider-wrapper"><!-- wp:query {"queryId":4,"query":{"perPage":3,"pages":"1","offset":0,"postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"className":"ce-cover-slider-query","layout":{"type":"default"}} -->
-          <div class="wp-block-query ce-cover-slider-query"><!-- wp:post-template -->
-            <!-- wp:group {"tagName":"article","backgroundColor":"base","className":"is-style-no-padding ce-card ce-news-card","layout":{"type":"constrained"}} -->
-            <article class="wp-block-group is-style-no-padding ce-card ce-news-card has-base-background-color has-background"><!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
-
-              <!-- wp:spacer {"height":"40px"} -->
-              <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-              <!-- /wp:spacer -->
-
-              <!-- wp:group {"className":"ce-card-body","layout":{"type":"default"}} -->
-              <div class="wp-block-group ce-card-body"><!-- wp:group {"className":"is-style-show-desktop"} -->
-                <div class="wp-block-group is-style-show-desktop"><!-- wp:post-terms {"term":"post_tag"} /--></div>
-                <!-- /wp:group -->
-
-                <!-- wp:group {"className":"is-style-show-tablet"} -->
-                <div class="wp-block-group is-style-show-tablet"><!-- wp:post-terms {"term":"post_tag"} /--></div>
-                <!-- /wp:group -->
-
-                <!-- wp:group {"className":"is-style-show-mobile"} -->
-                <div class="wp-block-group is-style-show-mobile"><!-- wp:post-terms {"term":"post_tag"} /--></div>
-                <!-- /wp:group -->
-
-                <!-- wp:spacer {"height":"1em","width":"0px","style":{"layout":{}}} -->
-                <div style="height:1em;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-                <!-- /wp:spacer -->
-
-                <!-- wp:post-date /-->
-
-                <!-- wp:post-title {"level":4,"isLink":true,"className":"wp-block-heading"} /-->
-
-                <!-- wp:post-excerpt {"moreText":"Més informació"} /-->
-              </div>
-              <!-- /wp:group -->
-
-              <!-- wp:spacer {"height":"3rem"} -->
-              <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
-              <!-- /wp:spacer -->
-            </article>
-            <!-- /wp:group -->
+    <div class="wp-block-group is-style-show-mobile">
+      <!-- wp:ce-block/slider {"autoPlay":true} -->
+      <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay>
+        <!-- wp:group {"lock":{"remove":true,"move":true},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
+        <div class="wp-block-group ce-block-slider-wrapper">
+          <!-- wp:query {"queryId":4,"query":{"perPage":3,"pages":"1","offset":0,"postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]},"className":"ce-cover-slider-query","layout":{"type":"default"}} -->
+          <div class="wp-block-query ce-cover-slider-query">
+            <!-- wp:post-template -->
+            <!-- wp:pattern {"slug":"ce-pattern/post-card"} -->
             <!-- /wp:post-template -->
           </div>
           <!-- /wp:query -->
@@ -1348,7 +1305,8 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
-    <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"3rem"} -->
+    <div class="wp-block-group is-style-horizontal-padded">
+      <!-- wp:spacer {"height":"3rem"} -->
       <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
@@ -1361,7 +1319,8 @@
       <!-- /wp:paragraph -->
 
       <!-- wp:buttons -->
-      <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
+      <div class="wp-block-buttons">
+        <!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
         <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="/comunitats-energetiques/">Coneix la xarxa</a></div>
         <!-- /wp:button -->
       </div>
@@ -1378,9 +1337,12 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"primary","className":"is-style-no-padding","layout":{"type":"default"}} -->
-<section class="wp-block-group alignfull is-style-no-padding has-primary-background-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:group {"align":"full","className":"is-style-show-tablet-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
-  <div class="wp-block-group alignfull is-style-show-tablet-desktop"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-horizontal-padded" style="margin-top:0;margin-bottom:0"><!-- wp:spacer {"height":"6rem"} -->
+<section class="wp-block-group alignfull is-style-no-padding has-primary-background-color has-background" style="margin-top:0;margin-bottom:0">
+  <!-- wp:group {"align":"full","className":"is-style-show-tablet-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+  <div class="wp-block-group alignfull is-style-show-tablet-desktop">
+    <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-style-horizontal-padded" style="margin-top:0;margin-bottom:0">
+      <!-- wp:spacer {"height":"6rem"} -->
       <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
@@ -1397,7 +1359,8 @@
       <!-- /wp:spacer -->
 
       <!-- wp:buttons -->
-      <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
+      <div class="wp-block-buttons">
+        <!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
         <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button" href="/?page_id=213">Consulta les guies</a></div>
         <!-- /wp:button -->
       </div>
@@ -1410,9 +1373,13 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-no-padding","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-no-padding"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/guies-section-image.png","id":2132,"dimRatio":0,"minHeight":640,"minHeightUnit":"px","isDark":false,"className":"is-style-default","layout":{"type":"default"}} -->
-      <div class="wp-block-cover is-light is-style-default" style="min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2132" alt="" src="/wp-content/uploads/2023/07/guies-section-image.png" data-object-fit="cover" />
-        <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
+    <div class="wp-block-group is-style-no-padding">
+      <!-- wp:cover {"url":"/wp-content/uploads/2023/07/guies-section-image.png","id":2132,"dimRatio":0,"minHeight":640,"minHeightUnit":"px","isDark":false,"className":"is-style-default","layout":{"type":"default"}} -->
+      <div class="wp-block-cover is-light is-style-default" style="min-height:640px">
+        <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+        <img class="wp-block-cover__image-background wp-image-2132" alt="" src="/wp-content/uploads/2023/07/guies-section-image.png" data-object-fit="cover" />
+        <div class="wp-block-cover__inner-container">
+          <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
         </div>
@@ -1424,10 +1391,15 @@
   <!-- /wp:group -->
 
   <!-- wp:group {"align":"full","className":"is-style-show-mobile","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
-  <div class="wp-block-group alignfull is-style-show-mobile"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
-    <div class="wp-block-group is-style-no-padding"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/guies-section-image.png","id":2132,"dimRatio":0,"minHeight":430,"minHeightUnit":"px","isDark":false,"className":"is-style-default","layout":{"type":"default"}} -->
-      <div class="wp-block-cover is-light is-style-default" style="min-height:430px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2132" alt="" src="/wp-content/uploads/2023/07/guies-section-image.png" data-object-fit="cover" />
-        <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
+  <div class="wp-block-group alignfull is-style-show-mobile">
+    <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
+    <div class="wp-block-group is-style-no-padding">
+      <!-- wp:cover {"url":"/wp-content/uploads/2023/07/guies-section-image.png","id":2132,"dimRatio":0,"minHeight":430,"minHeightUnit":"px","isDark":false,"className":"is-style-default","layout":{"type":"default"}} -->
+      <div class="wp-block-cover is-light is-style-default" style="min-height:430px">
+        <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+        <img class="wp-block-cover__image-background wp-image-2132" alt="" src="/wp-content/uploads/2023/07/guies-section-image.png" data-object-fit="cover" />
+        <div class="wp-block-cover__inner-container">
+          <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
           <!-- /wp:paragraph -->
         </div>
@@ -1437,7 +1409,8 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"60%"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
-    <div class="wp-block-group is-style-horizontal-padded" style="margin-top:0;margin-bottom:0"><!-- wp:spacer {"height":"3rem","style":{"layout":{}}} -->
+    <div class="wp-block-group is-style-horizontal-padded" style="margin-top:0;margin-bottom:0">
+      <!-- wp:spacer {"height":"3rem","style":{"layout":{}}} -->
       <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
