@@ -1,0 +1,7 @@
+.wp-block-ce-block-slider[slidestoshow] .slick-slide > * {
+  margin: 2%;
+}
+
+.wp-block-ce-block-slider[slidestoshow="1"] .slick-slide > * {
+  margin: 0;
+}
