@@ -6,16 +6,18 @@
  * Categories: ce-pages
  * Viewport Width: 1500
  */
-
 ?>
 
 <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"base","className":"is-style-no-padding","layout":{"type":"default"}} -->
-<section class="wp-block-group alignfull is-style-no-padding has-base-background-color has-background"><!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<section class="wp-block-group alignfull is-style-no-padding has-base-background-color has-background">
+  <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
   <div class="wp-block-group is-style-show-desktop">
     <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"35%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
     <div class="wp-block-group is-style-no-padding">
       <!-- wp:cover {"url":"/wp-content/uploads/2023/07/ciutadania-cover.png","id":2543,"dimRatio":0,"minHeight":640,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover is-light" style="min-height:640px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2543" alt="" src="/wp-content/uploads/2023/07/ciutadania-cover.png" data-object-fit="cover" />
+      <div class="wp-block-cover is-light" style="min-height:640px">
+        <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+        <img class="wp-block-cover__image-background wp-image-2543" alt="" src="/wp-content/uploads/2023/07/ciutadania-cover.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container">
           <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
@@ -27,7 +29,8 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"65%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
-    <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem","style":{"layout":{}}} -->
+    <div class="wp-block-group is-style-horizontal-padded">
+      <!-- wp:spacer {"height":"6rem","style":{"layout":{}}} -->
       <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
@@ -48,10 +51,13 @@
   <!-- /wp:group -->
 
   <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
+  <div class="wp-block-group is-style-show-mobile-tablet">
+    <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
     <div class="wp-block-group is-style-no-padding">
       <!-- wp:cover {"url":"/wp-content/uploads/2023/07/ciutadania-cover.png","id":2543,"dimRatio":0,"minHeight":400,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover is-light" style="min-height:400px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2543" alt="" src="/wp-content/uploads/2023/07/ciutadania-cover.png" data-object-fit="cover" />
+      <div class="wp-block-cover is-light" style="min-height:400px">
+        <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+        <img class="wp-block-cover__image-background wp-image-2543" alt="" src="/wp-content/uploads/2023/07/ciutadania-cover.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container">
           <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
@@ -63,7 +69,8 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
-    <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"3rem","style":{"layout":{}}} -->
+    <div class="wp-block-group is-style-horizontal-padded">
+      <!-- wp:spacer {"height":"3rem"} -->
       <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
@@ -75,7 +82,7 @@
       <p class="has-medium-font-size">Consulta les nostres guies temàtiques per ajudar a conèixer millor què són les Comunitats Energètiques, elsseus objectius i funcionament, els principals serveis i casos reals inspiradors.</p>
       <!-- /wp:paragraph -->
 
-      <!-- wp:spacer {"height":"4rem","style":{"layout":{}}} -->
+      <!-- wp:spacer {"height":"4rem"} -->
       <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
     </div>
@@ -86,7 +93,8 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-no-padding","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull is-style-no-padding has-second-base-light-background-color has-background"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
+<section class="wp-block-group alignfull is-style-no-padding has-second-base-light-background-color has-background">
+  <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
   <div class="wp-block-group is-style-horizontal-padded">
     <!-- wp:spacer {"height":"6rem","className":"is-style-show-tablet-desktop"} -->
     <div style="height:6rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
@@ -109,10 +117,15 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"stretch"}} -->
-    <div class="wp-block-group is-style-show-desktop"><!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
-      <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-que-son-les-comunitats.png","id":2740,"dimRatio":0,"layout":{"type":"constrained"}} -->
-        <div class="wp-block-cover"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2740" alt="" src="/wp-content/uploads/2023/07/doc-que-son-les-comunitats.png" data-object-fit="cover" />
-          <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
+    <div class="wp-block-group is-style-show-desktop">
+      <!-- wp:group {"tagName":"article","style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"backgroundColor":"base","className":"is-style-no-padding ce-card","layout":{"type":"constrained","justifyContent":"left"}} -->
+      <article class="wp-block-group is-style-no-padding ce-card has-base-background-color has-background">
+        <!-- wp:cover {"url":"/wp-content/uploads/2023/07/doc-que-son-les-comunitats.png","id":2740,"dimRatio":0,"layout":{"type":"constrained"}} -->
+        <div class="wp-block-cover">
+          <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+          <img class="wp-block-cover__image-background wp-image-2740" alt="" src="/wp-content/uploads/2023/07/doc-que-son-les-comunitats.png" data-object-fit="cover" />
+          <div class="wp-block-cover__inner-container">
+            <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
             <p class="has-text-align-center has-large-font-size"></p>
             <!-- /wp:paragraph -->
           </div>
@@ -124,18 +137,24 @@
         <!-- /wp:spacer -->
 
         <!-- wp:group {"className":"is-style-horizontal-padded ce-card-body","layout":{"type":"default"}} -->
-        <div class="wp-block-group is-style-horizontal-padded ce-card-body"><!-- wp:buttons -->
-          <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"brand","textColor":"base","style":{"spacing":{"padding":{"left":"var:preset|spacing|40","right":"var:preset|spacing|40","top":"0","bottom":"0"}}}} -->
-            <div class="wp-block-button"><a class="wp-block-button__link has-base-color has-brand-background-color has-text-color has-background wp-element-button" style="padding-top:0;padding-right:var(--wp--preset--spacing--40);padding-bottom:0;padding-left:var(--wp--preset--spacing--40)">Guia 1</a></div>
+        <div class="wp-block-group is-style-horizontal-padded ce-card-body">
+          <!-- wp:buttons -->
+          <div class="wp-block-buttons">
+            <!-- wp:button {"backgroundColor":"brand","textColor":"base","style":{"spacing":{"padding":{"left":"var:preset|spacing|40","right":"var:preset|spacing|40","top":"0","bottom":"0"}}}} -->
+            <div class="wp-block-button">
+              <a class="wp-block-button__link has-base-color has-brand-background-color has-text-color has-background wp-element-button" style="padding-top:0;padding-right:var(--wp--preset--spacing--40);padding-bottom:0;padding-left:var(--wp--preset--spacing--40)">Guia 1</a>
+            </div>
             <!-- /wp:button -->
 
             <!-- wp:button {"backgroundColor":"main","textColor":"base","style":{"spacing":{"padding":{"left":"var:preset|spacing|40","right":"var:preset|spacing|40","top":"0","bottom":"0"}}}} -->
-            <div class="wp-block-button"><a class="wp-block-button__link has-base-color has-main-background-color has-text-color has-background wp-element-button" style="padding-top:0;padding-right:var(--wp--preset--spacing--40);padding-bottom:0;padding-left:var(--wp--preset--spacing--40)">Actualitzada</a></div>
+            <div class="wp-block-button">
+              <a class="wp-block-button__link has-base-color has-main-background-color has-text-color has-background wp-element-button" style="padding-top:0;padding-right:var(--wp--preset--spacing--40);padding-bottom:0;padding-left:var(--wp--preset--spacing--40)">Actualitzada</a>
+            </div>
             <!-- /wp:button -->
           </div>
           <!-- /wp:buttons -->
 
-          <!-- wp:spacer {"height":"1em","width":"0px","style":{"layout":{}}} -->
+          <!-- wp:spacer {"height":"1em","width":"0px"} -->
           <div style="height:1em;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
           <!-- /wp:spacer -->
 
@@ -150,8 +169,10 @@
         <!-- /wp:group -->
 
         <!-- wp:group {"className":"ce-card-footer is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-        <div class="wp-block-group ce-card-footer is-style-horizontal-padded"><!-- wp:buttons {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-          <div class="wp-block-buttons" style="margin-top:0;margin-bottom:0"><!-- wp:button {"backgroundColor":"brand","textColor":"base"} -->
+        <div class="wp-block-group ce-card-footer is-style-horizontal-padded">
+          <!-- wp:buttons {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+          <div class="wp-block-buttons" style="margin-top:0;margin-bottom:0">
+            <!-- wp:button {"backgroundColor":"brand","textColor":"base"} -->
             <div class="wp-block-button"><a class="wp-block-button__link has-base-color has-brand-background-color has-text-color has-background wp-element-button">Descarregar guia</a></div>
             <!-- /wp:button -->
           </div>
