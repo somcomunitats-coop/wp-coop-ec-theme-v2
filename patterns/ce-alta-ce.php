@@ -10,8 +10,8 @@
 ?>
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
 <section class="wp-block-group alignfull is-style-no-padding">
-  <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"90%"}},"className":"is-style-show-desktop","layout":{"type":"default"}} -->
-  <div class="wp-block-group is-style-show-desktop">
+  <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"90%"}},"className":"is-style-show-tablet-desktop","layout":{"type":"default"}} -->
+  <div class="wp-block-group is-style-show-tablet-desktop">
     <!-- wp:cover {"url":"/wp-content/uploads/2023/07/Vectorcoverform.png","id":2480,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
     <div class="wp-block-cover is-light" style="margin-top:0;margin-bottom:0;min-height:100%">
       <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
@@ -52,7 +52,7 @@
         <p class="has-medium-font-size">A través d’aquest formulari podeu sol·licitar l’adhesió de la vostra comunitat energètica a la plataforma de Som Comunitats<br></p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:gravityforms/form {"formId":"6","title":false,"description":false,"ajax":true,"inputPrimaryColor":"#204ce5"} /-->
+        <!-- wp:gravityforms/form {"formId":"7","title":false,"description":false,"ajax":true,"inputPrimaryColor":"#204ce5"} /-->
 
         <!-- wp:spacer {"height":"2rem","className":"is-style-show-mobile","style":{"layout":{}}} -->
         <div style="height:2rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile"></div>
@@ -183,12 +183,12 @@
 
 <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-no-padding","layout":{"type":"default"}} -->
 <section class="wp-block-group alignfull is-style-no-padding has-second-base-light-background-color has-background">
-  <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+  <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
   <div class="wp-block-group is-style-show-desktop">
     <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"40%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
     <div class="wp-block-group is-style-no-padding">
-      <!-- wp:cover {"url":"/wp-content/uploads/2023/07/amparos_Mesa-de-trabajo-1-11.png","id":2483,"dimRatio":0,"minHeight":720,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover is-light" style="min-height:720px">
+      <!-- wp:cover {"url":"/wp-content/uploads/2023/07/amparos_Mesa-de-trabajo-1-11.png","id":2483,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover is-light" style="min-height:100%">
         <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
         <img class="wp-block-cover__image-background wp-image-2483" alt="" src="/wp-content/uploads/2023/07/amparos_Mesa-de-trabajo-1-11.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container">
