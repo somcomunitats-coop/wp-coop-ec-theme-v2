@@ -52,7 +52,7 @@
         <p class="has-medium-font-size">A través d’aquest formulari podeu sol·licitar l’adhesió de la vostra comunitat energètica a la plataforma de Som Comunitats<br></p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:gravityforms/form {"formId":"11","title":false,"description":false,"ajax":true,"inputPrimaryColor":"#204ce5"} /-->
+        <!-- wp:gravityforms/form {"formId":"6","title":false,"description":false,"ajax":true,"inputPrimaryColor":"#204ce5"} /-->
 
         <!-- wp:spacer {"height":"2rem","className":"is-style-show-mobile","style":{"layout":{}}} -->
         <div style="height:2rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile"></div>
