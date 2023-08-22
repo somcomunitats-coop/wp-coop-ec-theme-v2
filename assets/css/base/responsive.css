@@ -98,7 +98,7 @@ body .is-style-hidden {
 }
 
 /* desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   body .is-style-show-mobile {
     display: none !important;
   }
