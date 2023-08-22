@@ -1047,8 +1047,8 @@
       <div class="wp-block-column is-vertically-aligned-center is-style-default">
         <!-- wp:ce-block/slider -->
         <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay>
-          <!-- wp:query {"queryId":2,"query":{"perPage":"9","pages":"1","offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
-          <div class="wp-block-query">
+          <!-- wp:query {"className":"ce-query","queryId":2,"query":{"perPage":"9","pages":"1","offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
+          <div class="wp-block-query ce-query">
             <!-- wp:post-template -->
             <!-- wp:pattern {"slug":"ce-pattern/post-card"} /-->
             <!-- /wp:post-template -->
@@ -1105,8 +1105,8 @@
     <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay>
       <!-- wp:group {"className":"ce-block-slider-wrapper","layout":{"type":"flex","flexWrap":"nowrap"}} -->
       <div class="wp-block-group ce-block-slider-wrapper">
-        <!-- wp:query {"queryId":2,"query":{"perPage":"9","pages":"1","offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
-        <div class="wp-block-query">
+        <!-- wp:query {"className","ce-query","queryId":2,"query":{"perPage":"9","pages":"1","offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[]}} -->
+        <div class="wp-block-query ce-query">
           <!-- wp:post-template -->
           <!-- wp:pattern {"slug":"ce-pattern/post-card"} /-->
           <!-- /wp:post-template -->
