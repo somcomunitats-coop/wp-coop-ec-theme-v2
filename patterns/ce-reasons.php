@@ -40,7 +40,7 @@
         <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:150px">
           <!-- wp:image {"id":2676,"width":100,"height":100,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
           <figure class="wp-block-image size-full is-resized">
-            <img src="http://wordpress.local/wp-content/uploads/2023/07/impuls-cover-thumbnail-1.png" alt="" class="wp-image-2676" style="object-fit:contain" width="100" height="100" />
+            <img src="/wp-content/uploads/2023/07/impuls-cover-thumbnail-1.png" alt="" class="wp-image-2676" style="object-fit:contain" width="100" height="100" />
           </figure>
           <!-- /wp:image -->
         </div>
@@ -142,7 +142,7 @@
         <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:150px">
           <!-- wp:image {"id":2670,"width":100,"height":100,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
           <figure class="wp-block-image size-full is-resized">
-            <img src="http://wordpress.local/wp-content/uploads/2023/07/map-location-thumbnail.png" alt="" class="wp-image-2670" style="object-fit:contain" width="100" height="100" />
+            <img src="/wp-content/uploads/2023/07/map-location-thumbnail.png" alt="" class="wp-image-2670" style="object-fit:contain" width="100" height="100" />
           </figure>
           <!-- /wp:image -->
         </div>
@@ -176,7 +176,7 @@
         <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:150px">
           <!-- wp:image {"id":2714,"width":100,"height":100,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
           <figure class="wp-block-image size-full is-resized">
-            <img src="http://wordpress.local/wp-content/uploads/2023/07/democratitza-cover-thumbnail-1.png" alt="" class="wp-image-2714" style="object-fit:contain" width="100" height="100" />
+            <img src="/wp-content/uploads/2023/07/democratitza-cover-thumbnail-1.png" alt="" class="wp-image-2714" style="object-fit:contain" width="100" height="100" />
           </figure>
           <!-- /wp:image -->
         </div>
@@ -210,7 +210,7 @@
         <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:150px">
           <!-- wp:image {"id":2712,"width":100,"height":100,"scale":"contain","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
           <figure class="wp-block-image size-full is-resized">
-            <img src="http://wordpress.local/wp-content/uploads/2023/07/digital-tool-thumbnail.png" alt="" class="wp-image-2712" style="object-fit:contain" width="100" height="100" />
+            <img src="/wp-content/uploads/2023/07/digital-tool-thumbnail.png" alt="" class="wp-image-2712" style="object-fit:contain" width="100" height="100" />
           </figure>
           <!-- /wp:image -->
         </div>
