@@ -1036,12 +1036,12 @@
 
 <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding"} -->
 <section class="wp-block-group alignfull is-style-no-padding">
-  <!-- wp:group {"align":"full","className":"is-style-show-tablet-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+  <!-- wp:group {"align":"full","className":"is-style-show-tablet-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
   <div class="wp-block-group alignfull is-style-show-tablet-desktop">
     <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"30%"}},"layout":{"type":"constrained"}} -->
     <div class="wp-block-group">
-      <!-- wp:cover {"url":"/wp-content/uploads/2023/07/faqs.png","id":2585,"dimRatio":0,"minHeight":920,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
-      <div class="wp-block-cover is-light" style="min-height:920px">
+      <!-- wp:cover {"url":"/wp-content/uploads/2023/07/faqs.png","id":2585,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"layout":{"type":"constrained"}} -->
+      <div class="wp-block-cover is-light" style="min-height:100%">
         <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
         <img class="wp-block-cover__image-background wp-image-2585" alt="" src="/wp-content/uploads/2023/07/faqs.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container">
