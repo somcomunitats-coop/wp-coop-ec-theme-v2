@@ -90,8 +90,8 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"section","align":"full","className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull is-style-horizontal-padded">
+<!-- wp:group {"tagName":"section","className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+<section class="wp-block-group is-style-horizontal-padded">
   <!-- wp:spacer {"height":"6rem","className":"is-style-show-tablet-desktop"} -->
   <div style="height:6rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
   <!-- /wp:spacer -->
