@@ -411,10 +411,10 @@
   <div class="wp-block-group">
     <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"70%"}},"className":"is-style-show-desktop","layout":{"type":"default"}} -->
     <div class="wp-block-group is-style-show-desktop">
-      <!-- wp:cover {"url":"/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png","id":2545,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-default","layout":{"type":"default"}} -->
+      <!-- wp:cover {"url":"/wp-content/uploads/2023/08/taula-treball.png","id":2545,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-default","layout":{"type":"default"}} -->
       <div class="wp-block-cover is-light is-style-default" style="margin-top:0;margin-bottom:0;min-height:100%">
         <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
-        <img class="wp-block-cover__image-background wp-image-2545" alt="" src="/wp-content/uploads/2023/07/importancia-comunitat-per-mi.png" data-object-fit="cover" />
+        <img class="wp-block-cover__image-background wp-image-2545" alt="" src="/wp-content/uploads/2023/08/taula-treball.png" data-object-fit="cover" />
         <div class="wp-block-cover__inner-container">
           <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
           <p class="has-text-align-center has-large-font-size"></p>
