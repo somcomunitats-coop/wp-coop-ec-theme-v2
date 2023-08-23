@@ -116,7 +116,7 @@
           <!-- /wp:list-item -->
 
           <!-- wp:list-item {"className":"has-text-align-right"} -->
-          <li class="has-text-align-right"><a href="/recursos/#faqs">Centre d'ajuda</a></li>
+          <li class="has-text-align-right"><a href="/contacte/">Contacta'ns</a></li>
           <!-- /wp:list-item -->
 
           <!-- wp:list-item {"className":"has-text-align-right"} -->
@@ -240,9 +240,13 @@
     <!-- /wp:group -->
 
     <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-show-desktop"><!-- wp:buttons {"className":"is-style-default","layout":{"type":"flex","verticalAlignment":"center","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"fontSize":"large"} -->
-      <div class="wp-block-buttons has-custom-font-size is-style-default has-large-font-size" style="margin-top:0;margin-bottom:0"><!-- wp:button {"textAlign":"center","backgroundColor":"primary","textColor":"typography","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","right":"var:preset|spacing|60","top":"1rem","bottom":"1rem"}},"border":{"radius":"0px"}},"className":"is-style-fill is-style-no-margin"} -->
-        <div class="wp-block-button is-style-fill is-style-no-margin"><a class="wp-block-button__link has-typography-color has-primary-background-color has-text-color has-background has-text-align-center wp-element-button" href="/alta-comunitat/" style="border-radius:0px;padding-top:1rem;padding-right:var(--wp--preset--spacing--60);padding-bottom:1rem;padding-left:var(--wp--preset--spacing--60)"><strong>Suma't-hi</strong></a></div>
+    <div class="wp-block-group is-style-show-desktop">
+      <!-- wp:buttons {"className":"is-style-default","layout":{"type":"flex","verticalAlignment":"center","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"fontSize":"large"} -->
+      <div class="wp-block-buttons has-custom-font-size is-style-default has-large-font-size" style="margin-top:0;margin-bottom:0">
+        <!-- wp:button {"textAlign":"center","backgroundColor":"primary","textColor":"typography","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","right":"var:preset|spacing|60","top":"1rem","bottom":"1rem"}},"border":{"radius":"0px"}},"className":"is-style-fill is-style-no-margin"} -->
+        <div class="wp-block-button is-style-fill is-style-no-margin">
+          <a class="wp-block-button__link has-typography-color has-primary-background-color has-text-color has-background has-text-align-center wp-element-button" href="/alta-nova-comunitat/" style="border-radius:0px;padding-top:1rem;padding-right:var(--wp--preset--spacing--60);padding-bottom:1rem;padding-left:var(--wp--preset--spacing--60)"><strong>Suma't-hi</strong></a>
+        </div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
@@ -252,10 +256,15 @@
   <!-- /wp:group -->
 
   <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"className":"is-style-no-padding is-style-show-mobile-tablet","layout":{"type":"constrained","justifyContent":"left"}} -->
-  <div class="wp-block-group is-style-no-padding is-style-show-mobile-tablet"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained"}} -->
-    <div class="wp-block-group"><!-- wp:buttons {"className":"is-style-default","layout":{"type":"flex","justifyContent":"stretch","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"large"} -->
-      <div class="wp-block-buttons has-custom-font-size is-style-default has-large-font-size" style="margin-top:0;margin-bottom:0"><!-- wp:button {"textAlign":"center","backgroundColor":"primary","textColor":"typography","width":100,"style":{"spacing":{"padding":{"left":"0","right":"0","top":"1rem","bottom":"1rem"}},"border":{"radius":"0px"}},"className":"is-style-fill is-style-no-margin"} -->
-        <div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill is-style-no-margin"><a class="wp-block-button__link has-typography-color has-primary-background-color has-text-color has-background has-text-align-center wp-element-button" href="/alta-comunitat/" style="border-radius:0px;padding-top:1rem;padding-right:0;padding-bottom:1rem;padding-left:0"><strong>Suma't-hi</strong></a></div>
+  <div class="wp-block-group is-style-no-padding is-style-show-mobile-tablet">
+    <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group">
+      <!-- wp:buttons {"className":"is-style-default","layout":{"type":"flex","justifyContent":"stretch","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"large"} -->
+      <div class="wp-block-buttons has-custom-font-size is-style-default has-large-font-size" style="margin-top:0;margin-bottom:0">
+        <!-- wp:button {"textAlign":"center","backgroundColor":"primary","textColor":"typography","width":100,"style":{"spacing":{"padding":{"left":"0","right":"0","top":"1rem","bottom":"1rem"}},"border":{"radius":"0px"}},"className":"is-style-fill is-style-no-margin"} -->
+        <div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill is-style-no-margin">
+          <a class="wp-block-button__link has-typography-color has-primary-background-color has-text-color has-background has-text-align-center wp-element-button" href="/alta-nova-comunitat/" style="border-radius:0px;padding-top:1rem;padding-right:0;padding-bottom:1rem;padding-left:0"><strong>Suma't-hi</strong></a>
+        </div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->

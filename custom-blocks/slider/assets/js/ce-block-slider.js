@@ -30,7 +30,7 @@
         autoplaySpeed: 5e3,
         initialSlide: Math.max(0, Math.min(slideCount, initialSlide)),
         appendArrows: jQuery(arrowsWrapper),
-        lazyLoad: "ondemand",
+        // lazyLoad: "ondemand",
         adaptiveHeight: true,
       });
     });

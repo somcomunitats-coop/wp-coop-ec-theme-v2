@@ -1,0 +1,17 @@
+#experiencies .wp-block-column .wp-block-grup {
+  position: relative;
+}
+
+#experiencies .wp-block-column .wp-block-image {
+  margin-top: -40px !important;
+}
+
+#comunities .wp-block-ce-block-slider[slidestoshow="1"] .slick-slider {
+  max-width: 450px;
+  margin: auto;
+}
+
+#comunities .wp-block-ce-block-slider .slick-arrow {
+  background-color: var(--wp--preset--color--primary);
+  background-blend-mode: color-dodge;
+}

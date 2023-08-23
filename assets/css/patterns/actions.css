@@ -1,0 +1,32 @@
+.ce-query .ce-post-card .wp-block-post-terms {
+  display: flex;
+}
+
+.ce-query .ce-post-card .wp-block-post-terms a {
+  font-size: 0px;
+  height: 2rem;
+  display: block;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 0.25rem;
+  flex-basis: 2rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.ce-query .ce-post-card .wp-block-post-terms a {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ce-query .ce-post-card .wp-block-post-terms a[href*="generacio-renovable"] {
+  background-image: url("/wp-content/themes/wp-coop-ce-theme-v-2/img/accions/generacio-renovable.png");
+}
+
+.ce-query .ce-post-card .wp-block-post-terms a[href*="eficiencia-energetica"] {
+  background-image: url("/wp-content/themes/wp-coop-ce-theme-v-2/img/accions/eficiencia-energetica.png");
+}
+
+.ce-query .ce-post-card .wp-block-post-terms a[href*="mobilitat-sostenible"] {
+  background-image: url("/wp-content/themes/wp-coop-ce-theme-v-2/img/accions/mobilitat-sostenible.png");
+}

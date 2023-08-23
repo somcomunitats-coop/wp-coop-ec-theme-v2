@@ -13,6 +13,10 @@ article.wp-block-group.ce-card > .wp-block-group.ce-card-body {
   flex-direction: column;
 }
 
+article.wp-block-group.ce-card > .wp-block-group.ce-card-body .wp-block-buttons a {
+  pointer-events: none;
+}
+
 article.wp-block-group.ce-card > .wp-block-group.ce-card-body .wp-block-post-excerpt {
   flex: 1;
   display: flex;
@@ -38,6 +42,7 @@ article.wp-block-group.ce-card .wp-block-post-excerpt__more-link {
   background-color: var(--wp--preset--color--brand);
 }
 
+article.wp-block-group.ce-card > .wp-block-group.ce-card-header,
 article.wp-block-group.ce-card > .wp-block-group.ce-card-body,
 article.wp-block-group.ce-card > .wp-block-group.ce-card-footer {
   padding: 0 2rem;

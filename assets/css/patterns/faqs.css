@@ -7,6 +7,12 @@
   border: none;
 }
 
+.wp-block-getwid-accordion.ce-faqs 
+.ui-accordion-header{
+  border-bottom: 1px solid var(--wp--preset--color--second-base);
+  padding: var(--wp--custom--spacing--sxxs) 0;
+}
+
 .wp-block-getwid-accordion.ce-faqs.has-background
   .ui-accordion-header.ui-accordion-header-collapsed {
   background-color: var(--wp--preset--color--second-base-ultra-light);

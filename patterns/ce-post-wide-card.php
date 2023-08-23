@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Title: CE News Wide Card.
- * Slug: ce-pattern/news-wide-card
+ * Title: CE Post Wide Card.
+ * Slug: ce-pattern/post-wide-card
  * Categories: ce-pattern
  * Viewport Width: 1500
  */
 
 ?>
 
-<!-- wp:group {"tagName":"article","align":"wide","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"},"className":"ce-pattern-news-wide-card"} -->
-<article class="wp-block-group alignwide ce-wide-card ce-news-wide-card">
+<!-- wp:group {"tagName":"article","align":"wide","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"},"className":"ce-pattern-post-wide-card"} -->
+<article class="wp-block-group alignwide ce-wide-card ce-post-wide-card">
   <!-- wp:group {"align":"wide","style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
   <div class="wp-block-group alignwide is-style-no-padding">
     <!-- wp:post-featured-image {"isLink":true,"height":"100%","width":"100%","align":"left"} /-->

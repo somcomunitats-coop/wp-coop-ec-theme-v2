@@ -1,0 +1,89 @@
+<?php
+
+/*
+ * Title: CE Lega
+ * Slug: ce-page/legal
+ * Categories: ce-page
+ * Viewport Width: 1500
+ */
+?>
+
+<!-- wp:group {"align":"full","backgroundColor":"main","className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-horizontal-padded has-main-background-color has-background"><!-- wp:spacer {"height":"3rem"} -->
+  <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- /wp:spacer -->
+
+  <!-- wp:heading {"textAlign":"center","textColor":"base"} -->
+  <h2 class="wp-block-heading has-text-color has-base-color has-text-align-center">Política de privacitat</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:group {"textColor":"base","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"},"fontSize":"medium"} -->
+  <div class="wp-block-group has-base-color has-text-color has-medium-font-size"><!-- wp:paragraph -->
+    <p>Última versió:</p>
+    <!-- /wp:paragraph -->
+
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"0.5em","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+
+    <!-- wp:post-date {"displayType":"modified"} /-->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:spacer {"height":"3rem"} -->
+  <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
+  <!-- /wp:spacer -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:spacer {"height":"4rem"} -->
+<div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:paragraph -->
+<p>La confidencialitat i la seguretat són valors primordials de SOM ENERGIA i, en conseqüència, assumim el compromís de garantir la privacitat de l’usuari en tot moment i de no recaptar informació innecessària. Tot seguit, us proporcionem tota la informació necessària sobre la nostra política de privacitat en relació amb les dades personals que recaptem, explicant el següent:· Qui és el responsable del tractament de les vostres dades.· Per a quines finalitats recaptem les dades que us sol·licitem.· Quina és la legitimació per al seu tractament.· Durant quant de temps les conservem.· A quins destinataris es comuniquen les vostres dades.· Quins són els vostres drets.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4,"textColor":"brand"} -->
+<h4 class="wp-block-heading has-brand-color has-text-color">Responsables del tractament</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>SOM ENERGIA, SCCL (F55091367)C/ Pic de Peguera, nº1117003 de Girona <a href="mailto:info@somenergia.coop">info@somenergia.coop</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Delegat de protecció de dades: Lant Abogados (Lant Advisors, SLP) <a href="mailto:somenergia@delegado-datos.com">somenergia@delegado-datos.com</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Tenint en compte que en aquesta pàgina web (en endavant, la “Web”) participen i col·laboren activament les següents cooperatives: COOPDEVS TREBALL SCCL, EPI ENERGIA POR LA IGUALDAD SCCL, SOM MOBILITAT, SCCL, SUNO ENGINYERIA DE SERVEIS ENERGÈTICS SCCL, i TANDEM GO SCCL., és possible que determinats serveis o accions es realitzin directament amb alguna de les cooperatives que, seran els responsables del tractament de les seves dades i hauran d’acceptar les seves condicions de privacitat específique</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4,"textColor":"brand"} -->
+<h4 class="wp-block-heading has-brand-color has-text-color">Finalitats, legitimació i conservació dels tractaments de les dades</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>FORMULARIS DE REGISTRE COMUNITAT· </strong> Finalitat: Formar part de una comunitat energètica; oferir seguiments energètics; serveis als integrants la comunitat (alta socis, baixa, rebuts, quotes, informació consum real i energia generada, etc.); mantenir informades a les persones que s’inscriguin a una comunitat energètica en tràmits; enviar-li comunicacions dels nostres productes, serveis i activitats, inclòs per mitjans electrònics.· Legitimació: RGPD 6.1.b – Adhesió a la comunitat energètica, 6.1.f – interès legítim en mantenir informats als socis/abonats sobre els productes, serveis i activitats de les cooperatives. · Conservació: Mentre duri la relació contractual i, un cop s’acabi, durant els terminis de conservació exigits legalment per atendre eventuals responsabilitats. Enviaments comercials: fins que acabi la relació o fins que en sol·licitis la baixa.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>FORMULARI DE CONTACTE·</strong> Finalitat: Facilitar-li un mitjà perquè pugui posar-se en contacte amb nosaltres i contestar a les seves sol·licituds d’informació, així com enviar-li comunicacions dels nostres productes, serveis i activitats, inclusivament per mitjans electrònics, si marca la casella d’acceptació.· Legitimació: El consentiment de l’usuari en sol·licitar-nos informació a través del nostre formulari de contactes i en marcar la casella d’acceptació d’enviament d’informació.· Conservació: Una vegada resolta la seva sol·licitud per mitjà del nostre formulari o contestada per correu electrònic, si no ha generat un nou tractament, i en cas d’haver acceptat rebre enviaments comercials, fins que sol·liciti la baixa d’aquests.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>ENVIAMENT DE CORREUS ELECTRÒNICS ·</strong> Finalitat: Contestar les seves sol·licituds d’informació, atendre les seves peticions i contestar les seves consultes o dubtes. · Legitimació: RGPD 6.1.a – El consentiment de la persona usuària al sol·licitar-nos informació a través de la direcció de correu electrònic.· Conservació: Una cop solucionada i/o contestada la seva petició per correu electrònic, si no ha generat un nou tractament.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>SUBSCRIPCIÓ A LA NOSTRA NEWSLETTER ·</strong> Finalitat: Enviar-li el nostre butlletí, newsletter i comunicacions informatives i publicitàries amb els articles del blog, l’avís d’activitats per mitjans electrònics.· Legitimació: RGPD 6.1.a – El consentiment de l’usuari al subscriure’s a l’enviament d’informació a través del nostre formulari.· Conservació: Fins que la persona interessada revoqui el consentiment i sol·liciti la baixa de la subscripció.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Obligació de facilitar-nos les vostres dades personals i conseqüències de no fer-ho. El subministrament de dades personals requereix una edat mínima de 18 anys o, si escau, disposar de prou capacitat jurídica per contractar. Les dades personals sol·licitades són necessàries per gestionar les sol·licituds i/o prestar els serveis que es puguin contractar, per la qual cosa, si no ens les faciliteu, no us podrem atendre correctament ni prestar-vos el servei que heu sol·licitat.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"5rem"} -->
+<div style="height:5rem" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->

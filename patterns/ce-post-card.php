@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Title: CE News Card.
- * Slug: ce-pattern/news-card
+ * Title: CE Post Card.
+ * Slug: ce-pattern/post-card
  * Categories: ce-pattern
  * Viewport Width: 1500
  */
 
 ?>
 
-<!-- wp:group {"tagName":"article","backgroundColor":"base","className":"is-style-no-padding ce-card ce-news-card","layout":{"type":"constrained"}} -->
-<article class="wp-block-group is-style-no-padding has-base-background-color has-background ce-card ce-news-card">
+<!-- wp:group {"tagName":"article","backgroundColor":"base","className":"is-style-no-padding ce-card ce-post-card","layout":{"type":"constrained"}} -->
+<article class="wp-block-group is-style-no-padding has-base-background-color has-background ce-card ce-post-card">
   <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
 
   <!-- wp:spacer {"height":"40px"} -->

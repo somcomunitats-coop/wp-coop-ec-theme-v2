@@ -1,0 +1,23 @@
+.wp-block-ce-block-slider .ce-post-card .wp-block-post-featured-image {
+  height: 280px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.wp-block-ce-block-slider .ce-post-card .wp-block-post-featured-image img {
+  height: 100%;
+}
+
+.wp-block-ce-block-slider .ce-post-card .wp-block-post-excerpt__excerpt {
+  max-height: 96px;
+  overflow: hidden;
+  white-space: break-spaces;
+}
+
+.wp-block-ce-block-slider[slidestoshow] .slick-slide > * {
+  margin: 2%;
+}
+
+.wp-block-ce-block-slider[slidestoshow="1"] .slick-slide > * {
+  margin: 0;
+}
