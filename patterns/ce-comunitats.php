@@ -459,12 +459,19 @@
   <!-- /wp:spacer -->
 
   <!-- wp:columns -->
-  <div class="wp-block-columns"><!-- wp:column -->
-    <div class="wp-block-column"><!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-      <article class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"120px"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
-        <div class="wp-block-group is-style-no-padding"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/impuls-cover-thumbnail-1.png","id":2381,"dimRatio":0,"minHeight":85,"contentPosition":"center center","isDark":false,"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-image-center"} -->
-          <div class="wp-block-cover is-light is-style-image-center" style="min-height:85px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2381" alt="" src="/wp-content/uploads/2023/07/impuls-cover-thumbnail-1.png" data-object-fit="cover" />
-            <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+  <div class="wp-block-columns">
+    <!-- wp:column -->
+    <div class="wp-block-column">
+      <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
+      <article class="wp-block-group">
+        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"120px"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
+        <div class="wp-block-group is-style-no-padding">
+          <!-- wp:cover {"url":"/wp-content/uploads/2023/07/impuls-cover-thumbnail-1.png","id":2381,"dimRatio":0,"minHeight":85,"contentPosition":"center center","isDark":false,"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-image-center"} -->
+          <div class="wp-block-cover is-light is-style-image-center" style="min-height:85px">
+            <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+            <img class="wp-block-cover__image-background wp-image-2381" alt="" src="/wp-content/uploads/2023/07/impuls-cover-thumbnail-1.png" data-object-fit="cover" />
+            <div class="wp-block-cover__inner-container">
+              <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
               <p class="has-text-align-center has-large-font-size"></p>
               <!-- /wp:paragraph -->
             </div>
@@ -478,7 +485,8 @@
         <!-- /wp:spacer -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"100%"}},"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical"}} -->
-        <div class="wp-block-group is-style-no-padding"><!-- wp:heading {"level":4} -->
+        <div class="wp-block-group is-style-no-padding">
+          <!-- wp:heading {"level":4} -->
           <h4 class="wp-block-heading">Impulsar la transició energètica</h4>
           <!-- /wp:heading -->
 
@@ -495,10 +503,15 @@
       <!-- /wp:spacer -->
 
       <!-- wp:group {"tagName":"article","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
-      <article class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"120px"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
-        <div class="wp-block-group is-style-no-padding"><!-- wp:cover {"url":"/wp-content/uploads/2023/07/moviment-cover-thumbnail-2.png","id":2385,"dimRatio":0,"minHeight":85,"contentPosition":"center center","isDark":false,"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-image-center"} -->
-          <div class="wp-block-cover is-light is-style-image-center" style="min-height:85px"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-2385" alt="" src="/wp-content/uploads/2023/07/moviment-cover-thumbnail-2.png" data-object-fit="cover" />
-            <div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+      <article class="wp-block-group">
+        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"120px"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
+        <div class="wp-block-group is-style-no-padding">
+          <!-- wp:cover {"url":"/wp-content/uploads/2023/07/moviment-cover-thumbnail.png","id":2385,"dimRatio":0,"minHeight":85,"contentPosition":"center center","isDark":false,"style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-image-center"} -->
+          <div class="wp-block-cover is-light is-style-image-center" style="min-height:85px">
+            <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+            <img class="wp-block-cover__image-background wp-image-2385" alt="" src="/wp-content/uploads/2023/07/moviment-cover-thumbnail.png" data-object-fit="cover" />
+            <div class="wp-block-cover__inner-container">
+              <!-- wp:paragraph {"align":"center","fontSize":"large"} -->
               <p class="has-text-align-center has-large-font-size"></p>
               <!-- /wp:paragraph -->
             </div>
@@ -512,7 +525,8 @@
         <!-- /wp:spacer -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"100%"}},"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical"}} -->
-        <div class="wp-block-group is-style-no-padding"><!-- wp:heading {"level":4} -->
+        <div class="wp-block-group is-style-no-padding">
+          <!-- wp:heading {"level":4} -->
           <h4 class="wp-block-heading">Participar d’un moviment social</h4>
           <!-- /wp:heading -->
 
