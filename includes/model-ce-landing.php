@@ -37,7 +37,7 @@ function wpct_create_model_landing()
             'rewrite' => [
                 'slug' => 'ce'
             ],
-            'taxonomies' => ['category', 'post_tag']
+            'taxonomies' => ['ce-service', 'ce-status', 'ce-shape']
             // 'map_meta_cap' => true,
             // 'capabilities' => [],
             // 'map_meta_cap' => true
