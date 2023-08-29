@@ -1,8 +1,9 @@
-.ce-landing-template.single .ce-landing-breadcrumb {
+.ce-landing-template-default.single .ce-landing-breadcrumb {
   position: relative;
+  cursor: pointer;
 }
 
-.ce-landing-template.single .ce-landing-breadcrumb::before {
+.ce-landing-template-default.single .ce-landing-breadcrumb::before {
   position: absolute;
   left: 0px;
   top: 50%;
@@ -11,44 +12,70 @@
   color: var(--wp--preset--color--brand);
 }
 
-.ce-landing-template.single
+.ce-landing-template-default.single ul.ce-landing-eactions {
+  list-style: none;
+}
+
+.ce-landing-template-default.single ul.ce-landing-eactions li {
+  margin-left: 0;
+}
+
+.ce-landing-template-default.single ul.ce-landing-eactions li i,
+.ce-landing-template-default.single ul.ce-landing-eactions li p {
+  display: inline;
+}
+
+.ce-landing-template-default.single
   .ce-landing-share-pannel
   .wp-block-button
   .wp-block-button__link {
   margin-top: 1em;
 }
 
-.ce-landing-template.single .ce-landing-contact-section a {
+.ce-landing-template-default.single .ce-landing-contact-section a {
   color: var(--wp--preset--color--typography);
   text-decoration: underline;
 }
 
-.ce-landing-template.single .ce-landing-contact-section form .gfield_consent_description {
+.ce-landing-template-default.single
+  .ce-landing-contact-section
+  form
+  .gfield_consent_description {
   overflow-y: auto;
 }
 
-.ce-landing-template.single .ce-landing-contact-section .gform_button[type="submit"] {
+.ce-landing-template-default.single
+  .ce-landing-contact-section
+  .gform_button[type="submit"] {
   background-color: var(--wp--preset--color--main);
   color: var(--wp--preset--color--primary);
   border-radius: 0px;
 }
 
-.ce-landing-template.single .ce-landing-newsletter-form form {
+.ce-landing-template-default.single .ce-landing-newsletter-form form {
   position: relative;
 }
 
-.ce-landing-template.single .ce-landing-newsletter-form form .ginput_container input {
+.ce-landing-template-default.single
+  .ce-landing-newsletter-form
+  form
+  .ginput_container
+  input {
   border-radius: 0px;
 }
 
-.ce-landing-template.single .ce-landing-newsletter-form .gform_button[type="submit"] {
+.ce-landing-template-default.single
+  .ce-landing-newsletter-form
+  .gform_button[type="submit"] {
   position: absolute;
   top: 0px;
   right: 0px;
   z-index: 10;
 }
 
-.ce-landing-template.single .ce-landing-contact-form .gform_button[type="submit"] {
+.ce-landing-template-default.single
+  .ce-landing-contact-form
+  .gform_button[type="submit"] {
   border-radius: 40px;
   margin: auto;
   font-size: var(--wp--preset--font-size--medium);
