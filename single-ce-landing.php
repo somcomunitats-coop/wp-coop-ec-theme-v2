@@ -9,10 +9,12 @@ if ($service_types && sizeof($service_types)) {
 }
 
 $current_lang = apply_filters("wpml_current_language", null);
+$odoo_company_id = get_post_meta($post_id, 'odoo_company_id', true);
 
 $data = [
   'name' => get_the_title($post_id),
   'title' => get_the_title($post_id),
+  'odoo_company_id' => $odoo_company_id,
   'long_description' => get_the_content(),
   'short_description' => get_the_excerpt(),
   'primary_image_file' => get_the_post_thumbnail_url($post_id) ? get_the_post_thumbnail_url($post_id) : '/wp-content/themes/wp-coop-ce-theme-v-2/img/ce-landing-primary.png',
@@ -284,11 +286,20 @@ ob_start(); ?>
           <div class="wp-block-buttons">
             <?php if ($data['allow_new_members']) : ?>
               <!-- wp:button {"fontSize":"small"} -->
-              <div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop"><?= __('Fes-te’n soci/a', 'wpct'); ?></a></div>
+              <div class="wp-block-button has-custom-font-size has-small-font-size">
+                <a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop/<?= $current_lang; ?>/become_cooperator?odoo_company_id=<?= $data['odoo_company_id']; ?>"><?= __('Fer-me soci/a com a ciutadania', 'wpct'); ?></a>
+              </div>
+              <!-- /wp:button -->
+              <!-- wp:button {"fontSize":"small"} -->
+              <div class="wp-block-button has-custom-font-size has-small-font-size">
+                <a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop/<?= $current_lang; ?>/become_company_cooperator?odoo_company_id=<?= $data['odoo_company_id']; ?>"><?= __('Fer-me soci/a com a empresa', 'wpct'); ?></a>
+              </div>
               <!-- /wp:button -->
             <?php else : ?>
               <!-- wp:button {"fontSize":"small"} -->
-              <div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#contacte"><?= __('Posa-t’hi en contacte', 'wpct'); ?></a></div>
+              <div class="wp-block-button has-custom-font-size has-small-font-size">
+                <a class="wp-block-button__link wp-element-button" href="#contacte"><?= __('Posa-t’hi en contacte', 'wpct'); ?></a>
+              </div>
               <!-- /wp:button -->
             <?php endif; ?>
           </div>
