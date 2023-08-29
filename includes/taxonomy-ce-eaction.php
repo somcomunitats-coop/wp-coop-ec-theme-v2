@@ -179,32 +179,13 @@ add_action('create_ce-eaction', 'wpct_save_eaction_custom_field', 10, 2);
 function wpct_save_eaction_custom_field($term_id)
 {
     if (isset($_POST['term_meta'])) {
-        $term_meta = get_option('taxonomy_' . $term_id);
+        $term_meta = get_option('eaction_' . $term_id);
         $cat_keys = array_keys($_POST['term_meta']);
         foreach ($cat_keys as $key) {
             if (isset($_POST['term_meta'][$key])) {
                 $term_meta[$key] = $_POST['term_meta'][$key];
             }
         }
-        update_option('taxonomy_' . $term_id, $term_meta);
+        update_option('eaction_' . $term_id, $term_meta);
     }
-}
-
-add_action('wp_insert_post', 'wpct_default_landing_eaction_terms', 10, 1);
-function wpct_default_landing_eaction_terms($post_id)
-{
-    if (get_post_type($post_id) !== 'ce-landing') return;
-    
-    $tax_name = 'ce-eaction';
-
-    $terms = get_terms([
-        'taxonomy' => $tax_name,
-        'hide_empty' => false
-    ]);
-
-    $names = implode(',', array_map(function ($term) {
-        return $term->name;
-    }, $terms));
-
-    wp_set_post_terms($post_id, $names, $tax_name);
 }
