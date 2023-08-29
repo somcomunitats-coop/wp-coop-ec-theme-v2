@@ -19,6 +19,7 @@ $data = [
   'secondary_image_file' => '/wp-content/themes/wp-coop-ce-theme-v-2/img/ce-landing-secondary.png',
   'community_type' => $service_type->slug,
   'allow_new_members' => get_post_meta($post_id, 'ce_allow_new_members', true) || false,
+  'number_of_members' => 24,
   'why_become_cooperator' => get_post_meta($post_id, 'ce_why_become_cooperator', true),
   'become_cooperator_process' => get_post_meta($post_id, 'ce_become_cooperator_process', true),
   'street' => get_post_meta($post_id, 'ce_street', true),
@@ -261,6 +262,12 @@ ob_start(); ?>
       <div class="wp-block-group is-style-no-padding has-brand-background-color has-background">
         <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
         <div class="wp-block-group is-style-horizontal-padded">
+          <?php if ($data['number_of_members']) : ?>
+            <!-- wp:paragraph {"align":"center","textColor":"base","fontSize":"medium"} -->
+            <p class="has-text-align-center has-base-color has-text-color has-medium-font-size">- <strong style="font-weight: bold;"><?= $data['number_of_members']; ?></strong> <?= __('membres', 'wpct'); ?>-</p>
+            <!-- /wp:paragraph -->
+          <?php endif; ?>
+
           <!-- wp:heading {"textAlign":"center","textColor":"base"} -->
           <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color"><?= __('Fes-te’n soci/a', 'wpct'); ?></h2>
           <!-- /wp:heading -->
@@ -275,11 +282,18 @@ ob_start(); ?>
 
           <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
           <div class="wp-block-buttons">
-            <!-- wp:button {"fontSize":"small"} -->
-            <div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#contacte"><?= __('Posa-t’hi en contacte', 'wpct'); ?></a></div>
-            <!-- /wp:button -->
+            <?php if ($data['allow_new_members']) : ?>
+              <!-- wp:button {"fontSize":"small"} -->
+              <div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop"><?= __('Fes-te’n soci/a', 'wpct'); ?></a></div>
+              <!-- /wp:button -->
+            <?php else : ?>
+              <!-- wp:button {"fontSize":"small"} -->
+              <div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#contacte"><?= __('Posa-t’hi en contacte', 'wpct'); ?></a></div>
+              <!-- /wp:button -->
+            <?php endif; ?>
           </div>
           <!-- /wp:buttons -->
+
         </div>
         <!-- /wp:group -->
       </div>
