@@ -13,15 +13,23 @@ input {
 }
 
 .ginput_container input,
-.ginput_container textarea {
+.ginput_container textarea,
+.ginput_container select {
   border: none;
   border-radius: 5px;
+  outline: none;
 }
 
-.gfield_consent_description {
+.gfield_select option.gf_placeholder {
+  display: none;
+}
+
+.gform_wrapper .gfield.gfield--type-consent .gfield_consent_description {
   color: var(--wp--preset--color--typography-light);
   font-size: var(--wp--preset--font-size--xxx-small) !important;
   border: none !important;
+  overflow-y: auto;
+  opacity: 0.6;
 }
 
 .gform_button {
@@ -37,6 +45,28 @@ input {
 
 .gfield_label {
   margin-bottom: 0 !important;
+}
+
+.ce-form-newsletter .gform_wrapper {
+  position: relative;
+}
+
+.ce-form-newsletter .gfield .ginput_container_email input,
+.ce-form-newsletter .gform_footer .gform_button[type="submit"] {
+  font-size: var(--wp--preset--font-size--small);
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: var(--wp--custom--spacing--sxxs);
+  border-radius: 0px;
+}
+
+.ce-form-newsletter .gform_footer .gform_button[type="submit"] {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
+  padding-left: var(--wp--custom--spacing--sm);
+  padding-right: var(--wp--custom--spacing--sm);
 }
 
 /* Forms alta comunitat and contact
@@ -159,4 +189,3 @@ input {
   border-radius: 100px;
   margin-top: 30px;
 }
-

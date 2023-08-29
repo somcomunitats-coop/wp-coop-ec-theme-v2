@@ -14,12 +14,12 @@
 @import "blocks/terms.css";
 @import "blocks/post-title.css";
 @import "blocks/slider.css";
+@import "blocks/forms.css";
 
 /* Template parts */
 @import "parts/header.css";
 @import "parts/footer.css";
 @import "parts/upper-main-nav.css";
-@import "parts/ce-forms.css";
 
 /* Template patterns */
 @import "patterns/card.css";

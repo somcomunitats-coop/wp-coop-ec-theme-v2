@@ -11,6 +11,12 @@ if ($service_types && sizeof($service_types)) {
 $current_lang = apply_filters("wpml_current_language", null);
 
 $data = [
+  'name' => get_the_title($post_id),
+  'title' => get_the_title($post_id),
+  'long_description' => get_the_content(),
+  'short_description' => get_the_excerpt(),
+  'primary_image_file' => get_the_post_thumbnail_url($post_id) ? get_the_post_thumbnail_url($post_id) : '/wp-content/themes/wp-coop-ce-theme-v-2/img/ce-landing-primary.png',
+  'secondary_image_file' => '/wp-content/themes/wp-coop-ce-theme-v-2/img/ce-landing-secondary.png',
   'community_type' => $service_type->slug,
   'allow_new_members' => get_post_meta($post_id, 'ce_allow_new_members', true) || false,
   'why_become_cooperator' => get_post_meta($post_id, 'ce_why_become_cooperator', true),
@@ -39,17 +45,27 @@ ob_start(); ?>
 <main class="wp-block-group" style="margin-top:0;padding-top:0">
   <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding","layout":{"type":"default"}} -->
   <section class="wp-block-group alignfull is-style-no-padding">
-    <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-    <div class="wp-block-group is-style-show-desktop">
-      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"35%"}},"className":"is-style-no-padding","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
+    <!-- wp:group {"className":"is-style-show-tablet-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
+    <div class="wp-block-group is-style-show-tablet-desktop">
+      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"35%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
       <div class="wp-block-group is-style-no-padding">
-        <!-- wp:post-featured-image {"width":"100%"} /-->
+        <!-- wp:cover {"url":"<?= $data['primary_image_file']; ?>","dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"layout":{"type":"constrained"}} -->
+        <div class="wp-block-cover is-light" style="min-height:100%">
+          <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+          <img class="wp-block-cover__image-background wp-image-2543" alt="" src="<?= $data['primary_image_file']; ?>" data-object-fit="cover" />
+          <div class="wp-block-cover__inner-container">
+            <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
+            <p class="has-text-align-center has-large-font-size"></p>
+            <!-- /wp:paragraph -->
+          </div>
+        </div>
+        <!-- /wp:cover -->
       </div>
       <!-- /wp:group -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"65%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
       <div class="wp-block-group is-style-horizontal-padded">
-        <!-- wp:spacer {"height":"2rem","style":{"layout":{}}} -->
+        <!-- wp:spacer {"height":"2rem"} -->
         <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
@@ -87,15 +103,19 @@ ob_start(); ?>
         </div>
         <!-- /wp:group -->
 
-        <!-- wp:post-title /-->
+        <!-- wp:heading {"className":"ce-landing-title"} -->
+        <h2 class="wp-block-heading ce-landing-title"><?= $data['title']; ?></h2>
+        <!-- /wp:heading -->
 
-        <!-- wp:post-excerpt /-->
+        <!-- wp:paragraph -->
+        <p><?= $data['short_description']; ?></p>
+        <!-- /wp:paragraph -->
 
-        <!-- wp:spacer {"height":"1rem","style":{"layout":{}}} -->
+        <!-- wp:spacer {"height":"1rem"} -->
         <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
-        <!-- wp:list {"className": "wpct-ce-eactions"} -->
+        <!-- wp:list {"className": "ce-landing-eactions"} -->
         <ul class="ce-landing-eactions">
           <?php
           foreach ($data['community_active_services'] as $service) : ?>
@@ -111,7 +131,7 @@ ob_start(); ?>
         </ul>
         <!-- /wp:list -->
 
-        <!-- wp:spacer {"height":"2rem","style":{"layout":{}}} -->
+        <!-- wp:spacer {"height":"2rem"} -->
         <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
       </div>
@@ -121,9 +141,9 @@ ob_start(); ?>
 
     <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
     <div class="wp-block-group is-style-show-mobile-tablet">
-      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"65%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
+      <!-- wp:group {"className":"is-style-horizontal-padded"} -->
       <div class="wp-block-group is-style-horizontal-padded">
-        <!-- wp:spacer {"height":"2rem","style":{"layout":{}}} -->
+        <!-- wp:spacer {"height":"2rem"} -->
         <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
@@ -156,21 +176,25 @@ ob_start(); ?>
           <!-- /wp:buttons -->
 
           <!-- wp:paragraph {"className":"ce-landing-breadcrumb"} -->
-          <p class="ce-landing-breadcrumb"><a href="/"><?= __('Tornar al mapa', 'wpct'); ?></a></p>
+          <p class="ce-landing-breadcrumb"><a onclick="history.back()"><?= __('Tornar al mapa', 'wpct'); ?></a></p>
           <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
 
-        <!-- wp:post-title /-->
+        <!-- wp:heading {"className":"ce-landing-title"} -->
+        <h2 class="wp-block-heading ce-landing-title"><?= $data['title']; ?></h2>
+        <!-- /wp:heading -->
 
-        <!-- wp:post-excerpt /-->
+        <!-- wp:paragraph -->
+        <p><?= $data['short_description']; ?></p>
+        <!-- /wp:paragraph -->
 
-        <!-- wp:spacer {"height":"1rem","style":{"layout":{}}} -->
+        <!-- wp:spacer {"height":"1rem"} -->
         <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
-        <!-- wp:list {"className": "wpct-ce-eactions"} -->
-        <ul class="wpct-ce-eactions">
+        <!-- wp:list {"className": "ce-landing-eactions"} -->
+        <ul class="ce-landing-eactions">
           <?php
           foreach ($data['community_active_services'] as $service) : ?>
             <!-- wp:list-item -->
@@ -183,16 +207,27 @@ ob_start(); ?>
             <!-- /wp:list-item -->
           <?php endforeach; ?>
         </ul>
+        <!-- /wp:list -->
 
-        <!-- wp:spacer {"height":"2rem","style":{"layout":{}}} -->
+        <!-- wp:spacer {"height":"2rem"} -->
         <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
       </div>
       <!-- /wp:group -->
 
-      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"35%"}},"className":"is-style-no-padding","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
+      <!-- wp:group {"className":"is-style-no-padding"} -->
       <div class="wp-block-group is-style-no-padding">
-        <!-- wp:post-featured-image {"width":"100%"} /-->
+        <!-- wp:cover {"url":"<?= $data['primary_image_file']; ?>","dimRatio":0,"minHeight":350,"minHeightUnit":"px","isDark":false,"layout":{"type":"constrained"}} -->
+        <div class="wp-block-cover is-light" style="min-height:350px">
+          <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+          <img class="wp-block-cover__image-background wp-image-2543" alt="" src="<?= $data['primary_image_file']; ?>" data-object-fit="cover" />
+          <div class="wp-block-cover__inner-container">
+            <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
+            <p class="has-text-align-center has-large-font-size"></p>
+            <!-- /wp:paragraph -->
+          </div>
+        </div>
+        <!-- /wp:cover -->
       </div>
       <!-- /wp:group -->
     </div>
@@ -206,7 +241,7 @@ ob_start(); ?>
     <div class="wp-block-group is-style-show-desktop">
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
       <div class="wp-block-group is-style-horizontal-padded">
-        <!-- wp:spacer {"height":"6rem","style":{"layout":{}}} -->
+        <!-- wp:spacer {"height":"6rem"} -->
         <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
@@ -234,7 +269,7 @@ ob_start(); ?>
           <p class="has-text-align-center has-base-color has-text-color"><?= __('Sol·licita adherir-te com a soci/a i accedeix al serveis <br>de la comunitat energètica', 'wpct'); ?></p>
           <!-- /wp:paragraph -->
 
-          <!-- wp:spacer {"height":"1rem","width":"0px","style":{"layout":{}}} -->
+          <!-- wp:spacer {"height":"1rem","width":"0px"} -->
           <div style="height:1rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
           <!-- /wp:spacer -->
 
@@ -256,7 +291,7 @@ ob_start(); ?>
     <div class="wp-block-group is-style-show-mobile-tablet">
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
       <div class="wp-block-group is-style-horizontal-padded">
-        <!-- wp:spacer {"height":"3rem","style":{"layout":{}}} -->
+        <!-- wp:spacer {"height":"3rem"} -->
         <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
@@ -266,7 +301,7 @@ ob_start(); ?>
 
         <!-- wp:post-content /-->
 
-        <!-- wp:spacer {"height":"4rem","style":{"layout":{}}} -->
+        <!-- wp:spacer {"height":"4rem"} -->
         <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
       </div>
@@ -288,14 +323,14 @@ ob_start(); ?>
           <p class="has-text-align-center has-base-color has-text-color"><?= __('Sol·licita adherir-te com a soci/a i accedeix al serveis <br>de la comunitat energètica', 'wpct'); ?></p>
           <!-- /wp:paragraph -->
 
-          <!-- wp:spacer {"height":"1rem","width":"0px","style":{"layout":{}}} -->
+          <!-- wp:spacer {"height":"1rem","width":"0px"} -->
           <div style="height:1rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
           <!-- /wp:spacer -->
 
           <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
           <div class="wp-block-buttons">
             <!-- wp:button {"fontSize":"small"} -->
-            <div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#contacte"><? __('Posa-t’hi en contacte', 'wpct'); ?></a></div>
+            <div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#contacte"><?= __('Posa-t’hi en contacte', 'wpct'); ?></a></div>
             <!-- /wp:button -->
           </div>
           <!-- /wp:buttons -->
@@ -346,44 +381,44 @@ ob_start(); ?>
 
       <!-- wp:buttons {"className":"ce-landing-share-pannel","layout":{"type":"flex","justifyContent":"center"}} -->
       <div class="wp-block-buttons ce-landing-share-pannel">
-        <!-- wp:button {"textAlign":"center","fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size has-small-font-size">
+        <!-- wp:button {"fontSize":"small","className":"ce-landing-share__link"} -->
+        <div class="wp-block-button has-custom-font-size has-small-font-size ce-landing-share__link">
           <a class="wp-block-button__link has-text-align-center wp-element-button"><?= __('Comparteix enllaç', 'wpct'); ?></a>
         </div>
         <!-- /wp:button -->
 
-        <!-- wp:button {"fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size has-small-font-size">
+        <!-- wp:button {"fontSize":"small","className":"ce-landing-share__email"} -->
+        <div class="wp-block-button has-custom-font-size has-small-font-size ce-landing-share__email">
           <a class="wp-block-button__link wp-element-button"><?= __('Comparteix per correu', 'wpct'); ?></a>
         </div>
         <!-- /wp:button -->
 
-        <!-- wp:button {"fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size has-small-font-size">
+        <!-- wp:button {"fontSize":"small","className":"ce-landing-share__telegram"} -->
+        <div class="wp-block-button has-custom-font-size has-small-font-size ce-landing-share__telegram">
           <a class="wp-block-button__link wp-element-button"><?= __('Comparteix per Telegram', 'wpct'); ?></a>
         </div>
         <!-- /wp:button -->
 
-        <!-- wp:button {"fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size has-small-font-size">
+        <!-- wp:button {"fontSize":"small","className":"ce-landing-share__whatsapp"} -->
+        <div class="wp-block-button has-custom-font-size has-small-font-size ce-landing-share__whatsapp">
           <a class="wp-block-button__link wp-element-button"><?= __('Comparteix per Whatsapp', 'wpct'); ?></a>
         </div>
         <!-- /wp:button -->
 
-        <!-- wp:button {"fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size has-small-font-size">
+        <!-- wp:button {"fontSize":"small","className":"ce-landing-share__twitter"} -->
+        <div class="wp-block-button has-custom-font-size has-small-font-size ce-landing-share__twitter">
           <a class="wp-block-button__link wp-element-button"><?= __('Comparteix per Twitter', 'wpct'); ?></a>
         </div>
         <!-- /wp:button -->
 
-        <!-- wp:button {"fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size has-small-font-size">
+        <!-- wp:button {"fontSize":"small","className":"ce-landing-share__instagram"} -->
+        <div class="wp-block-button has-custom-font-size has-small-font-size ce-landing-share__instagram">
           <a class="wp-block-button__link wp-element-button"><?= __('Comparteix per Instagram', 'wpct'); ?></a>
         </div>
         <!-- /wp:button -->
 
-        <!-- wp:button {"fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size has-small-font-size">
+        <!-- wp:button {"fontSize":"small","className":"ce-landing-share__mastodon"} -->
+        <div class="wp-block-button has-custom-font-size has-small-font-size ce-landing-share__mastodon">
           <a class="wp-block-button__link wp-element-button"><?= __('Comparteix per Mastodon', 'wpct'); ?></a>
         </div>
         <!-- /wp:button -->
@@ -402,140 +437,144 @@ ob_start(); ?>
   </section>
   <!-- /wp:group -->
 
-  <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding","layout":{"type":"default"}} -->
-  <section class="wp-block-group alignfull is-style-no-padding">
-    <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-    <div class="wp-block-group is-style-show-desktop">
-      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
-      <div class="wp-block-group is-style-no-padding">
-        <!-- wp:cover {"url":"/wp-content/uploads/2023/07/igualada-cover-2.png","id":3181,"dimRatio":0,"minHeight":640,"minHeightUnit":"px","layout":{"type":"constrained"}} -->
-        <div class="wp-block-cover" style="min-height:640px">
-          <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
-          <img class="wp-block-cover__image-background wp-image-3181" alt="" src="/wp-content/uploads/2023/07/igualada-cover-2.png" data-object-fit="cover" />
-          <div class="wp-block-cover__inner-container">
-            <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
-            <p class="has-text-align-center has-large-font-size"></p>
-            <!-- /wp:paragraph -->
+  <?php if ($data['why_become_cooperator'] || $data['become_cooperator_process']) : ?>
+    <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding"} -->
+    <section class="wp-block-group alignfull is-style-no-padding">
+      <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
+      <div class="wp-block-group is-style-show-desktop">
+        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
+        <div class="wp-block-group is-style-no-padding">
+          <!-- wp:cover {"url":"<?= $data['secondary_image_file']; ?>","id":3181,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","layout":{"type":"constrained"}} -->
+          <div class="wp-block-cover" style="min-height:100%">
+            <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+            <img class="wp-block-cover__image-background wp-image-3181" alt="" src="<?= $data['secondary_image_file']; ?>" data-object-fit="cover" />
+            <div class="wp-block-cover__inner-container">
+              <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
+              <p class="has-text-align-center has-large-font-size"></p>
+              <!-- /wp:paragraph -->
+            </div>
           </div>
+          <!-- /wp:cover -->
         </div>
-        <!-- /wp:cover -->
-      </div>
-      <!-- /wp:group -->
+        <!-- /wp:group -->
 
-      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
-      <div class="wp-block-group is-style-horizontal-padded">
-        <!-- wp:spacer {"height":"3rem","style":{"layout":{}}} -->
-        <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
-        <!-- /wp:spacer -->
+        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
+        <div class="wp-block-group is-style-horizontal-padded">
+          <!-- wp:spacer {"height":"6rem"} -->
+          <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
+          <!-- /wp:spacer -->
 
-        <!-- wp:heading {"level":4} -->
-        <h4 class="wp-block-heading"><?= __('Perquè fer-se soci/a', 'wpct'); ?></h4>
-        <!-- /wp:heading -->
-
-        <!-- wp:paragraph -->
-        <p><?= $data['why_become_cooperator']; ?></p>
-        <!-- /wp:paragraph -->
-
-        <?php
-        if ($data['become_cooperator_process']) : ?>
-          <!-- wp:heading {"level":4} -->
-          <h4 class="wp-block-heading"><?= __('Procés d’alta', 'wpct'); ?></h4>
-          <!-- /wp:heading -->
-
-          <!-- wp:paragraph -->
-          <p><?= $data['become_cooperator_process']; ?></p>
-          <!-- /wp:paragraph -->
-
-        <?php endif; ?>
-
-        <!-- wp:spacer {"height":"1rem","style":{"layout":{}}} -->
-        <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
-        <!-- /wp:spacer -->
-
-        <!-- wp:buttons -->
-        <div class="wp-block-buttons">
-          <!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#contacte"><?= __('Posa-t’hi en contacte', 'wpct'); ?></a></div>
-          <!-- /wp:button -->
-        </div>
-        <!-- /wp:buttons -->
-
-        <!-- wp:spacer {"height":"3rem","style":{"layout":{}}} -->
-        <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
-        <!-- /wp:spacer -->
-      </div>
-      <!-- /wp:group -->
-    </div>
-    <!-- /wp:group -->
-
-    <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group is-style-show-mobile-tablet">
-      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
-      <div class="wp-block-group is-style-no-padding">
-        <!-- wp:cover {"url":"https://wordpress.local/wp-content/uploads/2023/07/igualada-cover-2.png","id":3181,"dimRatio":0,"minHeight":400,"minHeightUnit":"px","layout":{"type":"constrained"}} -->
-        <div class="wp-block-cover" style="min-height:400px">
-          <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
-          <img class="wp-block-cover__image-background wp-image-3181" alt="" src="https://wordpress.local/wp-content/uploads/2023/07/igualada-cover-2.png" data-object-fit="cover" />
-          <div class="wp-block-cover__inner-container">
-            <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
-            <p class="has-text-align-center has-large-font-size"></p>
-            <!-- /wp:paragraph -->
-          </div>
-        </div>
-        <!-- /wp:cover -->
-      </div>
-      <!-- /wp:group -->
-
-      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
-      <div class="wp-block-group is-style-horizontal-padded">
-        <!-- wp:spacer {"height":"3rem","style":{"layout":{}}} -->
-        <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
-        <!-- /wp:spacer -->
-
-        <!-- wp:heading {"level":4} -->
-        <h4 class="wp-block-heading"><?= __('Perquè fer-se soci/a', 'wpct'); ?></h4>
-        <!-- /wp:heading -->
-
-        <!-- wp:paragraph -->
-        <p><?= $data['why_become_cooperator']; ?></p>
-        <!-- /wp:paragraph -->
-
-        <?php
-        if ($data['become_cooperator_process']) : ?>
-          <!-- wp:heading {"level":4} -->
-          <h4 class="wp-block-heading"><?= __('Procés d’alta', 'wpct'); ?></h4>
-          <!-- /wp:heading -->
-
-          <!-- wp:paragraph -->
-          <p><?= $data['become_cooperator_process']; ?></p>
-          <!-- /wp:paragraph -->
-
-        <?php endif; ?>
-
-        <!-- wp:spacer {"height":"1rem","style":{"layout":{}}} -->
-        <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
-        <!-- /wp:spacer -->
-
-        <!-- wp:buttons -->
-        <div class="wp-block-buttons">
-          <!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
-          <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size">
+          <?php if ($data['why_become_cooperator']) : ?>
+            <!-- wp:heading {"level":4} -->
+            <h4 class="wp-block-heading"><?= __('Perquè fer-se soci/a', 'wpct'); ?></h4>
             <!-- /wp:heading -->
-            <a class="wp-block-button__link wp-element-button" href="#contacte"><?= __('Posa-t’hi en contacte', 'wpct'); ?></a>
-          </div>
-          <!-- /wp:button -->
-        </div>
-        <!-- /wp:buttons -->
 
-        <!-- wp:spacer {"height":"3rem","style":{"layout":{}}} -->
-        <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
-        <!-- /wp:spacer -->
+            <!-- wp:paragraph -->
+            <p><?= $data['why_become_cooperator']; ?></p>
+            <!-- /wp:paragraph -->
+          <?php endif; ?>
+
+          <?php
+          if ($data['become_cooperator_process']) : ?>
+            <!-- wp:heading {"level":4} -->
+            <h4 class="wp-block-heading"><?= __('Procés d’alta', 'wpct'); ?></h4>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph -->
+            <p><?= $data['become_cooperator_process']; ?></p>
+            <!-- /wp:paragraph -->
+
+          <?php endif; ?>
+
+          <!-- wp:spacer {"height":"1rem"} -->
+          <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
+          <!-- /wp:spacer -->
+
+          <!-- wp:buttons -->
+          <div class="wp-block-buttons">
+            <!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
+            <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#contacte"><?= __('Posa-t’hi en contacte', 'wpct'); ?></a></div>
+            <!-- /wp:button -->
+          </div>
+          <!-- /wp:buttons -->
+
+          <!-- wp:spacer {"height":"7rem"} -->
+          <div style="height:7rem" aria-hidden="true" class="wp-block-spacer"></div>
+          <!-- /wp:spacer -->
+        </div>
+        <!-- /wp:group -->
       </div>
       <!-- /wp:group -->
-    </div>
+
+      <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
+      <div class="wp-block-group is-style-show-mobile-tablet">
+        <!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
+        <div class="wp-block-group is-style-no-padding">
+          <!-- wp:cover {"url":"<?= $data['secondary_image_file']; ?>","id":3181,"dimRatio":0,"minHeight":400,"minHeightUnit":"px","layout":{"type":"constrained"}} -->
+          <div class="wp-block-cover" style="min-height:400px">
+            <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
+            <img class="wp-block-cover__image-background wp-image-3181" alt="" src="<?= $data['secondary_image_file']; ?>" data-object-fit="cover" />
+            <div class="wp-block-cover__inner-container">
+              <!-- wp:paragraph {"align":"center","placeholder":"Escriu un títol...","fontSize":"large"} -->
+              <p class="has-text-align-center has-large-font-size"></p>
+              <!-- /wp:paragraph -->
+            </div>
+          </div>
+          <!-- /wp:cover -->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
+        <div class="wp-block-group is-style-horizontal-padded">
+          <!-- wp:spacer {"height":"3rem"} -->
+          <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
+          <!-- /wp:spacer -->
+
+          <!-- wp:heading {"level":4} -->
+          <h4 class="wp-block-heading"><?= __('Perquè fer-se soci/a', 'wpct'); ?></h4>
+          <!-- /wp:heading -->
+
+          <!-- wp:paragraph -->
+          <p><?= $data['why_become_cooperator']; ?></p>
+          <!-- /wp:paragraph -->
+
+          <?php
+          if ($data['become_cooperator_process']) : ?>
+            <!-- wp:heading {"level":4} -->
+            <h4 class="wp-block-heading"><?= __('Procés d’alta', 'wpct'); ?></h4>
+            <!-- /wp:heading -->
+
+            <!-- wp:paragraph -->
+            <p><?= $data['become_cooperator_process']; ?></p>
+            <!-- /wp:paragraph -->
+
+          <?php endif; ?>
+
+          <!-- wp:spacer {"height":"1rem"} -->
+          <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
+          <!-- /wp:spacer -->
+
+          <!-- wp:buttons -->
+          <div class="wp-block-buttons">
+            <!-- wp:button {"className":"is-style-rounded","fontSize":"small"} -->
+            <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size">
+              <!-- /wp:heading -->
+              <a class="wp-block-button__link wp-element-button" href="#contacte-responsive"><?= __('Posa-t’hi en contacte', 'wpct'); ?></a>
+            </div>
+            <!-- /wp:button -->
+          </div>
+          <!-- /wp:buttons -->
+
+          <!-- wp:spacer {"height":"4rem"} -->
+          <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
+          <!-- /wp:spacer -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:group -->
+    </section>
     <!-- /wp:group -->
-  </section>
-  <!-- /wp:group -->
+  <?php endif; ?>
 
   <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"primary","className":"is-style-no-padding ce-landing-contact-section","layout":{"type":"default"}} -->
   <section class="wp-block-group alignfull is-style-no-padding ce-landing-contact-section has-primary-background-color has-background">
@@ -547,7 +586,7 @@ ob_start(); ?>
 
       <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
       <div class="wp-block-group is-style-horizontal-padded">
-        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-default","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
         <div class="wp-block-group is-style-default">
           <!-- wp:heading -->
           <h2 class="wp-block-heading"><?= __('Contacta', 'wpct'); ?></h2>
@@ -571,8 +610,8 @@ ob_start(); ?>
 
           <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
           <div class="wp-block-group">
-            <!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
-            <hr class="wp-block-separator has-alpha-channel-opacity" />
+            <!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+            <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide" />
             <!-- /wp:separator -->
           </div>
           <!-- /wp:group -->
@@ -593,8 +632,8 @@ ob_start(); ?>
           <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
           <!-- /wp:spacer -->
 
-          <!-- wp:group {"className":"ce-landing-newsletter-form","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-          <div class="wp-block-group ce-landing-newsletter-form">
+          <!-- wp:group {"className":"ce-form-newsletter","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+          <div class="wp-block-group ce-form-newsletter">
             <!-- wp:gravityforms/form {"formId":"5","title":false,"description":false,"ajax":true} /-->
 
             <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"100%","selfStretch":"fixed"}}} -->
@@ -609,8 +648,8 @@ ob_start(); ?>
 
           <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
           <div class="wp-block-group">
-            <!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
-            <hr class="wp-block-separator has-alpha-channel-opacity" />
+            <!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+            <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide" />
             <!-- /wp:separator -->
           </div>
           <!-- /wp:group -->
@@ -635,9 +674,15 @@ ob_start(); ?>
 
             <!-- wp:social-links {"iconColor":"typography","iconColorValue":"#191919","className":"is-style-logos-only"} -->
             <ul class="wp-block-social-links has-icon-color is-style-logos-only">
-              <!-- wp:social-link {"url":"https://twitter.com","service":"twitter"} /-->
-              <!-- wp:social-link {"url":"https://instagram.com","service":"instagram"} /-->
-              <!-- wp:social-link {"url":"https://desktop.telegram.org/","service":"telegram"} /-->
+              <?php if ($data['twitter_link']) : ?>
+                <!-- wp:social-link {"url":"<?= $data['twitter_link']; ?>","service":"twitter"} /-->
+              <?php endif; ?>
+              <?php if ($data['instagram_link']) : ?>
+                <!-- wp:social-link {"url":"<?= $data['instagram_link']; ?>","service":"instagram"} /-->
+              <?php endif; ?>
+              <?php if ($data['telegram_link']) : ?>
+                <!-- wp:social-link {"url":"<?= $data['telegram_link']; ?>","service":"telegram"} /-->
+              <?php endif; ?>
             </ul>
             <!-- /wp:social-links -->
           </div>
@@ -649,7 +694,7 @@ ob_start(); ?>
         <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
-        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-default","layout":{"type":"default"}} -->
+        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
         <div id="contacte" class="wp-block-group is-style-default">
           <!-- wp:paragraph {"fontSize":"medium"} -->
           <p class="has-medium-font-size"><?= __('Formulari de contacte'); ?></p>
@@ -711,8 +756,8 @@ ob_start(); ?>
 
           <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
           <div class="wp-block-group">
-            <!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
-            <hr class="wp-block-separator has-alpha-channel-opacity" />
+            <!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+            <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide" />
             <!-- /wp:separator -->
           </div>
           <!-- /wp:group -->
@@ -725,8 +770,8 @@ ob_start(); ?>
           <p class="has-medium-font-size"><?= __('Butlletí', 'wpct') ?></p>
           <!-- /wp:paragraph -->
 
-          <!-- wp:group {"className":"ce-landing-newsletter-form","layout":{"type":"default"}} -->
-          <div class="wp-block-group ce-landing-newsletter-form">
+          <!-- wp:group {"className":"ce-form-newsletter","layout":{"type":"default"}} -->
+          <div class="wp-block-group ce-form-newsletter">
             <!-- wp:gravityforms/form {"formId":"5","title":false,"description":false,"ajax":true} /-->
           </div>
           <!-- /wp:group -->
@@ -737,8 +782,8 @@ ob_start(); ?>
 
           <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
           <div class="wp-block-group">
-            <!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
-            <hr class="wp-block-separator has-alpha-channel-opacity" />
+            <!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+            <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide" />
             <!-- /wp:separator -->
           </div>
           <!-- /wp:group -->
@@ -763,9 +808,15 @@ ob_start(); ?>
 
             <!-- wp:social-links {"iconColor":"typography","iconColorValue":"#191919","className":"is-style-logos-only"} -->
             <ul class="wp-block-social-links has-icon-color is-style-logos-only">
-              <!-- wp:social-link {"url":"https://twitter.com","service":"twitter"} /-->
-              <!-- wp:social-link {"url":"https://instagram.com","service":"instagram"} /-->
-              <!-- wp:social-link {"url":"https://desktop.telegram.org/","service":"telegram"} /-->
+              <?php if ($data['twitter_link']) : ?>
+                <!-- wp:social-link {"url":"<?= $data['twitter_link']; ?>","service":"twitter"} /-->
+              <?php endif; ?>
+              <?php if ($data['instagram_link']) : ?>
+                <!-- wp:social-link {"url":"<?= $data['instagram_link']; ?>","service":"instagram"} /-->
+              <?php endif; ?>
+              <?php if ($data['telegram_link']) : ?>
+                <!-- wp:social-link {"url":"<?= $data['telegram_link']; ?>","service":"telegram"} /-->
+              <?php endif; ?>
             </ul>
             <!-- /wp:social-links -->
           </div>
@@ -778,7 +829,7 @@ ob_start(); ?>
         <!-- /wp:group -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-default","layout":{"type":"default"}} -->
-        <div id="contacte" class="wp-block-group is-style-default">
+        <div id="contacte-responsive" class="wp-block-group is-style-default">
           <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
           <div class="wp-block-group">
             <!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}}} -->
@@ -787,7 +838,7 @@ ob_start(); ?>
           </div>
           <!-- /wp:group -->
 
-          <!-- wp:spacer {"height":"2rem","width":"0px","style":{"layout":{}}} -->
+          <!-- wp:spacer {"height":"2rem","width":"0px"} -->
           <div style="height:2rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
           <!-- /wp:spacer -->
 
@@ -799,13 +850,13 @@ ob_start(); ?>
           <p><?= __('Consulta <a href="/recursos/#faqs">les preguntes més freqüents</a> i posa’t en contacte amb la Comunitat Energètica', 'wpct') ?></p>
           <!-- /wp:paragraph -->
 
-          <!-- wp:spacer {"height":"1rem","width":"0px","style":{"layout":{}}} -->
+          <!-- wp:spacer {"height":"1rem","width":"0px"} -->
           <div style="height:1rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
           <!-- /wp:spacer -->
 
           <!-- wp:group {"className":"ce-landing-contact-form","layout":{"type":"default"}} -->
           <div class="wp-block-group ce-landing-contact-form">
-            <!-- wp:gravityforms/form {"formId":"4","title":false,"description":false} /-->
+            <!-- wp:gravityforms/form {"formId":"6","title":false,"description":false} /-->
           </div>
           <!-- /wp:group -->
         </div>
@@ -845,7 +896,6 @@ add_filter('the_content', function () use ($html) {
   <div class="wp-site-blocks">
     <?php the_content(); ?>
   </div>
-  <?php wp_footer(); ?>
 </body>
 
 </html>
