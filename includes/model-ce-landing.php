@@ -45,10 +45,10 @@ function wpct_create_model_landing()
     );
 }
 
-add_action('wp_insert_post', 'wpct_initialize_ce_eaction_terms', 10, 1);
-function wpct_initialize_ce_eaction_terms($post_id)
+add_action('wp_insert_post', 'wpct_initialize_ce_eaction_terms', 10, 3);
+function wpct_initialize_ce_eaction_terms($post_id, $post, $update)
 {
-    if (get_post_type($post_id) !== 'ce-landing') return;
+    if (get_post_type($post_id) !== 'ce-landing' || $update) return;
 
     $tax_name = 'ce-eaction';
 
@@ -64,10 +64,10 @@ function wpct_initialize_ce_eaction_terms($post_id)
     wp_set_post_terms($post_id, $names, $tax_name);
 }
 
-add_action('wp_insert_post', 'wpct_initialize_ce_service_terms', 10);
-function wpct_initialize_ce_service_terms($post_id)
+add_action('wp_insert_post', 'wpct_initialize_ce_service_terms', 10, 3);
+function wpct_initialize_ce_service_terms($post_id, $post, $update)
 {
-    if (get_post_type($post_id) !== 'ce-landing') return;
+    if (get_post_type($post_id) !== 'ce-landing' || $update) return;
 
     $tax_name = 'ce-service';
 
