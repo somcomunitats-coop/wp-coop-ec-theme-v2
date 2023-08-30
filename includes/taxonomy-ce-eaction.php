@@ -40,6 +40,8 @@ $WPCT_EACTION_XML_SOURCES = [
 add_action('init', 'wpct_register_eaction_tax');
 function wpct_register_eaction_tax()
 {
+    if (defined('WP_CLI') && WP_CLI) return;
+
     $tax_name = 'ce-eaction';
 
     register_taxonomy($tax_name, 'ce-landing', [
@@ -98,6 +100,8 @@ function wpct_lock_eaction_taxonomy()
 add_action('init', 'wpct_init_eaction_tax_terms');
 function wpct_init_eaction_tax_terms()
 {
+    if (defined('WP_CLI') && WP_CLI) return;
+
     global $WPCT_EACTION_TAX_TERMS;
     global $WPCT_EACTION_XML_SOURCES;
     $tax_name = 'ce-eaction';

@@ -14,6 +14,8 @@ $WPCT_SERVICE_TAX_TERMS = [
 add_action('init', 'wpct_register_service_tax');
 function wpct_register_service_tax()
 {
+    if (defined('WP_CLI') && WP_CLI) return;
+
     $tax_name = 'ce-service';
 
     register_taxonomy($tax_name, 'ce-landing', [
@@ -71,6 +73,8 @@ function wpct_lock_service_taxonomy()
 add_action('init', 'wpct_init_service_tax_terms');
 function wpct_init_service_tax_terms()
 {
+    if (defined('WP_CLI') && WP_CLI) return;
+
     global $WPCT_SERVICE_TAX_TERMS;
     $tax_name = 'ce-service';
 
