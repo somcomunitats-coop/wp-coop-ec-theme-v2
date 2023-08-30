@@ -37,8 +37,8 @@ $WPCT_EACTION_XML_SOURCES = [
     'mobilitat-sostenible' => 'ce_tag_sustainable_mobility',
     'formacio-ciutadana' => 'ce_tag_citizen_education',
     'energia-termica' => 'ce_tag_thermal_energy',
-    'compres-collectives' => 'ce_tag_collective_purchases',
-    'energia-renovable' => 'ce_tag_renewable_energy',
+    'compres-colectives' => 'ce_tag_collective_purchases',
+    'subministrament-renovable' => 'ce_tag_renewable_energy',
 ];
 
 add_action('init', 'wpct_register_eaction_tax', 5);
