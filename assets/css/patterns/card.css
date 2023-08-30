@@ -1,6 +1,5 @@
 article.wp-block-group.ce-card {
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
 article.wp-block-group.ce-card .wp-block-cover {

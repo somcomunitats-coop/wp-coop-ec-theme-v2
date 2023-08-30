@@ -11,7 +11,7 @@ $WPCT_SERVICE_TAX_TERMS = [
     ],
 ];
 
-add_action('init', 'wpct_register_service_tax');
+add_action('init', 'wpct_register_service_tax', 5);
 function wpct_register_service_tax()
 {
     if (defined('WP_CLI') && WP_CLI) return;
@@ -70,7 +70,7 @@ function wpct_lock_service_taxonomy()
 }
 
 // register_activation_hook(__FILE__, 'wpct_init_service_tax_terms');
-add_action('init', 'wpct_init_service_tax_terms');
+add_action('init', 'wpct_init_service_tax_terms', 99);
 function wpct_init_service_tax_terms()
 {
     if (defined('WP_CLI') && WP_CLI) return;
