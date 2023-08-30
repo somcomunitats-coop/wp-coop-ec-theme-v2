@@ -211,7 +211,7 @@
           <!-- wp:query {"className":"ce-query","queryId":18,"query":{"perPage":10,"pages":1,"offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
           <div class="wp-block-query ce-query">
             <!-- wp:post-template {"layout":{"type":"default"}} -->
-            <!-- wp:pattern {"slug":"ce-pattern/post-card"} /-->
+            <!-- wp:pattern {"slug":"ce-pattern/landing-card"} /-->
             <!-- /wp:post-template -->
           </div>
           <!-- /wp:query -->
@@ -231,7 +231,7 @@
           <!-- wp:query {"className":"ce-query","queryId":18,"query":{"perPage":10,"pages":1,"offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
           <div class="wp-block-query ce-query">
             <!-- wp:post-template {"layout":{"type":"default"}} -->
-            <!-- wp:pattern {"slug":"ce-pattern/post-card"} /-->
+            <!-- wp:pattern {"slug":"ce-pattern/landing-card"} /-->
             <!-- /wp:post-template -->
           </div>
           <!-- /wp:query -->

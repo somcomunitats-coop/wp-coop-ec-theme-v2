@@ -1,0 +1,56 @@
+.ce-query .ce-landing-card .wp-block-post-terms {
+  display: flex;
+}
+
+.taxonomy-ce-eaction .wp-block-post-terms__separator {
+  display: none;
+}
+
+.ce-landing-card .wp-block-post-terms.taxonomy-ce-eaction a {
+  font-size: 0px;
+  height: 2rem;
+  display: block;
+  border-radius: 50%;
+  padding: 0px;
+  margin: 0.25rem;
+  flex-basis: 2rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--wp--preset--color--brand);
+}
+
+.ce-landing-card .wp-block-post-terms.taxonomy-ce-eaction a[href*="generacio-renovable"] {
+  background-image: url("/wp-content/themes/wp-coop-ce-theme-v-2/img/accions/generacio-renovable.svg");
+}
+
+.ce-landing-card
+  .wp-block-post-terms.taxonomy-ce-eaction
+  a[href*="eficiencia-energetica"] {
+  background-image: url("/wp-content/themes/wp-coop-ce-theme-v-2/img/accions/eficiencia-energetica.svg");
+}
+
+.ce-landing-card
+  .wp-block-post-terms.taxonomy-ce-eaction
+  a[href*="mobilitat-sostenible"] {
+  background-image: url("/wp-content/themes/wp-coop-ce-theme-v-2/img/accions/mobilitat-sostenible.svg");
+}
+
+.ce-landing-card .wp-block-post-terms.taxonomy-ce-eaction a[href*="energia-termica"] {
+  background-image: url("/wp-content/themes/wp-coop-ce-theme-v-2/img/accions/energia-termica.svg");
+}
+
+.ce-landing-card .wp-block-post-terms.taxonomy-ce-eaction a[href*="formacio-ciutadana"] {
+  background-image: url("/wp-content/themes/wp-coop-ce-theme-v-2/img/accions/formacio-ciutadana.svg");
+}
+
+.ce-landing-card .wp-block-post-terms.taxonomy-ce-eaction a[href*="compres-colectives"] {
+  background-image: url("/wp-content/themes/wp-coop-ce-theme-v-2/img/accions/compres-colectives.svg");
+}
+
+.ce-landing-card
+  .wp-block-post-terms.taxonomy-ce-eaction
+  a[href*="subministrament-renovable"] {
+  background-image: url("/wp-content/themes/wp-coop-ce-theme-v-2/img/accions/subministrament.svg");
+}

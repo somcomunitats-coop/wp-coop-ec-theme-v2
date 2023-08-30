@@ -13,9 +13,17 @@ footer.wp-block-template-part .gform_wrapper form {
   position: relative;
 }
 
-.ce-form-newsletter .gform_wrapper form .gfield_consent_label,
-.ce-form-newsletter .gform_wrapper form .gfield_consent_description {
-  color: var(--wp--preset--color--base) !important;
+footer.wp-block-template-part
+  .ce-form-newsletter
+  .gform_wrapper
+  form
+  .gfield_consent_label,
+footer.wp-block-template-part
+  .ce-form-newsletter
+  .gform_wrapper
+  form
+  .gfield_consent_description {
+  color: var(--wp--preset--color--base);
 }
 
 footer.wp-block-template-part .gform_button {

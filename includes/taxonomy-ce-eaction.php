@@ -23,7 +23,11 @@ $WPCT_EACTION_TAX_TERMS = [
     ],
     [
         'name' => __('Subministrament d\'energia renovable', 'wpct'),
-        'slug' => 'energia-renovable'
+        'slug' => 'subministrament-renovable',
+    ],
+    [
+        'name' => __('Compres col·lectives', 'wpct'),
+        'slug' => 'compres-colectives',
     ],
 ];
 
@@ -37,7 +41,7 @@ $WPCT_EACTION_XML_SOURCES = [
     'energia-renovable' => 'ce_tag_renewable_energy',
 ];
 
-add_action('init', 'wpct_register_eaction_tax');
+add_action('init', 'wpct_register_eaction_tax', 5);
 function wpct_register_eaction_tax()
 {
     if (defined('WP_CLI') && WP_CLI) return;
@@ -97,7 +101,7 @@ function wpct_lock_eaction_taxonomy()
 
 
 // register_activation_hook(__FILE__, 'wpct_init_eaction_tax_terms');
-add_action('init', 'wpct_init_eaction_tax_terms');
+add_action('init', 'wpct_init_eaction_tax_terms', 99);
 function wpct_init_eaction_tax_terms()
 {
     if (defined('WP_CLI') && WP_CLI) return;

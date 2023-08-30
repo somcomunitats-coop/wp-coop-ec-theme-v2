@@ -1,17 +1,30 @@
-.wp-block-ce-block-slider .ce-post-card .wp-block-post-featured-image {
+.wp-block-ce-block-slider .ce-card .wp-block-post-featured-image {
   height: 280px;
   overflow: hidden;
   width: 100%;
 }
 
-.wp-block-ce-block-slider .ce-post-card .wp-block-post-featured-image img {
+.wp-block-ce-block-slider .ce-card .wp-block-post-featured-image img {
   height: 100%;
 }
 
-.wp-block-ce-block-slider .ce-post-card .wp-block-post-excerpt__excerpt {
+.wp-block-ce-block-slider .ce-card .wp-block-post-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wp-block-ce-block-slider .ce-card .wp-block-post-title a {
+  display: inline;
+}
+
+.wp-block-ce-block-slider .ce-card .wp-block-post-excerpt__excerpt {
   max-height: 96px;
   overflow: hidden;
-  white-space: break-spaces;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 .wp-block-ce-block-slider[slidestoshow] .slick-slide > * {

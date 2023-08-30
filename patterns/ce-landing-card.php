@@ -1,16 +1,16 @@
 <?php
 
 /**
- * Title: CE Post Card.
- * Slug: ce-pattern/post-card
+ * Title: CE Landing Card.
+ * Slug: ce-pattern/landing-card
  * Categories: ce-pattern
  * Viewport Width: 1500
  */
 
 ?>
 
-<!-- wp:group {"tagName":"article","backgroundColor":"base","className":"is-style-no-padding ce-card ce-post-card","layout":{"type":"constrained"}} -->
-<article class="wp-block-group is-style-no-padding has-base-background-color has-background ce-card ce-post-card">
+<!-- wp:group {"tagName":"article","backgroundColor":"base","className":"is-style-no-padding ce-card ce-landing-card","layout":{"type":"constrained"}} -->
+<article class="wp-block-group is-style-no-padding has-base-background-color has-background ce-card ce-landing-card">
   <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
 
   <!-- wp:spacer {"height":"40px"} -->
@@ -21,19 +21,19 @@
   <div class="wp-block-group ce-card-body">
     <!-- wp:group {"className":"is-style-show-desktop"} -->
     <div class="wp-block-group is-style-show-desktop">
-      <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
+      <!-- wp:post-terms {"term":"ce-eaction","separator":""} /-->
     </div>
     <!-- /wp:group -->
 
     <!-- wp:group {"className":"is-style-show-tablet"} -->
     <div class="wp-block-group is-style-show-tablet">
-      <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
+      <!-- wp:post-terms {"term":"ce-eaction","separator":""} /-->
     </div>
     <!-- /wp:group -->
 
     <!-- wp:group {"className":"is-style-show-mobile"} -->
     <div class="wp-block-group is-style-show-mobile">
-      <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
+      <!-- wp:post-terms {"term":"ce-eaction","separator":""} /-->
     </div>
     <!-- /wp:group -->
 
