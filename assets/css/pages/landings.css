@@ -36,8 +36,11 @@ ul.ce-landing-eactions li p {
   display: inline;
 }
 
-.ce-landing-share-pannel .wp-block-button a {
+.ce-landing-template-default .wp-block-button + .wp-block-button {
   margin-top: 1em;
+}
+
+.ce-landing-share-pannel .wp-block-button a {
   position: relative;
   padding-left: calc(var(--wp--custom--spacing--sm) + 1.25rem);
 }

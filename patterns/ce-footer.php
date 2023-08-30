@@ -12,8 +12,8 @@
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|typography"}}},"typography":{"fontSize":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dfont-size\u002d\u002dsmall)"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"main","textColor":"base","className":"is-style-no-padding","layout":{"type":"constrained","contentSize":"100vw"}} -->
 <div class="wp-block-group alignfull is-style-no-padding has-base-color has-main-background-color has-text-color has-background has-link-color" style="margin-top:0;margin-bottom:0;font-size:var(--wp--preset--font-size--small)"><!-- wp:group {"tagName":"section","className":"is-style-horizontal-padded is-style-show-desktop","layout":{"type":"constrained","contentSize":"100%"}} -->
   <section class="wp-block-group is-style-horizontal-padded is-style-show-desktop"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
-    <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"250em"}},"className":"footer-newsletter-form","fontSize":"xx-small"} -->
-      <div class="wp-block-group footer-newsletter-form has-xx-small-font-size"><!-- wp:spacer {"height":"50px"} -->
+    <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"250em"}},"className":"ce-form-newsletter","fontSize":"xx-small"} -->
+      <div class="wp-block-group ce-form-newsletter has-xx-small-font-size"><!-- wp:spacer {"height":"50px"} -->
         <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
@@ -147,8 +147,8 @@
   <!-- /wp:group -->
 
   <!-- wp:group {"className":"is-style-horizontal-padded is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group is-style-horizontal-padded is-style-show-mobile-tablet"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"250em"}},"className":"footer-newsletter-form is-style-show-mobile-tablet","fontSize":"xx-small"} -->
-    <div class="wp-block-group footer-newsletter-form is-style-show-mobile-tablet has-xx-small-font-size"><!-- wp:spacer {"height":"3rem"} -->
+  <div class="wp-block-group is-style-horizontal-padded is-style-show-mobile-tablet"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"250em"}},"className":"ce-form-newsletter is-style-show-mobile-tablet","fontSize":"xx-small"} -->
+    <div class="wp-block-group ce-form-newsletter is-style-show-mobile-tablet has-xx-small-font-size"><!-- wp:spacer {"height":"3rem"} -->
       <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 

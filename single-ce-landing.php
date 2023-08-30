@@ -42,7 +42,7 @@ $data = [
 
 ob_start(); ?>
 
-<!-- wp:template-part {"slug":"header","theme":"wp-coop-ce-theme-v-2","tagName":"header","className":"site-header"} /-->
+<header class="site-header wp-block-template-part"><?php block_template_part('header'); ?></header>
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"0"}}},"layout":{"type":"default"}} -->
 <main class="wp-block-group" style="margin-top:0;padding-top:0">
@@ -68,8 +68,8 @@ ob_start(); ?>
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"65%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
       <div class="wp-block-group is-style-horizontal-padded">
-        <!-- wp:spacer {"height":"2rem"} -->
-        <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- wp:spacer {"height":"4rem"} -->
+        <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
 
         <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
@@ -126,7 +126,7 @@ ob_start(); ?>
             <li>
               <a href="/ce-eaction/<?= $service['slug']; ?>" rel="tag">
                 <i><?= apply_filters('wpct_rest_ce_service_icon', $service) ?></i>
-                <p><?= $service['name']; ?></p>
+                <strong><?= $service['name']; ?></strong>
               </a>
             </li>
             <!-- /wp:list-item -->
@@ -134,8 +134,8 @@ ob_start(); ?>
         </ul>
         <!-- /wp:list -->
 
-        <!-- wp:spacer {"height":"2rem"} -->
-        <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+        <!-- wp:spacer {"height":"5rem"} -->
+        <div style="height:5rem" aria-hidden="true" class="wp-block-spacer"></div>
         <!-- /wp:spacer -->
       </div>
       <!-- /wp:group -->
@@ -204,7 +204,7 @@ ob_start(); ?>
             <li>
               <a href="/ce-eaction/<?= $service['slug']; ?>" rel="tag">
                 <i><?= apply_filters('wpct_rest_ce_service_icon', $service) ?></i>
-                <p><?= $service['name']; ?></p>
+                <strong><?= $service['name']; ?></strong>
               </a>
             </li>
             <!-- /wp:list-item -->
@@ -266,7 +266,7 @@ ob_start(); ?>
         <div class="wp-block-group is-style-horizontal-padded">
           <?php if ($data['number_of_members']) : ?>
             <!-- wp:paragraph {"align":"center","textColor":"base","fontSize":"medium"} -->
-            <p class="has-text-align-center has-base-color has-text-color has-medium-font-size">- <strong style="font-weight: bold;"><?= $data['number_of_members']; ?></strong> <?= __('membres', 'wpct'); ?>-</p>
+            <p class="has-text-align-center has-base-color has-text-color has-medium-font-size">- <strong style="font-weight: bold;"><?= $data['number_of_members']; ?></strong> <?= __('membres', 'wpct'); ?> -</p>
             <!-- /wp:paragraph -->
           <?php endif; ?>
 
@@ -899,7 +899,7 @@ ob_start(); ?>
 </main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"footer","theme":"wp-coop-ce-theme-v-2","tagName":"footer","className":"site-footer"} /-->
+<footer class="site-footer wp-block-template-part"><?php block_template_part('footer'); ?></footer>
 
 <?php
 $html = do_shortcode(do_blocks(ob_get_clean()));
