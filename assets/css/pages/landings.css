@@ -36,7 +36,8 @@ ul.ce-landing-eactions li p {
   display: inline;
 }
 
-.ce-landing-template-default .wp-block-button + .wp-block-button {
+.ce-landing-signup-section .wp-block-button,
+.ce-landing-share-pannel .wp-block-button {
   margin-top: 1em;
 }
 

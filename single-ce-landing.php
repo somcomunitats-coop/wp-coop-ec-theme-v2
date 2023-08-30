@@ -238,8 +238,8 @@ ob_start(); ?>
   </section>
   <!-- /wp:group -->
 
-  <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-ultra-light","className":"is-style-no-padding","layout":{"type":"default"}} -->
-  <section class="wp-block-group alignfull is-style-no-padding has-second-base-ultra-light-background-color has-background">
+  <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-ultra-light","className":"ce-landing-signup-section is-style-no-padding","layout":{"type":"default"}} -->
+  <section class="wp-block-group alignfull ce-landing-signup-section is-style-no-padding has-second-base-ultra-light-background-color has-background">
     <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
     <div class="wp-block-group is-style-show-desktop">
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
@@ -277,10 +277,6 @@ ob_start(); ?>
           <!-- wp:paragraph {"align":"center","textColor":"base"} -->
           <p class="has-text-align-center has-base-color has-text-color"><?= __('Sol·licita adherir-te com a soci/a i accedeix al serveis <br>de la comunitat energètica', 'wpct'); ?></p>
           <!-- /wp:paragraph -->
-
-          <!-- wp:spacer {"height":"1rem","width":"0px"} -->
-          <div style="height:1rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-          <!-- /wp:spacer -->
 
           <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
           <div class="wp-block-buttons">
@@ -348,15 +344,26 @@ ob_start(); ?>
           <p class="has-text-align-center has-base-color has-text-color"><?= __('Sol·licita adherir-te com a soci/a i accedeix al serveis <br>de la comunitat energètica', 'wpct'); ?></p>
           <!-- /wp:paragraph -->
 
-          <!-- wp:spacer {"height":"1rem","width":"0px"} -->
-          <div style="height:1rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-          <!-- /wp:spacer -->
-
           <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
           <div class="wp-block-buttons">
-            <!-- wp:button {"fontSize":"small"} -->
-            <div class="wp-block-button has-custom-font-size has-small-font-size"><a class="wp-block-button__link wp-element-button" href="#contacte"><?= __('Posa-t’hi en contacte', 'wpct'); ?></a></div>
-            <!-- /wp:button -->
+            <?php if ($data['allow_new_members']) : ?>
+              <!-- wp:button {"fontSize":"small"} -->
+              <div class="wp-block-button has-custom-font-size has-small-font-size">
+                <a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop/<?= $current_lang; ?>/become_cooperator?odoo_company_id=<?= $data['odoo_company_id']; ?>"><?= __('Fer-me soci/a com a ciutadania', 'wpct'); ?></a>
+              </div>
+              <!-- /wp:button -->
+              <!-- wp:button {"fontSize":"small"} -->
+              <div class="wp-block-button has-custom-font-size has-small-font-size">
+                <a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop/<?= $current_lang; ?>/become_company_cooperator?odoo_company_id=<?= $data['odoo_company_id']; ?>"><?= __('Fer-me soci/a com a empresa', 'wpct'); ?></a>
+              </div>
+              <!-- /wp:button -->
+            <?php else : ?>
+              <!-- wp:button {"fontSize":"small"} -->
+              <div class="wp-block-button has-custom-font-size has-small-font-size">
+                <a class="wp-block-button__link wp-element-button" href="#contacte"><?= __('Posa-t’hi en contacte', 'wpct'); ?></a>
+              </div>
+              <!-- /wp:button -->
+            <?php endif; ?>
           </div>
           <!-- /wp:buttons -->
 
