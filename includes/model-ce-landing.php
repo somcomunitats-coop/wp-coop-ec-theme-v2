@@ -32,12 +32,13 @@ function wpct_create_model_landing()
                 'excerpt',
                 'author',
                 'editor',
-                'custom-fields'
+                'custom-fields',
+                'category'
             ],
             'rewrite' => [
                 'slug' => 'ce'
             ],
-            'taxonomies' => ['ce-service', 'ce-status', 'ce-shape']
+            'taxonomies' => ['ce-type', 'ce-status', 'ce-assoc-type', 'ce-eaction']
             // 'map_meta_cap' => true,
             // 'capabilities' => [],
             // 'map_meta_cap' => true
@@ -45,15 +46,50 @@ function wpct_create_model_landing()
     );
 }
 
-add_action('wp_insert_post', 'wpct_initialize_ce_eaction_terms', 10, 3);
+add_action('wp_insert_post', 'wpct_initialize_ce_type_terms', 10, 3);
+function wpct_initialize_ce_type_terms($post_id, $post, $update)
+{
+    if (get_post_type($post_id) !== 'ce-landing' || $update) return;
+
+    global $WPCT_CE_TYPE_TAX;
+
+    $terms = get_terms([
+        'taxonomy' => $WPCT_CE_TYPE_TAX,
+        'hide_empty' => false
+    ]);
+
+    $term = $terms[0]->name;
+
+    wp_set_post_terms($post_id, $term, $WPCT_CE_TYPE_TAX);
+}
+
+add_action('wp_insert_post', 'wpct_initialize_ce_status_terms', 11, 3);
+function wpct_initialize_ce_status_terms($post_id, $post, $update)
+{
+    if (get_post_type($post_id) !== 'ce-landing' || $update) return;
+
+    global $WPCT_CE_STATUS_TAX;
+
+    $terms = get_terms([
+        'taxonomy' => $WPCT_CE_STATUS_TAX,
+        'hide_empty' => false
+    ]);
+
+    $term = $terms[0]->name;
+
+    wp_set_post_terms($post_id, $term, $WPCT_CE_STATUS_TAX);
+}
+
+
+add_action('wp_insert_post', 'wpct_initialize_ce_eaction_terms', 12, 3);
 function wpct_initialize_ce_eaction_terms($post_id, $post, $update)
 {
     if (get_post_type($post_id) !== 'ce-landing' || $update) return;
 
-    $tax_name = 'ce-eaction';
+    global $WPCT_CE_EACTION_TAX;
 
     $terms = get_terms([
-        'taxonomy' => $tax_name,
+        'taxonomy' => $WPCT_CE_EACTION_TAX,
         'hide_empty' => false
     ]);
 
@@ -61,24 +97,24 @@ function wpct_initialize_ce_eaction_terms($post_id, $post, $update)
         return $term->name;
     }, $terms));
 
-    wp_set_post_terms($post_id, $names, $tax_name);
+    wp_set_post_terms($post_id, $names, $WPCT_CE_EACTION_TAX);
 }
 
-add_action('wp_insert_post', 'wpct_initialize_ce_service_terms', 10, 3);
-function wpct_initialize_ce_service_terms($post_id, $post, $update)
+add_action('wp_insert_post', 'wpct_initialize_ce_assoc_type_terms', 13, 3);
+function wpct_initialize_ce_assoc_type_terms($post_id, $post, $update)
 {
     if (get_post_type($post_id) !== 'ce-landing' || $update) return;
 
-    $tax_name = 'ce-service';
+    global $WPCT_CE_ASSOC_TYPE_TAX;
 
     $terms = get_terms([
-        'taxonomy' => $tax_name,
+        'taxonomy' => $WPCT_CE_ASSOC_TYPE_TAX,
         'hide_empty' => false
     ]);
 
-    $name = $terms[0]->name;
+    $term = $terms[0]->name;
 
-    wp_set_post_terms($post_id, $name, $tax_name);
+    wp_set_post_terms($post_id, $term, $WPCT_CE_ASSOC_TYPE_TAX);
 }
 
 add_action('wp_insert_post', 'wpct_initialize_ce_custom_fields', 10, 3);
@@ -86,6 +122,11 @@ function wpct_initialize_ce_custom_fields($post_id, $post, $update)
 {
     if (get_post_type($post_id) !== 'ce-landing' || $update) return;
 
+    // udate_post_meta($post_id, 'community_type', 'citizen');
+    // udate_post_meta($post_id, 'community_secondary_type', 'cooperative');
+    // udate_post_meta($post_id, 'community_status', 'closed');
+    // udate_post_meta($post_id, 'community_active_services', ['ce_tag_thermal_energy']);
+    update_post_meta($post_id, 'ce_company_id', 1);
     update_post_meta($post_id, 'ce_allow_new_members', true);
     update_post_meta($post_id, 'ce_why_become_cooperator', 'Per què hauria d\'esdevenir membre de la cooperativa?');
     update_post_meta($post_id, 'ce_become_cooperator_process', 'Procés d\'incorporació a la cooperativa');
