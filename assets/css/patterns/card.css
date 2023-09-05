@@ -1,5 +1,6 @@
 article.wp-block-group.ce-card {
   display: block;
+  position: relative;
 }
 
 article.wp-block-group.ce-card .wp-block-cover {
