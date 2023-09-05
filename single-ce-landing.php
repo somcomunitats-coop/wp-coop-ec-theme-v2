@@ -1,27 +1,44 @@
 <?php
 
 $post_id = get_the_ID();
-$service_types = get_the_terms($post_id, 'ce-service');
-if ($service_types && sizeof($service_types)) {
-  $service_type = get_the_terms($post_id, 'ce-service')[0];
-} else {
-  $service_type = get_terms('ce-service')[0];
+
+global $WPCT_CE_TYPE_TAX;
+global $WPCT_CE_ASSOC_TYPE_TAX;
+global $WPCT_CE_STATUS_TAX;
+global $WPCT_CE_EACTION_TAX;
+
+$ce_type = get_the_terms($post_id, $WPCT_CE_TYPE_TAX);
+if ($ce_type && !is_wp_error($ce_type) && sizeof($ce_type)) {
+  $ce_type = get_the_terms($post_id, $WPCT_CE_TYPE_TAX)[0];
+}
+
+$ce_assoc_type = get_the_terms($post_id, $WPCT_CE_ASSOC_TYPE_TAX);
+if ($ce_type && !is_wp_error($ce_assoc_type) && sizeof($ce_assoc_type)) {
+  $ce_assoc_type = get_the_terms($post_id, $WPCT_CE_ASSOC_TYPE_TAX)[0];
+}
+
+$ce_status = get_the_terms($post_id, $WPCT_CE_STATUS_TAX);
+if ($ce_status && !is_wp_error($ce_status) && sizeof($ce_status)) {
+  $ce_status = get_the_terms($post_id, $WPCT_CE_STATUS_TAX)[0];
 }
 
 $current_lang = apply_filters("wpml_current_language", null);
-$odoo_company_id = get_post_meta($post_id, 'odoo_company_id', true);
+// $odoo_company_id = get_post_meta($post_id, 'odoo_company_id', true);
 
 $data = [
   'name' => get_the_title($post_id),
   'title' => get_the_title($post_id),
-  'odoo_company_id' => $odoo_company_id,
+  'odoo_company_id' => get_post_meta($post_id, 'ce_company_id', true),
+  'company_id' => get_post_meta($post_id, 'ce_company_id', true),
   'long_description' => get_the_content(),
   'short_description' => get_the_excerpt(),
   'primary_image_file' => get_the_post_thumbnail_url($post_id) ? get_the_post_thumbnail_url($post_id) : '/wp-content/themes/wp-coop-ce-theme-v-2/img/ce-landing-primary.png',
   'secondary_image_file' => '/wp-content/themes/wp-coop-ce-theme-v-2/img/ce-landing-secondary.png',
-  'community_type' => $service_type->slug,
+  'community_type' => $ce_type->slug,
+  'community_secondary_type' => $ce_assoc_type->slug,
+  'community_status' => $ce_status->slug,
   'allow_new_members' => get_post_meta($post_id, 'ce_allow_new_members', true) || false,
-  'number_of_members' => 24,
+  'number_of_members' => get_post_meta($post_id, 'ce_number_of_members', true),
   'why_become_cooperator' => get_post_meta($post_id, 'ce_why_become_cooperator', true),
   'become_cooperator_process' => get_post_meta($post_id, 'ce_become_cooperator_process', true),
   'street' => get_post_meta($post_id, 'ce_street', true),
@@ -31,13 +48,13 @@ $data = [
   'twitter_link' => get_post_meta($post_id, 'ce_twitter_link', true),
   'telegram_link' => get_post_meta($post_id, 'ce_telegram_link', true),
   'instagram_link' => get_post_meta($post_id, 'ce_instagram_link', true),
-  'community_active_services' => array_map(function ($term) {
+  'community_active_services' => array_map(function ($term) use ($WPCT_CE_EACTION_TAX) {
     return [
       'name' => $term->name,
       'slug' => $term->slug,
-      'ext_id' => get_option('eaction_' . $term->term_id)['source_xml_id']
+      'ext_id' => get_option($WPCT_CE_EACTION_TAX . '_' . $term->term_id)['source_xml_id']
     ];
-  }, get_the_terms($post_id, 'ce-eaction')),
+  }, get_the_terms($post_id, $WPCT_CE_EACTION_TAX)),
 ];
 
 ob_start(); ?>
@@ -48,8 +65,8 @@ ob_start(); ?>
 <main class="wp-block-group" style="margin-top:0;padding-top:0">
   <!-- wp:group {"tagName":"section","align":"full","className":"is-style-no-padding","layout":{"type":"default"}} -->
   <section class="wp-block-group alignfull is-style-no-padding">
-    <!-- wp:group {"className":"is-style-show-tablet-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-    <div class="wp-block-group is-style-show-tablet-desktop">
+    <!-- wp:group {"className":"is-style-show-desktop","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
+    <div class="wp-block-group is-style-show-desktop">
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"35%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
       <div class="wp-block-group is-style-no-padding">
         <!-- wp:cover {"url":"<?= $data['primary_image_file']; ?>","dimRatio":0,"minHeight":100,"minHeightUnit":"%","isDark":false,"layout":{"type":"constrained"}} -->
@@ -78,25 +95,23 @@ ob_start(); ?>
           <div class="wp-block-buttons">
             <!-- wp:button {"backgroundColor":"second-base-light","textColor":"typography","style":{"spacing":{"padding":{"left":"var:preset|spacing|50","right":"var:preset|spacing|50","top":"0.44rem","bottom":"0.44rem"}}},"fontSize":"x-small"} -->
             <div class="wp-block-button has-custom-font-size has-x-small-font-size">
-              <a href="/ce-service/<?= $service_type->slug; ?>/" class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--50);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--50)"><?= $service_type->name; ?></a>
+              <a href="/<?= $WPCT_CE_TYPE_TAX; ?>/<?= $ce_type->slug; ?>/" class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--50);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--50)"><?= wpct_ce_type_icon($ce_type->slug); ?><?= $ce_type->name; ?></a>
             </div>
             <!-- /wp:button -->
 
             <!-- wp:button {"backgroundColor":"second-base-light","textColor":"typography","style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30","top":"0.44rem","bottom":"0.44rem"}}}} -->
-            <div class="wp-block-button" style="display: none;" aria-hidden="true">
-              <a class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)">Societat Cooperativa</a>
+            <div class="wp-block-button">
+              <a href="/<?= $WPCT_CE_ASSOC_TYPE_TAX; ?>/<?= $ce_assoc_type->slug; ?>/" class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"><?= $ce_assoc_type->name; ?></a>
             </div>
             <!-- /wp:button -->
 
-            <!-- wp:button {"backgroundColor":"brand","textColor":"base","style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30","top":"0.44rem","bottom":"0.44rem"}}}} -->
+            <?php $status_bg_color = $ce_status->slug === 'open' ? 'brand' : 'label-purple'; ?>
+            <!-- wp:button {"backgroundColor":"<?= $status_bg_color; ?>","textColor":"base","style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30","top":"0.44rem","bottom":"0.44rem"}}}} -->
             <div class="wp-block-button">
-              <?php if ($data['allow_new_members']) : ?>
-                <a class="wp-block-button__link has-base-color has-brand-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"><?= __('Oberta', 'wpct'); ?></a>
-              <?php else : ?>
-                <a class="wp-block-button__link has-base-color has-brand-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"><?= __('Tancada', 'wpct'); ?></a>
-              <?php endif ?>
+              <a href="/<?= $WPCT_CE_STATUS_TAX; ?>/<?= $ce_status->slug; ?>/" class="wp-block-button__link has-base-color has-<?= $status_bg_color; ?>-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"><?= wpct_ce_status_icon($ce_status->slug); ?><?= $ce_status->name; ?></a>
             </div>
             <!-- /wp:button -->
+
           </div>
           <!-- /wp:buttons -->
 
@@ -124,7 +139,7 @@ ob_start(); ?>
           foreach ($data['community_active_services'] as $service) : ?>
             <!-- wp:list-item -->
             <li>
-              <a href="/ce-eaction/<?= $service['slug']; ?>" rel="tag">
+              <a href="/<?= $WPCT_CE_ASSOC_TYPE_TAX; ?>/<?= $service['slug']; ?>" rel="tag">
                 <i><?= apply_filters('wpct_rest_ce_service_icon', $service) ?></i>
                 <strong><?= $service['name']; ?></strong>
               </a>
@@ -156,23 +171,19 @@ ob_start(); ?>
           <div class="wp-block-buttons">
             <!-- wp:button {"backgroundColor":"second-base-light","textColor":"typography","style":{"spacing":{"padding":{"left":"var:preset|spacing|50","right":"var:preset|spacing|50","top":"0.44rem","bottom":"0.44rem"}}},"fontSize":"x-small"} -->
             <div class="wp-block-button has-custom-font-size has-x-small-font-size">
-              <a href="/ce-service/<?= $service_type->slug; ?>/" class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--50);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--50)"><?= $service_type->name; ?></a>
+              <a href="/<?= $WPCT_CE_TYPE_TAX; ?>/<?= $ce_type->slug; ?>/" class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--50);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--50)"><?= $ce_type->name; ?></a>
             </div>
             <!-- /wp:button -->
 
             <!-- wp:button {"backgroundColor":"second-base-light","textColor":"typography","style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30","top":"0.44rem","bottom":"0.44rem"}}}} -->
-            <div class="wp-block-button" style="display: none" aria-hidden="true">
-              <a class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)">Societat Cooperativa</a>
+            <div class="wp-block-button">
+              <a href="/<?= $WPCT_CE_ASSOC_TYPE_TAX; ?>/<?= $ce_assoc_type->slug; ?>/" class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"><?= $ce_assoc_type->name; ?></a>
             </div>
             <!-- /wp:button -->
 
-            <!-- wp:button {"backgroundColor":"brand","textColor":"base","style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30","top":"0.44rem","bottom":"0.44rem"}}}} -->
+            <!-- wp:button {"backgroundColor":"<?= $status_bg_color; ?>","textColor":"base","style":{"spacing":{"padding":{"left":"var:preset|spacing|30","right":"var:preset|spacing|30","top":"0.44rem","bottom":"0.44rem"}}}} -->
             <div class="wp-block-button">
-              <?php if ($data['allow_new_members']) : ?>
-                <a class="wp-block-button__link has-base-color has-brand-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"><?= __('Oberta', 'wpct'); ?></a>
-              <?php else : ?>
-                <a class="wp-block-button__link has-base-color has-brand-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"><?= __('Tancada', 'wpct'); ?></a>
-              <?php endif ?>
+              <a href="/<?= $WPCT_CE_STATUS_TAX; ?>/<?= $ce_status->slug; ?>/" class="wp-block-button__link has-base-color has-<?= $status_bg_color; ?>-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"><?= wpct_ce_status_icon($ce_status->slug); ?><?= $ce_status->name; ?></a>
             </div>
             <!-- /wp:button -->
           </div>
@@ -202,7 +213,7 @@ ob_start(); ?>
           foreach ($data['community_active_services'] as $service) : ?>
             <!-- wp:list-item -->
             <li>
-              <a href="/ce-eaction/<?= $service['slug']; ?>" rel="tag">
+              <a href="/<?= $WPCT_CE_EACTION_TAX; ?>/<?= $service['slug']; ?>" rel="tag">
                 <i><?= apply_filters('wpct_rest_ce_service_icon', $service) ?></i>
                 <strong><?= $service['name']; ?></strong>
               </a>
