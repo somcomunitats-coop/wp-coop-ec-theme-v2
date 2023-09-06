@@ -55,7 +55,7 @@ body.home .ce-home-landings-section .slick-arrow {
   border-radius: 100%;
   padding: 0px 13px;
   position: absolute;
-  top: 145px;
+  top: 90%;
   z-index: 2;
   left: 37%;
 
@@ -65,12 +65,10 @@ body.home .ce-home-landings-section .slick-arrow {
   #troba-la-teva-comunitat #step-number{
     padding: 5px 15px;
     position: absolute;
-    bottom: 20%;
     z-index: 2;
     left: 45%;
-    top: unset;
+    top: 95%;
 
   }
- 
 }
 

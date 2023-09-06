@@ -107,8 +107,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"tagName":"section","align":"full","style":{"color":{"background":"#c5e2d040"}},"className":"is-style-no-padding","layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull is-style-no-padding has-background" id="troba-la-teva-comunitat" style="background-color:#c5e2d040">
-  <!-- wp:spacer {"height":"6rem","className":"is-style-show-tablet-desktop"} -->
+<section class="wp-block-group alignfull is-style-no-padding has-background" id="troba-la-teva-comunitat" style="background-color:#c5e2d040"><!-- wp:spacer {"height":"6rem","className":"is-style-show-tablet-desktop"} -->
   <div style="height:6rem" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
   <!-- /wp:spacer -->
 
@@ -117,8 +116,7 @@
   <!-- /wp:spacer -->
 
   <!-- wp:group {"className":"is-style-horizontal-padded is-style-show-tablet-desktop","layout":{"type":"default"}} -->
-  <div class="wp-block-group is-style-horizontal-padded is-style-show-tablet-desktop">
-    <!-- wp:heading {"textAlign":"center","textColor":"main"} -->
+  <div class="wp-block-group is-style-horizontal-padded is-style-show-tablet-desktop"><!-- wp:heading {"textAlign":"center","textColor":"main"} -->
     <h2 class="wp-block-heading has-text-align-center has-main-color has-text-color">Fem créixer les Comunitats Energètiques</h2>
     <!-- /wp:heading -->
 
@@ -131,18 +129,19 @@
     <!-- /wp:spacer -->
 
     <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-    <div class="wp-block-group">
-      <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"28.5%"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-      <div class="wp-block-group">
-        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"constrained"}} -->
-        <div id="step" class="wp-block-group">
-          <!-- wp:image {"align":"wide","id":2104,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-no-margin"} -->
-          <figure class="wp-block-image alignwide size-full is-style-no-margin"><img src="/wp-content/uploads/2023/07/busca-la-teva-zona.png" alt="" class="wp-image-2104" style="aspect-ratio:1;object-fit:cover" /></figure>
-          <!-- /wp:image -->
+    <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"28.5%"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
+      <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group">
+          <!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+          <div class="wp-block-group alignwide" id="step"><!-- wp:image {"align":"wide","id":2104,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-no-margin"} -->
+            <figure class="wp-block-image alignwide size-full is-style-no-margin"><img src="/wp-content/uploads/2023/07/busca-la-teva-zona.png" alt="" class="wp-image-2104" style="aspect-ratio:1;object-fit:cover" /></figure>
+            <!-- /wp:image -->
 
-          <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
-          <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">1</p>
-          <!-- /wp:paragraph -->
+            <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
+            <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">1</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
 
           <!-- wp:spacer {"height":"30px","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
           <div style="margin-top:0;margin-bottom:0;height:30px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -159,8 +158,7 @@
         <!-- /wp:group -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-        <div id="step-arrow" class="wp-block-group is-style-no-padding">
-          <!-- wp:image {"id":2102,"scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
+        <div id="step-arrow" class="wp-block-group is-style-no-padding"><!-- wp:image {"id":2102,"scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
           <figure class="wp-block-image size-full is-style-default"><img src="/wp-content/uploads/2023/07/right-arrow-gray.png" alt="" class="wp-image-2102" style="object-fit:cover" /></figure>
           <!-- /wp:image -->
         </div>
@@ -169,16 +167,17 @@
       <!-- /wp:group -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"28.5%"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-      <div class="wp-block-group">
-        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"constrained"}} -->
-        <div id="step" class="wp-block-group">
-          <!-- wp:image {"align":"wide","id":2106,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/comprova-lestat.png" alt="" class="wp-image-2106" /></figure>
-          <!-- /wp:image -->
+      <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+          <div class="wp-block-group alignwide" id="step"><!-- wp:image {"align":"wide","id":2106,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/comprova-lestat.png" alt="" class="wp-image-2106" /></figure>
+            <!-- /wp:image -->
 
-          <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
-          <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">2</p>
-          <!-- /wp:paragraph -->
+            <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
+            <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">2</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
 
           <!-- wp:spacer {"height":"30px","style":{"layout":{}}} -->
           <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -195,8 +194,7 @@
         <!-- /wp:group -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-        <div id="step-arrow" class="wp-block-group is-style-no-padding">
-          <!-- wp:image {"id":2102,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
+        <div id="step-arrow" class="wp-block-group is-style-no-padding"><!-- wp:image {"id":2102,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
           <figure class="wp-block-image size-full is-style-default"><img src="/wp-content/uploads/2023/07/right-arrow-gray.png" alt="" class="wp-image-2102" /></figure>
           <!-- /wp:image -->
         </div>
@@ -205,16 +203,17 @@
       <!-- /wp:group -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"28.5%"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
-      <div class="wp-block-group">
-        <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"constrained"}} -->
-        <div id="step" class="wp-block-group">
-          <!-- wp:image {"align":"wide","id":2108,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/omple-les-dades.png" alt="" class="wp-image-2108" /></figure>
-          <!-- /wp:image -->
+      <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+          <div class="wp-block-group alignwide" id="step"><!-- wp:image {"align":"wide","id":2108,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/omple-les-dades.png" alt="" class="wp-image-2108" /></figure>
+            <!-- /wp:image -->
 
-          <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
-          <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">3</p>
-          <!-- /wp:paragraph -->
+            <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
+            <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">3</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
 
           <!-- wp:spacer {"height":"30px","style":{"layout":{}}} -->
           <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -231,8 +230,7 @@
         <!-- /wp:group -->
 
         <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"flex","orientation":"vertical","justifyContent":"center","verticalAlignment":"center"}} -->
-        <div id="step-arrow" class="wp-block-group is-style-no-padding">
-          <!-- wp:image {"id":2102,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
+        <div id="step-arrow" class="wp-block-group is-style-no-padding"><!-- wp:image {"id":2102,"sizeSlug":"full","linkDestination":"none","style":{"layout":{"selfStretch":"fit","flexSize":null}},"className":"is-style-default"} -->
           <figure class="wp-block-image size-full is-style-default"><img src="/wp-content/uploads/2023/07/right-arrow-gray.png" alt="" class="wp-image-2102" /></figure>
           <!-- /wp:image -->
         </div>
@@ -241,16 +239,17 @@
       <!-- /wp:group -->
 
       <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"14.3%"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
-      <div class="wp-block-group">
-        <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained"}} -->
-        <div id="step" class="wp-block-group">
-          <!-- wp:image {"align":"wide","id":2110,"sizeSlug":"full","linkDestination":"none"} -->
-          <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/ja-hi-ets.png" alt="" class="wp-image-2110" /></figure>
-          <!-- /wp:image -->
+      <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+          <div class="wp-block-group alignwide" id="step"><!-- wp:image {"align":"wide","id":2110,"sizeSlug":"full","linkDestination":"none"} -->
+            <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/ja-hi-ets.png" alt="" class="wp-image-2110" /></figure>
+            <!-- /wp:image -->
 
-          <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
-          <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">4</p>
-          <!-- /wp:paragraph -->
+            <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
+            <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">4</p>
+            <!-- /wp:paragraph -->
+          </div>
+          <!-- /wp:group -->
 
           <!-- wp:spacer {"height":"30px","style":{"layout":{}}} -->
           <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -297,14 +296,17 @@
         <!-- wp:group {"lock":{"remove":true,"move":true},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
         <div class="wp-block-group ce-block-slider-wrapper">
           <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
-          <div id="step" class="wp-block-group">
-            <!-- wp:image {"align":"wide","id":2104,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-no-margin"} -->
-            <figure class="wp-block-image alignwide size-full is-style-no-margin"><img src="/wp-content/uploads/2023/07/busca-la-teva-zona.png" alt="" class="wp-image-2104" style="aspect-ratio:1;object-fit:cover" /></figure>
-            <!-- /wp:image -->
+          <div class="wp-block-group">
+            <!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group alignwide" id="step"><!-- wp:image {"align":"wide","id":2104,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","className":"is-style-no-margin"} -->
+              <figure class="wp-block-image alignwide size-full is-style-no-margin"><img src="/wp-content/uploads/2023/07/busca-la-teva-zona.png" alt="" class="wp-image-2104" style="aspect-ratio:1;object-fit:cover" /></figure>
+              <!-- /wp:image -->
 
-            <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
-            <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">1</p>
-            <!-- /wp:paragraph -->
+              <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
+              <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">1</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
 
             <!-- wp:spacer {"height":"30px","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
             <div style="margin-top:0;margin-bottom:0;height:30px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -321,14 +323,16 @@
           <!-- /wp:group -->
 
           <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
-          <div id="step" class="wp-block-group">
-            <!-- wp:image {"align":"wide","id":2106,"sizeSlug":"full","linkDestination":"none"} -->
-            <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/comprova-lestat.png" alt="" class="wp-image-2106" /></figure>
-            <!-- /wp:image -->
+          <div class="wp-block-group"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group alignwide" id="step"><!-- wp:image {"align":"wide","id":2106,"sizeSlug":"full","linkDestination":"none"} -->
+              <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/comprova-lestat.png" alt="" class="wp-image-2106" /></figure>
+              <!-- /wp:image -->
 
-            <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
-            <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">2</p>
-            <!-- /wp:paragraph -->
+              <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
+              <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">2</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
 
             <!-- wp:spacer {"height":"30px","style":{"layout":{}}} -->
             <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -345,14 +349,16 @@
           <!-- /wp:group -->
 
           <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
-          <div id="step" class="wp-block-group">
-            <!-- wp:image {"align":"wide","id":2108,"sizeSlug":"full","linkDestination":"none"} -->
-            <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/omple-les-dades.png" alt="" class="wp-image-2108" /></figure>
-            <!-- /wp:image -->
+          <div class="wp-block-group"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group alignwide" id="step"><!-- wp:image {"align":"wide","id":2108,"sizeSlug":"full","linkDestination":"none"} -->
+              <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/omple-les-dades.png" alt="" class="wp-image-2108" /></figure>
+              <!-- /wp:image -->
 
-            <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
-            <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">3</p>
-            <!-- /wp:paragraph -->
+              <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
+              <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">3</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
 
             <!-- wp:spacer {"height":"30px","style":{"layout":{}}} -->
             <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -369,14 +375,16 @@
           <!-- /wp:group -->
 
           <!-- wp:group {"style":{"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"constrained"}} -->
-          <div id="step" class="wp-block-group">
-            <!-- wp:image {"align":"wide","id":2110,"sizeSlug":"full","linkDestination":"none"} -->
-            <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/ja-hi-ets.png" alt="" class="wp-image-2110" /></figure>
-            <!-- /wp:image -->
+          <div class="wp-block-group"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group alignwide" id="step"><!-- wp:image {"align":"wide","id":2110,"sizeSlug":"full","linkDestination":"none"} -->
+              <figure class="wp-block-image alignwide size-full"><img src="/wp-content/uploads/2023/07/ja-hi-ets.png" alt="" class="wp-image-2110" /></figure>
+              <!-- /wp:image -->
 
-            <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
-            <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">4</p>
-            <!-- /wp:paragraph -->
+              <!-- wp:paragraph {"backgroundColor":"base","textColor":"main","fontSize":"medium"} -->
+              <p class="has-main-color has-base-background-color has-text-color has-background has-medium-font-size" id="step-number">4</p>
+              <!-- /wp:paragraph -->
+            </div>
+            <!-- /wp:group -->
 
             <!-- wp:spacer {"height":"30px","style":{"layout":{}}} -->
             <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -1133,14 +1141,17 @@
       <!-- /wp:image -->
     </div>
     <!-- /wp:group -->
+    <!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group is-style-horizontal-padded">
+      <!-- wp:heading {"textAlign":"center","textColor":"base"} -->
+      <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color">Intercooperem per sumar coneixements i multiplicar les Comunitats Energètiques</h2>
+      <!-- /wp:heading -->
 
-    <!-- wp:heading {"textAlign":"center","textColor":"base"} -->
-    <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color">Intercooperem per sumar coneixements i multiplicar les Comunitats Energètiques</h2>
-    <!-- /wp:heading -->
-
-    <!-- wp:paragraph {"align":"center","textColor":"base","fontSize":"medium"} -->
-    <p class="has-text-align-center has-base-color has-text-color has-medium-font-size">Des de Som Comunitats sumem el nostre coneixement i experiència per multiplicar les Comunitats Energètiques des de l’economia social i solidària</p>
-    <!-- /wp:paragraph -->
+      <!-- wp:paragraph {"align":"center","textColor":"base","fontSize":"medium"} -->
+      <p class="has-text-align-center has-base-color has-text-color has-medium-font-size">Des de Som Comunitats sumem el nostre coneixement i experiència per multiplicar les Comunitats Energètiques des de l’economia social i solidària</p>
+      <!-- /wp:paragraph -->
+    </div>
+    <!-- /wp:group -->
 
     <!-- wp:spacer {"height":"1rem"} -->
     <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
@@ -1368,12 +1379,12 @@
       <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
-      <!-- wp:heading -->
-      <h2 class="wp-block-heading">Guies i recursos sobre les Comunitats Energètiques</h2>
+      <!-- wp:heading {"textColor":"main"} -->
+      <h2 class="wp-block-heading has-main-color has-text-color">Guies i recursos sobre les Comunitats Energètiques</h2>
       <!-- /wp:heading -->
 
-      <!-- wp:paragraph {"fontSize":"medium"} -->
-      <p class="has-medium-font-size">Consulta les nostres guies temàtiques per ajudar a conèixer millor què són les Comunitats Energètiques, els seus objectius i funcionament, els principals serveis i casos reals inspiradors.</p>
+      <!-- wp:paragraph {"textColor":"typography","fontSize":"medium"} -->
+      <p class="has-typography-color has-text-color has-medium-font-size">Consulta les nostres guies temàtiques per ajudar a conèixer millor què són les Comunitats Energètiques, els seus objectius i funcionament, els principals serveis i casos reals inspiradors.</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:spacer {"height":"1rem"} -->
@@ -1381,9 +1392,8 @@
       <!-- /wp:spacer -->
 
       <!-- wp:buttons -->
-      <div class="wp-block-buttons">
-        <!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button" href="/?page_id=213">Consulta les guies</a></div>
+      <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"main","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
+        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-main-background-color has-text-color has-background wp-element-button" href="/?page_id=213">Consulta les guies</a></div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
@@ -1436,17 +1446,17 @@
       <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
-      <!-- wp:heading -->
-      <h2 class="wp-block-heading">Guies i recursos sobre les Comunitats Energètiques</h2>
+      <!-- wp:heading {"textColor":"main"} -->
+      <h2 class="wp-block-heading has-main-color has-text-color">Guies i recursos sobre les Comunitats Energètiques</h2>
       <!-- /wp:heading -->
 
-      <!-- wp:paragraph {"fontSize":"medium"} -->
-      <p class="has-medium-font-size">Consulta les nostres guies temàtiques per ajudar a conèixer millor què són les Comunitats Energètiques, els seus objectius i funcionament, els principals serveis i casos reals inspiradors.</p>
+      <!-- wp:paragraph {"textColor":"typography","fontSize":"medium"} -->
+      <p class="has-typography-color has-text-color has-medium-font-size">Consulta les nostres guies temàtiques per ajudar a conèixer millor què són les Comunitats Energètiques, els seus objectius i funcionament, els principals serveis i casos reals inspiradors.</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:buttons -->
-      <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"typography","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
-        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-typography-background-color has-text-color has-background wp-element-button" href="/?page_id=213">Consulta les guies</a></div>
+      <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"main","textColor":"primary","className":"is-style-rounded","fontSize":"small"} -->
+        <div class="wp-block-button has-custom-font-size is-style-rounded has-small-font-size"><a class="wp-block-button__link has-primary-color has-main-background-color has-text-color has-background wp-element-button" href="/?page_id=213">Consulta les guies</a></div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
