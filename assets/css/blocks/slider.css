@@ -19,7 +19,7 @@
 }
 
 .wp-block-ce-block-slider .ce-card .wp-block-post-excerpt__excerpt {
-  max-height: 96px;
+  height: 80px;
   overflow: hidden;
   overflow: hidden;
   -webkit-line-clamp: 3;
