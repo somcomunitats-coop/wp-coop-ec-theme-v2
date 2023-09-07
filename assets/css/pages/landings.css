@@ -96,12 +96,16 @@ ul.ce-landing-services li p {
 }
 
 .ce-landing-contact-section a {
-  color: var(--wp--preset--color--typography);
+  color: var(--wp--preset--color--main);
   text-decoration: underline;
 }
 
+.ce-landing-contact-section form .gfield_consent_label {
+  color: var(--wp--preset--color--main);
+}
+
 .ce-landing-contact-section form .gfield_consent_description {
-  overflow-y: auto;
+  color: var(--wp--preset--color--main) !important;
 }
 
 .ce-landing-contact-section .gform_button[type="submit"] {

@@ -10,7 +10,8 @@
 ?>
 
 <!-- wp:group {"align":"full","style":{"elements":{"link":{"color":{"text":"var:preset|color|typography"}}},"typography":{"fontSize":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dfont-size\u002d\u002dsmall)"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"main","textColor":"base","className":"is-style-no-padding","layout":{"type":"constrained","contentSize":"100vw"}} -->
-<div class="wp-block-group alignfull is-style-no-padding has-base-color has-main-background-color has-text-color has-background has-link-color" style="margin-top:0;margin-bottom:0;font-size:var(--wp--preset--font-size--small)"><!-- wp:group {"tagName":"section","className":"is-style-horizontal-padded is-style-show-desktop","layout":{"type":"constrained","contentSize":"100%"}} -->
+<div class="wp-block-group alignfull is-style-no-padding has-base-color has-main-background-color has-text-color has-background has-link-color" style="margin-top:0;margin-bottom:0;font-size:var(--wp--preset--font-size--small)">
+  <!-- wp:group {"tagName":"section","className":"is-style-horizontal-padded is-style-show-desktop","layout":{"type":"constrained","contentSize":"100%"}} -->
   <section class="wp-block-group is-style-horizontal-padded is-style-show-desktop"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"top"}} -->
     <div class="wp-block-group"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"250em"}},"className":"ce-form-newsletter","fontSize":"xx-small"} -->
       <div class="wp-block-group ce-form-newsletter has-xx-small-font-size"><!-- wp:spacer {"height":"50px"} -->
@@ -146,8 +147,8 @@
   </section>
   <!-- /wp:group -->
 
-  <!-- wp:group {"className":"is-style-horizontal-padded is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group is-style-horizontal-padded is-style-show-mobile-tablet"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"250em"}},"className":"ce-form-newsletter is-style-show-mobile-tablet","fontSize":"xx-small"} -->
+  <!-- wp:group {"tagName":"section","className":"is-style-horizontal-padded is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
+  <section class="wp-block-group is-style-horizontal-padded is-style-show-mobile-tablet"><!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"250em"}},"className":"ce-form-newsletter is-style-show-mobile-tablet","fontSize":"xx-small"} -->
     <div class="wp-block-group ce-form-newsletter is-style-show-mobile-tablet has-xx-small-font-size"><!-- wp:spacer {"height":"3rem"} -->
       <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
@@ -211,7 +212,7 @@
       <!-- /wp:social-links -->
     </div>
     <!-- /wp:group -->
-  </div>
+  </section>
   <!-- /wp:group -->
 
   <!-- wp:spacer {"height":"3rem","style":{"layout":{}},"className":"is-style-show-mobile-tablet"} -->
@@ -243,9 +244,9 @@
     <div class="wp-block-group is-style-show-desktop">
       <!-- wp:buttons {"className":"is-style-default","layout":{"type":"flex","verticalAlignment":"center","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"fontSize":"large"} -->
       <div class="wp-block-buttons has-custom-font-size is-style-default has-large-font-size" style="margin-top:0;margin-bottom:0">
-        <!-- wp:button {"textAlign":"center","backgroundColor":"primary","textColor":"typography","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","right":"var:preset|spacing|60","top":"1rem","bottom":"1rem"}},"border":{"radius":"0px"}},"className":"is-style-fill is-style-no-margin"} -->
+        <!-- wp:button {"textAlign":"center","backgroundColor":"primary","textColor":"main","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","right":"var:preset|spacing|60","top":"1rem","bottom":"1rem"}},"border":{"radius":"0px"}},"className":"is-style-fill is-style-no-margin"} -->
         <div class="wp-block-button is-style-fill is-style-no-margin">
-          <a class="wp-block-button__link has-typography-color has-primary-background-color has-text-color has-background has-text-align-center wp-element-button" href="/alta-nova-comunitat/" style="border-radius:0px;padding-top:1rem;padding-right:var(--wp--preset--spacing--60);padding-bottom:1rem;padding-left:var(--wp--preset--spacing--60)"><strong>Suma't-hi</strong></a>
+          <a class="wp-block-button__link has-main-color has-primary-background-color has-text-color has-background has-text-align-center wp-element-button" href="/alta-nova-comunitat/" style="border-radius:0px;padding-top:1rem;padding-right:var(--wp--preset--spacing--60);padding-bottom:1rem;padding-left:var(--wp--preset--spacing--60)"><strong>Suma't-hi</strong></a>
         </div>
         <!-- /wp:button -->
       </div>
@@ -261,9 +262,9 @@
     <div class="wp-block-group">
       <!-- wp:buttons {"className":"is-style-default","layout":{"type":"flex","justifyContent":"stretch","flexWrap":"wrap","orientation":"vertical"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"large"} -->
       <div class="wp-block-buttons has-custom-font-size is-style-default has-large-font-size" style="margin-top:0;margin-bottom:0">
-        <!-- wp:button {"textAlign":"center","backgroundColor":"primary","textColor":"typography","width":100,"style":{"spacing":{"padding":{"left":"0","right":"0","top":"1rem","bottom":"1rem"}},"border":{"radius":"0px"}},"className":"is-style-fill is-style-no-margin"} -->
+        <!-- wp:button {"textAlign":"center","backgroundColor":"primary","textColor":"main","width":100,"style":{"spacing":{"padding":{"left":"0","right":"0","top":"1rem","bottom":"1rem"}},"border":{"radius":"0px"}},"className":"is-style-fill is-style-no-margin"} -->
         <div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill is-style-no-margin">
-          <a class="wp-block-button__link has-typography-color has-primary-background-color has-text-color has-background has-text-align-center wp-element-button" href="/alta-nova-comunitat/" style="border-radius:0px;padding-top:1rem;padding-right:0;padding-bottom:1rem;padding-left:0"><strong>Suma't-hi</strong></a>
+          <a class="wp-block-button__link has-main-color has-primary-background-color has-text-color has-background has-text-align-center wp-element-button" href="/alta-nova-comunitat/" style="border-radius:0px;padding-top:1rem;padding-right:0;padding-bottom:1rem;padding-left:0"><strong>Suma't-hi</strong></a>
         </div>
         <!-- /wp:button -->
       </div>
