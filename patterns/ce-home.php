@@ -1288,8 +1288,8 @@
       <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
-      <!-- wp:heading -->
-      <h2 class="wp-block-heading">Acompanyem la primera xarxa de Comunitats Energètiques de l’economia social</h2>
+      <!-- wp:heading {"textColor":"main"} -->
+      <h2 class="wp-block-heading has-main-color has-text-color">Acompanyem la primera xarxa de Comunitats Energètiques de l’economia social</h2>
       <!-- /wp:heading -->
 
       <!-- wp:paragraph {"fontSize":"medium"} -->
@@ -1341,8 +1341,8 @@
       <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
       <!-- /wp:spacer -->
 
-      <!-- wp:heading -->
-      <h2 class="wp-block-heading">Acompanyem la primera xarxa de Comunitats Energètiques de l’economia social</h2>
+      <!-- wp:heading {"textColor":"main"} -->
+      <h2 class="wp-block-heading has-main-color has-text-color">Acompanyem la primera xarxa de Comunitats Energètiques de l’economia social</h2>
       <!-- /wp:heading -->
 
       <!-- wp:paragraph {"fontSize":"medium"} -->
