@@ -13,6 +13,8 @@
 <article class="wp-block-group is-style-no-padding has-base-background-color has-background ce-card ce-landing-card">
   <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
 
+  <!-- wp:post-terms {"term":"ce-status", "separator": ""} /-->
+
   <!-- wp:spacer {"height":"40px"} -->
   <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
   <!-- /wp:spacer -->

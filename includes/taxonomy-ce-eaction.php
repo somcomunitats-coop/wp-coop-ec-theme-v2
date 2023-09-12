@@ -1,6 +1,7 @@
 <?php
 
-$WPCT_EACTION_TAX_TERMS = [
+$WPCT_CE_EACTION_TAX = 'ce-eaction';
+$WPCT_CE_EACTION_TERMS = [
     [
         'name' => __('Generació renovable comunitàtia', 'wpct'),
         'slug' => 'generacio-renovable'
@@ -31,24 +32,24 @@ $WPCT_EACTION_TAX_TERMS = [
     ],
 ];
 
-$WPCT_EACTION_XML_SOURCES = [
+$WPCT_CE_EACTION_XML_SOURCES = [
     'generacio-renovable' => 'ce_tag_common_generation',
     'eficiencia-energetica' => 'ce_tag_energy_efficiency',
     'mobilitat-sostenible' => 'ce_tag_sustainable_mobility',
     'formacio-ciutadana' => 'ce_tag_citizen_education',
     'energia-termica' => 'ce_tag_thermal_energy',
-    'compres-collectives' => 'ce_tag_collective_purchases',
-    'energia-renovable' => 'ce_tag_renewable_energy',
+    'compres-colectives' => 'ce_tag_collective_purchases',
+    'subministrament-renovable' => 'ce_tag_renewable_energy',
 ];
 
-add_action('init', 'wpct_register_eaction_tax', 5);
-function wpct_register_eaction_tax()
+add_action('init', 'wpct_register_ce_eaction_tax', 5);
+function wpct_register_ce_eaction_tax()
 {
     if (defined('WP_CLI') && WP_CLI) return;
 
-    $tax_name = 'ce-eaction';
+    global $WPCT_CE_EACTION_TAX;
 
-    register_taxonomy($tax_name, 'ce-landing', [
+    register_taxonomy($WPCT_CE_EACTION_TAX, 'ce-landing', [
         'labels' => [
             'name' => __('Accions energètiques', 'wpct'),
             'singular_name' => __('Acció energètica', 'wpct'),
@@ -64,7 +65,7 @@ function wpct_register_eaction_tax()
             'separate_items_with_commas' => __('Separa els items amb comes', 'wpct'),
             'add_or_remove_items' => __('Afegeix o esborra items', 'wpct'),
             'choose_from_most_used' => __('Escull entre els valors més populars', 'wpct'),
-            'menu_name' => __('Acció energètica', 'wpct'),
+            'menu_name' => __('Accions energètiques', 'wpct'),
         ],
         'hierarchical' => false,
         'show_ui' => true,
@@ -75,52 +76,52 @@ function wpct_register_eaction_tax()
         'has_archive' => true,
     ]);
 
-    wpct_lock_eaction_taxonomy();
+    wpct_lock_ce_eaction_taxonomy();
 }
 
-function wpct_lock_eaction_taxonomy()
+function wpct_lock_ce_eaction_taxonomy()
 {
-    $tax_name = 'ce-eaction';
+    global $WPCT_CE_EACTION_TAX;
+    global $WPCT_CE_EACTION_TERMS;
 
-    global $WPCT_EACTION_TAX_TERMS;
     $options = array_map(function ($option) {
         return $option['slug'];
-    }, $WPCT_EACTION_TAX_TERMS);
+    }, $WPCT_CE_EACTION_TERMS);
 
-    $terms = get_terms($tax_name, [
+    $terms = get_terms($WPCT_CE_EACTION_TAX, [
         'hide_empty' => false,
-        'taxonomy' => $tax_name
+        'taxonomy' => $WPCT_CE_EACTION_TAX
     ]);
 
     foreach ($terms as $term) {
         if (!in_array($term->slug, $options)) {
-            wp_delete_term($term->term_id, $tax_name);
+            wp_delete_term($term->term_id, $WPCT_CE_EACTION_TAX);
         }
     }
 }
 
 
-// register_activation_hook(__FILE__, 'wpct_init_eaction_tax_terms');
-add_action('init', 'wpct_init_eaction_tax_terms', 99);
-function wpct_init_eaction_tax_terms()
+// register_activation_hook(__FILE__, 'wpct_init_eaction_terms');
+add_action('init', 'wpct_init_ce_eaction_terms', 99);
+function wpct_init_ce_eaction_terms()
 {
     if (defined('WP_CLI') && WP_CLI) return;
 
-    global $WPCT_EACTION_TAX_TERMS;
-    global $WPCT_EACTION_XML_SOURCES;
-    $tax_name = 'ce-eaction';
+    global $WPCT_CE_EACTION_TERMS;
+    global $WPCT_CE_EACTION_XML_SOURCES;
+    global $WPCT_CE_EACTION_TAX;
 
-    foreach ($WPCT_EACTION_TAX_TERMS as $term) {
-        $term = wp_insert_term($term['name'], $tax_name, [
+    foreach ($WPCT_CE_EACTION_TERMS as $term) {
+        $term = wp_insert_term($term['name'], $WPCT_CE_EACTION_TAX, [
             'slug' => $term['slug']
         ]);
 
         if (is_wp_error($term)) continue;
 
-        $term = get_term($term['term_id'], $tax_name);
-        $option_id = 'eaction_' . $term->term_id;
+        $term = get_term($term['term_id'], $WPCT_CE_EACTION_TAX);
+        $option_id = $WPCT_CE_EACTION_TAX . '_' . $term->term_id;
 
-        foreach ($WPCT_EACTION_XML_SOURCES as $slug => $source) {
+        foreach ($WPCT_CE_EACTION_XML_SOURCES as $slug => $source) {
             if ($slug === $term->slug) {
                 update_option($option_id, [
                     'source_xml_id' => $source
@@ -130,14 +131,15 @@ function wpct_init_eaction_tax_terms()
     }
 }
 
-// register_deactivation_hook(__FILE__, 'wpct_unregister_eaction_tax_terms');
-function wpct_unregister_eaction_tax_terms()
+// register_deactivation_hook(__FILE__, 'wpct_unregister_ce_eaction_terms');
+// add_action('init', 'wpct_unregister_ce_eaction_terms', 10);
+function wpct_unregister_ce_eaction_terms()
 {
-    global $WPCT_EACTION_TAX_TERMS;
-    $tax_name = 'ce-eaction';
+    global $WPCT_CE_EACTION_TERMS;
+    global $WPCT_CE_EACTION_TAX;
 
     $terms = get_terms([
-        'taxonomy' => $tax_name,
+        'taxonomy' => $WPCT_CE_EACTION_TAX,
         'hide_empty' => false
     ]);
 
@@ -146,16 +148,16 @@ function wpct_unregister_eaction_tax_terms()
         return $acum;
     }, []);
 
-    foreach ($WPCT_EACTION_TAX_TERMS as $term) {
+    foreach ($WPCT_CE_EACTION_TERMS as $term) {
         if (isset($term_slugs[$term['slug']])) {
             $term_id = $term_slugs[$term['slug']];
-            wp_delete_term($term_id, $tax_name);
-            delete_option('eaction_' . $term_id);
+            wp_delete_term($term_id, $WPCT_CE_EACTION_TAX);
+            delete_option($WPCT_CE_EACTION_TAX . '_' . $term_id);
         }
     }
 }
 
-add_action('ce-eaction_add_form_fields', 'wpct_eaction_add_form_fields', 99);
+add_action($WPCT_CE_EACTION_TAX . '_add_form_fields', 'wpct_eaction_add_form_fields', 99);
 function wpct_eaction_add_form_fields()
 { ?>
     <div class="form-field">
@@ -166,10 +168,12 @@ function wpct_eaction_add_form_fields()
 <?php
 }
 
-add_action('ce-eaction_edit_form_fields', 'wpct_eaction_edit_form_fields', 99);
+add_action($WPCT_CE_EACTION_TAX . '_edit_form_fields', 'wpct_eaction_edit_form_fields', 99);
 function wpct_eaction_edit_form_fields($term)
 {
-    $term_meta = get_option('eaction_' . $term->term_id);
+    global $WPCT_CE_EACTION_TAX;
+
+    $term_meta = get_option($WPCT_CE_EACTION_TAX . '_' . $term->term_id);
     $value = isset($term_meta['source_xml_id']) && esc_attr($term_meta['source_xml_id']) ? esc_attr($term_meta['source_xml_id']) : '';
 ?>
     <tr class="form-field">
@@ -182,18 +186,20 @@ function wpct_eaction_edit_form_fields($term)
 <?php
 }
 
-add_action('edited_ce-eaction', 'wpct_save_eaction_custom_field', 10, 2);
-add_action('create_ce-eaction', 'wpct_save_eaction_custom_field', 10, 2);
+add_action('edited_' . $WPCT_CE_EACTION_TAX, 'wpct_save_eaction_custom_field', 10, 2);
+add_action('create_' . $WPCT_CE_EACTION_TAX, 'wpct_save_eaction_custom_field', 10, 2);
 function wpct_save_eaction_custom_field($term_id)
 {
+    global $WPCT_CE_EACTION_TAX;
+
     if (isset($_POST['term_meta'])) {
-        $term_meta = get_option('eaction_' . $term_id);
+        $term_meta = get_option($WPCT_CE_EACTION_TAX . '_' . $term_id);
         $cat_keys = array_keys($_POST['term_meta']);
         foreach ($cat_keys as $key) {
             if (isset($_POST['term_meta'][$key])) {
                 $term_meta[$key] = $_POST['term_meta'][$key];
             }
         }
-        update_option('eaction_' . $term_id, $term_meta);
+        update_option($WPCT_CE_EACTION_TAX . '_' . $term_id, $term_meta);
     }
 }

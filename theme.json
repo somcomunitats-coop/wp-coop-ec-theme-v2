@@ -69,6 +69,11 @@
           "name": "LabelOrange",
           "slug": "label-orange",
           "color": "#E86A23"
+        },
+        {
+          "name": "LabelPurple",
+          "slug": "label-purple",
+          "color": "#9A59B1"
         }
       ]
     },
