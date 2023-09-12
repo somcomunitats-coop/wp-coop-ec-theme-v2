@@ -208,7 +208,7 @@
       <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="3" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay="">
         <!-- wp:group {"lock":{"move":false,"remove":false},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
         <div class="wp-block-group ce-block-slider-wrapper">
-          <!-- wp:query {"className":"ce-query","queryId":18,"query":{"perPage":10,"pages":1,"offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
+          <!-- wp:query {"className":"ce-query","queryId":18,"query":{"perPage":10,"pages":1,"offset":0,"postType":"rest-ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
           <div class="wp-block-query ce-query">
             <!-- wp:post-template {"layout":{"type":"default"}} -->
             <!-- wp:pattern {"slug":"ce-pattern/landing-card"} /-->
@@ -228,7 +228,7 @@
       <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="false" showarrows="true" autoplay="">
         <!-- wp:group {"lock":{"move":false,"remove":false},"className":"ce-block-slider-wrapper","layout":{"type":"flex","orientation":"horizontal"}} -->
         <div class="wp-block-group ce-block-slider-wrapper">
-          <!-- wp:query {"className":"ce-query","queryId":18,"query":{"perPage":10,"pages":1,"offset":0,"postType":"ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
+          <!-- wp:query {"className":"ce-query","queryId":18,"query":{"perPage":10,"pages":1,"offset":0,"postType":"rest-ce-landing","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
           <div class="wp-block-query ce-query">
             <!-- wp:post-template {"layout":{"type":"default"}} -->
             <!-- wp:pattern {"slug":"ce-pattern/landing-card"} /-->
