@@ -188,9 +188,9 @@
         },
         "spacing": {
           "padding": {
-            "top": "var(--wp--custom--spacing--sxxs)",
+            "top": "var(--wp--custom--spacing--sxs)",
             "right": "var(--wp--custom--spacing--sm)",
-            "bottom": "var(--wp--custom--spacing--sxxs)",
+            "bottom": "var(--wp--custom--spacing--sxs)",
             "left": "var(--wp--custom--spacing--sm)"
           },
           "margin": {

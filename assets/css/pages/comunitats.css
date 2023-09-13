@@ -1,0 +1,11 @@
+#ce-services #more-info-group p{
+    margin-bottom: 0;
+}
+#ce-services #more-info-group{
+    margin-bottom: var(--wp--custom--spacing--sxs);
+}
+@media (max-width: 782px) {
+    #ce-services h4{
+        margin-bottom: 0;
+    }
+}
