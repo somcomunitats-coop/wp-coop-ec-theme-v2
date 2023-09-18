@@ -60,6 +60,13 @@ body.home .ce-home-landings-section .slick-arrow {
   left: 37%;
 
 }
+#troba-la-teva-comunitat #more-info a{
+  text-decoration: underline;
+}
+#troba-la-teva-comunitat #more-info.new-line a::before{
+  content: '\A'; 
+  white-space: pre;
+}
 /*step numbers for mobile slider*/
 @media (max-width: 782px){
   #troba-la-teva-comunitat #step-number{

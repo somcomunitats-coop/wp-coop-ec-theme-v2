@@ -11,6 +11,13 @@
   padding-right: var(--wp--custom--spacing--sl);
 
 }
+@media only screen and (min-width: 1024px) and (max-width: 1350px){
+  #ce-header nav{
+    padding-right: var(--wp--custom--spacing--sxxs);
+  
+  }
+}
+
 
   /*NOU CODI CÒDEC*/
   /*Desktop version*/
@@ -51,6 +58,12 @@
     #ce-header .wp-block-buttons .wp-block-button__link{
       padding: 13px 20px;
       font-size: var(--wp--preset--font-size--small);
+    }
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1350px){
+    #ce-header nav .wp-block-navigation__container .wp-block-navigation-item:not(:nth-child(2)){
+      padding: 0 var(--wp--custom--spacing--sxxs);
     }
   }
 
