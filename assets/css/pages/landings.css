@@ -12,27 +12,35 @@
   color: var(--wp--preset--color--brand);
 }
 
+.single-rest-ce-landing .wp-block-buttons.disabled-buttons .wp-block-button {
+  pointer-events: none;
+}
+
 h2.ce-landing-title {
   margin-top: 1rem;
 }
 
-ul.ce-landing-eactions {
+ul.ce-landing-services {
   list-style: none;
 }
 
+ul.ce-landing-services a {
+  pointer-events: none;
+}
+
 @media (min-width: 783px) {
-  ul.ce-landing-eactions {
+  ul.ce-landing-services {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
-ul.ce-landing-eactions li {
+ul.ce-landing-services li {
   margin-left: 0;
 }
 
-ul.ce-landing-eactions li i,
-ul.ce-landing-eactions li p {
+ul.ce-landing-services li i,
+ul.ce-landing-services li p {
   display: inline;
 }
 
@@ -88,12 +96,16 @@ ul.ce-landing-eactions li p {
 }
 
 .ce-landing-contact-section a {
-  color: var(--wp--preset--color--typography);
+  color: var(--wp--preset--color--main);
   text-decoration: underline;
 }
 
+.ce-landing-contact-section form .gfield_consent_label {
+  color: var(--wp--preset--color--main);
+}
+
 .ce-landing-contact-section form .gfield_consent_description {
-  overflow-y: auto;
+  color: var(--wp--preset--color--main) !important;
 }
 
 .ce-landing-contact-section .gform_button[type="submit"] {

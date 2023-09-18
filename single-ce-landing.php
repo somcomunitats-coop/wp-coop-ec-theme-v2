@@ -23,12 +23,10 @@ if ($ce_status && !is_wp_error($ce_status) && sizeof($ce_status)) {
 }
 
 $current_lang = apply_filters("wpml_current_language", null);
-// $odoo_company_id = get_post_meta($post_id, 'odoo_company_id', true);
 
 $data = [
   'name' => get_the_title($post_id),
   'title' => get_the_title($post_id),
-  'odoo_company_id' => get_post_meta($post_id, 'ce_company_id', true),
   'company_id' => get_post_meta($post_id, 'ce_company_id', true),
   'long_description' => get_the_content(),
   'short_description' => get_the_excerpt(),
@@ -294,12 +292,12 @@ ob_start(); ?>
             <?php if ($data['allow_new_members']) : ?>
               <!-- wp:button {"fontSize":"small"} -->
               <div class="wp-block-button has-custom-font-size has-small-font-size">
-                <a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop/<?= $current_lang; ?>/become_cooperator?odoo_company_id=<?= $data['odoo_company_id']; ?>"><?= __('Fer-me soci/a com a ciutadania', 'wpct'); ?></a>
+                <a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop/<?= $current_lang; ?>/become_cooperator?company_id=<?= $data['company_id']; ?>"><?= __('Fer-me soci/a com a ciutadania', 'wpct'); ?></a>
               </div>
               <!-- /wp:button -->
               <!-- wp:button {"fontSize":"small"} -->
               <div class="wp-block-button has-custom-font-size has-small-font-size">
-                <a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop/<?= $current_lang; ?>/become_company_cooperator?odoo_company_id=<?= $data['odoo_company_id']; ?>"><?= __('Fer-me soci/a com a empresa', 'wpct'); ?></a>
+                <a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop/<?= $current_lang; ?>/become_company_cooperator?company_id=<?= $data['company_id']; ?>"><?= __('Fer-me soci/a com a empresa', 'wpct'); ?></a>
               </div>
               <!-- /wp:button -->
             <?php else : ?>
@@ -360,12 +358,12 @@ ob_start(); ?>
             <?php if ($data['allow_new_members']) : ?>
               <!-- wp:button {"fontSize":"small"} -->
               <div class="wp-block-button has-custom-font-size has-small-font-size">
-                <a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop/<?= $current_lang; ?>/become_cooperator?odoo_company_id=<?= $data['odoo_company_id']; ?>"><?= __('Fer-me soci/a com a ciutadania', 'wpct'); ?></a>
+                <a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop/<?= $current_lang; ?>/become_cooperator?company_id=<?= $data['company_id']; ?>"><?= __('Fer-me soci/a com a ciutadania', 'wpct'); ?></a>
               </div>
               <!-- /wp:button -->
               <!-- wp:button {"fontSize":"small"} -->
               <div class="wp-block-button has-custom-font-size has-small-font-size">
-                <a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop/<?= $current_lang; ?>/become_company_cooperator?odoo_company_id=<?= $data['odoo_company_id']; ?>"><?= __('Fer-me soci/a com a empresa', 'wpct'); ?></a>
+                <a class="wp-block-button__link wp-element-button" href="https://erp-testing.somcomunitats.coop/<?= $current_lang; ?>/become_company_cooperator?company_id=<?= $data['company_id']; ?>"><?= __('Fer-me soci/a com a empresa', 'wpct'); ?></a>
               </div>
               <!-- /wp:button -->
             <?php else : ?>

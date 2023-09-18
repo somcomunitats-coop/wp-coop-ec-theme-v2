@@ -27,8 +27,6 @@ footer.wp-block-template-part
 }
 
 footer.wp-block-template-part .gform_button {
-  background-color: var(--wp--preset--color--secondary);
-  color: var(--wp--preset--color--typography);
   margin: 0 !important;
 }
 
