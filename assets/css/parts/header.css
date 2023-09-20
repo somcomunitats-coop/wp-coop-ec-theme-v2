@@ -84,7 +84,9 @@
   #ce-header-mobile-nav .wp-block-navigation__responsive-container-close{
     color: var(--wp--preset--color--base);
     border: none;
-
+  }
+  #ce-header-mobile-nav .wp-block-navigation__responsive-container-content .wp-block-navigation__container .wp-block-navigation-item a{
+    color: var(--wp--preset--color--base);
   }
   #ce-header-mobile-nav .wp-block-navigation__responsive-container-close{
     padding: 0;
