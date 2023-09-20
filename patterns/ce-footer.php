@@ -92,6 +92,9 @@
           <!-- wp:list-item -->
           <li><a href="/recursos/#faqs">Faqs</a></li>
           <!-- /wp:list-item -->
+          <!-- wp:list-item -->
+          <li><a href="/plataforma/">Serveis</a></li>
+          <!-- /wp:list-item -->
         </ul>
         <!-- /wp:list -->
       </div>
