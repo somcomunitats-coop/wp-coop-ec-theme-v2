@@ -131,12 +131,12 @@ function ce_register_block_pattern_categories()
 {
   register_block_pattern_category(
     'ce-pages',
-    array('label' => __('CE Pages', 'wp-coop-ce-theme-v-2'))
+    array('label' => __('CE Pages', 'wpct'))
   );
 
   register_block_pattern_category(
     'ce-pattern',
-    ['label' => __('CE Pattern', 'wp-coop-ce-theme')]
+    ['label' => __('CE Pattern', 'wpct')]
   );
 }
 add_action('init', 'ce_register_block_pattern_categories');
