@@ -123,6 +123,10 @@ input {
   resize: none;
 }
 
+#ce-form .ginput_container_textarea .charleft {
+  display: none;
+}
+
 #ce-form .gfield.gfield--type-checkbox legend {
   font-size: var(--wp--preset--font-size--small);
   font-weight: var(--wp--custom--font-weight--medium);
