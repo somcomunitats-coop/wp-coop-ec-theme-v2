@@ -120,3 +120,7 @@ ul.ce-landing-services li p {
   font-size: var(--wp--preset--font-size--medium);
   padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sxl);
 }
+
+.ce-form-newsletter .gform_validation_errors {
+  display: none;
+}
