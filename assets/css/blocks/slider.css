@@ -1,3 +1,7 @@
+.wp-block-ce-block-slider .wp-block-post {
+  display: block !important;
+}
+
 .wp-block-ce-block-slider article.wp-block-group.ce-post-card {
   display: block;
 }
