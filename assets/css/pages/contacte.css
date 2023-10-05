@@ -4,5 +4,5 @@
 
 #contacte .gfield.gfield--type-consent .gfield_consent_label a,
 #contacte .gfield.gfield--type-consent .gfield_consent_description a {
-  color: var(--wp--preset--color--primary) !important;
+  color: var(--wp--preset--color--primary);
 }
