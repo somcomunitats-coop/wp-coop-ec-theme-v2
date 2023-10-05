@@ -41,8 +41,10 @@
     <div style="height:1em;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
     <!-- wp:post-date /-->
+
     <!-- wp:post-title {"isLink":true,"level":4,"className":"wp-block-heading"} /-->
     <!-- wp:post-excerpt {"moreText":"Més informació"} /-->
+    <!-- /wp:group -->
   </div>
   <!-- /wp:group -->
 
