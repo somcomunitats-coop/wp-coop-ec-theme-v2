@@ -100,11 +100,13 @@ ul.ce-landing-services li p {
   text-decoration: underline;
 }
 
-.ce-landing-contact-section form .gfield_consent_label {
-  color: var(--wp--preset--color--main);
+.ce-landing-contact-section form .gfield_consent_label,
+.ce-landing-contact-section form .gfield_consent_label a {
+  color: var(--wp--preset--color--main) !important;
 }
 
-.ce-landing-contact-section form .gfield_consent_description {
+.ce-landing-contact-section form .gfield_consent_description,
+.ce-landing-contact-section form .gfield_consent_description a {
   color: var(--wp--preset--color--main) !important;
 }
 
@@ -119,4 +121,8 @@ ul.ce-landing-services li p {
   margin: auto;
   font-size: var(--wp--preset--font-size--medium);
   padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sxl);
+}
+
+.ce-form-newsletter .gform_validation_errors {
+  display: none;
 }

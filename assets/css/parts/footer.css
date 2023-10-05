@@ -26,6 +26,21 @@ footer.wp-block-template-part
   color: var(--wp--preset--color--base);
 }
 
+footer.wp-block-template-part .ce-form-newsletter .gform_validation_errors {
+  display: none;
+}
+
+footer.wp-block-template-part .ce-form-newsletter .gfield_validation_message {
+  background-color: white;
+  padding: 0.9em 1.6em;
+  border: 1px solid var(--wp--preset--color--label-red);
+}
+
+footer.wp-block-template-part .ce-form-newsletter .gform_confirmation_message {
+  color: var(--wp--preset--color--base);
+  font-size: 0.9rem;
+}
+
 footer.wp-block-template-part .gform_button {
   margin: 0 !important;
 }

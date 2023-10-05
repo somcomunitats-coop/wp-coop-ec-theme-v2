@@ -6,10 +6,10 @@ function wpct_create_model_news()
         'ce-news',
         [
             'labels' => [
-                'name' => __('Notícies', 'wp-coop-ce-theme'),
+                'name' => __('Notícies', 'wpct'),
                 'singular_name' => __(
                     'Notícia',
-                    'wp-coop-ce-theme'
+                    'wpct'
                 )
             ],
 

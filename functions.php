@@ -131,12 +131,30 @@ function ce_register_block_pattern_categories()
 {
   register_block_pattern_category(
     'ce-pages',
-    array('label' => __('CE Pages', 'wp-coop-ce-theme-v-2'))
+    array('label' => __('CE Pages', 'wpct'))
   );
 
   register_block_pattern_category(
     'ce-pattern',
-    ['label' => __('CE Pattern', 'wp-coop-ce-theme')]
+    ['label' => __('CE Pattern', 'wpct')]
   );
 }
 add_action('init', 'ce_register_block_pattern_categories');
+
+add_action('wp_head', 'wpct_add_ga_script');
+function wpct_add_ga_script()
+{ ?>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WD92MXBLJE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-WD92MXBLJE');
+  </script>
+<?php
+}

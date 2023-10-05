@@ -6,10 +6,10 @@ function wpct_create_model_landing()
         'ce-landing',
         [
             'labels' => [
-                'name' => __('CE Landings', 'wp-coop-ce-theme'),
+                'name' => __('CE Landings', 'wpct'),
                 'singular_name' => __(
                     'CE Landing',
-                    'wp-coop-ce-theme'
+                    'wpct'
                 )
             ],
 

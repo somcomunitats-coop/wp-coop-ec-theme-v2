@@ -43,12 +43,11 @@ body.home .ce-home-landings-section .slick-arrow {
 #troba-la-teva-comunitat #step-arrow {
   justify-content: flex-start;
   margin-top: 20%;
-
 }
-#troba-la-teva-comunitat #step{
+#troba-la-teva-comunitat #step {
   position: relative;
 }
-#troba-la-teva-comunitat #step-number{
+#troba-la-teva-comunitat #step-number {
   font-family: var(--wp--preset--font-family--title);
   font-weight: var(--wp--custom--font-weight--bold);
   text-align: center;
@@ -58,24 +57,21 @@ body.home .ce-home-landings-section .slick-arrow {
   top: 90%;
   z-index: 2;
   left: 37%;
-
 }
-#troba-la-teva-comunitat #more-info a{
+#troba-la-teva-comunitat #more-info a {
   text-decoration: underline;
 }
-#troba-la-teva-comunitat #more-info.new-line a::before{
-  content: '\A'; 
+#troba-la-teva-comunitat #more-info.new-line a::before {
+  content: "\A";
   white-space: pre;
 }
 /*step numbers for mobile slider*/
-@media (max-width: 782px){
-  #troba-la-teva-comunitat #step-number{
+@media (max-width: 782px) {
+  #troba-la-teva-comunitat #step-number {
     padding: 5px 15px;
     position: absolute;
     z-index: 2;
     left: 45%;
     top: 95%;
-
   }
 }
-

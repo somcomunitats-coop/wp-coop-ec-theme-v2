@@ -1,0 +1,8 @@
+#contacte .gfield.gfield--type-consent .gfield_consent_description {
+  opacity: 1;
+}
+
+#contacte .gfield.gfield--type-consent .gfield_consent_label a,
+#contacte .gfield.gfield--type-consent .gfield_consent_description a {
+  color: var(--wp--preset--color--primary);
+}

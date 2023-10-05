@@ -36,13 +36,6 @@ input {
   border-radius: 5px;
 }
 
-.gform_confirmation_message {
-  background-color: var(--wp--preset--color--typography);
-  border-radius: 5px;
-  padding: var(--wp--custom--spacing--sxs);
-  color: var(--wp--preset--color--main);
-}
-
 .gfield_label {
   margin-bottom: 0 !important;
 }
@@ -123,6 +116,10 @@ input {
   resize: none;
 }
 
+.ginput_container_textarea .charleft {
+  display: none;
+}
+
 #ce-form .gfield.gfield--type-checkbox legend {
   font-size: var(--wp--preset--font-size--small);
   font-weight: var(--wp--custom--font-weight--medium);
@@ -154,38 +151,18 @@ input {
   font-weight: var(--wp--custom--font-weight--medium);
 }
 
-/* Gform confirmation message */
-#ce-form .gform_confirmation_message {
-  background-color: var(--wp--preset--color--base);
-  height: 80vh;
+.gform_confirmation_wrapper {
+  width: 100%;
+}
+
+.gform_confirmation_message {
+  color: var(--wp--preset--color--typography);
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: var(--wp--custom--spacing--sxs);
   text-align: center;
-}
-
-@media (max-width: 1024px) {
-  #ce-form .gform_confirmation_message {
-    height: 40vh;
-  }
-}
-
-#ce-form .gform_confirmation_message img {
-  margin-bottom: 30px;
-}
-
-#ce-form .gform_confirmation_message h4 {
-  color: var(--wp--preset--color--main);
-  margin: 0;
-}
-
-#ce-form .gform_confirmation_message a {
-  color: var(--wp--preset--color--main);
-  font-weight: var(--wp--custom--font-weight--bold);
-  background: var(--wp--preset--color--primary);
-  padding: 15px 20px;
-  border-radius: 100px;
-  margin-top: 30px;
+  font-weight: bold;
 }

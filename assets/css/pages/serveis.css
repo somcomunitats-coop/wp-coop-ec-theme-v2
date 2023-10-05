@@ -1,8 +1,33 @@
+
+#ciutadania-head #logo-button a::before{
+  content: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/Vectorciutadania.png);
+  margin-right: 10px;
+}
+
+#administracio-head #logo-button a::before{
+  content: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/VectorAdministracio.png);
+  margin-right: 10px;
+}
+#empresa-head #logo-button a::before{
+  content: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/VectorEmpresa.png);
+  margin-right: 10px;
+}
+
+#serveis-link #serveis-paragraph-no-margin{
+  margin-bottom: 0;
+}
 #experiencies .wp-block-column .wp-block-grup {
   position: relative;
 }
-
-#experiencies .wp-block-column .wp-block-image {
+#experiencies  #blockquote {
+  position: relative;
+}
+#experiencies  #blockquote #quotes{
+  position: absolute;
+  top: 8%;
+  left: 8%;
+}
+#experiencies #persona {
   margin-top: -40px !important;
 }
 

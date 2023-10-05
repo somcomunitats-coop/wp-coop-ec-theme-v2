@@ -19,20 +19,20 @@
 
   <!-- wp:group {"className":"ce-card-body"} -->
   <div class="wp-block-group ce-card-body">
-    <!-- wp:group {"className":"is-style-show-desktop"} -->
-    <div class="wp-block-group is-style-show-desktop">
+    <!-- wp:group {"className":"is-style-show-desktop ce-card-terms"} -->
+    <div class="wp-block-group is-style-show-desktop ce-card-terms">
       <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"className":"is-style-show-tablet"} -->
-    <div class="wp-block-group is-style-show-tablet">
+    <!-- wp:group {"className":"is-style-show-tablet ce-card-terms"} -->
+    <div class="wp-block-group is-style-show-tablet ce-card-terms">
       <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"className":"is-style-show-mobile"} -->
-    <div class="wp-block-group is-style-show-mobile">
+    <!-- wp:group {"className":"is-style-show-mobile ce-card-terms"} -->
+    <div class="wp-block-group is-style-show-mobile ce-card-terms">
       <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
     </div>
     <!-- /wp:group -->
@@ -41,6 +41,7 @@
     <div style="height:1em;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
     <!-- wp:post-date /-->
+
     <!-- wp:post-title {"isLink":true,"level":4,"className":"wp-block-heading"} /-->
     <!-- wp:post-excerpt {"moreText":"Més informació"} /-->
   </div>

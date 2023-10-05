@@ -1,3 +1,7 @@
+.ce-query .ce-landing-card .ce-card-terms {
+  height: 2.5rem;
+}
+
 .ce-query .ce-landing-card .wp-block-post-terms {
   display: flex;
 }
