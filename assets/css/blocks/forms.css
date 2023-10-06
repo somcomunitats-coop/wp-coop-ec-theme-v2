@@ -179,6 +179,11 @@ input {
   color: var(--wp--preset--color--base);
   text-decoration: none;
 }
+
+#butlleti #form .gform_wrapper .gform_validation_errors,
+#butlleti #form .gform_wrapper .gfield_validation_message{
+  display: none;
+}
 #butlleti #form .ginput_container.ginput_container_email input{
   font-size: var(--wp--preset--font-size--small);
   margin-bottom: 0;
