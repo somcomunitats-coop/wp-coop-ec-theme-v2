@@ -166,3 +166,64 @@ input {
   text-align: center;
   font-weight: bold;
 }
+
+/* Forms Butlletí
+--------------------------------------------- */
+
+#butlleti #form .gform_wrapper{
+  color: var(--wp--preset--color--base);
+  position: relative;
+  
+}
+#butlleti #form .gform_wrapper a{
+  color: var(--wp--preset--color--base);
+  text-decoration: none;
+}
+
+#butlleti #form .gform_wrapper .gform_validation_errors,
+#butlleti #form .gform_wrapper .gfield_validation_message{
+  display: none;
+}
+#butlleti #form .ginput_container.ginput_container_email input{
+  font-size: var(--wp--preset--font-size--small);
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: var(--wp--custom--spacing--sxxs);
+  border-radius: 0px;
+  height: 44px;
+}
+
+#butlleti #form .gform_footer.top_label input{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border-radius: 0px;
+  background-color: var(--wp--preset--color--primary);
+  height: 44px;
+}
+#butlleti #form .ginput_container.ginput_container_consent{
+  display: flex;
+  margin-top: 10px;
+}
+#butlleti #form .ginput_container.ginput_container_consent input {
+  border-radius: 0px;
+  border: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  padding: 8px;
+  outline: none;
+}
+
+#butlleti #form .ginput_container.ginput_container_consent input:checked {
+  background-color: var(--wp--preset--color--primary);
+  border: none;
+}
+#butlleti #form .ginput_container.ginput_container_consent input:checked{
+  display: block;
+}
+
+#butlleti #form .ginput_container.ginput_container_consent .gform-field-label{
+  margin-left: 8px;
+}
