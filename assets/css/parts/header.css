@@ -29,7 +29,7 @@
   padding-right: var(--wp--custom--spacing--sl);
 
 }
-@media only screen and (min-width: 1255px) and (max-width: 1350px){
+@media only screen and (min-width: 1255px) and (max-width: 1360px){
   #ce-header nav{
     padding-right: var(--wp--custom--spacing--sxxs);
   
