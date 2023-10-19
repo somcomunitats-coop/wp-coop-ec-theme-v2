@@ -158,3 +158,10 @@ function wpct_add_ga_script()
   </script>
 <?php
 }
+
+add_action('wp_head', 'wpct_set_favicon');
+function wpct_set_favicon()
+{ ?>
+  <link rel="shortcut icon" href="<?= get_theme_file_uri() . "/img/favicon.ico" ?>" />
+<?php
+}
