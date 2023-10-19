@@ -70,7 +70,8 @@ body.home .ce-home-landings-section .slick-arrow {
   font-weight: var(--wp--custom--font-weight--bold);
   text-align: center;
   border-radius: 100%;
-  padding: 0px 13px;
+  padding: 0px 15px;
+  font-size: 28px !important;
   position: absolute;
   top: 90%;
   z-index: 2;
@@ -109,7 +110,7 @@ body.home .ce-home-landings-section .slick-arrow {
 
 
 #troba-la-teva-comunitat #step1{
-  background-image: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/Apuntat1.jpg);
+  background-image: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/Apuntat1.png);
 }
 #troba-la-teva-comunitat #step2{
   background-image: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/Apuntat2.jpg);
