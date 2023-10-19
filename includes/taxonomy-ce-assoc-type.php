@@ -50,7 +50,7 @@ function wpct_register_ce_assoc_type_tax()
         'has_archive' => true,
     ]);
 
-    wpct_lock_ce_assoc_type_taxonomy();
+    // wpct_lock_ce_assoc_type_taxonomy();
 }
 
 function wpct_lock_ce_assoc_type_taxonomy()

@@ -76,7 +76,7 @@ function wpct_register_ce_eaction_tax()
         'has_archive' => true,
     ]);
 
-    wpct_lock_ce_eaction_taxonomy();
+    // wpct_lock_ce_eaction_taxonomy();
 }
 
 function wpct_lock_ce_eaction_taxonomy()
