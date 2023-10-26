@@ -40,10 +40,11 @@ body.home .ce-home-landings-section .slick-arrow {
   background-color: var(--wp--preset--color--primary);
   background-blend-mode: color-dodge;
 }
+
 #troba-la-teva-comunitat #step-arrow {
-  justify-content: flex-start;
-  margin-top: 20%;
+  height: 180px;
 }
+
 #troba-la-teva-comunitat #step-arrow::before {
   content: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/right-arrow-gray-1.png);
 }
@@ -85,7 +86,6 @@ body.home .ce-home-landings-section .slick-arrow {
 /*step numbers for mobile slider*/
 @media (max-width: 782px) {
   #troba-la-teva-comunitat #step-number {
-    padding: 5px 15px;
     position: absolute;
     z-index: 2;
     left: 45%;
@@ -97,8 +97,9 @@ body.home .ce-home-landings-section .slick-arrow {
   #troba-la-teva-comunitat #step4 {
     position: relative;
     height: 300px;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 }
 
