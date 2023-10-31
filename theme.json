@@ -146,7 +146,12 @@
         {
           "name": "Small",
           "slug": "small",
-          "size": "clamp(15px, 1vw, 17px)"
+          "size": "clamp(15px, 1.3vw, 17px)"
+        },
+        {
+          "name": "Buttons",
+          "slug": "buttons",
+          "size": "clamp(16px, 1.3vw, 18px)"
         },
         {
           "name": "Medium",

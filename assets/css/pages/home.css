@@ -84,10 +84,17 @@ body.home .ce-home-landings-section .slick-arrow {
   white-space: pre;
 }
 
+
+#qui-som-button a{
+  padding-right: var(--wp--custom--spacing--sxl);
+  padding-left: var(--wp--custom--spacing--sxl);
+}
+
 /*step numbers for mobile slider*/
 @media (max-width: 782px) {
   #troba-la-teva-comunitat #step-number {
     position: absolute;
+    font-size: 20px;
     z-index: 2;
     left: 45%;
     top: 95%;
