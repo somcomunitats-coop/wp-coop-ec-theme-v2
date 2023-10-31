@@ -1,12 +1,8 @@
 <?php
 
-require_once "includes/model-ce-news.php";
-// require_once "includes/model-ce-landing.php";
-// require_once "includes/taxonomy-ce-type.php";
-// require_once "includes/taxonomy-ce-status.php";
-// require_once "includes/taxonomy-ce-assoc-type.php";
-// require_once "includes/taxonomy-ce-eaction.php";
-require_once "custom-blocks/slider/slider.php";
+require_once 'includes/model-ce-news.php';
+
+require_once 'custom-blocks/slider/slider.php';
 
 /**
  * Theme setup.
