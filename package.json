@@ -13,16 +13,17 @@
   "license": "MIT",
   "scripts": {
     "production:css": "tailwindcss -i ./assets/css/index.css -o ./css/style.css --postcss --minify",
-    "production:js": "./node_modules/.bin/esbuild ./assets/js/app.js --bundle --outfile=./js/app.js --minify",
+    "production:js": "esbuild ./assets/js/app.js --bundle --outfile=./js/app.js --minify && cd custom-blocks/slider && npm run build",
     "dev:css": "tailwindcss -i ./assets/css/index.css -o ./css/style.css --postcss",
-    "dev:js": "./node_modules/.bin/esbuild ./assets/js/app.js --bundle --outfile=./js/app.js",
+    "dev:js": "esbuild ./assets/js/app.js --bundle --outfile=./js/app.js",
     "watch:css": "tailwindcss -i ./assets/css/index.css -o ./css/style.css --postcss --watch",
-    "watch:js": "./node_modules/.bin/esbuild ./assets/js/app.js --bundle --outfile=./js/app.js --watch",
+    "watch:js": "esbuild ./assets/js/app.js --bundle --outfile=./js/app.js --watch",
     "production": "cross-env NODE_ENV=production concurrently \"npm run production:css\" \"npm run production:js\"",
     "dev": "cross-env NODE_ENV=development concurrently \"npm run dev:css\" \"npm run dev:js\"",
     "watch": "cross-env NODE_ENV=development concurrently \"npm run watch:css\" \"npm run watch:js\"",
     "browser-sync": "cross-env NODE_ENV=development browser-sync start --proxy \"wp-coop-theme.test\" --host=\"wp-coop-theme.test\" --no-inject-changes --files=\"./\"",
-    "watch-sync": "concurrently \"npm run browser-sync\" \"npm run watch\""
+    "watch-sync": "concurrently \"npm run browser-sync\" \"npm run watch\"",
+    "postinstall": "cd custom-blocks/slider && npm install"
   },
   "devDependencies": {
     "@jeffreyvr/tailwindcss-tailpress": "^2.0.0",
