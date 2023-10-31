@@ -49,8 +49,8 @@
     display: flex;
 
     .slick-arrow {
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       cursor: pointer;
       position: relative;
@@ -60,6 +60,8 @@
       font-size: 0px;
       margin: 0 1rem;
       background-image: url("../assets/images/slider-arrow--light.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
       transform: unset;
 
       &:before {
