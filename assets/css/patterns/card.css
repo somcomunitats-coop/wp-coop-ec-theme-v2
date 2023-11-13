@@ -37,6 +37,13 @@ article.wp-block-group.ce-card
 article.wp-block-group.ce-wide-card .wp-block-post-excerpt__more-link,
 article.wp-block-group.ce-card .wp-block-post-excerpt__more-link {
   font-weight: 700;
+  color: var(--wp--preset--color--base);
+  padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sm);
+  border-radius: 40px;
+  background-color: var(--wp--preset--color--brand);
+}
+article.wp-block-group.ce-landing-card .wp-block-post-excerpt__more-link{
+  font-weight: 700;
   color: var(--wp--preset--color--main);
   padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sm);
   border-radius: 40px;
