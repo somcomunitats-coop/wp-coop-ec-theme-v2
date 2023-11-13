@@ -40,12 +40,13 @@ body.home .ce-home-landings-section .slick-arrow {
   background-color: var(--wp--preset--color--primary);
   background-blend-mode: color-dodge;
 }
+
 #troba-la-teva-comunitat #step-arrow {
-  justify-content: flex-start;
-  margin-top: 20%;
+  height: 180px;
 }
-#troba-la-teva-comunitat #step-arrow::before{
-  content:url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/right-arrow-gray-1.png);
+
+#troba-la-teva-comunitat #step-arrow::before {
+  content: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/right-arrow-gray-1.png);
 }
 
 #troba-la-teva-comunitat #step {
@@ -53,17 +54,15 @@ body.home .ce-home-landings-section .slick-arrow {
 }
 
 #troba-la-teva-comunitat #step1,
-  #troba-la-teva-comunitat #step2,
-  #troba-la-teva-comunitat #step3,
-  #troba-la-teva-comunitat #step4{
-    position: relative;
-    height: 180px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-
-
+#troba-la-teva-comunitat #step2,
+#troba-la-teva-comunitat #step3,
+#troba-la-teva-comunitat #step4 {
+  position: relative;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 #troba-la-teva-comunitat #step-number {
   font-family: var(--wp--preset--font-family--title);
@@ -85,12 +84,9 @@ body.home .ce-home-landings-section .slick-arrow {
   white-space: pre;
 }
 
-
-
 /*step numbers for mobile slider*/
 @media (max-width: 782px) {
   #troba-la-teva-comunitat #step-number {
-    padding: 5px 15px;
     position: absolute;
     z-index: 2;
     left: 45%;
@@ -99,26 +95,21 @@ body.home .ce-home-landings-section .slick-arrow {
   #troba-la-teva-comunitat #step1,
   #troba-la-teva-comunitat #step2,
   #troba-la-teva-comunitat #step3,
-  #troba-la-teva-comunitat #step4{
-    position: relative;
+  #troba-la-teva-comunitat #step4 {
     height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 }
 
-
-
-#troba-la-teva-comunitat #step1{
-  background-image: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/Apuntat1.png);
+#troba-la-teva-comunitat #step1 {
+  background-image: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/Apuntat1.jpg);
 }
-#troba-la-teva-comunitat #step2{
+#troba-la-teva-comunitat #step2 {
   background-image: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/Apuntat2.jpg);
 }
-#troba-la-teva-comunitat #step3{
+#troba-la-teva-comunitat #step3 {
   background-image: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/Apuntat3.jpg);
 }
-#troba-la-teva-comunitat #step4{
+#troba-la-teva-comunitat #step4 {
   background-image: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/Apuntat4.jpg);
 }
-

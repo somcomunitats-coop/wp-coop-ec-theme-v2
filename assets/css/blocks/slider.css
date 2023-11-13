@@ -22,6 +22,16 @@
   text-overflow: ellipsis;
 }
 
+@media (max-width: 1024px) {
+  .wp-block-ce-block-slider article.ce-card .wp-block-post-title {
+    white-space: normal;
+    text-overflow: unset;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
 .wp-block-ce-block-slider article.ce-card .wp-block-post-title a {
   display: inline;
 }
