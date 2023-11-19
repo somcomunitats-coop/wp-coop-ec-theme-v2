@@ -34,7 +34,7 @@
 #upper-main-nav .wpml-ls-link {
   color: var(--wp--preset--color--main);
   font-weight: var(--wp--custom--font-weight--bold);
-  font-size: var(--wp--preset--font-size--small);
+  font-size: 13px;
 }
 #upper-main-nav .wpml-ls-item:first-child a {
   padding: 0 15px 0px 0;
