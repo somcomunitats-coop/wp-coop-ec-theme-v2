@@ -25,7 +25,7 @@
   border-left: 1px solid var(--wp--preset--color--main);
 }
 #upper-main-nav .wpml-ls-item {
-  height: 20px;
+  height: 17px;
   vertical-align: middle;
 }
 #upper-main-nav .wpml-ls-link {
@@ -61,4 +61,18 @@
 #upper-main-nav .wp-block-social-links .wp-social-link svg{
   height: .9em;
   width: .9em;
+}
+
+
+#upper-main-nav .wp-block-social-links li.wp-social-link-mastodon svg{
+  transform: scale(0.80)
+}
+#upper-main-nav .wp-block-social-links li.wp-social-link-facebook svg{
+  transform: scale(0.95)
+}
+#upper-main-nav .wp-block-social-links li.wp-social-link-youtube svg{
+  transform: scale(1.05)
+}
+#upper-main-nav .wp-block-social-links li.wp-social-link-telegram svg{
+  transform: scale(1.25)
 }
