@@ -1,13 +1,5 @@
-/*Header visibility */
-/* mobile-tablet */
-@media (max-width: 1254px) {
-  #ce-header-desktop{
-    display: none !important;
-  }
-  #ce-header-mobile-tablet{
-    display: block !important;
-  }
-}
+
+
 /* Desktop */
 @media (min-width: 1255px) {
   #ce-header-mobile-tablet{
@@ -87,10 +79,31 @@
   }
 
    /*NOU CODI CÒDEC*/
-  /*mobile version*/
+    /* mobile-tablet */
+@media (max-width: 1254px) {
+  #ce-header-desktop{
+    display: none !important;
+  }
+  #ce-header-mobile-tablet{
+    display: block !important;
+
+  }
+  #ce-header-mobile-tablet.ce-header{
+    padding-top: var(--wp--custom--spacing--sxs);
+    padding-bottom: var(--wp--custom--spacing--sxs);
+  }
+  #ce-header-mobile-tablet.ce-header figure img{
+    width: 180px;
+  }
+  }
+
 
   #ce-header-mobile-nav nav button{
     border: none;
+  }
+  #ce-header-mobile-nav nav button svg {
+    height: 30px;
+    width: 36px;
   }
   #ce-header-mobile-nav .wp-block-navigation__responsive-dialog{
     margin-top: 0;
@@ -224,4 +237,3 @@
     height: 25px;
   }
   
-/* (burger menu) */
