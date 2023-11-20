@@ -89,11 +89,11 @@
 
   }
   #ce-header-mobile-tablet.ce-header{
-    padding-top: var(--wp--custom--spacing--sxs);
-    padding-bottom: var(--wp--custom--spacing--sxs);
+    padding-top: var(--wp--custom--spacing--sxs) !important;
+    padding-bottom: var(--wp--custom--spacing--sxs) !important;
   }
   #ce-header-mobile-tablet.ce-header figure img{
-    width: 180px;
+    width: 180px !important;
   }
   }
 
