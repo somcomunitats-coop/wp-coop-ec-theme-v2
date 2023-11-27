@@ -205,7 +205,8 @@
         },
         "typography": {
           "fontSize": "var(--wp--preset--font-size--x-buttons)",
-          "fontWeight": "var(--wp--custom--font-weight--bold)"
+          "fontWeight": "var(--wp--custom--font-weight--bold)",
+          "lineHeight": "var(--wp--custom--line-height--heading)"
         }
       },
       "core/calendar": {
