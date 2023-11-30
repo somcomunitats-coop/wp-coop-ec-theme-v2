@@ -193,11 +193,16 @@
     
 
   }
+  #ce-header-mobile-nav .wp-block-navigation__responsive-container.is-menu-open .wpml-language-switcher-navigation-block.wpml-ls-list .wp-block-navigation-item .wp-block-navigation-item:nth-child(2).current-language-item{
+    margin-top: 5px;
+  }
   #ce-header-mobile-nav .wp-block-navigation__responsive-container.is-menu-open .wpml-language-switcher-navigation-block.wpml-ls-list .wp-block-navigation-item ul{
     display: flex;
     padding: var(--wp--custom--spacing--sxxs) 0;
     
   }
+
+  
   #ce-header-mobile-nav .wp-block-navigation__responsive-container.is-menu-open .wpml-language-switcher-navigation-block.wpml-ls-list .wp-block-navigation-item__content .wp-block-navigation-item__label{
     color: var(--wp--preset--color--base) !important;
     

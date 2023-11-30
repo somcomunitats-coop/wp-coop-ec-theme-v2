@@ -65,7 +65,9 @@
   height: .9em;
   width: .9em;
 }
-
+#upper-main-nav .wp-block-social-links li.wp-social-link-x svg{
+  transform: scale(0.90)
+}
 
 #upper-main-nav .wp-block-social-links li.wp-social-link-mastodon svg{
   transform: scale(0.80)

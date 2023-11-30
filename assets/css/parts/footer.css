@@ -95,6 +95,10 @@ footer.wp-block-template-part .wp-block-social-links li:last-child {
   padding-right: 0px;
 }
 
+footer.wp-block-template-part .wp-block-social-links li.wp-social-link-x svg{
+  transform: scale(0.90)
+}
+
 footer.wp-block-template-part .wp-block-social-links li.wp-social-link-mastodon svg{
   transform: scale(0.80)
 }
