@@ -107,7 +107,7 @@
         <!-- /wp:spacer -->
 
         <!-- wp:heading {"textAlign":"right","level":5,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"layout":{"selfStretch":"fill","flexSize":null}},"textColor":"base","className":"is-style-show-desktop"} -->
-        <h5 class="wp-block-heading has-text-align-right is-style-show-desktop has-base-color has-text-color" style="font-style:normal;font-weight:700">Altres enllaços</h5>
+        <h5 class="wp-block-heading has-text-align-right is-style-show-desktop has-base-color has-text-color" style="font-style:normal;font-weight:700">Contacte</h5>
         <!-- /wp:heading -->
 
         <!-- wp:spacer {"height":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"}}} -->

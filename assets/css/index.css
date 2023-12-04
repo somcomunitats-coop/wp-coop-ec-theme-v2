@@ -24,7 +24,6 @@
 /* Template patterns */
 @import "patterns/card.css";
 @import "patterns/faqs.css";
-@import "patterns/services.css";
 
 /* Pages */
 @import "pages/home.css";
