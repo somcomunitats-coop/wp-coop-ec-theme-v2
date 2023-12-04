@@ -95,6 +95,23 @@ footer.wp-block-template-part .wp-block-social-links li:last-child {
   padding-right: 0px;
 }
 
+footer.wp-block-template-part .wp-block-social-links li.wp-social-link-x svg{
+  transform: scale(0.90)
+}
+
+footer.wp-block-template-part .wp-block-social-links li.wp-social-link-mastodon svg{
+  transform: scale(0.80)
+}
+footer.wp-block-template-part .wp-block-social-links li.wp-social-link-facebook svg{
+  transform: scale(0.95)
+}
+footer.wp-block-template-part .wp-block-social-links li.wp-social-link-youtube svg{
+  transform: scale(1.05)
+}
+footer.wp-block-template-part .wp-block-social-links li.wp-social-link-telegram svg{
+  transform: scale(1.25)
+}
+
 footer.wp-block-template-part .ce-legal-nav {
   padding: 0.5rem 0;
 }
