@@ -5,7 +5,8 @@ Template: wp-coop-theme
 Author: Coopdevs & Còdec
 Description: Child theme boilerplate to be used with WP Coop Theme
 Version: 2.0.24
-License: MIT
-License URI: https://git.coopdevs.org/coopdevs/comunitats-energetiques/wp-coop-ce-theme-v-2/LICENSE
+License: GPL-3.0
 Text Domain: wpct-ce
 */
+
+@import "assets/css/index.css";
