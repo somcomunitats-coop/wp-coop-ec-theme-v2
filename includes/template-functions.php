@@ -1,0 +1,294 @@
+<?php
+
+function wpct_ce_landing_badges($remote)
+{
+    $types = $remote->get_terms('rest-ce-type');
+    $assocs = $remote->get_terms('rest-ce-assoc-type');
+    $status = $remote->get_terms('rest-ce-status');
+
+    if (!is_wp_error($types) && count($types) > 0) {
+        $type = $types[0];
+    }
+
+    if (!is_wp_error($assocs) && count($assocs) > 0) {
+        $assoc = $assocs[0];
+    }
+
+    if (!is_wp_error($types) && count($types) > 0) {
+        $type = $types[0];
+    }
+
+    ob_start();
+    ?>
+    <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex disabled-buttons">
+        <?php if (!empty($type)) : ?>
+        <button class="wp-block-button has-custom-font-size has-x-small-font-size">
+            <a
+                href="<?= get_term_link($type); ?>"
+                class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button"
+                style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--50);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--50)"
+            >
+                <?= apply_filters('wpct_rest_ce_type_icon', null, $type->slug) ?><?= $type->name ?>
+            </a>
+        </button>
+        <?php endif; ?>
+        <?php if (!empty($assoc)) : ?>
+        <button class="wp-block-button has-custom-font-size has-x-small-font-size">
+            <a
+                href="<?= get_term_link($assoc); ?>"
+                class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button"
+                style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"
+            >
+                <?= apply_filters('wpct_rest_ce_type_icon', null, $assoc->slug) ?><?= $assoc->name ?>
+            </a>
+        </button>
+        <?php endif; ?>
+        <?php if (!empty($status)) : ?> 
+        <button class="wp-block-button has-custom-font-size has-x-small-font-size">
+            <a
+                href="<?= get_term_link($status); ?>"
+                class="wp-block-button__link has-base-color has-brand-background-color has-text-color has-background wp-element-button"
+                style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"
+            >
+                <?= apply_filters('wpct_rest_ce_type_icon', null, $status->slug) ?><?= $status->name ?>
+            </a>
+        </button>
+        <?php endif; ?>
+    </div>
+    <?php
+    return ob_get_clean();
+}
+
+function wpct_ce_landing_services($remote)
+{
+    $services = $remote->get('community_active_services', []);
+    ob_start();
+
+    ?>
+    <ul class="ce-landing-services">
+    <?php foreach ($services as $service) : ?>
+        <li>
+        <a href="<?= get_term_link($service['slug']) ?>" rel="tag">
+            <?= apply_filters('wpct_rest_ce_service_icon', null, $service) ?>
+            <strong><?= $service['name'] ?></strong>
+            </a>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+    <?php
+    return ob_get_clean();
+}
+
+function wpct_ce_landing_leads_script($remote)
+{
+    $allow_news = $remote->get('allow_new_members', false);
+    $base_url = get_option('wpct_hb_base_url');
+    $lang = apply_filters('wpct_i18n_current_language', null, 'locale');
+    $base_url .= '/' . $lang;
+    $company_id = $remote->get('company_id', 0);
+
+    ob_start();
+    ?>
+
+    <script>
+    const allowNewMembers = <?= $allow_news ? 'true' : 'false' ?>;
+    const leadsWrapper = document.querySelector(".ce-landing-leads")
+
+    if (allowNewMembers) {
+        const link = leadsWrapper.querySelector(".contact a")
+        link.parentElement.removeChild(link);
+    }
+
+    for (const link of leadsWrapper.querySelectorAll(".lead")) {
+        if (!allowNewMembers) {
+            link.parentElement.removeChild(link);
+        } else {
+            if (link.classList.contains("citizen")) {
+                link.href = "<?= $base_url ?>/become_cooperator?odoo_company_id=<?= $company_id ?>";
+            } else {
+                link.href = "<?= $base_url ?>/become_company_cooperator?odoo_company_id=<?= $company_id ?>"; 
+            }
+        }
+    }
+    </script>
+    <?php
+    return ob_get_clean();
+}
+
+function wpct_ce_landing_social_script($remote)
+{
+    $title = $remote->get('title');
+    $page_url = get_page_link($remote->ID);
+    $email_template = "Hola,
+
+M'acabo d'inscriure a la _ce_name_.
+
+Si t'hi vols sumar, visita: %s
+
+T'animo a fer córrer la veu perquè amistats, familiars, veïns i veïnes també s'hi sumin i arribem al número de persones òptim per impulsar la transició energètica del nostre municipi.
+
+La suma de moltes persones pot generar una energia imparable.
+
+Som-hi!";
+
+    $email_text = sprintf(urlencode(__($email_template, 'wpct-ce')), $page_url);
+    $share_text = sprintf(rawurlencode(__('M’acabo d’inscriure a la %s. Si t’hi vols sumar, visita: ', 'wpct-ce')). $title);
+    $tweet_text = sprintf(rawurlencode(__('M’acabo d’inscriure a la %s gràcies a @somcomunitats. Si t’hi vols sumar visita: ', 'wpct-ce')), $title);
+    ?>
+
+    ob_start();
+    ?>
+        <script>
+        const ceShareLinks = document.querySelector(".ce-landing-share-pannel")
+            .querySelectorAll("a");
+
+        for (const link of ceShareLinks) {
+            if (link.classList.contains("ce-landing-share__link")) {
+                link.addEventListener("click", function(ev) {
+                    ev.preventDefault();
+                    navigator.clipboard.writeText(window.location.href).then(() => {
+                      alert("<?= __('Enllaç copait al porta-retalls', 'wpct-ce'); ?>");
+                    });
+                });
+            } else if (link.classList.contains("ce-landing-share__email")) {
+                link.href = "mailto:?subject=<?= $title ?>&body=<?= $email_text ?>";
+            } else if (link.classList.contains("ce-landing-share__telegram")) {
+                link.href = "https://telegram.me/share/url?url=<?= $page_url; ?>&text=<?= $share_text; ?>";
+            } else if (link.classList.contains("ce-landing-share__wharsapp")) {
+                link.href = "https://api.whatsapp.com/send?text=<?= $share_text; ?>+<?= $page_url; ?>";
+            } else if (link.classList.contains("ce-landing-share__twitter")) {
+                link.href = "http://twitter.com/share?text=<?= $tweet_text; ?>&url=<?= $page_url; ?>";
+            } else if (link.classList.contains("ce-landing-share__instagram")) {
+                link.href = "https://instagram.com";
+            } else if (link.classList.contains("ce-landing-share__mastodon")) {
+                link.href = "https://mastodonshare.com/?text=<?= $tweet_text; ?>&url=<?= $page_url; ?>"
+            }
+        }
+        </script>
+    <?php
+    return ob_get_clean();
+}
+
+function wpct_ce_landing_contact_form($remote, $atts)
+{
+    $current_lang = apply_filters('wpct_i18n_current_language', null, 'slug');
+    $company_id = $remote->get('company_id');
+    $form_id = $atts['form_id'];
+
+    return do_shortcode("[gravityform id='{$form_id}' description='false' ajax='true' field_values='current_lang={$current_lang}&company_id={$company_id}]");
+}
+
+function wpct_ce_visibility_script($remote)
+{
+    $why_become = $remote->get('why_become_cooperator');
+    $become_process = $remote->get('become_cooperator_process');
+    $allow_news = $remote->get('allow_new_members');
+
+    $website = $remote->get('external_website_link');
+    $twitter = $remote->get('twitter_link');
+    $instagram = $remote->get('instagram_link');
+    $telegram = $remote->get('telegram');
+    $has_links = $website || $twitter || $instagram || $telegram;
+
+    ?>
+    <script>
+    const becomeSection = document.querySelector(".ce-landing-become");
+    const contactSection = document.getElementById("contacte");
+    <?php if (!($why_become || $become_process)) : ?>
+    becomeSection.parentElement.removeChild(becomeSection);
+    <?php elseif (!$why_become) : ?>
+    const whyBecome = becomeSection.querySelector(".why-become");
+    whyBecome.parentElement.removeChild(whyBecome);
+    <?php elseif (!$become_process) : ?>
+    const becomeProcess = becomeSection.querySelector(".become-process");
+    becomeProcess.parentElement.removeChild(becomeProcess);
+    <?php elseif ($allow_news) : ?>
+    const contact = becomeSection.querySelector(".contact");
+    contact.parentElement.removeChild(contact);
+    <?php elseif (!$has_links) : ?>
+    const landingLinks = contactSection.querySelector(".ce-landing-links");
+    landingLinks.parentElement.removeChild(landingLinks);
+    <?php else : ?>
+    const socialLinks = contactSection.querySelectorAll(".wp-social-link");
+    for (const link of socialLinks) {
+        if (link.classList.contains("wp-social-link-twitter")) {
+            link.querySelector(".wp-social-link-anchor")
+                .href = "<?= $twitter ?>";
+        } else if (link.classList.contains("wp-social-link-instagram")) {
+            link.querySelector(".wp-social-link-anchor")
+                .href = "<?= $instagram ?>";
+        } else if (link.classList.contains("wp-social-link-telegram")) {
+            link.querySelector(".wp-social-link-anchor")
+                .href = "<?= $telegram ?>";
+        }
+    }
+    </script>
+    <?php endif; 
+}
+
+
+add_filter('wpct_ce_service_icon', 'wpct_ce_service_icon', 10, 2);
+function wpct_ce_service_icon($icon, $service)
+{
+    $service_base = str_replace('energy_communities.', '', $service['ext_id']);
+    switch ($service_base) {
+        case 'ce_tag_common_generation':
+            return '<i class="fa-solid fa-solar-panel"></i>';
+            // return '<i class="fa-regular fa-solar-panel"></i>';
+            break;
+        case 'ce_tag_energy_efficiency':
+            return '<i class="fa-solid fa-lightbulb"></i>';
+            // return '<i class="fa-regular fa-lightbulb-cfl-on"></i>';
+            break;
+        case 'ce_tag_sustainable_mobility':
+            return '<i class="fa-solid fa-car-on"></i>';
+            // return '<i class="fa-regular fa-car-bolt"></i>';
+            break;
+        case 'ce_tag_citizen_education':
+            return '<i class="fa-solid fa-book-open-reader"></i>';
+            // return '<i class="fa-regular fa-presentation-screen"></i>';
+            break;
+        case 'ce_tag_thermal_energy':
+            return '<i class="fa-solid fa-house-fire"></i>';
+            // return '<i class="fa-regular fa-air-conditioner"></i>';
+            break;
+        case 'ce_tag_collective_purchases':
+            return '<i class="fa-solid fa-basket-shopping"></i>';
+            // return '<i class="fa-regular fa-basket-shopping"></i>';
+            break;
+        case 'ce_tag_renewable_energy':
+            return '<i class="fa-solid fa-leaf"></i>';
+            // return '<i class="fa-regular fa-seedling"></i>';
+            break;
+        case 'ce_tag_aggregate_demand':
+            return '<i class="fa-solid fa-chart-column"></i>';
+            // return '<i class="fa-regular fa-chart-column"></i>';
+            break;
+        default:
+            return $icon;
+    }
+}
+
+add_filter('wpct_ce_type_icon', 'wpct_ce_type_icon', 10, 2);
+function wpct_ce_type_icon($icon, $slug)
+{
+    if (strpos($slug, 'citizen') !== false) {
+        return '<i class="fa fa-building"></i>';
+    } else if (strpos($slug, 'industrial') !== false) {
+        return '<i class="fa fa-industry"></i>';
+    } else {
+        return $icon;
+    }
+}
+
+add_filter('wpct_ce_status_icon', 'wpct_ce_status_icon', 10, 2);
+function wpct_ce_status_icon($icon, $slug)
+{
+    if (strpos($slug, 'open') !== false) {
+        return '<i class="fa fa-circle-half-stroke"></i>';
+    } else if (strpos($slug, 'closed') !== false) {
+        return '<i class="fa fa-circle"></i>';
+    } else {
+        return $icon;
+    }
+}
