@@ -2,20 +2,20 @@
 
 function wpct_ce_landing_badges($remote)
 {
-    $types = $remote->get_terms('rest-ce-type');
-    $assocs = $remote->get_terms('rest-ce-assoc-type');
-    $status = $remote->get_terms('rest-ce-status');
+    $type = $remote->get_terms(WPCT_CE_REST_TYPE_TAX);
+    $assoc = $remote->get_terms(WPCT_CE_REST_ASSOC_TYPE_TAX);
+    $status = $remote->get_terms(WPCT_CE_REST_STATUS_TAX);
 
-    if (!is_wp_error($types) && count($types) > 0) {
-        $type = $types[0];
+    if (!is_wp_error($type) && $type && count($type) > 0) {
+        $type = $type[0];
     }
 
-    if (!is_wp_error($assocs) && count($assocs) > 0) {
-        $assoc = $assocs[0];
+    if (!is_wp_error($assoc) && $assoc && count($assoc) > 0) {
+        $assoc = $assoc[0];
     }
 
-    if (!is_wp_error($types) && count($types) > 0) {
-        $type = $types[0];
+    if (!is_wp_error($status) && $status && count($status) > 0) {
+        $status = $status[0];
     }
 
     ob_start();
@@ -61,16 +61,19 @@ function wpct_ce_landing_badges($remote)
 
 function wpct_ce_landing_services($remote)
 {
-    $services = $remote->get('community_active_services', []);
+    $services = $remote->get_terms(WPCT_CE_REST_SERVICE_TAX);
+    if (is_wp_error($services) || !$services) {
+        return '';
+    }
     ob_start();
 
     ?>
     <ul class="ce-landing-services">
-    <?php foreach ($services as $service) : ?>
+        <?php foreach ($services as $service) : ?>
         <li>
-        <a href="<?= get_term_link($service['slug']) ?>" rel="tag">
+        <a href="<?= get_term_link($service) ?>" rel="tag">
             <?= apply_filters('wpct_rest_ce_service_icon', null, $service) ?>
-            <strong><?= $service['name'] ?></strong>
+            <strong><?= $service->name ?></strong>
             </a>
         </li>
     <?php endforeach; ?>
@@ -121,7 +124,7 @@ function wpct_ce_landing_social_script($remote)
     $page_url = get_page_link($remote->ID);
     $email_template = "Hola,
 
-M'acabo d'inscriure a la _ce_name_.
+M'acabo d'inscriure a la %s.
 
 Si t'hi vols sumar, visita: %s
 
@@ -131,10 +134,9 @@ La suma de moltes persones pot generar una energia imparable.
 
 Som-hi!";
 
-    $email_text = sprintf(urlencode(__($email_template, 'wpct-ce')), $page_url);
-    $share_text = sprintf(rawurlencode(__('M’acabo d’inscriure a la %s. Si t’hi vols sumar, visita: ', 'wpct-ce')). $title);
-    $tweet_text = sprintf(rawurlencode(__('M’acabo d’inscriure a la %s gràcies a @somcomunitats. Si t’hi vols sumar visita: ', 'wpct-ce')), $title);
-    ?>
+    $email_text = rawurlencode(sprintf(__($email_template, 'wpct-ce'), $title, $page_url));
+    $share_text = rawurlencode(sprintf(__('M’acabo d’inscriure a la %s. Si t’hi vols sumar, visita: ', 'wpct-ce'), $title));
+    $tweet_text = rawurlencode(sprintf(__('M’acabo d’inscriure a la %s gràcies a @somcomunitats. Si t’hi vols sumar visita: ', 'wpct-ce'), $title));
 
     ob_start();
     ?>
@@ -230,8 +232,8 @@ function wpct_ce_visibility_script($remote)
 add_filter('wpct_ce_service_icon', 'wpct_ce_service_icon', 10, 2);
 function wpct_ce_service_icon($icon, $service)
 {
-    $service_base = str_replace('energy_communities.', '', $service['ext_id']);
-    switch ($service_base) {
+    $service_xml_id = get_option(WPCT_CE_REST_SERVICE_TAX . '_' . $service->slug);
+    switch ($service_xml_id) {
         case 'ce_tag_common_generation':
             return '<i class="fa-solid fa-solar-panel"></i>';
             // return '<i class="fa-regular fa-solar-panel"></i>';
