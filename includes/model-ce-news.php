@@ -6,11 +6,8 @@ function wpct_create_model_news()
         'ce-news',
         [
             'labels' => [
-                'name' => __('Notícies', 'wpct'),
-                'singular_name' => __(
-                    'Notícia',
-                    'wpct'
-                )
+                'name' => __('Notícies', 'wpct-ce'),
+                'singular_name' => __('Notícia', 'wpct-ce')
             ],
 
             // Frontend
