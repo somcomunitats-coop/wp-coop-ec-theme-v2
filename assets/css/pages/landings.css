@@ -1,15 +1,37 @@
 .ce-landing-breadcrumb {
   position: relative;
   cursor: pointer;
+  color: var(--wp--preset--color--main);
+  font-weight: var(--wp--custom--font-weight--bold);
+  font-size: var(--wp--preset--font-size--x-small);
+  opacity: 0.5;
 }
 
 .ce-landing-breadcrumb::before {
   position: absolute;
   left: 0px;
-  top: 50%;
+  top: 56%;
   transform: translate(-150%, -50%);
-  content: "<";
-  color: var(--wp--preset--color--brand);
+  content: "";
+  background: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/Vectorbefore.png);
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+}
+
+.ce-landing-external-website{
+  font-weight: var(--wp--custom--font-weight--bold);
+  position: relative;
+}
+.ce-landing-external-website::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/out.svg);
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+
 }
 
 .single-rest-ce-landing .wp-block-buttons.disabled-buttons .wp-block-button {
