@@ -21,14 +21,6 @@ require_once 'custom-blocks/slider/slider.php';
 
 require_once 'includes/template-functions.php';
 
-// Theme setup.
-add_action('after_setup_theme', 'wpct_ce_setup');
-function wpct_ce_setup()
-{
-    add_editor_style('style.css');
-    // add_theme_support( 'menus' );
-}
-
 // Enqueue Child theme assets.
 add_action('wp_enqueue_scripts', 'wpct_ce_enqueue_scripts', 11);
 function wpct_ce_enqueue_scripts()
