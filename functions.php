@@ -161,3 +161,27 @@ function wpct_set_favicon()
   <link rel="shortcut icon" href="<?= get_theme_file_uri() . "/img/favicon.ico" ?>" />
 <?php
 }
+
+
+
+/**
+ * Disable canonical Wordpress redirection when attempting non existing routes
+ */
+remove_action('template_redirect', 'redirect_canonical');
+// add_action('template_redirect', 'redirect_to_home_page');
+// function redirect_to_home_page()
+// {
+//   global $wp;
+//   $home_url = home_url('/');
+//   $query_args = add_query_arg(array($_GET), $wp->request);
+//   $query_prefix = substr($query_args, 0, 3);
+//   $query_sufix = trim($query_args, "ca");
+//   echo $home_url;
+//   echo $query_prefix;
+//   if ($query_prefix === "ca") {
+
+//     $url_redirect = $home_url . $query_sufix;
+//     wp_redirect($url_redirect, 301);
+//     exit;
+//   }
+// }
