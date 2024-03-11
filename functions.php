@@ -165,23 +165,15 @@ function wpct_set_favicon()
 
 
 /**
- * Disable canonical Wordpress redirection when attempting non existing routes
+ * Twitch canonical Wordpress redirection when attempting /ca/ routes
  */
-remove_action('template_redirect', 'redirect_canonical');
-// add_action('template_redirect', 'redirect_to_home_page');
-// function redirect_to_home_page()
-// {
-//   global $wp;
-//   $home_url = home_url('/');
-//   $query_args = add_query_arg(array($_GET), $wp->request);
-//   $query_prefix = substr($query_args, 0, 3);
-//   $query_sufix = trim($query_args, "ca");
-//   echo $home_url;
-//   echo $query_prefix;
-//   if ($query_prefix === "ca") {
+add_filter('redirect_canonical', 'ce_canonical_redirect', 10, 2);
 
-//     $url_redirect = $home_url . $query_sufix;
-//     wp_redirect($url_redirect, 301);
-//     exit;
-//   }
-// }
+function ce_canonical_redirect($redirect_url, $requested_url)
+{
+  $home_url = home_url('/');
+  if (preg_match('/' . preg_quote($home_url . "ca/", '/') . '?/', $requested_url)) {
+    $redirect_url = $home_url;
+  }
+  return $redirect_url;
+}
