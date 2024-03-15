@@ -1,40 +1,28 @@
 <!-- wp:template-part {"slug":"header","theme":"wp-coop-ce-theme-v-2","tagName":"header","className":"site-header"} /-->
 
-<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"0"}}},"className":"single single-ce-news"} -->
-<main class="wp-block-group single single-ce-news" style="margin-top:0;padding-top:0"><!-- wp:group {"tagName":"header","align":"full","className":"is-style-show-desktop ce-news-header is-style-horizontal-padded","layout":{"type":"constrained","contentSize":"1100px"}} -->
-    <header class="wp-block-group alignfull is-style-show-desktop ce-news-header is-style-horizontal-padded"><!-- wp:spacer {"height":"2em"} -->
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"0"}}},"className":"single simple-ce-news"} -->
+<main class="wp-block-group single simple-ce-news" style="margin-top:0;padding-top:0"><!-- wp:group {"tagName":"header","align":"full","className":"ce-news-header is-style-horizontal-padded is-style-vertical-padded"} -->
+    <header class="wp-block-group alignfull ce-news-header is-style-horizontal-padded is-style-vertical-padded"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained","contentSize":"1100px"}} -->
+    <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"2em"} -->
     <div style="height:2em" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
     
-    <!-- wp:post-terms {"term":"post_tag"} /-->
+    <!-- wp:group {"className":"ce-tags-group","layout":{"type":"constrained"}} -->
+    <div class="wp-block-group ce-tags-group"><!-- wp:buttons -->
+    <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"base","textColor":"main-light","style":{"elements":{"link":{"color":{"text":"var:preset|color|main-light"}}}},"className":"back-button is-style-outline","fontSize":"x-small"} -->
+    <div class="wp-block-button has-custom-font-size back-button is-style-outline has-x-small-font-size"><a class="wp-block-button__link has-main-light-color has-base-background-color has-text-color has-background has-link-color wp-element-button" href="/noticies">Tornar a Notícies</a></div>
+    <!-- /wp:button --></div>
+    <!-- /wp:buttons -->
     
-    <!-- wp:post-title /-->
-    
-    <!-- wp:post-excerpt /-->
-    
-    <!-- wp:spacer {"height":"2em"} -->
-    <div style="height:2em" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer --></header>
+    <!-- wp:post-terms {"term":"post_tag"} /--></div>
     <!-- /wp:group -->
     
-    <!-- wp:group {"tagName":"header","align":"full","className":"ce-news-header is-style-horizontal-padded is-style-show-mobile-tablet"} -->
-    <header class="wp-block-group alignfull ce-news-header is-style-horizontal-padded is-style-show-mobile-tablet"><!-- wp:spacer {"height":"2em"} -->
-    <div style="height:2em" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->
-    
-    <!-- wp:post-terms {"term":"post_tag"} /-->
-    
-    <!-- wp:post-title /-->
-    
-    <!-- wp:post-excerpt /-->
-    
-    <!-- wp:spacer {"height":"2em"} -->
-    <div style="height:2em" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer --></header>
+    <!-- wp:post-title /--></div>
+    <!-- /wp:group --></header>
     <!-- /wp:group -->
     
-    <!-- wp:group {"tagName":"article","className":"is-style-horizontal-padded is-style-vertical-padded","layout":{"type":"constrained","contentSize":"1100px"}} -->
-    <article class="wp-block-group is-style-horizontal-padded is-style-vertical-padded"><!-- wp:post-content /-->
+    <!-- wp:group {"tagName":"article","className":"is-style-vertical-padded is-style-horizontal-padded","layout":{"type":"constrained","contentSize":"1100px"}} -->
+    <article class="wp-block-group is-style-vertical-padded is-style-horizontal-padded"><!-- wp:post-content /-->
     
     <!-- wp:group {"className":"is-style-show-tablet-desktop","layout":{"type":"flex","flexWrap":"nowrap"}} -->
     <div class="wp-block-group is-style-show-tablet-desktop"><!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null},"color":{"background":"#153f2d20"}},"className":"has-text-color has-background"} -->
@@ -73,8 +61,8 @@
     <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
     
-    <!-- wp:heading {"textAlign":"center","className":"has-text-align-center"} -->
-    <h2 class="wp-block-heading has-text-align-center">Últimes notícies</h2>
+    <!-- wp:heading {"textAlign":"center","level":3,"className":"has-text-align-center"} -->
+    <h3 class="wp-block-heading has-text-align-center">Últimes notícies</h3>
     <!-- /wp:heading -->
     
     <!-- wp:spacer {"height":"1rem"} -->
