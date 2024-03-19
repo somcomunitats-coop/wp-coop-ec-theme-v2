@@ -4,6 +4,8 @@ require_once "includes/model-ce-news.php";
 
 require_once "custom-blocks/slider/slider.php";
 
+require_once "includes/shortcodes/ce-custom-query.php";
+
 /**
  * Theme setup.
  */
