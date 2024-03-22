@@ -1,0 +1,5 @@
+div.ce-news-card-group{
+    display: flex;
+    flex-basis: 33%;
+    flex-wrap: wrap;
+}
