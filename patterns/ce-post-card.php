@@ -42,7 +42,7 @@
     <!-- /wp:spacer -->
     <!-- wp:post-date /-->
 
-    <!-- wp:post-title {"isLink":true,"level":4,"className":"wp-block-heading"} /-->
+    <!-- wp:post-title {"isLink":true,"level":5,"className":"wp-block-heading"} /-->
     <!-- wp:post-excerpt {"moreText":"Més informació"} /-->
   </div>
   <!-- /wp:group -->
