@@ -164,6 +164,20 @@ function wpct_set_favicon()
 }
 
 
+
+/**
+ * Tweak canonical Wordpress redirection when attempting /ca/ routes
+ */
+add_filter('redirect_canonical', 'ce_canonical_redirect', 10, 2);
+
+function ce_canonical_redirect($redirect_url, $requested_url)
+{
+  $home_url = home_url('/');
+  if (preg_match('/' . preg_quote($home_url . "ca/", '/') . '?/', $requested_url)) {
+    $redirect_url = $home_url;
+  }
+  return $redirect_url;
+}
 /**
  * This function modifies the main WordPress archive query for categories
  * and tags to include an array of post types instead of the default 'post' post type.
