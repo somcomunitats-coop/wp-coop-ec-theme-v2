@@ -1,5 +1,6 @@
 <?php
 
+
 require_once "includes/model-ce-news.php";
 
 require_once "custom-blocks/slider/slider.php";
@@ -161,3 +162,28 @@ function wpct_set_favicon()
   <link rel="shortcut icon" href="<?= get_theme_file_uri() . "/img/favicon.ico" ?>" />
 <?php
 }
+
+
+/**
+ * This function modifies the main WordPress archive query for categories
+ * and tags to include an array of post types instead of the default 'post' post type.
+ *
+ * @param object $query The main WordPress query.
+ */
+function ce_include_custom_post_types_in_archive_pages($query)
+{
+  if ($query->is_main_query() && !is_admin() && (is_category() || is_tag() && empty($query->query_vars['suppress_filters']))) {
+    $query->set('post_type', array('post', 'ce-news'));
+  }
+}
+add_action('pre_get_posts', 'ce_include_custom_post_types_in_archive_pages');
+
+
+function ce_exclude_current_post($query)
+{
+  global $post;
+  if (is_single() && !$query->is_main_query()) {
+    $query->set('post__not_in', array($post->ID));
+  }
+}
+add_action('pre_get_posts', 'ce_exclude_current_post');
