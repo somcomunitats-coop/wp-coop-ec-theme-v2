@@ -1,11 +1,6 @@
 <?php
 
-<<<<<<< HEAD
-
-require_once "includes/model-ce-news.php";
-=======
 require_once 'env.php';
->>>>>>> b96d79d (feat: remote cpt integration)
 
 require_once 'includes/model-ce-news.php';
 require_once 'includes/model-rest-ce-landing.php';
