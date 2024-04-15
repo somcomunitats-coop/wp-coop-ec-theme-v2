@@ -13,11 +13,11 @@
   "license": "GPL-3.0",
   "scripts": {
     "start": "npm run dev",
-    "watch:css": "npx postcss ./src/css/index.css -o ./assets/css/index.css --watch",
-    "watch:js": "npx esbuild ./src/js/index.js --bundle  --outfile=./assets/js/index.js --watch",
+    "dev:css": "npx postcss ./src/css/index.css -o ./assets/css/index.css --watch",
+    "dev:js": "npx esbuild ./src/js/index.js --bundle  --outfile=./assets/js/index.js --watch",
     "build:css": "npx postcss ./src/css/index.css -o ./assets/css/index.css --no-map",
     "build:js": "npx esbuild ./src/js/index.js --bundle --minify --outfile=./assets/js/index.js",
-    "dev": "NODE_ENV=development concurrently \"npm run watch:css\" \"npm run watch:js\"",
+    "dev": "NODE_ENV=development concurrently \"npm run dev:css\" \"npm run dev:js\"",
     "build": "NODE_ENV=production concurrently \"npm run build:css\" \"npm run build:js\"",
     "postinstall": "(cd custom-blocks/slider && npm install); (cd custom-blocks/landing-card && npm install)"
   },
