@@ -5,7 +5,7 @@ if (!defined('WPCT_CE_LANDING_POST_TYPE')) {
 }
 
 if (!defined('WPCT_CE_COORD_POST_TYPE')) {
-    define('WPCT_CE_COORD_POST_TYPE', 'rest-coord-landing');
+    define('WPCT_CE_COORD_POST_TYPE', 'rest-ce-coord');
 }
 
 if (!defined('WPCT_CE_REST_TYPE_TAX')) {

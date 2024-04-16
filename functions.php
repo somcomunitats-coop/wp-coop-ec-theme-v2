@@ -4,7 +4,7 @@ require_once 'env.php';
 
 require_once 'includes/model-ce-news.php';
 require_once 'includes/model-rest-ce-landing.php';
-require_once 'includes/model-rest-coord-landing.php';
+require_once 'includes/model-rest-ce-coord.php';
 
 require_once 'includes/taxonomy-ce-type.php';
 require_once 'includes/taxonomy-ce-assoc-type.php';
@@ -46,39 +46,29 @@ function wpct_ce_enqueue_scripts()
 
 }
 
-// Enqueue fonts.
-add_action('wp_enqueue_scripts', 'wpct_ce_enqueue_fonts');
-add_action('enqueue_block_editor_assets', 'wpct_ce_enqueue_fonts');
-function wpct_ce_enqueue_fonts()
-{
-    wp_enqueue_style('wpct-fonts', wpct_ce_fonts_url(), array(), null);
-}
-
 // Define fonts.
-function wpct_ce_fonts_url()
+add_filter('wpct_gfonts', 'wpct_ce_gfonts');
+function wpct_ce_gfonts()
 {
-    // Allow child themes to disable to the default Coop Theme fonts.
-    $dequeue_fonts = apply_filters('wpct_dequeue_fonts', false);
-    if ($dequeue_fonts) {
-        return '';
-    }
-
-    $fonts = [
+    return [
       'family=Open+Sans:wght@100;200;300;400;500;600;700;800;900',
       'family=Montserrat:wght@100;200;300;400;500;600;700;800;900',
       'family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900',
       'family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900'
     ];
+}
 
-    // Make a single request for all Google Fonts.
-    return esc_url_raw('https://fonts.googleapis.com/css2?' . implode('&', array_unique($fonts)) . '&display=swap');
+add_action('after_setup_theme', 'wpct_add_theme_support');
+function wpct_add_theme_support()
+{
+    add_editor_style('assets/css/index.css');
 }
 
 // Register block styles.
-add_action('init', 'wpct_ce_register_block_styles');
-function wpct_ce_register_block_styles()
+add_filter('wpct_block_styles', 'wpct_ce_register_block_styles');
+function wpct_ce_register_block_styles($styles)
 {
-    $block_styles = [
+    return array_merge($styles, [
       'core/columns' => [
         'in-container' => __('In Container', 'wpct-ce'),
         'no-padding' => __('No Padding', 'wpct-ce'),
@@ -88,19 +78,7 @@ function wpct_ce_register_block_styles()
         'button-minimal' => __('Minimal', 'wpct-ce'),
         'button-minimal-back' => __('Back Minimal', 'wpct-ce'),
       ]
-    ];
-
-    foreach ($block_styles as $block => $styles) {
-        foreach ($styles as $style_name => $style_label) {
-            register_block_style(
-                $block,
-                [
-                    'name'  => $style_name,
-                    'label' => $style_label
-                ]
-            );
-        }
-    }
+    ]);
 }
 
 // Analytics
@@ -141,18 +119,17 @@ function wpct_ce_add_analytics()
 }
 
 // Register block categories
-add_action('init', 'wpct_ce_register_block_pattern_categories');
-function wpct_ce_register_block_pattern_categories()
+add_filter('wpct_pattern_categories', 'wpct_ce_register_block_pattern_categories');
+function wpct_ce_register_block_pattern_categories($categories)
 {
-    register_block_pattern_category(
-        'ce-pages',
-        array('label' => __('CE Pages', 'wpct-ce'))
-    );
-
-    register_block_pattern_category(
-        'ce-pattern',
-        ['label' => __('CE Pattern', 'wpct-ce')]
-    );
+    return array_merge($categories, [
+        'ce-pages' => [
+            'label' => __('CE Pages', 'wpct-ce')
+        ],
+        'ce-pattern' => [
+            'label' => __('CE Pattern', 'wpct-ce')
+        ],
+    ]);
 }
 
 //  Favicon
@@ -170,11 +147,11 @@ add_filter('redirect_canonical', 'ce_canonical_redirect', 10, 2);
 
 function ce_canonical_redirect($redirect_url, $requested_url)
 {
-  $home_url = home_url('/');
-  if (preg_match('/' . preg_quote($home_url . "ca/", '/') . '?/', $requested_url)) {
-    $redirect_url = $home_url;
-  }
-  return $redirect_url;
+    $home_url = home_url('/');
+    if (preg_match('/' . preg_quote($home_url . "ca/", '/') . '?/', $requested_url)) {
+        $redirect_url = $home_url;
+    }
+    return $redirect_url;
 }
 
 /**
@@ -186,56 +163,79 @@ function ce_canonical_redirect($redirect_url, $requested_url)
 add_action('pre_get_posts', 'ce_include_custom_post_types_in_archive_pages');
 function ce_include_custom_post_types_in_archive_pages($query)
 {
-  if ($query->is_main_query() && !is_admin() && (is_category() || is_tag() && empty($query->query_vars['suppress_filters']))) {
-    $query->set('post_type', array('post', 'ce-news'));
-  }
+    if ($query->is_main_query() && !is_admin() && (is_category() || is_tag() && empty($query->query_vars['suppress_filters']))) {
+        $query->set('post_type', array('post', 'ce-news'));
+    }
 }
 
 add_action('pre_get_posts', 'ce_exclude_current_post');
 function ce_exclude_current_post($query)
 {
-  global $post;
-  if (is_single() && !$query->is_main_query()) {
-    $query->set('post__not_in', array($post->ID));
-  }
+    global $post;
+    if (is_single() && !$query->is_main_query()) {
+        $query->set('post__not_in', [$post->ID]);
+    }
+}
+
+// Data getter on remote model fetch
+add_filter('wpct_rcpt_fetch', 'wpct_ce_unfold_landing_payload', 10);
+function wpct_ce_unfold_landing_payload($data)
+{
+    return $data['landing'];
 }
 
 // Register remote post types
 add_filter('wpct_rcpt_post_types', function ($post_types) {
-    return ['rest-ce-landing', 'rest-coord-landing'];
+    return [WPCT_CE_LANDING_POST_TYPE, WPCT_CE_COORD_POST_TYPE];
 }, 10, 1);
-
-// Prepare post before db insert
-add_filter('rest_pre_insert_' . WPCT_CE_LANDING_POST_TYPE, 'wpct_ce_rest_pre_insert', 10, 2); 
-add_filter('rest_pre_insert_' . WPCT_CE_COORD_POST_TYPE, 'wpct_ce_rest_pre_insert', 10, 2); 
-function wpct_ce_rest_pre_insert($prepared_post, $request) {
-    $payload = $request->get_json_params();
-    $data = $payload['landing'];
-
-    $prepared_post->post_title = $data['title'];
-    $prepared_post->post_excerpt = $data['short_description'];
-    $prepared_post->post_status = $data['status'];
-    $prepared_post->featured_media = [
-        'url' => $data['primary_image_file'],
-        'modified' => $data['primary_image_file_write_data'],
-    ];
-
-    return $prepared_post;
-}
 
 // Set remote endpoints
 add_filter('wpct_rcpt_endpoint', function ($endpoint, $post) {
     if ($post->post_type === 'rest-ce-landing') {
-        return 'api/private/landing/' . $post->get_meta('company_id');
-    } else if ($post->post_type === 'rest-cood-landing') {
-        return 'api/private/landing/' . $post->get_meta('company_id');
+        return 'api/private/landing/' . $post->get('company_id');
+    } elseif ($post->post_type === 'rest-ce-coord') {
+        return 'api/private/landing/' . $post->get('company_id');
     }
 }, 10, 2);
 
-// Filter data on remote fetch
-add_filter('wpct_rcpt_fetch', function ($data) {
-    return $data['landing'];
-}, 10);
+// Filter data before rest insert
+add_filter('rest_pre_insert_' . WPCT_CE_LANDING_POST_TYPE, 'wpct_ce_rest_pre_insert');
+add_filter('rest_pre_insert_' . WPCT_CE_COORD_POST_TYPE, 'wpct_ce_rest_pre_insert');
+function wpct_ce_rest_pre_insert($post_data, $request)
+{
+    $payload = $request->get_json_params();
+    $data = $payload['landing'];
+
+    $post_data = [
+        'post_title' => $data['title'],
+        'post_status' => $data['status'],
+        'post_excerpt' => $data['short_description'],
+    ];
+
+    if (!empty($data['wp_landing_page_id'])) {
+        $post_data['ID'] = (int) $data['wp_landing_page_id'];
+    }
+
+    if (!empty($data['primary_image_file']) && !empty($data['primary_image_file_write_date'])) {
+        $url = $data['primary_image_file'];
+        $posts = get_posts([
+            'post_type' => 'attachment',
+            'meta_query' => [[
+                'key' => '_wpct_remote_cpt_img_source',
+                'value' => $url,
+            ]]
+        ]);
+        if (count($posts)) {
+            $media = $posts[0];
+            $modified = get_post_meta($media->ID, '_wpct_remote_cpt_img_modified', true);
+            if ($modified === $data->primary_image_file_write_date) {
+                $post_data['featured_media'] = $media->ID;
+            }
+        }
+    }
+
+    return $post_data;
+}
 
 // Set post meta on rest inserts
 add_action('rest_insert_' . WPCT_CE_LANDING_POST_TYPE, 'wpct_ce_rest_insert', 10, 3);
@@ -246,13 +246,19 @@ function wpct_ce_rest_insert($post, $request, $is_new)
     $data = $payload['landing'];
 
     $type_term = wpct_ce_get_tax_term(WPCT_CE_REST_TYPE_TAX, $data['community_type']);
-    wp_set_post_terms($post->ID, $type_term->name, WPCT_CE_REST_TYPE_TAX);
+    if ($type_term) {
+        wp_set_post_terms($post->ID, $type_term->name, WPCT_CE_REST_TYPE_TAX);
+    }
 
     $status_term = wpct_ce_get_tax_term(WPCT_CE_REST_STATUS_TAX, $data['community_status']);
-    wp_set_post_terms($post->ID, $status_term->name, WPCT_CE_REST_STATUS_TAX);
+    if ($status_term) {
+        wp_set_post_terms($post->ID, $status_term->name, WPCT_CE_REST_STATUS_TAX);
+    }
 
     $assoc_type_term = wpct_ce_get_tax_term(WPCT_CE_REST_ASSOC_TYPE_TAX, $data['community_secondary_type']);
-    wp_set_post_terms($post->ID, $assoc_type_term->name, WPCT_CE_REST_ASSOC_TYPE_TAX);
+    if ($assoc_type_term) {
+        wp_set_post_terms($post->ID, $assoc_type_term->name, WPCT_CE_REST_ASSOC_TYPE_TAX);
+    }
 
     $service_terms = wpct_ce_get_tax_terms(WPCT_CE_REST_STATUS_TAX);
     $services = [];
@@ -266,7 +272,9 @@ function wpct_ce_rest_insert($post, $request, $is_new)
             }
         }
 
-        if ($service_term === null) continue;
+        if ($service_term === null) {
+            continue;
+        }
         $services[] = $service_term->name;
     }
 
@@ -274,6 +282,9 @@ function wpct_ce_rest_insert($post, $request, $is_new)
 
     update_post_meta($post->ID, 'ce-address', (string) $data['city']);
     update_post_meta($post->ID, 'company_id', (int) $data['company_id']);
+
+    $attachment_id = get_post_thumbnail_id($post->ID);
+    update_post_meta($attachment_id, '_wpct_remote_cpt_img_modified', $payload['primary_image_file_write_date']);
 
     // if ($is_new) wpct_rest_ce_schedule_task('wpct_rest_ce_do_translations', $post->ID);
     // wpct_rest_ce_drop_translations($post->ID);
@@ -288,6 +299,11 @@ add_action('wpct_rcpt_translation', function ($translation) {
         'post_title' => $data['title'],
         'post_excerpt' => $data['short_description'],
     ]);
+
+    $attachment_id = get_post_thumbnail_id($remote_cpt->ID);
+    if (attachment_id) {
+        set_post_thumbnail($translation->post_id, $attachment_id);
+    }
 
     wpct_ce_translate_meta($translation);
 });
