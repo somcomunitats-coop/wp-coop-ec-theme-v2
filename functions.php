@@ -355,3 +355,32 @@ function wpct_ce_sync_translation_tax($translation, $tax)
         return $term->name;
     }, $terms)), $tax);
 }
+
+add_filter('wpct_erp_forms_payload', function ($payload) {
+    foreach ($payload['metadata'] as $meta) {
+        $key = $meta['key'];
+        $value = $meta['value'];
+        if ($key === 'source_xml_id') {
+            $payload['source_xml_id'] = $value;
+        } elseif ($key === 'company_id') {
+            $payload['company_id'] = $value;
+        } elseif ($key === 'email_from') {
+            $payload['email_from'] = $value;
+        } elseif ($key === 'submission_id') {
+            $payload['entry_id'] = $value;
+            $meta['key'] = 'entry_id';
+        }
+    }
+
+    $payload['name'] = $payload['source_xml_id'] . ' submission: ' . $payload['entry_id'];
+
+    if (!isset($payload['company_id']) || empty($payload['company_id'])) {
+        $payload['company_id'] = 1;
+    }
+
+    if (isset($payload['submission_id'])) {
+        unset($payload['submission_id']);
+    }
+
+    return $payload;
+}, 10);
