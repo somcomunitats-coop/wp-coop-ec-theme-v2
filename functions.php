@@ -356,6 +356,7 @@ function wpct_ce_sync_translation_tax($translation, $tax)
     }, $terms)), $tax);
 }
 
+// erp forms payload preparation
 add_filter('wpct_erp_forms_payload', function ($payload) {
     foreach ($payload['metadata'] as $meta) {
         $key = $meta['key'];

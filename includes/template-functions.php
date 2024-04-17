@@ -20,66 +20,58 @@ function wpct_ce_landing_badges($remote)
 
     ob_start();
     ?>
-    <div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex disabled-buttons">
+    <div id="wpct-ce-landing-badges" class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex disabled-buttons">
         <?php if (!empty($type)) : ?>
         <button class="wp-block-button has-custom-font-size has-x-small-font-size">
-            <a
-                href="<?= get_term_link($type); ?>"
-                class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button"
-                style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--50);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--50)"
-            >
-                <?= apply_filters('wpct_rest_ce_type_icon', null, $type->slug) ?><?= $type->name ?>
+            <a href="<?= get_term_link($type); ?>" class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--50);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--50)">
+                <?= apply_filters('wpct_ce_type_icon', null, $type->slug) ?><?= $type->name ?>
             </a>
         </button>
         <?php endif; ?>
         <?php if (!empty($assoc)) : ?>
         <button class="wp-block-button has-custom-font-size has-x-small-font-size">
-            <a
-                href="<?= get_term_link($assoc); ?>"
-                class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button"
-                style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"
-            >
-                <?= apply_filters('wpct_rest_ce_type_icon', null, $assoc->slug) ?><?= $assoc->name ?>
+            <a href="<?= get_term_link($assoc); ?>" class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)">
+                <?= $assoc->name ?>
             </a>
         </button>
         <?php endif; ?>
         <?php if (!empty($status)) : ?> 
         <button class="wp-block-button has-custom-font-size has-x-small-font-size">
-            <a
-                href="<?= get_term_link($status); ?>"
-                class="wp-block-button__link has-base-color has-brand-background-color has-text-color has-background wp-element-button"
-                style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"
-            >
-                <?= apply_filters('wpct_rest_ce_type_icon', null, $status->slug) ?><?= $status->name ?>
+            <a href="<?= get_term_link($status); ?>" class="wp-block-button__link has-base-color has-brand-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)">
+                <?= apply_filters('wpct_ce_status_icon', null, $status->slug) ?><?= $status->name ?>
             </a>
         </button>
         <?php endif; ?>
     </div>
     <?php
-    return ob_get_clean();
+    $buffer = ob_get_clean();
+    return str_replace(["\r", "\n"], '', $buffer);
 }
 
 function wpct_ce_landing_services($remote)
 {
-    $services = $remote->get_terms(WPCT_CE_REST_SERVICE_TAX);
-    if (is_wp_error($services) || !$services) {
+    $terms = $remote->get_terms(WPCT_CE_REST_SERVICE_TAX);
+    if (is_wp_error($terms) || !$terms) {
         return '';
     }
+
+    $services = $remote->get('community_active_services', []);
     ob_start();
 
     ?>
     <ul class="ce-landing-services">
         <?php foreach ($services as $service) : ?>
         <li>
-        <a href="<?= get_term_link($service) ?>" rel="tag">
-            <?= apply_filters('wpct_rest_ce_service_icon', null, $service) ?>
-            <strong><?= $service->name ?></strong>
+            <a href="/<?= WPCT_CE_REST_SERVICE_TAX; ?>/<?= $service['slug']; ?>" rel="tag">
+                <?= apply_filters('wpct_rest_ce_service_icon', null, $service) ?>
+                <strong><?= $service['name'] ?></strong>
             </a>
         </li>
     <?php endforeach; ?>
     </ul>
     <?php
-    return ob_get_clean();
+    $buffer = ob_get_clean();
+    return str_replace(["\r", "\n"], '', $buffer);
 }
 
 function wpct_ce_landing_leads_script($remote)
@@ -225,14 +217,14 @@ function wpct_ce_visibility_script($remote)
         }
     }
     </script>
-    <?php endif; 
+    <?php endif;
 }
 
 
 add_filter('wpct_ce_service_icon', 'wpct_ce_service_icon', 10, 2);
 function wpct_ce_service_icon($icon, $service)
 {
-    $service_xml_id = get_option(WPCT_CE_REST_SERVICE_TAX . '_' . $service->slug);
+    $service_xml_id = str_replace('energy_communities.', '', $service['ext_id']);
     switch ($service_xml_id) {
         case 'ce_tag_common_generation':
             return '<i class="fa-solid fa-solar-panel"></i>';
@@ -276,7 +268,7 @@ function wpct_ce_type_icon($icon, $slug)
 {
     if (strpos($slug, 'citizen') !== false) {
         return '<i class="fa fa-building"></i>';
-    } else if (strpos($slug, 'industrial') !== false) {
+    } elseif (strpos($slug, 'industrial') !== false) {
         return '<i class="fa fa-industry"></i>';
     } else {
         return $icon;
@@ -288,7 +280,7 @@ function wpct_ce_status_icon($icon, $slug)
 {
     if (strpos($slug, 'open') !== false) {
         return '<i class="fa fa-circle-half-stroke"></i>';
-    } else if (strpos($slug, 'closed') !== false) {
+    } elseif (strpos($slug, 'closed') !== false) {
         return '<i class="fa fa-circle"></i>';
     } else {
         return $icon;

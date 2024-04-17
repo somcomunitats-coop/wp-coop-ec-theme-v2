@@ -29,7 +29,7 @@ add_action('init', function () {
                 'excerpt',
                 'custom-fields',
             ],
-            'rewrite' => ['slug' => 'landing'],
+            'rewrite' => ['slug' => 'coord'],
             'taxonomies' => [
                 WPCT_CE_REST_TYPE_TAX,
                 WPCT_CE_REST_STATUS_TAX,

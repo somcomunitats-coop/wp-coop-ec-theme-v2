@@ -69,7 +69,7 @@ add_action('rest_api_init', function () {
         WPCT_CE_LANDING_POST_TYPE,
         'company_id',
         [
-            'get_callback' => function () {
+            'get_callback' => function ($data) {
                 return get_post_meta($data['id'], 'company_id', true);
             },
             'update_callback' => function ($value, $object) {

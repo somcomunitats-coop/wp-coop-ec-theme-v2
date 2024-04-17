@@ -33,6 +33,11 @@
   pointer-events: none;
 }
 
+#wpct-ce-landing-badges button {
+  border: none;
+  background: none;
+}
+
 h2.ce-landing-title {
   margin-top: 1rem;
 }
