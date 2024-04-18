@@ -26,7 +26,7 @@ function wpct_ce_landing_badges($remote)
             <a href="<?= get_term_link($type); ?>" class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--50);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--50)"><?= apply_filters('wpct_ce_type_icon', null, $type->slug) ?><?= $type->name ?></a>
         </button>
         <?php endif; ?>
-        <?php if (!empty($assoc)) : ?>
+        <?php if (!(empty($assoc) || $assoc->name === 'undefined')) : ?>
         <button class="wp-block-button has-custom-font-size has-x-small-font-size">
             <a href="<?= get_term_link($assoc); ?>" class="wp-block-button__link has-typography-color has-second-base-light-background-color has-text-color has-background wp-element-button" style="padding-top:0.44rem;padding-right:var(--wp--preset--spacing--30);padding-bottom:0.44rem;padding-left:var(--wp--preset--spacing--30)"><?= $assoc->name ?></a>
         </button>
