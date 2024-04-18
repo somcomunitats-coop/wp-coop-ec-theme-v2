@@ -148,3 +148,7 @@ ul.ce-landing-services li p {
 .ce-form-newsletter .gform_validation_errors {
   display: none;
 }
+
+.single-rest-ce-landing p:empty {
+  display: none;
+}
