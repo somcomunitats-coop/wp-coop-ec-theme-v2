@@ -5,7 +5,7 @@ function wpct_ce_register_service_tax()
 {
     if (defined('WP_CLI') && WP_CLI) return;
 
-    register_taxonomy(WPCT_CE_REST_SERVICE_TAX, WPCT_CE_LANDING_POST_TYPE, [
+    $config = [
         'labels' => [
             'name' => __('Serveis energètics', 'wpct-ce'),
             'singular_name' => __('Servei energètic', 'wpct-ce'),
@@ -17,7 +17,10 @@ function wpct_ce_register_service_tax()
         'query_var' => true,
         // 'rewrite' => ['slug' => 'accion-energetica'],
         'has_archive' => true,
-    ]);
+    ];
+
+    register_taxonomy(WPCT_CE_REST_SERVICE_TAX, WPCT_CE_LANDING_POST_TYPE, $config);
+    register_taxonomy(WPCT_CE_REST_SERVICE_TAX, WPCT_CE_COORD_POST_TYPE, $config);
 
     // wpct_ce_lock_service_taxonomy();
 }

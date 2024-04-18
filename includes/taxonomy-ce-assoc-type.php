@@ -5,7 +5,7 @@ function wpct_ce_register_assoc_type_tax()
 {
     if (defined('WP_CLI') && WP_CLI) return;
 
-    register_taxonomy(WPCT_CE_REST_ASSOC_TYPE_TAX, WPCT_CE_LANDING_POST_TYPE, [
+    $config = [
         'labels' => [
             'name' => __('Forma social', 'wpct-ce'),
             'singular_name' => __('Forma social', 'wpct-ce'),
@@ -17,7 +17,10 @@ function wpct_ce_register_assoc_type_tax()
         'query_var' => true,
         // 'rewrite' => ['slug' => 'ce-social-form'],
         'has_archive' => true,
-    ]);
+    ];
+
+    register_taxonomy(WPCT_CE_REST_ASSOC_TYPE_TAX, WPCT_CE_LANDING_POST_TYPE, $config);
+    register_taxonomy(WPCT_CE_REST_ASSOC_TYPE_TAX, WPCT_CE_COORD_POST_TYPE, $config);
 
     // wpct_ce_lock_assoc_type_taxonomy();
 }

@@ -107,12 +107,36 @@ if (!defined('WPCT_CE_REST_ASSOC_TYPE_TERMS')) {
             'slug' => 'cooperative'
         ],
         [
-            'name' => __('Associació', 'wpct-ce'),
-            'slug' => 'association'
+            'name' => __('Associació sense ànim de lucre', 'wpct-ce'),
+            'slug' => 'non_profit'
         ],
         [
-            'name' => __('Mercantil', 'wpct-ce'),
-            'slug' => 'company'
+            'name' => __('En definició', 'wpct-ce'),
+            'slug' => 'undefined'
+        ],
+        [
+            'name' => __('Societat Limitada', 'wpct-ce'),
+            'slug' => 'limited_company'
+        ],
+        [
+            'name' => __('Societat Col·lectiva', 'wpct-ce'),
+            'slug' => 'general_partnership'
+        ],
+        [
+            'name' => __('Comunitat de Bens', 'wpct-ce'),
+            'slug' => 'community_of_property'
+        ],
+        [
+            'name' => __('Societat Comanditària', 'wpct-ce'),
+            'slug' => 'limited_partnership'
+        ],
+        [
+            'name' => __('Societat Anónima', 'wpct-ce'),
+            'slug' => 'stock_company'
+        ],
+        [
+            'name' => __('Empresari Individual', 'wpct-ce'),
+            'slug' => 'individual_entrepreneur'
         ]
     ]);
 }
