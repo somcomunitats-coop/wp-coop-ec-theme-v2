@@ -30,13 +30,13 @@
 <!-- wp:wpct-rcpt/field {"remoteField":"title"} -->
 <div class="wp-block-wpct-rcpt-field"><!-- wp:heading {"className":"ce-landing-title"} -->
 <h2 class="wp-block-heading ce-landing-title">_title_</h2>
-<!-- /wp:heading -->
+<!-- /wp:heading --></div>
+<!-- /wp:wpct-rcpt/field -->
 
 <!-- wp:wpct-rcpt/field {"remoteField":"short_description"} -->
 <div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"placeholder":"Setup your remote field template"} -->
 <p>_short_description_</p>
 <!-- /wp:paragraph --></div>
-<!-- /wp:wpct-rcpt/field --></div>
 <!-- /wp:wpct-rcpt/field -->
 
 <!-- wp:spacer {"height":"1rem"} -->
@@ -65,9 +65,11 @@
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:shortcode -->
-[remote_field field="title"]<h2 class="wp-block-heading ce-landing-title">%s</h2>[/remote_field]
-<!-- /wp:shortcode -->
+<!-- wp:wpct-rcpt/field {"remoteField":"title"} -->
+<div class="wp-block-wpct-rcpt-field"><!-- wp:heading {"className":"ce-landing-title"} -->
+<h2 class="wp-block-heading ce-landing-title">_title_</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:wpct-rcpt/field -->
 
 <!-- wp:shortcode -->
 [remote_callback fn="wpct_ce_landing_badges"]
@@ -77,9 +79,11 @@
 <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:shortcode -->
-[remote_field field="short_description"]<p>%s</p>[/remote_field]
-<!-- /wp:shortcode -->
+<!-- wp:wpct-rcpt/field {"remoteField":"short_description"} -->
+<div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"placeholder":"Setup your remote field template"} -->
+<p>_short_description_</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:wpct-rcpt/field -->
 
 <!-- wp:spacer {"height":"1rem"} -->
 <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
@@ -95,14 +99,14 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"is-style-no-padding"} -->
-<div class="wp-block-group is-style-no-padding"><!-- wp:shortcode -->
-[remote_field field="primary_image_file"]
-<div class="wp-block-cover is-light" style="min-height:350px">
-    <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
-    <img class="wp-block-cover__image-background wp-image-2543" alt="" src="%s" data-object-fit="cover" />
-</div>
-            [/remote_field]
-<!-- /wp:shortcode --></div>
+<div class="wp-block-group is-style-no-padding">
+<!-- wp:wpct-rcpt/field {"remoteField":"primary_image_file"} -->
+<div class="wp-block-wpct-rcpt-field"><!-- wp:cover {"url":"_primary_image_file_","id":5684,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover" style="min-height:100%"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-5684" alt="" src="_primary_image_file_" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size"></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:wpct-rcpt/field --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></section>
 <!-- /wp:group -->
@@ -180,9 +184,11 @@
 <h3 class="wp-block-heading">Qui som</h3>
 <!-- /wp:heading -->
 
-<!-- wp:shortcode -->
-[remote_field field="long_description"]<p>%s</p>[/remote_field]
-<!-- /wp:shortcode -->
+<!-- wp:wpct-rcpt/field {"remoteField":"long_description"} -->
+<div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"placeholder":"Setup your remote field template"} -->
+<p>_long_description_</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:wpct-rcpt/field -->
 
 <!-- wp:spacer {"height":"4rem"} -->
 <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
@@ -194,6 +200,12 @@
 <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"3rem"} -->
 <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
+
+<!-- wp:wpct-rcpt/field {"remoteField":"number_of_members"} -->
+<div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"align":"center","placeholder":"Setup your remote field template","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base","fontSize":"medium"} -->
+<p class="has-text-align-center has-base-color has-text-color has-link-color has-medium-font-size"><strong>_number_of_members_</strong> persones y entitas sòcies</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:wpct-rcpt/field -->
 
 <!-- wp:heading {"textAlign":"center","textColor":"base"} -->
 <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color">Fes-te’n soci/a</h2>
@@ -354,14 +366,13 @@
 
 <!-- wp:group {"className":"is-style-show-mobile-tablet","layout":{"type":"constrained"}} -->
 <div class="wp-block-group is-style-show-mobile-tablet"><!-- wp:group {"className":"is-style-no-padding","layout":{"type":"default"}} -->
-<div class="wp-block-group is-style-no-padding"><!-- wp:shortcode -->
-[remote_field field="secondary_image_file"]    
-<div class="wp-block-cover" style="min-height:400px">
-    <span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
-    <img class="wp-block-cover__image-background wp-image-3181" alt="" src="%s" data-object-fit="cover" />
-</div>
-            [/remote_field]
-<!-- /wp:shortcode --></div>
+<div class="wp-block-group is-style-no-padding"><!-- wp:wpct-rcpt/field {"remoteField":"secondary_image_file"} -->
+<div class="wp-block-wpct-rcpt-field"><!-- wp:cover {"url":"_secondary_image_file_","id":5638,"dimRatio":0,"focalPoint":{"x":0.18,"y":0.03},"minHeight":100,"minHeightUnit":"%","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover" style="min-height:100%"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-5638" alt="" src="_secondary_image_file_" style="object-position:18% 3%" data-object-fit="cover" data-object-position="18% 3%"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size"></p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:wpct-rcpt/field --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-horizontal-padded","layout":{"type":"default"}} -->
@@ -369,21 +380,28 @@
 <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:heading {"level":4} -->
+<!-- wp:group {"className":"why-become-cooperator"} -->
+<div class="wp-block-group why-become-cooperator"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Perquè fer-se soci/a</h4>
 <!-- /wp:heading -->
 
-<!-- wp:shortcode -->
-[remote_field field="why_become_cooperator"]<p>%s</p>[/remote_field]
-<!-- /wp:shortcode -->
-
-<!-- wp:heading {"level":4} -->
+<!-- wp:wpct-rcpt/field {"remoteField":"why_become_cooperator"} -->
+<div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"placeholder":"Setup your remote field template"} -->
+<p>_why_become_cooperator_</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:wpct-rcpt/field --></div>
+<!-- /wp:group -->
+<!-- wp:group {"className":"become-process"} -->
+<div class="wp-block-group become-process"><!-- wp:heading {"level":4} -->
 <h4 class="wp-block-heading">Procés d’alta</h4>
 <!-- /wp:heading -->
 
-<!-- wp:shortcode -->
-[remote_field field="become_cooperator_process"]<p>%s</p>[/remote_field]
-<!-- /wp:shortcode -->
+<!-- wp:wpct-rcpt/field {"remoteField":"become_cooperator_process"} -->
+<div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"placeholder":"Setup your remote field template"} -->
+<p>_become_cooperator_process_</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:wpct-rcpt/field --></div>
+<!-- /wp:group -->
 
 <!-- wp:spacer {"height":"1rem"} -->
 <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
@@ -556,9 +574,11 @@
 <p class="has-main-color has-text-color has-medium-font-size">Adreça</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:shortcode -->
-[remote_fields fields="street,postal_code,city"]<p class="has-text-color has-main-color">%s, %s, %s</p>[/remote_fields]
-<!-- /wp:shortcode -->
+<!-- wp:wpct-rcpt/field {"remoteField":"street,postal_code,city"} -->
+<div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"placeholder":"Setup your remote field template","style":{"elements":{"link":{"color":{"text":"var:preset|color|main"}}}},"textColor":"main"} -->
+<p class="has-main-color has-text-color has-link-color">_street_, _postal_code_, _city_</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:wpct-rcpt/field -->
 
 <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
 <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -577,6 +597,12 @@
 <!-- wp:paragraph {"textColor":"main","fontSize":"medium"} -->
 <p class="has-main-color has-text-color has-medium-font-size">Butlletí</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:wpct-rcpt/field {"remoteField":"title"} -->
+<div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"placeholder":"Setup your remote field template","style":{"elements":{"link":{"color":{"text":"var:preset|color|main"}}}},"textColor":"main"} -->
+<p class="has-main-color has-text-color has-link-color">_title_</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:wpct-rcpt/field -->
 
 <!-- wp:group {"className":"ce-form-newsletter","layout":{"type":"default"}} -->
 <div class="wp-block-group ce-form-newsletter"><!-- wp:shortcode -->
@@ -603,9 +629,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:shortcode -->
-[remote_fields fields="external_website_link,external_website_link"]<p class="has-text-color has-main-color"><a target="_blank" href="https://%s" rel="noopener"><strong>%s</strong></a></p>[/remote_fields]
-<!-- /wp:shortcode -->
+<div class="wp-block-group"><!-- wp:wpct-rcpt/field {"remoteField":"external_website_link"} -->
+<div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"placeholder":"Setup your remote field template","style":{"elements":{"link":{"color":{"text":"var:preset|color|main"}}}},"textColor":"main"} -->
+<p class="has-main-color has-text-color has-link-color"><a href="http://_external_website_link_"><strong>_external_website_link_</strong></a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:wpct-rcpt/field -->
 
 <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"1em","selfStretch":"fixed"}}} -->
 <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
