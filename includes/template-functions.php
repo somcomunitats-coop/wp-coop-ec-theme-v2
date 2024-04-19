@@ -49,19 +49,19 @@ function wpct_ce_landing_services($remote)
         return '';
     }
 
-    $services = $remote->get('community_active_services', []);
+    // $services = $remote->get('community_active_services', []);
     ob_start();
 
     ?>
     <ul class="ce-landing-services">
-        <?php for ($i = 0; $i < count($terms); $i++) : $service = $services[$i]; $term = $terms[$i]; ?>
+        <?php foreach ($terms as $term) : $source_xml_id = get_option(WPCT_CE_REST_SERVICE_TAX . '_' . $term->term_id, [])['source_xml_id']; ?>
         <li>
             <a href="<?= get_term_link($term) ?>" rel="tag">
-            <?= apply_filters('wpct_ce_service_icon', null, $service) ?>
-            <strong><?= $service['name'] ?></strong>
+            <?= apply_filters('wpct_ce_service_icon', null, $source_xml_id) ?>
+            <strong><?= $term->name ?></strong>
             </a>
         </li>
-    <?php endfor; ?>
+    <?php endforeach; ?>
     </ul>
     <?php
     $buffer = ob_get_clean();
@@ -81,24 +81,28 @@ function wpct_ce_landing_leads_script($remote)
     <div>
     <script>
     const allowNewMembers = <?= $allow_news ? 'true' : 'false' ?>;
-    const leadsWrapper = document.querySelector(".ce-landing-leads");
+    const leadsWrappers = document.querySelectorAll(".ce-landing-leads");
 
     if (allowNewMembers) {
-        const link = leadsWrapper.querySelector(".contact a");
-        link.parentElement.removeChild(link);
+        leadsWrappers.forEach((wrapper) => {
+            const link = wrapper.querySelector(".contact a");
+            link.parentElement.removeChild(link);
+        });
     }
 
-    for (const link of leadsWrapper.querySelectorAll(".lead")) {
-        if (!allowNewMembers) {
-            link.parentElement.removeChild(link);
-        } else {
-            if (link.classList.contains("citizen")) {
-                link.children[0].href = "<?= $base_url ?>/become_cooperator?odoo_company_id=<?= $company_id ?>";
+    leadsWrappers.forEach((wrapper) => {
+        for (const link of wrapper.querySelectorAll(".lead")) {
+            if (!allowNewMembers) {
+                link.parentElement.removeChild(link);
             } else {
-                link.children[0].href = "<?= $base_url ?>/become_company_cooperator?odoo_company_id=<?= $company_id ?>"; 
+                if (link.classList.contains("citizen")) {
+                    link.children[0].href = "<?= $base_url ?>/become_cooperator?odoo_company_id=<?= $company_id ?>";
+                } else {
+                    link.children[0].href = "<?= $base_url ?>/become_company_cooperator?odoo_company_id=<?= $company_id ?>"; 
+                }
             }
         }
-    }
+    });
     </script>
     </div>
     <?php
@@ -179,10 +183,10 @@ function wpct_ce_landing_visibility_script($remote)
     $become_process = $remote->get('become_cooperator_process');
     $allow_news = $remote->get('allow_new_members');
 
-    $website = $remote->get('external_website_link');
-    $twitter = $remote->get('twitter_link');
-    $instagram = $remote->get('instagram_link');
-    $telegram = $remote->get('telegram');
+    $website = $remote->get('external_website_link', '');
+    $twitter = $remote->get('twitter_link', '');
+    $instagram = $remote->get('instagram_link', '');
+    $telegram = $remote->get('telegram_link', '');
     $has_links = $website || $twitter || $instagram || $telegram;
 
     ob_start();
@@ -190,33 +194,47 @@ function wpct_ce_landing_visibility_script($remote)
     <div>
     <script id="ce-landing-visibility-script">
     const becomeSection = document.querySelector(".ce-landing-become");
-    const contactSection = document.getElementById("contacte");
     <?php if (!($why_become || $become_process)) : ?>
     becomeSection.parentElement.removeChild(becomeSection);
     <?php elseif (!$why_become) : ?>
-    const whyBecome = becomeSection.querySelector(".why-become");
-    whyBecome.parentElement.removeChild(whyBecome);
+    becomeSection.querySelectorAll(".why-become").forEach((el) => el.parentElement.removeChild(el));
     <?php elseif (!$become_process) : ?>
-    const becomeProcess = becomeSection.querySelector(".become-process");
-    becomeProcess.parentElement.removeChild(becomeProcess);
-    <?php elseif ($allow_news) : ?>
-    const contact = becomeSection.querySelector(".contact");
-    contact.parentElement.removeChild(contact);
-    <?php elseif (!$has_links) : ?>
-    const landingLinks = contactSection.querySelector(".ce-landing-links");
-    landingLinks.parentElement.removeChild(landingLinks);
+    becomeSection.querySelectorAll(".become-process").forEach(((el) => el.parentElement.removeChild(el)));
+    <?php endif; ?>
+    <?php if (!$allow_news) : ?>
+    becomeSection.querySelectorAll(".contact").forEach((el) => el.parentElement.removeChild(el));
+    <?php endif; ?>
+
+    const contactSection = document.getElementById("contacte");
+    <?php if (!$has_links) : ?>
+    contactSection.querySelectorAll(".ce-landing-links").forEach((el) => el.parentElement.removeChild(el));
     <?php else : ?>
-    const socialLinks = contactSection.querySelectorAll(".wp-social-link");
+    const socialLinks = contactSection.querySelectorAll(".wp-block-social-link");
     for (const link of socialLinks) {
         if (link.classList.contains("wp-social-link-twitter")) {
-            link.querySelector(".wp-social-link-anchor")
-                .href = "<?= $twitter ?>";
+            const href = "<?= $twitter ?>";
+            if (href) {
+            link.querySelector(".wp-block-social-link-anchor")
+                .href = href;
+            } else {
+                link.parentElement.removeChild(link);
+            }
         } else if (link.classList.contains("wp-social-link-instagram")) {
-            link.querySelector(".wp-social-link-anchor")
-                .href = "<?= $instagram ?>";
+            const href = "<?= $instagram ?>";
+            if (href) {
+            link.querySelector(".wp-block-social-link-anchor")
+                .href = href;
+            } else {
+                link.parentElement.removeChild(link);
+            }
         } else if (link.classList.contains("wp-social-link-telegram")) {
-            link.querySelector(".wp-social-link-anchor")
-                .href = "<?= $telegram ?>";
+            const href = "<?= $telegram ?>";
+            if (href) {
+            link.querySelector(".wp-block-social-link-anchor")
+                .href = href;
+            } else {
+                link.parentElement.removeChild(link);
+            }
         }
     }
     <?php endif; ?>
@@ -228,10 +246,9 @@ function wpct_ce_landing_visibility_script($remote)
 }
 
 add_filter('wpct_ce_service_icon', 'wpct_ce_service_icon', 10, 2);
-function wpct_ce_service_icon($icon, $service)
+function wpct_ce_service_icon($icon, $source_xml_id)
 {
-    $service_xml_id = str_replace('energy_communities.', '', $service['ext_id']);
-    switch ($service_xml_id) {
+    switch ($source_xml_id) {
         case 'ce_tag_common_generation':
             return '<i class="fa-solid fa-solar-panel"></i>';
             // return '<i class="fa-regular fa-solar-panel"></i>';
