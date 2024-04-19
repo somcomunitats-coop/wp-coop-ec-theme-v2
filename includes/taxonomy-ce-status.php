@@ -3,7 +3,9 @@
 add_action('init', 'wpct_ce_register_status_tax', 20);
 function wpct_ce_register_status_tax()
 {
-    if (defined('WP_CLI') && WP_CLI) return;
+    if (defined('WP_CLI') && WP_CLI) {
+        return;
+    }
 
     $config = [
         'labels' => [
@@ -19,8 +21,7 @@ function wpct_ce_register_status_tax()
         'has_archive' => true,
     ];
 
-    register_taxonomy(WPCT_CE_REST_STATUS_TAX, WPCT_CE_LANDING_POST_TYPE, $config);
-    register_taxonomy(WPCT_CE_REST_STATUS_TAX, WPCT_CE_COORD_POST_TYPE, $config);
+    register_taxonomy(WPCT_CE_REST_STATUS_TAX, [WPCT_CE_LANDING_POST_TYPE, WPCT_CE_COORD_POST_TYPE], $config);
 
     // wpct_ce_lock_status_taxonomy();
 }

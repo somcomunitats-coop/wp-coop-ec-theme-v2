@@ -3,7 +3,9 @@
 add_action('init', 'wpct_ce_register_service_tax', 20);
 function wpct_ce_register_service_tax()
 {
-    if (defined('WP_CLI') && WP_CLI) return;
+    if (defined('WP_CLI') && WP_CLI) {
+        return;
+    }
 
     $config = [
         'labels' => [
@@ -19,8 +21,7 @@ function wpct_ce_register_service_tax()
         'has_archive' => true,
     ];
 
-    register_taxonomy(WPCT_CE_REST_SERVICE_TAX, WPCT_CE_LANDING_POST_TYPE, $config);
-    register_taxonomy(WPCT_CE_REST_SERVICE_TAX, WPCT_CE_COORD_POST_TYPE, $config);
+    register_taxonomy(WPCT_CE_REST_SERVICE_TAX, [WPCT_CE_LANDING_POST_TYPE, WPCT_CE_COORD_POST_TYPE], $config);
 
     // wpct_ce_lock_service_taxonomy();
 }
@@ -56,7 +57,9 @@ function wpct_ce_register_service_terms()
             'slug' => $term['slug']
         ]);
 
-        if (is_wp_error($term)) continue;
+        if (is_wp_error($term)) {
+            continue;
+        }
 
         $term = get_term($term['term_id'], WPCT_CE_REST_SERVICE_TAX);
         $option_id = WPCT_CE_REST_SERVICE_TAX . '_' . $term->term_id;
@@ -87,7 +90,7 @@ function wpct_ce_service_edit_form_fields($term)
 {
     $term_meta = get_option(WPCT_CE_REST_SERVICE_TAX . '_' . $term->term_id);
     $value = isset($term_meta['source_xml_id']) && esc_attr($term_meta['source_xml_id']) ? esc_attr($term_meta['source_xml_id']) : '';
-?>
+    ?>
     <tr class="form-field">
         <th scope="row" valign="top"><label for="term_meta[source_xml_id]"><?= __('source_xml_id', 'wpct-ce'); ?></label></th>
         <td>

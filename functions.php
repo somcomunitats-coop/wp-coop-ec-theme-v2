@@ -193,10 +193,12 @@ add_filter('wpct_rcpt_post_types', function ($post_types) {
 
 // Set remote endpoints
 add_filter('wpct_rcpt_endpoint', function ($endpoint, $remote_cpt) {
-    if ($remote_cpt->post_type === 'rest-ce-landing') {
-        return 'api/private/landing/' . $remote_cpt->get_meta('company_id');
-    } elseif ($remote_cpt->post_type === 'rest-ce-coord') {
-        return 'api/private/landing/' . $remote_cpt->get_meta('company_id');
+    if (WPCT_RCPT_ENV !== 'development') {
+        if ($remote_cpt->post_type === 'rest-ce-landing') {
+            return '/api/private/landing/' . $remote_cpt->get_meta('company_id');
+        } elseif ($remote_cpt->post_type === 'rest-ce-coord') {
+            return '/api/private/landing/' . $remote_cpt->get_meta('company_id');
+        }
     }
 
     return $endpoint;
