@@ -189,6 +189,8 @@ function wpct_ce_landing_visibility_script($remote)
     $telegram = $remote->get('telegram_link', '');
     $has_links = $website || $twitter || $instagram || $telegram;
 
+    $header_link = $remote->get('show_web_link_on_header', '');
+
     ob_start();
     ?>
     <div>
@@ -237,6 +239,10 @@ function wpct_ce_landing_visibility_script($remote)
             }
         }
     }
+    <?php endif; ?>
+
+    <?php if (!$header_link) : ?>
+    document.querySelectorAll(".ce-landing-external-website").forEach((el) => el.parentElement.removeChild(el));
     <?php endif; ?>
     </script>
     </div>
