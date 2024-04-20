@@ -318,8 +318,8 @@ add_action('wpct_rcpt_translation', function ($translation) {
     ]);
 
     $attachment_id = get_post_thumbnail_id($remote_cpt->ID);
-    if (attachment_id) {
-        set_post_thumbnail($translation->post_id, $attachment_id);
+    if ($attachment_id) {
+        set_post_thumbnail($translation['post_id'], $attachment_id);
     }
 
     wpct_ce_translate_meta($translation);
@@ -332,11 +332,11 @@ function wpct_ce_translate_meta($translation)
     wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_ASSOC_TYPE_TAX);
     wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_SERVICE_TAX);
 
-    $company_id = get_post_meta($translation->bound, 'company_id', true);
-    update_post_meta($translation->post_id, 'company_id', (int) $company_id);
+    $company_id = get_post_meta($translation['bound'], 'company_id', true);
+    update_post_meta($translation['post_id'], 'company_id', (int) $company_id);
 
-    $address = get_post_meta($translation->bound, 'ce-address', true);
-    update_post_meta($translation->post_id, 'ce-address', (string) $address);
+    $address = get_post_meta($translation['bound'], 'ce-address', true);
+    update_post_meta($translation['post_id'], 'ce-address', (string) $address);
 }
 
 // Auxiliar functions
@@ -367,12 +367,12 @@ function wpct_ce_get_tax_terms($tax, $query = [])
 
 function wpct_ce_sync_translation_tax($translation, $tax)
 {
-    $terms = get_the_terms($post_id, $tax);
+    $terms = get_the_terms($translation['bound'], $tax);
     if (is_wp_error($terms) || count($terms) === 0) {
         return;
     }
 
-    wp_set_post_terms($translation->post_id, implode(',', array_map(function ($term) {
+    wp_set_post_terms($translation['post_id'], implode(',', array_map(function ($term) {
         return $term->name;
     }, $terms)), $tax);
 }
