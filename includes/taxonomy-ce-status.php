@@ -51,6 +51,11 @@ function wpct_ce_register_status_terms()
         return;
     }
 
+    $current_language = apply_filters('wpct_i18n_current_language', null, 'slug');
+    if ($current_language !== 'ca') {
+        return;
+    }
+
     foreach (WPCT_CE_REST_STATUS_TERMS as $term) {
         $term = wp_insert_term($term['name'], WPCT_CE_REST_STATUS_TAX, [
             'slug' => $term['slug']

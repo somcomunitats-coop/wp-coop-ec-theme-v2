@@ -52,6 +52,11 @@ function wpct_ce_register_service_terms()
         return;
     }
 
+    $current_language = apply_filters('wpct_i18n_current_language', null, 'slug');
+    if ($current_language !== 'ca') {
+        return;
+    }
+
     foreach (WPCT_CE_REST_SERVICE_TERMS as $term) {
         $term = wp_insert_term($term['name'], WPCT_CE_REST_SERVICE_TAX, [
             'slug' => $term['slug']
@@ -61,12 +66,10 @@ function wpct_ce_register_service_terms()
             continue;
         }
 
-        $term = get_term($term['term_id'], WPCT_CE_REST_SERVICE_TAX);
-        $option_id = WPCT_CE_REST_SERVICE_TAX . '_' . $term->term_id;
-
+        $term = get_term($term['term_id']);
         foreach (WPCT_CE_REST_SERVICE_XML_SOURCES as $slug => $source) {
             if ($slug === $term->slug) {
-                update_option($option_id, [
+                wpct_ce_set_service_meta($term->term_id, [
                     'source_xml_id' => $source
                 ]);
             }
@@ -88,7 +91,7 @@ function wpct_ce_service_add_form_fields()
 add_action(WPCT_CE_REST_SERVICE_TAX . '_edit_form_fields', 'wpct_ce_service_edit_form_fields', 99);
 function wpct_ce_service_edit_form_fields($term)
 {
-    $term_meta = get_option(WPCT_CE_REST_SERVICE_TAX . '_' . $term->term_id);
+    $term_meta = wpct_ce_get_service_meta($term->term_id);
     $value = isset($term_meta['source_xml_id']) && esc_attr($term_meta['source_xml_id']) ? esc_attr($term_meta['source_xml_id']) : '';
     ?>
     <tr class="form-field">
@@ -113,11 +116,17 @@ function wpct_ce_save_service_custom_field($term_id)
                 $term_meta[$key] = $_POST['term_meta'][$key];
             }
         }
-        update_option(WPCT_CE_REST_SERVICE_TAX . '_' . $term_id, $term_meta);
+
+        wpct_ce_set_service_meta($term_id, $term_meta);
     }
 }
 
 function wpct_ce_get_service_meta($term_id)
 {
     return get_option(WPCT_CE_REST_SERVICE_TAX . '_' . $term_id);
+}
+
+function wpct_ce_set_service_meta($term_id, $term_meta = [])
+{
+    update_option(WPCT_CE_REST_SERVICE_TAX . '_' . $term_id, $term_meta);
 }
