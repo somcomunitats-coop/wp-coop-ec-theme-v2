@@ -69,8 +69,13 @@ add_action('rest_api_init', function () {
         WPCT_CE_COORD_POST_TYPE,
         'company_id',
         [
-            'get_callback' => function () {
-                return get_post_meta($data['id'], 'company_id', true);
+            'get_callback' => function ($data) {
+                $value = get_post_meta($data['id'], 'company_id', true);
+                if ($value) {
+                    return (int) $value;
+                }
+
+                return null;
             },
             'update_callback' => function ($value, $object) {
                 if (!$value) {
@@ -78,7 +83,7 @@ add_action('rest_api_init', function () {
                 } 
 
                 update_post_meta($object->ID, 'company_id', (int) $value);
-                $translations = apply_filters('wpct_i18n_post_translations', null, $object->ID);
+                $translations = apply_filters('wpct_i18n_post_translations', $object->ID);
                 foreach ($translations as $trans) {
                     update_post_meta($trans->ID, 'company_id', (int) $value);
                 }
@@ -91,10 +96,10 @@ add_action('rest_api_init', function () {
         'translations',
         [
             'get_callback' => function ($data) {
-                $translations = apply_filters('wpct_i18n_post_translations', null, $data['id']);
+                $translations = apply_filters('wpct_i18n_post_translations', $data['id']);
                 $links = [];
-                foreach ($translations as $trans) {
-                    $links[$trans->slug] = get_permalink($trans->ID);
+                foreach ($translations as $lang_code => $post_id) {
+                    $links[$lang_code] = get_permalink($post_id);
                 }
 
                 return $links;
