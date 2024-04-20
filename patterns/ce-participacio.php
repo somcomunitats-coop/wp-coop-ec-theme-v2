@@ -8,6 +8,7 @@
  */
 
 ?>
+
 <!-- wp:group {"tagName":"section","align":"full","backgroundColor":"second-base-light","className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull is-style-horizontal-padded has-second-base-light-background-color has-background"><!-- wp:group {"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:spacer {"height":"4rem","className":"is-style-show-tablet-desktop"} -->
@@ -32,7 +33,7 @@
 <div class="wp-block-columns"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div id="more-info-group" class="wp-block-group"><!-- wp:image {"align":"center","id":5940,"width":"auto","height":"54px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://somcomunitats.coop/wp-content/uploads/2024/02/Icones-comptadors-01.png" alt="" class="wp-image-5940" style="width:auto;height:54px"/></figure>
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2024/02/Icones-comptadors-01.png" alt="" class="wp-image-5940" style="width:auto;height:54px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"2rem"} -->
@@ -52,7 +53,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"align":"center","id":5942,"width":"auto","height":"54px","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://somcomunitats.coop/wp-content/uploads/2024/02/Icones-comptadors-02.png" alt="" class="wp-image-5942" style="width:auto;height:54px"/></figure>
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2024/02/Icones-comptadors-02.png" alt="" class="wp-image-5942" style="width:auto;height:54px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"2rem"} -->
@@ -72,7 +73,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div id="more-info-group" class="wp-block-group"><!-- wp:image {"align":"center","id":5945,"width":"undefinedpx","height":"54px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://somcomunitats.coop/wp-content/uploads/2024/02/Icones-comptadors-03.png" alt="" class="wp-image-5945" style="object-fit:contain;width:undefinedpx;height:54px"/></figure>
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2024/02/Icones-comptadors-03.png" alt="" class="wp-image-5945" style="object-fit:contain;width:undefinedpx;height:54px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"2rem"} -->
@@ -92,7 +93,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"align":"center","id":5947,"width":"undefinedpx","height":"54px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://somcomunitats.coop/wp-content/uploads/2024/02/Icones-comptadors-04.png" alt="" class="wp-image-5947" style="object-fit:contain;width:undefinedpx;height:54px"/></figure>
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2024/02/Icones-comptadors-04.png" alt="" class="wp-image-5947" style="object-fit:contain;width:undefinedpx;height:54px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:spacer {"height":"2rem"} -->
