@@ -205,8 +205,8 @@ add_filter('wpct_rcpt_endpoint', function ($endpoint, $remote_cpt) {
 }, 10, 2);
 
 // Filter data before rest insert
-add_filter('rest_pre_insert_' . WPCT_CE_LANDING_POST_TYPE, 'wpct_ce_rest_pre_insert');
-add_filter('rest_pre_insert_' . WPCT_CE_COORD_POST_TYPE, 'wpct_ce_rest_pre_insert');
+add_filter('rest_pre_insert_' . WPCT_CE_LANDING_POST_TYPE, 'wpct_ce_rest_pre_insert', 10, 2);
+add_filter('rest_pre_insert_' . WPCT_CE_COORD_POST_TYPE, 'wpct_ce_rest_pre_insert', 10, 2);
 function wpct_ce_rest_pre_insert($prepared_post, $request)
 {
     $payload = $request->get_json_params();
@@ -222,7 +222,7 @@ function wpct_ce_rest_pre_insert($prepared_post, $request)
         $post_data['ID'] = (int) $data['wp_landing_page_id'];
     }
 
-    if (!empty($data['primary_image_file']) && !empty($data['primary_image_file_write_date'])) {
+    if (!(empty($data['primary_image_file']) || empty($data['primary_image_file_write_date']))) {
         $url = $data['primary_image_file'];
         $posts = get_posts([
             'post_type' => 'attachment',
@@ -231,12 +231,17 @@ function wpct_ce_rest_pre_insert($prepared_post, $request)
                 'value' => $url,
             ]]
         ]);
-        if (count($posts)) {
-            $media = $posts[0];
+
+        foreach ($posts as $media) {
             $modified = get_post_meta($media->ID, '_wpct_remote_cpt_img_modified', true);
             if ($modified === $data['primary_image_file_write_date']) {
-                $post_data['featured_media'] = $media->ID;
+                $post_data['_thumbnail_id'] = $media->ID;
+                break;
             }
+        }
+
+        if (!isset($post_data['_thumbnail_id'])) {
+            $request['featured_media'] = $data['primary_image_file'];
         }
     }
 
@@ -268,7 +273,7 @@ function wpct_ce_rest_insert($post, $request, $is_new)
         wp_set_post_terms($post->ID, 'undefined', WPCT_CE_REST_ASSOC_TYPE_TAX);
     }
 
-    $service_terms = wpct_ce_get_tax_terms(WPCT_CE_REST_STATUS_TAX);
+    $service_terms = wpct_ce_get_tax_terms(WPCT_CE_REST_SERVICE_TAX);
     $services = [];
     foreach ($data['community_active_services'] as $service) {
         $service_term = null;
@@ -290,9 +295,16 @@ function wpct_ce_rest_insert($post, $request, $is_new)
 
     update_post_meta($post->ID, 'ce-address', (string) $data['city']);
     update_post_meta($post->ID, 'company_id', (int) $data['company_id']);
+}
 
+add_action('rest_after_insert_' . WPCT_CE_LANDING_POST_TYPE, 'wpct_ce_rest_after_insert', 10, 3);
+add_action('rest_after_insert_' . WPCT_CE_COORD_POST_TYPE, 'wpct_ce_rest_after_insert', 10, 3);
+function wpct_ce_rest_after_insert($post, $request, $is_new)
+{
+    $payload = $request->get_json_params();
+    $data = $payload['landing'];
     $attachment_id = get_post_thumbnail_id($post->ID);
-    update_post_meta($attachment_id, '_wpct_remote_cpt_img_modified', $payload['primary_image_file_write_date']);
+    update_post_meta($attachment_id, '_wpct_remote_cpt_img_modified', $data['primary_image_file_write_date']);
 }
 
 // Sync remote translations
@@ -300,7 +312,7 @@ add_action('wpct_rcpt_translation', function ($translation) {
     global $remote_cpt;
     $data = $remote_cpt->fetch();
     wp_update_post([
-        'ID' => $translation->post_id,
+        'ID' => $translation['post_id'],
         'post_title' => $data['title'],
         'post_excerpt' => $data['short_description'],
     ]);
