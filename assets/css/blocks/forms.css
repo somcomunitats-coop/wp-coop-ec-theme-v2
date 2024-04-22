@@ -230,17 +230,29 @@ input {
 
 
 
-/**Pàgina coordinadores**/
+/**Forms coordinadores**/
 
 #ce-coordinadores-contact #ce-form .gform_footer.top_label input.gform_button{
   background-color: var(--wp--preset--color--main);
   color: white;
 }
 #ce-coordinadores-contact #ce-form .gform_wrapper{
-  color: var(--wp--preset--color--base);
+  color: var(--wp--preset--color--main);
 }
 
 
 #ce-coordinadores-contact #ce-form a:where(:not(.wp-element-button)){
   color: var(--wp--preset--color--base);
+}
+
+#ce-coordinadores-contact #ce-form .gform_wrapper .gform_validation_errors,
+#ce-coordinadores-contact #ce-form .gfield_validation_message{
+  display: none;
+}
+
+
+
+#ce-coordinadores-contact #ce-form .gform_wrapper .gfield_consent_description{
+  color: var(--wp--preset--color--main);
+  opacity: 1;
 }
