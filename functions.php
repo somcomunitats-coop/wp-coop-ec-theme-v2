@@ -288,10 +288,10 @@ function wpct_ce_rest_insert($post, $request, $is_new)
         if ($service_term === null) {
             continue;
         }
-        $services[] = $service_term->name;
+        $services[] = $service_term->term_id;
     }
 
-    wp_set_post_terms($post->ID, implode(',', $services), WPCT_CE_REST_SERVICE_TAX);
+    wp_set_post_terms($post->ID, $services, WPCT_CE_REST_SERVICE_TAX);
 
     update_post_meta($post->ID, 'ce-address', (string) $data['city']);
     update_post_meta($post->ID, 'company_id', (int) $data['company_id']);
@@ -309,12 +309,12 @@ function wpct_ce_rest_after_insert($post, $request, $is_new)
 
 // Sync remote translations
 add_action('wpct_rcpt_translation', function ($translation) {
-    wpct_ce_translate_meta($translation);
+    // wpct_ce_translate_meta($translation);
 
     // Reload remote_cpt from db with new meta
-    $remote_cpt = new \WPCT_RCPT\Model($translation['post_id']);
+    global $remote_cpt;
     try {
-        $data = $remote_cpt->fetch();
+        $remote_cpt->fetch();
     } catch (Exception $e) {
         // Landing is not yet public??
         return;
@@ -322,9 +322,9 @@ add_action('wpct_rcpt_translation', function ($translation) {
 
     wp_update_post([
         'ID' => $translation['post_id'],
-        'post_title' => $data['title'],
-        'post_status' => $data['status'],
-        'post_excerpt' => $data['short_description'],
+        'post_title' => $remote_cpt->get('title', $remote_cpt->post_title),
+        'post_status' => $remote_cpt->get('status', 'draft'),
+        'post_excerpt' => $remote_cpt->get('short_description', $remote_cpt->post_excerpt),
     ]);
 
     $attachment_id = get_post_thumbnail_id($remote_cpt->ID);
@@ -332,31 +332,27 @@ add_action('wpct_rcpt_translation', function ($translation) {
         set_post_thumbnail($translation['post_id'], $attachment_id);
     }
 
-});
-
-function wpct_ce_translate_meta($translation)
-{
-    // wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_TYPE_TAX);
-    // wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_STATUS_TAX);
-    // wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_ASSOC_TYPE_TAX);
-    // wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_SERVICE_TAX);
-
-    // $terms = get_the_terms($translation['bound'], WPCT_CE_REST_SERVICE_TAX);
-    // foreach ($terms as $term) {
-    //     $term_meta = wpct_ce_get_service_meta($term->term_id);
-    //     foreach (apply_filters('wpct_i18n_term_translations', $term) as $lang => $term_id) {
-    //         if ($lang === $translation['lang']) {
-    //             wpct_ce_set_service_meta($term_id, $term_meta);
-    //         }
-    //     }
-    // }
-
-    $company_id = get_post_meta($translation['bound'], 'company_id', true);
+    $company_id = $remote_cpt->get('company_id'); // get_post_meta($translation['bound'], 'company_id', true);
     update_post_meta($translation['post_id'], 'company_id', (int) $company_id);
 
-    $address = get_post_meta($translation['bound'], 'ce-address', true);
+    $address = $remote_cpt->get('city'); // get_post_meta($translation['bound'], 'ce-address', true);
     update_post_meta($translation['post_id'], 'ce-address', (string) $address);
-}
+
+});
+
+// function wpct_ce_translate_meta($translation)
+// {
+//     wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_TYPE_TAX);
+//     wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_STATUS_TAX);
+//     wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_ASSOC_TYPE_TAX);
+//     wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_SERVICE_TAX);
+
+//     $company_id = get_post_meta($translation['bound'], 'company_id', true);
+//     update_post_meta($translation['post_id'], 'company_id', (int) $company_id);
+
+//     $address = get_post_meta($translation['bound'], 'ce-address', true);
+//     update_post_meta($translation['post_id'], 'ce-address', (string) $address);
+// }
 
 // Auxiliar functions
 function wpct_ce_get_tax_term($tax, $slug)
@@ -387,32 +383,21 @@ function wpct_ce_get_tax_terms($tax, $query = [])
 function wpct_ce_sync_translation_tax($translation, $tax)
 {
     $bound_terms = get_the_terms($translation['bound'], $tax);
-    $post_terms = get_the_terms($translation['post_id'], $tax);
     if (is_wp_error($bound_terms) || count($bound_terms) === 0) {
         return;
     }
 
-    $post_terms = $post_terms && !is_wp_error($post_terms) ? array_map(function ($term) {
-        return $term->name;
-    }, $post_terms) : [];
-
     $trans_terms = [];
     foreach ($bound_terms as $term) {
-        if (in_array($term->name, $post_terms)) {
-            continue;
-        }
-
-        foreach (apply_filters('wpct_i18n_term_translations', $term) as $lang => $term_id) {
-            if ($lang === $translation['lang']) {
-                $trans_terms[] = get_term((int) $term_id);
+        $translations = apply_filters('wpct_i18n_term_translations', $term);
+        foreach ($translations as $lang => $term_id) {
+            if ($lang !== $translation['lang']) {
+                $trans_terms[] = $term_id;
             }
         }
     }
 
-    wp_set_post_terms($translation['post_id'], implode(',', array_map(function ($term) {
-        return $term->name;
-    }, $trans_terms)), $tax);
-
+    wp_set_post_terms($translation['post_id'], $trans_terms, $tax);
     return $trans_terms;
 }
 

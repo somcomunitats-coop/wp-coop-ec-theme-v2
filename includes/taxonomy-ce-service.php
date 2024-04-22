@@ -123,10 +123,18 @@ function wpct_ce_save_service_custom_field($term_id)
 
 function wpct_ce_get_service_meta($term_id)
 {
+    if ($term_id instanceof WP_Term) {
+        $term_id = $term_id->term_id;
+    }
+
     return get_option(WPCT_CE_REST_SERVICE_TAX . '_' . $term_id);
 }
 
 function wpct_ce_set_service_meta($term_id, $term_meta = [])
 {
+    if ($term_id instanceof WP_Term) {
+        $term_id = $term_id->term_id;
+    }
+
     update_option(WPCT_CE_REST_SERVICE_TAX . '_' . $term_id, $term_meta);
 }
