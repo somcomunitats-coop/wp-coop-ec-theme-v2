@@ -254,5 +254,5 @@ input {
 
 #ce-coordinadores-contact #ce-form .gform_wrapper .gfield_consent_description{
   color: var(--wp--preset--color--main);
-  opacity: 1;
+  opacity: 0.8;
 }
