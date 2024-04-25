@@ -245,8 +245,7 @@ input {
   color: var(--wp--preset--color--base);
 }
 
-#ce-coordinadores-contact #ce-form .gform_wrapper .gform_validation_errors,
-#ce-coordinadores-contact #ce-form .gfield_validation_message{
+#ce-coordinadores-contact #ce-form .gform_wrapper .gform_validation_errors {
   display: none;
 }
 
