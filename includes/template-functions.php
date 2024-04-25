@@ -71,7 +71,7 @@ function wpct_ce_landing_services($remote)
 function wpct_ce_landing_leads_script($remote)
 {
     $allow_news = $remote->get('allow_new_members', false);
-    $base_url = get_option('wpct-http-bridge_general__api_key');
+    $base_url = get_option('wpct-http-bridge_general', [])['base_url'];
     $lang = apply_filters('wpct_i18n_current_language', null, 'locale');
     $base_url .= '/' . $lang;
     $company_id = $remote->get('company_id', 1);
