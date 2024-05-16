@@ -1,3 +1,79 @@
+#entrar #forum-img,
+#entrar #app-img,
+#entrar #gestio-img{
+  position:relative;
+}
+#entrar #forum-img::before{
+    content: 'forum';
+    position: absolute;
+    width: 70px;
+    bottom: -80%;
+    left: 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--main);
+    text-align: center;
+    display: none;
+  }
+  #entrar #app-img::before{
+    content: 'app';
+    position: absolute;
+    bottom: -80%;
+    left: 0px;
+    width: 70px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--main);
+    text-align: center;
+    display: none;
+  }
+
+  #entrar #gestio-img::before{
+    content: 'admin';
+    position: absolute;
+    bottom: -80%;
+    left: 0px;
+    width: 70px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--main);
+    text-align: center;
+    display: none;
+  }
+
+
+  #entrar #forum-img::after,
+  #entrar #app-img::after,
+  #entrar #gestio-img::after{
+    content: "";
+  position: absolute;
+  bottom: -30%;
+  left: 0px;
+  left: 40%;
+  border-bottom: 8px solid var(--wp--preset--color--primary);;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  display: none;
+  
+  }
+
+ 
+  #entrar #forum-img:hover:after,
+  #entrar #forum-img:hover:before{
+    display: block;
+  }
+  #entrar #app-img:hover:after,
+  #entrar #app-img:hover:before{
+    display: block;
+  }
+  #entrar #gestio-img:hover:after,
+  #entrar #gestio-img:hover:before{
+    display: block;
+  }
 #entrar #bloc-gestio{
     width: 100%;
 }
+
