@@ -214,6 +214,7 @@ function wpct_ce_rest_pre_insert($prepared_post, $request)
 
     $post_data = [
         'post_title' => $data['title'],
+        'post_name' => $data['slug_id'],
         'post_status' => $data['status'],
         'post_excerpt' => $data['short_description'],
     ];
