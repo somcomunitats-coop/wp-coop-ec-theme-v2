@@ -424,3 +424,11 @@ add_filter('wpct-erp-forms_general_defaults', function ($defaults) {
     $defaults['company_id'] = 1;
     return $defaults;
 });
+
+add_filter('gettext', function ($trans, $text, $domain) {
+    if ($domain === 'wpct-erp-forms' && $text === 'wpct-erp-forms_general__company_id--label') {
+        return 'Company ID';
+    }
+
+    return $trans;
+}, 20, 3);
