@@ -324,6 +324,7 @@ add_action('wpct_rcpt_translation', function ($translation) {
     wp_update_post([
         'ID' => $translation['post_id'],
         'post_title' => $remote_cpt->get('title', $remote_cpt->post_title),
+        'post_name' => $remote_cpt->get('slug_id', $remote_cpt->post_name),
         'post_status' => $remote_cpt->get('status', 'draft'),
         'post_excerpt' => $remote_cpt->get('short_description', $remote_cpt->post_excerpt),
         '_thumbnail_id' => get_post_thumbnail_id($translation['bound']),
@@ -332,11 +333,6 @@ add_action('wpct_rcpt_translation', function ($translation) {
 
 function wpct_ce_translate_meta($translation)
 {
-    // wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_TYPE_TAX);
-    // wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_STATUS_TAX);
-    // wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_ASSOC_TYPE_TAX);
-    // wpct_ce_sync_translation_tax($translation, WPCT_CE_REST_SERVICE_TAX);
-
     $company_id = get_post_meta($translation['bound'], 'company_id', true);
     update_post_meta($translation['post_id'], 'company_id', (int) $company_id);
 
