@@ -38,7 +38,7 @@
 
 .wp-block-ce-block-slider article.ce-card .wp-block-post-excerpt__excerpt {
   height: calc(
-    4 * var(--wp--preset--font-size--small) * var(--wp--custom--line-height--body)
+    5 * var(--wp--preset--font-size--small) * var(--wp--custom--line-height--body)
   );
   overflow: hidden;
   overflow: hidden;
