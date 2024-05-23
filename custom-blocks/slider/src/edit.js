@@ -19,10 +19,10 @@ export default function Edit({ attributes, setAttributes }) {
   return (
     <>
       <InspectorControls>
-        <PanelBody title={__("Slider settings", "wp-coop-ce-theme")}>
+        <PanelBody title={__("Slider settings", "wpct-ce")}>
           <PanelRow>
             <RangeControl
-              label={__("Number of slides", "wp-coop-ce-theme")}
+              label={__("Number of slides", "wpct-ce")}
               value={slidesToShow}
               onChange={(value) => setAttributes({ slidesToShow: value })}
               min={1}
@@ -32,7 +32,7 @@ export default function Edit({ attributes, setAttributes }) {
           </PanelRow>
           <PanelRow>
             <RangeControl
-              label={__("Slides to scroll", "wp-coop-ce-theme")}
+              label={__("Slides to scroll", "wpct-ce")}
               value={slidesToScroll}
               onChange={(value) => setAttributes({ slidesToScroll: value })}
               min={1}
@@ -42,7 +42,7 @@ export default function Edit({ attributes, setAttributes }) {
           </PanelRow>
           <PanelRow>
             <RangeControl
-              label={__("Initial slide", "wp-coop-ce-theme")}
+              label={__("Initial slide", "wpct-ce")}
               value={initialSlide}
               onChange={(value) => setAttributes({ initialSlide: value })}
               required
@@ -50,7 +50,7 @@ export default function Edit({ attributes, setAttributes }) {
           </PanelRow>
           <PanelRow>
             <ToggleControl
-              label={__("Infinite slide", "wp-coop-ce-theme")}
+              label={__("Infinite slide", "wpct-ce")}
               checked={infinite}
               onChange={() => setAttributes({ infinite: !infinite })}
             />
@@ -59,7 +59,7 @@ export default function Edit({ attributes, setAttributes }) {
         <PanelBody>
           <PanelRow>
             <ToggleControl
-              label={__("Center mode", "wp-coop-ce-theme")}
+              label={__("Center mode", "wpct-ce")}
               checked={centerMode}
               onChange={() => setAttributes({ centerMode: !centerMode })}
             />
@@ -68,7 +68,7 @@ export default function Edit({ attributes, setAttributes }) {
         <PanelBody>
           <PanelRow>
             <ToggleControl
-              label={__("Show arrows", "wp-coop-ce-theme")}
+              label={__("Show arrows", "wpct-ce")}
               checked={showArrows}
               onChange={() => setAttributes({ showArrows: !showArrows })}
             />
@@ -77,7 +77,7 @@ export default function Edit({ attributes, setAttributes }) {
         <PanelBody>
           <PanelRow>
             <ToggleControl
-              label={__("Show dots", "wp-coop-ce-theme")}
+              label={__("Show dots", "wpct-ce")}
               checked={showDots}
               onChange={() => setAttributes({ showDots: !showDots })}
             />
@@ -86,7 +86,7 @@ export default function Edit({ attributes, setAttributes }) {
         <PanelBody>
           <PanelRow>
             <ToggleControl
-              label={__("Autoplay", "wp-coop-ce-theme")}
+              label={__("Autoplay", "wpct-ce")}
               checked={autoPlay}
               onChange={() => setAttributes({ autoPlay: !autoPlay })}
             />

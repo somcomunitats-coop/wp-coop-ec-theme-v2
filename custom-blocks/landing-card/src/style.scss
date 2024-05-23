@@ -1,0 +1,110 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.ce-query .ce-landing-card .ce-card-terms {
+	height: 2.5rem;
+}
+
+.ce-query .ce-landing-card .wp-block-post-terms {
+	display: flex;
+}
+
+.taxonomy-rest-ce-service .wp-block-post-terms__separator {
+	display: none;
+}
+
+.ce-landing-card .wp-block-post-terms.taxonomy-rest-ce-service a {
+	font-size: 0;
+	height: 2rem;
+	display: block;
+	border-radius: 50%;
+	padding: 0;
+	margin: 0.25rem;
+	flex-basis: 2rem;
+	flex-grow: 0;
+	flex-shrink: 0;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--wp--preset--color--brand);
+	background-size: 60%;
+	pointer-events: none;
+	cursor: default;
+}
+
+.ce-landing-card
+	.wp-block-post-terms.taxonomy-rest-ce-service
+	a[href*="generacio-renovable"] {
+	background-image: url(../../../assets/images/generacio-renovable.svg);
+	background-size: 55%;
+}
+
+.ce-landing-card
+	.wp-block-post-terms.taxonomy-rest-ce-service
+	a[href*="eficiencia-energetica"] {
+	background-image: url(../../../assets/images/eficiencia-energetica.svg);
+	background-size: 65%;
+}
+
+.ce-landing-card
+	.wp-block-post-terms.taxonomy-rest-ce-service
+	a[href*="mobilitat-sostenible"] {
+	background-image: url(../../../assets/images/mobilitat-sostenible.svg);
+	background-size: 68%;
+}
+
+.ce-landing-card
+	.wp-block-post-terms.taxonomy-rest-ce-service
+	a[href*="energia-termica"] {
+	background-image: url(../../../assets/images/energia-termica.svg);
+}
+
+.ce-landing-card
+	.wp-block-post-terms.taxonomy-rest-ce-service
+	a[href*="formacio-ciutadana"] {
+	background-image: url(../../../assets/images/formacio-ciutadana.svg);
+}
+
+.ce-landing-card
+	.wp-block-post-terms.taxonomy-rest-ce-service
+	a[href*="compres-colectives"] {
+	background-image: url(../../../assets/images/compres-colectives.svg);
+	background-size: 63%;
+}
+
+.ce-landing-card
+	.wp-block-post-terms.taxonomy-rest-ce-service
+	a[href*="subministrament-renovable"] {
+	background-image: url(../../../assets/images/subministrament.svg);
+	background-size: 54%;
+}
+
+.ce-landing-card
+	.wp-block-post-terms.taxonomy-rest-ce-service
+	a[href*="agregacio-demanda"] {
+	background-image: url(../../../assets/images/agregacio-demanda.svg);
+}
+
+.ce-landing-card .wp-block-separator {
+	margin-top: 0;
+	margin-left: 0;
+	color: var(--wp--preset--color--second-base);
+}
+
+.wp-block-ce-block-slider article.ce-card.ce-landing-card .wp-block-post-title,
+article.ce-landing-card .wp-block-post-title {
+	height: calc(
+		var(--wp--preset--font-size--small) * 2 *
+			var(--wp--custom--line-height--body)
+	);
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	white-space: initial;
+	text-overflow: unset;
+	margin-bottom: 0;
+}

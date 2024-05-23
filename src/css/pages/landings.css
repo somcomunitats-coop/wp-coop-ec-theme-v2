@@ -33,6 +33,11 @@
   pointer-events: none;
 }
 
+#wpct-ce-landing-badges button {
+  border: none;
+  background: none;
+}
+
 h2.ce-landing-title {
   margin-top: 1rem;
 }
@@ -142,4 +147,26 @@ ul.ce-landing-services li p {
 
 .ce-form-newsletter .gform_validation_errors {
   display: none;
+}
+
+.single-rest-ce-landing p:empty {
+  display: none;
+}
+
+.ce-landing-external-website a {
+  position: relative;
+}
+
+.ce-landing-external-website a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35px;
+  height: 100%;
+  background-image: url(../../../assets/images/external-link.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: translateX(100%);
 }
