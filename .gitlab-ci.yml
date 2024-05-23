@@ -35,7 +35,7 @@ build:
   image: node:latest
   script:
     - npm install && npm run build
-    - rm -rf node_modules/ custom-blocks/**/*/node_modules/
+    - find . -name node_modules -type d | xargs rm -rf
   artifacts:
     paths:
       - assets/js
