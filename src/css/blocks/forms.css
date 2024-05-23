@@ -227,3 +227,31 @@ input {
 #butlleti #form .ginput_container.ginput_container_consent .gform-field-label{
   margin-left: 8px;
 }
+
+
+
+/**Forms coordinadores**/
+
+#ce-coordinadores-contact #ce-form .gform_footer.top_label input.gform_button{
+  background-color: var(--wp--preset--color--main);
+  color: white;
+}
+#ce-coordinadores-contact #ce-form .gform_wrapper{
+  color: var(--wp--preset--color--main);
+}
+
+
+#ce-coordinadores-contact #ce-form a:where(:not(.wp-element-button)){
+  color: var(--wp--preset--color--base);
+}
+
+#ce-coordinadores-contact #ce-form .gform_wrapper .gform_validation_errors {
+  display: none;
+}
+
+
+
+#ce-coordinadores-contact #ce-form .gform_wrapper .gfield_consent_description{
+  color: var(--wp--preset--color--main);
+  opacity: 0.8;
+}
