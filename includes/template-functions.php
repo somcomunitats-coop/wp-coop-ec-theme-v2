@@ -196,53 +196,56 @@ function wpct_ce_landing_visibility_script($remote)
     <div>
     <script id="ce-landing-visibility-script">
     const becomeSection = document.querySelector(".ce-landing-become");
-    <?php if (!($why_become || $become_process)) : ?>
-    becomeSection.parentElement.removeChild(becomeSection);
-    <?php elseif (!$why_become) : ?>
-    becomeSection.querySelectorAll(".why-become").forEach((el) => el.parentElement.removeChild(el));
-    <?php elseif (!$become_process) : ?>
-    becomeSection.querySelectorAll(".become-process").forEach(((el) => el.parentElement.removeChild(el)));
-    <?php endif; ?>
-    <?php if (!$allow_news) : ?>
-    becomeSection.querySelectorAll(".contact").forEach((el) => el.parentElement.removeChild(el));
-    <?php endif; ?>
-
-    const contactSection = document.getElementById("contacte");
-    <?php if (!$has_links) : ?>
-    contactSection.querySelectorAll(".ce-landing-links").forEach((el) => el.parentElement.removeChild(el));
-    <?php else : ?>
-    const socialLinks = contactSection.querySelectorAll(".wp-block-social-link");
-    for (const link of socialLinks) {
-        if (link.classList.contains("wp-social-link-twitter")) {
-            const href = "<?= $twitter ?>";
-            if (href) {
-            link.querySelector(".wp-block-social-link-anchor")
-                .href = href;
-            } else {
-                link.parentElement.removeChild(link);
-            }
-        } else if (link.classList.contains("wp-social-link-instagram")) {
-            const href = "<?= $instagram ?>";
-            if (href) {
-            link.querySelector(".wp-block-social-link-anchor")
-                .href = href;
-            } else {
-                link.parentElement.removeChild(link);
-            }
-        } else if (link.classList.contains("wp-social-link-telegram")) {
-            const href = "<?= $telegram ?>";
-            if (href) {
-            link.querySelector(".wp-block-social-link-anchor")
-                .href = href;
-            } else {
-                link.parentElement.removeChild(link);
-            }
-        }
+    if(becomeSection){
+        <?php if (!($why_become || $become_process)) : ?>
+        becomeSection.parentElement.removeChild(becomeSection);
+        <?php elseif (!$why_become) : ?>
+        becomeSection.querySelectorAll(".why-become").forEach((el) => el.parentElement.removeChild(el));
+        <?php elseif (!$become_process) : ?>
+        becomeSection.querySelectorAll(".become-process").forEach(((el) => el.parentElement.removeChild(el)));
+        <?php endif; ?>
+        <?php if (!$allow_news) : ?>
+        becomeSection.querySelectorAll(".contact").forEach((el) => el.parentElement.removeChild(el));
+        <?php endif; ?>
     }
-    <?php endif; ?>
-
+  
+    const contactSection = document.getElementById("contacte");
+    if(contactSection){
+        <?php if (!$has_links) : ?>
+            contactSection.querySelectorAll(".ce-landing-links").forEach((el) => el.parentElement.removeChild(el));
+            <?php else : ?>
+            const socialLinks = contactSection.querySelectorAll(".wp-block-social-link");
+            for (const link of socialLinks) {
+                if (link.classList.contains("wp-social-link-x")) {
+                    const href = "<?= $twitter ?>";
+                    if (href) {
+                    link.querySelector(".wp-block-social-link-anchor")
+                        .href = href;
+                    } else {
+                        link.parentElement.removeChild(link);
+                    }
+                } else if (link.classList.contains("wp-social-link-instagram")) {
+                    const href = "<?= $instagram ?>";
+                    if (href) {
+                    link.querySelector(".wp-block-social-link-anchor")
+                        .href = href;
+                    } else {
+                        link.parentElement.removeChild(link);
+                    }
+                } else if (link.classList.contains("wp-social-link-telegram")) {
+                    const href = "<?= $telegram ?>";
+                    if (href) {
+                    link.querySelector(".wp-block-social-link-anchor")
+                        .href = href;
+                    } else {
+                        link.parentElement.removeChild(link);
+                    }
+                }
+            }
+        <?php endif; ?>
+    }
     <?php if (!$header_link) : ?>
-    document.querySelectorAll(".ce-landing-external-website").forEach((el) => el.parentElement.removeChild(el));
+        document.querySelectorAll(".ce-landing-external-website").forEach((el) => el.parentElement.removeChild(el));
     <?php endif; ?>
     </script>
     </div>
@@ -323,3 +326,30 @@ function wpct_ce_status_icon($icon, $slug)
         return $icon;
     }
 }
+
+// landing coord
+// Display default text when services texts are empty
+
+
+
+add_filter('wpct_rcpt_fetch', function ($payload, $remote_post, $locale) {
+    $keys=['awareness_services','design_services','management_services'];
+    
+    if ($remote_post->post_type === 'rest-ce-coord' && $locale === 'ca_ES') {
+         foreach ($keys as $key){
+            if (empty($payload['landing'][$key])) {
+                $payload['landing'][$key] = "En aquests moments no oferim serveis d'acompanyament en aquesta etapa de la Comunitat Energètica";
+            } 
+        }
+    }
+    elseif ($remote_post->post_type === 'rest-ce-coord' && $locale === 'es_ES'){
+        
+
+        foreach ($keys as $key){
+            if (empty($payload['landing'][$key])) {
+                $payload['landing'][$key] = "En estos momentos no ofrecemos servicios de acompañamiento en esta etapa de la Comunidad Energética";
+            } 
+        }
+    }
+    return $payload;
+}, 10, 3);
