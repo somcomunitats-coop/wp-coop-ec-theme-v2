@@ -328,7 +328,7 @@ function wpct_ce_status_icon($icon, $slug)
 }
 
 // landing coord
-// Display default text when services texts are empty
+// Display default text when services payload texts are empty
 
 
 
@@ -353,3 +353,115 @@ add_filter('wpct_rcpt_fetch', function ($payload, $remote_post, $locale) {
     }
     return $payload;
 }, 10, 3);
+
+
+// landing coord
+// Display map 
+
+
+function wpct_ce_coord_landing_map($remote){
+    $display_map = $remote->get('display_map');
+    $lang = apply_filters('wpct_i18n_current_language', null, 'locale');
+    $slug = $remote->post_name;
+    $title = $remote->get('title');
+    if($display_map && $lang === 'ca_ES'){
+
+        return '<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"default"}} -->
+                <section class="wp-block-group alignfull is-style-no-padding has-main-background-color has-background"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+                <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem","className":"is-style-show-desktop"} -->
+                <div style="height:6rem" aria-hidden="true" class="wp-block-spacer is-style-show-desktop"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:spacer {"height":"3rem","className":"is-style-show-mobile-tablet"} -->
+                <div style="height:3rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile-tablet"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:spacer {"height":"2rem"} -->
+                <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:group {"layout":{"type":"constrained","contentSize":"1300px"}} -->
+                <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","textColor":"base"} -->
+                <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color">Comunitats Energètiques gestionades per ' . $title . '</h2>
+                <!-- /wp:heading --></div>
+                <!-- /wp:group -->
+
+                <!-- wp:spacer {"height":"2rem"} -->
+                <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"default"}} -->
+                <div id="mapa" class="wp-block-group"><!-- wp:spacer {"height":"4rem","width":"0px","style":{"layout":{}}} -->
+                <div style="height:4rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:html -->
+                <iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/ca/somcomunitats/maps/campanya?mapFilters=cat%255B%255D%253Bst%255Ball%255D%253Bcus%255B' . $slug . '%255D&filter=false" width="100%" height="850px" frameborder="0"></iframe><script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-testing.coopdevs.org/iframe-integration.js"></script>
+                <!-- /wp:html -->
+
+                <!-- wp:spacer {"height":"3rem","width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
+                <div style="height:3rem;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
+                <!-- /wp:spacer --></div>
+                <!-- /wp:group -->
+
+                <!-- wp:spacer {"height":"7rem","className":"is-style-show-desktop"} -->
+                <div style="height:7rem" aria-hidden="true" class="wp-block-spacer is-style-show-desktop"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:spacer {"height":"4rem","className":"is-style-show-mobile-tablet"} -->
+                <div style="height:4rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile-tablet"></div>
+                <!-- /wp:spacer --></div>
+                <!-- /wp:group --></section>
+                <!-- /wp:group -->';
+    }  elseif($display_map && $lang === 'es_ES'){
+
+        return '<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"main","className":"is-style-no-padding","layout":{"type":"default"}} -->
+                <section class="wp-block-group alignfull is-style-no-padding has-main-background-color has-background"><!-- wp:group {"className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+                <div class="wp-block-group is-style-horizontal-padded"><!-- wp:spacer {"height":"6rem","className":"is-style-show-desktop"} -->
+                <div style="height:6rem" aria-hidden="true" class="wp-block-spacer is-style-show-desktop"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:spacer {"height":"3rem","className":"is-style-show-mobile-tablet"} -->
+                <div style="height:3rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile-tablet"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:spacer {"height":"2rem"} -->
+                <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:group {"layout":{"type":"constrained","contentSize":"1300px"}} -->
+                <div class="wp-block-group"><!-- wp:heading {"textAlign":"center","textColor":"base"} -->
+                <h2 class="wp-block-heading has-text-align-center has-base-color has-text-color">Comunidades Energéticas gestionadas por ' . $title . '</h2>
+                <!-- /wp:heading --></div>
+                <!-- /wp:group -->
+
+                <!-- wp:spacer {"height":"2rem"} -->
+                <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"default"}} -->
+                <div id="mapa" class="wp-block-group"><!-- wp:spacer {"height":"4rem","width":"0px","style":{"layout":{}}} -->
+                <div style="height:4rem;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:html -->
+                <iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/es/somcomunitats/maps/campanya?mapFilters=cat%255B%255D%253Bst%255Ball%255D%253Bcus%255B' . $slug . '%255D&filter=false" width="100%" height="850px" frameborder="0"></iframe><script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-testing.coopdevs.org/iframe-integration.js"></script>
+                <!-- /wp:html -->
+
+                <!-- wp:spacer {"height":"3rem","width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
+                <div style="height:3rem;width:0px" aria-hidden="true" class="wp-block-spacer is-style-show-tablet-desktop"></div>
+                <!-- /wp:spacer --></div>
+                <!-- /wp:group -->
+
+                <!-- wp:spacer {"height":"7rem","className":"is-style-show-desktop"} -->
+                <div style="height:7rem" aria-hidden="true" class="wp-block-spacer is-style-show-desktop"></div>
+                <!-- /wp:spacer -->
+
+                <!-- wp:spacer {"height":"4rem","className":"is-style-show-mobile-tablet"} -->
+                <div style="height:4rem" aria-hidden="true" class="wp-block-spacer is-style-show-mobile-tablet"></div>
+                <!-- /wp:spacer --></div>
+                <!-- /wp:group --></section>
+                <!-- /wp:group -->';
+    }
+
+}
