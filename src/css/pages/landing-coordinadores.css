@@ -3,3 +3,7 @@
 .single-rest-ce-coord p:empty {
     display: none;
   }
+
+.single-rest-ce-coord #contacte .gform_validation_errors {
+    display: none;
+  }
