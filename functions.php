@@ -397,7 +397,7 @@ add_filter('wpct_erp_forms_payload', function ($data) {
         if ($key === 'source_xml_id') {
             $payload['source_xml_id'] = $value;
         } elseif ($key === 'company_id') {
-            $payload['company_id'] = $value;
+            $payload['company_id'] = (int) $value;
         } elseif ($key === 'email_from') {
             $payload['email_from'] = $value;
         } elseif ($key === 'submission_id') {
