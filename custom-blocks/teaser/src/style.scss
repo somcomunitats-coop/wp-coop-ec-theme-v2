@@ -1,0 +1,33 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-teaser-block-teaser {
+	position: relative;
+	max-height: 680px;
+	width: 100%;
+}
+.wp-block-teaser-block-teaser .teaser-video,
+.wp-block-teaser-block-teaser .teaser-video iframe,
+.wp-block-teaser-block-teaser .teaser-image,
+.wp-block-teaser-block-teaser .teaser-image img{
+	width: 100%;
+	height: 680px;
+
+}
+.wp-block-teaser-block-teaser .teaser-image{
+	position: absolute;
+	z-index: 1;
+}
+.wp-block-teaser-block-teaser .teaser-image img{
+	object-fit: cover;
+}
+.wp-block-teaser-block-teaser .teaser-play{
+	position: absolute;
+	z-index: 3;
+	top:40%;
+	left: 50%;
+}

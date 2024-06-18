@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "teaser-block/teaser",
+	"version": "0.1.0",
+	"title": "Teaser Block",
+	"category": "embed",
+	"icon": "video",
+	"description": "A custom block that displays a cover image and a play button which when clicked, plays a video.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "teaser",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

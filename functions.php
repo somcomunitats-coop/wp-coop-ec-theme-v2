@@ -13,6 +13,7 @@ require_once 'includes/taxonomy-ce-service.php';
 
 require_once 'custom-blocks/landing-card/landing-card.php';
 require_once 'custom-blocks/slider/slider.php';
+require_once 'custom-blocks/teaser/teaser.php';
 
 require_once 'includes/template-functions.php';
 
