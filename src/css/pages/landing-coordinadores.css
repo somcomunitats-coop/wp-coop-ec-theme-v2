@@ -1,0 +1,5 @@
+/* delete p tags from butlleti  */
+
+.single-rest-ce-coord p:empty {
+    display: none;
+  }
