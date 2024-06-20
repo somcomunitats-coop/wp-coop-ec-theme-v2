@@ -1,0 +1,92 @@
+#tarifes #box-content {
+    padding: 30px;
+}
+/* #tarifes #box-content strong{
+    font-weight: 700;
+} */
+
+#tarifes #box-header p{
+    margin:0;
+
+}
+
+#tarifes #box-content #pricing{
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#tarifes #box-content #pricing .wp-block-spacer{
+    height: 10px !important;
+}
+#tarifes #box-content .full-width{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#tarifes #box-content .full-width .wp-block-spacer{
+    height: 10px !important;
+}
+#tarifes #table tr {
+    border: 1px solid white;
+}
+#tarifes #table td {
+    border-right: 1px solid rgba(36, 72, 62, 0.5);
+    border-bottom: 1px solid rgba(36, 72, 62, 0.5);
+    border-left: 1px solid white;
+    padding: 16px 0;
+    font-size: var(--wp--preset--font-size--footer);
+}
+#tarifes #table td mark {
+    font-size: var(--wp--preset--font-size--x-small);
+
+}
+#tarifes #table tr:first-child td:not(:first-child){
+    background-color: var(--wp--preset--color--brand);
+    font-family: var(--wp--preset--font-family--primary);
+    font-weight: 900;
+    color: white;
+    font-size: var(--wp--preset--font-size--medium);
+    padding: 30px;
+    border: 1px solid white;
+}
+#tarifes #table tr:first-child td:first-child{
+    background: white;
+    border: 1px solid white;
+}
+
+
+/*Mobile-table version*/
+#tarifes #table-mobile, 
+#tarifes #table-mobile thead {
+    border-bottom: 2px solid #D3E8DB !important;
+}
+
+
+#tarifes #table-mobile thead th:first-child{
+    
+    font-family: var(--wp--preset--font-family--primary);
+    font-weight: 900;
+    color: var(--wp--preset--color--brand);
+    font-size: var(--wp--preset--font-size--medium);
+    padding: 30px 30px 8px 0px;
+    border: 1px solid white;
+}
+#tarifes #table-mobile thead th:last-child{
+    border: 1px solid white;
+    width: 0;
+}
+
+#tarifes #table-mobile tr:last-child{
+    border-bottom: 2px solid #D3E8DB !important;
+    
+}
+
+#tarifes #table-mobile td{
+    border: 1px solid white;
+}
+
+
+
+#tarifes #table-mobile tr:last-child td:last-child{
+    padding-bottom: 10px;
+}
