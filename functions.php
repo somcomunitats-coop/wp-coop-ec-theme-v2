@@ -134,6 +134,7 @@ function wpct_ce_register_block_pattern_categories($categories)
 
 //  Favicon
 add_action('wp_head', 'wpct_set_favicon');
+add_action('admin_head', 'wpct_set_favicon');
 function wpct_set_favicon()
 { ?>
   <link rel="shortcut icon" href="<?= get_theme_file_uri() . "/img/favicon.ico" ?>" />
