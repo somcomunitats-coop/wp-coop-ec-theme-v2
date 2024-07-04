@@ -10,6 +10,7 @@ require_once 'includes/taxonomy-ce-type.php';
 require_once 'includes/taxonomy-ce-assoc-type.php';
 require_once 'includes/taxonomy-ce-status.php';
 require_once 'includes/taxonomy-ce-service.php';
+// require_once 'includes/taxonomy-ce-news.php';
 
 require_once 'custom-blocks/landing-card/landing-card.php';
 require_once 'custom-blocks/slider/slider.php';
@@ -430,3 +431,14 @@ add_filter('gettext', function ($trans, $text, $domain) {
 
     return $trans;
 }, 20, 3);
+
+
+add_action( 'save_post', 'default_news_tax' );
+function default_news_tax( $post_id){
+    global $post; 
+    if($post->post_type == 'ce-news'){ // Default taxonomy(Topic) term 'Customers' only press post type
+        $default_term = 'archive';
+        $taxonomy = 'category';
+        wp_set_object_terms( $post_id, $default_term, $taxonomy );
+    }
+}

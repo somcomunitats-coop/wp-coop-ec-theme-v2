@@ -1,5 +1,6 @@
 <?php
 add_action('init', 'wpct_create_model_news');
+// add_action('init', 'insert_default_category_term');
 function wpct_create_model_news()
 {
     register_post_type(
@@ -33,7 +34,7 @@ function wpct_create_model_news()
             'rewrite' => [
                 'slug' => 'noticies'
             ],
-            'taxonomies' => ['post_tag']
+            'taxonomies' => ['post_tag', 'category'],
             // 'map_meta_cap' => true,
             // 'capabilities' => [],
             // 'map_meta_cap' => true
