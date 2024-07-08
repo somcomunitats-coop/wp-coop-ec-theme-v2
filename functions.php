@@ -430,3 +430,16 @@ add_filter('gettext', function ($trans, $text, $domain) {
 
     return $trans;
 }, 20, 3);
+
+
+// CUSTOM RSS FEED
+// show post thumbnails in feeds
+function diw_post_thumbnail_feeds($content) {
+	global $post;
+	if(has_post_thumbnail($post->ID)) {
+		$content = $content . '<img src="' . get_the_post_thumbnail_url($post->ID) . '"/>';
+	}
+	return $content;
+}
+    //add_filter('the_excerpt_rss', 'diw_post_thumbnail_feeds');
+    add_filter('the_content_feed', 'diw_post_thumbnail_feeds');
