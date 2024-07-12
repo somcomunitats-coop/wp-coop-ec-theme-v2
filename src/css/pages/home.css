@@ -1,3 +1,15 @@
+
+body.home #video-popup {
+  height: 750px;
+}
+
+body.home #video-popup .wp-block-getwid-video-popup__wrapper{
+  height: 750px;
+}
+
+body.home #video-popup .wp-block-getwid-video-popup__icon svg{
+  padding-right: 0px;
+}
 body.home .wp-block-query.ce-cover-query .wp-block-post-template {
   display: flex;
   flex-wrap: nowrap;
