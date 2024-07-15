@@ -10,6 +10,7 @@ require_once 'includes/taxonomy-ce-type.php';
 require_once 'includes/taxonomy-ce-assoc-type.php';
 require_once 'includes/taxonomy-ce-status.php';
 require_once 'includes/taxonomy-ce-service.php';
+// require_once 'includes/taxonomy-ce-news.php';
 
 require_once 'custom-blocks/landing-card/landing-card.php';
 require_once 'custom-blocks/slider/slider.php';
@@ -441,5 +442,4 @@ function diw_post_thumbnail_feeds($content) {
 	}
 	return $content;
 }
-    //add_filter('the_excerpt_rss', 'diw_post_thumbnail_feeds');
     add_filter('the_content_feed', 'diw_post_thumbnail_feeds');
