@@ -5,9 +5,18 @@
     font-weight: 700;
 } */
 
+#tarifes #box-header{
+    padding: 40px;
+}
+
+
 #tarifes #box-header p{
     margin:0;
 
+}
+
+#tarifes #box-header h5{
+    font-size: 30px;
 }
 
 #tarifes #box-content #pricing{
@@ -30,8 +39,8 @@
     border: 1px solid white;
 }
 #tarifes #table td {
-    border-right: 1px solid rgba(36, 72, 62, 0.5);
-    border-bottom: 1px solid rgba(36, 72, 62, 0.5);
+    border-right: 1px solid rgba(36, 72, 62, 0.2);
+    border-bottom: 1px solid rgba(36, 72, 62, 0.2);
     border-left: 1px solid white;
     padding: 16px 0;
     font-size: var(--wp--preset--font-size--footer);

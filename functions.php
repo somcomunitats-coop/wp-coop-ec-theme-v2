@@ -433,12 +433,13 @@ add_filter('gettext', function ($trans, $text, $domain) {
 }, 20, 3);
 
 
-add_action( 'save_post', 'default_news_tax' );
-function default_news_tax( $post_id){
-    global $post; 
-    if($post->post_type == 'ce-news'){ // Default taxonomy(Topic) term 'Customers' only press post type
-        $default_term = 'archive';
-        $taxonomy = 'category';
-        wp_set_object_terms( $post_id, $default_term, $taxonomy );
-    }
+// CUSTOM RSS FEED
+// show post thumbnails in feeds
+function diw_post_thumbnail_feeds($content) {
+	global $post;
+	if(has_post_thumbnail($post->ID)) {
+		$content = $content . '<img src="' . get_the_post_thumbnail_url($post->ID) . '"/>';
+	}
+	return $content;
 }
+    add_filter('the_content_feed', 'diw_post_thumbnail_feeds');
