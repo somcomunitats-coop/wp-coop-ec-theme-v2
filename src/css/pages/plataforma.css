@@ -1,0 +1,5 @@
+#four-columns-row .wp-block-group .wp-block-group {
+    padding-left: var(--wp--custom--spacing--sxs);;
+    padding-right: var(--wp--custom--spacing--sxs);;
+
+}
