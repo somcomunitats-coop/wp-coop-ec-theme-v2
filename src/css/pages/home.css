@@ -1,6 +1,7 @@
 
 body.home #video-popup {
   height: 750px;
+  width: 100%;
 }
 
 body.home #video-popup .wp-block-getwid-video-popup__wrapper{
