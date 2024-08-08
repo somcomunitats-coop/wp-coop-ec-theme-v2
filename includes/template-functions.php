@@ -396,7 +396,7 @@ function wpct_ce_coord_landing_map($remote){
                 <!-- /wp:spacer -->
 
                 <!-- wp:html -->
-                <iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/ca/somcomunitats/maps/campanya?mapFilters=cat%255B%255D%253Bst%255Ball%255D%253Bcus%255B' . $slug . '%255D&filter=false" width="100%" height="850px" frameborder="0"></iframe><script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-testing.coopdevs.org/iframe-integration.js"></script>
+                <iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/ca/somcomunitats/maps/campanya?mapFilters=cat%255B%255D%253Bst%255Ball%255D%253Bcus%255B' . $slug . '%255D&filter=false&fitBoundsCentering=1" width="100%" height="850px" frameborder="0"></iframe><script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-testing.coopdevs.org/iframe-integration.js"></script>
                 <!-- /wp:html -->
 
                 <!-- wp:spacer {"height":"3rem","width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
@@ -445,7 +445,7 @@ function wpct_ce_coord_landing_map($remote){
                 <!-- /wp:spacer -->
 
                 <!-- wp:html -->
-                <iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/es/somcomunitats/maps/campanya?mapFilters=cat%255B%255D%253Bst%255Ball%255D%253Bcus%255B' . $slug . '%255D&filter=false" width="100%" height="850px" frameborder="0"></iframe><script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-testing.coopdevs.org/iframe-integration.js"></script>
+                <iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/es/somcomunitats/maps/campanya?mapFilters=cat%255B%255D%253Bst%255Ball%255D%253Bcus%255B' . $slug . '%255D&filter=false&fitBoundsCentering=1" width="100%" height="850px" frameborder="0"></iframe><script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-testing.coopdevs.org/iframe-integration.js"></script>
                 <!-- /wp:html -->
 
                 <!-- wp:spacer {"height":"3rem","width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
