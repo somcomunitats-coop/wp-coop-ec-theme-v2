@@ -480,3 +480,23 @@ function wpct_ce_coord_landing_map($remote){
     }
 
 }
+
+/****   OTHER SHORTCODES */
+/** Shortcode to include js script to modify body overflow properties */
+
+add_shortcode('enable_overflow', 'wpct_ce_tarifes_overflow_visible');
+function wpct_ce_tarifes_overflow_visible(){
+    ob_start();
+    ?>
+    <div>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+            document.getElementsByTagName("body")[0].classList.add("overflow-visible");
+        });
+    </script>
+    </div>
+    <?php
+    $buffer = ob_get_clean();
+    return str_replace(["\r", "\n"], '', $buffer);
+
+}

@@ -28,22 +28,22 @@ function wpct_ce_enqueue_scripts()
         $parent->get_stylesheet(),
         $parent->get_stylesheet_directory_uri() . '/style.css',
         [],
-        $parent->get('Version'),
+        $parent->get('Version')
     );
 
     wp_enqueue_style(
         $theme->get_stylesheet(),
         $theme->get_stylesheet_directory_uri() . '/style.css',
         [$parent->get_stylesheet()],
-        $theme->get('Version'),
+        $theme->get('Version')
     );
 
-    wp_enqueue_script(
-        $theme->get_stylesheet(),
-        $theme->get_stylesheet_directory_uri() . '/assets/js/index.js',
-        [$parent->get_stylesheet()],
-        $theme->get('Version'),
-    );
+    // wp_enqueue_script(
+    //     $theme->get_stylesheet(),
+    //     $theme->get_stylesheet_directory_uri() . '/assets/js/index.js',
+    //     [$parent->get_stylesheet()],
+    //     $theme->get('Version'),
+    // );
 
 }
 
