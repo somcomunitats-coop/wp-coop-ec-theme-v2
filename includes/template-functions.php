@@ -42,6 +42,21 @@ function wpct_ce_landing_badges($remote)
     return str_replace(["\r", "\n"], '', $buffer);
 }
 
+function wpct_ce_landing_primary_image($remote){
+    $primary_image = $remote->get('primary_image_file');
+    if($primary_image){
+        
+        return ('
+    <img class="wp-block-cover__image-background wp-image-5684" alt="" src="' . $primary_image . '" data-object-fit="cover"/>
+    ');
+    } else {
+        return ('
+    <img class="wp-block-cover__image-background wp-image-5684" alt="" src="/wp-content/uploads/2023/09/Somcomunitats_sumat.jpg" data-object-fit="cover"/>
+    ');
+    }
+}
+
+
 function wpct_ce_landing_services($remote)
 {
     $terms = $remote->get_terms(WPCT_CE_REST_SERVICE_TAX);
