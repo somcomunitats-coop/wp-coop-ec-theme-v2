@@ -51,7 +51,7 @@ function wpct_ce_landing_primary_image($remote){
     ');
     } else {
         return ('
-    <img class="wp-block-cover__image-background wp-image-5684" alt="" src="/wp-content/uploads/2023/10/default-image-1.png" data-object-fit="cover"/>
+    <img class="wp-block-cover__image-background wp-image-5684" alt="" src="/wp-content/uploads/2023/09/Somcomunitats_sumat.jpg" data-object-fit="cover"/>
     ');
     }
 }
