@@ -51,11 +51,24 @@ function wpct_ce_landing_primary_image($remote){
     ');
     } else {
         return ('
-    <img class="wp-block-cover__image-background wp-image-5684" alt="" src="/wp-content/uploads/2023/09/Somcomunitats_sumat.jpg" data-object-fit="cover"/>
+    <img class="wp-block-cover__image-background wp-image-5684" alt="" src="'. get_stylesheet_directory_uri() . '/img/ce-landing-default.jpeg' . '" data-object-fit="cover"/>
     ');
     }
 }
 
+function wpct_ce_landing_featured_image($remote){
+    $secondary_image = $remote->get('secondary_image_file');
+    if($primary_image){
+        
+        return ('
+    <img class="wp-block-cover__image-background wp-image-5684" alt="" src="' . $secondary_image . '" data-object-fit="cover"/>
+    ');
+    } else {
+        return ('
+    <img class="wp-block-cover__image-background wp-image-5684" alt="" src="'. get_stylesheet_directory_uri() . '/img/ce-landing-default.jpeg' . '" data-object-fit="cover"/>
+    ');
+    }
+}
 
 function wpct_ce_landing_services($remote)
 {
