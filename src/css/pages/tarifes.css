@@ -25,8 +25,6 @@
 
 #tarifes #box-content #pricing{
     margin-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 #tarifes #box-content #pricing .wp-block-spacer{
     height: 10px !important;
@@ -54,9 +52,14 @@
 }
 
 #tarifes #table thead th:first-child{
-    border: none;
+    background-color: var(--wp--preset--color--brand);
+    font-family: var(--wp--preset--font-family--primary);
+    font-weight: 900;
+    color: white;
+    font-size: var(--wp--preset--font-size--medium);
+    padding: 30px;
+    border: 1px solid white;
 }
-
 
 #tarifes #table thead th:not(:first-child){
     background-color: var(--wp--preset--color--brand);
