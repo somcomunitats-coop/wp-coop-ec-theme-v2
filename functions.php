@@ -143,6 +143,35 @@ function wpct_set_favicon()
 }
 
 /**
+ * Create default landing attachments
+ */
+
+// add_action('init', 'ce_attach_default_images');
+
+// function ce_attach_default_images () {
+    //error_log($new_theme);
+  //if($new_theme === "WP Coop Theme"){
+//    require_once( ABSPATH . 'img/ce-landing-default.jpeg' );
+
+    // $attachment = [
+    //     'post_mime_type' => 'jpeg',
+    //     'post_title' => "ce-landing-default",
+    //     'post_content' => '',
+    //     'post_status' => 'inherit'
+    // ];
+    //$file = './img/ce-landing-default.jpeg';
+    //$current = file_get_contents($file);
+    //$attachment_id = wp_insert_attachment($attachment, get_stylesheet_directory_uri() . '/img/ce-landing-default.jpeg');
+  //} else {
+  //  $attachment_id[0]= get_posts(["post_type" => "attachment", "post_name" => "ce-landing-default"]);
+  //  if(!empty($attachment_id)){
+  //      wp_delete_attachment($attachment_id, true);
+  //  }
+    
+ // }
+//}
+
+/**
  * Tweak canonical Wordpress redirection when attempting /ca/ routes
  */
 add_filter('redirect_canonical', 'ce_canonical_redirect', 10, 2);
@@ -246,6 +275,9 @@ function wpct_ce_rest_pre_insert($prepared_post, $request)
         if (!isset($post_data['_thumbnail_id'])) {
             $request['featured_media'] = $data['primary_image_file'];
         }
+    } else {
+        $attachment_id[0]= get_posts(["post_type" => "attachment", "post_name" => "ce-landing-default"]);
+        $request['featured_media'] = $attachment_id;
     }
 
     return (object) $post_data;
