@@ -52,8 +52,8 @@
 }
 
 #tarifes #table thead th:first-child{
-    background-color: var(--wp--preset--color--brand);
-    font-family: var(--wp--preset--font-family--base);
+    background-color: var(--wp--preset--color--base);
+    font-family: var(--wp--preset--font-family--primary);
     font-weight: 900;
     color: white;
     font-size: var(--wp--preset--font-size--medium);
