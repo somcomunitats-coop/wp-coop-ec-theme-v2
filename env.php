@@ -85,14 +85,14 @@ if (!defined('WPCT_CE_REST_SERVICE_TERMS')) {
 
 if (!defined('WPCT_CE_REST_SERVICE_XML_SOURCES')) {
     define('WPCT_CE_REST_SERVICE_XML_SOURCES', [
-        'generacio-renovable' => 'ce_tag_common_generation',
-        'eficiencia-energetica' => 'ce_tag_energy_efficiency',
-        'mobilitat-sostenible' => 'ce_tag_sustainable_mobility',
-        'formacio-ciutadana' => 'ce_tag_citizen_education',
-        'energia-termica' => 'ce_tag_thermal_energy',
-        'compres-colectives' => 'ce_tag_collective_purchases',
-        'subministrament-renovable' => 'ce_tag_renewable_energy',
-        'agregacio-demanda' => 'ce_tag_aggregate_demand'
+        'generacio-renovable' => 'energy_action_common_generation',
+        'eficiencia-energetica' => 'energy_action_energy_efficiency',
+        'mobilitat-sostenible' => 'energy_action_sustainable_mobility',
+        'formacio-ciutadana' => 'energy_action_citizen_education',
+        'energia-termica' => 'energy_action_thermal_energy',
+        'compres-colectives' => 'energy_action_collective_purchases',
+        'subministrament-renovable' => 'energy_action_renewable_energy',
+        'agregacio-demanda' => 'energy_action_aggregate_demand'
     ]);
 }
 

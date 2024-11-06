@@ -142,34 +142,6 @@ function wpct_set_favicon()
 <?php
 }
 
-/**
- * Create default landing attachments
- */
-
-// add_action('init', 'ce_attach_default_images');
-
-// function ce_attach_default_images () {
-    //error_log($new_theme);
-  //if($new_theme === "WP Coop Theme"){
-//    require_once( ABSPATH . 'img/ce-landing-default.jpeg' );
-
-    // $attachment = [
-    //     'post_mime_type' => 'jpeg',
-    //     'post_title' => "ce-landing-default",
-    //     'post_content' => '',
-    //     'post_status' => 'inherit'
-    // ];
-    //$file = './img/ce-landing-default.jpeg';
-    //$current = file_get_contents($file);
-    //$attachment_id = wp_insert_attachment($attachment, get_stylesheet_directory_uri() . '/img/ce-landing-default.jpeg');
-  //} else {
-  //  $attachment_id[0]= get_posts(["post_type" => "attachment", "post_name" => "ce-landing-default"]);
-  //  if(!empty($attachment_id)){
-  //      wp_delete_attachment($attachment_id, true);
-  //  }
-    
- // }
-//}
 
 /**
  * Tweak canonical Wordpress redirection when attempting /ca/ routes
@@ -254,30 +226,8 @@ function wpct_ce_rest_pre_insert($prepared_post, $request)
         $post_data['ID'] = (int) $data['wp_landing_page_id'];
     }
 
-    if (!(empty($data['primary_image_file']) || empty($data['primary_image_file_write_date']))) {
-        $url = $data['primary_image_file'];
-        $posts = get_posts([
-            'post_type' => 'attachment',
-            'meta_query' => [[
-                'key' => '_wpct_remote_cpt_img_source',
-                'value' => $url,
-            ]]
-        ]);
-
-        foreach ($posts as $media) {
-            $modified = get_post_meta($media->ID, '_wpct_remote_cpt_img_modified', true);
-            if ($modified === $data['primary_image_file_write_date']) {
-                $post_data['_thumbnail_id'] = $media->ID;
-                break;
-            }
-        }
-
-        if (!isset($post_data['_thumbnail_id'])) {
-            $request['featured_media'] = $data['primary_image_file'];
-        }
-    } else {
-        $attachment_id[0]= get_posts(["post_type" => "attachment", "post_name" => "ce-landing-default"]);
-        $request['featured_media'] = $attachment_id;
+    if (!isset($post_data['_thumbnail_id'])) {
+        $request['featured_media'] = $data['primary_image_file'];
     }
 
     return (object) $post_data;
@@ -310,11 +260,11 @@ function wpct_ce_rest_insert($post, $request, $is_new)
 
     $service_terms = wpct_ce_get_tax_terms(WPCT_CE_REST_SERVICE_TAX);
     $services = [];
-    foreach ($data['community_active_services'] as $service) {
+    foreach ($data['energy_actions'] as $action) {
         $service_term = null;
         foreach ($service_terms as $term) {
             $term_meta = get_option(WPCT_CE_REST_SERVICE_TAX . '_' . $term->term_id);
-            if ('energy_communities.' . $term_meta['source_xml_id'] === $service['ext_id']) {
+            if ('energy_communities.' . $term_meta['source_xml_id'] === $action['ext_id']) {
                 $service_term = $term;
                 break;
             }

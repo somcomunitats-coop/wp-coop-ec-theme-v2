@@ -56,9 +56,9 @@ function wpct_ce_landing_primary_image($remote){
     }
 }
 
-function wpct_ce_landing_featured_image($remote){
+function wpct_ce_landing_secondary_image($remote){
     $secondary_image = $remote->get('secondary_image_file');
-    if($primary_image){
+    if($secondary_image){
         
         return ('
     <img class="wp-block-cover__image-background wp-image-5684" alt="" src="' . $secondary_image . '" data-object-fit="cover"/>
@@ -286,42 +286,42 @@ add_filter('wpct_ce_service_icon', 'wpct_ce_service_icon', 10, 2);
 function wpct_ce_service_icon($icon, $slug)
 {
     switch ($slug) {
-        # case 'ce_tag_common_generation':
+        # case 'energy_action_common_generation':
         case strpos($slug, 'generacio-renovable') !== false:
             return '<i class="fa-solid fa-solar-panel"></i>';
             // return '<i class="fa-regular fa-solar-panel"></i>';
             break;
-        # case 'ce_tag_energy_efficiency':
+        # case 'energy_action_energy_efficiency':
         case strpos($slug, 'eficiencia-energetica') !== false:
             return '<i class="fa-solid fa-lightbulb"></i>';
             // return '<i class="fa-regular fa-lightbulb-cfl-on"></i>';
             break;
-        # case 'ce_tag_sustainable_mobility':
+        # case 'energy_action_sustainable_mobility':
         case strpos($slug, 'mobilitat-sostenible') !== false:
             return '<i class="fa-solid fa-car-on"></i>';
             // return '<i class="fa-regular fa-car-bolt"></i>';
             break;
-        # case 'ce_tag_citizen_education':
+        # case 'energy_action_citizen_education':
         case strpos($slug, 'formacio-ciutadana') !== false:
             return '<i class="fa-solid fa-book-open-reader"></i>';
             // return '<i class="fa-regular fa-presentation-screen"></i>';
             break;
-        # case 'ce_tag_thermal_energy':
+        # case 'energy_action_thermal_energy':
         case strpos($slug, 'energia-termica') !== false:
             return '<i class="fa-solid fa-house-fire"></i>';
             // return '<i class="fa-regular fa-air-conditioner"></i>';
             break;
-        # case 'ce_tag_collective_purchases':
+        # case 'energy_action_collective_purchases':
         case strpos($slug, 'compres-colectives') !== false:
             return '<i class="fa-solid fa-basket-shopping"></i>';
             // return '<i class="fa-regular fa-basket-shopping"></i>';
             break;
-        # case 'ce_tag_renewable_energy':
+        # case 'energy_action_renewable_energy':
         case strpos($slug, 'subministrament-renovable') !== false:
             return '<i class="fa-solid fa-leaf"></i>';
             // return '<i class="fa-regular fa-seedling"></i>';
             break;
-        # case 'ce_tag_aggregate_demand':
+        # case 'energy_action_aggregate_demand':
         case strpos($slug, 'agregacio-demanda') !== false:
             return '<i class="fa-solid fa-chart-column"></i>';
             // return '<i class="fa-regular fa-chart-column"></i>';
