@@ -17,6 +17,7 @@ require_once 'custom-blocks/slider/slider.php';
 
 require_once 'includes/template-functions.php';
 
+
 // Enqueue Child theme assets.
 add_action('wp_enqueue_scripts', 'wpct_ce_enqueue_scripts', 11);
 function wpct_ce_enqueue_scripts()
@@ -142,6 +143,7 @@ function wpct_set_favicon()
 <?php
 }
 
+
 /**
  * Tweak canonical Wordpress redirection when attempting /ca/ routes
  */
@@ -211,8 +213,10 @@ add_filter('rest_pre_insert_' . WPCT_CE_LANDING_POST_TYPE, 'wpct_ce_rest_pre_ins
 add_filter('rest_pre_insert_' . WPCT_CE_COORD_POST_TYPE, 'wpct_ce_rest_pre_insert', 10, 2);
 function wpct_ce_rest_pre_insert($prepared_post, $request)
 {
+      
     $payload = $request->get_json_params();
     $data = $payload['landing'];
+   
 
     $post_data = [
         'post_title' => $data['title'],
@@ -223,6 +227,10 @@ function wpct_ce_rest_pre_insert($prepared_post, $request)
 
     if (!empty($data['wp_landing_page_id'])) {
         $post_data['ID'] = (int) $data['wp_landing_page_id'];
+    }
+
+    if (empty($data['primary_image_file'])){
+        delete_post_thumbnail((int) $data['wp_landing_page_id']);
     }
 
     if (!(empty($data['primary_image_file']) || empty($data['primary_image_file_write_date']))) {
@@ -237,6 +245,7 @@ function wpct_ce_rest_pre_insert($prepared_post, $request)
 
         foreach ($posts as $media) {
             $modified = get_post_meta($media->ID, '_wpct_remote_cpt_img_modified', true);
+            
             if ($modified === $data['primary_image_file_write_date']) {
                 $post_data['_thumbnail_id'] = $media->ID;
                 break;
@@ -246,8 +255,7 @@ function wpct_ce_rest_pre_insert($prepared_post, $request)
         if (!isset($post_data['_thumbnail_id'])) {
             $request['featured_media'] = $data['primary_image_file'];
         }
-    }
-
+    } 
     return (object) $post_data;
 }
 
@@ -278,11 +286,11 @@ function wpct_ce_rest_insert($post, $request, $is_new)
 
     $service_terms = wpct_ce_get_tax_terms(WPCT_CE_REST_SERVICE_TAX);
     $services = [];
-    foreach ($data['community_active_services'] as $service) {
+    foreach ($data['energy_actions'] as $action) {
         $service_term = null;
         foreach ($service_terms as $term) {
             $term_meta = get_option(WPCT_CE_REST_SERVICE_TAX . '_' . $term->term_id);
-            if ('energy_communities.' . $term_meta['source_xml_id'] === $service['ext_id']) {
+            if ('energy_communities.' . $term_meta['source_xml_id'] === $action['ext_id']) {
                 $service_term = $term;
                 break;
             }
@@ -443,3 +451,5 @@ function diw_post_thumbnail_feeds($content) {
 	return $content;
 }
     add_filter('the_content_feed', 'diw_post_thumbnail_feeds');
+
+

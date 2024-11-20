@@ -10,12 +10,15 @@
 $post_id = get_the_ID();
 $address = get_post_meta($post_id, 'ce-address', true);
 if (!$address) $address = '&nbsp;';
+$featured_image_url =  get_the_post_thumbnail_url($post_id);
+if (!$featured_image_url) $featured_image_url = get_theme_file_uri() . "/img/ce-landing-default.jpeg";
 ob_start();
 ?>
 
 <!-- wp:group {"tagName":"article","backgroundColor":"base","className":"is-style-no-padding ce-card ce-post-card ce-landing-card","layout":{"type":"constrained"}} -->
 <article class="wp-block-group is-style-no-padding has-base-background-color has-background ce-card ce-post-card ce-landing-card">
-  <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
+  <img src="<?= $featured_image_url ?>">
+
 
   <!-- wp:post-terms {"term":"rest-ce-status", "separator": ""} /-->
 
