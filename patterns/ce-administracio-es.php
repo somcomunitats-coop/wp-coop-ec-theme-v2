@@ -197,7 +197,7 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":"null"}},"layout":{"type":"default"}} -->
 <div id="encuentra-tu-comunidad" class="wp-block-group"><!-- wp:html -->
-<iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/somcomunitats/maps/campanya" width="100%" height="850px" frameborder="0"></iframe><br/>
+<iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps.somenergia.coop/somcomunitats/maps/campanya" width="100%" height="850px" frameborder="0"></iframe><br/>
       <script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-testing.coopdevs.org/iframe-integration.js"></script>
 <!-- /wp:html --></div>
 <!-- /wp:group -->

@@ -316,7 +316,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:html -->
-<iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/ca/somcomunitats/maps/campanya?mapFilters=cat%255Bciutadania%255D%253Bst%255Ball%255D%253Bcus%255B%255D" width="100%" height="850px" frameborder="0"></iframe><script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-testing.coopdevs.org/iframe-integration.js"></script>
+<iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps.somenergia.coop/ca/somcomunitats/maps/campanya?mapFilters=cat%255Bciutadania%255D%253Bst%255Ball%255D%253Bcus%255B%255D" width="100%" height="850px" frameborder="0"></iframe><script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-testing.coopdevs.org/iframe-integration.js"></script>
 <!-- /wp:html -->
 
 <!-- wp:spacer {"height":"3rem","width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
