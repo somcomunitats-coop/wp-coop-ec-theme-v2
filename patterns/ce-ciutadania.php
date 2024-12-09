@@ -194,7 +194,7 @@
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":"null"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:html -->
 <iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps.somenergia.coop/ca/somcomunitats/maps/campanya?mapFilters=cat%255Bciutadania%255D%253Bst%255Ball%255D%253Bcus%255B%255D" width="100%" height="850px" frameborder="0"></iframe><br />
-      <script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-testing.coopdevs.org/iframe-integration.js"></script>
+      <script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps.somenergia.coop/iframe-integration.js"></script>
 <!-- /wp:html --></div>
 <!-- /wp:group -->
 
