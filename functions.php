@@ -199,12 +199,11 @@ add_filter('wpct_rcpt_post_types', function ($post_types) {
 add_filter('wpct_rcpt_endpoint', function ($endpoint, $remote_cpt) {
     if (WPCT_RCPT_ENV !== 'development') {
         if ($remote_cpt->post_type === 'rest-ce-landing') {
-            return '/api/private/landing/' . $remote_cpt->get_meta('company_id');
+            return '/api/opendata/landing/' . $remote_cpt->get_meta('company_id');
         } elseif ($remote_cpt->post_type === 'rest-ce-coord') {
-            return '/api/private/landing/' . $remote_cpt->get_meta('company_id');
+            return '/api/opendata/landing/' . $remote_cpt->get_meta('company_id');
         }
     }
-
     return $endpoint;
 }, 10, 2);
 
