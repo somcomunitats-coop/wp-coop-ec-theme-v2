@@ -197,8 +197,8 @@
 
 <!-- wp:group {"style":{"layout":{"selfStretch":"fill","flexSize":"null"}},"layout":{"type":"default"}} -->
 <div id="encuentra-tu-comunidad" class="wp-block-group"><!-- wp:html -->
-<iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps-testing.coopdevs.org/somcomunitats/maps/campanya?mapFilters=cat%255Bindustrial%255D%253Bst%255Ball%255D%253Bcus%255B%255D" width="100%" height="850px" frameborder="0"></iframe><br/>
-      <script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps-frontend.coopdevs.org/iframe-integration.js"></script>
+<iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps.somenergia.coop/somcomunitats/maps/campanya?mapFilters=cat%255Bindustrial%255D%253Bst%255Ball%255D%253Bcus%255B%255D" width="100%" height="850px" frameborder="0"></iframe><br/>
+      <script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps.somenergia.coop/iframe-integration.js"></script>
 <!-- /wp:html --></div>
 <!-- /wp:group -->
 
