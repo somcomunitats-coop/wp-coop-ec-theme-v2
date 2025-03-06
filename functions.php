@@ -53,10 +53,10 @@ add_filter('wpct_gfonts', 'wpct_ce_gfonts');
 function wpct_ce_gfonts()
 {
     return [
-      'family=Open+Sans:wght@100;200;300;400;500;600;700;800;900',
-      'family=Montserrat:wght@100;200;300;400;500;600;700;800;900',
-      'family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900',
-      'family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900'
+        'family=Open+Sans:wght@100;200;300;400;500;600;700;800;900',
+        'family=Montserrat:wght@100;200;300;400;500;600;700;800;900',
+        'family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900',
+        'family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900'
     ];
 }
 
@@ -71,15 +71,15 @@ add_filter('wpct_block_styles', 'wpct_ce_register_block_styles');
 function wpct_ce_register_block_styles($styles)
 {
     return array_merge($styles, [
-      'core/columns' => [
-        'in-container' => __('In Container', 'wpct-ce'),
-        'no-padding' => __('No Padding', 'wpct-ce'),
-        'no-gap' => __('No Gap', 'wpct-ce')
-      ],
-      'core/button' => [
-        'button-minimal' => __('Minimal', 'wpct-ce'),
-        'button-minimal-back' => __('Back Minimal', 'wpct-ce'),
-      ]
+        'core/columns' => [
+            'in-container' => __('In Container', 'wpct-ce'),
+            'no-padding' => __('No Padding', 'wpct-ce'),
+            'no-gap' => __('No Gap', 'wpct-ce')
+        ],
+        'core/button' => [
+            'button-minimal' => __('Minimal', 'wpct-ce'),
+            'button-minimal-back' => __('Back Minimal', 'wpct-ce'),
+        ]
     ]);
 }
 
@@ -87,37 +87,41 @@ function wpct_ce_register_block_styles($styles)
 add_action('wp_footer', 'wpct_ce_add_analytics');
 function wpct_ce_add_analytics()
 {
-    ?>
-  <!-- Matomo -->
-  <script>
-  var _paq = window._paq = window._paq || [];
-  / tracker methods like 'setCustomDimension' should be called before 'trackPageView' /
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-  var u='//matomo-staging.somcomunitats.coop/';
-  _paq.push(['setTrackerUrl', u+'matomo.php']);
-  _paq.push(['setSiteId', '1']);
-  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-  g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-  </script>
-  <!-- End Matomo Code -->
+?>
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        / tracker methods like 'setCustomDimension' should be called before 'trackPageView' /
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u = '//matomo-staging.somcomunitats.coop/';
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.async = true;
+            g.src = u + 'matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
 
-  <!-- Google Tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WD92MXBLJE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WD92MXBLJE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-    gtag('config', 'G-WD92MXBLJE');
-  </script>
-  <!-- End Google Tag -->
-  <?php
+        gtag('config', 'G-WD92MXBLJE');
+    </script>
+    <!-- End Google Tag -->
+<?php
 }
 
 // Register block categories
@@ -139,7 +143,7 @@ add_action('wp_head', 'wpct_set_favicon');
 add_action('admin_head', 'wpct_set_favicon');
 function wpct_set_favicon()
 { ?>
-  <link rel="shortcut icon" href="<?= get_theme_file_uri() . "/img/favicon.ico" ?>" />
+    <link rel="shortcut icon" href="<?= get_theme_file_uri() . "/img/favicon.ico" ?>" />
 <?php
 }
 
@@ -212,10 +216,10 @@ add_filter('rest_pre_insert_' . WPCT_CE_LANDING_POST_TYPE, 'wpct_ce_rest_pre_ins
 add_filter('rest_pre_insert_' . WPCT_CE_COORD_POST_TYPE, 'wpct_ce_rest_pre_insert', 10, 2);
 function wpct_ce_rest_pre_insert($prepared_post, $request)
 {
-      
+
     $payload = $request->get_json_params();
     $data = $payload['landing'];
-   
+
 
     $post_data = [
         'post_title' => $data['title'],
@@ -228,7 +232,7 @@ function wpct_ce_rest_pre_insert($prepared_post, $request)
         $post_data['ID'] = (int) $data['wp_landing_page_id'];
     }
 
-    if (empty($data['primary_image_file'])){
+    if (empty($data['primary_image_file'])) {
         delete_post_thumbnail((int) $data['wp_landing_page_id']);
     }
 
@@ -244,7 +248,7 @@ function wpct_ce_rest_pre_insert($prepared_post, $request)
 
         foreach ($posts as $media) {
             $modified = get_post_meta($media->ID, '_wpct_remote_cpt_img_modified', true);
-            
+
             if ($modified === $data['primary_image_file_write_date']) {
                 $post_data['_thumbnail_id'] = $media->ID;
                 break;
@@ -254,7 +258,7 @@ function wpct_ce_rest_pre_insert($prepared_post, $request)
         if (!isset($post_data['_thumbnail_id'])) {
             $request['featured_media'] = $data['primary_image_file'];
         }
-    } 
+    }
     return (object) $post_data;
 }
 
@@ -342,11 +346,13 @@ add_action('wpct_rcpt_translation', function ($translation) {
 
 function wpct_ce_translate_meta($translation)
 {
-    $company_id = get_post_meta($translation['bound'], 'company_id', true);
-    update_post_meta($translation['post_id'], 'company_id', (int) $company_id);
+    if (get_post_status($translation['bound']) === 'publish') {
+        $company_id = get_post_meta($translation['bound'], 'company_id', true);
+        update_post_meta($translation['post_id'], 'company_id', (int) $company_id);
 
-    $address = get_post_meta($translation['bound'], 'ce-address', true);
-    update_post_meta($translation['post_id'], 'ce-address', (string) $address);
+        $address = get_post_meta($translation['bound'], 'ce-address', true);
+        update_post_meta($translation['post_id'], 'ce-address', (string) $address);
+    }
 }
 
 // Auxiliar functions
@@ -442,13 +448,12 @@ add_filter('gettext', function ($trans, $text, $domain) {
 
 // CUSTOM RSS FEED
 // show post thumbnails in feeds
-function diw_post_thumbnail_feeds($content) {
-	global $post;
-	if(has_post_thumbnail($post->ID)) {
-		$content = $content . '<img src="' . get_the_post_thumbnail_url($post->ID) . '"/>';
-	}
-	return $content;
+function diw_post_thumbnail_feeds($content)
+{
+    global $post;
+    if (has_post_thumbnail($post->ID)) {
+        $content = $content . '<img src="' . get_the_post_thumbnail_url($post->ID) . '"/>';
+    }
+    return $content;
 }
-    add_filter('the_content_feed', 'diw_post_thumbnail_feeds');
-
-
+add_filter('the_content_feed', 'diw_post_thumbnail_feeds');
