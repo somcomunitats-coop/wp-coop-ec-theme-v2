@@ -87,7 +87,7 @@ function wpct_ce_register_block_styles($styles)
 add_action('wp_footer', 'wpct_ce_add_analytics');
 function wpct_ce_add_analytics()
 {
-?>
+    ?>
     <!-- Matomo -->
     <script>
         var _paq = window._paq = window._paq || [];
@@ -293,7 +293,8 @@ function wpct_ce_rest_insert($post, $request, $is_new)
         $service_term = null;
         foreach ($service_terms as $term) {
             $term_meta = get_option(WPCT_CE_REST_SERVICE_TAX . '_' . $term->term_id);
-            if ('energy_communities.' . $term_meta['source_xml_id'] === $action['ext_id']) {
+            $source_xml_id = isset($term_meta['source_xml_id']) ? 'energy_communities.' . $term_meta['source_xml_id'] : false;
+            if ($source_xml_id === $action['ext_id']) {
                 $service_term = $term;
                 break;
             }
