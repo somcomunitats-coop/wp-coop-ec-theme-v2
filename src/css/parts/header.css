@@ -32,6 +32,12 @@
 }
 
 
+/* Hide euskera from header */
+
+#ce-header-desktop .wpml-ls .wpml-ls-item-eu,
+#ce-header-mobile-tablet .wpml-language-switcher-navigation-block ul .wp-block-navigation-item:last-child{
+  display: none;
+}
   /*NOU CODI CÒDEC*/
   /*Desktop version*/
 
