@@ -30,8 +30,13 @@
 }
 #upper-main-nav .wpml-ls-link {
   color: var(--wp--preset--color--main);
-  font-weight: var(--wp--custom--font-weight--bold);
+  /* font-weight: var(--wp--custom--font-weight--bold); */
   font-size: 13px;
+}
+
+
+#upper-main-nav .wpml-ls-item.wpml-ls-current-language a{
+  font-weight: 900;
 }
 #upper-main-nav .wpml-ls-item:first-child a {
   padding: 0 15px 0px 0;

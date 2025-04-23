@@ -288,42 +288,42 @@ add_filter('wpct_ce_service_icon', 'wpct_ce_service_icon', 10, 2);
 function wpct_ce_service_icon($icon, $slug)
 {
     switch ($slug) {
-            # case 'energy_action_common_generation':
+        # case 'energy_action_common_generation':
         case strpos($slug, 'generacio-renovable') !== false:
             return '<i class="fa-solid fa-solar-panel"></i>';
             // return '<i class="fa-regular fa-solar-panel"></i>';
             break;
-            # case 'energy_action_energy_efficiency':
+        # case 'energy_action_energy_efficiency':
         case strpos($slug, 'eficiencia-energetica') !== false:
             return '<i class="fa-solid fa-lightbulb"></i>';
             // return '<i class="fa-regular fa-lightbulb-cfl-on"></i>';
             break;
-            # case 'energy_action_sustainable_mobility':
+        # case 'energy_action_sustainable_mobility':
         case strpos($slug, 'mobilitat-sostenible') !== false:
             return '<i class="fa-solid fa-car-on"></i>';
             // return '<i class="fa-regular fa-car-bolt"></i>';
             break;
-            # case 'energy_action_citizen_education':
+        # case 'energy_action_citizen_education':
         case strpos($slug, 'formacio-ciutadana') !== false:
             return '<i class="fa-solid fa-book-open-reader"></i>';
             // return '<i class="fa-regular fa-presentation-screen"></i>';
             break;
-            # case 'energy_action_thermal_energy':
+        # case 'energy_action_thermal_energy':
         case strpos($slug, 'energia-termica') !== false:
             return '<i class="fa-solid fa-house-fire"></i>';
             // return '<i class="fa-regular fa-air-conditioner"></i>';
             break;
-            # case 'energy_action_collective_purchases':
+        # case 'energy_action_collective_purchases':
         case strpos($slug, 'compres-colectives') !== false:
             return '<i class="fa-solid fa-basket-shopping"></i>';
             // return '<i class="fa-regular fa-basket-shopping"></i>';
             break;
-            # case 'energy_action_renewable_energy':
+        # case 'energy_action_renewable_energy':
         case strpos($slug, 'subministrament-renovable') !== false:
             return '<i class="fa-solid fa-leaf"></i>';
             // return '<i class="fa-regular fa-seedling"></i>';
             break;
-            # case 'energy_action_aggregate_demand':
+        # case 'energy_action_aggregate_demand':
         case strpos($slug, 'agregacio-demanda') !== false:
             return '<i class="fa-solid fa-chart-column"></i>';
             // return '<i class="fa-regular fa-chart-column"></i>';
@@ -495,6 +495,99 @@ function wpct_ce_coord_landing_map($remote)
                 <!-- /wp:group -->';
     }
 }
+
+// landings (energy community and coord)
+// Display butlleti
+
+function wpct_ce_landings_butlleti_section($remote)
+{
+    //error_log(print_r($remote));
+    $display_butlleti = $remote->get('show_newsletter_form');
+    $lang = apply_filters('wpct_i18n_current_language', null, 'locale');
+    if ($display_butlleti && $lang === 'ca_ES') {
+
+        return '<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+    <div class="wp-block-group"><!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+    <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide"/>
+    <!-- /wp:separator --></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:paragraph {"textColor":"main","fontSize":"medium"} -->
+    <p class="has-main-color has-text-color has-medium-font-size">Butlletí</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:wpct-rcpt/field {"remoteField":"title"} -->
+    <div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"placeholder":"Setup your remote field template","style":{"elements":{"link":{"color":{"text":"var:preset|color|main"}}}},"textColor":"main"} -->
+    <p class="has-main-color has-text-color has-link-color">_title_</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:wpct-rcpt/field -->
+    
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:group {"className":"ce-form-newsletter","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group ce-form-newsletter"><!-- wp:shortcode -->
+    [remote_callback fn="wpct_ce_landing_contact_form" form_id="5"]
+    <!-- /wp:shortcode -->
+    
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"100%","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer --></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->';
+    } elseif ($display_butlleti && $lang === 'es_ES') {
+
+        return '<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+    <div class="wp-block-group"><!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+    <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide"/>
+    <!-- /wp:separator --></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:paragraph {"textColor":"main","fontSize":"medium"} -->
+    <p class="has-main-color has-text-color has-medium-font-size">Boletín</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:wpct-rcpt/field {"remoteField":"title"} -->
+    <div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"placeholder":"Setup your remote field template","style":{"elements":{"link":{"color":{"text":"var:preset|color|main"}}}},"textColor":"main"} -->
+    <p class="has-main-color has-text-color has-link-color">_title_</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:wpct-rcpt/field -->
+    
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:group {"className":"ce-form-newsletter","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group ce-form-newsletter"><!-- wp:shortcode -->
+    [remote_callback fn="wpct_ce_landing_contact_form" form_id="5"]
+    <!-- /wp:shortcode -->
+    
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"100%","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer --></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->';
+    } else {
+        return '<h6>No hi ha butlletí</h6>';
+    }
+}
+
+
 
 /****   OTHER SHORTCODES */
 /** Shortcode to include js script to modify body overflow properties */
