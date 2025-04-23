@@ -476,7 +476,8 @@ function wpct_ce_coord_landing_map($remote)
                 <!-- /wp:spacer -->
 
                 <!-- wp:html -->
-                <iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps.somenergia.coop/es/somcomunitats/maps/campanya?mapFilters=cat[]%3Bst[]%3Bcus[' . $slug . ']&fitBoundsCentering=1&filter=false" width="100%" height="850px" frameborder="0"></iframe><script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps.somenergia.coop/iframe-integration.js" </script>
+                <iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src=
+                "https://community-maps.somenergia.coop/es/somcomunitats/maps/campanya?mapFilters=cat[]%3Bst[]%3Bcus[' . $slug . ']&fitBoundsCentering=1&filter=false" width="100%" height="850px" frameborder="0"></iframe><script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps.somenergia.coop/iframe-integration.js"></script>
                 <!-- /wp:html -->
 
                 <!-- wp:spacer {"height":"3rem","width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
