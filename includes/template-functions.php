@@ -502,16 +502,15 @@ function wpct_ce_coord_landing_map($remote)
 
 function wpct_ce_landings_butlleti_section($remote)
 {
-    //error_log(print_r($remote));
+    // error_log(print_r($remote));
     $display_butlleti = $remote->get('show_newsletter_form');
     $lang = apply_filters('wpct_i18n_current_language', null, 'locale');
+    $current_lang = apply_filters('wpct_i18n_current_language', null, 'slug');
+    $form_id = 5;
+    $output = do_shortcode("[gravityform id='{$form_id}' title='false' description='false' ajax='true' field_values='current_lang={$current_lang}&company_id={$company_id}']");
     if ($display_butlleti && $lang === 'ca_ES') {
 
         return '<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-    <div class="wp-block-group"><!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
-    <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide"/>
-    <!-- /wp:separator --></div>
-    <!-- /wp:group -->
     
     <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
     <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -532,25 +531,20 @@ function wpct_ce_landings_butlleti_section($remote)
     <!-- /wp:spacer -->
     
     <!-- wp:group {"className":"ce-form-newsletter","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-    <div class="wp-block-group ce-form-newsletter"><!-- wp:shortcode -->
-    [remote_callback fn="wpct_ce_landing_contact_form" form_id="5"]
-    <!-- /wp:shortcode -->
-    
-    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"100%","selfStretch":"fixed"}}} -->
+    <div class="wp-block-group ce-form-newsletter">' .  str_replace(["\r", "\n"], '', $output) .
+
+            '<!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"100%","selfStretch":"fixed"}}} -->
     <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer --></div>
     <!-- /wp:group -->
-    
-    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
-    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->';
-    } elseif ($display_butlleti && $lang === 'es_ES') {
-
-        return '<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
     <div class="wp-block-group"><!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
     <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide"/>
     <!-- /wp:separator --></div>
     <!-- /wp:group -->
+    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->';
+    } elseif ($display_butlleti && $lang === 'es_ES') {
+
+        return '<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
     
     <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
     <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -571,20 +565,17 @@ function wpct_ce_landings_butlleti_section($remote)
     <!-- /wp:spacer -->
     
     <!-- wp:group {"className":"ce-form-newsletter","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-    <div class="wp-block-group ce-form-newsletter"><!-- wp:shortcode -->
-    [remote_callback fn="wpct_ce_landing_contact_form" form_id="5"]
-    <!-- /wp:shortcode -->
-    
-    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"100%","selfStretch":"fixed"}}} -->
+    <div class="wp-block-group ce-form-newsletter">' .  str_replace(["\r", "\n"], '', $output) .
+
+            '<!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"100%","selfStretch":"fixed"}}} -->
     <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer --></div>
     <!-- /wp:group -->
-    
-    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
-    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->';
-    } else {
-        return '<h6>No hi ha butlletí</h6>';
+    <div class="wp-block-group"><!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+    <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide"/>
+    <!-- /wp:separator --></div>
+    <!-- /wp:group -->
+    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->';
     }
 }
 
