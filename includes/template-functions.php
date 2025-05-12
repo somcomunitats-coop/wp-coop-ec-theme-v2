@@ -242,6 +242,7 @@ function wpct_ce_landing_visibility_script($remote)
             const contactSection = document.getElementById("contacte");
             if (contactSection) {
                 <?php if (!$has_links) : ?>
+                    contactSection.querySelectorAll(".contacte-links-section").forEach((el) => el.parentElement.removeChild(el));
                     contactSection.querySelectorAll(".ce-landing-links").forEach((el) => el.parentElement.removeChild(el));
                 <?php else : ?>
                     const socialLinks = contactSection.querySelectorAll(".wp-block-social-link");
@@ -251,6 +252,7 @@ function wpct_ce_landing_visibility_script($remote)
                             if (href) {
                                 link.querySelector(".wp-block-social-link-anchor")
                                     .href = href;
+                                link.querySelector(".wp-block-social-link-anchor").setAttribute('target', '_blank');
                             } else {
                                 link.parentElement.removeChild(link);
                             }
@@ -259,6 +261,7 @@ function wpct_ce_landing_visibility_script($remote)
                             if (href) {
                                 link.querySelector(".wp-block-social-link-anchor")
                                     .href = href;
+                                link.querySelector(".wp-block-social-link-anchor").setAttribute('target', '_blank');
                             } else {
                                 link.parentElement.removeChild(link);
                             }
@@ -267,6 +270,7 @@ function wpct_ce_landing_visibility_script($remote)
                             if (href) {
                                 link.querySelector(".wp-block-social-link-anchor")
                                     .href = href;
+                                link.querySelector(".wp-block-social-link-anchor").setAttribute('target', '_blank');
                             } else {
                                 link.parentElement.removeChild(link);
                             }
@@ -511,7 +515,11 @@ function wpct_ce_landings_butlleti_section($remote)
     if ($display_butlleti && $lang === 'ca_ES') {
 
         return '<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-    
+    <!-- /wp:group -->
+    <div class="wp-block-group"><!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+    <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide"/>
+    <!-- /wp:separator --></div>
+    <!-- /wp:group -->
     <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
     <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
@@ -545,7 +553,11 @@ function wpct_ce_landings_butlleti_section($remote)
     } elseif ($display_butlleti && $lang === 'es_ES') {
 
         return '<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-    
+    <!-- /wp:group -->
+    <div class="wp-block-group"><!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+    <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide"/>
+    <!-- /wp:separator --></div>
+    <!-- /wp:group -->
     <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
     <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
@@ -578,6 +590,9 @@ function wpct_ce_landings_butlleti_section($remote)
     <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->';
     }
 }
+
+
+
 
 
 
