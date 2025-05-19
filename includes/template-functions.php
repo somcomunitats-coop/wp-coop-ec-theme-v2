@@ -100,45 +100,27 @@ function wpct_ce_landing_services($remote)
 
 function wpct_ce_landing_leads_script($remote)
 {
-    $allow_news = $remote->get('allow_new_members', false);
-    $base_url = get_option('wpct-http-bridge_general', [])['base_url'];
-    $lang = apply_filters('wpct_i18n_current_language', null, 'locale');
-    $base_url .= '/' . $lang;
-    $company_id = $remote->get('company_id', 1);
+
+    $cooperator_buttons = $remote->get('cooperator_buttons');
 
     ob_start();
+
 ?>
-    <div>
-        <script>
-            const allowNewMembers = <?= $allow_news ? 'true' : 'false' ?>;
-            const leadsWrappers = document.querySelectorAll(".ce-landing-leads");
-
-            if (allowNewMembers) {
-                leadsWrappers.forEach((wrapper) => {
-                    const link = wrapper.querySelector(".contact a");
-                    link.parentElement.removeChild(link);
-                });
-            }
-
-            leadsWrappers.forEach((wrapper) => {
-                for (const link of wrapper.querySelectorAll(".lead")) {
-                    if (!allowNewMembers) {
-                        link.parentElement.removeChild(link);
-                    } else {
-                        if (link.classList.contains("citizen")) {
-                            link.children[0].href = "<?= $base_url ?>/become_cooperator?odoo_company_id=<?= $company_id ?>";
-                        } else {
-                            link.children[0].href = "<?= $base_url ?>/become_company_cooperator?odoo_company_id=<?= $company_id ?>";
-                        }
-                    }
-                }
-            });
-        </script>
+    <div class="wp-block-buttons ce-landing-leads is-content-justification-center is-layout-flex wp-container-core-buttons-layout-2 wp-block-buttons-is-layout-flex">
+        <?php foreach ($cooperator_buttons as $button) : ?>
+            <div class="wp-block-button has-custom-font-size lead citizen has-small-font-size">
+                <a class="wp-block-button__link wp-element-button" href="<?= $button['url']; ?>" target="_blank" rel="noopener">
+                    <?= $button['name']; ?>
+                </a>
+            </div>
+        <?php endforeach; ?>
     </div>
 <?php
     $buffer = ob_get_clean();
     return str_replace(["\r", "\n"], '', $buffer);
 }
+
+
 
 function wpct_ce_landing_social_script($remote)
 {
