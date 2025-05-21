@@ -1,0 +1,10 @@
+@media only screen and (max-width: 782px) {
+#column-figure-text{
+    flex-direction: column-reverse !important;
+}
+#column-figure-text .wp-block-spacer,
+#column-text-figure .wp-block-spacer{
+    height: 2.5rem !important;
+}
+
+}

@@ -1,14 +1,14 @@
 
-body.home #video-popup {
+#video-popup-ce {
   height: 750px;
   width: 100%;
 }
 
-body.home #video-popup .wp-block-getwid-video-popup__wrapper{
+#video-popup-ce .wp-block-getwid-video-popup__wrapper{
   height: 750px;
 }
 
-body.home #video-popup .wp-block-getwid-video-popup__icon svg{
+#video-popup-ce .wp-block-getwid-video-popup__icon svg{
   padding-right: 0px;
 }
 body.home .wp-block-query.ce-cover-query .wp-block-post-template {

@@ -100,45 +100,27 @@ function wpct_ce_landing_services($remote)
 
 function wpct_ce_landing_leads_script($remote)
 {
-    $allow_news = $remote->get('allow_new_members', false);
-    $base_url = get_option('wpct-http-bridge_general', [])['base_url'];
-    $lang = apply_filters('wpct_i18n_current_language', null, 'locale');
-    $base_url .= '/' . $lang;
-    $company_id = $remote->get('company_id', 1);
+
+    $cooperator_buttons = $remote->get('cooperator_buttons');
 
     ob_start();
+
 ?>
-    <div>
-        <script>
-            const allowNewMembers = <?= $allow_news ? 'true' : 'false' ?>;
-            const leadsWrappers = document.querySelectorAll(".ce-landing-leads");
-
-            if (allowNewMembers) {
-                leadsWrappers.forEach((wrapper) => {
-                    const link = wrapper.querySelector(".contact a");
-                    link.parentElement.removeChild(link);
-                });
-            }
-
-            leadsWrappers.forEach((wrapper) => {
-                for (const link of wrapper.querySelectorAll(".lead")) {
-                    if (!allowNewMembers) {
-                        link.parentElement.removeChild(link);
-                    } else {
-                        if (link.classList.contains("citizen")) {
-                            link.children[0].href = "<?= $base_url ?>/become_cooperator?odoo_company_id=<?= $company_id ?>";
-                        } else {
-                            link.children[0].href = "<?= $base_url ?>/become_company_cooperator?odoo_company_id=<?= $company_id ?>";
-                        }
-                    }
-                }
-            });
-        </script>
+    <div class="wp-block-buttons ce-landing-leads is-content-justification-center is-layout-flex wp-container-core-buttons-layout-2 wp-block-buttons-is-layout-flex">
+        <?php foreach ($cooperator_buttons as $button) : ?>
+            <div class="wp-block-button has-custom-font-size lead citizen has-small-font-size">
+                <a class="wp-block-button__link wp-element-button" href="<?= $button['url']; ?>" target="_blank" rel="noopener">
+                    <?= $button['name']; ?>
+                </a>
+            </div>
+        <?php endforeach; ?>
     </div>
 <?php
     $buffer = ob_get_clean();
     return str_replace(["\r", "\n"], '', $buffer);
 }
+
+
 
 function wpct_ce_landing_social_script($remote)
 {
@@ -242,6 +224,7 @@ function wpct_ce_landing_visibility_script($remote)
             const contactSection = document.getElementById("contacte");
             if (contactSection) {
                 <?php if (!$has_links) : ?>
+                    contactSection.querySelectorAll(".contacte-links-section").forEach((el) => el.parentElement.removeChild(el));
                     contactSection.querySelectorAll(".ce-landing-links").forEach((el) => el.parentElement.removeChild(el));
                 <?php else : ?>
                     const socialLinks = contactSection.querySelectorAll(".wp-block-social-link");
@@ -251,6 +234,7 @@ function wpct_ce_landing_visibility_script($remote)
                             if (href) {
                                 link.querySelector(".wp-block-social-link-anchor")
                                     .href = href;
+                                link.querySelector(".wp-block-social-link-anchor").setAttribute('target', '_blank');
                             } else {
                                 link.parentElement.removeChild(link);
                             }
@@ -259,6 +243,7 @@ function wpct_ce_landing_visibility_script($remote)
                             if (href) {
                                 link.querySelector(".wp-block-social-link-anchor")
                                     .href = href;
+                                link.querySelector(".wp-block-social-link-anchor").setAttribute('target', '_blank');
                             } else {
                                 link.parentElement.removeChild(link);
                             }
@@ -267,6 +252,7 @@ function wpct_ce_landing_visibility_script($remote)
                             if (href) {
                                 link.querySelector(".wp-block-social-link-anchor")
                                     .href = href;
+                                link.querySelector(".wp-block-social-link-anchor").setAttribute('target', '_blank');
                             } else {
                                 link.parentElement.removeChild(link);
                             }
@@ -288,42 +274,42 @@ add_filter('wpct_ce_service_icon', 'wpct_ce_service_icon', 10, 2);
 function wpct_ce_service_icon($icon, $slug)
 {
     switch ($slug) {
-            # case 'energy_action_common_generation':
+        # case 'energy_action_common_generation':
         case strpos($slug, 'generacio-renovable') !== false:
             return '<i class="fa-solid fa-solar-panel"></i>';
             // return '<i class="fa-regular fa-solar-panel"></i>';
             break;
-            # case 'energy_action_energy_efficiency':
+        # case 'energy_action_energy_efficiency':
         case strpos($slug, 'eficiencia-energetica') !== false:
             return '<i class="fa-solid fa-lightbulb"></i>';
             // return '<i class="fa-regular fa-lightbulb-cfl-on"></i>';
             break;
-            # case 'energy_action_sustainable_mobility':
+        # case 'energy_action_sustainable_mobility':
         case strpos($slug, 'mobilitat-sostenible') !== false:
             return '<i class="fa-solid fa-car-on"></i>';
             // return '<i class="fa-regular fa-car-bolt"></i>';
             break;
-            # case 'energy_action_citizen_education':
+        # case 'energy_action_citizen_education':
         case strpos($slug, 'formacio-ciutadana') !== false:
             return '<i class="fa-solid fa-book-open-reader"></i>';
             // return '<i class="fa-regular fa-presentation-screen"></i>';
             break;
-            # case 'energy_action_thermal_energy':
+        # case 'energy_action_thermal_energy':
         case strpos($slug, 'energia-termica') !== false:
             return '<i class="fa-solid fa-house-fire"></i>';
             // return '<i class="fa-regular fa-air-conditioner"></i>';
             break;
-            # case 'energy_action_collective_purchases':
+        # case 'energy_action_collective_purchases':
         case strpos($slug, 'compres-colectives') !== false:
             return '<i class="fa-solid fa-basket-shopping"></i>';
             // return '<i class="fa-regular fa-basket-shopping"></i>';
             break;
-            # case 'energy_action_renewable_energy':
+        # case 'energy_action_renewable_energy':
         case strpos($slug, 'subministrament-renovable') !== false:
             return '<i class="fa-solid fa-leaf"></i>';
             // return '<i class="fa-regular fa-seedling"></i>';
             break;
-            # case 'energy_action_aggregate_demand':
+        # case 'energy_action_aggregate_demand':
         case strpos($slug, 'agregacio-demanda') !== false:
             return '<i class="fa-solid fa-chart-column"></i>';
             // return '<i class="fa-regular fa-chart-column"></i>';
@@ -476,7 +462,8 @@ function wpct_ce_coord_landing_map($remote)
                 <!-- /wp:spacer -->
 
                 <!-- wp:html -->
-                <iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src="https://community-maps.somenergia.coop/es/somcomunitats/maps/campanya?mapFilters=cat[]%3Bst[]%3Bcus[' . $slug . ']&fitBoundsCentering=1&filter=false" width="100%" height="850px" frameborder="0"></iframe><script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps.somenergia.coop/iframe-integration.js" </script>
+                <iframe allowfullscreen="" allow="clipboard-write" id="map" class="h-full w-full" src=
+                "https://community-maps.somenergia.coop/es/somcomunitats/maps/campanya?mapFilters=cat[]%3Bst[]%3Bcus[' . $slug . ']&fitBoundsCentering=1&filter=false" width="100%" height="850px" frameborder="0"></iframe><script type="text/javascript" id="community-maps-builder" data-iframe-id="map" src="https://community-maps.somenergia.coop/iframe-integration.js"></script>
                 <!-- /wp:html -->
 
                 <!-- wp:spacer {"height":"3rem","width":"0px","className":"is-style-show-tablet-desktop","style":{"layout":{}}} -->
@@ -495,6 +482,101 @@ function wpct_ce_coord_landing_map($remote)
                 <!-- /wp:group -->';
     }
 }
+
+// landings (energy community and coord)
+// Display butlleti
+
+function wpct_ce_landings_butlleti_section($remote)
+{
+    // error_log(print_r($remote));
+    $display_butlleti = $remote->get('show_newsletter_form');
+    $lang = apply_filters('wpct_i18n_current_language', null, 'locale');
+    $current_lang = apply_filters('wpct_i18n_current_language', null, 'slug');
+    $form_id = 5;
+    $output = do_shortcode("[gravityform id='{$form_id}' title='false' description='false' ajax='true' field_values='current_lang={$current_lang}&company_id={$company_id}']");
+    if ($display_butlleti && $lang === 'ca_ES') {
+
+        return '<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+    <!-- /wp:group -->
+    <div class="wp-block-group"><!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+    <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide"/>
+    <!-- /wp:separator --></div>
+    <!-- /wp:group -->
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:paragraph {"textColor":"main","fontSize":"medium"} -->
+    <p class="has-main-color has-text-color has-medium-font-size">Butlletí</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:wpct-rcpt/field {"remoteField":"title"} -->
+    <div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"placeholder":"Setup your remote field template","style":{"elements":{"link":{"color":{"text":"var:preset|color|main"}}}},"textColor":"main"} -->
+    <p class="has-main-color has-text-color has-link-color">_title_</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:wpct-rcpt/field -->
+    
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:group {"className":"ce-form-newsletter","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group ce-form-newsletter">' .  str_replace(["\r", "\n"], '', $output) .
+
+            '<!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"100%","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer --></div>
+    <!-- /wp:group -->
+    <div class="wp-block-group"><!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+    <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide"/>
+    <!-- /wp:separator --></div>
+    <!-- /wp:group -->
+    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->';
+    } elseif ($display_butlleti && $lang === 'es_ES') {
+
+        return '<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+    <!-- /wp:group -->
+    <div class="wp-block-group"><!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+    <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide"/>
+    <!-- /wp:separator --></div>
+    <!-- /wp:group -->
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:paragraph {"textColor":"main","fontSize":"medium"} -->
+    <p class="has-main-color has-text-color has-medium-font-size">Boletín</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:wpct-rcpt/field {"remoteField":"title"} -->
+    <div class="wp-block-wpct-rcpt-field"><!-- wp:paragraph {"placeholder":"Setup your remote field template","style":{"elements":{"link":{"color":{"text":"var:preset|color|main"}}}},"textColor":"main"} -->
+    <p class="has-main-color has-text-color has-link-color">_title_</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:wpct-rcpt/field -->
+    
+    <!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"2rem","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+    
+    <!-- wp:group {"className":"ce-form-newsletter","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+    <div class="wp-block-group ce-form-newsletter">' .  str_replace(["\r", "\n"], '', $output) .
+
+            '<!-- wp:spacer {"height":"0px","width":"0px","style":{"layout":{"flexSize":"100%","selfStretch":"fixed"}}} -->
+    <div style="height:0px;width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer --></div>
+    <!-- /wp:group -->
+    <div class="wp-block-group"><!-- wp:separator {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"main-light","className":"is-style-wide"} -->
+    <hr class="wp-block-separator has-text-color has-main-light-color has-alpha-channel-opacity has-main-light-background-color has-background is-style-wide"/>
+    <!-- /wp:separator --></div>
+    <!-- /wp:group -->
+    <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->';
+    }
+}
+
+
+
+
+
 
 /****   OTHER SHORTCODES */
 /** Shortcode to include js script to modify body overflow properties */

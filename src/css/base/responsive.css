@@ -113,3 +113,8 @@ body .is-style-hidden {
     align-items: flex-start !important;
   }
 }
+
+
+.block-editor-block-list__layout::selection {
+  background: var(--wp--preset--color--primary);
+}
