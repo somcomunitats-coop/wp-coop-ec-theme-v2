@@ -36,7 +36,10 @@
 #upper-main-nav .wpml-ls-item:first-child a {
   padding: 0 15px 0px 0;
 }
-#upper-main-nav .wpml-ls-item a {
+#upper-main-nav .wpml-ls-item:nth-child(2) a{
+  padding: 0 0px 0px 15px;
+} 
+#upper-main-nav .wpml-ls-item:not(:nth-child(2)) a {
   /* padding: 0 10px 5px; */
   border-right: 1px solid var(--wp--preset--color--main);
 }

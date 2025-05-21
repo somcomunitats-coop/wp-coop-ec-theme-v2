@@ -133,3 +133,13 @@ body.home .ce-home-landings-section .slick-arrow {
 .find-your-community #step4 {
   background-image: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/Apuntat4.jpg);
 }
+
+
+/* map block */
+
+@media (max-width: 782px) {
+  #mapa iframe{
+    height: 80vh;
+    overflow-y: scroll;
+  }
+}
