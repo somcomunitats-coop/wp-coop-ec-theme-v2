@@ -87,7 +87,7 @@ function wpct_ce_register_block_styles($styles)
 add_action('wp_footer', 'wpct_ce_add_analytics');
 function wpct_ce_add_analytics()
 {
-    ?>
+?>
     <!-- Matomo -->
     <script>
         var _paq = window._paq = window._paq || [];
@@ -270,7 +270,9 @@ function wpct_ce_rest_insert($post, $request, $is_new)
     $payload = $request->get_json_params();
     $data = $payload['landing'];
 
-    $type_term = wpct_ce_get_tax_term(WPCT_CE_REST_TYPE_TAX, $data['community_type']);
+    $status_slug = $data['allow_new_members'] === true ? 'open' : 'closed';
+
+    $type_term = wpct_ce_get_tax_term(WPCT_CE_REST_TYPE_TAX, $status_slug);
     if ($type_term) {
         wp_set_post_terms($post->ID, $type_term->name, WPCT_CE_REST_TYPE_TAX);
     }
