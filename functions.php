@@ -272,12 +272,12 @@ function wpct_ce_rest_insert($post, $request, $is_new)
 
     $status_slug = $data['allow_new_members'] === true ? 'open' : 'closed';
 
-    $type_term = wpct_ce_get_tax_term(WPCT_CE_REST_TYPE_TAX, $status_slug);
+    $type_term = wpct_ce_get_tax_term(WPCT_CE_REST_TYPE_TAX, $data['community_type']);
     if ($type_term) {
         wp_set_post_terms($post->ID, $type_term->name, WPCT_CE_REST_TYPE_TAX);
     }
 
-    $status_term = wpct_ce_get_tax_term(WPCT_CE_REST_STATUS_TAX, $data['community_status']);
+    $status_term = wpct_ce_get_tax_term(WPCT_CE_REST_STATUS_TAX, $status_slug);
     if ($status_term) {
         wp_set_post_terms($post->ID, $status_term->name, WPCT_CE_REST_STATUS_TAX);
     }
