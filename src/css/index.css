@@ -8,6 +8,7 @@
 /* Elements */
 @import "elements/button.css";
 @import "elements/blockquote.css";
+@import "elements/altcha.css";
 
 /* Blocks */
 @import "blocks/terms.css";
