@@ -61,3 +61,14 @@ add_filter(
     10,
     2
 );
+
+function wpct_ce_crm_metadata($payload)
+{
+    $metadata = [];
+    foreach ($payload['metadata'] as $key => $value) {
+        $metadata[] = ['key' => $key, 'value' => $value];
+    }
+
+    $payload['metadata'] = $metadata;
+    return $metadata;
+}
