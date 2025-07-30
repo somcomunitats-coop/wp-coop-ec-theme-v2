@@ -461,55 +461,46 @@ function diw_post_thumbnail_feeds($content)
 }
 add_filter('the_content_feed', 'diw_post_thumbnail_feeds');
 
+//populate the options in a Gravity Form select field with all of the posts currently published on the site.
+
+add_filter('gform_pre_render_7', 'populate_coordinadores');
+add_filter('gform_pre_validation_7', 'populate_coordinadores');
+add_filter('gform_pre_submission_filter_7', 'populate_coordinadores');
+add_filter('gform_admin_pre_render_7', 'populate_coordinadores');
+function populate_coordinadores($form)
+{
+
+    foreach ($form['fields'] as &$field) {
+
+        if ($field->type != 'select' || strpos($field->cssClass, 'ce-coordinadores-posts') === false) {
+            continue;
+        }
+        $current_language = apply_filters('wpml_current_language', NULL);
 
 
-// Theme setup.
-// add_action('after_setup_theme', 'wpct_setup_new');
-// function wpct_setup_new()
-// {
-//     // Theme support
-//     add_theme_support('title-tag');
-//     add_theme_support('html5', [
-//         'search-form',
-//         'comment-form',
-//         'comment-list',
-//         'gallery',
-//         'caption',
-//     ]);
-//     add_theme_support('custom-logo');
-//     add_theme_support('post-thumbnails');
-//     add_theme_support('custom-line-height');
-//     add_theme_support('align-wide');
-//     add_theme_support('custom-spacing');
-//     add_theme_support('appearance-tools');
-//     add_theme_support('core-block-patterns');
-//     add_theme_support('custom-units');
-//     add_theme_support('editor-spacing-sizes');
-//     add_theme_support('border');
-//     add_theme_support('link-color');
-//     add_theme_support('block-template-parts');
+        // you can add additional parameters here to alter the posts that are retrieved
+        // more info: http://codex.wordpress.org/Template_Tags/get_posts
+        $posts = get_posts(
+            'numberposts=-1&post_type=rest-ce-coord&post_status=publish'
+        );
 
-//     // Add support for block styles.
-//     add_theme_support('wp-block-styles');
+        $choices = array();
 
-//     // Register both, parent and child styles as editor styles.
-//     $stylesheets = [
-//         get_theme_file_uri('assets/css/theme.bundle.css'),
-//         get_parent_theme_file_uri('assets/css/theme.bundle.css'),
-//     ];
-//     add_editor_style($stylesheets);
+        foreach ($posts as $post) {
+            if (apply_filters('wpml_post_language_details', NULL, $post->ID)['language_code'] != $current_language) {
+                continue;
+            }
+            // $post_id_in_curr_lang = apply_filters('wpml_object_id', $post->ID, 'post', true, $current_language);
 
-//     // hack to allow wp to load stylesheets on dev enviroment
-//     add_filter(
-//         'http_request_args',
-//         function ($args, $url) use ($stylesheets) {
-//             if (in_array($url, $stylesheets)) {
-//                 $args['sslverify'] = false;
-//             }
+            // $post = get_post($post_id_in_curr_lang);
 
-//             return $args;
-//         },
-//         10,
-//         2
-//     );
-// }
+            $choices[] = array('text' => $post->post_title, 'value' => $post->post_title);
+        }
+
+        // update 'Select a Post' to whatever you'd like the instructive option to be
+        $field->placeholder = 'Quina coordinadora?';
+        $field->choices = $choices;
+    }
+
+    return $form;
+}
