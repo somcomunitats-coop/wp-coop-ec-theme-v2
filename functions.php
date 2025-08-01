@@ -67,21 +67,21 @@ function wpct_add_theme_support()
 }
 
 // Register block styles.
-add_filter('wpct_block_styles', 'wpct_ce_register_block_styles');
-function wpct_ce_register_block_styles($styles)
-{
-    return array_merge($styles, [
-        'core/columns' => [
-            'in-container' => __('In Container', 'wpct-ce'),
-            'no-padding' => __('No Padding', 'wpct-ce'),
-            'no-gap' => __('No Gap', 'wpct-ce')
-        ],
-        'core/button' => [
-            'button-minimal' => __('Minimal', 'wpct-ce'),
-            'button-minimal-back' => __('Back Minimal', 'wpct-ce'),
-        ]
-    ]);
-}
+// add_filter('wpct_block_styles', 'wpct_ce_register_block_styles');
+// function wpct_ce_register_block_styles($styles)
+// {
+//     return array_merge($styles, [
+//         'core/columns' => [
+//             'in-container' => __('In Container', 'wpct-ce'),
+//             'no-padding' => __('No Padding', 'wpct-ce'),
+//             'no-gap' => __('No Gap', 'wpct-ce')
+//         ],
+//         'core/button' => [
+//             'button-minimal' => __('Minimal', 'wpct-ce'),
+//             'button-minimal-back' => __('Back Minimal', 'wpct-ce'),
+//         ]
+//     ]);
+// }
 
 // Analytics
 add_action('wp_footer', 'wpct_ce_add_analytics');
@@ -460,3 +460,56 @@ function diw_post_thumbnail_feeds($content)
     return $content;
 }
 add_filter('the_content_feed', 'diw_post_thumbnail_feeds');
+
+
+
+// Theme setup.
+// add_action('after_setup_theme', 'wpct_setup_new');
+// function wpct_setup_new()
+// {
+//     // Theme support
+//     add_theme_support('title-tag');
+//     add_theme_support('html5', [
+//         'search-form',
+//         'comment-form',
+//         'comment-list',
+//         'gallery',
+//         'caption',
+//     ]);
+//     add_theme_support('custom-logo');
+//     add_theme_support('post-thumbnails');
+//     add_theme_support('custom-line-height');
+//     add_theme_support('align-wide');
+//     add_theme_support('custom-spacing');
+//     add_theme_support('appearance-tools');
+//     add_theme_support('core-block-patterns');
+//     add_theme_support('custom-units');
+//     add_theme_support('editor-spacing-sizes');
+//     add_theme_support('border');
+//     add_theme_support('link-color');
+//     add_theme_support('block-template-parts');
+
+//     // Add support for block styles.
+//     add_theme_support('wp-block-styles');
+
+//     // Register both, parent and child styles as editor styles.
+//     $stylesheets = [
+//         get_theme_file_uri('assets/css/theme.bundle.css'),
+//         get_parent_theme_file_uri('assets/css/theme.bundle.css'),
+//     ];
+//     add_editor_style($stylesheets);
+
+//     // hack to allow wp to load stylesheets on dev enviroment
+//     add_filter(
+//         'http_request_args',
+//         function ($args, $url) use ($stylesheets) {
+//             if (in_array($url, $stylesheets)) {
+//                 $args['sslverify'] = false;
+//             }
+
+//             return $args;
+//         },
+//         10,
+//         2
+//     );
+// }

@@ -2,9 +2,8 @@
 
 #upper-main-nav {
   font-size: var(--wp--preset--font-size--x-small);
-  
 }
-#upper-main-nav .header-upper-ov .wp-block-navigation__container{
+#upper-main-nav .header-upper-ov .wp-block-navigation__container {
   padding-right: var(--wp--custom--spacing--sm);
 }
 #upper-main-nav .header-upper-ov .wp-block-navigation__container li {
@@ -15,7 +14,7 @@
 
 /* Language
 --------------------------------------------- */
-#upper-main-nav .wpml-ls-legacy-list-horizontal{
+#upper-main-nav .wpml-ls-legacy-list-horizontal {
   padding: 0;
 }
 #upper-main-nav .wpml-ls ul {
@@ -34,17 +33,16 @@
   font-size: 13px;
 }
 
-
-#upper-main-nav .wpml-ls-item.wpml-ls-current-language a{
+#upper-main-nav .wpml-ls-item.wpml-ls-current-language a {
   font-weight: 900;
 }
 #upper-main-nav .wpml-ls-item:first-child a {
   padding: 0 15px 0px 0;
 }
-#upper-main-nav .wpml-ls-item:nth-child(2) a{
-  padding: 0 0px 0px 15px;
-} 
-#upper-main-nav .wpml-ls-item:not(:nth-child(2)) a {
+#upper-main-nav .wpml-ls-item:nth-child(2) a {
+  padding: 0 15px 0px 15px;
+}
+#upper-main-nav .wpml-ls-item:not(:nth-child(3)) a {
   /* padding: 0 10px 5px; */
   border-right: 1px solid var(--wp--preset--color--main);
 }
@@ -63,26 +61,26 @@
 
 /*--------------------------------------------- */
 
-#upper-main-nav .wp-block-social-links .wp-social-link{
+#upper-main-nav .wp-block-social-links .wp-social-link {
   padding: 0 0 0 var(--wp--custom--spacing--sxxs);
 }
-#upper-main-nav .wp-block-social-links .wp-social-link svg{
-  height: .9em;
-  width: .9em;
+#upper-main-nav .wp-block-social-links .wp-social-link svg {
+  height: 0.9em;
+  width: 0.9em;
 }
-#upper-main-nav .wp-block-social-links li.wp-social-link-x svg{
-  transform: scale(0.90)
+#upper-main-nav .wp-block-social-links li.wp-social-link-x svg {
+  transform: scale(0.9);
 }
 
-#upper-main-nav .wp-block-social-links li.wp-social-link-mastodon svg{
-  transform: scale(0.80)
+#upper-main-nav .wp-block-social-links li.wp-social-link-mastodon svg {
+  transform: scale(0.8);
 }
-#upper-main-nav .wp-block-social-links li.wp-social-link-facebook svg{
-  transform: scale(0.95)
+#upper-main-nav .wp-block-social-links li.wp-social-link-facebook svg {
+  transform: scale(0.95);
 }
-#upper-main-nav .wp-block-social-links li.wp-social-link-youtube svg{
-  transform: scale(1.05)
+#upper-main-nav .wp-block-social-links li.wp-social-link-youtube svg {
+  transform: scale(1.05);
 }
-#upper-main-nav .wp-block-social-links li.wp-social-link-telegram svg{
-  transform: scale(1.25)
+#upper-main-nav .wp-block-social-links li.wp-social-link-telegram svg {
+  transform: scale(1.25);
 }
