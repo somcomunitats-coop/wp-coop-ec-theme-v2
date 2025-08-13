@@ -167,25 +167,12 @@ input {
   font-weight: bold;
 }
 
-/* #ce-form ce-helper-field {
-  display: flex;
-  gap: 8px;
-} */
-/* #ce-form ce-helper-field .ginput_container {
-  width: 100%;
-} */
 #ce-form .ce-helper-field > .gfield_description {
   font-style: italic;
   display: flex;
   align-items: flex-start;
   padding-top: 6px !important;
 }
-
-/* #ce-form
-  .ce-helper-field.gfield_contains_required
-  .ginput_container_text::after {
-  content: "*";
-} */
 
 #ce-form .ce-helper-field .gfield_description .ce-form-helper-qm {
   background: var(--wp--preset--color--main-light);
@@ -211,6 +198,17 @@ input {
   .ginput_container_number
   .gfield_description.instruction {
   display: none !important;
+}
+
+#ce-form .gfield legend .gfield_required {
+  display: none !important;
+}
+
+#ce-form .ce-margin-bottom-field {
+  margin-bottom: 2rem;
+}
+#ce-form .altcha .altcha-main .altcha-label {
+  color: var(--wp--preset--color--main-light) !important;
 }
 /* Forms Butlletí
 --------------------------------------------- */
