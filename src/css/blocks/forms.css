@@ -82,15 +82,6 @@ input {
   display: flex;
 }
 
-#ce-form .gfield.gfield--type-section h3:after {
-  overflow: hidden;
-  height: 1px;
-  content: "\a0";
-  background-color: var(--wp--preset--color--main-light);
-  flex: 1;
-  margin: 0.6em 0 0 25px;
-}
-
 #ce-form .ginput_container textarea,
 #ce-form .ginput_container input,
 #ce-form .ginput_container select {
@@ -171,13 +162,14 @@ input {
   font-style: italic;
   display: flex;
   align-items: flex-start;
-  padding-top: 6px !important;
+  padding-top: 2px !important;
 }
 
 #ce-form .ce-helper-field .gfield_description .ce-form-helper-qm {
   background: var(--wp--preset--color--main-light);
   font-style: initial !important;
   margin-right: 8px;
+  margin-top: 3px;
   padding-left: 1px;
   border-radius: 100%;
   font-size: 12px;
@@ -188,7 +180,6 @@ input {
   align-content: center;
   display: inline-block;
   color: white;
-  cursor: pointer;
   font-weight: var(--wp--custom--font-weight--bold);
 }
 
@@ -210,6 +201,13 @@ input {
 #ce-form .altcha .altcha-main .altcha-label {
   color: var(--wp--preset--color--main-light) !important;
 }
+
+/* #ce-form .ginput_container--name input,
+#ce-form .gfield--input-type-email input,
+#ce-form .gfield--input-type-phone input {
+  margin-bottom: 8px;
+} */
+
 /* Forms Butlletí
 --------------------------------------------- */
 

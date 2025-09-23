@@ -494,7 +494,7 @@ function populate_coordinadores($form)
 
             // $post = get_post($post_id_in_curr_lang);
 
-            $choices[] = array('text' => $post->post_title, 'value' => $post->post_title);
+            $choices[] = array('text' => $post->post_title, 'value' => $post->ID);
         }
 
         // update 'Select a Post' to whatever you'd like the instructive option to be
