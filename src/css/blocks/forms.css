@@ -202,11 +202,9 @@ input {
   color: var(--wp--preset--color--main-light) !important;
 }
 
-/* #ce-form .ginput_container--name input,
-#ce-form .gfield--input-type-email input,
-#ce-form .gfield--input-type-phone input {
-  margin-bottom: 8px;
-} */
+#ce-form .ginput_container_date > input {
+  width: 100% !important;
+}
 
 /* Forms Butlletí
 --------------------------------------------- */

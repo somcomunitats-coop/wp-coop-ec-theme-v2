@@ -475,7 +475,7 @@ function populate_coordinadores($form)
         if ($field->type != 'select' || strpos($field->cssClass, 'ce-coordinadores-posts') === false) {
             continue;
         }
-        $current_language = apply_filters('wpml_current_language', NULL);
+        // $current_language = apply_filters('wpml_current_language', NULL);
 
 
         // you can add additional parameters here to alter the posts that are retrieved
@@ -487,7 +487,7 @@ function populate_coordinadores($form)
         $choices = array();
 
         foreach ($posts as $post) {
-            if (apply_filters('wpml_post_language_details', NULL, $post->ID)['language_code'] != $current_language) {
+            if (apply_filters('wpml_post_language_details', NULL, $post->ID)['language_code'] != "ca") {
                 continue;
             }
             // $post_id_in_curr_lang = apply_filters('wpml_object_id', $post->ID, 'post', true, $current_language);
