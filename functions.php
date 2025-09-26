@@ -490,10 +490,6 @@ function populate_coordinadores($form)
             if (apply_filters('wpml_post_language_details', NULL, $post->ID)['language_code'] != "ca") {
                 continue;
             }
-            // $post_id_in_curr_lang = apply_filters('wpml_object_id', $post->ID, 'post', true, $current_language);
-
-            // $post = get_post($post_id_in_curr_lang);
-
             $choices[] = array('text' => $post->post_title, 'value' => $post->ID);
         }
 
@@ -504,3 +500,26 @@ function populate_coordinadores($form)
 
     return $form;
 }
+
+
+
+
+add_filter('forms_bridge_payload', function ($payload, $bridge) {
+    if ($bridge->name !== 'Alta') {
+        return $payload;
+    }
+    $metadata = $payload['metadata'];
+    foreach ($metadata as $field) {
+        if ($field['key'] === "coordinator_landing_id") {
+            $coord_id = $field['value'];
+        }
+    }
+    if (isset($coord_id)) {
+        $coordinador_landing = get_post($coord_id);
+        $payload['metadata'][] = [
+            'key' => 'coordinator_landing_name',
+            'value' => $coordinador_landing->post_title,
+        ];
+    }
+    return $payload;
+}, 10, 2);
