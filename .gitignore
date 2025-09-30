@@ -1,5 +1,5 @@
 node_modules
-
+.env.local
 .idea
 .vscode
 .nvimrc
@@ -12,3 +12,4 @@ yarn.lock
 assets/css/index.css
 assets/js/index.js
 custom-blocks/**/*/build
+output
