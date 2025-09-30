@@ -36,14 +36,14 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     container:
-      image: javieraviles/zip:latest
+      image: mappies/node-with-zip:latest
     timeout-minutes: 60
     env:
       ZIP: "${{ github.event.repository.name }}.zip"
       PACKAGE_VERSION: "${{ github.ref }}"
       PACKAGE_REGISTRY_URL: "${{ github.api_url }}/projects/${{ github.repository }}/packages/generic/${{ github.event.repository.name }}/${PACKAGE_VERSION}"
     steps:
-    - uses: actions/checkout@v3.6.0
+    - uses: actions/checkout@v4.1.0
       with:
         fetch-depth: 20
     - uses: actions/download-artifact@v4.1.0
