@@ -65,11 +65,11 @@ jobs:
       PACKAGE_VERSION: "${{ github.ref }}"
       PACKAGE_REGISTRY_URL: "${{ github.api_url }}/projects/${{ github.repository }}/packages/generic/${{ github.event.repository.name }}/${PACKAGE_VERSION}"
     steps:
-    - uses: actions/checkout@v4.1.0
-      with:
-        fetch-depth: 20
-        lfs: true
-    - uses: actions/download-artifact@v4.1.0
+    # - uses: actions/checkout@v4.1.0
+    #   with:
+    #     fetch-depth: 20
+    #     lfs: true
+    # - uses: actions/download-artifact@v4.1.0
     - run: 'curl --header "JOB-TOKEN: ${{ github.token }}" --upload-file ${ZIP} ${PACKAGE_REGISTRY_URL}/${ZIP}
         '
   release:
