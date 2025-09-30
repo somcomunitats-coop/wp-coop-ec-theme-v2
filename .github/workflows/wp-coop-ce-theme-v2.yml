@@ -2,7 +2,7 @@ name: codeccoop/comunitats-energetiques/wp-coop-ce-theme-v2
 on:
   push:
     tags:
-      - 'v[0-9]+(\.[0-9]+)*([-\.]\S+)?'
+      - '*'
   workflow_dispatch:
 concurrency:
   group: "${{ github.ref }}"
