@@ -65,13 +65,15 @@ jobs:
       PACKAGE_VERSION: "${{ github.ref }}"
       PACKAGE_REGISTRY_URL: "${{ github.api_url }}/projects/${{ github.repository }}/packages/generic/${{ github.event.repository.name }}/${PACKAGE_VERSION}"
     steps:
-    # - uses: actions/checkout@v4.1.0
-    #   with:
-    #     fetch-depth: 20
-    #     lfs: true
-    # - uses: actions/download-artifact@v4.1.0
-    - run: 'curl --header "JOB-TOKEN: ${{ github.token }}" --upload-file ${ZIP} ${PACKAGE_REGISTRY_URL}/${ZIP}
-        '
+    - uses: actions/checkout@v4.1.0
+      with:
+        fetch-depth: 20
+        lfs: true
+    - uses: actions/download-artifact@v4.1.0
+    - name: curl
+      uses: sozo-design/curl@v1.0.2
+      with:
+        args: 'curl --header "JOB-TOKEN: ${{ github.token }}" --upload-file ${ZIP} ${PACKAGE_REGISTRY_URL}/${ZIP}'
   release:
     needs: upload
     runs-on: ubuntu-latest
