@@ -1,4 +1,5 @@
-name: codeccoop/comunitats-energetiques/wp-coop-ce-theme-v2
+name: Build & Release WP Coop Theme
+
 on:
   push:
     tags:
@@ -23,29 +24,27 @@ jobs:
         run: find . -name node_modules -type d | xargs rm -rf
       - uses: actions/upload-artifact@v4
         with:
-          name: build-assets
-          path: |
-            assets/js
-            assets/css
-            custom-blocks
+          name: repo-files
+          path: ./
 
   package:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
-          name: build-assets
-          path: build/
-      - name: Create zip
+          name: repo-files
+          path: .
+      - name: Create zip (exclude dev files)
         run: |
-          zip -r wp-coop-theme.zip build/* \
-            -x 'package*.json' \
-            -x '*.config.js' \
-            -x '*.md' \
-            -x '*.yml' \
-            -x 'src/*'
+          zip -r wp-coop-theme.zip . \
+            -x "package*.json" \
+            -x "*.md" \
+            -x "*.yml" \
+            -x "src/*" \
+            -x ".git/*" \
+            -x ".github/*" \
+            -x "*.zip"
       - uses: actions/upload-artifact@v4
         with:
           name: theme-zip
@@ -71,4 +70,3 @@ jobs:
             wp-coop-theme.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
