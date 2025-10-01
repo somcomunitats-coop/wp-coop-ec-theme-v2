@@ -25,9 +25,9 @@ jobs:
     - run: npm install && npm run build
     - run: find . -name node_modules -type d | xargs rm -rf
     - uses: actions/upload-artifact@v4.1.0
-      if: success()
+      # if: succekkss()
       with:
-        name: "${{ github.job }}"
+        name: build-assets
         path: |-
           assets/js
           assets/css
@@ -35,61 +35,74 @@ jobs:
   package:
     needs: build
     runs-on: ubuntu-latest
-    container:
-      image: mappies/node-with-zip:latest
-    timeout-minutes: 60
-    env:
-      ZIP: "${{ github.event.repository.name }}.zip"
-      PACKAGE_VERSION: "${{ github.ref }}"
-      PACKAGE_REGISTRY_URL: "${{ github.api_url }}/projects/${{ github.repository }}/packages/generic/${{ github.event.repository.name }}/${PACKAGE_VERSION}"
+    # container:
+    #   image: mappies/node-with-zip:latest
+    # timeout-minutes: 60
+    # env:
+    #   ZIP: "${{ github.event.repository.name }}.zip"
+    #   PACKAGE_VERSION: "${{ github.ref }}"
+    #   PACKAGE_REGISTRY_URL: "${{ github.api_url }}/projects/${{ github.repository }}/packages/generic/${{ github.event.repository.name }}/${PACKAGE_VERSION}"
     steps:
     - uses: actions/checkout@v4.1.0
       with:
         fetch-depth: 20
     - uses: actions/download-artifact@v4.1.0
-    - run: zip -r $ZIP * -x 'package*.json' -x '*.config.js' -x '*.md' -x '*.yml' -x 'src/*'
+      with:
+          name: build-assets
+          path: build/
+    - run: zip -r theme.zip build/*
     - run: ls -lah
     - uses: actions/upload-artifact@v4.1.0
       if: success()
       with:
-        name: "${{ github.job }}"
-        path: "$ZIP"
-  upload:
+        name: theme-zip
+        path: theme.zip
+  # upload:
+  #   needs: package
+  #   runs-on: ubuntu-latest
+  #   container:
+  #     image: curlimages/curl:latest
+  #   timeout-minutes: 60
+  #   env:
+  #     ZIP: "${{ github.event.repository.name }}.zip"
+  #     PACKAGE_VERSION: "${{ github.ref }}"
+  #     PACKAGE_REGISTRY_URL: "${{ github.api_url }}/projects/${{ github.repository }}/packages/generic/${{ github.event.repository.name }}/${PACKAGE_VERSION}"
+  #   steps:
+  #   - uses: actions/checkout@v4.1.0
+  #     with:
+  #       fetch-depth: 20
+  #       lfs: true
+  #   - uses: actions/download-artifact@v4.1.0
+  #   - run: 'curl --header "JOB-TOKEN: ${{ github.token }}" --upload-file ${ZIP} ${PACKAGE_REGISTRY_URL}/${ZIP}
+  #       '
+  release:
     needs: package
     runs-on: ubuntu-latest
-    container:
-      image: curlimages/curl:latest
-    timeout-minutes: 60
-    env:
-      ZIP: "${{ github.event.repository.name }}.zip"
-      PACKAGE_VERSION: "${{ github.ref }}"
-      PACKAGE_REGISTRY_URL: "${{ github.api_url }}/projects/${{ github.repository }}/packages/generic/${{ github.event.repository.name }}/${PACKAGE_VERSION}"
+    # container:
+    #   image: registry.gitlab.com/gitlab-org/release-cli:latest
+    # timeout-minutes: 60
+    # env:
+    #   ZIP: "${{ github.event.repository.name }}.zip"
+    #   PACKAGE_VERSION: "${{ github.ref }}"
+    #   PACKAGE_REGISTRY_URL: "${{ github.api_url }}/projects/${{ github.repository }}/packages/generic/${{ github.event.repository.name }}/${PACKAGE_VERSION}"
     steps:
-    - uses: actions/checkout@v4.1.0
-      with:
-        fetch-depth: 20
-        lfs: true
-    - uses: actions/download-artifact@v4.1.0
-    - name: curl
-      uses: sozo-design/curl@v1.0.2
-      with:
-        args: 'curl --header "JOB-TOKEN: ${{ github.token }}" --upload-file ${ZIP} ${PACKAGE_REGISTRY_URL}/${ZIP}'
-  release:
-    needs: upload
-    runs-on: ubuntu-latest
-    container:
-      image: registry.gitlab.com/gitlab-org/release-cli:latest
-    timeout-minutes: 60
-    env:
-      ZIP: "${{ github.event.repository.name }}.zip"
-      PACKAGE_VERSION: "${{ github.ref }}"
-      PACKAGE_REGISTRY_URL: "${{ github.api_url }}/projects/${{ github.repository }}/packages/generic/${{ github.event.repository.name }}/${PACKAGE_VERSION}"
-    steps:
-    - uses: actions/checkout@v4.1.0
-      with:
-        fetch-depth: 20
-        lfs: true
-    - uses: actions/download-artifact@v4.1.0
-    - run: |
-        release-cli create --name "Release ${{ github.ref }}" --tag-name ${{ github.ref }} \
-          --assets-link "{\"name\":\"${ZIP}\",\"url\":\"${PACKAGE_REGISTRY_URL}\/${ZIP}\",\"link_type\":\"package\",\"filepath\":\"\/themes\/${ZIP}\"}"
+      - uses: actions/download-artifact@v4
+        with:
+          name: theme-zip
+          path: .
+      - uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+      - uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./theme.zip
+          asset_name: theme.zip
+          asset_content_type: application/zip
