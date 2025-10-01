@@ -44,11 +44,12 @@ jobs:
             -x "src/*" \
             -x ".git/*" \
             -x ".github/*" \
-            -x "*.zip"
+            -x "*.zip" \
+            -x '*.config.js'
       - uses: actions/upload-artifact@v4
         with:
           name: theme-zip
-          path: wp-coop-theme.zip
+          path: wp-coop-ce-theme-v2.zip
 
   release:
     needs: package
