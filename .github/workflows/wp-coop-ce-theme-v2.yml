@@ -37,7 +37,7 @@ jobs:
           path: .
       - name: Create zip (exclude dev files)
         run: |
-          zip -r wp-coop-theme.zip . \
+          zip -r wp-coop-ce-theme-v2.zip . \
             -x "package*.json" \
             -x "*.md" \
             -x "*.yml" \
@@ -68,6 +68,6 @@ jobs:
           draft: false
           prerelease: false
           files: |
-            wp-coop-theme.zip
+            wp-coop-ce-theme-v2.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
