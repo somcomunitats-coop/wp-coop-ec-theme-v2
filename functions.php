@@ -523,3 +523,17 @@ add_filter('forms_bridge_payload', function ($payload, $bridge) {
     }
     return $payload;
 }, 10, 2);
+
+
+add_filter('forms_bridge_backend_headers', function ($headers, $backend) {
+    if ($backend->name !== 'Odoo_dev4') {
+        return $headers;
+    }
+    $current_lang = apply_filters('wpml_post_language_details', NULL, 1);
+    $headers[] = [
+        'key' => 'accept-language',
+        'value' => $current_lang
+    ];
+
+    return $headers;
+}, 10, 2);
