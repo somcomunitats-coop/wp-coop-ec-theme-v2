@@ -11,7 +11,7 @@
  * https://github.com/WordPress/gutenberg/issues/35884
 ---------------------------------------------*/
 
-body > .is-root-container,
+/* body > .is-root-container,
 .edit-post-visual-editor__post-title-wrapper,
 .wp-block-cover.alignfull,
 .wp-block-group.alignfull,
@@ -63,7 +63,7 @@ body > .is-root-container,
     margin-right: calc(-1 * var(--wp--custom--spacing--sxxl)) !important;
     width: unset;
   }
-}
+} */
 
 /*Breakpoints visibility*/
 body .is-style-hidden {
@@ -113,7 +113,6 @@ body .is-style-hidden {
     align-items: flex-start !important;
   }
 }
-
 
 .block-editor-block-list__layout::selection {
   background: var(--wp--preset--color--primary);

@@ -1,4 +1,19 @@
-body.overflow-visible{
+/* styles from wp-coop-ce-theme */
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main.site-content {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* END of styles from wp-coop-ce-theme */
+
+body.overflow-visible {
   overflow-x: visible;
   overflow-y: visible;
 }

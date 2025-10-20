@@ -103,3 +103,52 @@ figure {
 #cmplz-document.cookie-statement {
   max-width: var(--wp--style--global--content-size);
 }
+
+/* STYLES FROM WP-COOP-CE-THEME */
+
+/* Styles
+--------------------------------------------- */
+/* (image) */
+.is-style-no-margin {
+  margin: 0;
+}
+/* (group) */
+.is-style-padded {
+  padding: var(--wp--custom--spacing--sl);
+}
+.is-style-vertical-padded {
+  padding-top: var(--wp--custom--spacing--sl);
+  padding-bottom: var(--wp--custom--spacing--sl);
+}
+.is-style-horizontal-padded {
+  padding-left: var(--wp--custom--spacing--sl);
+  padding-right: var(--wp--custom--spacing--sl);
+}
+.is-style-no-padding {
+  padding: 0 !important;
+}
+/* (cover) */
+.is-style-image-left .wp-block-cover__image-background {
+  width: auto;
+  right: auto;
+}
+.is-style-image-right .wp-block-cover__image-background {
+  width: auto;
+  left: auto;
+}
+.is-style-image-center .wp-block-cover__image-background {
+  width: auto;
+  left: auto;
+  right: auto;
+}
+
+/*.is-style-full-height {
+    align-items: center;
+    display: grid;
+    min-height: 100vh;
+}*/
+
+.is-style-no-disc li {
+  list-style-type: none;
+  margin-left: 0;
+}
