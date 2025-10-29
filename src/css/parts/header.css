@@ -28,13 +28,13 @@
 
 /* Hide euskera from header */
 
-#ce-header-desktop .wpml-ls .wpml-ls-item-eu,
+/* #ce-header-desktop .wpml-ls .wpml-ls-item-eu,
 #ce-header-mobile-tablet
   .wpml-language-switcher-navigation-block
   ul
   .wp-block-navigation-item:last-child {
   display: none;
-}
+} */
 /*NOU CODI CÒDEC*/
 /*Desktop version*/
 
@@ -276,6 +276,14 @@
   .wpml-language-switcher-navigation-block.wpml-ls-list
   .wp-block-navigation-item
   .wp-block-navigation-item:first-child {
+  border-right: 2px solid var(--wp--preset--color--base);
+  margin-top: 0px !important;
+}
+#ce-header-mobile-nav
+  .wp-block-navigation__responsive-container.is-menu-open
+  .wpml-language-switcher-navigation-block.wpml-ls-list
+  .wp-block-navigation-item
+  .wp-block-navigation-item:nth-child(2) {
   border-right: 2px solid var(--wp--preset--color--base);
 }
 #ce-header-mobile-nav

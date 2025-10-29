@@ -67,21 +67,21 @@ function wpct_add_theme_support()
 }
 
 // Register block styles.
-add_filter('wpct_block_styles', 'wpct_ce_register_block_styles');
-function wpct_ce_register_block_styles($styles)
-{
-    return array_merge($styles, [
-        'core/columns' => [
-            'in-container' => __('In Container', 'wpct-ce'),
-            'no-padding' => __('No Padding', 'wpct-ce'),
-            'no-gap' => __('No Gap', 'wpct-ce')
-        ],
-        'core/button' => [
-            'button-minimal' => __('Minimal', 'wpct-ce'),
-            'button-minimal-back' => __('Back Minimal', 'wpct-ce'),
-        ]
-    ]);
-}
+// add_filter('wpct_block_styles', 'wpct_ce_register_block_styles');
+// function wpct_ce_register_block_styles($styles)
+// {
+//     return array_merge($styles, [
+//         'core/columns' => [
+//             'in-container' => __('In Container', 'wpct-ce'),
+//             'no-padding' => __('No Padding', 'wpct-ce'),
+//             'no-gap' => __('No Gap', 'wpct-ce')
+//         ],
+//         'core/button' => [
+//             'button-minimal' => __('Minimal', 'wpct-ce'),
+//             'button-minimal-back' => __('Back Minimal', 'wpct-ce'),
+//         ]
+//     ]);
+// }
 
 // Analytics
 add_action('wp_footer', 'wpct_ce_add_analytics');
@@ -460,3 +460,82 @@ function diw_post_thumbnail_feeds($content)
     return $content;
 }
 add_filter('the_content_feed', 'diw_post_thumbnail_feeds');
+
+//populate the options in a Gravity Form select field with all of the posts currently published on the site.
+
+add_filter('gform_pre_render_7', 'populate_coordinadores');
+add_filter('gform_pre_validation_7', 'populate_coordinadores');
+add_filter('gform_pre_submission_filter_7', 'populate_coordinadores');
+add_filter('gform_admin_pre_render_7', 'populate_coordinadores');
+function populate_coordinadores($form)
+{
+
+    foreach ($form['fields'] as &$field) {
+
+        if ($field->type != 'select' || strpos($field->cssClass, 'ce-coordinadores-posts') === false) {
+            continue;
+        }
+        // $current_language = apply_filters('wpml_current_language', NULL);
+
+
+        // you can add additional parameters here to alter the posts that are retrieved
+        // more info: http://codex.wordpress.org/Template_Tags/get_posts
+        $posts = get_posts(
+            'numberposts=-1&post_type=rest-ce-coord&post_status=publish'
+        );
+
+        $choices = array();
+
+        foreach ($posts as $post) {
+            if (apply_filters('wpml_post_language_details', NULL, $post->ID)['language_code'] != "ca") {
+                continue;
+            }
+            $choices[] = array('text' => $post->post_title, 'value' => $post->ID);
+        }
+
+        // update 'Select a Post' to whatever you'd like the instructive option to be
+        // $field->placeholder = 'Quina coordinadora?';
+        $field->choices = $choices;
+    }
+
+    return $form;
+}
+
+
+
+
+add_filter('forms_bridge_payload', function ($payload, $bridge) {
+    if ($bridge->name !== 'Alta') {
+        return $payload;
+    }
+    $metadata = $payload['metadata'];
+    foreach ($metadata as $field) {
+        if ($field['key'] === "coordinator_landing_id") {
+            $coord_id = $field['value'];
+        }
+    }
+    if (isset($coord_id)) {
+        $coordinador_landing = get_post($coord_id);
+        $payload['metadata'][] = [
+            'key' => 'coordinator_landing_name',
+            'value' => $coordinador_landing->post_title,
+        ];
+    }
+    return $payload;
+}, 10, 2);
+
+
+add_filter('forms_bridge_http_backend_headers', function ($headers, $backend) {
+    // if ($backend->name !== 'Odoo_dev4') {
+    //     return $headers;
+    // }
+    $current_lang = get_locale();
+    if ($current_lang === NULL || is_wp_error($current_lang)) {
+        $current_lang =  'es_ES';
+    } elseif ($current_lang === 'ca') {
+        $current_lang = 'ca_ES';
+    }
+    $headers['accept-language'] =  $current_lang;
+
+    return $headers;
+}, 10, 2);

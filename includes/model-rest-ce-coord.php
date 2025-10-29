@@ -80,7 +80,7 @@ add_action('rest_api_init', function () {
             'update_callback' => function ($value, $object) {
                 if (!$value) {
                     return null;
-                } 
+                }
 
                 update_post_meta($object->ID, 'company_id', (int) $value);
                 $translations = apply_filters('wpct_i18n_post_translations', $object->ID);

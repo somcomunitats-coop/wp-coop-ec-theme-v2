@@ -82,15 +82,6 @@ input {
   display: flex;
 }
 
-#ce-form .gfield.gfield--type-section h3:after {
-  overflow: hidden;
-  height: 1px;
-  content: "\a0";
-  background-color: var(--wp--preset--color--main-light);
-  flex: 1;
-  margin: 0.6em 0 0 25px;
-}
-
 #ce-form .ginput_container textarea,
 #ce-form .ginput_container input,
 #ce-form .ginput_container select {
@@ -167,24 +158,71 @@ input {
   font-weight: bold;
 }
 
+#ce-form .ce-helper-field > .gfield_description {
+  font-style: italic;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2px !important;
+}
+
+#ce-form .ce-helper-field .gfield_description .ce-form-helper-qm {
+  background: var(--wp--preset--color--main-light);
+  font-style: initial !important;
+  margin-right: 8px;
+  margin-top: 3px;
+  padding-left: 1px;
+  border-radius: 100%;
+  font-size: 12px;
+  height: 18px;
+  width: 18px;
+  min-width: 18px;
+  text-align: center;
+  align-content: center;
+  display: inline-block;
+  color: white;
+  font-weight: var(--wp--custom--font-weight--bold);
+}
+
+#ce-form .ce-helper-field .ginput_counter.gfield_description,
+#ce-form
+  .ce-helper-field
+  .ginput_container_number
+  .gfield_description.instruction {
+  display: none !important;
+}
+
+#ce-form .gfield legend .gfield_required {
+  display: none !important;
+}
+
+#ce-form .ce-margin-bottom-field {
+  margin-bottom: 2rem;
+}
+#ce-form .altcha .altcha-main .altcha-label {
+  color: var(--wp--preset--color--main-light) !important;
+}
+
+#ce-form .ginput_container_date > input {
+  width: 100% !important;
+}
+
 /* Forms Butlletí
 --------------------------------------------- */
 
-#butlleti #form .gform_wrapper{
+#butlleti #form .gform_wrapper {
   color: var(--wp--preset--color--base);
   position: relative;
-  
 }
-#butlleti #form .gform_wrapper a{
+#butlleti #form .gform_wrapper a {
   color: var(--wp--preset--color--base);
   text-decoration: none;
 }
 
 #butlleti #form .gform_wrapper .gform_validation_errors,
-#butlleti #form .gform_wrapper .gfield_validation_message{
+#butlleti #form .gform_wrapper .gfield_validation_message {
   display: none;
 }
-#butlleti #form .ginput_container.ginput_container_email input{
+#butlleti #form .ginput_container.ginput_container_email input {
   font-size: var(--wp--preset--font-size--small);
   margin-bottom: 0;
   margin-top: 0;
@@ -193,7 +231,7 @@ input {
   height: 44px;
 }
 
-#butlleti #form .gform_footer.top_label input{
+#butlleti #form .gform_footer.top_label input {
   position: absolute;
   top: 0;
   right: 0;
@@ -202,7 +240,7 @@ input {
   background-color: var(--wp--preset--color--primary);
   height: 44px;
 }
-#butlleti #form .ginput_container.ginput_container_consent{
+#butlleti #form .ginput_container.ginput_container_consent {
   display: flex;
   margin-top: 10px;
 }
@@ -220,43 +258,38 @@ input {
   background-color: var(--wp--preset--color--primary);
   border: none;
 }
-#butlleti #form .ginput_container.ginput_container_consent input:checked{
+#butlleti #form .ginput_container.ginput_container_consent input:checked {
   display: block;
 }
 
-#butlleti #form .ginput_container.ginput_container_consent .gform-field-label{
+#butlleti #form .ginput_container.ginput_container_consent .gform-field-label {
   margin-left: 8px;
 }
-
-
 
 /**Forms coordinadores**/
 
 #ce-coordinadores-contact #ce-form .gform_footer.top_label input.gform_button,
-#tarifes #ce-form .gform_footer.top_label input.gform_button{
+#tarifes #ce-form .gform_footer.top_label input.gform_button {
   background-color: var(--wp--preset--color--main);
   color: white;
 }
 #ce-coordinadores-contact #ce-form .gform_wrapper,
-#tarifes #ce-form .gform_wrapper{
+#tarifes #ce-form .gform_wrapper {
   color: var(--wp--preset--color--main);
 }
 
-
 #ce-coordinadores-contact #ce-form a:where(:not(.wp-element-button)),
-#tarifes #ce-form a:where(:not(.wp-element-button)){
+#tarifes #ce-form a:where(:not(.wp-element-button)) {
   color: var(--wp--preset--color--base);
 }
 
 #ce-coordinadores-contact #ce-form .gform_wrapper .gform_validation_errors,
-#tarifes #ce-form .gform_wrapper .gform_validation_errors{
+#tarifes #ce-form .gform_wrapper .gform_validation_errors {
   display: none;
 }
 
-
-
 #ce-coordinadores-contact #ce-form .gform_wrapper .gfield_consent_description,
-#tarifes #ce-form .gform_wrapper .gfield_consent_description{
+#tarifes #ce-form .gform_wrapper .gfield_consent_description {
   color: var(--wp--preset--color--main);
   opacity: 0.8;
 }

@@ -1,0 +1,73 @@
+name: Build & Release WP Coop Theme
+
+on:
+  push:
+    tags:
+      - '*'            # quan publiquis una etiqueta
+  workflow_dispatch:
+
+permissions:
+  contents: write     # necessari per poder crear releases i pujar assets
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: node:latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies & build
+        run: |
+          npm install
+          npm run build
+      - name: Clean node_modules
+        run: find . -name node_modules -type d | xargs rm -rf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: repo-files
+          path: ./
+
+  package:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: repo-files
+          path: .
+      - name: Create zip (exclude dev files)
+        run: |
+          zip -r wp-coop-ce-theme-v2.zip . \
+            -x "package*.json" \
+            -x "*.md" \
+            -x "*.yml" \
+            -x "src/*" \
+            -x ".git/*" \
+            -x ".github/*" \
+            -x "*.zip" \
+            -x '*.config.js'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: theme-zip
+          path: wp-coop-ce-theme-v2.zip
+
+  release:
+    needs: package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: theme-zip
+          path: .
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          tag_name: ${{ github.ref_name }}
+          release_name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          files: |
+            wp-coop-ce-theme-v2.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

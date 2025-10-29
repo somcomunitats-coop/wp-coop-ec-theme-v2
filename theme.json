@@ -89,7 +89,7 @@
         "medium": 1.4,
         "body": 1.6
       },
-      "spacing": {
+      "spacing": {	
         "sminimal": "5px",
         "sxxs": "10px",
         "sxs": "20px",
@@ -110,6 +110,9 @@
       "wideSize": "100%"
     },
     "spacing": {
+      "blockGap": true,	
+      "margin": true,
+			"padding": true,
       "units": ["px", "em", "rem", "vh", "vw", "%"]
     },
     "typography": {
@@ -532,7 +535,6 @@
       }
     },
     "spacing": {
-      "blockGap": "var(--wp--custom--spacing--sl)",
       "padding": {
         "top": "0px",
         "right": "0px",
