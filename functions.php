@@ -494,7 +494,7 @@ function populate_coordinadores($form)
         }
 
         // update 'Select a Post' to whatever you'd like the instructive option to be
-        $field->placeholder = 'Quina coordinadora?';
+        // $field->placeholder = 'Quina coordinadora?';
         $field->choices = $choices;
     }
 
@@ -525,15 +525,17 @@ add_filter('forms_bridge_payload', function ($payload, $bridge) {
 }, 10, 2);
 
 
-add_filter('forms_bridge_backend_headers', function ($headers, $backend) {
-    if ($backend->name !== 'Odoo_dev4') {
-        return $headers;
+add_filter('forms_bridge_http_backend_headers', function ($headers, $backend) {
+    // if ($backend->name !== 'Odoo_dev4') {
+    //     return $headers;
+    // }
+    $current_lang = get_locale();
+    if ($current_lang === NULL || is_wp_error($current_lang)) {
+        $current_lang =  'es_ES';
+    } elseif ($current_lang === 'ca') {
+        $current_lang = 'ca_ES';
     }
-    $current_lang = apply_filters('wpml_post_language_details', NULL, 1);
-    $headers[] = [
-        'key' => 'accept-language',
-        'value' => $current_lang
-    ];
+    $headers['accept-language'] =  $current_lang;
 
     return $headers;
 }, 10, 2);
