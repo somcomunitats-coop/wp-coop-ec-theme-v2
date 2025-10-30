@@ -20,7 +20,7 @@ jobs:
         run: |
           npm install
           npm run build
-          for dir in wp-content/themes/wp-coop-ce-theme-v-2/custom-blocks/*; do
+          for dir in ../../custom-blocks/*; do
             if [ -f "$dir/package.json" ]; then
               echo "📦 Building block: $dir"
               npm ci --prefix "$dir"
