@@ -539,3 +539,36 @@ add_filter('forms_bridge_http_backend_headers', function ($headers, $backend) {
 
     return $headers;
 }, 10, 2);
+
+
+
+//GF: This filter is executed before displaying each field and can be used to dynamically populate fields with a default value.
+//  This filter requires that the “Allow field to be populated dynamically” option is checked in the field editor’s advanced tab.
+add_filter('gform_field_value_current_lang', 'wpct_erp_forms_populate_current_lang');
+function wpct_erp_forms_populate_current_lang($value)
+{
+    if ($value) {
+        $locale = wpct_erp_forms_format_current_lang($value);
+    } else {
+        $language = apply_filters('wpml_post_language_details', null);
+
+        if (!is_wp_error($language) && $language) {
+            $locale = $language['locale'];
+        } else {
+            $locale = 'ca_ES';
+        }
+    }
+
+    return $locale;
+}
+
+
+function wpct_erp_forms_format_current_lang($code)
+{
+    $languages = apply_filters('wpml_active_languages', null);
+    if ($languages && !is_wp_error($languages) && isset($languages[$code])) {
+        return $languages[$code]['default_locale'];
+    }
+
+    return $code;
+}

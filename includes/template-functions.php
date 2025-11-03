@@ -489,6 +489,7 @@ function wpct_ce_coord_landing_map($remote)
 function wpct_ce_landings_butlleti_section($remote)
 {
     // error_log(print_r($remote));
+    $company_id = (string) $remote->get('company_id', 1);
     $display_butlleti = $remote->get('show_newsletter_form');
     $lang = apply_filters('wpct_i18n_current_language', null, 'locale');
     $current_lang = apply_filters('wpct_i18n_current_language', null, 'slug');
