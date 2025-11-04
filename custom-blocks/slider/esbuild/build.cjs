@@ -3,8 +3,9 @@ const crypto = require("crypto");
 const esbuild = require("esbuild");
 
 (async () => {
+  const view = fs.existsSync("src/view.js");
   await esbuild.build({
-    entryPoints: ["src/index.jsx"],
+    entryPoints: view ? ["src/index.js", "src/view.js"] : ["src/index.js"],
     bundle: true,
     minify: true,
     sourcemap: false,
@@ -18,6 +19,28 @@ const esbuild = require("esbuild");
           onStart(() => {
             fs.rmSync("./build", { recursive: true, force: true });
             fs.mkdirSync("./build");
+          });
+        },
+      },
+      {
+        name: "view-assets",
+        setup({ onStart, onEnd }) {
+          let hash;
+
+          onStart(() => {
+            if (!view) return;
+            hash = crypto.createHash("sha1");
+            hash.setEncoding("hex");
+          });
+          onEnd(() => {
+            if (!view) return;
+
+            hash.write(fs.readFileSync("./build/view.js", "utf8"));
+            hash.end();
+            fs.writeFileSync(
+              "./build/view.asset.php",
+              `<?php return ['dependencies' => [], 'version' => '${hash.read()}'];`,
+            );
           });
         },
       },
