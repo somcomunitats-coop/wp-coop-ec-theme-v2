@@ -1,6 +1,6 @@
-import { useBlockProps, InnerBlocks, InspectorControls } from "@wordpress/block-editor";
-import { PanelBody, PanelRow, ToggleControl, RangeControl } from "@wordpress/components";
-import "./editor.scss";
+const { useBlockProps, InnerBlocks, InspectorControls } = wp.blockEditor;
+const { PanelBody, PanelRow, ToggleControl, RangeControl } = wp.components;
+import "./editor.css";
 
 export default function Edit({ attributes, setAttributes }) {
   const { __ } = wp.i18n;
@@ -93,7 +93,11 @@ export default function Edit({ attributes, setAttributes }) {
           </PanelRow>
         </PanelBody>
       </InspectorControls>
-      <div {...blockProps} slidesToShow={slidesToShow} centerMode={String(centerMode)}>
+      <div
+        {...blockProps}
+        slidesToShow={slidesToShow}
+        centerMode={String(centerMode)}
+      >
         <InnerBlocks template={TEMPLATE} />
       </div>
     </>
