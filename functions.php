@@ -463,10 +463,10 @@ add_filter('the_content_feed', 'diw_post_thumbnail_feeds');
 
 //populate the options in a Gravity Form select field with all of the posts currently published on the site.
 
-add_filter('gform_pre_render_7', 'populate_coordinadores');
-add_filter('gform_pre_validation_7', 'populate_coordinadores');
-add_filter('gform_pre_submission_filter_7', 'populate_coordinadores');
-add_filter('gform_admin_pre_render_7', 'populate_coordinadores');
+add_filter('gform_pre_render_16', 'populate_coordinadores');
+add_filter('gform_pre_validation_16', 'populate_coordinadores');
+add_filter('gform_pre_submission_filter_16', 'populate_coordinadores');
+add_filter('gform_admin_pre_render_16', 'populate_coordinadores');
 function populate_coordinadores($form)
 {
 
