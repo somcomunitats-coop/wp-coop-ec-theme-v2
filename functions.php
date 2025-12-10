@@ -17,47 +17,17 @@ require_once 'custom-blocks/slider/slider.php';
 
 require_once 'includes/template-functions.php';
 
-
-// Enqueue Child theme assets.
-add_action('wp_enqueue_scripts', 'wpct_ce_enqueue_scripts', 11);
-function wpct_ce_enqueue_scripts()
-{
-    $theme = wp_get_theme();
-    $parent = $theme->parent();
-
-    wp_enqueue_style(
-        $parent->get_stylesheet(),
-        $parent->get_stylesheet_directory_uri() . '/style.css',
-        [],
-        $parent->get('Version')
-    );
-
-    wp_enqueue_style(
-        $theme->get_stylesheet(),
-        $theme->get_stylesheet_directory_uri() . '/style.css',
-        [$parent->get_stylesheet()],
-        $theme->get('Version')
-    );
-
-    // wp_enqueue_script(
-    //     $theme->get_stylesheet(),
-    //     $theme->get_stylesheet_directory_uri() . '/assets/js/index.js',
-    //     [$parent->get_stylesheet()],
-    //     $theme->get('Version'),
-    // );
-
-}
-
 // Define fonts.
 add_filter('wpct_gfonts', 'wpct_ce_gfonts');
 function wpct_ce_gfonts()
 {
-    return [
-        'family=Open+Sans:wght@100;200;300;400;500;600;700;800;900',
-        'family=Montserrat:wght@100;200;300;400;500;600;700;800;900',
-        'family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900',
-        'family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900'
+    $fonts = [
+        'Open+Sans:wght@100;200;300;400;500;600;700;800;900',
+        'Montserrat:wght@100;200;300;400;500;600;700;800;900',
+        'Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900',
+        'Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900'
     ];
+    return $fonts;
 }
 
 add_action('after_setup_theme', 'wpct_add_theme_support');

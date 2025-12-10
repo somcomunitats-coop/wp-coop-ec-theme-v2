@@ -1,8 +1,9 @@
 {
-  "version": 2,
+  "version": 3,
   "templateParts": [],
   "customTemplates": [],
   "settings": {
+    "useRootPaddingAwareAlignments": false,
     "color": {
       "palette": [
         {
@@ -195,6 +196,8 @@
     }
   },
   "styles": {
+    
+    
     "blocks": {
       "core/button": {
         "border": {
@@ -219,7 +222,9 @@
         "typography": {
           "fontSize": "var(--wp--preset--font-size--buttons)",
           "fontWeight": "var(--wp--custom--font-weight--bold)",
-          "lineHeight": "var(--wp--custom--line-height--heading)"
+          "lineHeight": "var(--wp--custom--line-height--heading)",
+          "textTransform": false,
+          "textDecoration": false
         }
       },
       "core/calendar": {
@@ -284,7 +289,9 @@
             "top": "0px",
             "bottom": "var(--wp--custom--spacing--sxs)"
           }
-        }
+
+        },
+        "fontFamily": "var(--wp--preset--font-family--title)"
       },
       "core/image": {
         "spacing": {
@@ -297,7 +304,8 @@
         "typography": {
           "fontSize": "var(--wp--preset--font-size--small)",
           "lineHeight": "var(--wp--custom--line-height--one)",
-          "fontWeight": "var(--wp--custom--font-weight--medium)"
+          "fontWeight": "var(--wp--custom--font-weight--medium)",
+          "textDecoration": false
         },
         "color": {
           "text": "var(--wp--preset--color--typography)"
@@ -315,8 +323,17 @@
         }
       },
       "core/post-title": {
-        "typography": {}
+        "typography": {
+            "fontSize":"var(--wp--preset--font-size--medium)",
+            "textTransform": false
+        }
       },
+      "core/post-excerpt": {
+				"elements": {
+					  "link": {
+              "typography":{
+                "textDecoration": false
+          }}}},
       "core/preformatted": {
         "border": {
           "color": "var(--wp--preset--color--main)",
@@ -434,7 +451,11 @@
       "background": "var(--wp--preset--color--base)",
       "text": "var(--wp--preset--color--secondary)"
     },
+    
     "elements": {
+      "heading":{
+        "fontFamily": "var(--wp--preset--font-family--title)"
+      },
       "h1": {
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--title)",
@@ -531,10 +552,13 @@
       "link": {
         "color": {
           "text": "var(--wp--preset--color--brand)"
-        }
+        },
+        "typography":{ "textDecoration": false}
       }
+      
     },
     "spacing": {
+      "blockGap": "0px",
       "padding": {
         "top": "0px",
         "right": "0px",

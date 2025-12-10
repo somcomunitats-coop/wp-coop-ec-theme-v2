@@ -17,6 +17,7 @@
 @import "blocks/forms.css";
 @import "blocks/columns.css";
 @import "blocks/images.css";
+@import "blocks/headings.css";
 
 /* Template parts */
 @import "parts/header.css";

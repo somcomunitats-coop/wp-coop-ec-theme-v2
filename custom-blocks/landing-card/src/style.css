@@ -35,7 +35,7 @@
 	cursor: default;
 }
 
-.ce-landing-card
+.ce-landing-card 
 	.wp-block-post-terms.taxonomy-rest-ce-service
 	a[href*="generacio-renovable"] {
 	background-image: url(../../../assets/images/generacio-renovable.svg);
