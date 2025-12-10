@@ -1,0 +1,5 @@
+body h1.wp-block-heading,
+body h2.wp-block-heading,
+body h3.wp-block-heading {
+  font-family: var(--wp--preset--font-family--title) !important;
+}

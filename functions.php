@@ -17,37 +17,6 @@ require_once 'custom-blocks/slider/slider.php';
 
 require_once 'includes/template-functions.php';
 
-
-// Enqueue Child theme assets.
-// add_action('wp_enqueue_scripts', 'wpct_ce_enqueue_scripts', 11);
-// function wpct_ce_enqueue_scripts()
-// {
-//     $theme = wp_get_theme();
-//     $parent = $theme->parent();
-
-//     wp_enqueue_style(
-//         $parent->get_stylesheet(),
-//         $parent->get_stylesheet_directory_uri() . '/style.css',
-//         [],
-//         $parent->get('Version')
-//     );
-
-//     wp_enqueue_style(
-//         $theme->get_stylesheet(),
-//         $theme->get_stylesheet_directory_uri() . '/style.css',
-//         [$parent->get_stylesheet()],
-//         $theme->get('Version')
-//     );
-
-// wp_enqueue_script(
-//     $theme->get_stylesheet(),
-//     $theme->get_stylesheet_directory_uri() . '/assets/js/index.js',
-//     [$parent->get_stylesheet()],
-//     $theme->get('Version'),
-// );
-
-// }
-
 // Define fonts.
 add_filter('wpct_gfonts', 'wpct_ce_gfonts');
 function wpct_ce_gfonts()
