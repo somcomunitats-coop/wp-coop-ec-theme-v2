@@ -526,9 +526,6 @@ add_filter('forms_bridge_payload', function ($payload, $bridge) {
 
 
 add_filter('forms_bridge_http_backend_headers', function ($headers, $backend) {
-    // if ($backend->name !== 'Odoo_dev4') {
-    //     return $headers;
-    // }
     $current_lang = get_locale();
     if ($current_lang === NULL || is_wp_error($current_lang)) {
         $current_lang =  'es_ES';
