@@ -600,7 +600,7 @@ function wpct_ce_landing_linked_coordinator($remote)
                 <!-- /wp:paragraph -->
 
                 <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}} -->
-                <p class="ce-linked-coordinator" style="font-style:normal;font-weight:600"><a href="' . get_permalink($linked_coordinator_id) . '">' . get_the_title($linked_coordinator_id) . '</a></p>
+                <p class="ce-linked-coordinator" style="font-style:normal;font-weight:600"><a href="' . get_permalink($linked_coordinator_id) . '" target="_blank">' . get_the_title($linked_coordinator_id) . '</a></p>
                 <!-- /wp:paragraph --></div>
                 <!-- /wp:group -->
     ';
