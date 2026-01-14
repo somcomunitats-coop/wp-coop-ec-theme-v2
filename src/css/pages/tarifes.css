@@ -1,147 +1,139 @@
 #tarifes {
-    width: 100%;
+  width: 100%;
 }
 
 #tarifes #box-content {
-    padding: 30px;
+  padding: 30px;
 }
 /* #tarifes #box-content strong{
     font-weight: 700;
 } */
-
-#tarifes #box-header{
-    padding: 40px;
+#tarifes #tariff-column {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+#tarifes #box-header {
+  padding: 40px;
 }
 
-@media (max-width: 1100px){
-    #tarifes #box-header{
-        padding: 40px 20px;
-    } 
+@media (max-width: 1100px) {
+  #tarifes #box-header {
+    padding: 40px 20px;
+  }
 }
 
-
-
-#tarifes #box-header p{
-    margin:0;
-
+#tarifes #box-header p {
+  margin: 0;
 }
 
-#tarifes #box-header h5{
-    font-size: 30px;
+#tarifes #box-header h5 {
+  font-size: 30px;
 }
-@media (max-width: 1100px){
-    #tarifes #box-header h5{
-        font-size: 20px;
-    }
-}
-
-#tarifes #box-content #pricing{
-    margin-bottom: 20px;
-}
-#tarifes #box-content #pricing .wp-block-spacer{
-    height: 10px !important;
-}
-#tarifes #box-content .full-width{
-    width: 100%;
-    margin-bottom: 30px;
+@media (max-width: 1100px) {
+  #tarifes #box-header h5 {
+    font-size: 20px;
+  }
 }
 
-#tarifes #box-content .full-width .wp-block-spacer{
-    height: 10px !important;
+#tarifes #box-content #pricing {
+  margin-bottom: 20px;
 }
-#tarifes #table figure.wp-block-table{
-    overflow: visible;
+#tarifes #box-content #pricing .wp-block-spacer {
+  height: 10px !important;
+}
+#tarifes #box-content .full-width {
+  width: 100%;
+}
+
+#tarifes #box-content .full-width .wp-block-spacer {
+  height: 10px !important;
+}
+#tarifes #table figure.wp-block-table {
+  overflow: visible;
 }
 #tarifes #table table {
-    position: relative;
+  position: relative;
 }
-#tarifes #table table thead th{
-    position: sticky;
-    top: 0px;
+#tarifes #table table thead th {
+  position: sticky;
+  top: 0px;
 }
-#tarifes #table thead{
-    border-bottom: none;
-}
-
-#tarifes #table thead th:first-child{
-    background-color: var(--wp--preset--color--base);
-    font-family: var(--wp--preset--font-family--primary);
-    font-weight: 900;
-    color: white;
-    font-size: var(--wp--preset--font-size--medium);
-    padding: 30px;
-    border: 1px solid white;
+#tarifes #table thead {
+  border-bottom: none;
 }
 
-#tarifes #table thead th:not(:first-child){
-    background-color: var(--wp--preset--color--brand);
-    font-family: var(--wp--preset--font-family--primary);
-    font-weight: 900;
-    color: white;
-    font-size: var(--wp--preset--font-size--medium);
-    padding: 30px;
-    border: 1px solid white;
+#tarifes #table thead th:first-child {
+  background-color: var(--wp--preset--color--base);
+  font-family: var(--wp--preset--font-family--primary);
+  font-weight: 900;
+  color: white;
+  font-size: var(--wp--preset--font-size--medium);
+  padding: 30px;
+  border: 1px solid white;
+}
+
+#tarifes #table thead th:not(:first-child) {
+  background-color: var(--wp--preset--color--brand);
+  font-family: var(--wp--preset--font-family--primary);
+  font-weight: 900;
+  color: white;
+  font-size: var(--wp--preset--font-size--medium);
+  padding: 30px;
+  border: 1px solid white;
 }
 
 #tarifes #table table tr {
-    border: 1px solid white;
+  border: 1px solid white;
 }
 #tarifes #table td {
-    border-right: 1px solid rgba(36, 72, 62, 0.2);
-    border-bottom: 1px solid rgba(36, 72, 62, 0.2);
-    border-left: 1px solid white;
-    padding: 16px 0;
-    font-size: var(--wp--preset--font-size--footer);
+  border-right: 1px solid rgba(36, 72, 62, 0.2);
+  border-bottom: 1px solid rgba(36, 72, 62, 0.2);
+  border-left: 1px solid white;
+  padding: 16px 0;
+  font-size: var(--wp--preset--font-size--footer);
 }
 #tarifes #table td mark {
-    font-size: var(--wp--preset--font-size--x-small);
-
+  font-size: var(--wp--preset--font-size--x-small);
 }
-#tarifes #table td strong sub em{
-    line-height: 20px;
-    display: block;
-}
-
-#tarifes #table tr:first-child td:first-child{
-    background: white;
-    border-top: 1px solid white;
-    /* border-right: 1px solid white; */
-   
+#tarifes #table td strong sub em {
+  line-height: 20px;
+  display: block;
 }
 
+#tarifes #table tr:first-child td:first-child {
+  background: white;
+  border-top: 1px solid white;
+  /* border-right: 1px solid white; */
+}
 
 /*Mobile-table version*/
-#tarifes #table-mobile, 
+#tarifes #table-mobile,
 #tarifes #table-mobile thead {
-    border-bottom: 2px solid #D3E8DB !important;
+  border-bottom: 2px solid #d3e8db !important;
 }
 
-
-#tarifes #table-mobile thead th:first-child{
-    
-    font-family: var(--wp--preset--font-family--primary);
-    font-weight: 900;
-    color: var(--wp--preset--color--brand);
-    font-size: var(--wp--preset--font-size--medium);
-    padding: 30px 30px 8px 0px;
-    border: 1px solid white;
+#tarifes #table-mobile thead th:first-child {
+  font-family: var(--wp--preset--font-family--primary);
+  font-weight: 900;
+  color: var(--wp--preset--color--brand);
+  font-size: var(--wp--preset--font-size--medium);
+  padding: 30px 30px 8px 0px;
+  border: 1px solid white;
 }
-#tarifes #table-mobile thead th:last-child{
-    border: 1px solid white;
-    width: 0;
+#tarifes #table-mobile thead th:last-child {
+  border: 1px solid white;
+  width: 0;
 }
 
-#tarifes #table-mobile tr:last-child{
-    border-bottom: 2px solid #D3E8DB !important;
-    
+#tarifes #table-mobile tr:last-child {
+  border-bottom: 2px solid #d3e8db !important;
 }
 
-#tarifes #table-mobile td{
-    border: 1px solid white;
+#tarifes #table-mobile td {
+  border: 1px solid white;
 }
 
-
-
-#tarifes #table-mobile tr:last-child td:last-child{
-    padding-bottom: 10px;
+#tarifes #table-mobile tr:last-child td:last-child {
+  padding-bottom: 10px;
 }
