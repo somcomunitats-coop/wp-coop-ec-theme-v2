@@ -14,12 +14,15 @@
   align-items: stretch;
 }
 #tarifes #box-header {
-  padding: 40px;
+  padding: 40px 40px 24px 40px;
 }
 
 @media (max-width: 1100px) {
   #tarifes #box-header {
     padding: 40px 20px;
+  }
+  #tarifes #box-content {
+    padding: 30px 20px;
   }
 }
 
@@ -71,6 +74,7 @@
   font-size: var(--wp--preset--font-size--medium);
   padding: 30px;
   border: 1px solid white;
+  width: 40%;
 }
 
 #tarifes #table thead th:not(:first-child) {
@@ -80,6 +84,7 @@
   color: white;
   font-size: var(--wp--preset--font-size--medium);
   padding: 30px;
+  width: 30%;
   border: 1px solid white;
 }
 
