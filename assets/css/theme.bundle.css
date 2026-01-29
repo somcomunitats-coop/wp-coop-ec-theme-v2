@@ -185,71 +185,6 @@ body.overflow-visible {
     padding-right: var(--wp--custom--spacing--sxxl);
   }
 }
-/*
- * Alignment Styles - Originally from TT2.
- * These rules are temporary, and should not
- * be relied on or modified too heavily by
- * themes or plugins that build on WP Coop Theme.
- * These are meant to be a precursor to a
- * global solution provided by the Block Editor.
- *
- * Relevant issues:
- * https://github.com/WordPress/gutenberg/issues/35607
- * https://github.com/WordPress/gutenberg/issues/35884
----------------------------------------------*/
-/* body > .is-root-container,
-.edit-post-visual-editor__post-title-wrapper,
-.wp-block-cover.alignfull,
-.wp-block-group.alignfull,
-.wp-block-group.has-background,
-.is-style-aligned-content .wp-block-cover__inner-container,
-.wp-site-blocks {
-  padding-left: var(--wp--custom--spacing--sm);
-  padding-right: var(--wp--custom--spacing--sm);
-}
-
-.block-editor-block-list__layout.is-root-container > .alignfull,
-.is-root-container > .wp-block-cover,
-.is-root-container > .wp-block-group.has-background,
-.is-root-container > .wp-block-template-part > .wp-block-cover,
-.is-root-container > .wp-block-template-part > .wp-block-group.has-background,
-.wp-site-blocks .alignfull,
-.wp-site-blocks > .wp-block-cover,
-.wp-site-blocks > .wp-block-group.has-background,
-.wp-site-blocks > .wp-block-template-part > .wp-block-cover,
-.wp-site-blocks > .wp-block-template-part > .wp-block-group.has-background {
-  margin-left: calc(-1 * var(--wp--custom--spacing--sm)) !important;
-  margin-right: calc(-1 * var(--wp--custom--spacing--sm)) !important;
-  width: unset;
-}
-
-@media (min-width: 782px) {
-  body > .is-root-container,
-  .edit-post-visual-editor__post-title-wrapper,
-  .wp-block-cover.alignfull,
-  .wp-block-group.alignfull,
-  .wp-block-group.has-background,
-  .is-style-aligned-content .wp-block-cover__inner-container,
-  .wp-site-blocks {
-    padding-left: var(--wp--custom--spacing--sxxl);
-    padding-right: var(--wp--custom--spacing--sxxl);
-  }
-
-  .block-editor-block-list__layout.is-root-container > .alignfull,
-  .is-root-container > .wp-block-cover,
-  .is-root-container > .wp-block-group.has-background,
-  .is-root-container > .wp-block-template-part > .wp-block-cover,
-  .is-root-container > .wp-block-template-part > .wp-block-group.has-background,
-  .wp-site-blocks .alignfull,
-  .wp-site-blocks > .wp-block-cover,
-  .wp-site-blocks > .wp-block-group.has-background,
-  .wp-site-blocks > .wp-block-template-part > .wp-block-cover,
-  .wp-site-blocks > .wp-block-template-part > .wp-block-group.has-background {
-    margin-left: calc(-1 * var(--wp--custom--spacing--sxxl)) !important;
-    margin-right: calc(-1 * var(--wp--custom--spacing--sxxl)) !important;
-    width: unset;
-  }
-} */
 /*Breakpoints visibility*/
 body .is-style-hidden {
   display: none !important;
@@ -312,6 +247,9 @@ blockquote.is-style-plain {
 }
 div.altcha div.altcha-main .altcha-label {
   color: white !important;
+}
+a:where(:not(.wp-element-button)) {
+  text-decoration: none !important;
 }
 /* Blocks */
 .taxonomy-rest-ce-status.wp-block-post-terms a,
