@@ -37,7 +37,7 @@ function wpct_ce_landing_badges($remote)
             </button>
         <?php endif; ?>
     </div>
-<?php
+    <?php
     $buffer = ob_get_clean();
     return str_replace(["\r", "\n"], '', $buffer);
 }
@@ -74,6 +74,7 @@ function wpct_ce_landing_secondary_image($remote)
 
 function wpct_ce_landing_services($remote)
 {
+    $current_lang = apply_filters('wpct_i18n_current_language', null, 'locale');
     $terms = $remote->get_terms(WPCT_CE_REST_SERVICE_TAX);
     if (is_wp_error($terms) || !$terms) {
         return '';
@@ -82,7 +83,16 @@ function wpct_ce_landing_services($remote)
     // $services = $remote->get('community_active_services', []);
     ob_start();
 
-?>
+
+    if ($current_lang === 'ca_ES') { ?>
+        <p style="font-style:normal;font-weight:600">Serveis energètics disponibles:</p>
+    <?php } elseif ($current_lang === 'eu_ES') { ?>
+        <p style="font-style:normal;font-weight:600">Eskura dauden energia-zerbitzuak:</p>
+    <?php } else { ?>
+        <p style="font-style:normal;font-weight:600">Servicios energéticos disponibles:</p>
+    <?php } ?>
+
+
     <ul class="ce-landing-services">
         <?php foreach ($terms as $term) : ?>
             <li>
@@ -574,9 +584,28 @@ function wpct_ce_landings_butlleti_section($remote)
     }
 }
 
+function wpct_ce_landing_linked_coordinator($remote)
+{
+    $current_lang = apply_filters('wpct_i18n_current_language', null, 'locale');
+    $coord_literal = ($current_lang === 'eu_ES') ? 'Koordinatzailea:' : 'Coordinadora:';
+    $linked_coordinator_id = $remote->get('wp_coordinator_landing_page_id');
+    if ($linked_coordinator_id) {
 
+        return '<!-- wp:spacer {"height":"1rem"} -->
+                <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
+                <!-- /wp:spacer -->
+                <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+                <div class="wp-block-group ce-linked-coordinator-container"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}} -->
+                <p style="font-style:normal;font-weight:600">' . $coord_literal . '</p>
+                <!-- /wp:paragraph -->
 
-
+                <!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}} -->
+                <p class="ce-linked-coordinator" style="font-style:normal;font-weight:600"><a href="' . get_permalink($linked_coordinator_id) . '" target="_blank">' . get_the_title($linked_coordinator_id) . '</a></p>
+                <!-- /wp:paragraph --></div>
+                <!-- /wp:group -->
+    ';
+    }
+}
 
 
 /****   OTHER SHORTCODES */
