@@ -509,3 +509,10 @@ add_filter('forms_bridge_http_backend_headers', function ($headers, $backend) {
 
     return $headers;
 }, 10, 2);
+
+
+
+// UNREGISTER SPECIFIC CORE BLOCK STYLES
+
+
+unregister_block_style("core/heading", "typography");

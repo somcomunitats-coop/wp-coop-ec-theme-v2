@@ -84,18 +84,14 @@ input {
 
 #ce-form .ginput_container textarea,
 #ce-form .ginput_container input,
+#contactForm .ginput_container input,
 #ce-form .ginput_container select {
-  border-radius: 10px;
   border: 1px solid var(--wp--preset--color--second-base);
   font-size: var(--wp--preset--font-size--small);
   font-weight: var(--wp--custom--font-weight--regular);
   font-family: var(--wp--preset--font-family--alternative);
   color: var(--wp--preset--color--main-light);
-}
-
-#ce-form .ginput_container textarea,
-#ce-form .ginput_container input {
-  font-size: var(--wp--preset--font-size--small);
+  padding: var(--wp--custom--spacing--sxxs) !important;
 }
 
 #ce-form .ginput_container select {

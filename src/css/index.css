@@ -10,6 +10,7 @@
 @import "elements/blockquote.css";
 @import "elements/altcha.css";
 @import "elements/link.css";
+@import "elements/iframe.css";
 
 /* Blocks */
 @import "blocks/terms.css";
