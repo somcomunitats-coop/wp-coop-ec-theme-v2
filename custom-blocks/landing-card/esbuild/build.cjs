@@ -4,6 +4,7 @@ const esbuild = require("esbuild");
 
 (async () => {
   const view = fs.existsSync("src/view.js");
+  const renderPhpExists = fs.existsSync("src/render.php");
   await esbuild.build({
     entryPoints: view ? ["src/index.js", "src/view.js"] : ["src/index.js"],
     bundle: true,
@@ -67,6 +68,17 @@ const esbuild = require("esbuild");
         setup({ onEnd }) {
           onEnd(() => {
             fs.copyFileSync("./src/block.json", "./build/block.json");
+          });
+        },
+      },
+      {
+        name: "copy-render-php",
+        setup({ onEnd }) {
+          onEnd(() => {
+            if (renderPhpExists) {
+              fs.copyFileSync("./src/render.php", "./build/render.php");
+              console.log("render.php copiat a build/");
+            }
           });
         },
       },

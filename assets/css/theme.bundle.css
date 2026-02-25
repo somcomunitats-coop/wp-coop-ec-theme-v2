@@ -321,9 +321,6 @@ div.altcha div.altcha-main .altcha-label {
 a:where(:not(.wp-element-button)) {
   text-decoration: none !important;
 }
-a:where(:not(.wp-element-button)):hover {
-  color: var(--wp--preset--color--brand) !important;
-}
 iframe:focus-visible {
   outline: none !important;
 }
@@ -1532,11 +1529,11 @@ body.home .ce-home-landings-section .slick-arrow {
   height: 14px;
   background-repeat: no-repeat;
 }
-.ce-landing-external-website{
+.ce-landing-external-website {
   font-weight: var(--wp--custom--font-weight--bold);
   position: relative;
 }
-.ce-landing-external-website > a img{
+.ce-landing-external-website > a img {
   width: 40px;
   height: 25px;
   position: absolute;
@@ -1640,10 +1637,12 @@ ul.ce-landing-services li p {
 .single-rest-ce-landing p:empty {
   display: none;
 }
-.ce-landing-external-website a {
+.ce-landing-external-website a,
+.ce-linked-coordinator a {
   position: relative;
 }
-.ce-landing-external-website a::after {
+.ce-landing-external-website a::after,
+.ce-linked-coordinator a::after {
   content: "";
   position: absolute;
   right: 0;
@@ -1655,6 +1654,13 @@ ul.ce-landing-services li p {
   background-size: contain;
   background-position: center;
   transform: translateX(100%);
+}
+@media only screen and (max-width: 782px) {
+  .ce-linked-coordinator-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
 /* SINGLE */
 body.single-ce-news header.ce-news-header.is-style-show-desktop {
@@ -1889,85 +1895,101 @@ body.archive.tag .ce-news-query .wp-block-post-template .wp-block-post{
 #contacte .gfield.gfield--type-consent .gfield_consent_description a {
   color: var(--wp--preset--color--primary);
 }
-#ce-coordinadores-serveis .wp-block-column{
-    padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sxs) ;
+#ce-coordinadores-serveis .wp-block-column {
+  padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sxs);
 }
-#ce-coordinadores-members .ce-card-header .wp-block-buttons .wp-block-button:nth-child(2) a{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+#ce-coordinadores-members article.wp-block-group.ce-card {
+  height: 100%;
 }
 #entrar #forum-img,
 #entrar #app-img,
-#entrar #gestio-img{
-  position:relative;
+#entrar #gestio-img {
+  position: relative;
 }
-#entrar #forum-img::before{
-    content: 'forum';
-    position: absolute;
-    width: 70px;
-    bottom: -80%;
-    left: 0px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background: var(--wp--preset--color--primary);
-    color: var(--wp--preset--color--main);
-    text-align: center;
-    display: none;
-  }
-#entrar #app-img::before{
-    content: 'app';
-    position: absolute;
-    bottom: -80%;
-    left: 0px;
-    width: 70px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background: var(--wp--preset--color--primary);
-    color: var(--wp--preset--color--main);
-    text-align: center;
-    display: none;
-  }
-#entrar #gestio-img::before{
-    content: 'admin';
-    position: absolute;
-    bottom: -80%;
-    left: 0px;
-    width: 70px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background: var(--wp--preset--color--primary);
-    color: var(--wp--preset--color--main);
-    text-align: center;
-    display: none;
-  }
+#entrar #forum-img::before {
+  content: "forum";
+  position: absolute;
+  width: 70px;
+  bottom: -80%;
+  left: 0px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--main);
+  text-align: center;
+  display: none;
+}
+#entrar #app-img::before {
+  content: "app";
+  position: absolute;
+  bottom: -80%;
+  left: 0px;
+  width: 70px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--main);
+  text-align: center;
+  display: none;
+}
+#entrar #gestio-img::before {
+  content: "admin";
+  position: absolute;
+  bottom: -80%;
+  left: 0px;
+  width: 70px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--main);
+  text-align: center;
+  display: none;
+}
 #entrar #forum-img::after,
-  #entrar #app-img::after,
-  #entrar #gestio-img::after{
-    content: "";
+#entrar #app-img::after,
+#entrar #gestio-img::after {
+  content: "";
   position: absolute;
   bottom: -30%;
   left: 0px;
   left: 40%;
-  border-bottom: 8px solid var(--wp--preset--color--primary);;
+  border-bottom: 8px solid var(--wp--preset--color--primary);
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   display: none;
-  
-  }
+}
 #entrar #forum-img:hover:after,
-  #entrar #forum-img:hover:before{
-    display: block;
-  }
+#entrar #forum-img:hover:before {
+  display: block;
+}
 #entrar #app-img:hover:after,
-  #entrar #app-img:hover:before{
-    display: block;
-  }
+#entrar #app-img:hover:before {
+  display: block;
+}
 #entrar #gestio-img:hover:after,
-  #entrar #gestio-img:hover:before{
-    display: block;
+#entrar #gestio-img:hover:before {
+  display: block;
+}
+#entrar #bloc-gestio {
+  width: 100%;
+}
+@media only screen and (max-width: 782px) {
+  #entrar #app {
+    flex-direction: column-reverse !important;
   }
-#entrar #bloc-gestio{
-    width: 100%;
+  #entrar #app p,
+  #entrar #forum p,
+  #entrar #gestio p {
+    text-align: center;
+  }
+  #entrar #app .wp-block-group,
+  #entrar #forum .wp-block-group,
+  #entrar #gestio .wp-block-group,
+  #entrar #app .wp-block-buttons,
+  #entrar #forum .wp-block-buttons,
+  #entrar #gestio .wp-block-buttons {
+    justify-content: center;
+  }
 }
 /* delete p tags from butlleti  */
 .single-rest-ce-coord p:empty {
@@ -1977,129 +1999,136 @@ body.archive.tag .ce-news-query .wp-block-post-template .wp-block-post{
     display: none;
   }
 #tarifes {
-    width: 100%;
+  width: 100%;
 }
 #tarifes #box-content {
-    padding: 30px;
+  padding: 30px;
 }
 /* #tarifes #box-content strong{
     font-weight: 700;
 } */
-#tarifes #box-header{
-    padding: 40px;
+#tarifes #tariff-column {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
-@media (max-width: 1100px){
-    #tarifes #box-header{
-        padding: 40px 20px;
-    } 
+#tarifes #box-header {
+  padding: 40px 40px 24px 40px;
 }
-#tarifes #box-header p{
-    margin:0;
-
+@media (max-width: 1100px) {
+  #tarifes #box-header {
+    padding: 40px 20px;
+  }
+  #tarifes #box-content {
+    padding: 30px 20px;
+  }
 }
-#tarifes #box-header h5{
-    font-size: 30px;
+#tarifes #box-header p {
+  margin: 0;
 }
-@media (max-width: 1100px){
-    #tarifes #box-header h5{
-        font-size: 20px;
-    }
+#tarifes #box-header h5 {
+  font-size: 30px;
 }
-#tarifes #box-content #pricing{
-    margin-bottom: 20px;
+@media (max-width: 1100px) {
+  #tarifes #box-header h5 {
+    font-size: 20px;
+  }
 }
-#tarifes #box-content #pricing .wp-block-spacer{
-    height: 10px !important;
+#tarifes #box-content #pricing {
+  margin-bottom: 20px;
 }
-#tarifes #box-content .full-width{
-    width: 100%;
-    margin-bottom: 30px;
+#tarifes #box-content #pricing .wp-block-spacer {
+  height: 10px !important;
 }
-#tarifes #box-content .full-width .wp-block-spacer{
-    height: 10px !important;
+#tarifes #box-content .full-width {
+  width: 100%;
 }
-#tarifes #table figure.wp-block-table{
-    overflow: visible;
+#tarifes #box-content .full-width .wp-block-spacer {
+  height: 10px !important;
+}
+#tarifes #table figure.wp-block-table {
+  overflow: visible;
 }
 #tarifes #table table {
-    position: relative;
+  position: relative;
 }
-#tarifes #table table thead th{
-    position: sticky;
-    top: 0px;
+#tarifes #table table thead th {
+  position: sticky;
+  top: 0px;
 }
-#tarifes #table thead{
-    border-bottom: none;
+#tarifes #table thead {
+  border-bottom: none;
 }
-#tarifes #table thead th:first-child{
-    background-color: var(--wp--preset--color--base);
-    font-family: var(--wp--preset--font-family--primary);
-    font-weight: 900;
-    color: white;
-    font-size: var(--wp--preset--font-size--medium);
-    padding: 30px;
-    border: 1px solid white;
+#tarifes #table thead th:first-child {
+  background-color: var(--wp--preset--color--base);
+  font-family: var(--wp--preset--font-family--primary);
+  font-weight: 900;
+  color: white;
+  font-size: var(--wp--preset--font-size--medium);
+  padding: 30px;
+  border: 1px solid white;
+  width: 40%;
 }
-#tarifes #table thead th:not(:first-child){
-    background-color: var(--wp--preset--color--brand);
-    font-family: var(--wp--preset--font-family--primary);
-    font-weight: 900;
-    color: white;
-    font-size: var(--wp--preset--font-size--medium);
-    padding: 30px;
-    border: 1px solid white;
+#tarifes #table thead th:not(:first-child) {
+  background-color: var(--wp--preset--color--brand);
+  font-family: var(--wp--preset--font-family--primary);
+  font-weight: 900;
+  color: white;
+  font-size: var(--wp--preset--font-size--medium);
+  padding: 30px;
+  width: 30%;
+  border: 1px solid white;
 }
 #tarifes #table table tr {
-    border: 1px solid white;
+  border: 1px solid white;
 }
 #tarifes #table td {
-    border-right: 1px solid rgba(36, 72, 62, 0.2);
-    border-bottom: 1px solid rgba(36, 72, 62, 0.2);
-    border-left: 1px solid white;
-    padding: 16px 0;
-    font-size: var(--wp--preset--font-size--footer);
+  border-right: 1px solid rgba(36, 72, 62, 0.2);
+  border-bottom: 1px solid rgba(36, 72, 62, 0.2);
+  border-left: 1px solid white;
+  padding: 16px 0;
+  font-size: var(--wp--preset--font-size--footer);
+}
+#tarifes #table table td.has-text-align-center img {
+  margin: auto !important;
 }
 #tarifes #table td mark {
-    font-size: var(--wp--preset--font-size--x-small);
-
+  font-size: var(--wp--preset--font-size--x-small);
 }
-#tarifes #table td strong sub em{
-    line-height: 20px;
-    display: block;
+#tarifes #table td strong sub em {
+  line-height: 20px;
+  display: block;
 }
-#tarifes #table tr:first-child td:first-child{
-    background: white;
-    border-top: 1px solid white;
-    /* border-right: 1px solid white; */
-   
+#tarifes #table tr:first-child td:first-child {
+  background: white;
+  border-top: 1px solid white;
+  /* border-right: 1px solid white; */
 }
 /*Mobile-table version*/
-#tarifes #table-mobile, 
+#tarifes #table-mobile,
 #tarifes #table-mobile thead {
-    border-bottom: 2px solid #D3E8DB !important;
+  border-bottom: 2px solid #d3e8db !important;
 }
-#tarifes #table-mobile thead th:first-child{
-    
-    font-family: var(--wp--preset--font-family--primary);
-    font-weight: 900;
-    color: var(--wp--preset--color--brand);
-    font-size: var(--wp--preset--font-size--medium);
-    padding: 30px 30px 8px 0px;
-    border: 1px solid white;
+#tarifes #table-mobile thead th:first-child {
+  font-family: var(--wp--preset--font-family--primary);
+  font-weight: 900;
+  color: var(--wp--preset--color--brand);
+  font-size: var(--wp--preset--font-size--medium);
+  padding: 30px 30px 8px 0px;
+  border: 1px solid white;
 }
-#tarifes #table-mobile thead th:last-child{
-    border: 1px solid white;
-    width: 0;
+#tarifes #table-mobile thead th:last-child {
+  border: 1px solid white;
+  width: 0;
 }
-#tarifes #table-mobile tr:last-child{
-    border-bottom: 2px solid #D3E8DB !important;
-    
+#tarifes #table-mobile tr:last-child {
+  border-bottom: 2px solid #d3e8db !important;
 }
-#tarifes #table-mobile td{
-    border: 1px solid white;
+#tarifes #table-mobile td {
+  border: 1px solid white;
 }
-#tarifes #table-mobile tr:last-child td:last-child{
-    padding-bottom: 10px;
+#tarifes #table-mobile tr:last-child td:last-child {
+  padding-bottom: 10px;
 }
 #four-columns-row .wp-block-group .wp-block-group {
     padding-left: var(--wp--custom--spacing--sxs);;
