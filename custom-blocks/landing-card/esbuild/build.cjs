@@ -5,6 +5,8 @@ const esbuild = require("esbuild");
 (async () => {
   const view = fs.existsSync("src/view.js");
   const renderPhpExists = fs.existsSync("src/render.php");
+  const indexCssExists = fs.existsSync("src/index.css");
+  const styleCssExists = fs.existsSync("src/style.css");
   await esbuild.build({
     entryPoints: view ? ["src/index.js", "src/view.js"] : ["src/index.js"],
     bundle: true,
@@ -78,6 +80,21 @@ const esbuild = require("esbuild");
             if (renderPhpExists) {
               fs.copyFileSync("./src/render.php", "./build/render.php");
               console.log("render.php copiat a build/");
+            }
+          });
+        },
+      },
+      {
+        name: "copy-and-rename-css",
+        setup({ onEnd }) {
+          onEnd(() => {
+            if (indexCssExists) {
+              fs.copyFileSync("./src/index.css", "./build/index.css");
+              console.log("index.css copiat a build/");
+            }
+            if (styleCssExists) {
+              fs.copyFileSync("./src/style.css", "./build/style-index.css");
+              console.log("style.css copiat a build/style-index.css");
             }
           });
         },
