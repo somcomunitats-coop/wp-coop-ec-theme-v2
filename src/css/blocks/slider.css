@@ -1,4 +1,4 @@
-.wp-block-ce-block-slider .wp-block-post {
+/* .wp-block-ce-block-slider .wp-block-post {
   display: block !important;
 }
 
@@ -54,4 +54,19 @@
 
 .wp-block-ce-block-slider[slidestoshow="1"] .slick-slide > * {
   margin: 0;
+} */
+
+#comunities .wpct-block-slider-loop .wpct-block-slider-arrows .slick-arrow {
+  background-color: var(--wp--preset--color--base) !important;
+  border: 2px solid var(--wp--preset--color--base) !important;
+}
+#comunities .slick-slide {
+  margin-left: 12px !important;
+}
+#comunities
+  .wpct-block-slider-loop
+  .wpct-block-slider-arrows
+  .slick-arrow::after {
+  border-top: 6px solid var(--wp--preset--color--primary) !important;
+  border-right: 6px solid var(--wp--preset--color--primary) !important;
 }
