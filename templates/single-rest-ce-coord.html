@@ -50,15 +50,19 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:wpct-rcpt/field {"remoteField":"company_logo"} -->
-    <div class="wp-block-wpct-rcpt-field">
-      <!-- wp:image {"width":"260px","sizeSlug":"large","linkDestination":"custom","align":"center"} -->
-      <figure class="wp-block-image aligncenter size-large is-resized">
-        <a href="_company_logo_"
-          ><img src="_company_logo_" alt="" style="width: 260px"
-        /></a>
-      </figure>
-      <!-- /wp:image -->
+    <!-- wp:wpct-rcpt/field {"remoteField":"company_logo","className":"is-style-default"} -->
+    <div class="wp-block-wpct-rcpt-field is-style-default">
+      <!-- wp:group {"layout":{"type":"constrained"}} -->
+      <div class="wp-block-group">
+        <!-- wp:image {"width":"260px","sizeSlug":"large","linkDestination":"custom","align":"center"} -->
+        <figure class="wp-block-image aligncenter size-large is-resized">
+          <a href="_company_logo_"
+            ><img src="_company_logo_" alt="" style="width: 260px"
+          /></a>
+        </figure>
+        <!-- /wp:image -->
+      </div>
+      <!-- /wp:group -->
     </div>
     <!-- /wp:wpct-rcpt/field -->
 
@@ -124,7 +128,7 @@
         <!-- wp:image {"id":5771,"width":"auto","height":"200px","sizeSlug":"full","linkDestination":"none"} -->
         <figure class="wp-block-image size-full is-resized">
           <img
-            src="https://web-testing.somcomunitats.coop/wp-content/uploads/2024/05/sensibilitzacio-icona.png"
+            src="https://web-testing.web-testing.somcomunitats.coop/wp-content/uploads/2024/05/sensibilitzacio-icona.png"
             alt=""
             class="wp-image-5771"
             style="width: auto; height: 200px"
@@ -179,7 +183,7 @@
         <!-- wp:image {"id":5773,"width":"auto","height":"200px","sizeSlug":"full","linkDestination":"none"} -->
         <figure class="wp-block-image size-full is-resized">
           <img
-            src="https://web-testing.somcomunitats.coop/wp-content/uploads/2024/05/disseny-icona.png"
+            src="https://web-testing.web-testing.somcomunitats.coop/wp-content/uploads/2024/05/disseny-icona.png"
             alt=""
             class="wp-image-5773"
             style="width: auto; height: 200px"
@@ -234,7 +238,7 @@
         <!-- wp:image {"id":5775,"width":"auto","height":"200px","sizeSlug":"full","linkDestination":"none"} -->
         <figure class="wp-block-image size-full is-resized">
           <img
-            src="https://web-testing.somcomunitats.coop/wp-content/uploads/2024/05/gestio-icona.png"
+            src="https://web-testing.web-testing.somcomunitats.coop/wp-content/uploads/2024/05/gestio-icona.png"
             alt=""
             class="wp-image-5775"
             style="width: auto; height: 200px"
@@ -285,7 +289,7 @@
         <!-- wp:image {"id":5771,"width":"auto","height":"200px","sizeSlug":"full","linkDestination":"none"} -->
         <figure class="wp-block-image size-full is-resized">
           <img
-            src="https://web-testing.somcomunitats.coop/wp-content/uploads/2024/05/sensibilitzacio-icona.png"
+            src="https://web-testing.web-testing.somcomunitats.coop/wp-content/uploads/2024/05/sensibilitzacio-icona.png"
             alt=""
             class="wp-image-5771"
             style="width: auto; height: 200px"
@@ -340,7 +344,7 @@
         <!-- wp:image {"id":5773,"width":"auto","height":"200px","sizeSlug":"full","linkDestination":"none"} -->
         <figure class="wp-block-image size-full is-resized">
           <img
-            src="https://web-testing.somcomunitats.coop/wp-content/uploads/2024/05/disseny-icona.png"
+            src="https://web-testing.web-testing.somcomunitats.coop/wp-content/uploads/2024/05/disseny-icona.png"
             alt=""
             class="wp-image-5773"
             style="width: auto; height: 200px"
@@ -395,7 +399,7 @@
         <!-- wp:image {"id":5775,"width":"auto","height":"200px","sizeSlug":"full","linkDestination":"none"} -->
         <figure class="wp-block-image size-full is-resized">
           <img
-            src="https://web-testing.somcomunitats.coop/wp-content/uploads/2024/05/gestio-icona.png"
+            src="https://web-testing.web-testing.somcomunitats.coop/wp-content/uploads/2024/05/gestio-icona.png"
             alt=""
             class="wp-image-5775"
             style="width: auto; height: 200px"
@@ -745,7 +749,7 @@
         <!-- /wp:spacer -->
 
         <!-- wp:group {"className":"ce-form-newsletter","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-        <div class="wp-block-group ce-form-newsletter">
+        <div id="contactForm" class="wp-block-group ce-form-newsletter">
           <!-- wp:shortcode -->
           [remote_callback fn="wpct_ce_landing_contact_form" form_id="12"
           ajax=“true”]
@@ -1116,20 +1120,12 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-top: 0; margin-bottom: 0">
-  <!-- wp:shortcode -->
-  [remote_callback fn="wpct_ce_landing_visibility_script"]
-  <!-- /wp:shortcode -->
-</div>
-<!-- /wp:group -->
+<!-- wp:shortcode -->
+[remote_callback fn="wpct_ce_landing_visibility_script"]
+<!-- /wp:shortcode -->
 
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-top: 0; margin-bottom: 0">
-  <!-- wp:shortcode -->
-  [remote_callback fn="wpct_ce_landing_social_script"]
-  <!-- /wp:shortcode -->
-</div>
-<!-- /wp:group -->
+<!-- wp:shortcode -->
+[remote_callback fn="wpct_ce_landing_social_script"]
+<!-- /wp:shortcode -->
 
 <!-- wp:template-part {"slug":"footer","theme":"wp-coop-ce-theme-v-2","tagName":"footer","area":"footer"} /-->
