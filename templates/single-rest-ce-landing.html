@@ -10,20 +10,14 @@
       <div class="wp-block-wpct-rcpt-field">
         <!-- wp:cover {"url":"_primary_image_file_","id":5684,"dimRatio":0,"minHeight":100,"minHeightUnit":"%","layout":{"type":"constrained"}} -->
         <div class="wp-block-cover" style="min-height: 100%">
-          <img
-            class="wp-block-cover__image-background wp-image-5684"
-            alt=""
-            src="_primary_image_file_"
-            data-object-fit="cover"
-          /><span
+          <span
             aria-hidden="true"
             class="wp-block-cover__background has-background-dim-0 has-background-dim"
           ></span>
+          <!-- wp:shortcode -->
+          [remote_callback fn="wpct_ce_landing_primary_image"]
+          <!-- /wp:shortcode -->
           <div class="wp-block-cover__inner-container">
-            <!-- wp:shortcode -->
-            [remote_callback fn="wpct_ce_landing_primary_image"]
-            <!-- /wp:shortcode -->
-
             <!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
             <p class="has-text-align-center has-large-font-size"></p>
             <!-- /wp:paragraph -->
@@ -97,6 +91,10 @@
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:wpct-rcpt/field -->
+
+      <!-- wp:shortcode -->
+      [remote_callback fn="wpct_ce_landing_linked_coordinator"]
+      <!-- /wp:shortcode -->
 
       <!-- wp:spacer {"height":"1rem"} -->
       <div
@@ -194,6 +192,10 @@
         <!-- /wp:paragraph -->
       </div>
       <!-- /wp:wpct-rcpt/field -->
+
+      <!-- wp:shortcode -->
+      [remote_callback fn="wpct_ce_landing_linked_coordinator"]
+      <!-- /wp:shortcode -->
 
       <!-- wp:spacer {"height":"1rem"} -->
       <div
@@ -320,7 +322,7 @@
 
         <!-- wp:paragraph {"align":"center","textColor":"base"} -->
         <p class="has-text-align-center has-base-color has-text-color">
-          Sol·licita adherir-te com a soci/a i accedeix al serveis <br />de la
+          Sol·licita adherir-te com a soci/a i accedeix als serveis <br />de la
           comunitat energètica
         </p>
         <!-- /wp:paragraph -->
@@ -397,7 +399,7 @@
           <p
             class="has-text-align-center has-base-color has-text-color has-link-color has-medium-font-size"
           >
-            <strong>_number_of_members_</strong> persones y entitas sòcies
+            <strong>_number_of_members_</strong> persones i entitats sòcies
           </p>
           <!-- /wp:paragraph -->
         </div>
@@ -413,7 +415,7 @@
 
         <!-- wp:paragraph {"align":"center","textColor":"base"} -->
         <p class="has-text-align-center has-base-color has-text-color">
-          Sol·licita adherir-te com a soci/a i accedeix al serveis <br />de la
+          Sol·licita adherir-te com a soci/a i accedeix als serveis <br />de la
           comunitat energètica
         </p>
         <!-- /wp:paragraph -->
@@ -644,8 +646,8 @@
       ></div>
       <!-- /wp:spacer -->
 
-      <!-- wp:group {"className":"why-become-cooperator"} -->
-      <div class="wp-block-group why-become-cooperator">
+      <!-- wp:group {"className":"why-become"} -->
+      <div class="wp-block-group why-become">
         <!-- wp:heading {"level":4} -->
         <h4 class="wp-block-heading">Perquè fer-se soci/a</h4>
         <!-- /wp:heading -->
@@ -1156,12 +1158,20 @@
 </section>
 <!-- /wp:group -->
 
-<!-- wp:shortcode -->
-[remote_callback fn="wpct_ce_landing_visibility_script"]
-<!-- /wp:shortcode -->
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="margin-top: 0; margin-bottom: 0">
+  <!-- wp:shortcode -->
+  [remote_callback fn="wpct_ce_landing_visibility_script"]
+  <!-- /wp:shortcode -->
+</div>
+<!-- /wp:group -->
 
-<!-- wp:shortcode -->
-[remote_callback fn="wpct_ce_landing_social_script"]
-<!-- /wp:shortcode -->
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="margin-top: 0; margin-bottom: 0">
+  <!-- wp:shortcode -->
+  [remote_callback fn="wpct_ce_landing_social_script"]
+  <!-- /wp:shortcode -->
+</div>
+<!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","theme":"wp-coop-ce-theme-v-2","tagName":"footer","area":"footer"} /-->

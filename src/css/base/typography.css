@@ -13,3 +13,10 @@
 .text-justify {
   text-align: justify;
 }
+
+strong {
+  font-weight: var(--wp--custom--font-weight--medium) !important;
+}
+/* :root :where(.wp-block-heading) {
+  font-family: initial !important;
+} */

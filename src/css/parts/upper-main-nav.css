@@ -3,13 +3,15 @@
 #upper-main-nav {
   font-size: var(--wp--preset--font-size--x-small);
 }
-#upper-main-nav .header-upper-ov .wp-block-navigation__container {
-  padding-right: var(--wp--custom--spacing--sm);
+
+#upper-main-nav > .wp-block-group {
+  gap: 24px !important;
 }
+
 #upper-main-nav .header-upper-ov .wp-block-navigation__container li {
   color: var(--wp--preset--color--main);
   font-weight: var(--wp--custom--font-weight--bold);
-  padding-right: 0;
+  padding-right: var(--wp--custom--spacing--sm);
 }
 
 /* Language

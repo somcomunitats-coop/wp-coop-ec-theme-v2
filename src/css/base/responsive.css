@@ -11,7 +11,7 @@
  * https://github.com/WordPress/gutenberg/issues/35884
 ---------------------------------------------*/
 
-body > .is-root-container,
+/* body > .is-root-container,
 .edit-post-visual-editor__post-title-wrapper,
 .wp-block-cover.alignfull,
 .wp-block-group.alignfull,
@@ -20,9 +20,9 @@ body > .is-root-container,
 .wp-site-blocks {
   padding-left: var(--wp--custom--spacing--sm);
   padding-right: var(--wp--custom--spacing--sm);
-}
+} */
 
-.block-editor-block-list__layout.is-root-container > .alignfull,
+/* .block-editor-block-list__layout.is-root-container > .alignfull,
 .is-root-container > .wp-block-cover,
 .is-root-container > .wp-block-group.has-background,
 .is-root-container > .wp-block-template-part > .wp-block-cover,
@@ -35,8 +35,8 @@ body > .is-root-container,
   margin-left: calc(-1 * var(--wp--custom--spacing--sm)) !important;
   margin-right: calc(-1 * var(--wp--custom--spacing--sm)) !important;
   width: unset;
-}
-
+} */
+/* 
 @media (min-width: 782px) {
   body > .is-root-container,
   .edit-post-visual-editor__post-title-wrapper,
@@ -63,7 +63,7 @@ body > .is-root-container,
     margin-right: calc(-1 * var(--wp--custom--spacing--sxxl)) !important;
     width: unset;
   }
-}
+} */
 
 /*Breakpoints visibility*/
 body .is-style-hidden {
@@ -113,7 +113,6 @@ body .is-style-hidden {
     align-items: flex-start !important;
   }
 }
-
 
 .block-editor-block-list__layout::selection {
   background: var(--wp--preset--color--primary);
