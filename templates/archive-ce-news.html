@@ -1,87 +1,343 @@
 <!-- wp:template-part {"slug":"header","theme":"wp-coop-ce-theme-v-2","tagName":"header","className":"site-header"} /-->
 
 <!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"0"}}}} -->
-<main class="wp-block-group" style="margin-top:0;padding-top:0">
-    <!-- wp:group {"align":"full","style":{"color":{"background":"#c5e2d040"}},"className":"is-style-no-padding"} -->
-    <div class="wp-block-group alignfull has-background is-style-no-padding" style="background-color:#c5e2d040;">
-        <!-- wp:group {"tagName":"header","className":"is-style-padded is-style-show-tablet-desktop","layout":{"type":"constrained"}} -->
-        <header class="wp-block-group is-style-padded is-style-show-tablet-desktop">
-            <!-- wp:ce-block/slider {"showDots":true,"showArrows":false,"autoPlay":true} -->
-            <div class="wp-block-ce-block-slider" infinite="true" centermode="false" slidestoshow="1" slidestoscroll="1" initialslide="0" showdots="true" showarrows="false" autoplay="true">
-                <!-- wp:query {"query":{"perPage":"3","pages":"1","offset":"0","postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
-                <div class="wp-block-query">
-                    <!-- wp:post-template -->
-                    <!-- wp:pattern {"slug":"ce-pattern/post-wide-card"} /-->
-                    <!-- /wp:post-template -->
-                </div>
-                <!-- /wp:query -->
-            </div>
-            <!-- /wp:ce-block/slider -->
-        </header>
-        <!-- /wp:group -->
-
-        <!-- wp:group {"tagName":"header","layout":{"type":"default"},"className":"is-style-no-padding is-style-show-mobile"} -->
-        <header class="wp-block-group is-style-no-padding is-style-show-mobile">
-            <!-- wp:pattern {"slug":"ce-pattern/post-card"} /-->
-            <!-- wp:spacer {"height":"3rem"} -->
-            <div style="height:3rem" aria-hidden="true" class="wp-block-spacer"></div>
-            <!-- /wp:spacer -->
-        </header>
-        <!-- /wp:group -->
-
-        <!-- wp:group {"tagName":"section","layout":{"type":"constrained"},"className":"is-style-horizontal-padded"} -->
-        <section class="wp-block-group is-style-horizontal-padded">
-            <!-- wp:group {"className":"is-style-show-tablet-desktop"} -->
-            <div class="wp-block-group is-style-show-tablet-desktop">
-                <!-- wp:query {"query":{"perPage":"3","pages":"0","offset":"0","postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"className":"ce-news-query"} -->
-                <div class="wp-block-query ce-news-query">
-                <!-- wp:post-template -->
-                <!-- wp:pattern {"slug":"ce-pattern/post-card"} /-->
-                <!-- /wp:post-template -->
-
-                <!-- wp:group {"layout":"constrained"} -->
-                <div class="wp-block-group">
-                    <!-- wp:query-pagination -->
-                    <!-- wp:query-pagination-previous /-->
-                    <!-- wp:query-pagination-numbers /-->
-                    <!-- wp:query-pagination-next /-->
-                    <!-- /wp:query-pagination -->
-                </div>
-                <!-- /wp:group -->
-                </div>
-                <!-- /wp:query -->
+<main class="wp-block-group" style="margin-top: 0; padding-top: 0">
+  <!-- wp:group {"align":"full","style":{"color":{"background":"#c5e2d040"}},"className":"is-style-no-padding"} -->
+  <div
+    class="wp-block-group alignfull is-style-no-padding has-background"
+    style="background-color: #c5e2d040"
+  >
+    <!-- wp:group {"tagName":"header","className":"is-style-padded is-style-show-tablet-desktop","layout":{"type":"constrained"}} -->
+    <header class="wp-block-group is-style-padded is-style-show-tablet-desktop">
+      <!-- wp:ce-block/slider {"showDots":true,"showArrows":false,"autoPlay":true} -->
+      <div
+        class="wp-block-ce-block-slider"
+        infinite="true"
+        centermode="false"
+        slidestoshow="1"
+        slidestoscroll="1"
+        initialslide="0"
+        showdots="true"
+        showarrows="false"
+        autoplay
+      >
+        <!-- wp:query {"queryId":0,"query":{"perPage":"3","pages":"1","offset":"0","postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[249]}}} -->
+        <div class="wp-block-query">
+          <!-- wp:post-template -->
+          <!-- wp:group {"tagName":"article","align":"wide","className":"ce-wide-card ce-post-wide-card","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"stretch"}} -->
+          <article
+            class="wp-block-group alignwide ce-wide-card ce-post-wide-card"
+          >
+            <!-- wp:group {"align":"wide","style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"className":"is-style-no-padding","layout":{"type":"default"}} -->
+            <div class="wp-block-group alignwide is-style-no-padding">
+              <!-- wp:post-featured-image {"isLink":true,"width":"100%","height":"100%","align":"left"} /-->
             </div>
             <!-- /wp:group -->
 
-            <!-- wp:group {"className":"is-style-show-mobile"} -->
-            <div class="wp-block-group is-style-show-mobile">
-                <!-- wp:query {"query":{"perPage":"3","pages":"0","offset":"1","postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"className":"ce-news-query"} -->
-                <div class="wp-block-query ce-news-query">
-                <!-- wp:post-template -->
-                <!-- wp:pattern {"slug":"ce-pattern/post-card"} /-->
-                <!-- /wp:post-template -->
+            <!-- wp:group {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"}},"backgroundColor":"base","className":"is-style-padded ce-card-body","layout":{"type":"constrained"}} -->
+            <div
+              class="wp-block-group is-style-padded ce-card-body has-base-background-color has-background"
+            >
+              <!-- wp:spacer {"height":"3em","width":"0px","style":{"layout":[]}} -->
+              <div
+                style="height: 3em; width: 0px"
+                aria-hidden="true"
+                class="wp-block-spacer"
+              ></div>
+              <!-- /wp:spacer -->
 
-                <!-- wp:group {"layout":"constrained"} -->
-                <div class="wp-block-group">
-                    <!-- wp:query-pagination -->
-                    <!-- wp:query-pagination-previous /-->
-                    <!-- wp:query-pagination-numbers /-->
-                    <!-- wp:query-pagination-next /-->
-                    <!-- /wp:query-pagination -->
-                </div>
-                <!-- /wp:group -->
-                </div>
-                <!-- /wp:query -->
+              <!-- wp:post-terms {"term":"post_tag"} /-->
+
+              <!-- wp:spacer {"height":"1em","width":"0px","style":{"layout":[]}} -->
+              <div
+                style="height: 1em; width: 0px"
+                aria-hidden="true"
+                class="wp-block-spacer"
+              ></div>
+              <!-- /wp:spacer -->
+
+              <!-- wp:post-date /-->
+
+              <!-- wp:post-title {"level":4,"isLink":true,"className":"wp-block-heading"} /-->
+
+              <!-- wp:spacer {"height":"3em","width":"0px","style":{"layout":[]}} -->
+              <div
+                style="height: 3em; width: 0px"
+                aria-hidden="true"
+                class="wp-block-spacer"
+              ></div>
+              <!-- /wp:spacer -->
+
+              <!-- wp:post-excerpt {"moreText":"Més informació"} /-->
+
+              <!-- wp:spacer {"height":"3em","width":"0px","style":{"layout":[]}} -->
+              <div
+                style="height: 3em; width: 0px"
+                aria-hidden="true"
+                class="wp-block-spacer"
+              ></div>
+              <!-- /wp:spacer -->
             </div>
             <!-- /wp:group -->
-
-            <!-- wp:spacer {"height":"4rem"} -->
-            <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
-            <!-- /wp:spacer -->
-        </section>
-        <!-- /wp:group -->
-    </div>
+          </article>
+          <!-- /wp:group -->
+          <!-- /wp:post-template -->
+        </div>
+        <!-- /wp:query -->
+      </div>
+      <!-- /wp:ce-block/slider -->
+    </header>
     <!-- /wp:group -->
+
+    <!-- wp:group {"tagName":"header","className":"is-style-no-padding is-style-show-mobile","layout":{"type":"default"}} -->
+    <header class="wp-block-group is-style-no-padding is-style-show-mobile">
+      <!-- wp:group {"tagName":"article","backgroundColor":"base","className":"is-style-no-padding ce-card ce-post-card","layout":{"type":"constrained"}} -->
+      <article
+        class="wp-block-group is-style-no-padding ce-card ce-post-card has-base-background-color has-background"
+      >
+        <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
+
+        <!-- wp:spacer {"height":"40px"} -->
+        <div
+          style="height: 40px"
+          aria-hidden="true"
+          class="wp-block-spacer"
+        ></div>
+        <!-- /wp:spacer -->
+
+        <!-- wp:group {"className":"ce-card-body"} -->
+        <div class="wp-block-group ce-card-body">
+          <!-- wp:group {"className":"is-style-show-desktop"} -->
+          <div class="wp-block-group is-style-show-desktop">
+            <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
+          </div>
+          <!-- /wp:group -->
+
+          <!-- wp:group {"className":"is-style-show-tablet"} -->
+          <div class="wp-block-group is-style-show-tablet">
+            <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
+          </div>
+          <!-- /wp:group -->
+
+          <!-- wp:group {"className":"is-style-show-mobile"} -->
+          <div class="wp-block-group is-style-show-mobile">
+            <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
+          </div>
+          <!-- /wp:group -->
+
+          <!-- wp:spacer {"height":"1em","width":"0px"} -->
+          <div
+            style="height: 1em; width: 0px"
+            aria-hidden="true"
+            class="wp-block-spacer"
+          ></div>
+          <!-- /wp:spacer -->
+
+          <!-- wp:post-date /-->
+
+          <!-- wp:post-title {"level":4,"isLink":true,"className":"wp-block-heading"} /-->
+
+          <!-- wp:post-excerpt {"moreText":"Més informació"} /-->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:spacer {"height":"3rem"} -->
+        <div
+          style="height: 3rem"
+          aria-hidden="true"
+          class="wp-block-spacer"
+        ></div>
+        <!-- /wp:spacer -->
+      </article>
+      <!-- /wp:group -->
+
+      <!-- wp:spacer {"height":"3rem"} -->
+      <div
+        style="height: 3rem"
+        aria-hidden="true"
+        class="wp-block-spacer"
+      ></div>
+      <!-- /wp:spacer -->
+    </header>
+    <!-- /wp:group -->
+
+    <!-- wp:group {"tagName":"section","className":"is-style-horizontal-padded","layout":{"type":"constrained"}} -->
+    <section class="wp-block-group is-style-horizontal-padded">
+      <!-- wp:group {"className":"is-style-show-tablet-desktop"} -->
+      <div class="wp-block-group is-style-show-tablet-desktop">
+        <!-- wp:query {"queryId":1,"query":{"perPage":"9","pages":"0","offset":"","postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[227]}},"className":"ce-news-query"} -->
+        <div class="wp-block-query ce-news-query">
+          <!-- wp:post-template -->
+          <!-- wp:group {"tagName":"article","backgroundColor":"base","className":"is-style-no-padding ce-card ce-post-card","layout":{"type":"constrained"}} -->
+          <article
+            class="wp-block-group is-style-no-padding ce-card ce-post-card has-base-background-color has-background"
+          >
+            <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
+
+            <!-- wp:spacer {"height":"40px"} -->
+            <div
+              style="height: 40px"
+              aria-hidden="true"
+              class="wp-block-spacer"
+            ></div>
+            <!-- /wp:spacer -->
+
+            <!-- wp:group {"className":"ce-card-body"} -->
+            <div class="wp-block-group ce-card-body">
+              <!-- wp:group {"className":"is-style-show-desktop"} -->
+              <div class="wp-block-group is-style-show-desktop">
+                <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:group {"className":"is-style-show-tablet"} -->
+              <div class="wp-block-group is-style-show-tablet">
+                <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:group {"className":"is-style-show-mobile"} -->
+              <div class="wp-block-group is-style-show-mobile">
+                <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:spacer {"height":"1em","width":"0px"} -->
+              <div
+                style="height: 1em; width: 0px"
+                aria-hidden="true"
+                class="wp-block-spacer"
+              ></div>
+              <!-- /wp:spacer -->
+
+              <!-- wp:post-date /-->
+
+              <!-- wp:post-title {"level":5,"isLink":true,"className":"wp-block-heading"} /-->
+
+              <!-- wp:post-excerpt {"moreText":"Més informació"} /-->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:spacer {"height":"3rem"} -->
+            <div
+              style="height: 3rem"
+              aria-hidden="true"
+              class="wp-block-spacer"
+            ></div>
+            <!-- /wp:spacer -->
+          </article>
+          <!-- /wp:group -->
+          <!-- /wp:post-template -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group">
+            <!-- wp:query-pagination -->
+            <!-- wp:query-pagination-previous /-->
+
+            <!-- wp:query-pagination-numbers /-->
+
+            <!-- wp:query-pagination-next /-->
+            <!-- /wp:query-pagination -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:query -->
+      </div>
+      <!-- /wp:group -->
+
+      <!-- wp:group {"className":"is-style-show-mobile"} -->
+      <div class="wp-block-group is-style-show-mobile">
+        <!-- wp:query {"queryId":2,"query":{"perPage":"3","pages":"0","offset":"1","postType":"ce-news","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"className":"ce-news-query"} -->
+        <div class="wp-block-query ce-news-query">
+          <!-- wp:post-template -->
+          <!-- wp:group {"tagName":"article","backgroundColor":"base","className":"is-style-no-padding ce-card ce-post-card","layout":{"type":"constrained"}} -->
+          <article
+            class="wp-block-group is-style-no-padding ce-card ce-post-card has-base-background-color has-background"
+          >
+            <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
+
+            <!-- wp:spacer {"height":"40px"} -->
+            <div
+              style="height: 40px"
+              aria-hidden="true"
+              class="wp-block-spacer"
+            ></div>
+            <!-- /wp:spacer -->
+
+            <!-- wp:group {"className":"ce-card-body"} -->
+            <div class="wp-block-group ce-card-body">
+              <!-- wp:group {"className":"is-style-show-desktop"} -->
+              <div class="wp-block-group is-style-show-desktop">
+                <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:group {"className":"is-style-show-tablet"} -->
+              <div class="wp-block-group is-style-show-tablet">
+                <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:group {"className":"is-style-show-mobile"} -->
+              <div class="wp-block-group is-style-show-mobile">
+                <!-- wp:post-terms {"term":"post_tag","separator":""} /-->
+              </div>
+              <!-- /wp:group -->
+
+              <!-- wp:spacer {"height":"1em","width":"0px"} -->
+              <div
+                style="height: 1em; width: 0px"
+                aria-hidden="true"
+                class="wp-block-spacer"
+              ></div>
+              <!-- /wp:spacer -->
+
+              <!-- wp:post-date /-->
+
+              <!-- wp:post-title {"level":5,"isLink":true,"className":"wp-block-heading"} /-->
+
+              <!-- wp:post-excerpt {"moreText":"Més informació"} /-->
+            </div>
+            <!-- /wp:group -->
+
+            <!-- wp:spacer {"height":"3rem"} -->
+            <div
+              style="height: 3rem"
+              aria-hidden="true"
+              class="wp-block-spacer"
+            ></div>
+            <!-- /wp:spacer -->
+          </article>
+          <!-- /wp:group -->
+          <!-- /wp:post-template -->
+
+          <!-- wp:group -->
+          <div class="wp-block-group">
+            <!-- wp:query-pagination -->
+            <!-- wp:query-pagination-previous /-->
+
+            <!-- wp:query-pagination-numbers /-->
+
+            <!-- wp:query-pagination-next /-->
+            <!-- /wp:query-pagination -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:query -->
+      </div>
+      <!-- /wp:group -->
+
+      <!-- wp:spacer {"height":"4rem"} -->
+      <div
+        style="height: 4rem"
+        aria-hidden="true"
+        class="wp-block-spacer"
+      ></div>
+      <!-- /wp:spacer -->
+    </section>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
 </main>
 <!-- /wp:group -->
 

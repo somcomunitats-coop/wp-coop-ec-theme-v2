@@ -98,7 +98,7 @@ function wpct_ce_landing_services($remote)
             <li>
                 <a href="<?= get_term_link($term) ?>" rel="tag">
                     <?= apply_filters('wpct_ce_service_icon', null, $term->slug) ?>
-                    <strong><?= $term->name ?></strong>
+                    <strong style="padding-left:8px"><?= $term->name ?></strong>
                 </a>
             </li>
         <?php endforeach; ?>
@@ -333,9 +333,9 @@ add_filter('wpct_ce_type_icon', 'wpct_ce_type_icon', 10, 2);
 function wpct_ce_type_icon($icon, $slug)
 {
     if (strpos($slug, 'citizen') !== false) {
-        return '<i class="fa fa-building"></i>';
+        return '<i style="padding-right:8px" class="fa fa-building"></i>';
     } elseif (strpos($slug, 'industrial') !== false) {
-        return '<i class="fa fa-industry"></i>';
+        return '<i style="padding-right:8px" class="fa fa-industry"></i>';
     } else {
         return $icon;
     }
@@ -345,9 +345,9 @@ add_filter('wpct_ce_status_icon', 'wpct_ce_status_icon', 10, 2);
 function wpct_ce_status_icon($icon, $slug)
 {
     if (strpos($slug, 'open') !== false) {
-        return '<i class="fa fa-circle-half-stroke"></i>';
+        return '<i style="padding-right:8px" class="fa fa-circle-half-stroke"></i>';
     } elseif (strpos($slug, 'closed') !== false) {
-        return '<i class="fa fa-circle"></i>';
+        return '<i style="padding-right:8px"class="fa fa-circle"></i>';
     } else {
         return $icon;
     }
@@ -594,8 +594,8 @@ function wpct_ce_landing_linked_coordinator($remote)
         return '<!-- wp:spacer {"height":"1rem"} -->
                 <div style="height:1rem" aria-hidden="true" class="wp-block-spacer"></div>
                 <!-- /wp:spacer -->
-                <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-                <div class="wp-block-group ce-linked-coordinator-container"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}} -->
+                <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap", "gap": "24px"}} -->
+                <div class="wp-block-group ce-linked-coordinator-container" style="gap:24px"><!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}} -->
                 <p style="font-style:normal;font-weight:600">' . $coord_literal . '</p>
                 <!-- /wp:paragraph -->
 

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/js/index.js"],
+  "sourcesContent": ["document.addEventListener( 'DOMContentLoaded', function() {\n    document.getElementsByTagName(\"body\")[0].classList.add(\"overflow-visible\");\n});"],
+  "mappings": "MAAA,SAAS,iBAAkB,mBAAoB,UAAW,CACtD,SAAS,qBAAqB,MAAM,EAAE,CAAC,EAAE,UAAU,IAAI,kBAAkB,CAC7E,CAAC",
+  "names": []
+}

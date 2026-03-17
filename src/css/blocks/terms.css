@@ -6,11 +6,12 @@
   color: var(--wp--preset--color--white);
   font-weight: 700;
   font-size: var(--wp--preset--font-size--x-small);
+  text-decoration: none !important;
   /* pointer-events: none; */
 }
 
 .taxonomy-post_tag.wp-block-post-terms a:nth-child(3n),
-.taxonomy-post_tag.wp-block-post-terms a:nth-child(2n){
+.taxonomy-post_tag.wp-block-post-terms a:nth-child(2n) {
   background-color: var(--wp--preset--color--main);
 }
 
@@ -28,7 +29,9 @@
   margin: 0;
 }
 
-.is-style-show-tablet .taxonomy-post_tag.wp-block-post-terms a:nth-child(n + 2) {
+.is-style-show-tablet
+  .taxonomy-post_tag.wp-block-post-terms
+  a:nth-child(n + 2) {
   margin-top: 0.25em;
 }
 

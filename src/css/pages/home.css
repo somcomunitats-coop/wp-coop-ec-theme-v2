@@ -1,14 +1,13 @@
-
 #video-popup-ce {
   height: 750px;
   width: 100%;
 }
 
-#video-popup-ce .wp-block-getwid-video-popup__wrapper{
+#video-popup-ce .wp-block-getwid-video-popup__wrapper {
   height: 750px;
 }
 
-#video-popup-ce .wp-block-getwid-video-popup__icon svg{
+#video-popup-ce .wp-block-getwid-video-popup__icon svg {
   padding-right: 0px;
 }
 body.home .wp-block-query.ce-cover-query .wp-block-post-template {
@@ -18,7 +17,10 @@ body.home .wp-block-query.ce-cover-query .wp-block-post-template {
   gap: 0;
 }
 
-body.home .wp-block-query.ce-cover-query .wp-block-post-template .wp-block-post {
+body.home
+  .wp-block-query.ce-cover-query
+  .wp-block-post-template
+  .wp-block-post {
   flex-shrink: 0;
   flex-grow: 0;
   flex-basis: 30%;
@@ -97,12 +99,33 @@ body.home .ce-home-landings-section .slick-arrow {
   white-space: pre;
 }
 
-
-#qui-som-button a{
+#qui-som-button a {
   padding-right: var(--wp--custom--spacing--sxl);
   padding-left: var(--wp--custom--spacing--sxl);
 }
 
+#comunities .wpct-block-slider-loop .wpct-block-slider-arrows .slick-arrow {
+  background-color: var(--wp--preset--color--base) !important;
+  border: 2px solid var(--wp--preset--color--base) !important;
+}
+
+#comunities
+  .wpct-block-slider-loop
+  .wpct-block-slider-arrows
+  .slick-arrow::after {
+  border-top: 6px solid var(--wp--preset--color--primary) !important;
+  border-right: 6px solid var(--wp--preset--color--primary) !important;
+}
+
+@media (min-width: 782px) {
+  #comunities .slick-slide {
+    margin-left: 12px !important;
+  }
+  #home-news .wpct-block-slider-wrapper .slick-track {
+    display: flex !important;
+    gap: 5% !important;
+  }
+}
 /*step numbers for mobile slider*/
 @media (max-width: 782px) {
   .find-your-community #step-number {
@@ -134,11 +157,10 @@ body.home .ce-home-landings-section .slick-arrow {
   background-image: url(/wp-content/themes/wp-coop-ce-theme-v-2/img/icons/Apuntat4.jpg);
 }
 
-
 /* map block */
 
 @media (max-width: 782px) {
-  #mapa iframe{
+  #mapa iframe {
     height: 80vh;
     overflow-y: scroll;
   }

@@ -17,47 +17,17 @@ require_once 'custom-blocks/slider/slider.php';
 
 require_once 'includes/template-functions.php';
 
-
-// Enqueue Child theme assets.
-add_action('wp_enqueue_scripts', 'wpct_ce_enqueue_scripts', 11);
-function wpct_ce_enqueue_scripts()
-{
-    $theme = wp_get_theme();
-    $parent = $theme->parent();
-
-    wp_enqueue_style(
-        $parent->get_stylesheet(),
-        $parent->get_stylesheet_directory_uri() . '/style.css',
-        [],
-        $parent->get('Version')
-    );
-
-    wp_enqueue_style(
-        $theme->get_stylesheet(),
-        $theme->get_stylesheet_directory_uri() . '/style.css',
-        [$parent->get_stylesheet()],
-        $theme->get('Version')
-    );
-
-    // wp_enqueue_script(
-    //     $theme->get_stylesheet(),
-    //     $theme->get_stylesheet_directory_uri() . '/assets/js/index.js',
-    //     [$parent->get_stylesheet()],
-    //     $theme->get('Version'),
-    // );
-
-}
-
 // Define fonts.
 add_filter('wpct_gfonts', 'wpct_ce_gfonts');
 function wpct_ce_gfonts()
 {
-    return [
-        'family=Open+Sans:wght@100;200;300;400;500;600;700;800;900',
-        'family=Montserrat:wght@100;200;300;400;500;600;700;800;900',
-        'family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900',
-        'family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900'
+    $fonts = [
+        'Open+Sans:wght@100;200;300;400;500;600;700;800;900',
+        'Montserrat:wght@100;200;300;400;500;600;700;800;900',
+        'Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900',
+        'Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900'
     ];
+    return $fonts;
 }
 
 add_action('after_setup_theme', 'wpct_add_theme_support');
@@ -463,10 +433,10 @@ add_filter('the_content_feed', 'diw_post_thumbnail_feeds');
 
 //populate the options in a Gravity Form select field with all of the posts currently published on the site.
 
-add_filter('gform_pre_render_16', 'populate_coordinadores');
-add_filter('gform_pre_validation_16', 'populate_coordinadores');
-add_filter('gform_pre_submission_filter_16', 'populate_coordinadores');
-add_filter('gform_admin_pre_render_16', 'populate_coordinadores');
+add_filter('gform_pre_render_7', 'populate_coordinadores');
+add_filter('gform_pre_validation_7', 'populate_coordinadores');
+add_filter('gform_pre_submission_filter_7', 'populate_coordinadores');
+add_filter('gform_admin_pre_render_7', 'populate_coordinadores');
 function populate_coordinadores($form)
 {
 
@@ -526,6 +496,9 @@ add_filter('forms_bridge_payload', function ($payload, $bridge) {
 
 
 add_filter('forms_bridge_http_backend_headers', function ($headers, $backend) {
+    // if ($backend->name !== 'Odoo_dev4') {
+    //     return $headers;
+    // }
     $current_lang = get_locale();
     if ($current_lang === NULL || is_wp_error($current_lang)) {
         $current_lang =  'es_ES';
@@ -539,33 +512,7 @@ add_filter('forms_bridge_http_backend_headers', function ($headers, $backend) {
 
 
 
-//GF: This filter is executed before displaying each field and can be used to dynamically populate fields with a default value.
-//  This filter requires that the “Allow field to be populated dynamically” option is checked in the field editor’s advanced tab.
-add_filter('gform_field_value_current_lang', 'wpct_erp_forms_populate_current_lang');
-function wpct_erp_forms_populate_current_lang($value)
-{
-    if ($value) {
-        $locale = wpct_erp_forms_format_current_lang($value);
-    } else {
-        $language = apply_filters('wpml_post_language_details', null);
-
-        if (!is_wp_error($language) && $language) {
-            $locale = $language['locale'];
-        } else {
-            $locale = 'ca_ES';
-        }
-    }
-
-    return $locale;
-}
+// UNREGISTER SPECIFIC CORE BLOCK STYLES
 
 
-function wpct_erp_forms_format_current_lang($code)
-{
-    $languages = apply_filters('wpml_active_languages', null);
-    if ($languages && !is_wp_error($languages) && isset($languages[$code])) {
-        return $languages[$code]['default_locale'];
-    }
-
-    return $code;
-}
+unregister_block_style("core/heading", "typography");

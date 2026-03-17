@@ -1,4 +1,5 @@
 @import "custom.css";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 
 /* Base */
 @import "base/typography.css";
@@ -9,6 +10,8 @@
 @import "elements/button.css";
 @import "elements/blockquote.css";
 @import "elements/altcha.css";
+@import "elements/link.css";
+@import "elements/iframe.css";
 
 /* Blocks */
 @import "blocks/terms.css";
@@ -17,6 +20,7 @@
 @import "blocks/forms.css";
 @import "blocks/columns.css";
 @import "blocks/images.css";
+@import "blocks/headings.css";
 
 /* Template parts */
 @import "parts/header.css";
