@@ -6,11 +6,12 @@
  */
 
 .ce-landing-card .ce-card-terms {
-  height: 2.5rem;
+  height: fit-content;
 }
 
 .ce-landing-card .wp-block-post-terms {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .taxonomy-rest-ce-service .wp-block-post-terms__separator {

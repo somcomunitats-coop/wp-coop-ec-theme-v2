@@ -100,10 +100,9 @@ figure {
 }
 
 /* Complianze */
-#cmplz-document.cookie-statement {
-  max-width: var(--wp--style--global--content-size);
+#cmplz-cookiebanner-container .cmplz-documents.cmplz-links > ul {
+  list-style-type: none !important;
 }
-
 /* STYLES FROM WP-COOP-CE-THEME */
 
 /* Styles

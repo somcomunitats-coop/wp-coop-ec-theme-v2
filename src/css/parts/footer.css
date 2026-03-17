@@ -76,7 +76,7 @@ footer.wp-block-template-part .wpml-ls-item:last-child a {
 }
 
 footer.wp-block-template-part .wp-block-social-links {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 footer.wp-block-template-part .wp-block-social-links li {

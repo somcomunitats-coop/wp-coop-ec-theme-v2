@@ -11,6 +11,8 @@ article.wp-block-group.ce-card .wp-block-cover {
 article.wp-block-group.ce-card .wp-block-post-title {
   font-size: var(--wp--preset--font-size--large) !important;
   color: var(--wp--preset--color--main) !important;
+  height: 100% !important;
+  margin-bottom: var(--wp--custom--spacing--sxs);
 }
 article.wp-block-group.ce-card .wp-block-post-title a:hover {
   text-decoration: none !important;

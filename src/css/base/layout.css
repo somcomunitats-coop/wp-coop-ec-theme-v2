@@ -14,7 +14,7 @@ main.site-content {
 /* END of styles from wp-coop-ce-theme */
 
 body.overflow-visible {
-  overflow-x: visible;
+  overflow-x: hidden;
   overflow-y: visible;
 }
 
