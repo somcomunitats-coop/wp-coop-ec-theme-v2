@@ -116,7 +116,7 @@ function wpct_ce_landing_leads_script($remote)
     ob_start();
 
 ?>
-    <div class="wp-block-buttons ce-landing-leads is-content-justification-center is-layout-flex wp-container-core-buttons-layout-2 wp-block-buttons-is-layout-flex">
+    <div style="gap: 0 var(--wp--preset--spacing--20);" class="wp-block-buttons ce-landing-leads is-content-justification-center is-layout-flex wp-container-core-buttons-layout-2 wp-block-buttons-is-layout-flex">
         <?php foreach ($cooperator_buttons as $button) : ?>
             <div class="wp-block-button has-custom-font-size lead citizen has-small-font-size">
                 <a class="wp-block-button__link wp-element-button" href="<?= $button['url']; ?>" target="_blank" rel="noopener">
