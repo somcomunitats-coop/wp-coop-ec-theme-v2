@@ -6628,7 +6628,6 @@ article.wp-block-group.ce-card .wp-block-cover {
 article.wp-block-group.ce-card .wp-block-post-title {
   font-size: var(--wp--preset--font-size--large) !important;
   color: var(--wp--preset--color--main) !important;
-  height: 100% !important;
   margin-bottom: var(--wp--custom--spacing--sxs);
 }
 article.wp-block-group.ce-card .wp-block-post-title a:hover {
@@ -6850,6 +6849,9 @@ body.home .ce-home-landings-section .slick-arrow {
   .slick-arrow::after {
   border-top: 6px solid var(--wp--preset--color--primary) !important;
   border-right: 6px solid var(--wp--preset--color--primary) !important;
+}
+#comunities article.wp-block-group.ce-card .wp-block-post-title {
+  height: 100% !important;
 }
 @media (min-width: 782px) {
   #comunities .slick-slide {

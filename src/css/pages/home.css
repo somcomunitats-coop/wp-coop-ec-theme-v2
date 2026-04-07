@@ -116,6 +116,9 @@ body.home .ce-home-landings-section .slick-arrow {
   border-top: 6px solid var(--wp--preset--color--primary) !important;
   border-right: 6px solid var(--wp--preset--color--primary) !important;
 }
+#comunities article.wp-block-group.ce-card .wp-block-post-title {
+  height: 100% !important;
+}
 
 @media (min-width: 782px) {
   #comunities .slick-slide {
