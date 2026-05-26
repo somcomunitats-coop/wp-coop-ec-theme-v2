@@ -51,6 +51,7 @@ input {
   margin-top: 0;
   padding: var(--wp--custom--spacing--sxxs);
   border-radius: 0px;
+  color: var(--wp--preset--color--main);
 }
 
 .ce-form-newsletter .gform_footer .gform_button[type="submit"] {
