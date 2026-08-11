@@ -44,6 +44,19 @@ input {
   position: relative;
 }
 
+.gform_button[type="submit"] {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--main);
+  border-radius: 0px;
+  border-radius: 40px;
+  margin: auto;
+  font-size: var(--wp--preset--font-size--medium);
+  padding: var(--wp--custom--spacing--sxxs) var(--wp--custom--spacing--sxl);
+}
+
+/* Newsletter form
+--------------------------------------------- */
+
 .ce-form-newsletter .gfield .ginput_container_email input,
 .ce-form-newsletter .gform_footer .gform_button[type="submit"] {
   font-size: var(--wp--preset--font-size--small);
